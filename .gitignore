@@ -1,0 +1,4 @@
+.DS_Store
+scripts/_capturas/
+scripts/__pycache__/
+__pycache__/

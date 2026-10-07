@@ -1,0 +1,78 @@
+{
+ "compilado": "2026-10-07",
+ "corpus_commit": "aca28304d",
+ "normas": [
+  {
+   "id": "lec",
+   "boe": "BOE-A-2000-323",
+   "sigla": "LEC",
+   "actualizada": "2026-10-05",
+   "sha256": "5d995eb240685f87ab03096790d7208bcd85497b8136f99bb4e7d648836f0a1f",
+   "bloques": 918,
+   "articulos": 916
+  },
+  {
+   "id": "lo1-2025",
+   "boe": "BOE-A-2025-76",
+   "sigla": "LO 1/2025",
+   "actualizada": "2025-06-04",
+   "sha256": "f0edd953de8eec4b50f0542ea434a323de3cadc478bdf6818dc6cd34fc1ea4b9",
+   "bloques": 88,
+   "articulos": 86
+  },
+  {
+   "id": "lau",
+   "boe": "BOE-A-1994-26003",
+   "sigla": "LAU",
+   "actualizada": "2026-10-02",
+   "sha256": "c19f4916c4aa1bb2f54a495da9eb13847ca421ee11e268a3044ead9c08560b96",
+   "bloques": 79,
+   "articulos": 78
+  },
+  {
+   "id": "lph",
+   "boe": "BOE-A-1960-10906",
+   "sigla": "LPH",
+   "actualizada": "2026-10-05",
+   "sha256": "da32d5435d29c4fbf4fe6466a186431c0d58dcacfa581ed88694b4bb7d3874d9",
+   "bloques": 32,
+   "articulos": 31
+  },
+  {
+   "id": "cc",
+   "boe": "BOE-A-1889-4763",
+   "sigla": "CC",
+   "actualizada": "2025-01-03",
+   "sha256": "77f0d17fe837bfa84ed3598867805d86b7135d362c9be6b6bb2cdfa38e6ba407",
+   "bloques": 2002,
+   "articulos": 2001
+  },
+  {
+   "id": "lopj",
+   "boe": "BOE-A-1985-12666",
+   "sigla": "LOPJ",
+   "actualizada": "2025-02-17",
+   "sha256": "daa7f58ada8954d8d78b994be7a5ca1dae1dc54334b254ef050ef40384ecd99a",
+   "bloques": 777,
+   "articulos": 775
+  },
+  {
+   "id": "lopdgdd",
+   "boe": "BOE-A-2018-16673",
+   "sigla": "LOPDGDD",
+   "actualizada": "2025-12-27",
+   "sha256": "0169308f3c282ab9da2def6f56bf030111886a96312f641aa0c21ec31accb9d4",
+   "bloques": 146,
+   "articulos": 144
+  },
+  {
+   "id": "ce",
+   "boe": "BOE-A-1978-31229",
+   "sigla": "CE",
+   "actualizada": "2026-05-20",
+   "sha256": "9db0c0c36a8b5f88b4f62d9d1782ec7acf15c011f090ec32f2849594839a2cdd",
+   "bloques": 186,
+   "articulos": 184
+  }
+ ]
+}

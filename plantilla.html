@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Consulta de normas · Artigas Abogados</title>
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=1">
+<link rel="shortcut icon" href="favicon.ico?v=1">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=1">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Normas">
+<style>
+/*@@FUENTES@@*/
+:root{--ink-50:#F7F8FA;--ink-100:#EEF0F4;--ink-200:#DFE3EA;--ink-300:#C7CDD9;--ink-400:#9AA3B5;--ink-500:#6B7488;--ink-600:#4C5568;--ink-700:#363E50;--ink-800:#232838;--ink-900:#151928;--ink-950:#0B0D16;--grafito:#2C2F34;--sage:#5B8266;--brick:#B4443B;--ocre:#C97A1E;--ocre-50:#FDF4E9;--ocre-100:#FAE7CB;--ocre-600:#A8631A;--ocre-700:#834E17;--sombra:0 1px 2px rgba(16,19,26,.06);--pop:0 10px 30px rgba(18,19,22,.12);--sans:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;--geo:'Jost',var(--sans);--mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;--fs:16px}
+*{box-sizing:border-box;margin:0;padding:0}svg{flex-shrink:0}
+html,body{height:100%}
+body{font-family:var(--sans);background:var(--ink-50);color:var(--ink-900);font-size:14px;-webkit-font-smoothing:antialiased;overflow:hidden}
+button{font-family:inherit}
+:focus-visible{outline:2px solid var(--ocre);outline-offset:1px}
+.app{display:grid;grid-template-columns:256px 1fr;grid-template-rows:1fr auto;height:100vh;height:100dvh}
+/* SIDEBAR */
+.sidebar{grid-row:1/3;background:#fff;border-right:1px solid var(--ink-200);display:flex;flex-direction:column;min-height:0}
+.brand{display:flex;align-items:center;gap:12px;padding:22px 18px 14px}
+.brand .logo{width:38px;height:38px;flex-shrink:0;background:url(@@LOGO@@) center/contain no-repeat}
+.brand .an{font-family:var(--geo);font-size:16px;font-weight:600;letter-spacing:.01em;color:var(--ink-950);line-height:1.1}
+.brand .fm{font-family:var(--geo);font-size:9px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-400);margin-top:3px}
+.nsec{font-family:var(--geo);text-transform:uppercase;font-size:10px;font-weight:600;letter-spacing:.14em;color:var(--ink-400);padding:14px 18px 5px}
+.tree{flex:1;overflow:auto;padding:2px 10px}
+.navlink{display:flex;align-items:center;gap:11px;padding:8px 10px;border-radius:9px;cursor:pointer;color:var(--ink-700);font-size:13.5px;font-weight:500;user-select:none;border:0;background:none;width:100%;text-align:left}
+.navlink svg{width:16px;height:16px;color:var(--ink-400)}
+.navlink:hover{background:var(--ink-50)}
+.navlink.sel{background:var(--ink-100);color:var(--ink-950);font-weight:600}
+.navlink .sg{font-family:var(--geo);font-weight:600;letter-spacing:.06em;font-size:12.5px;min-width:64px;color:var(--ink-900)}
+.navlink .nm{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:12px;color:var(--ink-500);font-weight:400}
+.navlink .ct{font-size:10.5px;color:var(--ink-400);font-variant-numeric:tabular-nums}
+.rec{font-size:12.5px;padding:6px 10px}
+.rec .sg{min-width:0;font-size:11px;color:var(--ocre-700)}
+.rec .nm{color:var(--ink-700);font-size:12.5px}
+.sidenote{border-top:1px solid var(--ink-100);padding:12px 16px;font-size:11px;line-height:1.5;color:var(--ink-500)}
+.sidenote b{font-weight:600;color:var(--ink-700)}
+.sidenote.aviso{background:var(--ocre-50);color:var(--ocre-700)}
+/* MAIN */
+.main{grid-column:2;grid-row:1;display:flex;flex-direction:column;min-height:0;min-width:0;padding:22px 30px 0}
+.phead{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:14px}
+.eyebrow{font-family:var(--geo);text-transform:uppercase;font-size:10px;font-weight:600;letter-spacing:.18em;color:var(--ink-400)}
+.ptitle{font-family:var(--geo);text-transform:uppercase;font-size:22px;font-weight:600;letter-spacing:.13em;color:var(--ink-950);margin-top:5px}
+.ul{height:2px;width:28px;background:var(--ocre);border-radius:2px;margin-top:9px}
+.mnav{display:none}
+.mscrim{display:none}
+.searchbar{position:relative;display:flex;gap:10px;align-items:center}
+.searchbar svg.lupa{position:absolute;left:15px;top:50%;transform:translateY(-50%);width:18px;height:18px;color:var(--ink-400);pointer-events:none}
+.searchbar input{flex:1;min-width:0;height:50px;padding:0 44px 0 44px;border:1px solid var(--ink-300);border-radius:10px;background:#fff;font-size:17px;color:var(--ink-900);outline:none;box-shadow:var(--sombra);font-family:var(--sans)}
+.searchbar input::-webkit-search-cancel-button,.searchbar input::-webkit-search-decoration{-webkit-appearance:none;appearance:none;display:none}
+.searchbar input::placeholder{color:var(--ink-400)}
+.searchbar input:focus{box-shadow:0 0 0 2px var(--ink-200);border-color:var(--ink-400)}
+.limpia{position:absolute;right:8px;top:50%;transform:translateY(-50%);width:34px;height:34px;border:0;background:none;border-radius:9px;color:var(--ink-400);cursor:pointer;display:none;align-items:center;justify-content:center}
+.limpia:hover{background:var(--ink-100);color:var(--ink-700)}
+.limpia svg{width:16px;height:16px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:11px 0 12px;min-height:30px}
+.chip{border:1px solid var(--ink-200);background:#fff;border-radius:99px;padding:5px 12px;font-family:var(--geo);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-600);cursor:pointer;display:inline-flex;gap:7px;align-items:center}
+.chip:hover{background:var(--ink-50);border-color:var(--ink-300)}
+.chip.on{background:var(--grafito);border-color:var(--grafito);color:#fff}
+.chip i{font-style:normal;font-family:var(--sans);font-weight:500;font-size:10.5px;opacity:.7;font-variant-numeric:tabular-nums;letter-spacing:0}
+.split{flex:1;min-height:0;display:grid;grid-template-columns:minmax(300px,390px) 1fr;gap:16px;padding-bottom:16px}
+.lista{overflow:auto;background:#fff;border:1px solid var(--ink-200);border-radius:12px;box-shadow:var(--sombra);min-height:0}
+.lector{overflow:auto;background:#fff;border:1px solid var(--ink-200);border-radius:12px;box-shadow:var(--sombra);min-height:0;position:relative;outline:none}
+.lista-h{position:sticky;top:0;background:#fff;z-index:2;padding:11px 16px;border-bottom:1px solid var(--ink-100);font-family:var(--geo);text-transform:uppercase;font-size:10.5px;font-weight:600;letter-spacing:.11em;color:var(--ink-600)}
+.lista-h small{font-family:var(--sans);text-transform:none;letter-spacing:0;font-weight:400;color:var(--ink-500);font-size:11.5px;margin-left:6px}
+.item{display:flex;gap:10px;padding:11px 16px;border-bottom:1px solid var(--ink-100);cursor:pointer;align-items:flex-start;scroll-margin:48px 0 8px}
+.item:hover{background:var(--ink-50)}
+.item.sel{background:var(--ink-100);box-shadow:inset 3px 0 0 var(--ocre)}
+.item .nn{font-family:var(--mono);font-size:10.5px;color:var(--ink-400);width:12px;padding-top:3px;text-align:right;flex-shrink:0}
+.item .bd{min-width:0;flex:1}
+.item .l1{display:flex;gap:8px;align-items:baseline}
+.sg-chip{font-family:var(--geo);font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;background:var(--ink-100);color:var(--ink-600);border-radius:99px;padding:2px 8px;white-space:nowrap}
+.item.sel .sg-chip{background:#fff}
+.item .ar{font-weight:600;font-size:13.5px;color:var(--ink-950);white-space:nowrap;font-variant-numeric:tabular-nums}
+.item .ti{font-size:12.5px;color:var(--ink-600);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.item .sn{margin-top:4px;font-size:12px;line-height:1.45;color:var(--ink-500);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;overflow-wrap:anywhere}
+.grp{padding:9px 16px 6px;font-family:var(--geo);font-size:9.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ocre-700);background:var(--ink-50);border-bottom:1px solid var(--ink-100);position:sticky;top:41px;z-index:1;line-height:1.4}
+mark{background:var(--ocre-100);color:inherit;border-radius:3px;padding:0 1px}
+.vacio{padding:34px 24px;color:var(--ink-500);font-size:13.5px;line-height:1.6}
+.vacio b{color:var(--ink-800)}
+.vacio .ej{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.ejb{border:1px solid var(--ink-200);background:#fff;border-radius:9px;padding:8px 12px;font-family:var(--mono);font-size:12.5px;color:var(--ink-700);cursor:pointer}
+.ejb:hover{background:var(--ink-50);border-color:var(--ink-300)}
+.hint{margin-top:18px;font-size:12.5px;color:var(--ink-500);line-height:1.7}
+.hint kbd,.kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--ink-200);border-bottom-width:2px;border-radius:6px;padding:1px 6px;background:var(--ink-50);color:var(--ink-700)}
+/* LECTOR */
+.lect-in{max-width:780px;margin:0 auto;padding:22px 30px 40px}
+.l-bar{position:sticky;top:0;z-index:3;background:rgba(255,255,255,.96);backdrop-filter:blur(4px);border-bottom:1px solid var(--ink-100);display:flex;gap:8px;align-items:center;padding:10px 16px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--ink-200);border-radius:9px;background:#fff;padding:7px 12px;font-family:var(--geo);font-weight:500;font-size:11.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-600);cursor:pointer;text-decoration:none;white-space:nowrap;min-height:34px}
+.btn:hover{background:var(--ink-50);border-color:var(--ink-300)}
+.btn svg{width:14px;height:14px}
+.btn.p{background:var(--grafito);border-color:var(--grafito);color:#fff}
+.btn.p:hover{background:#212327}
+.btn.ok{background:#F3F8F4;border-color:#cfe0d4;color:var(--sage)}
+.btn.on{background:var(--ink-100);border-color:var(--ink-300);color:var(--ink-900)}
+.btn[disabled]{opacity:.4;cursor:default}
+.sp{flex:1}
+.volver{display:none}
+.a-eye{font-family:var(--geo);text-transform:uppercase;font-size:10px;font-weight:600;letter-spacing:.14em;color:var(--ocre-600);line-height:1.6}
+.a-eye span{color:var(--ink-400)}
+.a-h{font-family:var(--geo);font-size:24px;font-weight:600;letter-spacing:.005em;color:var(--ink-950);margin:8px 0 4px;line-height:1.25}
+.a-h small{display:block;font-family:var(--sans);font-size:15px;font-weight:500;color:var(--ink-600);letter-spacing:0;margin-top:5px;line-height:1.4}
+.a-meta{font-size:11.5px;color:var(--ink-400);margin:8px 0 18px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.a-meta .der{color:var(--brick);font-weight:600}
+.a-body{font-size:var(--fs);line-height:1.68;color:var(--ink-900)}
+.a-body p{margin:0 0 .85em;overflow-wrap:anywhere}
+.a-body p.ap{border-radius:8px;transition:background .3s}
+.a-body p.ap.foco{background:var(--ocre-50);box-shadow:-10px 0 0 var(--ocre-50),10px 0 0 var(--ocre-50),inset 3px 0 0 var(--ocre);padding-left:10px;margin-left:-10px}
+.a-body p.sub{font-family:var(--geo);font-weight:600;text-transform:uppercase;letter-spacing:.09em;font-size:.82em;color:var(--ink-700);margin-top:1.4em}
+.a-body ul{margin:0 0 .85em 1.3em}
+.a-body li{margin-bottom:.3em}
+.a-body p.nota{display:none;font-size:.78em;line-height:1.5;color:var(--ink-500);background:var(--ink-50);border-left:3px solid var(--ink-200);border-radius:0 8px 8px 0;padding:6px 10px;margin:0 0 .85em}
+body.con-notas .a-body p.nota{display:block}
+.a-body .tw{overflow:auto;margin:0 0 1em;border:1px solid var(--ink-200);border-radius:10px}
+.a-body table{border-collapse:collapse;font-size:.82em;line-height:1.4;width:100%}
+.a-body th{background:var(--ink-100);text-align:left;font-weight:600;padding:6px 10px;border-bottom:1px solid var(--ink-200)}
+.a-body td{padding:5px 10px;border-top:1px solid var(--ink-100);vertical-align:top}
+.a-body a.ref{color:var(--ocre-700);text-decoration:underline dotted;text-underline-offset:3px;text-decoration-color:var(--ocre)}
+.a-body a.ref:hover{background:var(--ocre-50)}
+.sep-art{border:0;border-top:1px solid var(--ink-200);margin:30px 0 26px}
+.aviso-n{background:var(--ocre-50);border:1px solid #EADFCF;border-radius:12px;padding:9px 13px;font-size:12px;color:var(--ocre-700);margin:0 0 16px}
+.foot{grid-column:2;grid-row:2;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:9px 30px;border-top:1px solid var(--ink-200);background:var(--ink-50)}
+.foot span{font-family:var(--geo);text-transform:uppercase;font-size:10px;font-weight:600;letter-spacing:.13em;color:var(--ink-400)}
+.foot .lg{display:flex;align-items:center;gap:8px}.foot .lg .logo{width:15px;height:15px;background:url(@@LOGO@@) center/contain no-repeat;opacity:.6}
+.foot .legal{text-align:right;text-transform:none;letter-spacing:0;font-family:var(--sans);font-weight:400;font-size:11px}
+#carga{position:fixed;inset:0;background:var(--ink-50);display:flex;align-items:center;justify-content:center;font-family:var(--geo);text-transform:uppercase;letter-spacing:.14em;font-size:12px;color:var(--ink-500);z-index:50;text-align:center;padding:20px}
+.toast{position:fixed;left:50%;bottom:34px;transform:translateX(-50%);background:var(--grafito);color:#fff;padding:9px 16px;border-radius:9px;font-size:13px;z-index:60;box-shadow:var(--pop)}
+@media (max-width:1100px){.split{grid-template-columns:minmax(260px,330px) 1fr}.main{padding:20px 20px 0}}
+@media (max-width:860px){
+ .app{grid-template-columns:1fr}
+ .sidebar{position:fixed;left:0;top:0;bottom:0;width:272px;z-index:40;transform:translateX(-100%);transition:transform .2s;box-shadow:var(--pop)}
+ body.navopen .sidebar{transform:none}
+ .mscrim{display:block;position:fixed;inset:0;background:rgba(11,13,22,.35);z-index:35;opacity:0;pointer-events:none;transition:opacity .2s}
+ body.navopen .mscrim{opacity:1;pointer-events:auto}
+ .mnav{display:flex;position:fixed;left:10px;top:max(10px,env(safe-area-inset-top));z-index:30;width:44px;height:44px;align-items:center;justify-content:center;border:1px solid var(--ink-200);border-radius:10px;background:#fff;color:var(--ink-700);box-shadow:var(--sombra)}
+ .mnav svg{width:20px;height:20px}
+ .main{grid-column:1;padding:max(12px,env(safe-area-inset-top)) 12px 0 12px}
+ .phead{padding-left:54px;margin-bottom:10px;min-height:44px}
+ .ptitle{font-size:17px;margin-top:2px}.eyebrow{display:none}.ul{margin-top:6px}
+ .searchbar input{font-size:16px;height:48px}
+ .split{grid-template-columns:1fr;padding-bottom:8px}
+ .lector{display:none}
+ body.ver-lector .lista{display:none}
+ body.ver-lector .lector{display:block}
+ body.ver-lector .chips,body.ver-lector .searchbar{display:none}
+ .volver{display:inline-flex}
+ .lect-in{padding:16px 16px 36px}
+ .a-h{font-size:20px}
+ .foot{grid-column:1;padding:8px 12px;padding-bottom:max(8px,env(safe-area-inset-bottom))}
+ .foot .legal{display:none}
+ .grp{top:41px}
+ .btn{min-height:44px}
+ .l-bar .txt-largo{display:none}
+}
+@media print{.sidebar,.searchbar,.chips,.lista,.l-bar,.foot,.mnav{display:none!important}body{overflow:visible}.app,.split{display:block;height:auto}.lector{border:0;box-shadow:none;overflow:visible}}
+</style>
+</head>
+<body>
+<div id="carga">Cargando normas…</div>
+<div class="mscrim" id="scrim"></div>
+<button class="mnav" id="mnav" aria-label="Abrir menú"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+<div class="app">
+ <aside class="sidebar" id="sidebar" aria-label="Menú">
+  <div class="brand"><div class="logo"></div><div><div class="an">Normas</div><div class="fm">Artigas Abogados</div></div></div>
+  <div class="tree">
+   <button class="navlink" id="nav-buscar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>Buscar</button>
+   <div class="nsec">Normas</div>
+   <div id="nav-normas"></div>
+   <div class="nsec" id="nsec-rec" style="display:none">Recientes</div>
+   <div id="nav-rec"></div>
+  </div>
+  <div class="sidenote" id="sidenote"></div>
+ </aside>
+ <main class="main">
+  <div class="phead"><div><div class="eyebrow">Herramientas internas</div><h1 class="ptitle">Consulta de normas</h1><div class="ul"></div></div></div>
+  <div class="searchbar">
+   <svg class="lupa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+   <input id="q" type="search" inputmode="search" enterkeyhint="search" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="Buscar un artículo o un concepto" placeholder="282 LEC · 18.3 PH · 5 LO 1/2025 · declinatoria de jurisdicción">
+   <button class="limpia" id="limpia" aria-label="Borrar búsqueda" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </div>
+  <div class="chips" id="chips" role="group" aria-label="Filtrar por norma"></div>
+  <div class="split">
+   <section class="lista" id="lista" role="listbox" aria-label="Resultados" tabindex="-1"></section>
+   <section class="lector" id="lector" tabindex="0" aria-label="Texto del artículo"></section>
+  </div>
+ </main>
+ <footer class="foot"><div class="lg"><div class="logo"></div><span>Artigas Abogados · Consulta de normas</span></div><span class="legal">Texto consolidado (espejo del BOE) sin valor oficial. Contrasta con boe.es antes de citar literalmente.</span></footer>
+</div>
+<script id="datos" type="application/octet-stream">@@DATOS@@</script>
+<script>
+(function(){
+'use strict';
+var COMPILADO='@@COMPILADO@@';
+var $=function(s,r){return (r||document).querySelector(s)};
+var esc=function(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')};
+var norm=function(s){return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')};
+var flat=function(s){return ' '+norm(s).replace(/[^a-z0-9]+/g,' ').trim()+' '};
+var DATA=null,NORMAS=[],POR={},INDEXADO=false;
+var ST={mode:'home',items:[],sel:-1,q:'',filtro:null,stack:false,hl:null,ap:null,ver:false,todos:[],nid:null,parcial:false};
+var LS={get:function(k,d){try{var v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},set:function(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+var MOVIL=function(){return window.matchMedia('(max-width:860px)').matches};
+var fdate=function(iso){if(!iso)return '';var p=iso.split('-');return p[2]+'-'+p[1]+'-'+p[0]};
+
+/* ---------- carga ---------- */
+function cargar(){
+  var b64=document.getElementById('datos').textContent.trim();
+  var bin=atob(b64),u8=new Uint8Array(bin.length);
+  for(var i=0;i<bin.length;i++)u8[i]=bin.charCodeAt(i);
+  if(typeof DecompressionStream==='undefined')return Promise.reject(new Error('Este navegador no puede abrir los datos (hace falta Safari 16.4 o Chrome 80 o superior).'));
+  var ds=new Blob([u8]).stream().pipeThrough(new DecompressionStream('gzip'));
+  return new Response(ds).text().then(function(t){return JSON.parse(t)});
+}
+function prepara(){
+  DATA.normas.forEach(function(n){
+    n.map=new Map();n.rangos=[];n.max=0;n.secuencial_mod=(n.id==='lo1-2025');
+    n.ch.forEach(function(c,i){
+      c.i=i;c.n=n;c.num=null;
+      var m=/^(\d+)(?: (.*))?$/.exec(c.k);
+      if(m){c.num=+m[1];c.suf=m[2]||'';if(c.num>n.max)n.max=c.num}
+      var r=/^(\d+)-(\d+)$/.exec(c.k);
+      if(r){n.rangos.push([+r[1],+r[2],c]);if(+r[2]>n.max)n.max=+r[2]}
+      n.map.set(c.k,c);
+      c.notas=0;var ls=c.b.split('\n');for(var j=0;j<ls.length;j++)if(ls[j].charAt(0)==='>')c.notas++;
+    });
+    n.cuenta=n.ch.filter(function(c){return c.k!=='cab'&&c.k!=='pre'}).length;
+    POR[n.id]=n;NORMAS.push(n);
+  });
+}
+function indexa(){
+  if(INDEXADO)return;
+  NORMAS.forEach(function(n){n.ch.forEach(function(c){c.ft=flat(c.e+' '+c.t);c.fb=flat(plano(c));c.len=c.fb.length})});
+  INDEXADO=true;
+}
+function plano(c){
+  if(c._p!==undefined)return c._p;
+  var out=[],ls=c.b.split('\n'),i,l;
+  for(i=0;i<ls.length;i++){
+    l=ls[i];
+    if(!l.trim()||l.charAt(0)==='>')continue;
+    if(l.charAt(0)==='|'){
+      if(/^\|[\s\-:|]+\|?\s*$/.test(l))continue;
+      out.push(l.replace(/^\|\s*/,'').replace(/\s*\|\s*$/,'').replace(/\s*\|\s*/g,' | '));continue;
+    }
+    out.push(l.replace(/^#+\s*/,'').replace(/\*\*/g,'').replace(/(^|[^\w])\*([^*\n]+)\*/g,'$1$2'));
+  }
+  c._p=out.join('\n');return c._p;
+}
+
+/* ---------- alias y consulta directa ---------- */
+var ALIAS=[
+ ['lec','ley de enjuiciamiento civil|enjuiciamiento civil|ley 1/2000|lec'],
+ ['lo1-2025','ley organica 1/2025|ley 1/2025|lo 1/2025|lo1/2025|lo 1 2025|1/2025'],
+ ['lau','ley de arrendamientos urbanos|arrendamientos urbanos|ley 29/1994|lau'],
+ ['lph','ley de propiedad horizontal|propiedad horizontal|ley 49/1960|lph|ph'],
+ ['cc','codigo civil|cod civil|cciv|cc'],
+ ['lopj','ley organica del poder judicial|poder judicial|lo 6/1985|lopj'],
+ ['lopdgdd','ley organica de proteccion de datos|lo 3/2018|lopdgdd|lopd'],
+ ['ce','constitucion espanola|constitucion|ce']
+];
+var ALIAS_MAP={},ALIAS_ALT='';
+(function(){var l=[];ALIAS.forEach(function(a){a[1].split('|').forEach(function(x){ALIAS_MAP[x]=a[0];l.push(x)})});l.sort(function(a,b){return b.length-a.length});ALIAS_ALT=l.map(function(x){return x.replace(/[.*+?^${}()|[\]\\\/]/g,'\\$&')}).join('|')})();
+var RE_FIN=new RegExp('^(.*?)\\s*(?:(?:de|en)\\s+(?:la|el|los|las)\\s+|del\\s+|de\\s+)?('+ALIAS_ALT+')$');
+var RE_INI=new RegExp('^('+ALIAS_ALT+')\\s*(?:[:,\\-]\\s*)?(.*)$');
+var SUF='bis|ter|quater|quinquies|sexies|septies|octies|nonies|decies';
+var ORD={primera:1,primero:1,segunda:2,segundo:2,tercera:3,tercero:3,cuarta:4,cuarto:4,quinta:5,quinto:5,sexta:6,sexto:6,septima:7,septimo:7,octava:8,octavo:8,novena:9,noveno:9,decima:10,decimo:10,undecima:11,duodecima:12};
+var ORDDEC={decimo:10,decima:10,vigesimo:20,vigesima:20,trigesimo:30,trigesima:30,cuadragesimo:40,cuadragesima:40};
+function ordinal(t){t=t.replace(/\s+/g,'');if(/^\d+$/.test(t))return +t;if(t==='unica'||t==='unico')return 'u';if(ORD[t]!=null)return ORD[t];
+  for(var p in ORDDEC){if(t.indexOf(p)===0){var r=t.slice(p.length);if(ORD[r]!=null&&ORD[r]<10)return ORDDEC[p]+ORD[r]}}return null}
+function parsePieza(p){
+  p=p.trim();var m;
+  if((m=/^(\d+)\s*(?:-|a|al)\s*(\d+)$/.exec(p)))return {t:'rango',a:+m[1],b:+m[2]};
+  if((m=new RegExp('^(\\d+)(?:\\s*('+SUF+')(?:\\s+([a-z]|\\d+))?)?(?:\\.(\\d+))?$').exec(p)))return {t:'art',num:+m[1],suf:m[2]?(m[2]+(m[3]?' '+m[3]:'')):'',ap:m[4]||null};
+  if((m=/^(da|dt|df|dd)\s*([a-z0-9]*)$/.exec(p))){var o=m[2]?ordinal(m[2]):'u';if(o!=null)return {t:'disp',k:m[1]+o}}
+  if((m=/^disp\w*\.?\s*(adicional|transitoria|final|derogatoria)\s*([a-z0-9 ]*)$/.exec(p))){var pf={adicional:'da',transitoria:'dt','final':'df',derogatoria:'dd'}[m[1]];var o2=m[2].trim()?ordinal(m[2]):'u';if(o2!=null)return {t:'disp',k:pf+o2}}
+  return null;
+}
+function preQ(q){
+  var s=norm(q).trim().replace(/\bc\.\s*c\.?/g,'cc').replace(/\bc\.\s*civ\.?/g,'cc').replace(/\bl\.\s*e\.\s*c\.?/g,'lec').replace(/\bl\.\s*o\.\s*/g,'lo ').replace(/[“”"']/g,'');
+  return s.replace(/\s+/g,' ');
+}
+function parseConsulta(q){
+  var s=preQ(q);if(!s)return null;
+  var alias=null,spec=s,m;
+  if((m=RE_FIN.exec(s))&&m[1].replace(/(?:articulos?|arts?\.?)\s*/g,'').trim()!==''){alias=ALIAS_MAP[m[2]];spec=m[1]}
+  else if((m=RE_INI.exec(s))){alias=ALIAS_MAP[m[1]];spec=m[2]}
+  else if((m=RE_FIN.exec(s))){alias=ALIAS_MAP[m[2]];spec=m[1]}
+  spec=spec.replace(/^(?:los\s+|las\s+)?(?:articulos?|arts?\.?|art\b)\s*/,'').replace(/^\s*(?:de|del)\s+/,'').trim();
+  if(!spec){return alias?{alias:alias,piezas:[]}:null}
+  var trozos=spec.split(/\s*(?:,|;|\by\b|\be\b)\s*/),piezas=[];
+  for(var i=0;i<trozos.length;i++){var p=parsePieza(trozos[i].replace(/^(?:articulos?|arts?\.?)\s*/,''));if(!p)return null;piezas.push(p)}
+  return {alias:alias,piezas:piezas};
+}
+function buscaArt(n,num,suf){
+  var k=num+(suf?' '+suf:''),c=n.map.get(k);if(c)return c;
+  if(!suf)for(var i=0;i<n.rangos.length;i++)if(num>=n.rangos[i][0]&&num<=n.rangos[i][1])return n.rangos[i][2];
+  return null;
+}
+function resuelve(cons){
+  var normas=cons.alias?[POR[cons.alias]]:NORMAS,items=[],ap=null,avisos=[],vistos=new Set();
+  cons.piezas.forEach(function(p){
+    normas.forEach(function(n){
+      var cs=[];
+      if(p.t==='art'){var c=buscaArt(n,p.num,p.suf);if(c)cs.push(c);else if(cons.alias)avisos.push('El '+n.sigla+' no tiene el artículo '+p.num+(p.suf?' '+p.suf:'')+(p.num>n.max?' (llega al '+n.max+')':''));if(p.ap&&c)ap=p.ap}
+      else if(p.t==='rango'){var a=Math.min(p.a,p.b),b=Math.max(p.a,p.b);n.ch.forEach(function(c){if(c.num!=null&&c.num>=a&&c.num<=b)cs.push(c)});n.rangos.forEach(function(r){if(r[1]>=a&&r[0]<=b&&cs.indexOf(r[2])<0)cs.push(r[2])});cs.sort(function(x,y){return x.i-y.i});if(!cs.length&&cons.alias)avisos.push('El '+n.sigla+' no tiene artículos entre el '+a+' y el '+b);cs=cs.slice(0,80)}
+      else if(p.t==='disp'){var c2=n.map.get(p.k);if(c2)cs.push(c2);else if(cons.alias)avisos.push('El '+n.sigla+' no tiene esa disposición ('+p.k.toUpperCase()+')')}
+      cs.forEach(function(c){var id=c.n.id+'|'+c.k;if(!vistos.has(id)){vistos.add(id);items.push({c:c})}});
+    });
+  });
+  return {items:items,ap:ap,avisos:avisos};
+}
+
+/* ---------- búsqueda de texto ---------- */
+var STOP=new Set('de la el los las del en y a o por para con un una al se que su sus lo es no le les como mas ya sin sobre entre'.split(' '));
+var SAFE={lec:'lec',lau:'lau',lph:'lph',cc:'cc',cciv:'cc',lopj:'lopj',lopdgdd:'lopdgdd'};
+function stem(t){if(t.length>=6&&/es$/.test(t))return t.slice(0,-2);if(t.length>=4&&/s$/.test(t))return t.slice(0,-1);return t}
+function patronAcentos(t){return t.replace(/[aeioun]/g,function(ch){return {a:'[aáàâä]',e:'[eéèêë]',i:'[iíìîï]',o:'[oóòôö]',u:'[uúùûü]',n:'[nñ]'}[ch]})}
+function buscarTexto(q,filtroAlias){
+  var qq=q.trim(),exacta=/^".+"$/.test(qq);
+  var qn=preQ(qq);
+  var words=qn.split(/[^a-z0-9/]+/).filter(Boolean);
+  if(words.length>1&&SAFE[words[words.length-1]]&&!filtroAlias){filtroAlias=SAFE[words.pop()]}
+  else if(words.length>1&&SAFE[words[0]]&&!filtroAlias){filtroAlias=SAFE[words.shift()]}
+  var toks=[];words.forEach(function(w){w=w.replace(/\//g,' ').trim();w.split(' ').forEach(function(x){if(x&&!STOP.has(x)&&toks.indexOf(x)<0)toks.push(x)})});
+  if(!toks.length)return {items:[],hl:null,parcial:false,filtroAlias:filtroAlias,todos:[]};
+  indexa();
+  var stems=toks.map(stem).map(function(t){return ' '+t});
+  var frase=' '+words.join(' ').replace(/\//g,' ').replace(/\s+/g,' ').trim()+' ';
+  var conFrase=toks.length>1||exacta;
+  var hl=new RegExp('(?<![\\p{L}\\p{N}])(?:'+toks.map(function(t){return patronAcentos(stem(t).replace(/[.*+?^${}()|[\]\\]/g,'\\$&'))}).join('|')+')[\\p{L}\\p{N}]*','giu');
+  function pasada(requiereTodos){
+    var res=[];
+    for(var a=0;a<NORMAS.length;a++){
+      var n=NORMAS[a];
+      for(var b=0;b<n.ch.length;b++){
+        var c=n.ch[b],fb=c.fb,ft=c.ft,hits=0,sc=0,k;
+        for(k=0;k<stems.length;k++){
+          var st=stems[k],tf=0,pos=fb.indexOf(st);
+          while(pos>=0&&tf<12){tf++;pos=fb.indexOf(st,pos+1)}
+          var enT=ft.indexOf(st)>=0;
+          if(tf||enT){hits++;sc+=Math.log(1+tf)*10+(enT?26:0)}
+        }
+        if(requiereTodos?hits<stems.length:hits===0)continue;
+        if(exacta&&fb.indexOf(frase)<0&&ft.indexOf(frase)<0)continue;
+        sc=sc/(1+0.38*Math.log(1+c.len/2000));
+        if(conFrase){if(ft.indexOf(frase)>=0)sc+=60;var pf=fb.indexOf(frase);if(pf>=0){var cnt=0;while(pf>=0&&cnt<6){cnt++;pf=fb.indexOf(frase,pf+1)}sc+=18+cnt*4}}
+        if(!requiereTodos)sc=sc*hits/stems.length;
+        if(c.k==='pre'||c.k==='cab')sc*=0.55;
+        res.push({c:c,s:sc,ord:a});
+      }
+    }
+    res.sort(function(x,y){return y.s-x.s||x.ord-y.ord||x.c.i-y.c.i});
+    return res;
+  }
+  var res=pasada(true),parcial=false;
+  if(!res.length&&toks.length>1){res=pasada(false);parcial=true}
+  var todos=res;
+  if(filtroAlias)res=res.filter(function(r){return r.c.n.id===filtroAlias});
+  return {items:res,hl:hl,parcial:parcial,filtroAlias:filtroAlias,todos:todos};
+}
+
+/* ---------- referencias cruzadas ---------- */
+var NOMBRES_NORMA=[
+ ['lec','ley de enjuiciamiento civil|ley 1/2000|lec'],['lau','ley de arrendamientos urbanos|ley 29/1994|lau'],
+ ['lph','ley sobre propiedad horizontal|ley de propiedad horizontal|ley 49/1960|lph'],['cc','codigo civil|cciv'],
+ ['lopj','ley organica del poder judicial|ley organica 6/1985|lopj'],['lopdgdd','ley organica 3/2018|lopdgdd'],
+ ['lo1-2025','ley organica 1/2025'],['ce','constitucion espanola|constitucion|ce']
+];
+var RE_NOM=NOMBRES_NORMA.map(function(x){return [x[0],new RegExp('^('+x[1].replace(/[\/.]/g,'\\$&')+')\\b')]});
+var RE_OTRA=/\b(?:de|del)\s+(?:la\s+|el\s+|los\s+|las\s+|esta\s+|este\s+|presente\s+|dicha\s+|dicho\s+|citad[oa]\s+|referid[oa]\s+|mencionad[oa]\s+|misma\s+|mismo\s+|propia\s+|propio\s+)?(?:ley|codigo|real|reglamento|constitucion|estatuto|texto|tratado|convenio|directiva|decreto|orden|lo\b|l\.o|lec\b|lopj\b|lau\b|lph\b|cc\b|ce\b|lopdgdd\b|norma|ordenanza|reglamento|carta|pacto|acuerdo|disposicion)/;
+function destinoRef(resto,n,c){
+  var s=norm(resto.slice(0,110)),corte=s.search(/[.;:](?=\s|$)/);if(corte>=0)s=s.slice(0,corte);
+  var m=RE_OTRA.exec(s);
+  var propia=n.secuencial_mod,esAncla=(c.k==='pre'||c.k==='cab');
+  if(!m){return (propia||esAncla)?null:n.id}
+  var tras=s.slice(m.index).replace(/^(?:de|del)\s+(?:la\s+|el\s+|los\s+|las\s+)?/,'');
+  if(/^(esta|este|presente)\b/.test(norm(s.slice(m.index).replace(/^(?:de|del)\s+/,'').replace(/^(?:la\s+|el\s+)/,'')))){return propia?null:n.id}
+  for(var i=0;i<RE_NOM.length;i++){if(RE_NOM[i][1].test(tras))return RE_NOM[i][0]}
+  return null;
+}
+var NUMT='(?:\\d{1,3}(?:\\.\\d{3})+|\\d+)';
+var RE_REF=new RegExp('\\b(art[ií]culos?|arts?\\.)(\\s+'+NUMT+'(?:\\s+(?:'+SUF+'|qu[aá]ter))?(?:\\.\\d{1,2})?(?:\\s*(?:,|y|e|a|al)\\s+'+NUMT+'(?:\\s+(?:'+SUF+'))?(?:\\.\\d{1,2})?)*)','gi');
+var RE_NUM=new RegExp('('+NUMT+')(?:\\s+('+SUF+'))?(?:\\.(\\d{1,2}))?','gi');
+function enlaza(esc_txt,c){
+  var n=c.n;
+  return esc_txt.replace(RE_REF,function(m,kw,cuerpo,off,whole){
+    var dest=destinoRef(whole.slice(off+m.length),n,c);if(!dest)return m;
+    var tn=POR[dest];if(!tn)return m;
+    var linked=cuerpo.replace(RE_NUM,function(x,a,sf,ap){
+      var num=+a.replace(/\./g,''),t=buscaArt(tn,num,sf?sf.toLowerCase():'');if(!t)return x;
+      var h='#a/'+tn.id+'/'+encodeURIComponent(t.k)+(ap?'/'+ap:'');
+      return '<a class="ref" href="'+h+'" title="'+esc(tn.sigla+' · '+t.e+(t.t?'. '+t.t:''))+'">'+x+'</a>';
+    });
+    return kw+linked;
+  });
+}
+/* ---------- render del texto ---------- */
+function inline(t){return esc(t).replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>').replace(/(^|[^\w*])\*([^*\n]+)\*(?![\w*])/g,'$1<i>$2</i>')}
+function render(c){
+  var ls=c.b.split('\n'),h=[],i=0,l,m;
+  var enlazable=true;
+  while(i<ls.length){
+    l=ls[i];
+    if(!l.trim()){i++;continue}
+    if(l.charAt(0)==='|'){
+      var f=[];while(i<ls.length&&ls[i].charAt(0)==='|'){f.push(ls[i]);i++}
+      var cel=function(r){return r.replace(/^\|/,'').replace(/\|\s*$/,'').split('|').map(function(x){return x.trim()})};
+      var hd=cel(f[0]),ini=1;if(f[1]&&/^\|[\s\-:|]+\|?\s*$/.test(f[1]))ini=2;
+      var t='<div class="tw"><table><thead><tr>'+hd.map(function(x){return '<th>'+inline(x)+'</th>'}).join('')+'</tr></thead><tbody>';
+      for(var j=ini;j<f.length;j++)t+='<tr>'+cel(f[j]).map(function(x){return '<td>'+inline(x)+'</td>'}).join('')+'</tr>';
+      h.push(t+'</tbody></table></div>');continue;
+    }
+    if(l.charAt(0)==='>'){h.push('<p class="nota">'+inline(l.replace(/^>\s*/,''))+'</p>');i++;continue}
+    if(l.charAt(0)==='#'){h.push('<p class="sub">'+inline(l.replace(/^#+\s*/,''))+'</p>');i++;continue}
+    if(/^[-*]\s+/.test(l)){var li=[];while(i<ls.length&&/^[-*]\s+/.test(ls[i])){li.push('<li>'+(enlazable?enlaza(inline(ls[i].replace(/^[-*]\s+/,'')),c):inline(ls[i].replace(/^[-*]\s+/,''))) +'</li>');i++}h.push('<ul>'+li.join('')+'</ul>');continue}
+    var ap=(m=/^(\d+)\.(?:\s|ª|º)/.exec(l))?' class="ap" data-ap="'+m[1]+'"':'';
+    var cuerpo=inline(l);
+    h.push('<p'+ap+'>'+enlaza(cuerpo,c)+'</p>');i++;
+  }
+  return h.join('');
+}
+function marca(el,re){
+  if(!re)return;
+  var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null),nodos=[],x;
+  while((x=w.nextNode())){if(x.parentNode.closest&&x.parentNode.closest('mark,script,style'))continue;nodos.push(x)}
+  nodos.forEach(function(nd){
+    re.lastIndex=0;var t=nd.nodeValue,m,ult=0,fr=null;
+    while((m=re.exec(t))){
+      if(!fr)fr=document.createDocumentFragment();
+      if(m.index>ult)fr.appendChild(document.createTextNode(t.slice(ult,m.index)));
+      var mk=document.createElement('mark');mk.textContent=m[0];fr.appendChild(mk);ult=m.index+m[0].length;
+      if(m[0].length===0)re.lastIndex++;
+    }
+    if(fr){if(ult<t.length)fr.appendChild(document.createTextNode(t.slice(ult)));nd.parentNode.replaceChild(fr,nd)}
+  });
+}
+function snippet(c,hl){
+  var t=plano(c);if(!t)return '';
+  var pos=-1;if(hl){hl.lastIndex=0;var m=hl.exec(t);if(m)pos=m.index}
+  var a=pos>=0?Math.max(0,pos-70):0,b=Math.min(t.length,a+210);
+  var s=t.slice(a,b).replace(/\s+/g,' ');
+  if(a>0)s='… '+s.replace(/^\S*\s/,'');if(b<t.length)s=s.replace(/\s\S*$/,'')+' …';
+  var out=esc(s);
+  if(hl){out=out.replace(new RegExp(hl.source,'giu'),function(z){return '<mark>'+z+'</mark>'})}
+  return out;
+}
+
+/* ---------- vistas ---------- */
+var elLista=$('#lista'),elLector=$('#lector'),elQ=$('#q'),elChips=$('#chips');
+function toast(t){var d=document.createElement('div');d.className='toast';d.textContent=t;document.body.appendChild(d);setTimeout(function(){d.remove()},2600)}
+function cierraNav(){document.body.classList.remove('navopen')}
+
+function vistaInicio(){
+  ST.mode='home';ST.items=[];ST.sel=-1;ST.stack=false;
+  elChips.innerHTML='';
+  var ej=['282 LEC','18.3 PH','9 LAU','1902 CC','5 LO 1/2025','63-65 LEC','declinatoria de jurisdicción','desahucio por precario','requisito de procedibilidad'];
+  elLista.innerHTML='<div class="vacio"><b>Escribe un artículo o un concepto.</b><br>Artículo: «282 LEC», «art. 18.3 de la LPH», «1902 cc», «63-65 lec», «da 1 lec».<br>Sin norma («21») te enseño ese artículo en todas.<br>Concepto: cualquier palabra o frase; te saco los artículos que la contienen.<div class="ej">'+ej.map(function(e){return '<button class="ejb" data-q="'+esc(e)+'">'+esc(e)+'</button>'}).join('')+'</div><div class="hint"><span class="kbd">/</span> volver al buscador · <span class="kbd">↑</span> <span class="kbd">↓</span> moverse por la lista · <span class="kbd">Enter</span> abrir · <span class="kbd">←</span> <span class="kbd">→</span> artículo anterior/siguiente · <span class="kbd">1</span>–<span class="kbd">9</span> abrir resultado (fuera del buscador)</div></div>';
+  var rec=LS.get('normas.rec',[]);
+  elLector.innerHTML='<div class="lect-in"><div class="a-eye">Consulta rápida</div><h2 class="a-h" style="font-size:20px">'+NORMAS.length+' normas en este dispositivo</h2><div class="a-meta">Funciona sin conexión. Texto consolidado del BOE según el espejo del despacho.</div><div class="a-body">'+
+   NORMAS.map(function(n){return '<p><b>'+esc(n.sigla)+'</b> — '+esc(n.titulo)+'<br><span style="color:var(--ink-500);font-size:.85em">'+n.cuenta+' artículos y disposiciones · actualizada a '+fdate(n.act)+(n.est&&n.est!=='in_force'?' · <b style="color:var(--brick)">NO VIGENTE ('+esc(n.est)+')</b>':'')+'</span></p>'}).join('')+'</div></div>';
+  document.body.classList.remove('ver-lector');
+  marcaNav();
+}
+function vistaNorma(n,selK){
+  ST.mode='norma';ST.nid=n.id;ST.stack=false;
+  elChips.innerHTML='';
+  var items=n.ch.map(function(c){return {c:c}});ST.items=items;
+  var h='<div class="lista-h">'+esc(n.sigla)+'<small>'+esc(n.titulo)+'</small></div>',ult=null;
+  items.forEach(function(it,ix){var c=it.c;if(c.s!==ult&&c.s){h+='<div class="grp">'+esc(c.s)+'</div>';ult=c.s}
+    h+=itemHtml(it,ix,null,true)});
+  elLista.innerHTML=h;
+  var ix=-1;if(selK!=null)items.forEach(function(it,i){if(it.c.k===selK)ix=i});
+  ST.sel=ix;marcaSel(true);marcaNav();
+}
+function itemHtml(it,ix,hl,toc){
+  var c=it.c,num=(!toc&&ix<9)?'<span class="nn">'+(ix+1)+'</span>':'<span class="nn"></span>';
+  return '<div class="item" role="option" id="it'+ix+'" data-ix="'+ix+'" aria-selected="false">'+num+'<div class="bd"><div class="l1">'+(toc?'':'<span class="sg-chip">'+esc(c.n.sigla)+'</span>')+'<span class="ar">'+esc(c.k==='cab'?'Encabezado':(c.k==='pre'?c.e:abrev(c)))+'</span><span class="ti">'+esc(c.t||'')+'</span></div>'+(toc?'':'<div class="sn">'+snippet(c,hl)+'</div>')+'</div></div>';
+}
+function abrev(c){return c.e.replace(/^Artículos?/,function(m){return m==='Artículos'?'Arts.':'Art.'}).replace(/^Disposición adicional/,'D. adicional').replace(/^Disposición transitoria/,'D. transitoria').replace(/^Disposición final/,'D. final').replace(/^Disposición derogatoria/,'D. derogatoria')}
+function vistaLista(info,tituloExtra){
+  var items=ST.items,h='<div class="lista-h">'+info+'</div>';
+  if(!items.length){h+='<div class="vacio">'+(tituloExtra||'<b>Sin resultados.</b><br>Prueba con menos palabras, o con la raíz («declinator»).')+'</div>';elLista.innerHTML=h;elLector.innerHTML='<div class="lect-in"><div class="a-meta">Sin selección</div></div>';return}
+  if(tituloExtra)h+='<div class="aviso-n" style="margin:10px 12px 0">'+tituloExtra+'</div>';
+  var lim=Math.min(items.length,300);
+  for(var i=0;i<lim;i++)h+=itemHtml(items[i],i,ST.hl,false);
+  if(items.length>lim)h+='<div class="vacio">Mostrando '+lim+' de '+items.length+'. Afina la búsqueda o filtra por norma.</div>';
+  elLista.innerHTML=h;
+}
+function pintaChips(todos,filtro){
+  if(!todos||!todos.length){elChips.innerHTML='';return}
+  var cuenta={};todos.forEach(function(r){cuenta[r.c.n.id]=(cuenta[r.c.n.id]||0)+1});
+  var h='<button class="chip'+(!filtro?' on':'')+'" data-f="">Todas <i>'+todos.length+'</i></button>';
+  NORMAS.forEach(function(n){if(cuenta[n.id])h+='<button class="chip'+(filtro===n.id?' on':'')+'" data-f="'+n.id+'">'+esc(n.sigla)+' <i>'+cuenta[n.id]+'</i></button>'});
+  elChips.innerHTML=h;
+}
+function marcaSel(scroll){
+  var els=elLista.querySelectorAll('.item.sel');for(var i=0;i<els.length;i++){els[i].classList.remove('sel');els[i].setAttribute('aria-selected','false')}
+  if(ST.sel>=0){var el=elLista.querySelector('[data-ix="'+ST.sel+'"]');if(el){el.classList.add('sel');el.setAttribute('aria-selected','true');elLista.setAttribute('aria-activedescendant',el.id);if(scroll)el.scrollIntoView({block:'nearest'})}}
+}
+function marcaNav(){
+  $('#nav-buscar').classList.toggle('sel',ST.mode==='home'||ST.mode==='q');
+  var l=document.querySelectorAll('#nav-normas .navlink');for(var i=0;i<l.length;i++)l[i].classList.toggle('sel',ST.mode==='norma'&&l[i].dataset.n===ST.nid);
+}
+
+/* lector */
+function artHtml(c,ix){
+  var n=c.n,der=/\(Derogad[oa]s?\)/i.test(c.t+' '+c.b.slice(0,160));
+  var tit=c.k==='cab'?'Encabezado y notas previas':c.e;
+  return '<article id="art-'+ix+'" data-ix="'+ix+'"><div class="a-eye">'+esc(n.sigla)+(c.s?' <span>·</span> '+esc(c.s):'')+'</div><h2 class="a-h">'+esc(tit)+(c.t?'<small>'+esc(c.t)+'</small>':'')+'</h2><div class="a-meta"><span>'+esc(n.titulo)+'</span><span>Actualizada a '+fdate(n.act)+'</span>'+(der?'<span class="der">Derogado</span>':'')+(n.est&&n.est!=='in_force'?'<span class="der">Norma no vigente ('+esc(n.est)+')</span>':'')+(c.notas?'<span>'+c.notas+' nota'+(c.notas>1?'s':'')+' de reforma</span>':'')+'</div><div class="a-body">'+render(c)+'</div></article>';
+}
+function urlBoe(c){var n=c.n;return 'https://www.boe.es/buscar/act.php?id='+n.boe+(/^\d+$/.test(c.k)?'#a'+c.k:'')}
+function citaCorta(c){return (c.e.replace(/^Artículos?/,'Art.').replace(/^Disposición /,'Disp. ')+' '+c.n.sigla).replace('Artículo','Art.')}
+function mostrar(cs,opt){
+  opt=opt||{};
+  if(!cs.length)return;
+  ST.mostrados=cs;
+  var primero=cs[0],ultimo=cs[cs.length-1],n=primero.n,iPrev=primero.i-1,iNext=ultimo.i+1;
+  var prev=n.ch[iPrev],next=ultimo.n.ch[iNext];
+  var barra='<div class="l-bar">'+
+   '<button class="btn volver" id="b-volver"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg>Resultados</button>'+
+   '<button class="btn" id="b-prev"'+(prev?'':' disabled')+' title="Anterior (←)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg><span class="txt-largo">Anterior</span></button>'+
+   '<button class="btn" id="b-next"'+(next?'':' disabled')+' title="Siguiente (→)"><span class="txt-largo">Siguiente</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>'+
+   '<span class="sp"></span>'+
+   (cs.some(function(c){return c.notas})?'<button class="btn" id="b-notas" aria-pressed="false" title="Notas de reforma del BOE">Notas</button>':'')+
+   '<button class="btn" id="b-menos" aria-label="Letra más pequeña">A−</button><button class="btn" id="b-mas" aria-label="Letra más grande">A+</button>'+
+   '<button class="btn" id="b-boe">BOE</button>'+
+   '<button class="btn p" id="b-copiar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 012-2h9"/></svg>Copiar</button></div>';
+  var aviso='';
+  if(cs.length===1&&cs[0].k==='cab'){aviso=''}
+  elLector.innerHTML=barra+'<div class="lect-in">'+aviso+cs.map(function(c,i){return (i?'<hr class="sep-art">':'')+artHtml(c,i)}).join('')+'</div>';
+  if(ST.hl)marca(elLector.querySelector('.lect-in'),ST.hl);
+  ligaBarra(cs);
+  elLector.scrollTop=0;
+  if(opt.ap&&cs.length===1){
+    var p=elLector.querySelector('p.ap[data-ap="'+opt.ap+'"]');
+    if(p){p.classList.add('foco');setTimeout(function(){p.scrollIntoView({block:'center'})},30)}
+    else toast('No localizo el apartado '+opt.ap+': te enseño el artículo entero');
+  }
+  if(opt.registrar)registra(cs[0]);
+  document.body.classList.toggle('ver-lector',!!opt.ver);
+  if(opt.ver)try{elLector.focus({preventScroll:true})}catch(e){}
+}
+function ligaBarra(cs){
+  var primero=cs[0],ultimo=cs[cs.length-1];
+  var q=function(id){return document.getElementById(id)};
+  if(q('b-volver'))q('b-volver').onclick=function(){if(ST.pushed){ST.pushed=false;history.back()}else{document.body.classList.remove('ver-lector');try{elQ.focus()}catch(e){}}};
+  q('b-prev').onclick=function(){var c=primero.n.ch[primero.i-1];if(c)go('#a/'+c.n.id+'/'+encodeURIComponent(c.k),{replace:true})};
+  q('b-next').onclick=function(){var c=ultimo.n.ch[ultimo.i+1];if(c)go('#a/'+c.n.id+'/'+encodeURIComponent(c.k),{replace:true})};
+  if(q('b-notas')){q('b-notas').onclick=function(){var on=!document.body.classList.contains('con-notas');document.body.classList.toggle('con-notas',on);LS.set('normas.notas',on);q('b-notas').classList.toggle('on',on);q('b-notas').setAttribute('aria-pressed',on)};var on=document.body.classList.contains('con-notas');q('b-notas').classList.toggle('on',on);q('b-notas').setAttribute('aria-pressed',on)}
+  q('b-menos').onclick=function(){fuente(-1)};q('b-mas').onclick=function(){fuente(1)};
+  q('b-boe').onclick=function(){window.open(urlBoe(primero),'_blank','noopener')};
+  q('b-copiar').onclick=function(){copiar(cs,q('b-copiar'))};
+}
+function fuente(d){var v=Math.max(13,Math.min(24,(LS.get('normas.fs',16))+d));LS.set('normas.fs',v);document.documentElement.style.setProperty('--fs',v+'px')}
+function copiar(cs,btn){
+  var txt=cs.map(function(c){return citaCorta(c)+(c.t?'. '+c.t:'')+'\n\n'+plano(c)}).join('\n\n———\n\n')+'\n\n(Texto consolidado BOE, '+cs[0].n.sigla+' actualizada a '+fdate(cs[0].n.act)+')';
+  var ok=function(){var t=btn.innerHTML;btn.classList.add('ok');btn.textContent='Copiado';setTimeout(function(){btn.classList.remove('ok');btn.innerHTML=t},1600)};
+  var fb=function(){var ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy');ok()}catch(e){toast('No he podido copiar')}ta.remove()};
+  if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(txt).then(ok,fb);else fb();
+}
+function registra(c){
+  var rec=LS.get('normas.rec',[]).filter(function(r){return !(r.n===c.n.id&&r.k===c.k)});
+  rec.unshift({n:c.n.id,k:c.k});rec=rec.slice(0,10);LS.set('normas.rec',rec);pintaRec();
+}
+function pintaRec(){
+  var rec=LS.get('normas.rec',[]).filter(function(r){return POR[r.n]&&POR[r.n].map.has(r.k)});
+  $('#nsec-rec').style.display=rec.length?'':'none';
+  $('#nav-rec').innerHTML=rec.map(function(r){var c=POR[r.n].map.get(r.k);return '<button class="navlink rec" data-n="'+r.n+'" data-k="'+esc(r.k)+'"><span class="sg">'+esc(POR[r.n].sigla)+'</span><span class="nm">'+esc(abrev(c).replace(/^Art\. /,'Art. '))+'</span></button>'}).join('');
+}
+
+/* ---------- enrutado ---------- */
+function go(h,o){
+  o=o||{};
+  if(o.replace){history.replaceState(null,'',h||(location.pathname+location.search));apply()}
+  else if(location.hash===h||(!h&&!location.hash)){apply()}
+  else{location.hash=h}
+}
+function parseHash(){
+  var h=location.hash.replace(/^#/,''),p=h.split('/').map(function(x){try{return decodeURIComponent(x)}catch(e){return x}});
+  if(!h)return {t:'home'};
+  if(p[0]==='q')return {t:'q',q:p[1]||'',s:p[2]==='s'?{n:p[3],k:p[4]}:null,f:null};
+  if(p[0]==='a')return {t:'a',n:p[1],k:p[2],ap:p[3]||null};
+  if(p[0]==='n')return {t:'n',n:p[1]};
+  return {t:'home'};
+}
+var ULTIMO_Q=null;
+function apply(){
+  var H=parseHash();if(H.t!=='a')ST.pushed=false;
+  if(H.t==='home'){elQ.value='';$('#limpia').style.display='none';ST.q='';vistaInicio();return}
+  if(H.t==='n'){var n=POR[H.n];if(n){vistaNorma(n,null);elLector.innerHTML='<div class="lect-in"><div class="a-eye">'+esc(n.sigla)+'</div><h2 class="a-h" style="font-size:20px">'+esc(n.titulo)+'</h2><div class="a-meta">'+n.cuenta+' artículos y disposiciones · actualizada a '+fdate(n.act)+'</div><div class="a-body"><p>Elige un artículo del índice, o escribe arriba su número («282») seguido de «'+esc(n.sigla)+'».</p></div></div>';document.body.classList.remove('ver-lector')}return}
+  if(H.t==='a'){
+    var nn=POR[H.n],c=nn&&nn.map.get(H.k);if(!c){toast('Artículo no encontrado');vistaInicio();return}
+    var dentro=ST.mode!=='home'&&ST.items.some(function(it,i){if(it.c===c){ST.sel=i;return true}return false});
+    if(!dentro){vistaNorma(nn,c.k)}else{marcaSel(true);if(ST.mode==='norma'&&ST.nid!==nn.id)vistaNorma(nn,c.k)}
+    ST.hl=ST.mode==='q'?ST.hl:null;
+    mostrar([c],{ap:H.ap,registrar:true,ver:true});
+    return;
+  }
+  if(H.t==='q'){
+    var q=H.q,prevQ=ST.q;elQ.value=q;$('#limpia').style.display=q?'flex':'none';ST.q=q;
+    if(!q.trim()){vistaInicio();return}
+    if(prevQ===q&&ST.mode==='q'&&ST.items.length&&H.s){var ix0=-1;ST.items.forEach(function(it,i){if(it.c.n.id===H.s.n&&it.c.k===H.s.k)ix0=i});if(ix0>=0){ST.sel=ix0;marcaSel(true);document.body.classList.remove('ver-lector');ST.pushed=false;return}}
+    ejecuta(q,H.s);return;
+  }
+}
+function ejecuta(q,sel){
+  var cons=parseConsulta(q),t0=performance.now();
+  ST.hl=null;ST.parcial=false;
+  if(cons&&cons.alias&&!cons.piezas.length){
+    var n=POR[cons.alias];vistaNorma(n,null);ST.mode='q-norma';
+    elLector.innerHTML='<div class="lect-in"><div class="a-eye">'+esc(n.sigla)+'</div><h2 class="a-h" style="font-size:20px">'+esc(n.titulo)+'</h2><div class="a-meta">'+n.cuenta+' artículos y disposiciones · actualizada a '+fdate(n.act)+'</div><div class="a-body"><p>Índice de la norma a la izquierda. Escribe «'+esc(n.sigla)+'» y un número para ir directo (por ejemplo «'+esc(n.sigla)+' 1»), o una palabra para buscar solo en esta norma.</p></div></div>';
+    document.body.classList.remove('ver-lector');elChips.innerHTML='';return;
+  }
+  if(cons){
+    var r=resuelve(cons);
+    ST.mode='q';ST.items=r.items;ST.stack=!!cons.alias&&(cons.piezas.length>1||cons.piezas[0].t==='rango')&&r.items.length>1;ST.hl=null;
+    elChips.innerHTML='';
+    var info=r.items.length===1?'Consulta directa':r.items.length+' resultados'+(ST.stack?' · se muestran seguidos':'');
+    vistaLista(info,r.avisos.length&&r.items.length?esc(r.avisos.join('. ')):(r.avisos.length?esc(r.avisos.join('. ')):null));
+    if(!r.items.length){return}
+    var ix=0;if(sel){r.items.forEach(function(it,i){if(it.c.n.id===sel.n&&it.c.k===sel.k)ix=i})}
+    ST.sel=ix;marcaSel(true);
+    var uno=r.items.length===1;
+    if(ST.stack)mostrar(r.items.map(function(it){return it.c}),{registrar:false,ver:MOVIL()&&false});
+    else mostrar([r.items[ix].c],{ap:r.ap,registrar:uno,ver:uno&&MOVIL()});
+    if(MOVIL()&&uno)document.body.classList.add('ver-lector');
+    return;
+  }
+  var fa=ST.filtro;
+  var res=buscarTexto(q,fa);
+  ST.todos=res.todos;ST.hl=res.hl;ST.parcial=res.parcial;
+  ST.mode='q';ST.stack=false;ST.items=res.items;
+  pintaChips(res.todos,res.filtroAlias||ST.filtro);
+  var ms=Math.round(performance.now()-t0);
+  var info=res.items.length+' artículo'+(res.items.length===1?'':'s')+'<small>'+ms+' ms</small>';
+  vistaLista(info,res.parcial&&res.items.length?'No hay artículos con <b>todos</b> los términos. Te enseño los que contienen alguno, de más a menos coincidencias.':null);
+  if(!res.items.length){return}
+  var ix2=0;if(sel){res.items.forEach(function(it,i){if(it.c.n.id===sel.n&&it.c.k===sel.k)ix2=i})}
+  ST.sel=ix2;marcaSel(true);
+  mostrar([res.items[ix2].c],{ver:false});
+  document.body.classList.remove('ver-lector');
+}
+/* selección dentro de la lista */
+function selecciona(ix,o){
+  o=o||{};
+  if(ix<0||ix>=ST.items.length)return;
+  ST.sel=ix;marcaSel(true);
+  var c=ST.items[ix].c;
+  if(ST.stack){var el=elLector.querySelector('#art-'+ix);if(el)el.scrollIntoView({block:'start'});return}
+  if(o.abrir){
+    if(ST.mode==='norma'||ST.mode==='q-norma'){ST.pushed=true;go('#a/'+c.n.id+'/'+encodeURIComponent(c.k))}
+    else{
+      mostrar([c],{registrar:true,ver:MOVIL()});
+      var hq='#q/'+encodeURIComponent(ST.q)+'/s/'+c.n.id+'/'+encodeURIComponent(c.k);
+      if(ST.mode==='q'){
+        if(MOVIL()&&!ST.pushed){history.pushState(null,'',hq);ST.pushed=true}
+        else history.replaceState(null,'',hq);
+      }
+      if(!MOVIL())try{elLector.focus({preventScroll:true})}catch(e){}
+    }
+  }else{
+    mostrar([c],{ver:false});
+    if(ST.mode==='q')history.replaceState(null,'','#q/'+encodeURIComponent(ST.q)+'/s/'+c.n.id+'/'+encodeURIComponent(c.k));
+  }
+}
+
+/* ---------- eventos ---------- */
+var tDeb=null;
+elQ.addEventListener('input',function(){
+  $('#limpia').style.display=elQ.value?'flex':'none';
+  clearTimeout(tDeb);tDeb=setTimeout(function(){ST.filtro=null;var q=elQ.value;go(q.trim()?('#q/'+encodeURIComponent(q)):'',{replace:true})},140);
+});
+elQ.addEventListener('keydown',function(e){
+  if(e.key==='ArrowDown'){e.preventDefault();if(ST.items.length)selecciona(Math.min(ST.items.length-1,Math.max(0,ST.sel+1)))}
+  else if(e.key==='ArrowUp'){e.preventDefault();if(ST.items.length)selecciona(Math.max(0,ST.sel-1))}
+  else if(e.key==='Enter'){e.preventDefault();clearTimeout(tDeb);var q=elQ.value;go(q.trim()?('#q/'+encodeURIComponent(q)):'',{replace:true});if(ST.sel>=0&&ST.items.length&&!ST.stack){selecciona(ST.sel,{abrir:true})}else try{elLector.focus({preventScroll:true})}catch(e2){}}
+  else if(e.key==='Escape'){if(elQ.value){elQ.value='';go('',{replace:true})}}
+});
+$('#limpia').addEventListener('click',function(){elQ.value='';go('',{replace:true});elQ.focus()});
+elLista.addEventListener('click',function(e){
+  var it=e.target.closest('.item');if(it){selecciona(+it.dataset.ix,{abrir:true});return}
+  var b=e.target.closest('.ejb');if(b){elQ.value=b.dataset.q;go('#q/'+encodeURIComponent(b.dataset.q));elQ.focus()}
+});
+elChips.addEventListener('click',function(e){
+  var b=e.target.closest('.chip');if(!b)return;
+  ST.filtro=b.dataset.f||null;
+  var q=elQ.value;apply2(q);
+});
+function apply2(q){ejecuta(q,null)}
+elLector.addEventListener('click',function(e){
+  var a=e.target.closest('a.ref');if(!a)return;
+  e.preventDefault();ST.pushed=true;go(a.getAttribute('href'));
+});
+$('#nav-buscar').addEventListener('click',function(){cierraNav();go('');elQ.focus()});
+$('#nav-normas').addEventListener('click',function(e){var b=e.target.closest('.navlink');if(!b)return;cierraNav();go('#n/'+b.dataset.n)});
+$('#nav-rec').addEventListener('click',function(e){var b=e.target.closest('.navlink');if(!b)return;cierraNav();go('#a/'+b.dataset.n+'/'+encodeURIComponent(b.dataset.k))});
+$('#mnav').addEventListener('click',function(){document.body.classList.toggle('navopen')});
+$('#scrim').addEventListener('click',cierraNav);
+document.addEventListener('keydown',function(e){
+  var t=e.target,enCampo=t&&(t.tagName==='INPUT'||t.tagName==='TEXTAREA'||t.isContentEditable);
+  if((e.key==='/'&&!enCampo)||((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k')){e.preventDefault();document.body.classList.remove('ver-lector');elQ.focus();elQ.select();return}
+  if(enCampo||e.metaKey||e.ctrlKey||e.altKey)return;
+  if(e.key==='Escape'){if(document.body.classList.contains('ver-lector')){var b=document.getElementById('b-volver');if(b)b.click()}else elQ.focus();return}
+  if(/^[1-9]$/.test(e.key)&&ST.mode!=='norma'&&ST.mode!=='q-norma'&&ST.items.length>=+e.key){e.preventDefault();selecciona(+e.key-1,{abrir:true});return}
+  if(e.key==='ArrowDown'&&t===elLista||e.key==='j'){if(t===elLector)return;e.preventDefault();selecciona(Math.min(ST.items.length-1,ST.sel+1))}
+  if(e.key==='ArrowUp'&&t===elLista||e.key==='k'){if(t===elLector)return;e.preventDefault();selecciona(Math.max(0,ST.sel-1))}
+  if(e.key==='ArrowRight'&&ST.mostrados){var b2=document.getElementById('b-next');if(b2&&!b2.disabled){e.preventDefault();b2.click()}}
+  if(e.key==='ArrowLeft'&&ST.mostrados){var b3=document.getElementById('b-prev');if(b3&&!b3.disabled){e.preventDefault();b3.click()}}
+});
+window.addEventListener('hashchange',apply);
+
+/* ---------- arranque ---------- */
+function arranque(){
+  prepara();
+  var fs=LS.get('normas.fs',16);document.documentElement.style.setProperty('--fs',fs+'px');
+  if(LS.get('normas.notas',false))document.body.classList.add('con-notas');
+  $('#nav-normas').innerHTML=NORMAS.map(function(n){return '<button class="navlink" data-n="'+n.id+'"><span class="sg">'+esc(n.sigla)+'</span><span class="nm">'+esc(n.corto)+'</span><span class="ct">'+n.cuenta+'</span></button>'}).join('');
+  pintaRec();
+  var act=NORMAS.map(function(n){return n.act}).sort().pop();
+  var dias=Math.floor((Date.now()-Date.parse(COMPILADO))/86400000);
+  var sn=$('#sidenote');
+  sn.innerHTML='<b>Compilada el '+fdate(COMPILADO)+'</b><br>Textos del BOE consolidado hasta el '+fdate(act)+'.'+(dias>45?'<br><b>Hace '+dias+' días de la compilación: conviene regenerarla.</b>':'');
+  if(dias>45)sn.classList.add('aviso');
+  $('#carga').remove();
+  apply();
+  if(!location.hash||location.hash==='#')elQ.focus();
+  (window.requestIdleCallback||function(f){setTimeout(f,300)})(function(){indexa()});
+}
+if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol)){navigator.serviceWorker.register('sw.js').catch(function(){})}
+cargar().then(function(d){DATA=d;arranque()}).catch(function(err){document.getElementById('carga').innerHTML='No he podido abrir los datos.<br><br>'+esc(err.message||err)});
+})();
+</script>
+</body>
+</html>

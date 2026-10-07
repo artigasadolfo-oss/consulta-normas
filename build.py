@@ -1,0 +1,356 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+build.py — Genera index.html (Consulta de normas) a partir del corpus legalize-es.
+
+Es el espejo del BOE consolidado que ya mantiene el vigilante diario
+(~/Documents/iA/LEYES/legalize-es). Aquí NO se interpreta ni se resume nada:
+se trocea cada norma en artículos y se incrusta tal cual.
+
+Uso:
+    python3 build.py              # regenera index.html + normas.json
+    python3 build.py --comprobar  # solo analiza y verifica, no escribe
+
+Garantía de fidelidad: tras trocear, verifica que cada línea del BOE (salvo las
+cabeceras de artículo y de estructura) aparece exactamente una vez en un
+artículo. Si falta o sobra una, el build FALLA en vez de publicar texto cojo.
+"""
+import base64
+import datetime as dt
+import gzip
+import hashlib
+import json
+import os
+import re
+import subprocess
+import sys
+from pathlib import Path
+
+AQUI = Path(__file__).resolve().parent
+CORPUS = Path.home() / "Documents/iA/LEYES/legalize-es"
+ES = CORPUS / "es"
+
+# id interno, BOE-ID, siglas, nombre corto, modo secuencial (ver parse_norma)
+NORMAS = [
+    dict(id="lec",    boe="BOE-A-2000-323",   sigla="LEC",       corto="Ley de Enjuiciamiento Civil"),
+    dict(id="lo1-2025", boe="BOE-A-2025-76",  sigla="LO 1/2025", corto="LO 1/2025 de eficiencia del Servicio Público de Justicia", secuencial=True),
+    dict(id="lau",    boe="BOE-A-1994-26003", sigla="LAU",       corto="Ley de Arrendamientos Urbanos"),
+    dict(id="lph",    boe="BOE-A-1960-10906", sigla="LPH",       corto="Ley de Propiedad Horizontal"),
+    dict(id="cc",     boe="BOE-A-1889-4763",  sigla="CC",        corto="Código Civil"),
+    dict(id="lopj",   boe="BOE-A-1985-12666", sigla="LOPJ",      corto="Ley Orgánica del Poder Judicial"),
+    dict(id="lopdgdd", boe="BOE-A-2018-16673", sigla="LOPDGDD",  corto="Ley Orgánica de Protección de Datos"),
+    dict(id="ce",     boe="BOE-A-1978-31229", sigla="CE",        corto="Constitución Española"),
+]
+
+HEAD = re.compile(r"^(#{1,6})\s+(.*\S)\s*$")
+ESTRUCT = re.compile(r"^(LIBRO|TÍTULO|TITULO|CAPÍTULO|CAPITULO|SECCIÓN|Sección|Subsección|SUBSECCIÓN)\b")
+PREAM = re.compile(r"^(PREÁMBULO|EXPOSICIÓN DE MOTIVOS)\b", re.I)
+SUF = (r"bis|ter|qu[aá]ter|quinquies|sexies|septies|octies|nonies|decies|undecies|"
+       r"duodecies|terdecies|quaterdecies|quindecies|sexdecies")
+ART = re.compile(
+    rf"^Art[ií]culo\s+(\d+)(?:\s+({SUF}))?(?:\s+(?:([a-z])\)|(\d+)\b))?\s*\.?\s*(.*)$", re.I)
+ART_RANGO = re.compile(r"^Art[ií]culos?\s+(\d+)\s+a\s+(\d+)\s*\.?\s*(.*)$", re.I)
+ART_PALABRA = re.compile(r"^Art[ií]culo\s+([a-záéíóúü]+)\s*\.\s*(.*)$", re.I)
+ART_UNICO = re.compile(r"^Art[ií]culo\s+[uú]nico\s*\.?\s*(.*)$", re.I)
+DISP = re.compile(
+    r"^Disposici[oó]n\s+(adicional|transitoria|final|derogatoria)(?:\s+([^.]+?))?\s*\.\s*(.*)$", re.I)
+
+ORD_BASE = {"primera": 1, "primero": 1, "segunda": 2, "segundo": 2, "tercera": 3, "tercero": 3,
+            "cuarta": 4, "cuarto": 4, "quinta": 5, "quinto": 5, "sexta": 6, "sexto": 6,
+            "septima": 7, "septimo": 7, "octava": 8, "octavo": 8, "novena": 9, "noveno": 9,
+            "decima": 10, "decimo": 10, "undecima": 11, "undecimo": 11,
+            "duodecima": 12, "duodecimo": 12}
+ORD_DEC = {"decimo": 10, "decima": 10, "vigesimo": 20, "vigesima": 20, "trigesimo": 30,
+           "trigesima": 30, "cuadragesimo": 40, "cuadragesima": 40, "quincuagesimo": 50,
+           "quincuagesima": 50}
+
+
+def sin_tildes(s):
+    import unicodedata
+    return "".join(c for c in unicodedata.normalize("NFD", s) if unicodedata.category(c) != "Mn")
+
+
+CARD = {"uno": 1, "dos": 2, "tres": 3, "cuatro": 4, "cinco": 5, "seis": 6, "siete": 7, "ocho": 8,
+        "nueve": 9, "diez": 10, "once": 11, "doce": 12, "trece": 13, "catorce": 14, "quince": 15,
+        "dieciseis": 16, "diecisiete": 17, "dieciocho": 18, "diecinueve": 19, "veinte": 20,
+        "veintiuno": 21, "veintidos": 22, "veintitres": 23, "veinticuatro": 24, "veinticinco": 25,
+        "veintiseis": 26, "veintisiete": 27, "veintiocho": 28, "veintinueve": 29, "treinta": 30}
+
+
+def numero_en_letra(texto):
+    """'veintiuno' / 'primero' -> 21 / 1 (solo palabras sueltas); None si no es número"""
+    t = sin_tildes(texto.lower())
+    if t in CARD:
+        return CARD[t]
+    if t in ORD_BASE and ORD_BASE[t] < 10:
+        return ORD_BASE[t]
+    return None
+
+
+def ordinal(texto):
+    """'vigesimoprimera' / 'trigésima segunda' / 'única' -> int | 'u' | None"""
+    t = sin_tildes(texto.lower()).replace(" ", "")
+    if t in ("unica", "unico"):
+        return "u"
+    if t.isdigit():
+        return int(t)
+    if t in ORD_BASE:
+        return ORD_BASE[t]
+    for pref, val in sorted(ORD_DEC.items(), key=lambda kv: -len(kv[0])):
+        if t.startswith(pref):
+            resto = t[len(pref):]
+            if resto in ORD_BASE and ORD_BASE[resto] < 10:
+                return val + ORD_BASE[resto]
+    return None
+
+
+def limpia_nota(linea):
+    """'> <small>Se modifica ... [Ref. BOE-A-..#ac](https://...)</small>' -> '> Se modifica ... [Ref. BOE-A-..#ac]'"""
+    t = linea
+    t = re.sub(r"</?small>", "", t)
+    t = re.sub(r"\[([^\]]*)\]\((?:https?://)[^)]*\)", r"[\1]", t)
+    return t
+
+
+def lee_norma(cfg):
+    ruta = ES / f"{cfg['boe']}.md"
+    raw = ruta.read_bytes()
+    texto = raw.decode("utf-8")
+    m = re.match(r"^---\n(.*?)\n---\n", texto, re.S)
+    if not m:
+        raise SystemExit(f"{ruta}: sin cabecera YAML")
+    meta = {}
+    for ln in m.group(1).splitlines():
+        k, _, v = ln.partition(":")
+        meta[k.strip()] = v.strip().strip('"')
+    cuerpo = texto[m.end():]
+    return raw, meta, cuerpo.split("\n")
+
+
+def parse_norma(cfg, lineas):
+    """Devuelve (chunks, avisos). chunk = dict(k,e,t,s,b[list de líneas])"""
+    chunks, avisos = [], []
+    ruta = []  # [(nivel, texto)]
+    actual = None
+    intro = []          # líneas tras una cabecera estructural, antes del siguiente artículo
+    ultimo_num = 0
+    vistos = set()
+
+    def etiqueta_ruta():
+        return " · ".join(t for _, t in ruta)
+
+    def cierra():
+        nonlocal actual
+        actual = None
+
+    def abre(k, e, t):
+        nonlocal actual, intro
+        ch = dict(k=k, e=e, t=t, s=etiqueta_ruta(), b=list(intro))
+        intro = []
+        chunks.append(ch)
+        actual = ch
+
+    # Cabecera previa (título, notas, "JUAN CARLOS I", etc.)
+    abre("cab", "Encabezado", "", )
+    chunks[-1]["s"] = ""
+
+    for ln in lineas:
+        m = HEAD.match(ln)
+        if m:
+            nivel, txt = len(m.group(1)), m.group(2)
+            txt_plano = txt.strip("*_ ")
+            if txt_plano.startswith("«") or txt_plano.startswith('"'):
+                actual["b"].append(ln) if actual else intro.append(ln)
+                continue
+            # --- artículo
+            ma = ART.match(txt_plano) if nivel == 6 else None
+            mr = ART_RANGO.match(txt_plano) if nivel == 6 else None
+            mp = ART_PALABRA.match(txt_plano) if nivel == 6 else None
+            if mp and numero_en_letra(mp.group(1)) is None:
+                mp = None
+            mu = ART_UNICO.match(txt_plano) if nivel == 6 else None
+            md = DISP.match(txt_plano) if nivel == 6 else None
+            if mr:
+                ma = None
+            if ma or mr or mp or mu or md:
+                if mr:
+                    k = f"{int(mr.group(1))}-{int(mr.group(2))}"
+                    e = f"Artículos {int(mr.group(1))} a {int(mr.group(2))}"
+                    t = mr.group(3).strip()
+                elif mp:
+                    num = numero_en_letra(mp.group(1))
+                    k, e, t = str(num), f"Artículo {num}", mp.group(2).strip()
+                    ultimo_num = num
+                elif ma:
+                    num = int(ma.group(1)); suf = (ma.group(2) or "").lower().replace("á", "a")
+                    extra = (ma.group(3) or ma.group(4) or "").lower()
+                    if cfg.get("secuencial") and (suf or extra or num != ultimo_num + 1):
+                        # cabecera de un artículo CITADO dentro de otro (norma modificadora)
+                        (actual["b"] if actual else intro).append(ln)
+                        continue
+                    if not suf:
+                        ultimo_num = num
+                    partes = [str(num)] + ([suf] if suf else []) + ([extra] if extra else [])
+                    k = " ".join(partes)
+                    e = "Artículo " + k
+                    if ma.group(3):
+                        e = f"Artículo {num} {suf} {extra})".replace("  ", " ")
+                    t = ma.group(5).strip()
+                elif mu:
+                    k, e, t = "unico", "Artículo único", mu.group(1).strip()
+                else:
+                    tipo = md.group(1).lower()
+                    ordtxt = (md.group(2) or "").strip()
+                    n = ordinal(ordtxt) if ordtxt else "u"
+                    pref = {"adicional": "da", "transitoria": "dt", "final": "df", "derogatoria": "dd"}[tipo]
+                    k = f"{pref}{n}" if n is not None else f"{pref}-{sin_tildes(ordtxt.lower()).replace(' ', '-')}"
+                    e = f"Disposición {tipo}" + (f" {ordtxt}" if ordtxt else "")
+                    t = md.group(3).strip()
+                t = t.replace("**", "").strip()
+                if cfg.get("secuencial") and k in vistos:
+                    (actual["b"] if actual else intro).append(ln)
+                    continue
+                if k in vistos:
+                    avisos.append(f"clave duplicada {k!r}: se renombra")
+                    i = 2
+                    while f"{k}#{i}" in vistos:
+                        i += 1
+                    k = f"{k}#{i}"
+                vistos.add(k)
+                abre(k, e, t)
+                continue
+            # --- preámbulo / exposición de motivos
+            if nivel <= 5 and PREAM.match(txt_plano):
+                k = "pre"
+                if k in vistos:
+                    (actual["b"] if actual else intro).append(ln)
+                    continue
+                vistos.add(k)
+                abre(k, txt_plano.capitalize() if txt_plano.isupper() else txt_plano, "")
+                continue
+            # --- estructura
+            if nivel <= 5 and ESTRUCT.match(txt_plano):
+                ruta[:] = [(n, t) for n, t in ruta if n < nivel]
+                ruta.append((nivel, txt_plano))
+                cierra()
+                continue
+            # --- otra cabecera: forma parte del texto
+            (actual["b"] if actual else intro).append(ln)
+        else:
+            (actual["b"] if actual else intro).append(ln)
+    if intro:
+        chunks[-1]["b"].extend(intro)
+    # recorta líneas vacías de los extremos y normaliza notas
+    for ch in chunks:
+        b = [limpia_nota(x) if x.startswith(">") else x.rstrip() for x in ch["b"]]
+        while b and not b[0].strip():
+            b.pop(0)
+        while b and not b[-1].strip():
+            b.pop()
+        # colapsa vacías múltiples
+        out = []
+        for x in b:
+            if not x.strip() and out and not out[-1].strip():
+                continue
+            out.append(x)
+        ch["b"] = "\n".join(out)
+    # descarta la cabecera si quedó vacía
+    chunks = [c for c in chunks if c["k"] != "cab" or c["b"].strip()]
+    return chunks, avisos
+
+
+def verifica_sin_perdidas(cfg, lineas, chunks):
+    """Cada línea de contenido de la fuente debe estar en el troceado (y viceversa)."""
+    from collections import Counter
+
+    def contenido(x):
+        return limpia_nota(x) if x.startswith(">") else x.rstrip()
+
+    fuente = Counter(contenido(x) for x in lineas if x.strip())
+    # quitamos las cabeceras que se consumen (artículo/estructura/preámbulo): las reconstruimos
+    consumidas = Counter()
+    for ch in chunks:
+        if ch["k"] == "cab":
+            continue
+    dest = Counter()
+    for ch in chunks:
+        for x in ch["b"].split("\n"):
+            if x.strip():
+                dest[x] += 1
+    # Todo lo que haya en dest tiene que estar en fuente (con multiplicidad)
+    sobran = dest - fuente
+    if sobran:
+        raise SystemExit(f"[{cfg['sigla']}] líneas en el troceado que no estaban en la fuente: "
+                         f"{list(sobran.items())[:3]}")
+    faltan = fuente - dest
+    # Lo que falta deben ser solo cabeceras consumidas (líneas que empiezan por #)
+    no_cabecera = {k: v for k, v in faltan.items() if not HEAD.match(k)}
+    if no_cabecera:
+        raise SystemExit(f"[{cfg['sigla']}] líneas de la fuente PERDIDAS: {list(no_cabecera.items())[:3]}")
+    n_cab = sum(faltan.values())
+    return n_cab
+
+
+def rellena_fuentes_y_logo():
+    def b64(p):
+        return base64.b64encode(Path(p).read_bytes()).decode()
+    fuentes = (
+        "@font-face{font-family:'Inter';font-style:normal;font-weight:100 900;font-display:swap;"
+        f"src:url(data:font/woff2;base64,{b64(AQUI/'fuentes/Inter-latin.woff2')}) format('woff2')}}\n"
+        "@font-face{font-family:'Jost';font-style:normal;font-weight:100 900;font-display:swap;"
+        f"src:url(data:font/woff2;base64,{b64(AQUI/'fuentes/Jost-latin.woff2')}) format('woff2')}}\n"
+    )
+    hon = (Path.home() / "Programación/Calculadora honorarios/index.html").read_text(encoding="utf-8")
+    m = re.search(r"\.brand \.logo\{[^}]*background:url\((data:image/png;base64,[A-Za-z0-9+/=]+)\)", hon)
+    if not m:
+        raise SystemExit("No encuentro el logo en Calculadora honorarios/index.html")
+    return fuentes, m.group(1)
+
+
+def git_head():
+    try:
+        return subprocess.run(["git", "-C", str(CORPUS), "rev-parse", "--short", "HEAD"],
+                              capture_output=True, text=True, timeout=20).stdout.strip()
+    except Exception:
+        return ""
+
+
+def construye(solo_comprobar=False):
+    datos, manifiesto, resumen = [], [], []
+    for cfg in NORMAS:
+        raw, meta, lineas = lee_norma(cfg)
+        chunks, avisos = parse_norma(cfg, lineas)
+        n_cab = verifica_sin_perdidas(cfg, lineas, chunks)
+        arts = [c for c in chunks if c["k"] not in ("cab", "pre")]
+        resumen.append(f"{cfg['sigla']:10s} {len(arts):5d} artículos/disposiciones  "
+                       f"({len(chunks)} bloques, {n_cab} cabeceras consumidas) "
+                       f"actualizada {meta.get('last_updated','?')} {'; '.join(avisos)}")
+        datos.append(dict(id=cfg["id"], boe=cfg["boe"], sigla=cfg["sigla"], corto=cfg["corto"],
+                          titulo=meta.get("title", cfg["corto"]), act=meta.get("last_updated", ""),
+                          est=meta.get("status", ""), url=meta.get("url_html_consolidada", ""),
+                          ch=[dict(k=c["k"], e=c["e"], t=c["t"], s=c["s"], b=c["b"]) for c in chunks]))
+        manifiesto.append(dict(id=cfg["id"], boe=cfg["boe"], sigla=cfg["sigla"],
+                               actualizada=meta.get("last_updated", ""),
+                               sha256=hashlib.sha256(raw).hexdigest(),
+                               bloques=len(chunks), articulos=len(arts)))
+    print("\n".join(resumen))
+    if solo_comprobar:
+        return
+    hoy = dt.date.today().isoformat()
+    meta_build = dict(compilado=hoy, corpus_commit=git_head(), normas=manifiesto)
+    payload = json.dumps(dict(normas=datos, build=meta_build), ensure_ascii=False, separators=(",", ":"))
+    gz = gzip.compress(payload.encode("utf-8"), compresslevel=9, mtime=0)
+    b64 = base64.b64encode(gz).decode()
+    fuentes, logo = rellena_fuentes_y_logo()
+    plantilla = (AQUI / "plantilla.html").read_text(encoding="utf-8")
+    html = (plantilla.replace("/*@@FUENTES@@*/", fuentes)
+                     .replace("@@LOGO@@", logo)
+                     .replace("@@DATOS@@", b64)
+                     .replace("@@COMPILADO@@", hoy))
+    (AQUI / "index.html").write_text(html, encoding="utf-8")
+    (AQUI / "normas.json").write_text(json.dumps(meta_build, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    print(f"index.html: {len(html)/1e6:.2f} MB  (datos sin comprimir {len(payload)/1e6:.2f} MB, gzip {len(gz)/1e6:.2f} MB)")
+
+
+if __name__ == "__main__":
+    construye(solo_comprobar="--comprobar" in sys.argv)

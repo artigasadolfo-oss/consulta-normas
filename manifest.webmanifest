@@ -1,0 +1,10 @@
+{
+  "name": "Consulta de normas · Artigas Abogados",
+  "short_name": "Normas",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F7F8FA",
+  "theme_color": "#FFFFFF",
+  "icons": [{"src": "apple-touch-icon.png", "sizes": "180x180", "type": "image/png"}]
+}
