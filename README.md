@@ -20,7 +20,8 @@ incrustados: funciona abriéndolo como archivo local, **sin conexión**, y tambi
 
 Normas incluidas: LEC, LO 1/2025, LAU, LPH, Código Civil, LOPJ, Ley 38/1999 de Ordenación de la Edificación (LOE),
 RDL 1/2007 (texto refundido de la Ley General de Consumidores y Usuarios, TRLGDCU), Decreto Legislativo 1/2019 (texto
-refundido de la Ley del Estatuto de las personas consumidoras y usuarias de la Comunitat Valenciana, EPCU-CV) y Constitución.
+refundido de la Ley del Estatuto de las personas consumidoras y usuarias de la Comunitat Valenciana, EPCU-CV), Decreto 11/1995
+del Gobierno Valenciano de prestación de servicios a domicilio (D 11/1995, solo en el DOGV, importado a mano) y Constitución.
 (La LOPDGDD se retiró el 07-10-2026 a petición de Adolfo; la Ley valenciana 3/2004 de calidad de la edificación se probó y se descartó.)
 
 ## Origen y fidelidad del texto
@@ -48,6 +49,12 @@ en `ALIAS` y `NOMBRES_NORMA` de `plantilla.html`.
 compara la huella de cada fichero del corpus con la de `normas.json`. Silencio si todo coincide; aviso con las normas
 afectadas y el comando de arriba si alguna cambió; **error visible** (nunca silencio) si no puede comprobar.
 Test: `~/.hermes/scripts/tests/test_vigila_consulta_normas.py`.
+
+**Normas importadas a mano del DOGV** (las que no están en el espejo, p. ej. el Decreto 11/1995): se guardan con
+`dogv.py texto --id N --guardar` (carpeta `~/Documents/iA/LEYES/DOGV/`, texto verbatim) y se convierten con
+`python3 scripts/importa_dogv.py "<fichero>"` en `legalize-es/es-vc/<CVE>.md` (queda SIN versionar en el clon git). No se
+actualizan solas, así que su entrada en `build.py` lleva `dogv_id` y el vigía consulta cada día su estado en la API del
+DOGV: avisa si deja de constar VIGENTE, si hay una modificación pendiente o si aparece una consolidación.
 
 ## Offline
 
