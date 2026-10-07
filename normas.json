@@ -93,6 +93,17 @@
    "articulos": 96
   },
   {
+   "id": "d11-1995",
+   "boe": "DOGV-1995-833645",
+   "sigla": "D 11/1995",
+   "dir": "es-vc",
+   "dogv_id": 42036,
+   "actualizada": "1995-01-25",
+   "sha256": "4c24f1d9dd8d618a58489f639bbb4dc34753d1cd081702b61cb7dba6e1d3dc64",
+   "bloques": 9,
+   "articulos": 8
+  },
+  {
    "id": "ce",
    "boe": "BOE-A-1978-31229",
    "sigla": "CE",

@@ -30,6 +30,23 @@ def check(nombre, cond, detalle=""):
         print(f"  FALLA {nombre} {detalle}")
 
 
+def decreto_parrafos(ini_regex, fin_regex):
+    """Párrafos de un artículo del Decreto 11/1995 tomados de la copia VERBATIM de la carpeta DOGV (con la única
+    regularización declarada: «Ñ» mayúscula dentro de palabra -> «ñ»)."""
+    f = next((pathlib.Path.home() / "Documents/iA/LEYES/DOGV").glob("DOGV 42036*.md"))
+    txt = f.read_text(encoding="utf-8").split("\n---\n", 1)[1].split("\n")
+    out, dentro = [], False
+    for ln in txt:
+        if re.match(ini_regex, ln):
+            dentro = True
+            continue
+        if dentro and re.match(fin_regex, ln):
+            break
+        if dentro and ln.strip():
+            out.append(re.sub(r"(?<=[a-záéíóúü])Ñ(?=[a-záéíóúü])", "ñ", ln.strip()))
+    return out
+
+
 def fuente_articulo(boe, cabecera_regex, dir_="es"):
     """Texto del artículo directamente del .md (sin notas), para contrastar."""
     txt = (CORPUS.parent / dir_ / f"{boe}.md").read_text(encoding="utf-8").split("\n")
@@ -116,6 +133,9 @@ with sync_playwright() as p:
     consulta(pg, "9999 lec")
     check("9999 LEC: avisa de que no existe", "llega al 827" in pg.inner_text("#lista"), pg.inner_text("#lista")[:200])
 
+    def probar_(nid, k, txt):
+        return pg.evaluate("([n,k,t])=>window.__NT.probar(n,k,t)", [nid, k, txt])
+
     print("\n[normas nuevas: LOE, TRLGDCU, EPCU-CV]")
     consulta(pg, "17 loe")
     check("17 LOE: cabecera", "Artículo 17" in pg.inner_text("#lector .a-h") and "LOE" in pg.inner_text("#lector .a-eye"), pg.inner_text("#lector .a-h"))
@@ -140,6 +160,29 @@ with sync_playwright() as p:
     check("«recepción de la obra» encuentra la LOE", any(x.startswith("LOE") for x in ids_[:12]), str(ids_[:8]))
     consulta(pg, "garantía conformidad consumidores")
     check("concepto de consumo: hay resultados en TRLGDCU", pg.locator("#lista .item .sg-chip:text('TRLGDCU')").count() > 0)
+
+    print("\n[Decreto 11/1995, de servicios a domicilio (DOGV, importado a mano)]")
+    check("D 11/1995 está en el menú", pg.locator("#nav-normas .navlink[data-n=d11-1995]").count() == 1)
+    consulta(pg, "2 decreto 11/1995")
+    h_ = pg.inner_text("#lector .a-h")
+    esp_ = decreto_parrafos(r"^Artículo segundo\.", r"^Artículo tercero\.")
+    check("2 D 11/1995: cabecera «Artículo 2 · Presupuestos»", "Artículo 2" in h_ and "Presupuestos" in h_, h_)
+    check("2 D 11/1995: texto idéntico a la copia de la carpeta DOGV (con Ñ→ñ)", lector_parrafos(pg) == esp_ and len(esp_) > 15, f"{len(lector_parrafos(pg))} vs {len(esp_)}")
+    check("2 D 11/1995: «señal» y «tamaño» sin la Ñ defectuosa", "señal" in pg.inner_text("#lector") and "tamaño" in pg.inner_text("#lector") and not re.search(r"[a-záéíóú]Ñ|Ñ[a-záéíóú]", pg.inner_text("#lector .a-body")), "")
+    consulta(pg, "2.7 d 11/1995")
+    check("2.7 D 11/1995: resalta el apartado 7", pg.locator("#lector p.ap.foco").count() == 1 and pg.get_attribute("#lector p.ap.foco", "data-ap") == "7")
+    consulta(pg, "df 2 decreto 11/1995")
+    check("DF 2 D 11/1995: disposición final segunda", "Disposición final segunda" in pg.inner_text("#lector .a-h"), pg.inner_text("#lector .a-h"))
+    consulta(pg, "3 d 11/1995")
+    hrefs_ = pg.eval_on_selector_all("#lector a.ref", "els=>els.map(a=>a.getAttribute('href'))")
+    check("art. 3: «artículo 2.7» enlaza al apartado 7 del artículo 2 del propio decreto", "#a/d11-1995/2/7" in hrefs_, str(hrefs_))
+    check("art. 3: no se enlaza «artículos 32 y 35 de la Ley 2/1987» (es otra norma)", not any(h.startswith(("#a/d11-1995/32", "#a/d11-1995/35")) for h in hrefs_))
+    consulta(pg, "6 d 11/1995")
+    check("art. 6: «artículos 32 y 35 de la Ley de la Generalitat Valenciana 2/1987» no se enlaza", pg.locator("#lector a.ref").count() == 0, str(pg.locator("#lector a.ref").count()))
+    consulta(pg, "presupuesto previo por escrito")
+    ids3_ = pg.eval_on_selector_all("#lista .item", "els=>els.map(e=>e.querySelector('.sg-chip').textContent+' '+e.querySelector('.ar').textContent)")
+    check("«presupuesto previo por escrito» encuentra D 11/1995 art. 2 entre los 5 primeros", "D 11/1995 Art. 2" in ids3_[:5], str(ids3_[:5]))
+    check("«artículo 2 del Decreto 11/1995, de 10 de enero» -> D 11/1995 art. 2", "#a/d11-1995/2" in probar_("lec", "1", "según el artículo 2 del Decreto 11/1995, de 10 de enero, del Gobierno Valenciano"))
 
     print("\n[sin norma / rango / lista]")
     consulta(pg, "21")

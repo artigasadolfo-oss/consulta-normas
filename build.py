@@ -41,6 +41,7 @@ NORMAS = [
     dict(id="loe",    boe="BOE-A-1999-21567", sigla="LOE",       corto="Ley de Ordenación de la Edificación"),
     dict(id="trlgdcu", boe="BOE-A-2007-20555", sigla="TRLGDCU",  corto="Ley General de Consumidores y Usuarios", previo_rdl="RDL 1/2007"),
     dict(id="epcucv", boe="DOGV-r-2019-90594", sigla="EPCU-CV", corto="Estatuto valenciano de consumidores y usuarios", dir="es-vc", previo_rdl="DLeg 1/2019"),
+    dict(id="d11-1995", boe="DOGV-1995-833645", sigla="D 11/1995", corto="Decreto valenciano de servicios a domicilio", dir="es-vc", dogv_id=42036),
     dict(id="ce",     boe="BOE-A-1978-31229", sigla="CE",        corto="Constitución Española"),
 ]
 
@@ -346,6 +347,7 @@ def construye(solo_comprobar=False):
                           est=meta.get("status", ""), url=meta.get("url_html_consolidada", ""),
                           ch=[dict(k=c["k"], e=c["e"], t=c["t"], s=c["s"], b=c["b"]) for c in chunks]))
         manifiesto.append(dict(id=cfg["id"], boe=cfg["boe"], sigla=cfg["sigla"], dir=cfg.get("dir", "es"),
+                               **({"dogv_id": cfg["dogv_id"]} if cfg.get("dogv_id") else {}),
                                actualizada=meta.get("last_updated", ""),
                                sha256=hashlib.sha256(raw).hexdigest(),
                                bloques=len(chunks), articulos=len(arts)))
