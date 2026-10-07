@@ -64,6 +64,8 @@ button{font-family:inherit}
 #b-fav.on svg{fill:var(--ocre);color:var(--ocre)}
 .idx-aviso{border:1px solid rgba(201,122,30,.35);background:var(--ocre-50);color:var(--ocre-700);border-radius:10px;padding:10px 13px;font-size:12.5px;line-height:1.45;margin:0 0 16px}
 .idx-aviso small{display:block;margin-top:4px;opacity:.85}
+.boe-av{border:1px solid rgba(201,122,30,.35);background:var(--ocre-50);color:var(--ocre-700);border-radius:10px;padding:9px 13px;font-size:12.5px;line-height:1.45;margin:0 0 14px}
+.boe-av b{font-weight:600}
 .idx-filtro{padding:8px 12px 4px}
 .idx-filtro input{width:100%;border:1px solid var(--ink-200);border-radius:9px;padding:8px 11px;font:inherit;font-size:13px;background:#fff;color:var(--ink-900)}
 .idx-row{display:flex;align-items:baseline;gap:8px;padding:11px 14px;border-bottom:1px solid var(--ink-100);color:var(--ink-900);text-decoration:none;font-size:14px;font-weight:500}
@@ -536,9 +538,12 @@ function vistaNorma(n,selK){
   ST.mode='norma';ST.nid=n.id;ST.stack=false;
   elChips.innerHTML='';
   var items=n.ch.map(function(c){return {c:c}});ST.items=items;
-  var h='<div class="lista-h">'+esc(n.sigla)+'<small>'+esc(n.titulo)+'</small></div>',ult=null;
-  items.forEach(function(it,ix){var c=it.c;if(c.s!==ult&&c.s){h+='<div class="grp">'+esc(c.s)+'</div>';ult=c.s}
+  var h='<div class="lista-h">'+esc(n.sigla)+'<small>'+esc(n.titulo)+'</small></div>',ult=null,abierto=false;
+  // cada rótulo de título/capítulo va DENTRO de su propio bloque: así solo se queda pegado arriba mientras se ven sus artículos
+  // y lo releva el siguiente (si no, los 100+ rótulos se quedaban pegados a la vez, apilados)
+  items.forEach(function(it,ix){var c=it.c;if(c.s!==ult&&c.s){if(abierto)h+='</div>';h+='<div class="gb"><div class="grp">'+esc(c.s)+'</div>';abierto=true;ult=c.s}
     h+=itemHtml(it,ix,null,true)});
+  if(abierto)h+='</div>';
   elLista.innerHTML=h;
   var ix=-1;if(selK!=null)items.forEach(function(it,i){if(it.c.k===selK)ix=i});
   ST.sel=ix;marcaSel(true);marcaNav();
@@ -575,10 +580,26 @@ function marcaNav(){
 }
 
 /* lector */
+function avisoBoe(n,c,hoy){
+  /* Avisos del contraste con boe.es (los calcula el build). La fecha de HOY la pone el dispositivo: «entra en vigor» pasa solo a «en vigor desde». */
+  var l=n.av&&n.av[c.k];if(!l)return '';
+  hoy=hoy||new Date().toLocaleDateString('sv-SE');
+  var h='';
+  l.forEach(function(a){
+    if(a[0]==='f'){
+      h+=a[1]>hoy
+        ?'<div class="boe-av"><b>Reforma ya publicada en el BOE.</b> Entra en vigor el '+fdate(a[1])+'. Hasta entonces rige el texto de esta pantalla; contrasta con boe.es.</div>'
+        :'<div class="boe-av"><b>Reforma en vigor desde el '+fdate(a[1])+' que esta copia puede no recoger.</b> Contrasta con boe.es antes de citar este artículo.</div>';
+    }else{
+      h+='<div class="boe-av"><b>Este texto difiere del consolidado de boe.es.</b> Contrasta con boe.es antes de citar este artículo.</div>';
+    }
+  });
+  return h;
+}
 function artHtml(c,ix){
   var n=c.n,der=/\(Derogad[oa]s?\)/i.test(c.t+' '+c.b.slice(0,160));
   var tit=c.k==='cab'?'Encabezado y notas previas':c.e;
-  return '<article id="art-'+ix+'" data-ix="'+ix+'"><div class="a-eye">'+esc(n.sigla)+(c.s?' <span>·</span> '+esc(c.s):'')+'</div><h2 class="a-h">'+esc(tit)+(c.t?'<small>'+esc(c.t)+'</small>':'')+'</h2><div class="a-meta"><span>'+esc(n.titulo)+'</span><span>Actualizada a '+fdate(n.act)+'</span>'+(der?'<span class="der">Derogado</span>':'')+(n.est&&n.est!=='in_force'?'<span class="der">Norma no vigente ('+esc(n.est)+')</span>':'')+(c.notas?'<span>'+c.notas+' nota'+(c.notas>1?'s':'')+' de reforma</span>':'')+'</div><div class="a-body">'+render(c)+'</div></article>';
+  return '<article id="art-'+ix+'" data-ix="'+ix+'"><div class="a-eye">'+esc(n.sigla)+(c.s?' <span>·</span> '+esc(c.s):'')+'</div><h2 class="a-h">'+esc(tit)+(c.t?'<small>'+esc(c.t)+'</small>':'')+'</h2><div class="a-meta"><span>'+esc(n.titulo)+'</span><span>Actualizada a '+fdate(n.act)+'</span>'+(der?'<span class="der">Derogado</span>':'')+(n.est&&n.est!=='in_force'?'<span class="der">Norma no vigente ('+esc(n.est)+')</span>':'')+(c.notas?'<span>'+c.notas+' nota'+(c.notas>1?'s':'')+' de reforma</span>':'')+'</div>'+avisoBoe(n,c)+'<div class="a-body">'+render(c)+'</div></article>';
 }
 function urlBoe(c){var n=c.n;return 'https://www.boe.es/buscar/act.php?id='+n.boe+(/^\d+$/.test(c.k)?'#a'+c.k:'')}
 function citaCorta(c){return (c.e.replace(/^Artículos?/,'Art.').replace(/^Disposición /,'Disp. ')+' '+c.n.sigla).replace('Artículo','Art.')}
@@ -937,7 +958,7 @@ function arranque(){
   (window.requestIdleCallback||function(f){setTimeout(f,300)})(function(){indexa()});
 }
 /* gancho para las pruebas: devuelve el HTML con los enlaces que se crearían para un texto suelto */
-window.__NT={probar:function(nid,k,txt){return enlaza(esc(txt),POR[nid].map.get(k))},idx:function(){return IDX},vistaIndice:function(s){vistaIndice(s)}};
+window.__NT={poner:function(nid,av){POR[nid].av=av||undefined},avisoBoe:function(nid,k,hoy){return avisoBoe(POR[nid],{k:k},hoy)},probar:function(nid,k,txt){return enlaza(esc(txt),POR[nid].map.get(k))},idx:function(){return IDX},vistaIndice:function(s){vistaIndice(s)}};
 if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol)){navigator.serviceWorker.register('sw.js').catch(function(){})}
 cargar().then(function(d){DATA=d;arranque()}).catch(function(err){document.getElementById('carga').innerHTML='No he podido abrir los datos.<br><br>'+esc(err.message||err)});
 })();

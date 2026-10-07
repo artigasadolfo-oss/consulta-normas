@@ -1,5 +1,5 @@
 {
- "compilado": "2026-10-07",
+ "compilado": "2026-10-08",
  "corpus_commit": "aca28304d",
  "normas": [
   {
@@ -114,6 +114,7 @@
    "disposiciones": 15
   }
  ],
+ "boe_contrastado": "2026-10-08",
  "indice": {
   "version": "0.1-muestra",
   "voces": 16,

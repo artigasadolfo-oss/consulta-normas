@@ -324,6 +324,34 @@ def rellena_fuentes_y_logo():
     return fuentes, m.group(1)
 
 
+def avisos_boe(normas):
+    """Contraste con la API de boe.es (scripts/contraste_boe.py): -> ({sigla: {clave: [['d'] | ['f', 'AAAA-MM-DD'], ...]}}, fecha o None).
+    'd' = el texto de la herramienta difiere del consolidado vigente; 'f' = reforma ya publicada que entra en vigor en esa fecha.
+    Sin red (o con CONSULTA_NORMAS_SIN_BOE=1) no falla: devuelve ({}, None) y lo dice; la web entonces no muestra avisos."""
+    if os.environ.get("CONSULTA_NORMAS_SIN_BOE"):
+        return {}, None
+    try:
+        sys.path.insert(0, str(AQUI / "scripts"))
+        import contraste_boe
+        res = contraste_boe.contrasta(normas=normas)
+    except Exception as e:
+        print(f"AVISO: no he podido contrastar con boe.es ({type(e).__name__}); la web se compila SIN avisos de reforma/diferencia.")
+        return {}, None
+    out = {}
+    for sigla, r in res["normas"].items():
+        if "error" in r:
+            print(f"AVISO: contraste con boe.es de {sigla} no disponible: {r['error']}")
+            continue
+        d = {}
+        for k in r.get("distintos", []):
+            d.setdefault(k, []).append(["d"])
+        for k, fch in (r.get("futuras") or {}).items():
+            d.setdefault(k, []).append(["f", fch])
+        if d:
+            out[sigla] = d
+    return out, dt.date.today().isoformat()
+
+
 def git_head():
     try:
         return subprocess.run(["git", "-C", str(CORPUS), "rev-parse", "--short", "HEAD"],
@@ -405,6 +433,12 @@ def construye(solo_comprobar=False):
                                sha256=hashlib.sha256(raw).hexdigest(),
                                bloques=len(chunks), articulos=n_art, disposiciones=n_disp))
     print("\n".join(resumen))
+    av, av_fecha = avisos_boe([c for c in NORMAS if c["sigla"] in {d["sigla"] for d in datos}])
+    for d in datos:
+        if av.get(d["sigla"]):
+            d["av"] = av[d["sigla"]]
+    if av:
+        print("Avisos de contraste con boe.es en pantalla:", {s: len(v) for s, v in av.items()})
     idx, cambios = indice.compila(AQUI / "indice", claves_norma, lambda s, c: base_en_commit(claves_norma, s, c))
     resumen_idx = None
     if idx:
@@ -421,7 +455,7 @@ def construye(solo_comprobar=False):
     if solo_comprobar:
         return
     hoy = dt.date.today().isoformat()
-    meta_build = dict(compilado=hoy, corpus_commit=git_head(), normas=manifiesto, **({"indice": resumen_idx} if resumen_idx else {}))
+    meta_build = dict(compilado=hoy, corpus_commit=git_head(), normas=manifiesto, **({"boe_contrastado": av_fecha} if av_fecha else {}), **({"indice": resumen_idx} if resumen_idx else {}))
     payload = json.dumps(dict(normas=datos, build=meta_build, indice=idx), ensure_ascii=False, separators=(",", ":"))
     gz = gzip.compress(payload.encode("utf-8"), compresslevel=9, mtime=0)
     b64 = base64.b64encode(gz).decode()
