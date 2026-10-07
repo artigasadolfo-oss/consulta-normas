@@ -38,6 +38,15 @@ button{font-family:inherit}
 .rec{font-size:12.5px;padding:6px 10px}
 .rec .sg{min-width:0;font-size:11px;color:var(--ocre-700)}
 .rec .nm{color:var(--ink-700);font-size:12.5px}
+.favbox{margin:2px 0 4px;padding:3px;background:var(--ocre-50);border-radius:12px}
+.favbox .navlink:hover{background:rgba(255,255,255,.7)}
+.favbox .sg{color:var(--ocre-700);min-width:0}
+.favbox .fa .sg{min-width:0}
+.favbox .st{width:12px;height:12px;flex-shrink:0;color:var(--ocre);fill:var(--ocre);stroke:var(--ocre)}
+.favbox .fa+.fn{border-top:1px solid rgba(201,122,30,.22);margin-top:4px;padding-top:9px;border-radius:0 0 9px 9px}
+.favbox .vacio-fav{font-size:11.5px;color:var(--ink-500);padding:6px 10px}
+#b-fav.on{background:var(--ocre-50);border-color:var(--ocre);color:var(--ocre-700)}
+#b-fav.on svg{fill:var(--ocre);color:var(--ocre)}
 .sidenote{border-top:1px solid var(--ink-100);padding:12px 16px;font-size:11px;line-height:1.5;color:var(--ink-500)}
 .sidenote b{font-weight:600;color:var(--ink-700)}
 .sidenote.aviso{background:var(--ocre-50);color:var(--ocre-700)}
@@ -169,6 +178,8 @@ body.con-notas .a-body p.nota{display:block}
   <div class="brand"><div class="logo"></div><div><div class="an">Normas</div><div class="fm">Artigas Abogados</div></div></div>
   <div class="tree">
    <button class="navlink" id="nav-buscar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>Buscar</button>
+   <div class="nsec" id="nsec-fav" title="Artículos que fijas con la estrella y las normas que más consultas en este dispositivo">Favoritos</div>
+   <div class="favbox" id="nav-fav"></div>
    <div class="nsec">Normas</div>
    <div id="nav-normas"></div>
    <div class="nsec" id="nsec-rec" style="display:none">Recientes</div>
@@ -469,6 +480,9 @@ function vistaInicio(){
   var rec=LS.get('normas.rec',[]);
   elLector.innerHTML='<div class="lect-in"><div class="a-eye">Consulta rápida</div><h2 class="a-h" style="font-size:20px">'+NORMAS.length+' normas en este dispositivo</h2><div class="a-meta">Funciona sin conexión. Texto consolidado del BOE según el espejo del despacho.</div><div class="a-body">'+
    NORMAS.map(function(n){return '<p><b>'+esc(n.sigla)+'</b> — '+esc(n.titulo)+'<br><span style="color:var(--ink-500);font-size:.85em">'+n.cuenta+' artículos'+(n.cdisp?' · '+n.cdisp+' disposiciones':'')+' · actualizada a '+fdate(n.act)+(n.est&&n.est!=='in_force'?' · <b style="color:var(--brick)">NO VIGENTE ('+esc(n.est)+')</b>':'')+'</span></p>'}).join('')+'</div></div>';
+  var bx=document.createElement('p');bx.style.cssText='margin:14px 0 0;padding:0 28px;font-size:12px;color:var(--ink-500)';
+  bx.innerHTML='<b>Favoritos.</b> Fija un artículo con la estrella (o la tecla F) y aparecerá arriba en el menú; las normas que más consultas suben solas. Se guarda solo en este dispositivo. <button class="ejb" id="b-reset-fav" type="button">Restablecer favoritos</button>';
+  elLector.appendChild(bx);$('#b-reset-fav').onclick=restableceFav;
   document.body.classList.remove('ver-lector');
   marcaNav();
 }
@@ -533,6 +547,7 @@ function mostrar(cs,opt){
    '<button class="btn" id="b-next"'+(next?'':' disabled')+' title="Siguiente (→)"><span class="txt-largo">Siguiente</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>'+
    '<span class="sp"></span>'+
    (cs.some(function(c){return c.notas})?'<button class="btn" id="b-notas" aria-pressed="false" title="Notas de reforma del BOE">Notas</button>':'')+
+   (cs.length===1?'<button class="btn" id="b-fav" aria-pressed="false" title="Fijar en favoritos (F)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.9L12 16.9 6.8 19.7l1-5.9L3.5 9.7l5.9-.8z"/></svg><span class="txt-largo">Favorito</span></button>':'')+
    '<button class="btn" id="b-menos" aria-label="Letra más pequeña">A−</button><button class="btn" id="b-mas" aria-label="Letra más grande">A+</button>'+
    '<button class="btn" id="b-boe">BOE</button>'+
    '<button class="btn p" id="b-copiar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 012-2h9"/></svg>Copiar</button></div>';
@@ -558,6 +573,7 @@ function ligaBarra(cs){
   q('b-prev').onclick=function(){var c=primero.n.ch[primero.i-1];if(c)go('#a/'+c.n.id+'/'+encodeURIComponent(c.k),{replace:true})};
   q('b-next').onclick=function(){var c=ultimo.n.ch[ultimo.i+1];if(c)go('#a/'+c.n.id+'/'+encodeURIComponent(c.k),{replace:true})};
   if(q('b-notas')){q('b-notas').onclick=function(){var on=!document.body.classList.contains('con-notas');document.body.classList.toggle('con-notas',on);LS.set('normas.notas',on);q('b-notas').classList.toggle('on',on);q('b-notas').setAttribute('aria-pressed',on)};var on=document.body.classList.contains('con-notas');q('b-notas').classList.toggle('on',on);q('b-notas').setAttribute('aria-pressed',on)}
+  if(q('b-fav')){var bf=q('b-fav');pintaBotonFav(bf,primero);bf.onclick=function(){var on=alternaFav(primero);pintaBotonFav(bf,primero);toast(on?'Fijado en favoritos':'Quitado de favoritos')}}
   q('b-menos').onclick=function(){fuente(-1)};q('b-mas').onclick=function(){fuente(1)};
   q('b-boe').onclick=function(){window.open(urlBoe(primero),'_blank','noopener')};
   q('b-copiar').onclick=function(){copiar(cs,q('b-copiar'))};
@@ -569,7 +585,39 @@ function copiar(cs,btn){
   var fb=function(){var ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy');ok()}catch(e){toast('No he podido copiar')}ta.remove()};
   if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(txt).then(ok,fb);else fb();
 }
+/* ---------- favoritos: artículos fijados (★) + normas más consultadas ---------- */
+var DEF_FAV=['lec','lo1-2025','lau','lph','cc'],N_FAV=5;
+var ESTRELLA='<svg class="st" viewBox="0 0 24 24" stroke-width="1.6" stroke-linejoin="round"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.9L12 16.9 6.8 19.7l1-5.9L3.5 9.7l5.9-.8z"/></svg>';
+function contar(id){var u=LS.get('normas.uso',{});u[id]=(u[id]||0)+1;LS.set('normas.uso',u);pintaFav()}
+function favNormas(){
+  var u=LS.get('normas.uso',{});
+  return NORMAS.map(function(n,i){var d=DEF_FAV.indexOf(n.id);return {n:n,c:u[n.id]||0,o:d<0?100+i:d}})
+    .sort(function(a,b){return b.c-a.c||a.o-b.o}).slice(0,N_FAV);
+}
+function favArts(){return LS.get('normas.fav',[]).filter(function(f){return POR[f.n]&&POR[f.n].map.has(f.k)})}
+function esFav(c){return favArts().some(function(f){return f.n===c.n.id&&f.k===c.k})}
+function alternaFav(c){
+  var f=LS.get('normas.fav',[]),i=-1;
+  f.forEach(function(x,j){if(x.n===c.n.id&&x.k===c.k)i=j});
+  if(i>=0)f.splice(i,1);else f.unshift({n:c.n.id,k:c.k});
+  LS.set('normas.fav',f);pintaFav();return i<0;
+}
+function pintaFav(){
+  var fa=favArts(),fn=favNormas(),h='';
+  fa.forEach(function(f){var c=POR[f.n].map.get(f.k);
+    h+='<button class="navlink rec fa" data-n="'+f.n+'" data-k="'+esc(f.k)+'">'+ESTRELLA+'<span class="sg">'+esc(POR[f.n].sigla)+'</span><span class="nm">'+esc(abrev(c))+'</span></button>'});
+  fn.forEach(function(x,i){
+    h+='<button class="navlink fn" data-n="'+x.n.id+'"'+''+'><span class="sg">'+esc(x.n.sigla)+'</span><span class="nm">'+esc(x.n.corto)+'</span>'+(x.c?'<span class="ct" title="consultas en este dispositivo">'+x.c+'</span>':'')+'</button>'});
+  $('#nav-fav').innerHTML=h;
+}
+function restableceFav(){
+  if(!window.confirm('¿Borrar los artículos fijados y el recuento de consultas de este dispositivo?'))return;
+  LS.set('normas.fav',[]);LS.set('normas.uso',{});pintaFav();toast('Favoritos restablecidos');
+  var b=document.getElementById('b-fav');if(b&&ST.mostrados)pintaBotonFav(b,ST.mostrados[0]);
+}
+function pintaBotonFav(b,c){var on=esFav(c);b.classList.toggle('on',on);b.setAttribute('aria-pressed',on);b.title=(on?'Quitar de favoritos':'Fijar en favoritos')+' (F)'}
 function registra(c){
+  contar(c.n.id);
   var rec=LS.get('normas.rec',[]).filter(function(r){return !(r.n===c.n.id&&r.k===c.k)});
   rec.unshift({n:c.n.id,k:c.k});rec=rec.slice(0,10);LS.set('normas.rec',rec);pintaRec();
 }
@@ -703,7 +751,9 @@ elLector.addEventListener('click',function(e){
   e.preventDefault();ST.pushed=true;go(a.getAttribute('href'));
 });
 $('#nav-buscar').addEventListener('click',function(){cierraNav();go('');elQ.focus()});
-$('#nav-normas').addEventListener('click',function(e){var b=e.target.closest('.navlink');if(!b)return;cierraNav();go('#n/'+b.dataset.n)});
+$('#nav-normas').addEventListener('click',function(e){var b=e.target.closest('.navlink');if(!b)return;cierraNav();contar(b.dataset.n);go('#n/'+b.dataset.n)});
+$('#nav-fav').addEventListener('click',function(e){var b=e.target.closest('.navlink');if(!b)return;cierraNav();
+  if(b.dataset.k!=null)go('#a/'+b.dataset.n+'/'+encodeURIComponent(b.dataset.k));else{contar(b.dataset.n);go('#n/'+b.dataset.n)}});
 $('#nav-rec').addEventListener('click',function(e){var b=e.target.closest('.navlink');if(!b)return;cierraNav();go('#a/'+b.dataset.n+'/'+encodeURIComponent(b.dataset.k))});
 $('#mnav').addEventListener('click',function(){document.body.classList.toggle('navopen')});
 $('#scrim').addEventListener('click',cierraNav);
@@ -711,6 +761,7 @@ document.addEventListener('keydown',function(e){
   var t=e.target,enCampo=t&&(t.tagName==='INPUT'||t.tagName==='TEXTAREA'||t.isContentEditable);
   if((e.key==='/'&&!enCampo)||((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k')){e.preventDefault();document.body.classList.remove('ver-lector');elQ.focus();elQ.select();return}
   if(enCampo||e.metaKey||e.ctrlKey||e.altKey)return;
+  if((e.key==='f'||e.key==='F')&&ST.mostrados&&ST.mostrados.length===1){var bf=document.getElementById('b-fav');if(bf){e.preventDefault();bf.click();return}}
   if(e.key==='Escape'){if(document.body.classList.contains('ver-lector')){var b=document.getElementById('b-volver');if(b)b.click()}else elQ.focus();return}
   if(/^[1-9]$/.test(e.key)&&ST.mode!=='norma'&&ST.mode!=='q-norma'&&ST.items.length>=+e.key){e.preventDefault();selecciona(+e.key-1,{abrir:true});return}
   if(e.key==='ArrowDown'&&t===elLista||e.key==='j'){if(t===elLector)return;e.preventDefault();selecciona(Math.min(ST.items.length-1,ST.sel+1))}
@@ -726,7 +777,7 @@ function arranque(){
   var fs=LS.get('normas.fs',16);document.documentElement.style.setProperty('--fs',fs+'px');
   if(LS.get('normas.notas',false))document.body.classList.add('con-notas');
   $('#nav-normas').innerHTML=NORMAS.map(function(n){return '<button class="navlink" data-n="'+n.id+'"><span class="sg">'+esc(n.sigla)+'</span><span class="nm">'+esc(n.corto)+'</span><span class="ct">'+n.cuenta+'</span></button>'}).join('');
-  pintaRec();
+  pintaRec();pintaFav();
   var act=NORMAS.map(function(n){return n.act}).sort().pop();
   var dias=Math.floor((Date.now()-Date.parse(COMPILADO))/86400000);
   var sn=$('#sidenote');

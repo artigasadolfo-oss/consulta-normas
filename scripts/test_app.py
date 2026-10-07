@@ -95,6 +95,37 @@ with sync_playwright() as p:
     esperado = {"lec": 827 + 40, "lopj": 642 + 71, "cc": 1976 + 22, "ce": 169, "lau": 51 + 2, "lph": 24, "loe": 20}
     got = {n: int(pg.inner_text(f"#nav-normas .navlink[data-n={n}] .ct")) for n in esperado}
     check("menú: nº de artículos reales (sin disposiciones)", got == esperado, str(got))
+    print("\n[favoritos]")
+    def vaya(h):
+        pg.evaluate("h=>{location.hash=h}", h); time.sleep(0.35)
+
+    def filas_fn():
+        return pg.eval_on_selector_all("#nav-fav .fn", "els=>els.map(e=>e.querySelector('.sg').textContent+(e.querySelector('.ct')?'|'+e.querySelector('.ct').textContent:''))")
+    check("favoritos: al estrenar salen las 5 normas de cabecera, sin fijados ni recuento", filas_fn() == ["LEC", "LO 1/2025", "LAU", "LPH", "CC"] and pg.locator("#nav-fav .fa").count() == 0, str(filas_fn()))
+    for k in ("1", "2", "3", "4"):
+        vaya(f"#a/lopj/{k}")
+    check("favoritos: la norma más consultada (LOPJ ×4) sube a la primera y desplaza a la última", filas_fn() == ["LOPJ|4", "LEC", "LO 1/2025", "LAU", "LPH"], str(filas_fn()))
+    vaya("#a/lec/282")
+    check("favoritos: el botón ★ existe y arranca sin pulsar", pg.get_attribute("#b-fav", "aria-pressed") == "false")
+    pg.click("#b-fav"); time.sleep(0.2)
+    fa_ = pg.eval_on_selector_all("#nav-fav .fa", "els=>els.map(e=>e.textContent.trim())")
+    check("favoritos: al pulsar ★ el art. 282 LEC aparece fijado arriba", len(fa_) == 1 and "LEC" in fa_[0] and "282" in fa_[0] and pg.get_attribute("#b-fav", "aria-pressed") == "true", str(fa_))
+    pg.evaluate("document.activeElement&&document.activeElement.blur()"); pg.keyboard.press("f"); time.sleep(0.2)
+    check("favoritos: la tecla F lo quita", pg.locator("#nav-fav .fa").count() == 0 and pg.get_attribute("#b-fav", "aria-pressed") == "false")
+    pg.keyboard.press("f"); time.sleep(0.2)
+    check("favoritos: la tecla F lo vuelve a fijar", pg.locator("#nav-fav .fa").count() == 1)
+    pg.reload(); pg.wait_for_function("!document.querySelector('#carga')", timeout=15000)
+    check("favoritos: persisten tras recargar (fijado y recuento de LOPJ)", pg.locator("#nav-fav .fa").count() == 1 and any(x.startswith("LOPJ|4") for x in filas_fn()), str(filas_fn()))
+    vaya("#a/lau/3")
+    pg.click("#nav-fav .fa"); time.sleep(0.4)
+    check("favoritos: pinchar el artículo fijado abre el 282 LEC", pg.evaluate("location.hash") == "#a/lec/282" and "Artículo 282" in pg.inner_text("#lector .a-h"), pg.evaluate("location.hash"))
+    vaya("#a/lec/1"); pg.click("#b-fav"); time.sleep(0.15)
+    check("favoritos: se pueden fijar varios (el más reciente arriba)", pg.eval_on_selector_all("#nav-fav .fa .nm", "els=>els.map(e=>e.textContent)")[0].endswith("1") and pg.locator("#nav-fav .fa").count() == 2)
+    pg.click("#nav-fav .fn >> nth=1"); time.sleep(0.4)
+    check("favoritos: pinchar una norma abre su índice", pg.evaluate("location.hash").startswith("#n/"), pg.evaluate("location.hash"))
+    pg.once("dialog", lambda d: d.accept()); vaya(""); pg.click("#b-reset-fav"); time.sleep(0.3)
+    check("favoritos: «Restablecer» deja el estado de estreno", pg.locator("#nav-fav .fa").count() == 0 and filas_fn() == ["LEC", "LO 1/2025", "LAU", "LPH", "CC"], str(filas_fn()))
+    print()
     consulta(pg, "lec")
     cab_ = pg.inner_text("#lector .a-meta") if pg.locator("#lector .a-meta").count() else ""
     check("cabecera LEC: «867 artículos · 49 disposiciones»", "867 artículos · 49 disposiciones" in cab_ and "y disposiciones" not in cab_, cab_)
