@@ -19,10 +19,11 @@ incrustados: funciona abriéndolo como archivo local, **sin conexión**, y tambi
   enlace al BOE, recientes.
 
 Normas incluidas: LEC, LO 1/2025, LAU, LPH, Código Civil, LOPJ, Ley 38/1999 de Ordenación de la Edificación (LOE),
-RDL 1/2007 (texto refundido de la Ley General de Consumidores y Usuarios, TRLGDCU), Decreto Legislativo 1/2019 (texto
-refundido de la Ley del Estatuto de las personas consumidoras y usuarias de la Comunitat Valenciana, EPCU-CV), Decreto 11/1995
+RDL 1/2007 (texto refundido de la Ley General de Consumidores y Usuarios, TRLGDCU), Decreto 11/1995
 del Gobierno Valenciano de prestación de servicios a domicilio (D 11/1995, solo en el DOGV, importado a mano) y Constitución.
 (La LOPDGDD se retiró el 07-10-2026 a petición de Adolfo; la Ley valenciana 3/2004 de calidad de la edificación se probó y se descartó.)
+
+El número que se muestra junto a cada norma es el de **artículos reales** (con sus bis/ter, y los números que cubren los bloques derogados «Artículos X a Y»); las disposiciones adicionales, transitorias, derogatorias y finales se cuentan aparte («867 artículos · 49 disposiciones»).
 
 ## Origen y fidelidad del texto
 

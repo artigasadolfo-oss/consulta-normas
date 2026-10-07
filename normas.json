@@ -10,7 +10,8 @@
    "actualizada": "2026-10-05",
    "sha256": "5d995eb240685f87ab03096790d7208bcd85497b8136f99bb4e7d648836f0a1f",
    "bloques": 918,
-   "articulos": 916
+   "articulos": 867,
+   "disposiciones": 49
   },
   {
    "id": "lo1-2025",
@@ -20,7 +21,8 @@
    "actualizada": "2025-06-04",
    "sha256": "f0edd953de8eec4b50f0542ea434a323de3cadc478bdf6818dc6cd34fc1ea4b9",
    "bloques": 88,
-   "articulos": 86
+   "articulos": 24,
+   "disposiciones": 62
   },
   {
    "id": "lau",
@@ -30,7 +32,8 @@
    "actualizada": "2026-10-02",
    "sha256": "c19f4916c4aa1bb2f54a495da9eb13847ca421ee11e268a3044ead9c08560b96",
    "bloques": 79,
-   "articulos": 78
+   "articulos": 53,
+   "disposiciones": 25
   },
   {
    "id": "lph",
@@ -40,7 +43,8 @@
    "actualizada": "2026-10-05",
    "sha256": "da32d5435d29c4fbf4fe6466a186431c0d58dcacfa581ed88694b4bb7d3874d9",
    "bloques": 32,
-   "articulos": 31
+   "articulos": 24,
+   "disposiciones": 7
   },
   {
    "id": "cc",
@@ -50,7 +54,8 @@
    "actualizada": "2025-01-03",
    "sha256": "77f0d17fe837bfa84ed3598867805d86b7135d362c9be6b6bb2cdfa38e6ba407",
    "bloques": 2002,
-   "articulos": 2001
+   "articulos": 1998,
+   "disposiciones": 0
   },
   {
    "id": "lopj",
@@ -60,7 +65,8 @@
    "actualizada": "2025-02-17",
    "sha256": "daa7f58ada8954d8d78b994be7a5ca1dae1dc54334b254ef050ef40384ecd99a",
    "bloques": 777,
-   "articulos": 775
+   "articulos": 713,
+   "disposiciones": 72
   },
   {
    "id": "loe",
@@ -70,7 +76,8 @@
    "actualizada": "2022-06-15",
    "sha256": "1fcd6b267eb52509ba3155cf71452a1edaf4ca718fe6bcc7eb2fa4e62fc1686b",
    "bloques": 41,
-   "articulos": 39
+   "articulos": 20,
+   "disposiciones": 19
   },
   {
    "id": "trlgdcu",
@@ -80,17 +87,8 @@
    "actualizada": "2026-02-28",
    "sha256": "1491c8ed045b63e3e52976fd58d3c154c8a4360f56a78e60869e08ebf8379fa4",
    "bloques": 203,
-   "articulos": 202
-  },
-  {
-   "id": "epcucv",
-   "boe": "DOGV-r-2019-90594",
-   "sigla": "EPCU-CV",
-   "dir": "es-vc",
-   "actualizada": "2025-05-31",
-   "sha256": "2bdb98769cfa49ee6a9c63208510c95894b1077b9dfe7a7c8391e51845aab466",
-   "bloques": 97,
-   "articulos": 96
+   "articulos": 190,
+   "disposiciones": 12
   },
   {
    "id": "d11-1995",
@@ -101,7 +99,8 @@
    "actualizada": "1995-01-25",
    "sha256": "4c24f1d9dd8d618a58489f639bbb4dc34753d1cd081702b61cb7dba6e1d3dc64",
    "bloques": 9,
-   "articulos": 8
+   "articulos": 6,
+   "disposiciones": 2
   },
   {
    "id": "ce",
@@ -111,7 +110,8 @@
    "actualizada": "2026-05-20",
    "sha256": "9db0c0c36a8b5f88b4f62d9d1782ec7acf15c011f090ec32f2849594839a2cdd",
    "bloques": 186,
-   "articulos": 184
+   "articulos": 169,
+   "disposiciones": 15
   }
  ]
 }

@@ -227,7 +227,7 @@ function prepara(){
       n.map.set(c.k,c);
       c.notas=0;var ls=c.b.split('\n');for(var j=0;j<ls.length;j++)if(ls[j].charAt(0)==='>')c.notas++;
     });
-    n.cuenta=n.ch.filter(function(c){return c.k!=='cab'&&c.k!=='pre'}).length;
+    n.cuenta=n.ca;n.cdisp=n.cd;
     POR[n.id]=n;NORMAS.push(n);
   });
 }
@@ -261,7 +261,6 @@ var ALIAS=[
  ['lopj','ley organica del poder judicial|poder judicial|lo 6/1985|lopj'],
  ['loe','ley de ordenacion de la edificacion|ordenacion de la edificacion|ley 38/1999|loe'],
  ['trlgdcu','texto refundido de la ley general para la defensa de los consumidores y usuarios|ley general para la defensa de los consumidores y usuarios|real decreto legislativo 1/2007|rdl 1/2007|ley de consumidores y usuarios|consumidores y usuarios|ley de consumidores|trlgdcu|lgdcu|trlgdcyu'],
- ['epcucv','texto refundido de la ley del estatuto de las personas consumidoras y usuarias de la comunitat valenciana|ley del estatuto de las personas consumidoras y usuarias|estatuto de las personas consumidoras y usuarias|estatuto valenciano de consumidores|ley valenciana de consumidores|decreto legislativo 1/2019|dl 1/2019|epcu-cv|epcucv|ecucv'],
  ['d11-1995','decreto 11/1995|decreto valenciano de servicios a domicilio|decreto de servicios a domicilio|d 11/1995|d11/1995|dec 11/1995'],
  ['ce','constitucion espanola|constitucion|ce']
 ];
@@ -319,7 +318,7 @@ function resuelve(cons){
 
 /* ---------- búsqueda de texto ---------- */
 var STOP=new Set('de la el los las del en y a o por para con un una al se que su sus lo es no le les como mas ya sin sobre entre'.split(' '));
-var SAFE={lec:'lec',lau:'lau',lph:'lph',cc:'cc',cciv:'cc',lopj:'lopj',loe:'loe',trlgdcu:'trlgdcu',lgdcu:'trlgdcu',epcucv:'epcucv',ecucv:'epcucv'};
+var SAFE={lec:'lec',lau:'lau',lph:'lph',cc:'cc',cciv:'cc',lopj:'lopj',loe:'loe',trlgdcu:'trlgdcu',lgdcu:'trlgdcu'};
 function stem(t){if(t.length>=6&&/es$/.test(t))return t.slice(0,-2);if(t.length>=4&&/s$/.test(t))return t.slice(0,-1);return t}
 function patronAcentos(t){return t.replace(/[aeioun]/g,function(ch){return {a:'[aáàâä]',e:'[eéèêë]',i:'[iíìîï]',o:'[oóòôö]',u:'[uúùûü]',n:'[nñ]'}[ch]})}
 function buscarTexto(q,filtroAlias){
@@ -372,12 +371,11 @@ var NOMBRES_NORMA=[
  ['lph','ley sobre propiedad horizontal|ley de propiedad horizontal|ley 49/1960|lph'],['cc','codigo civil|cciv'],
  ['lopj','ley organica del poder judicial|ley organica 6/1985|lopj'],['loe','ley de ordenacion de la edificacion|ley 38/1999|loe'],
  ['trlgdcu','texto refundido de la ley general para la defensa de los consumidores y usuarios|ley general para la defensa de los consumidores y usuarios|real decreto legislativo 1/2007|trlgdcu|lgdcu'],
- ['epcucv','texto refundido de la ley del estatuto de las personas consumidoras y usuarias de la comunitat valenciana|ley del estatuto de las personas consumidoras y usuarias|decreto legislativo 1/2019|epcucv'],
  ['d11-1995','decreto 11/1995'],
  ['lo1-2025','ley organica 1/2025'],['ce','constitucion espanola|constitucion|ce']
 ];
 var RE_NOM=NOMBRES_NORMA.map(function(x){return [x[0],new RegExp('^('+x[1].replace(/[\/.]/g,'\\$&')+')\\b')]});
-var RE_OTRA=/\b(?:de|del)\s+(?:(?:la|el|los|las|esta|este|presente|dicha|dicho|citad[oa]|referid[oa]|mencionad[oa]|misma|mismo|propia|propio)\s+){0,2}(?:ley|codigo|real|reglamento|constitucion|estatut|texto|tratado|convenio|directiva|decreto|orden|lo\b|l\.o|lec\b|lopj\b|lau\b|lph\b|cc\b|ce\b|lopdgdd\b|loe\b|trlgdcu\b|lgdcu\b|epcucv\b|norma|ordenanza|reglamento|carta|pacto|acuerdo|disposicion)/;
+var RE_OTRA=/\b(?:de|del)\s+(?:(?:la|el|los|las|esta|este|presente|dicha|dicho|citad[oa]|referid[oa]|mencionad[oa]|misma|mismo|propia|propio)\s+){0,2}(?:ley|codigo|real|reglamento|constitucion|estatut|texto|tratado|convenio|directiva|decreto|orden|lo\b|l\.o|lec\b|lopj\b|lau\b|lph\b|cc\b|ce\b|lopdgdd\b|loe\b|trlgdcu\b|lgdcu\b|norma|ordenanza|reglamento|carta|pacto|acuerdo|disposicion)/;
 function destinoRef(resto,n,c){
   var s=norm(resto.slice(0,110)),corte=s.search(/[.;:](?=\s|$)/);if(corte>=0)s=s.slice(0,corte);
   var m=RE_OTRA.exec(s);
@@ -470,7 +468,7 @@ function vistaInicio(){
   elLista.innerHTML='<div class="vacio"><b>Escribe un artículo o un concepto.</b><br>Artículo: «282 LEC», «art. 18.3 de la LPH», «1902 cc», «63-65 lec», «da 1 lec».<br>Sin norma («21») te enseño ese artículo en todas.<br>Concepto: cualquier palabra o frase; te saco los artículos que la contienen.<div class="ej">'+ej.map(function(e){return '<button class="ejb" data-q="'+esc(e)+'">'+esc(e)+'</button>'}).join('')+'</div><div class="hint"><span class="kbd">/</span> volver al buscador · <span class="kbd">↑</span> <span class="kbd">↓</span> moverse por la lista · <span class="kbd">Enter</span> abrir · <span class="kbd">←</span> <span class="kbd">→</span> artículo anterior/siguiente · <span class="kbd">1</span>–<span class="kbd">9</span> abrir resultado (fuera del buscador)</div></div>';
   var rec=LS.get('normas.rec',[]);
   elLector.innerHTML='<div class="lect-in"><div class="a-eye">Consulta rápida</div><h2 class="a-h" style="font-size:20px">'+NORMAS.length+' normas en este dispositivo</h2><div class="a-meta">Funciona sin conexión. Texto consolidado del BOE según el espejo del despacho.</div><div class="a-body">'+
-   NORMAS.map(function(n){return '<p><b>'+esc(n.sigla)+'</b> — '+esc(n.titulo)+'<br><span style="color:var(--ink-500);font-size:.85em">'+n.cuenta+' artículos y disposiciones · actualizada a '+fdate(n.act)+(n.est&&n.est!=='in_force'?' · <b style="color:var(--brick)">NO VIGENTE ('+esc(n.est)+')</b>':'')+'</span></p>'}).join('')+'</div></div>';
+   NORMAS.map(function(n){return '<p><b>'+esc(n.sigla)+'</b> — '+esc(n.titulo)+'<br><span style="color:var(--ink-500);font-size:.85em">'+n.cuenta+' artículos'+(n.cdisp?' · '+n.cdisp+' disposiciones':'')+' · actualizada a '+fdate(n.act)+(n.est&&n.est!=='in_force'?' · <b style="color:var(--brick)">NO VIGENTE ('+esc(n.est)+')</b>':'')+'</span></p>'}).join('')+'</div></div>';
   document.body.classList.remove('ver-lector');
   marcaNav();
 }
@@ -600,7 +598,7 @@ var ULTIMO_Q=null;
 function apply(){
   var H=parseHash();if(H.t!=='a')ST.pushed=false;
   if(H.t==='home'){elQ.value='';$('#limpia').style.display='none';ST.q='';vistaInicio();return}
-  if(H.t==='n'){var n=POR[H.n];if(n){vistaNorma(n,null);elLector.innerHTML='<div class="lect-in"><div class="a-eye">'+esc(n.sigla)+'</div><h2 class="a-h" style="font-size:20px">'+esc(n.titulo)+'</h2><div class="a-meta">'+n.cuenta+' artículos y disposiciones · actualizada a '+fdate(n.act)+'</div><div class="a-body"><p>Elige un artículo del índice, o escribe arriba su número («282») seguido de «'+esc(n.sigla)+'».</p></div></div>';document.body.classList.remove('ver-lector')}return}
+  if(H.t==='n'){var n=POR[H.n];if(n){vistaNorma(n,null);elLector.innerHTML='<div class="lect-in"><div class="a-eye">'+esc(n.sigla)+'</div><h2 class="a-h" style="font-size:20px">'+esc(n.titulo)+'</h2><div class="a-meta">'+n.cuenta+' artículos'+(n.cdisp?' · '+n.cdisp+' disposiciones':'')+' · actualizada a '+fdate(n.act)+'</div><div class="a-body"><p>Elige un artículo del índice, o escribe arriba su número («282») seguido de «'+esc(n.sigla)+'».</p></div></div>';document.body.classList.remove('ver-lector')}return}
   if(H.t==='a'){
     var nn=POR[H.n],c=nn&&nn.map.get(H.k);if(!c){toast('Artículo no encontrado');vistaInicio();return}
     var dentro=ST.mode!=='home'&&ST.items.some(function(it,i){if(it.c===c){ST.sel=i;return true}return false});
@@ -621,7 +619,7 @@ function ejecuta(q,sel){
   ST.hl=null;ST.parcial=false;
   if(cons&&cons.alias&&!cons.piezas.length){
     var n=POR[cons.alias];vistaNorma(n,null);ST.mode='q-norma';
-    elLector.innerHTML='<div class="lect-in"><div class="a-eye">'+esc(n.sigla)+'</div><h2 class="a-h" style="font-size:20px">'+esc(n.titulo)+'</h2><div class="a-meta">'+n.cuenta+' artículos y disposiciones · actualizada a '+fdate(n.act)+'</div><div class="a-body"><p>Índice de la norma a la izquierda. Escribe «'+esc(n.sigla)+'» y un número para ir directo (por ejemplo «'+esc(n.sigla)+' 1»), o una palabra para buscar solo en esta norma.</p></div></div>';
+    elLector.innerHTML='<div class="lect-in"><div class="a-eye">'+esc(n.sigla)+'</div><h2 class="a-h" style="font-size:20px">'+esc(n.titulo)+'</h2><div class="a-meta">'+n.cuenta+' artículos'+(n.cdisp?' · '+n.cdisp+' disposiciones':'')+' · actualizada a '+fdate(n.act)+'</div><div class="a-body"><p>Índice de la norma a la izquierda. Escribe «'+esc(n.sigla)+'» y un número para ir directo (por ejemplo «'+esc(n.sigla)+' 1»), o una palabra para buscar solo en esta norma.</p></div></div>';
     document.body.classList.remove('ver-lector');elChips.innerHTML='';return;
   }
   if(cons){

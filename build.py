@@ -40,7 +40,6 @@ NORMAS = [
     dict(id="lopj",   boe="BOE-A-1985-12666", sigla="LOPJ",      corto="Ley Orgánica del Poder Judicial"),
     dict(id="loe",    boe="BOE-A-1999-21567", sigla="LOE",       corto="Ley de Ordenación de la Edificación"),
     dict(id="trlgdcu", boe="BOE-A-2007-20555", sigla="TRLGDCU",  corto="Ley General de Consumidores y Usuarios", previo_rdl="RDL 1/2007"),
-    dict(id="epcucv", boe="DOGV-r-2019-90594", sigla="EPCU-CV", corto="Estatuto valenciano de consumidores y usuarios", dir="es-vc", previo_rdl="DLeg 1/2019"),
     dict(id="d11-1995", boe="DOGV-1995-833645", sigla="D 11/1995", corto="Decreto valenciano de servicios a domicilio", dir="es-vc", dogv_id=42036),
     dict(id="ce",     boe="BOE-A-1978-31229", sigla="CE",        corto="Constitución Española"),
 ]
@@ -332,6 +331,30 @@ def git_head():
         return ""
 
 
+def cuenta_real(chunks):
+    """(artículos, disposiciones). Artículos = los de la norma, con sus bis/ter, y los números cubiertos por los bloques
+    «Artículos X a Y» (derogados) que no salgan ya sueltos; NO suma disposiciones adicionales/transitorias/derogatorias/finales
+    (ni el artículo único y las disposiciones del RDL/DLeg que aprueba el texto refundido: claves rd-…)."""
+    es_disp = re.compile(r"^(rd-|d[adtf])")
+    sueltos, rangos, disp = [], [], 0
+    for c in chunks:
+        k = c["k"]
+        if k in ("cab", "pre"):
+            continue
+        if es_disp.match(k):
+            disp += 1
+        elif re.match(r"^\d+-\d+$", k):
+            rangos.append(k)
+        else:
+            sueltos.append(k)
+    planos = {k for k in sueltos if re.fullmatch(r"\d+", k)}
+    cubiertos = set()
+    for k in rangos:
+        a, z = map(int, k.split("-"))
+        cubiertos |= {str(n) for n in range(a, z + 1)} - planos
+    return len(sueltos) + len(cubiertos), disp
+
+
 def construye(solo_comprobar=False):
     datos, manifiesto, resumen = [], [], []
     for cfg in NORMAS:
@@ -339,18 +362,19 @@ def construye(solo_comprobar=False):
         chunks, avisos = parse_norma(cfg, lineas)
         n_cab = verifica_sin_perdidas(cfg, lineas, chunks)
         arts = [c for c in chunks if c["k"] not in ("cab", "pre")]
-        resumen.append(f"{cfg['sigla']:10s} {len(arts):5d} artículos/disposiciones  "
+        n_art, n_disp = cuenta_real(chunks)
+        resumen.append(f"{cfg['sigla']:10s} {n_art:5d} artículos + {n_disp:3d} disposiciones  "
                        f"({len(chunks)} bloques, {n_cab} cabeceras consumidas) "
                        f"actualizada {meta.get('last_updated','?')} {'; '.join(avisos)}")
         datos.append(dict(id=cfg["id"], boe=cfg["boe"], sigla=cfg["sigla"], corto=cfg["corto"],
                           titulo=meta.get("title", cfg["corto"]), act=meta.get("last_updated", ""),
-                          est=meta.get("status", ""), url=meta.get("url_html_consolidada", ""),
+                          est=meta.get("status", ""), url=meta.get("url_html_consolidada", ""), ca=n_art, cd=n_disp,
                           ch=[dict(k=c["k"], e=c["e"], t=c["t"], s=c["s"], b=c["b"]) for c in chunks]))
         manifiesto.append(dict(id=cfg["id"], boe=cfg["boe"], sigla=cfg["sigla"], dir=cfg.get("dir", "es"),
                                **({"dogv_id": cfg["dogv_id"]} if cfg.get("dogv_id") else {}),
                                actualizada=meta.get("last_updated", ""),
                                sha256=hashlib.sha256(raw).hexdigest(),
-                               bloques=len(chunks), articulos=len(arts)))
+                               bloques=len(chunks), articulos=n_art, disposiciones=n_disp))
     print("\n".join(resumen))
     if solo_comprobar:
         return

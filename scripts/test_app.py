@@ -90,7 +90,14 @@ with sync_playwright() as p:
     check("sin peticiones a internet", not externas, str(externas[:3]))
     check("tantas normas en el menú como en build.py", pg.locator("#nav-normas .navlink").count() == len(build.NORMAS), str(pg.locator("#nav-normas .navlink").count()))
     check("LOPDGDD ya no está", pg.locator("#nav-normas .navlink[data-n=lopdgdd]").count() == 0)
-    check("las tres nuevas están (LOE, TRLGDCU, EPCU-CV)", all(pg.locator(f"#nav-normas .navlink[data-n={x}]").count() == 1 for x in ("loe", "trlgdcu", "epcucv")))
+    check("las tres nuevas están (LOE, TRLGDCU)", all(pg.locator(f"#nav-normas .navlink[data-n={x}]").count() == 1 for x in ("loe", "trlgdcu")))
+    # el número que se muestra es el de ARTÍCULOS reales (con bis/ter), sin disposiciones adicionales/transitorias/derogatorias/finales
+    esperado = {"lec": 827 + 40, "lopj": 642 + 71, "cc": 1976 + 22, "ce": 169, "lau": 51 + 2, "lph": 24, "loe": 20}
+    got = {n: int(pg.inner_text(f"#nav-normas .navlink[data-n={n}] .ct")) for n in esperado}
+    check("menú: nº de artículos reales (sin disposiciones)", got == esperado, str(got))
+    consulta(pg, "lec")
+    cab_ = pg.inner_text("#lector .a-meta") if pg.locator("#lector .a-meta").count() else ""
+    check("cabecera LEC: «867 artículos · 49 disposiciones»", "867 artículos · 49 disposiciones" in cab_ and "y disposiciones" not in cab_, cab_)
     check("LOFCE ya no está", pg.locator("#nav-normas .navlink[data-n=lofce]").count() == 0)
 
     print("\n[consulta directa]")
@@ -136,17 +143,10 @@ with sync_playwright() as p:
     def probar_(nid, k, txt):
         return pg.evaluate("([n,k,t])=>window.__NT.probar(n,k,t)", [nid, k, txt])
 
-    print("\n[normas nuevas: LOE, TRLGDCU, EPCU-CV]")
+    print("\n[normas nuevas: LOE, TRLGDCU]")
     consulta(pg, "17 loe")
     check("17 LOE: cabecera", "Artículo 17" in pg.inner_text("#lector .a-h") and "LOE" in pg.inner_text("#lector .a-eye"), pg.inner_text("#lector .a-h"))
     check("17 LOE: texto idéntico al BOE", lector_parrafos(pg) == fuente_articulo("BOE-A-1999-21567", r"Art[ií]culo 17\.") and len(lector_parrafos(pg)) > 3)
-    consulta(pg, "20 epcucv")
-    check("20 EPCU-CV (corpus es-vc, DOGV): texto idéntico", lector_parrafos(pg) == fuente_articulo("DOGV-r-2019-90594", r"Art[ií]culo 20\.", "es-vc") and len(lector_parrafos(pg)) > 5 and "EPCU-CV" in pg.inner_text("#lector .a-eye"), pg.inner_text("#lector .a-h"))
-    consulta(pg, "1 estatuto de las personas consumidoras y usuarias")
-    check("alias largo del estatuto valenciano -> EPCU-CV art. 1", "Artículo 1" in pg.inner_text("#lector .a-h") and "EPCU-CV" in pg.inner_text("#lector .a-eye"), pg.inner_text("#lector .a-eye"))
-    consulta(pg, "presupuesto previo")
-    ids2_ = pg.eval_on_selector_all("#lista .item", "els=>els.map(e=>e.querySelector('.sg-chip').textContent+' '+e.querySelector('.ar').textContent)")
-    check("«presupuesto previo» encuentra el estatuto valenciano (EPCU-CV)", any(x.startswith("EPCU-CV") for x in ids2_), str(ids2_[:8]))
     consulta(pg, "3 trlgdcu")
     check("3 TRLGDCU: texto idéntico", lector_parrafos(pg) == fuente_articulo("BOE-A-2007-20555", r"Art[ií]culo 3\.") and "TRLGDCU" in pg.inner_text("#lector .a-eye"))
     consulta(pg, "ley de consumidores y usuarios 59 bis")
@@ -262,10 +262,9 @@ with sync_playwright() as p:
     check("en la LO 1/2025 «artículo 63 de la Ley de Enjuiciamiento Civil» -> LEC 63", "#a/lec/63" in probar("lo1-2025", "22", "según el artículo 63 de la Ley de Enjuiciamiento Civil."))
     check("«artículo 17 de la Ley de Ordenación de la Edificación» -> LOE 17", "#a/loe/17" in probar("lec", "1", "conforme al artículo 17 de la Ley de Ordenación de la Edificación."))
     check("«artículo 3 del texto refundido de la Ley General para la Defensa de los Consumidores y Usuarios» -> TRLGDCU 3", "#a/trlgdcu/3" in probar("lec", "1", "con arreglo al artículo 3 del texto refundido de la Ley General para la Defensa de los Consumidores y Usuarios, aprobado"))
-    check("«artículo 20 del texto refundido de la Ley del Estatuto de las Personas Consumidoras y Usuarias de la Comunitat Valenciana» -> EPCU-CV 20", "#a/epcucv/20" in probar("lec", "1", "según el artículo 20 del texto refundido de la Ley del Estatuto de las Personas Consumidoras y Usuarias de la Comunitat Valenciana, aprobado"))
     check("«artículo 51.1 y 2 de la Constitución»: enlaza el 51 (apartado 1) y NO el «2» (es apartado)", (lambda r: "#a/ce/51/1" in r and "#a/ce/2" not in r)(probar("trlgdcu", "1", "En desarrollo del artículo 51.1 y 2 de la Constitución que")))
-    check("«artículos 9.5 y 49.1.35.ª del Estatut d’Autonomia» (en valenciano) NO se enlaza a la propia ley", "<a" not in probar("epcucv", "1", "que le atribuyen los artículos 9.5 y 49.1.35.ª del Estatut d’Autonomia de la Comunitat Valenciana."))
-    check("«artículo 9.5 del Estatuto de Autonomía» (en castellano) NO se enlaza", "<a" not in probar("epcucv", "1", "que le atribuye el artículo 9.5 del Estatuto de Autonomía de la Comunitat Valenciana."))
+    check("«artículos 9.5 y 49.1.35.ª del Estatut d’Autonomia» (en valenciano) NO se enlaza a la propia ley", "<a" not in probar("lec", "1", "que le atribuyen los artículos 9.5 y 49.1.35.ª del Estatut d’Autonomia de la Comunitat Valenciana."))
+    check("«artículo 9.5 del Estatuto de Autonomía» (en castellano) NO se enlaza", "<a" not in probar("lec", "1", "que le atribuye el artículo 9.5 del Estatuto de Autonomía de la Comunitat Valenciana."))
     check("«artículos 63 y 64 de esta Ley» sigue enlazando ambos", (lambda r: "#a/lec/63" in r and "#a/lec/64" in r)(probar("lec", "1", "conforme a los artículos 63 y 64 de esta Ley")))
     consulta(pg, "22 lec")
     check("LEC 22: «artículo 443 de esta Ley» -> LEC 443", any(h == "#a/lec/443" for _, h in pg.eval_on_selector_all("#lector a.ref", "els=>els.map(a=>[a.textContent,a.getAttribute('href')])")))
