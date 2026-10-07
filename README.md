@@ -36,6 +36,21 @@ Bloque «Favoritos» arriba del menú (en ocre). Lo fijas tú, a mano, y queda e
 - No hay contador ni orden por uso. Todo se guarda solo en el dispositivo (`localStorage`: `normas.fav`, `normas.favx`).
   «Restablecer favoritos» (al final de la portada) lo vacía.
 
+## Índice de conceptos (en construcción; NO publicado)
+
+Pantalla `#i` («Índice de conceptos» en el menú): voces jurídicas con los preceptos que las **regulan**, los de **conexión doctrinal**
+(no textual), lo que **no consta en norma** y lo que **rige fuera de la herramienta**. El **contenido lo redacta y mantiene el
+Armero** (carpeta `indice/*.yaml`, copiada tal cual de sus entregas con `scripts/copia_muestra_armero.py`); taller solo lo valida y
+lo muestra. `build.py` falla si una remisión apunta a un artículo que no existe. El buscador ofrece la voz sobre los resultados.
+
+**Caducidad (criterio del Armero):** una voz caduca por **artículo citado**: si cambia el texto entero de un artículo que cita (con sus
+notas de reforma), si desaparece, si aparece un «N bis» junto a uno citado, o si cambia uno de su lista `vigilar`. La referencia es el
+texto del commit del espejo con que la revisó (`espejo: "legalize-es@..."`). Los cambios en artículos no citados no caducan nada:
+el vigía avisa al Adolfo, una sola vez por conjunto, para que se lo reenvíe al Armero. Pruebas: `scripts/test_indice.py`.
+
+**Nunca hagas `git pull` a mano en el espejo** (`~/Documents/iA/LEYES/legalize-es`): lo hace el cron de las 10:34 y su vigilante compara
+el `HEAD` de antes y después; si lo adelantas, pierde los avisos. Para mirar el origen: `git fetch` y `git diff HEAD @{u}`.
+
 ## Origen y fidelidad del texto
 
 Sale del corpus `legalize-es` (espejo del BOE consolidado) que ya mantiene el vigilante diario del BOE:

@@ -247,6 +247,89 @@ with sync_playwright() as p:
     check("«presupuesto previo por escrito» encuentra D 11/1995 art. 2 entre los 5 primeros", "D 11/1995 Art. 2" in ids3_[:5], str(ids3_[:5]))
     check("«artículo 2 del Decreto 11/1995, de 10 de enero» -> D 11/1995 art. 2", "#a/d11-1995/2" in probar_("lec", "1", "según el artículo 2 del Decreto 11/1995, de 10 de enero, del Gobierno Valenciano"))
 
+    print("\n[índice de conceptos (contenido del Armero)]")
+    _v, _a, muestra = build.indice.carga(AQUI / "indice")   # muestra + tandas del Armero, tal cual
+    AVISO_ = "Índice orientativo. No sustituye la lectura del precepto ni recoge jurisprudencia. Contrasta con el texto antes de invocarlo."
+    def slug_(s): return build.indice.slug(s)
+    check("índice: entrada «Índice de conceptos» en el menú", pg.locator("#nav-indice").is_visible())
+    pg.evaluate("h=>{location.hash=h}", ""); time.sleep(0.3)
+    pg.click("#nav-indice"); time.sleep(0.4)
+    check("índice: lista todas las voces (muestra + tanda 1 del Armero)", pg.locator("#lista .idx-row").count() == len(muestra) >= 16 and pg.evaluate("location.hash") == "#i", str(pg.locator("#lista .idx-row").count()))
+    check("índice: el aviso del Armero está siempre visible, con su texto exacto", AVISO_ in pg.inner_text("#lector .idx-aviso"), pg.inner_text("#lector .idx-aviso"))
+    pg.click("#lista .idx-row >> text=Declinatoria"); time.sleep(0.4)
+    check("índice: abre la voz «Declinatoria» (ruta #i/declinatoria)", pg.evaluate("location.hash") == "#i/declinatoria" and pg.inner_text("#lector .a-h") == "Declinatoria")
+    meta_ = pg.inner_text("#lector .a-meta")
+    estado_decl = pg.evaluate("window.__NT.idx().voces.filter(v=>v.s==='declinatoria')[0].es")
+    check("índice: muestra fecha de revisión, revisor y, si es provisional, «vigencia no contrastada con el BOE»", "Revisada el 07-10-2026" in meta_ and "armero" in meta_ and (("Provisional: vigencia no contrastada con el BOE" in meta_) == (estado_decl == "provisional")), meta_ + " / " + estado_decl)
+    check("índice: las dos secciones, con la etiqueta «Conexión doctrinal, no textual»", "regula" in pg.inner_text("#lector").lower() and "conexión doctrinal, no textual" in pg.inner_text("#lector").lower())
+    for v_ in muestra:
+        pg.evaluate("h=>{location.hash=h}", "#i/" + slug_(v_["voz"])); time.sleep(0.3)
+        esp_r = [r for r in v_["remisiones"] if r["tipo"] == "regula"]; esp_c = [r for r in v_["remisiones"] if r["tipo"] == "conexa"]
+        got_r = pg.locator("#lector ul.idx-lista:not(.idx-conexa) li").count(); got_c = pg.locator("#lector ul.idx-conexa li").count()
+        check(f"índice: «{v_['voz']}»: {len(esp_r)} regula + {len(esp_c)} conexa, como en el YAML", (got_r, got_c) == (len(esp_r), len(esp_c)), f"{got_r},{got_c}")
+    pg.evaluate("h=>{location.hash=h}", "#i/desahucio-por-precario"); time.sleep(0.3)
+    nc_ = pg.inner_text("#lector .idx-nc")
+    check("índice: «No consta en norma» siempre visible y con sus 3 entradas (no plegado)", "No consta en norma" in nc_ and pg.locator("#lector .idx-nc li").count() == 3 and pg.locator("#lector details").count() == 0, nc_[:80])
+    pg.evaluate("h=>{location.hash=h}", "#i/requisito-de-procedibilidad-masc"); time.sleep(0.3)
+    check("índice: las voces afines que existen son enlace; las que no, texto", pg.locator("#lector a[href='#i/desahucio-por-precario']").count() == 1 and "Costas y MASC" in pg.inner_text("#lector") and pg.locator("#lector a", has_text="Costas y MASC").count() == 0)
+    # cada remisión abre EXACTAMENTE su artículo, y su apartado se localiza
+    malas = []
+    ids_norma = {n["sigla"]: n["id"] for n in build.NORMAS}
+    for v_ in muestra:
+        pg.evaluate("h=>{location.hash=h}", "#i/" + slug_(v_["voz"])); time.sleep(0.2)
+        hrefs = pg.eval_on_selector_all("#lector ul.idx-lista a.ref", "els=>els.map(a=>a.getAttribute('href'))")
+        for r in v_["remisiones"]:
+            k_ = build.indice.clave_articulo(r["articulo"]); nid = ids_norma[r["norma"]]
+            ap_ = build.indice.apartado_numerico(r.get("apartado"))
+            esperado = f"#a/{nid}/{__import__('urllib.parse').parse.quote(k_, safe='')}" + (f"/{ap_}" if ap_ else "")
+            if esperado not in hrefs:
+                malas.append(("sin enlace", v_["voz"], r["norma"], r["articulo"], esperado)); continue
+            pg.evaluate("h=>{location.hash=h}", esperado); time.sleep(0.12)
+            cab = pg.inner_text("#lector .a-h")
+            ok_cab = (cab.startswith("Artículo " + k_) if re.match(r"^\d", k_) else cab.startswith("Disposición"))
+            toast_ = pg.evaluate("(document.querySelector('.toast')||{}).textContent||''")
+            if not ok_cab or "No localizo" in toast_:
+                malas.append(("abre mal", v_["voz"], r["norma"], r["articulo"], cab[:40], toast_))
+    total_rem = sum(len(v_["remisiones"]) for v_ in muestra)
+    check(f"índice: las {total_rem} remisiones de las {len(muestra)} voces abren su artículo (y su apartado se localiza)", not malas, "; ".join(f"{m[1]} -> {m[2]} {m[3]}: {m[-1] if m[0]=='abre mal' else 'sin enlace'}" for m in malas[:12]))
+    pg.evaluate("h=>{location.hash=h}", "#i/declinatoria"); time.sleep(0.3)
+    pg.click("#lector ul.idx-lista a.ref >> nth=2"); time.sleep(0.4)
+    h_art = pg.evaluate("location.hash"); pg.go_back(); time.sleep(0.5)
+    check("índice: desde el artículo, «atrás» vuelve a la voz", h_art.startswith("#a/lec/65") and pg.evaluate("location.hash") == "#i/declinatoria", h_art + " -> " + pg.evaluate("location.hash"))
+    pg.evaluate("h=>{location.hash=h}", "#i"); time.sleep(0.3)
+    pg.fill("#iq", "masc"); time.sleep(0.2)
+    check("índice: el filtro encuentra por sinónimo («masc»)", pg.locator("#idx-voces .idx-row").count() == 1 and "MASC" in pg.inner_text("#idx-voces"))
+    pg.fill("#iq", "ocupacion sin titulo"); time.sleep(0.2)
+    check("índice: el filtro ignora tildes y encuentra «ocupación sin título» (sinónimo)", pg.locator("#idx-voces .idx-row").count() == 1 and "precario" in pg.inner_text("#idx-voces").lower())
+    pg.fill("#iq", "zzzz"); time.sleep(0.2)
+    check("índice: filtro sin coincidencias lo dice", "Ninguna voz coincide" in pg.inner_text("#idx-voces"))
+    n_items = {}
+    for q_, esperada in (("declinatoria de jurisdicción", "declinatoria"), ("precario", "desahucio-por-precario"), ("ocupación sin título", "desahucio-por-precario"), ("legitimación", "falta-de-legitimacion"), ("MASC", "requisito-de-procedibilidad-masc")):
+        consulta(pg, q_)
+        hits_ = pg.eval_on_selector_all("#lista .idx-hit a", "els=>els.map(a=>a.getAttribute('href'))")
+        n_items[q_] = pg.locator("#lista .item").count()
+        check(f"búsqueda «{q_}»: ofrece la voz del índice sobre los resultados", f"#i/{esperada}" in hits_, str(hits_))
+    check("búsqueda: la voz del índice no desplaza ni cuenta como resultado (sigue habiendo los 8 de «declinatoria de jurisdicción»)", n_items["declinatoria de jurisdicción"] == 8, str(n_items))
+    consulta(pg, "282 lec")
+    check("búsqueda de un artículo concreto: no sale el cuadro del índice", pg.locator("#lista .idx-hit").count() == 0)
+    # voz caducada (se simula sobre los datos cargados; el contenido del Armero no se toca)
+    pg.evaluate("()=>{var v=window.__NT.idx().voces.filter(x=>x.s==='declinatoria')[0];v.es='caducada';v.cad=[{n:'LEC',k:'63',r:'cambia'},{n:'LEC',k:'66',r:'falta'},{n:'LEC',k:'64 bis',r:'nuevo'},{n:'LEC',k:'416',r:'cambia',v:'vigilar'}];window.__NT.vistaIndice(v.s)}"); time.sleep(0.3)
+    cad_ = pg.inner_text("#lector .idx-cad")
+    check("índice: voz caducada -> aviso en rojo que nombra CADA artículo y el motivo, y manda leer el texto vigente",
+          "Caducada" in cad_ and "ha cambiado el texto de LEC Art. 63" in cad_ and "ya no se encuentra LEC Art. 66" in cad_ and "ha aparecido LEC" in cad_ and "(artículo vigilado)" in cad_ and "Lee el texto vigente" in cad_, cad_)
+    check("índice: voz caducada -> etiqueta «caducada» en su fila de la lista", pg.locator("#lista .idx-row", has_text="Declinatoria").locator(".ie-cad").count() == 1)
+    pg.evaluate("()=>{var v=window.__NT.idx().voces.filter(x=>x.s==='declinatoria')[0];v.cad=[{n:'LEC',r:'?'}];window.__NT.vistaIndice(v.s)}"); time.sleep(0.3)
+    check("índice: espejo no comprobable -> lo dice (no inventa una norma)", "no se ha podido comprobar" in pg.inner_text("#lector .idx-cad"), pg.inner_text("#lector .idx-cad"))
+    pg.evaluate("()=>{var v=window.__NT.idx().voces.filter(x=>x.s==='declinatoria')[0];v.es='provisional';v.cad=[];window.__NT.vistaIndice(v.s)}"); time.sleep(0.2)
+    # campo nuevo del Armero: «fuera de la herramienta» (bloque propio, nunca plegado)
+    pg.evaluate("h=>{location.hash=h}", "#i/falta-de-jurisdiccion-competencia-internacional"); time.sleep(0.4)
+    fh_ = pg.inner_text("#lector .idx-nc") if pg.locator("#lector .idx-nc").count() else ""
+    check("índice: «Rige también, fuera de la herramienta» (Reglamento UE 1215/2012) se pinta como bloque propio, sin plegar", "Rige también, fuera de la herramienta" in fh_ and "1215/2012" in fh_ and pg.locator("#lector details").count() == 0, fh_[:120])
+    pg.evaluate("h=>{location.hash=h}", "#i/postulacion-abogado-y-procurador"); time.sleep(0.4)
+    check("índice: las voces de la tanda 1 se abren (p. ej. «Postulación (abogado y procurador)»)", pg.inner_text("#lector .a-h").startswith("Postulación") and pg.locator("#lector ul.idx-lista li").count() >= 5, pg.inner_text("#lector .a-h"))
+    pg.evaluate("h=>{location.hash=h}", ""); time.sleep(0.3)
+    check("portada: ofrece abrir el índice y el texto de favoritos es el vigente", pg.locator("#lista a[href='#i']").count() == 1 and "suben solas" not in pg.inner_text("#lector"), pg.inner_text("#lector")[-300:])
+
     print("\n[sin norma / rango / lista]")
     consulta(pg, "21")
     n = pg.locator("#lista .item").count()

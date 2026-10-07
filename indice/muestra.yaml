@@ -1,0 +1,103 @@
+version_indice: "0.1-muestra"
+aviso_general: "Índice orientativo. No sustituye la lectura del precepto. Comprueba la fecha de revisión de cada voz."
+
+voces:
+  - voz: "Declinatoria"
+    sinonimos: ["declinatoria de jurisdicción", "declinatoria de competencia", "excepción de incompetencia", "falta de competencia territorial", "falta de jurisdicción"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "63", tipo: "regula", nota: "Contenido y legitimación. Sirve para cualquier falta de competencia; si es territorial, indicar el tribunal competente."}
+      - {norma: "LEC", articulo: "64", apartado: "1", tipo: "regula", nota: "Se propone en los diez primeros días del plazo para contestar y suspende ese plazo."}
+      - {norma: "LEC", articulo: "65", tipo: "regula", nota: "Tramitación: alegaciones en cinco días y resolución dentro del quinto día."}
+      - {norma: "LEC", articulo: "66", tipo: "regula", nota: "Recursos: cabe apelación contra el auto que estima la falta de jurisdicción; contra el que la rechaza, solo reposición."}
+      - {norma: "LEC", articulo: "67", apartado: "1", tipo: "regula", nota: "Los autos sobre competencia territorial no admiten recurso."}
+      - {norma: "LEC", articulo: "39", tipo: "regula", nota: "Declinatoria por falta de jurisdicción o de competencia internacional."}
+      - {norma: "LEC", articulo: "38", tipo: "conexa", nota: "Apreciación de oficio de la falta de competencia internacional o de jurisdicción."}
+      - {norma: "LEC", articulo: "48", tipo: "conexa", nota: "Apreciación de oficio de la falta de competencia objetiva."}
+      - {norma: "LEC", articulo: "56", apartado: "2.º", tipo: "conexa", nota: "Sumisión tácita del demandado: si comparece y hace algo distinto de proponer declinatoria."}
+      - {norma: "LEC", articulo: "58", tipo: "conexa", nota: "Control de oficio de la competencia territorial imperativa."}
+      - {norma: "LEC", articulo: "59", tipo: "conexa", nota: "Fuera de los fueros imperativos, la territorial solo se aprecia por declinatoria."}
+      - {norma: "LEC", articulo: "54", apartado: "1", tipo: "conexa", nota: "Fueros imperativos (52.1.7.º arrendamientos y desahucio, 52.1.8.º PH) y sin sumisión en el verbal."}
+      - {norma: "LEC", articulo: "416", apartado: "2", tipo: "conexa", nota: "En la audiencia previa ya no cabe alegar falta de jurisdicción o de competencia."}
+    no_consta_en_norma: []
+    afines: ["Competencia territorial y fueros imperativos", "Sumisión expresa y tácita", "Falta de jurisdicción / competencia internacional"]
+    estado: "provisional"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-07"
+    revisor: "armero"
+
+  - voz: "Desahucio por precario"
+    sinonimos: ["precario", "acción de precario", "desahucio de precarista", "ocupación sin título"]
+    normas_base: ["LEC", "CC"]
+    remisiones:
+      - {norma: "LEC", articulo: "250", apartado: "1.2.º", tipo: "regula", nota: "Cauce: juicio verbal. Único precepto de las normas estatales de la herramienta que dice «precario»."}
+      - {norma: "LEC", articulo: "439", apartado: "6", tipo: "regula", nota: "Requisitos de la demanda si es vivienda habitual: condición de gran tenedor y situación de vulnerabilidad."}
+      - {norma: "LEC", articulo: "441", apartado: "5", tipo: "regula", nota: "Traslado a servicios sociales para valorar la vulnerabilidad del ocupante."}
+      - {norma: "LEC", articulo: "52", apartado: "1.7.º", tipo: "conexa", nota: "Fuero imperativo de la finca en «los juicios […] de desahucio». El texto no distingue clases de desahucio."}
+      - {norma: "CC", articulo: "444", tipo: "conexa", nota: "Actos meramente tolerados no afectan a la posesión. Conexión doctrinal con el precario."}
+      - {norma: "CC", articulo: "1749", tipo: "conexa", nota: "Comodato sin plazo: base doctrinal del precario."}
+      - {norma: "CC", articulo: "1750", tipo: "conexa", nota: "Si no hay plazo ni uso pactado, el comodante reclama a voluntad. Conexión doctrinal."}
+    no_consta_en_norma:
+      - "Definición del precario y sus requisitos: jurisprudencial."
+      - "Si el fuero imperativo del 52.1.7.º LEC alcanza al precario: el texto dice «desahucio» y no lo precisa."
+      - "Si la sentencia de precario produce cosa juzgada: LEC 447.2 no incluye el precario entre las sentencias sin cosa juzgada; la cuestión no la resuelve la norma."
+    afines: ["Desahucio por falta de pago", "Tutela sumaria de la posesión", "Vulnerabilidad y gran tenedor en la demanda"]
+    # VERIFICADO el texto del 52.1.7.º: dice «desahucio» sin distinguir. Se cita como conexa: la inclusión del precario es interpretación, no texto.
+    estado: "provisional"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-07"
+    revisor: "armero"
+
+  - voz: "Enervación del desahucio"
+    sinonimos: ["enervar el desahucio", "enervación", "pago enervatorio", "rehabilitación del arrendamiento"]
+    normas_base: ["LEC", "LAU"]
+    remisiones:
+      - {norma: "LEC", articulo: "22", apartado: "4", tipo: "regula", nota: "Supuesto y límites de la enervación: pago o consignación de lo debido antes de la vista."}
+      - {norma: "LEC", articulo: "22", apartado: "5", tipo: "regula", nota: "Costas en caso de enervación."}
+      - {norma: "LEC", articulo: "438", apartado: "5", tipo: "regula", nota: "Requerimiento al demandado: diez días para pagar, enervar o desalojar."}
+      - {norma: "LEC", articulo: "439", apartado: "3", tipo: "regula", nota: "La demanda debe indicar si cabe o no la enervación."}
+      - {norma: "LEC", articulo: "444", apartado: "1", tipo: "regula", nota: "Oposición limitada a alegar y probar el pago o la procedencia de la enervación."}
+      - {norma: "LAU", articulo: "27", apartado: "2.a)", tipo: "conexa", nota: "Falta de pago de renta como causa de resolución del arrendamiento."}
+    no_consta_en_norma: []
+    afines: ["Desahucio por falta de pago", "Resolución del contrato por incumplimiento"]
+    estado: "provisional"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-07"
+    revisor: "armero"
+
+  - voz: "Requisito de procedibilidad (MASC)"
+    sinonimos: ["MASC", "medio adecuado de solución de controversias", "intento previo de negociación", "requisito de procedibilidad"]
+    normas_base: ["LO 1/2025", "LEC"]
+    remisiones:
+      - {norma: "LO 1/2025", articulo: "5", apartado: "1", tipo: "regula", nota: "Regla general e identidad de objeto; el párrafo 2.º dice qué actividades cumplen el requisito."}
+      - {norma: "LO 1/2025", articulo: "5", apartado: "2", tipo: "regula", nota: "Lista cerrada de excepciones. El desahucio (falta de pago, plazo, precario) no figura en ella."}
+      - {norma: "LO 1/2025", articulo: "5", apartado: "3", tipo: "regula", nota: "Sin MASC: demanda ejecutiva, cautelares previas, diligencias preliminares y casi toda la jurisdicción voluntaria."}
+      - {norma: "LO 1/2025", articulo: "7", apartado: "3", tipo: "regula", nota: "La demanda debe presentarse dentro del año desde la falta de respuesta o el fin sin acuerdo."}
+      - {norma: "LO 1/2025", articulo: "da 7", tipo: "regula", nota: "Consumo: basta la reclamación previa a la empresa sin respuesta en plazo o con respuesta insatisfactoria."}
+      - {norma: "LEC", articulo: "264", apartado: "4.º", tipo: "regula", nota: "Documento acreditativo del intento, o declaración responsable si se desconoce el domicilio del demandado."}
+      - {norma: "LEC", articulo: "399", apartado: "3, párrafo 2.º", tipo: "regula", nota: "La demanda debe expresar el MASC intentado."}
+      - {norma: "LEC", articulo: "403", apartado: "2", tipo: "regula", nota: "Inadmisión de la demanda si no se acredita el requisito."}
+      - {norma: "LEC", articulo: "394", apartado: "1, párrafo 3.º", tipo: "conexa", nota: "Costas: valoración de la negativa injustificada a participar en el MASC."}
+      - {norma: "LEC", articulo: "394", apartado: "2, párrafo 2.º", tipo: "conexa", nota: "Costas en estimación parcial y conducta en el MASC."}
+      - {norma: "LEC", articulo: "394", apartado: "4", tipo: "conexa", nota: "Efecto de la actitud en el MASC sobre la condena en costas."}
+    no_consta_en_norma: []
+    afines: ["Costas y MASC", "Desahucio por falta de pago", "Desahucio por precario"]
+    # VERIFICADO en el espejo: la LO 1/2025 no contiene otra excepción aplicable a los desahucios fuera de los arts. 5.2 y 5.3. La tutela sumaria de la posesión (5.2.e) no es el precario.
+    estado: "provisional"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-07"
+    revisor: "armero"
+
+  - voz: "Falta de legitimación"
+    sinonimos: ["falta de legitimación activa", "falta de legitimación pasiva", "legitimación ad causam", "falta de acción"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "10", tipo: "regula", nota: "Condición de parte legítima: titular de la relación jurídica u objeto litigioso."}
+    no_consta_en_norma:
+      - "La falta de legitimación ad causam no figura en la lista del art. 416.1 LEC."
+      - "Su tratamiento como cuestión de fondo que se resuelve en sentencia: jurisprudencial."
+    afines: ["Falta de capacidad para ser parte / procesal", "Litisconsorcio pasivo necesario", "Legitimación del presidente"]
+    estado: "provisional"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-07"
+    revisor: "armero"

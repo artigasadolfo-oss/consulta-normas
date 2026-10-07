@@ -1,0 +1,276 @@
+# Índice de conceptos de «Consulta de normas» — tanda 1 (Jurisdicción, competencia y partes)
+# Revisor: armero. Espejo: legalize-es@aca28304d. Todo precepto citado se ha leído en el espejo en esta pasada.
+# Vigencia: los 89 artículos distintos citados se han cotejado, artículo entero, con el texto consolidado de boe.es
+# el 7 de octubre de 2026: 89 idénticos, 0 distintos. Por eso las 11 voces van en estado «vigente».
+# AVISO: el espejo va una actualización por detrás en la LEC (RDL 29/2026: añade el art. 22.6 y modifica el 685.2).
+# Ninguna voz de esta tanda cita esos artículos; la voz de muestra «Enervación del desahucio» sí queda afectada (ver notas).
+# Campo nuevo opcional `fuera_de_la_herramienta[]`: ver tanda-01-notas.md, apartado 3.
+
+voces:
+  - voz: "Falta de jurisdicción / competencia internacional"
+    sinonimos: ["falta de jurisdicción", "competencia judicial internacional", "falta de competencia internacional", "otro orden jurisdiccional", "sumisión a arbitraje", "inmunidad de jurisdicción"]
+    normas_base: ["LEC", "LOPJ"]
+    remisiones:
+      - {norma: "LEC", articulo: "36", tipo: "regula", nota: "Límites de la jurisdicción civil (remite a LOPJ y tratados) y tres casos de abstención obligada."}
+      - {norma: "LEC", articulo: "37", tipo: "regula", nota: "Abstención si el asunto es de otro orden jurisdiccional, jurisdicción militar, Administración o Tribunal de Cuentas."}
+      - {norma: "LEC", articulo: "38", tipo: "regula", nota: "Se aprecia de oficio en cuanto se advierta, oídas las partes y el Ministerio Fiscal."}
+      - {norma: "LEC", articulo: "39", tipo: "regula", nota: "A instancia de parte, solo por declinatoria; incluye la sumisión a arbitraje o mediación."}
+      - {norma: "LEC", articulo: "63", apartado: "1", tipo: "regula", nota: "Declinatoria: tribunales extranjeros, otro orden, árbitros o mediadores; excepción del consumidor demandante."}
+      - {norma: "LEC", articulo: "64", apartado: "1", tipo: "regula", nota: "Diez primeros días del plazo para contestar; suspende el plazo y el procedimiento."}
+      - {norma: "LEC", articulo: "65", apartado: "2", tipo: "regula", nota: "Si corresponde a otro Estado, o a arbitraje o mediación: auto de abstención y sobreseimiento."}
+      - {norma: "LEC", articulo: "65", apartado: "3", tipo: "regula", nota: "Si es de otro orden, el auto indica ante qué órganos acudir."}
+      - {norma: "LEC", articulo: "66", tipo: "regula", nota: "Auto que se abstiene: apelación. Auto que rechaza: solo reposición, sin perjuicio de alegarlo en la apelación."}
+      - {norma: "LOPJ", articulo: "9", apartado: "6", tipo: "regula", nota: "Jurisdicción improrrogable; de oficio y con indicación del orden competente."}
+      - {norma: "LOPJ", articulo: "21", tipo: "regula", nota: "Competencia internacional según tratados, normas UE y leyes españolas; inmunidades."}
+      - {norma: "LOPJ", articulo: "22", tipo: "regula", nota: "Foros exclusivos; letra a): derechos reales y arrendamientos de inmuebles sitos en España."}
+      - {norma: "LOPJ", articulo: "22 bis", tipo: "regula", nota: "Sumisión expresa (forma escrita) y tácita: comparecer sin impugnar la competencia."}
+      - {norma: "LOPJ", articulo: "22 ter", tipo: "regula", nota: "Foro general: domicilio del demandado en España; pluralidad de demandados; elección de foro extranjero."}
+      - {norma: "LOPJ", articulo: "22 quinquies", tipo: "regula", nota: "Foros especiales: contratos, daños, sucursal, consumidores, seguros, muebles."}
+      - {norma: "LOPJ", articulo: "22 octies", tipo: "regula", nota: "Se aprecia de oficio o a instancia de parte, según normas y circunstancias al presentar la demanda."}
+      - {norma: "LOPJ", articulo: "22 nonies", tipo: "conexa", nota: "Litispendencia y conexidad internacionales: por las normas procesales generales."}
+      - {norma: "LEC", articulo: "416", apartado: "2", tipo: "conexa", nota: "En la audiencia previa ya no cabe alegar falta de jurisdicción: había que proponer declinatoria."}
+    no_consta_en_norma: []
+    fuera_de_la_herramienta:
+      - "Reglamento (UE) 1215/2012 (Bruselas I bis) y convenios: prevalecen sobre la LOPJ (art. 21.1) y no están en la herramienta."
+    afines: ["Declinatoria", "Sumisión expresa y tácita", "Competencia objetiva"]
+    # VERIFICADO: LOPJ 22 a) menciona arrendamientos de inmuebles; útil en alquiler turístico con arrendatario extranjero.
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-07"
+    revisor: "armero"
+
+  - voz: "Competencia objetiva"
+    sinonimos: ["incompetencia objetiva", "competencia por razón de la materia", "competencia por razón de la cuantía", "juez de paz", "sección de lo mercantil", "violencia sobre la mujer"]
+    normas_base: ["LEC", "LOPJ", "LO 1/2025"]
+    remisiones:
+      - {norma: "LEC", articulo: "44", tipo: "conexa", nota: "Predeterminación legal: la competencia la atribuyen normas con rango de ley anteriores al proceso."}
+      - {norma: "LEC", articulo: "45", tipo: "regula", nota: "Primera Instancia: competencia residual en todo asunto civil no atribuido a otro tribunal."}
+      - {norma: "LEC", articulo: "46", tipo: "regula", nota: "Juzgados especializados: solo sus materias. Remite al art. 98 LOPJ, hoy «sin contenido» en el espejo."}
+      - {norma: "LEC", articulo: "47", apartado: "1", tipo: "regula", nota: "Jueces de paz: hasta 150 euros, salvo las materias del art. 250.1."}
+      - {norma: "LEC", articulo: "48", tipo: "regula", nota: "De oficio y en cualquier momento; en segunda instancia o casación, nulidad de todo lo actuado."}
+      - {norma: "LEC", articulo: "49", tipo: "regula", nota: "A instancia de parte, por declinatoria."}
+      - {norma: "LEC", articulo: "49 bis", tipo: "regula", nota: "Inhibición a favor del juez de violencia sobre la mujer; no cabe si ya empezó la vista."}
+      - {norma: "LEC", articulo: "65", apartado: "3", tipo: "regula", nota: "El auto que estima la falta de competencia objetiva indica ante qué órganos acudir."}
+      - {norma: "LEC", articulo: "66", tipo: "regula", nota: "Auto que se abstiene: apelación. Auto que la rechaza: solo reposición."}
+      - {norma: "LEC", articulo: "73", apartado: "1.1.º", tipo: "conexa", nota: "Acumulación de acciones: el tribunal de la principal debe tener competencia objetiva para las demás."}
+      - {norma: "LOPJ", articulo: "85", tipo: "regula", nota: "Secciones Civiles del Tribunal de Instancia: primera instancia residual y recursos contra jueces de paz."}
+      - {norma: "LOPJ", articulo: "87", apartado: "6", tipo: "regula", nota: "Sección de lo Mercantil: sociedades, competencia desleal, propiedad industrial, transporte, etc."}
+      - {norma: "LO 1/2025", articulo: "da 1", tipo: "regula", nota: "Las menciones legales a «Juzgados de Primera Instancia» o «de lo Mercantil» se entienden hechas a las Secciones."}
+    no_consta_en_norma: []
+    afines: ["Declinatoria", "Competencia funcional", "Acumulación de acciones"]
+    # VERIFICADO: LOPJ 98 figura «(Sin contenido)» en el espejo, pero LEC 46 sigue remitiendo a él. Se dice en la nota, no se interpreta.
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-07"
+    revisor: "armero"
+
+  - voz: "Competencia territorial y fueros imperativos"
+    sinonimos: ["fuero territorial", "fuero imperativo", "fuero del domicilio del demandado", "fuero de la finca", "incompetencia territorial", "competencia por razón del territorio"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "50", tipo: "regula", nota: "Fuero general de la persona física: domicilio del demandado; empresarios, también donde ejercen."}
+      - {norma: "LEC", articulo: "51", tipo: "regula", nota: "Personas jurídicas: domicilio, o lugar de la relación si tienen allí establecimiento; entes sin personalidad."}
+      - {norma: "LEC", articulo: "52", apartado: "1.1.º", tipo: "regula", nota: "Acciones reales sobre inmuebles: lugar de la cosa. Imperativo (art. 54.1)."}
+      - {norma: "LEC", articulo: "52", apartado: "1.7.º", tipo: "regula", nota: "Arrendamientos de inmuebles y desahucio: lugar de la finca. Imperativo (art. 54.1)."}
+      - {norma: "LEC", articulo: "52", apartado: "1.8.º", tipo: "regula", nota: "Propiedad horizontal: lugar de la finca. Imperativo (art. 54.1)."}
+      - {norma: "LEC", articulo: "52", apartado: "1.9.º", tipo: "regula", nota: "Daños por circulación de vehículos de motor: lugar del daño. Imperativo (art. 54.1)."}
+      - {norma: "LEC", articulo: "52", apartado: "2", tipo: "regula", nota: "Seguros, ventas a plazos y contratos con oferta pública: domicilio del asegurado o comprador, o 50-51."}
+      - {norma: "LEC", articulo: "52", apartado: "3", tipo: "regula", nota: "Acciones individuales de consumidores: a su elección, su domicilio o el de los arts. 50 y 51."}
+      - {norma: "LEC", articulo: "53", tipo: "regula", nota: "Acumulación de acciones y pluralidad de demandados: reglas de elección del fuero."}
+      - {norma: "LEC", articulo: "54", apartado: "1", tipo: "regula", nota: "Imperativos: 52.1.1.º, 4.º a 15.º y 52.2. En el juicio verbal no vale la sumisión."}
+      - {norma: "LEC", articulo: "58", tipo: "regula", nota: "Fuero imperativo: el LAJ examina la competencia al presentarse la demanda; resuelve el juez por auto."}
+      - {norma: "LEC", articulo: "59", tipo: "regula", nota: "Fuera de los fueros imperativos, solo se aprecia si se propone declinatoria en tiempo y forma."}
+      - {norma: "LEC", articulo: "60", tipo: "regula", nota: "Conflicto negativo: el tribunal de destino queda vinculado si se decidió con audiencia de todos."}
+      - {norma: "LEC", articulo: "63", apartado: "1", tipo: "regula", nota: "La declinatoria territorial debe indicar el tribunal que se considera competente."}
+      - {norma: "LEC", articulo: "65", apartado: "4", tipo: "regula", nota: "Fuero no imperativo: para estimar la declinatoria, competente ha de ser el órgano propuesto."}
+      - {norma: "LEC", articulo: "65", apartado: "5", tipo: "regula", nota: "Estimada: inhibición, remisión de autos y emplazamiento por diez días."}
+      - {norma: "LEC", articulo: "67", tipo: "regula", nota: "Sin recurso contra el auto; en apelación y casación, solo si hay normas imperativas."}
+    no_consta_en_norma:
+      - "Si el fuero del consumidor (52.3) es imperativo: el art. 54.1 no lo incluye; el texto no lo resuelve."
+      - "Si en el juicio verbal se controla de oficio el fuero no imperativo: el 54.1 anula la sumisión, pero el 58 solo habla de reglas imperativas."
+    afines: ["Declinatoria", "Sumisión expresa y tácita", "Desahucio por precario"]
+    # VERIFICADO: 54.1 exceptúa «1.º y 4.º a 15.º del apartado 1 y el apartado 2»; quedan fuera 52.1.2.º, 3.º, 16.º, 17.º y 52.3.
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-07"
+    revisor: "armero"
+
+  - voz: "Sumisión expresa y tácita"
+    sinonimos: ["sumisión expresa", "sumisión tácita", "cláusula de sumisión", "pacto de fuero", "prórroga de la competencia territorial"]
+    normas_base: ["LEC", "LOPJ", "TRLGDCU"]
+    remisiones:
+      - {norma: "LEC", articulo: "54", apartado: "1", tipo: "regula", nota: "Solo opera fuera de los fueros imperativos; no vale en los asuntos del juicio verbal."}
+      - {norma: "LEC", articulo: "54", apartado: "2", tipo: "regula", nota: "Nula la sumisión expresa en contratos de adhesión, con condiciones generales o con consumidores."}
+      - {norma: "LEC", articulo: "54", apartado: "3", tipo: "regula", nota: "Solo vale a favor de tribunales con competencia objetiva."}
+      - {norma: "LEC", articulo: "55", tipo: "regula", nota: "Sumisión expresa: pacto que designa con precisión la circunscripción."}
+      - {norma: "LEC", articulo: "56", tipo: "regula", nota: "Tácita: el actor al demandar; el demandado al personarse sin declinatoria, o si no comparece o lo hace tarde."}
+      - {norma: "LEC", articulo: "57", tipo: "regula", nota: "La sumisión elige la circunscripción, no el juzgado concreto: decide el reparto."}
+      - {norma: "LEC", articulo: "64", apartado: "1", tipo: "conexa", nota: "Pasados los diez primeros días del plazo para contestar, precluye la declinatoria."}
+      - {norma: "LOPJ", articulo: "22 bis", tipo: "regula", nota: "Sumisión en competencia internacional; vale la comparecencia del demandado si no impugna."}
+      - {norma: "TRLGDCU", articulo: "90", apartado: "2", tipo: "regula", nota: "Abusiva la sumisión a tribunal distinto del domicilio del consumidor, del cumplimiento o del inmueble."}
+    no_consta_en_norma: []
+    afines: ["Competencia territorial y fueros imperativos", "Declinatoria", "Falta de jurisdicción / competencia internacional"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-07"
+    revisor: "armero"
+
+  - voz: "Competencia funcional"
+    sinonimos: ["competencia por conexión", "competencia para los recursos", "competencia para la ejecución", "tribunal de la ejecución", "competencia para los incidentes"]
+    normas_base: ["LEC", "LOPJ"]
+    remisiones:
+      - {norma: "LEC", articulo: "61", tipo: "regula", nota: "Quien conoce del pleito conoce de sus incidencias, de lo que dicte y de la ejecución, salvo ley en contra."}
+      - {norma: "LEC", articulo: "62", tipo: "regula", nota: "Recurso ante tribunal sin competencia funcional: inadmisión o abstención; cinco días más para recurrir bien."}
+      - {norma: "LEC", articulo: "455", apartado: "2", tipo: "regula", nota: "Apelación: de los jueces de paz, Primera Instancia; de Primera Instancia, la Audiencia Provincial."}
+      - {norma: "LEC", articulo: "545", apartado: "1", tipo: "regula", nota: "Ejecución de resoluciones y transacciones judiciales: el tribunal de la primera instancia o de la homologación."}
+      - {norma: "LEC", articulo: "545", apartado: "3", tipo: "conexa", nota: "Títulos no judiciales: fueros de los arts. 50-51, cumplimiento o bienes; nunca sumisión."}
+      - {norma: "LEC", articulo: "546", tipo: "conexa", nota: "Antes de despachar ejecución se examina de oficio la competencia territorial; después, ya no."}
+      - {norma: "LOPJ", articulo: "82", apartado: "2", tipo: "regula", nota: "Audiencia Provincial civil: recursos; un solo magistrado en el verbal por razón de la cuantía."}
+      - {norma: "LOPJ", articulo: "85", apartado: "3.º", tipo: "regula", nota: "Secciones Civiles del Tribunal de Instancia: recursos contra los jueces de paz del partido."}
+    no_consta_en_norma:
+      - "Concepto general de competencia funcional fuera de incidentes, recursos y ejecución: doctrinal."
+    afines: ["Competencia objetiva", "Declinatoria"]
+    # PENDIENTE: art. 547 LEC (declinatoria en la ejecución) no leído en esta pasada; no se cita.
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-07"
+    revisor: "armero"
+
+  - voz: "Falta de capacidad para ser parte / procesal"
+    sinonimos: ["capacidad para ser parte", "capacidad procesal", "falta de capacidad", "defecto de representación", "defensor judicial", "personalidad"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "6", apartado: "1", tipo: "regula", nota: "Quién puede ser parte: personas, concebido, masas patrimoniales, entes con capacidad legal, grupos."}
+      - {norma: "LEC", articulo: "6", apartado: "2", tipo: "regula", nota: "Entes irregulares (sin personalidad) pueden ser demandados en todo caso."}
+      - {norma: "LEC", articulo: "7", tipo: "regula", nota: "Comparecencia: menores, apoyos, personas jurídicas y entes por sus representantes."}
+      - {norma: "LEC", articulo: "8", tipo: "regula", nota: "Sin representante: defensor judicial por decreto; mientras, el Fiscal y el proceso en suspenso."}
+      - {norma: "LEC", articulo: "9", tipo: "regula", nota: "Ambas faltas se aprecian de oficio en cualquier momento del proceso."}
+      - {norma: "LEC", articulo: "405", apartado: "3", tipo: "regula", nota: "El demandado debe alegar en la contestación las excepciones procesales."}
+      - {norma: "LEC", articulo: "416", apartado: "1.1.ª", tipo: "regula", nota: "Audiencia previa: primera cuestión procesal, falta de capacidad o de representación."}
+      - {norma: "LEC", articulo: "418", tipo: "regula", nota: "Subsanable en el acto o en diez días; si no, auto que pone fin; si es del demandado, rebeldía."}
+      - {norma: "LEC", articulo: "7 bis", tipo: "conexa", nota: "Ajustes para personas con discapacidad o mayores; de oficio desde los 80 años, con tramitación preferente."}
+    no_consta_en_norma:
+      - "La comunidad de propietarios no figura nominalmente en el art. 6.1 LEC; su encaje en el 6.1.5.º es interpretativo."
+    afines: ["Falta de legitimación", "Postulación (abogado y procurador)", "Legitimación del presidente"]
+    # AVISO A TALLER: en el espejo hay un segundo encabezado «"Artículo 7 bis. Ajustes para personas con discapacidad.» (redacción anterior entrecomillada). Comprobar que la herramienta no lo muestra como bloque vigente.
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-07"
+    revisor: "armero"
+
+  - voz: "Litisconsorcio pasivo necesario"
+    sinonimos: ["falta de litisconsorcio", "falta del debido litisconsorcio", "litisconsorcio necesario", "integración de la litis", "defectuosa constitución de la relación jurídico-procesal"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "12", apartado: "2", tipo: "regula", nota: "Si la tutela solo es eficaz frente a varios conjuntamente, todos han de ser demandados."}
+      - {norma: "LEC", articulo: "12", apartado: "1", tipo: "conexa", nota: "Litisconsorcio voluntario: mismo título o causa de pedir. No confundir con el necesario."}
+      - {norma: "LEC", articulo: "405", apartado: "3", tipo: "regula", nota: "Se alega en la contestación como excepción procesal."}
+      - {norma: "LEC", articulo: "416", apartado: "1.3.ª", tipo: "regula", nota: "Audiencia previa: falta del debido litisconsorcio."}
+      - {norma: "LEC", articulo: "420", apartado: "1", tipo: "regula", nota: "El actor puede integrar la litis en la audiencia con escrito y copias; sin alterar la causa de pedir."}
+      - {norma: "LEC", articulo: "420", apartado: "2", tipo: "regula", nota: "Si el actor se opone, se resuelve en la audiencia o por auto en cinco días."}
+      - {norma: "LEC", articulo: "420", apartado: "3", tipo: "regula", nota: "Plazo no inferior a diez días para constituirlo; los nuevos demandados contestan en el plazo del art. 404."}
+      - {norma: "LEC", articulo: "420", apartado: "4", tipo: "regula", nota: "Si el actor no lo constituye en plazo: auto que pone fin al proceso y archivo."}
+    no_consta_en_norma:
+      - "Su apreciación de oficio, también en segunda instancia: jurisprudencial; el art. 420 solo regula la alegación del demandado."
+      - "Supuestos concretos (comuneros, cónyuges, partes del contrato que se anula): jurisprudenciales; el art. 12.2 da solo el criterio."
+    afines: ["Falta de legitimación", "Intervención de terceros", "Acumulación de acciones"]
+    # VERIFICADO: en el espejo «litisconsorcio» solo aparece en LEC 12, 78.3, 416, 420, 600 y 617. No hay regla específica para el juicio verbal.
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-07"
+    revisor: "armero"
+
+  - voz: "Intervención de terceros"
+    sinonimos: ["intervención voluntaria", "intervención provocada", "llamada en garantía", "llamada al proceso", "intervención adhesiva", "notificación de la demanda a otros agentes", "citación de evicción"]
+    normas_base: ["LEC", "LOE", "CC"]
+    remisiones:
+      - {norma: "LEC", articulo: "13", apartado: "1", tipo: "regula", nota: "Voluntaria: quien acredite interés directo y legítimo, mientras el proceso esté pendiente."}
+      - {norma: "LEC", articulo: "13", apartado: "2", tipo: "regula", nota: "No suspende el proceso; auto tras oír a las partes en diez días."}
+      - {norma: "LEC", articulo: "13", apartado: "3", tipo: "regula", nota: "Sin retroacción; el interviniente es parte, alega lo que no pudo y recurre aunque su litisconsorte consienta."}
+      - {norma: "LEC", articulo: "14", apartado: "1", tipo: "regula", nota: "Provocada por el actor, solo si la ley lo permite: se pide en la demanda."}
+      - {norma: "LEC", articulo: "14", apartado: "2", tipo: "regula", nota: "Provocada por el demandado: dentro del plazo para contestar; interrumpe ese plazo; diez días al actor."}
+      - {norma: "LEC", articulo: "18", tipo: "regula", nota: "Si el demandado pide que el tercero ocupe su lugar: cinco días de alegaciones y auto."}
+      - {norma: "LOE", articulo: "da 7", tipo: "regula", nota: "El agente de la edificación demandado puede pedir que se notifique la demanda a otros agentes."}
+      - {norma: "CC", articulo: "1481", tipo: "regula", nota: "Sin notificación de la demanda de evicción al vendedor, este no responde del saneamiento."}
+      - {norma: "CC", articulo: "1482", tipo: "regula", nota: "El comprador la pide en el plazo de contestar; su plazo queda en suspenso mientras corre el del vendedor."}
+      - {norma: "LEC", articulo: "15", tipo: "conexa", nota: "Publicidad e intervención en procesos colectivos de consumidores."}
+    no_consta_en_norma:
+      - "Si el agente llamado por la DA 7.ª LOE, no demandado por el actor, puede ser condenado: jurisprudencial. La ley solo dice «oponible y ejecutable»."
+      - "Distinción entre intervención adhesiva simple y litisconsorcial: doctrinal; el art. 13 no la hace."
+    afines: ["Litisconsorcio pasivo necesario", "Falta de legitimación"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-07"
+    revisor: "armero"
+
+  - voz: "Postulación (abogado y procurador)"
+    sinonimos: ["postulación procesal", "representación procesal", "defensa técnica", "procurador", "abogado preceptivo", "poder para pleitos", "apud acta", "poder especial"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "23", apartado: "1", tipo: "regula", nota: "Regla: comparecencia por procurador habilitado ante el tribunal."}
+      - {norma: "LEC", articulo: "23", apartado: "2", tipo: "regula", nota: "Sin procurador: verbal por cuantía hasta 2.000 euros, petición inicial del monitorio, medidas urgentes previas."}
+      - {norma: "LEC", articulo: "24", tipo: "regula", nota: "Poder: apud acta electrónico, ante notario o ante el LAJ, con inscripción en el registro de apoderamientos."}
+      - {norma: "LEC", articulo: "25", apartado: "2", tipo: "regula", nota: "Poder especial para renunciar, transigir, desistir, allanarse, ir a arbitraje o admitir satisfacción extraprocesal."}
+      - {norma: "LEC", articulo: "31", tipo: "regula", nota: "Abogado obligatorio salvo verbal hasta 2.000 euros, monitorio inicial y escritos de personación o urgencia."}
+      - {norma: "LEC", articulo: "32", apartado: "2", tipo: "regula", nota: "Si no es preceptivo y el actor va asistido, el demandado tiene tres días para anunciar que también irá."}
+      - {norma: "LEC", articulo: "32", apartado: "5", tipo: "regula", nota: "Si no es preceptivo, la condena en costas excluye abogado y procurador, salvo temeridad o partido distinto."}
+      - {norma: "LEC", articulo: "33", apartado: "4", tipo: "regula", nota: "Desahucios del 250.1.1.º: el demandado pide justicia gratuita en tres días; si tarda, no se suspende el juicio, salvo excepción legal."}
+      - {norma: "LEC", articulo: "416", apartado: "1.1.ª", tipo: "regula", nota: "Audiencia previa: falta de representación en sus diversas clases."}
+      - {norma: "LEC", articulo: "418", tipo: "regula", nota: "Defecto de representación: subsanación en el acto o en diez días; si no, fin del proceso o rebeldía."}
+      - {norma: "LEC", articulo: "539", apartado: "1", tipo: "regula", nota: "Ejecución: abogado y procurador salvo proceso sin ellos; monitorio sin oposición, si supera 2.000 euros."}
+      - {norma: "LEC", articulo: "437", apartado: "2", tipo: "conexa", nota: "Verbal sin abogado ni procurador: demanda sucinta e impresos normalizados."}
+    no_consta_en_norma: []
+    afines: ["Falta de capacidad para ser parte / procesal", "Allanamiento", "Desistimiento", "Transacción judicial"]
+    # VERIFICADO: el umbral de 2.000 euros figura igual en los arts. 23.2.1.º, 31.2.1.º y 539.1 del espejo.
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-07"
+    revisor: "armero"
+
+  - voz: "Acumulación de acciones"
+    sinonimos: ["acumulación objetiva", "acumulación subjetiva", "acumulación eventual", "acciones incompatibles", "indebida acumulación de acciones", "acumulación de rentas al desahucio"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "71", tipo: "regula", nota: "Objetiva: acciones compatibles aunque de distinto título; las incompatibles, solo de forma eventual."}
+      - {norma: "LEC", articulo: "72", tipo: "regula", nota: "Subjetiva: exige nexo por título o causa de pedir; lo hay si las acciones se fundan en los mismos hechos."}
+      - {norma: "LEC", articulo: "73", apartado: "1", tipo: "regula", nota: "Requisitos: jurisdicción y competencia objetiva, mismo tipo de juicio por materia y que la ley no lo prohíba."}
+      - {norma: "LEC", articulo: "73", apartado: "3", tipo: "regula", nota: "Indebida acumulación: el LAJ requiere subsanar en cinco días antes de admitir la demanda."}
+      - {norma: "LEC", articulo: "405", apartado: "1", tipo: "regula", nota: "El demandado que la considere inadmisible debe decirlo en la contestación."}
+      - {norma: "LEC", articulo: "419", tipo: "regula", nota: "Audiencia previa: se resuelve oralmente, oído el actor, tras las cuestiones de capacidad y representación."}
+      - {norma: "LEC", articulo: "437", apartado: "4", tipo: "regula", nota: "Verbal: no cabe la objetiva salvo cuatro excepciones; la 3.ª, rentas y fiador en el desahucio."}
+      - {norma: "LEC", articulo: "437", apartado: "5", tipo: "regula", nota: "Verbal: la subjetiva cabe con los requisitos de los arts. 72 y 73.1."}
+      - {norma: "LEC", articulo: "252", tipo: "regula", nota: "Cuantía con varias acciones; desahucio más rentas: cuenta la de mayor valor (regla 2.ª)."}
+      - {norma: "LEC", articulo: "53", apartado: "1", tipo: "regula", nota: "Competencia territorial: la de la acción fundamento de las demás, la de más acciones o la de más cuantía."}
+      - {norma: "LEC", articulo: "438", apartado: "5", tipo: "conexa", nota: "Desahucio por falta de pago, acumule o no la reclamación de rentas: requerimiento de diez días."}
+    no_consta_en_norma: []
+    afines: ["Acumulación de procesos", "Competencia objetiva", "Desahucio por falta de pago", "Cuantía del proceso y su impugnación"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-07"
+    revisor: "armero"
+
+  - voz: "Acumulación de procesos"
+    sinonimos: ["acumulación de autos", "acumulación de juicios", "proceso más antiguo", "conexión entre procesos", "acumulación a proceso universal"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "74", tipo: "regula", nota: "Efecto: un solo procedimiento y una sola sentencia."}
+      - {norma: "LEC", articulo: "75", tipo: "regula", nota: "La pide cualquier parte de los procesos o se acuerda de oficio."}
+      - {norma: "LEC", articulo: "76", tipo: "regula", nota: "Procede si una sentencia es prejudicial de la otra o hay riesgo de fallos contradictorios; casos especiales."}
+      - {norma: "LEC", articulo: "77", tipo: "regula", nota: "Mismos trámites (ordinario y verbal, por el ordinario); competencia; primera instancia y antes del fin del juicio."}
+      - {norma: "LEC", articulo: "78", tipo: "regula", nota: "No procede si basta la litispendencia o si pudo plantearse un solo proceso; se presume si es el mismo actor."}
+      - {norma: "LEC", articulo: "79", tipo: "regula", nota: "Se pide ante el proceso más antiguo, por fecha de presentación de la demanda; si no, inadmisión por decreto."}
+      - {norma: "LEC", articulo: "80", tipo: "regula", nota: "Verbal: la acumulación ante el mismo tribunal sigue la sección 2.ª (arts. 81 a 85)."}
+      - {norma: "LEC", articulo: "81", tipo: "regula", nota: "Mismo tribunal: escrito con procesos, estado y razones; no suspende, pero no cabe sentencia hasta decidir."}
+      - {norma: "LEC", articulo: "83", tipo: "regula", nota: "Alegaciones en diez días; contra el auto, solo reposición."}
+      - {norma: "LEC", articulo: "84", tipo: "regula", nota: "Concedida: los modernos se unen al antiguo; se suspende el más avanzado hasta igualarse."}
+      - {norma: "LEC", articulo: "88", tipo: "regula", nota: "Distintos tribunales: no suspende salvo si alguno queda pendiente de sentencia; cabe suspender la vista."}
+      - {norma: "LEC", articulo: "98", tipo: "regula", nota: "Procesos singulares a concurso o sucesión: siempre al universal, sea o no el más antiguo."}
+      - {norma: "LEC", articulo: "43", tipo: "conexa", nota: "Prejudicialidad civil: suspensión si la acumulación no es posible."}
+      - {norma: "LEC", articulo: "252", apartado: "5.ª", tipo: "conexa", nota: "La acumulación de autos no altera la cuantía ni la clase de juicio."}
+    no_consta_en_norma: []
+    afines: ["Acumulación de acciones", "Litispendencia", "Suspensión del proceso"]
+    # PENDIENTE: art. 555 LEC (acumulación de procesos de ejecución, citado por el 77.1) no leído en esta pasada; no se cita.
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-07"
+    revisor: "armero"

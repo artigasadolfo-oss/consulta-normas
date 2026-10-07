@@ -62,6 +62,35 @@ button{font-family:inherit}
 .favbox .vacio-fav{font-size:11.5px;color:var(--ink-500);padding:6px 10px}
 #b-fav.on{background:var(--ocre-50);border-color:var(--ocre);color:var(--ocre-700)}
 #b-fav.on svg{fill:var(--ocre);color:var(--ocre)}
+.idx-aviso{border:1px solid rgba(201,122,30,.35);background:var(--ocre-50);color:var(--ocre-700);border-radius:10px;padding:10px 13px;font-size:12.5px;line-height:1.45;margin:0 0 16px}
+.idx-aviso small{display:block;margin-top:4px;opacity:.85}
+.idx-filtro{padding:8px 12px 4px}
+.idx-filtro input{width:100%;border:1px solid var(--ink-200);border-radius:9px;padding:8px 11px;font:inherit;font-size:13px;background:#fff;color:var(--ink-900)}
+.idx-row{display:flex;align-items:baseline;gap:8px;padding:11px 14px;border-bottom:1px solid var(--ink-100);color:var(--ink-900);text-decoration:none;font-size:14px;font-weight:500}
+.idx-row:hover{background:var(--ink-50)}
+.idx-row.sel{background:var(--ink-100);box-shadow:inset 3px 0 0 var(--ocre)}
+.idx-row .iv{flex:1}
+.ie{font-family:var(--geo);font-size:9.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;border-radius:99px;padding:2px 8px;white-space:nowrap}
+.ie-prov{background:var(--ink-100);color:var(--ink-600)}
+.ie-cad{background:#F7E4E1;color:var(--brick)}
+.idx-cad{border:1px solid #E7BFB9;background:#FBEFED;color:var(--brick);border-radius:10px;padding:9px 13px;font-size:13px;margin:10px 0 0;font-weight:500}
+.idx-sec{font-family:var(--geo);text-transform:uppercase;font-size:11px;font-weight:600;letter-spacing:.12em;color:var(--ink-500);margin:22px 0 6px}
+.idx-lista{list-style:none;margin:0;padding:0}
+.idx-lista li{padding:8px 0;border-bottom:1px solid var(--ink-100);font-size:.95em;line-height:1.45}
+.idx-lista a.ref{font-weight:600;white-space:nowrap;color:var(--ocre-700);text-decoration:underline dotted;text-underline-offset:3px;text-decoration-color:var(--ocre)}
+.idx-lista a.ref:hover{background:var(--ocre-50)}
+.idx-sin a{color:var(--ocre-700);text-decoration:underline dotted;text-underline-offset:3px;text-decoration-color:var(--ocre)}
+@media(min-width:861px){.l-bar.l-bar-i{display:none}}
+.idx-nota{color:var(--ink-600)}
+.idx-conexa .idx-nota::before{content:"";}
+.idx-nc{border-left:3px solid var(--ocre);background:var(--ocre-50);border-radius:0 10px 10px 0;padding:10px 14px;margin:18px 0 0;font-size:.92em}
+.idx-nc ul{margin:6px 0 0 18px;padding:0}
+.idx-sin{color:var(--ink-500);font-size:.9em;margin-top:8px}
+.idx-hit{margin:10px 12px 0;border:1px solid rgba(201,122,30,.35);background:var(--ocre-50);border-radius:10px;padding:8px 12px}
+.idx-hit-t{font-family:var(--geo);text-transform:uppercase;font-size:10px;font-weight:600;letter-spacing:.12em;color:var(--ocre-700);margin-bottom:3px}
+.idx-hit a{display:flex;gap:8px;align-items:baseline;padding:5px 0;color:var(--ink-900);font-weight:600;font-size:13.5px;text-decoration:none}
+.idx-hit a:hover{text-decoration:underline}
+.idx-hit small{font-weight:500;color:var(--ink-500);font-size:11px}
 .sidenote{border-top:1px solid var(--ink-100);padding:12px 16px;font-size:11px;line-height:1.5;color:var(--ink-500)}
 .sidenote b{font-weight:600;color:var(--ink-700)}
 .sidenote.aviso{background:var(--ocre-50);color:var(--ocre-700)}
@@ -193,6 +222,7 @@ body.con-notas .a-body p.nota{display:block}
   <div class="brand"><div class="logo"></div><div><div class="an">Normas</div><div class="fm">Artigas Abogados</div></div></div>
   <div class="tree">
    <button class="navlink" id="nav-buscar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>Buscar</button>
+   <button class="navlink" id="nav-indice" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h11a3 3 0 013 3v13H8a3 3 0 01-3-3V4z"/><path d="M5 17a3 3 0 013-3h11M9 8h6"/></svg>Índice de conceptos</button>
    <div class="nsec" id="nsec-fav" title="Artículos que fijas con la estrella y las normas que más consultas en este dispositivo">Favoritos</div>
    <div class="favbox" id="nav-fav"></div>
    <div class="nsec">Normas</div>
@@ -226,7 +256,7 @@ var $=function(s,r){return (r||document).querySelector(s)};
 var esc=function(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')};
 var norm=function(s){return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')};
 var flat=function(s){return ' '+norm(s).replace(/[^a-z0-9]+/g,' ').trim()+' '};
-var DATA=null,NORMAS=[],POR={},INDEXADO=false;
+var DATA=null,NORMAS=[],POR={},INDEXADO=false,IDX=null;
 var ST={mode:'home',items:[],sel:-1,q:'',filtro:null,stack:false,hl:null,ap:null,ver:false,todos:[],nid:null,parcial:false};
 var LS={get:function(k,d){try{var v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},set:function(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
 var MOVIL=function(){return window.matchMedia('(max-width:860px)').matches};
@@ -496,8 +526,9 @@ function vistaInicio(){
   elLector.innerHTML='<div class="lect-in"><div class="a-eye">Consulta rápida</div><h2 class="a-h" style="font-size:20px">'+NORMAS.length+' normas en este dispositivo</h2><div class="a-meta">Funciona sin conexión. Texto consolidado del BOE según el espejo del despacho.</div><div class="a-body">'+
    NORMAS.map(function(n){return '<p><b>'+esc(n.sigla)+'</b> — '+esc(n.titulo)+'<br><span style="color:var(--ink-500);font-size:.85em">'+n.cuenta+' artículos'+(n.cdisp?' · '+n.cdisp+' disposiciones':'')+' · actualizada a '+fdate(n.act)+(n.est&&n.est!=='in_force'?' · <b style="color:var(--brick)">NO VIGENTE ('+esc(n.est)+')</b>':'')+'</span></p>'}).join('')+'</div></div>';
   var bx=document.createElement('p');bx.style.cssText='margin:14px 0 0;padding:0 28px;font-size:12px;color:var(--ink-500)';
-  bx.innerHTML='<b>Favoritos.</b> Fija un artículo con la estrella (o la tecla F) y aparecerá arriba en el menú; las normas que más consultas suben solas. Se guarda solo en este dispositivo. <button class="ejb" id="b-reset-fav" type="button">Restablecer favoritos</button>';
+  bx.innerHTML='<b>Favoritos.</b> Fija un artículo con la estrella (o la tecla F) y cuelga de su norma en el bloque Favoritos del menú; la estrella de cada norma la fija arriba. Se guarda solo en este dispositivo. <button class="ejb" id="b-reset-fav" type="button">Restablecer favoritos</button>';
   elLector.appendChild(bx);$('#b-reset-fav').onclick=restableceFav;
+  if(IDX){var vz=elLista.querySelector('.vacio');if(vz)vz.insertAdjacentHTML('beforeend','<p style="margin:14px 0 0"><a href="#i" style="font-weight:600">Abrir el índice de conceptos</a> <span style="color:var(--ink-500)">(orientativo; contenido del Armero)</span></p>')}
   document.body.classList.remove('ver-lector');
   marcaNav();
 }
@@ -539,6 +570,7 @@ function marcaSel(scroll){
 }
 function marcaNav(){
   $('#nav-buscar').classList.toggle('sel',ST.mode==='home'||ST.mode==='q');
+  $('#nav-indice').classList.toggle('sel',ST.mode==='indice');
   var l=document.querySelectorAll('#nav-normas .navlink');for(var i=0;i<l.length;i++)l[i].classList.toggle('sel',ST.mode==='norma'&&l[i].dataset.n===ST.nid);
 }
 
@@ -650,6 +682,81 @@ function pintaRec(){
   $('#nav-rec').innerHTML=rec.map(function(r){var c=POR[r.n].map.get(r.k);return '<button class="navlink rec" data-n="'+r.n+'" data-k="'+esc(r.k)+'"><span class="sg">'+esc(POR[r.n].sigla)+'</span><span class="nm">'+esc(abrev(c).replace(/^Art\. /,'Art. '))+'</span></button>'}).join('');
 }
 
+/* ---------- índice jurídico de conceptos (contenido del Armero; taller solo lo muestra) ---------- */
+var AVISO_IDX='Índice orientativo. No sustituye la lectura del precepto ni recoge jurisprudencia. Contrasta con el texto antes de invocarlo.';
+function normq(s){return String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9 ]+/g,' ').replace(/\s+/g,' ').trim()}
+function idxPorSlug(s){for(var i=0;i<IDX.voces.length;i++)if(IDX.voces[i].s===s)return IDX.voces[i];return null}
+function estadoCorto(v){return v.es==='caducada'?'caducada':(v.es==='provisional'?'provisional':'')}
+function idxHits(q){
+  if(!IDX)return [];var qn=normq(q);if(qn.length<3)return [];var out=[];
+  IDX.voces.forEach(function(v){var hit=false;[v.v].concat(v.sn).forEach(function(x){var xn=normq(x);if(xn.indexOf(qn)>=0||(xn.length>=4&&(' '+qn+' ').indexOf(' '+xn+' ')>=0))hit=true});if(hit)out.push(v)});
+  return out.slice(0,4);
+}
+function pintaIdxHits(q){
+  var hits=idxHits(q);if(!hits.length)return;
+  var lh=elLista.querySelector('.lista-h');if(!lh)return;
+  lh.insertAdjacentHTML('afterend','<div class="idx-hit"><div class="idx-hit-t">Índice de conceptos</div>'+hits.map(function(v){return '<a href="#i/'+v.s+'">'+esc(v.v)+(estadoCorto(v)?'<small>'+estadoCorto(v)+'</small>':'')+'</a>'}).join('')+'</div>');
+}
+function listaVoces(f,sel){
+  var fn=normq(f||''),vs=IDX.voces.slice().sort(function(a,b){return a.v.localeCompare(b.v,'es')});
+  if(fn)vs=vs.filter(function(v){return [v.v].concat(v.sn).some(function(x){return normq(x).indexOf(fn)>=0})});
+  if(!vs.length)return '<div class="vacio">Ninguna voz coincide. Prueba con otra palabra.</div>';
+  return vs.map(function(v){return '<a class="idx-row'+(v.s===sel?' sel':'')+'" href="#i/'+v.s+'"><span class="iv">'+esc(v.v)+'</span>'+(estadoCorto(v)?'<span class="ie ie-'+(v.es==='caducada'?'cad':'prov')+'">'+estadoCorto(v)+'</span>':'')+'</a>'}).join('');
+}
+function normaPorSigla(s){for(var i=0;i<NORMAS.length;i++)if(NORMAS[i].sigla===s)return NORMAS[i];return null}
+function razonCad(x){
+  if(x.r==='?')return 'no se ha podido comprobar contra qué texto se revisó'+(x.n?' ('+esc(x.n)+')':'');
+  var n=normaPorSigla(x.n),c=n&&n.map.get(x.k),art=esc(x.n)+' '+esc(c?abrev(c):'art. '+x.k),vig=x.v==='vigilar'?' (artículo vigilado)':'';
+  if(x.r==='cambia')return 'ha cambiado el texto de '+art+vig+' desde la revisión';
+  if(x.r==='falta')return 'ya no se encuentra '+art+vig+' (derogado, renumerado o sin contenido)';
+  if(x.r==='nuevo')return 'ha aparecido '+art+', junto a un artículo que cita la voz';
+  return null;
+}
+function remLabel(r){
+  var n=POR[r.n],c=n&&n.map.get(r.k);
+  var art=c?abrev(c):'Art. '+r.k;
+  var ap=r.ap?(/^\d/.test(r.ap)&&/^Art/.test(art)?'.'+r.ap:' '+r.ap):'';
+  return esc(n.sigla)+' '+esc(art+ap);
+}
+function remItems(v,t){
+  var rs=v.r.filter(function(r){return r.t===t});if(!rs.length)return '';
+  return '<ul class="idx-lista'+(t==='c'?' idx-conexa':'')+'">'+rs.map(function(r){
+    return '<li><a class="ref" href="#a/'+r.n+'/'+encodeURIComponent(r.k)+(r.a?'/'+r.a:'')+'">'+remLabel(r)+'</a><span class="idx-nota"> — '+esc(r.nota)+'</span></li>'}).join('')+'</ul>';
+}
+function detalleVoz(v){
+  var h='<div class="l-bar l-bar-i"><button class="btn volver" id="b-volver-i" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg>Índice</button></div><div class="lect-in">';
+  h+='<div class="idx-aviso">'+esc(AVISO_IDX)+(IDX.aviso?'<small>'+esc(IDX.aviso)+'</small>':'')+'</div>';
+  h+='<div class="a-eye">Índice de conceptos</div><h2 class="a-h">'+esc(v.v)+'</h2>';
+  h+='<div class="a-meta"><span>Revisada el '+fdate(v.rv)+'</span><span>Revisor: '+esc(v.rr)+'</span>'+(v.es==='provisional'?'<span>Provisional: vigencia no contrastada con el BOE</span>':'')+'</div>';
+  if(v.es==='caducada'){
+    var rz=(v.cad||[]).map(razonCad).filter(Boolean);
+    h+='<div class="idx-cad">Caducada: '+(rz.length?rz.join('; '):'el revisor la ha marcado como caducada')+'. Lee el texto vigente.</div>';
+  }
+  if(v.sn.length)h+='<div class="idx-sin">También se dice: '+v.sn.map(esc).join(' · ')+'</div>';
+  var reg=remItems(v,'r'),con=remItems(v,'c');
+  if(reg)h+='<div class="idx-sec">Regula</div>'+reg;
+  if(con)h+='<div class="idx-sec">Conexión doctrinal, no textual</div>'+con;
+  if(v.fh&&v.fh.length)h+='<div class="idx-nc"><b>Rige también, fuera de la herramienta:</b><ul>'+v.fh.map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ul></div>';
+  if(v.nc.length)h+='<div class="idx-nc"><b>No consta en norma:</b><ul>'+v.nc.map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ul></div>';
+  if(v.af.length)h+='<div class="idx-sec">Voces afines</div><div class="idx-sin" style="margin-top:0">'+v.af.map(function(a){var o=IDX.voces.filter(function(x){return normq(x.v)===normq(a)})[0];return o?'<a href="#i/'+o.s+'">'+esc(a)+'</a>':'<span>'+esc(a)+'</span>'}).join(' · ')+'</div>';
+  h+='</div>';return h;
+}
+function vistaIndice(slug){
+  ST.mode='indice';ST.items=[];ST.sel=-1;ST.stack=false;ST.mostrados=null;
+  elChips.innerHTML='';
+  elLista.innerHTML='<div class="lista-h">Índice de conceptos<small>'+IDX.voces.length+' voces</small></div><div class="idx-filtro"><input id="iq" type="search" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Filtrar voces…" aria-label="Filtrar voces del índice"></div><div id="idx-voces">'+listaVoces('',slug)+'</div>';
+  $('#iq').addEventListener('input',function(e){$('#idx-voces').innerHTML=listaVoces(e.target.value,slug)});
+  var v=slug&&idxPorSlug(slug);
+  if(v){elLector.innerHTML=detalleVoz(v);elLector.scrollTop=0;
+    $('#b-volver-i').onclick=function(){document.body.classList.remove('ver-lector')};
+    document.body.classList.toggle('ver-lector',MOVIL());
+  }else{
+    elLector.innerHTML='<div class="lect-in"><div class="idx-aviso">'+esc(AVISO_IDX)+(IDX.aviso?'<small>'+esc(IDX.aviso)+'</small>':'')+'</div><div class="a-eye">Índice de conceptos</div><h2 class="a-h" style="font-size:20px">'+IDX.voces.length+' voces</h2><div class="a-meta">Versión '+esc(IDX.version)+'</div><div class="a-body"><p>Elige una voz a la izquierda. Cada una te da los preceptos que la <b>regulan</b>, los de <b>conexión doctrinal</b> (no textual), lo que <b>no consta en norma</b> y la fecha de revisión. Al pinchar un precepto se abre su texto íntegro.</p><p>También te la ofrece el buscador: escribe «declinatoria» o «precario» y verás la voz sobre los resultados.</p></div></div>';
+    document.body.classList.remove('ver-lector');
+  }
+  marcaNav();
+}
+
 /* ---------- enrutado ---------- */
 function go(h,o){
   o=o||{};
@@ -663,12 +770,14 @@ function parseHash(){
   if(p[0]==='q')return {t:'q',q:p[1]||'',s:p[2]==='s'?{n:p[3],k:p[4]}:null,f:null};
   if(p[0]==='a')return {t:'a',n:p[1],k:p[2],ap:p[3]||null};
   if(p[0]==='n')return {t:'n',n:p[1]};
+  if(p[0]==='i')return {t:'i',s:p[1]||null};
   return {t:'home'};
 }
 var ULTIMO_Q=null;
 function apply(){
   var H=parseHash();if(H.t!=='a')ST.pushed=false;
   if(H.t==='home'){elQ.value='';$('#limpia').style.display='none';ST.q='';vistaInicio();return}
+  if(H.t==='i'&&IDX){vistaIndice(H.s);return}
   if(H.t==='n'){var n=POR[H.n];if(n){vistaNorma(n,null);elLector.innerHTML='<div class="lect-in"><div class="a-eye">'+esc(n.sigla)+'</div><h2 class="a-h" style="font-size:20px">'+esc(n.titulo)+'</h2><div class="a-meta">'+n.cuenta+' artículos'+(n.cdisp?' · '+n.cdisp+' disposiciones':'')+' · actualizada a '+fdate(n.act)+'</div><div class="a-body"><p>Elige un artículo del índice, o escribe arriba su número («282») seguido de «'+esc(n.sigla)+'».</p></div></div>';document.body.classList.remove('ver-lector')}return}
   if(H.t==='a'){
     var nn=POR[H.n],c=nn&&nn.map.get(H.k);if(!c){toast('Artículo no encontrado');vistaInicio();return}
@@ -685,7 +794,8 @@ function apply(){
     ejecuta(q,H.s);return;
   }
 }
-function ejecuta(q,sel){
+function ejecuta(q,sel){ejecuta0(q,sel);marcaNav()}
+function ejecuta0(q,sel){
   var cons=parseConsulta(q),t0=performance.now();
   ST.hl=null;ST.parcial=false;
   if(cons&&cons.alias&&!cons.piezas.length){
@@ -716,6 +826,7 @@ function ejecuta(q,sel){
   var ms=Math.round(performance.now()-t0);
   var info=res.items.length+' artículo'+(res.items.length===1?'':'s')+'<small>'+ms+' ms</small>';
   vistaLista(info,res.parcial&&res.items.length?'No hay artículos con <b>todos</b> los términos. Te enseño los que contienen alguno, de más a menos coincidencias.':null);
+  pintaIdxHits(q);
   if(!res.items.length){return}
   var ix2=0;if(sel){res.items.forEach(function(it,i){if(it.c.n.id===sel.n&&it.c.k===sel.k)ix2=i})}
   ST.sel=ix2;marcaSel(true);
@@ -774,6 +885,7 @@ elLector.addEventListener('click',function(e){
   e.preventDefault();ST.pushed=true;go(a.getAttribute('href'));
 });
 $('#nav-buscar').addEventListener('click',function(){cierraNav();go('');elQ.focus()});
+$('#nav-indice').addEventListener('click',function(){cierraNav();go('#i')});
 function clicNormas(e){
   var s=e.target.closest('.fs');
   if(s){e.preventDefault();e.stopPropagation();var on=alternaFavN(s.dataset.n,null);toast(on?'Fijada en favoritos':'Quitada de favoritos');return}
@@ -809,6 +921,7 @@ window.addEventListener('hashchange',apply);
 /* ---------- arranque ---------- */
 function arranque(){
   prepara();
+  IDX=DATA.indice||null;if(IDX)$('#nav-indice').style.display='';
   var fs=LS.get('normas.fs',16);document.documentElement.style.setProperty('--fs',fs+'px');
   if(LS.get('normas.notas',false))document.body.classList.add('con-notas');
   $('#nav-normas').innerHTML=NORMAS.map(function(n){return '<button class="navlink" data-n="'+n.id+'"><span class="sg">'+esc(n.sigla)+'</span><span class="nm">'+esc(n.corto)+'</span><span class="fs" role="button" tabindex="0" data-n="'+n.id+'" aria-label="Fijar '+esc(n.sigla)+' en favoritos" aria-pressed="false">'+ESTRELLA_V+'</span></button>'}).join('');
@@ -824,7 +937,7 @@ function arranque(){
   (window.requestIdleCallback||function(f){setTimeout(f,300)})(function(){indexa()});
 }
 /* gancho para las pruebas: devuelve el HTML con los enlaces que se crearían para un texto suelto */
-window.__NT={probar:function(nid,k,txt){return enlaza(esc(txt),POR[nid].map.get(k))}};
+window.__NT={probar:function(nid,k,txt){return enlaza(esc(txt),POR[nid].map.get(k))},idx:function(){return IDX},vistaIndice:function(s){vistaIndice(s)}};
 if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol)){navigator.serviceWorker.register('sw.js').catch(function(){})}
 cargar().then(function(d){DATA=d;arranque()}).catch(function(err){document.getElementById('carga').innerHTML='No he podido abrir los datos.<br><br>'+esc(err.message||err)});
 })();

@@ -17,6 +17,7 @@ artículo. Si falta o sobra una, el build FALLA en vez de publicar texto cojo.
 """
 import base64
 import datetime as dt
+import indice
 import gzip
 import hashlib
 import json
@@ -331,6 +332,32 @@ def git_head():
         return ""
 
 
+_BASE = {}
+
+
+def base_en_commit(claves_norma, sigla, commit):
+    """{clave: huella} del texto de una norma en un commit del espejo, analizado con el mismo parser que el texto actual.
+    None si no se puede reconstruir (commit desconocido o norma no versionada, p. ej. la importada a mano del DOGV)."""
+    k = (sigla, commit)
+    if k in _BASE:
+        return _BASE[k]
+    res = None
+    try:
+        cfg = claves_norma[sigla]["cfg"]
+        r = subprocess.run(["git", "-C", str(CORPUS), "show", f"{commit}:{claves_norma[sigla]['ruta']}"],
+                           capture_output=True, timeout=90)
+        if r.returncode == 0:
+            texto = r.stdout.decode("utf-8")
+            m = re.match(r"^---\n(.*?)\n---\n", texto, re.S)
+            if m:
+                chunks, _ = parse_norma(cfg, texto[m.end():].split("\n"))
+                res = indice.mapa_huellas(chunks)
+    except Exception:
+        res = None
+    _BASE[k] = res
+    return res
+
+
 def cuenta_real(chunks):
     """(artículos, disposiciones). Artículos = los de la norma, con sus bis/ter, y los números cubiertos por los bloques
     «Artículos X a Y» (derogados) que no salgan ya sueltos; NO suma disposiciones adicionales/transitorias/derogatorias/finales
@@ -356,13 +383,15 @@ def cuenta_real(chunks):
 
 
 def construye(solo_comprobar=False):
-    datos, manifiesto, resumen = [], [], []
+    datos, manifiesto, resumen, claves_norma = [], [], [], {}
     for cfg in NORMAS:
         raw, meta, lineas = lee_norma(cfg)
         chunks, avisos = parse_norma(cfg, lineas)
         n_cab = verifica_sin_perdidas(cfg, lineas, chunks)
         arts = [c for c in chunks if c["k"] not in ("cab", "pre")]
         n_art, n_disp = cuenta_real(chunks)
+        claves_norma[cfg["sigla"]] = dict(id=cfg["id"], keys={c["k"] for c in chunks}, cfg=cfg,
+                                          mapa=indice.mapa_huellas(chunks), ruta=f"{cfg.get('dir', 'es')}/{cfg['boe']}.md")
         resumen.append(f"{cfg['sigla']:10s} {n_art:5d} artículos + {n_disp:3d} disposiciones  "
                        f"({len(chunks)} bloques, {n_cab} cabeceras consumidas) "
                        f"actualizada {meta.get('last_updated','?')} {'; '.join(avisos)}")
@@ -376,11 +405,24 @@ def construye(solo_comprobar=False):
                                sha256=hashlib.sha256(raw).hexdigest(),
                                bloques=len(chunks), articulos=n_art, disposiciones=n_disp))
     print("\n".join(resumen))
+    idx, cambios = indice.compila(AQUI / "indice", claves_norma, lambda s, c: base_en_commit(claves_norma, s, c))
+    resumen_idx = None
+    if idx:
+        cad = [v["v"] for v in idx["voces"] if v["es"] == "caducada"]
+        prov = sum(1 for v in idx["voces"] if v["es"] == "provisional")
+        resumen_idx = dict(version=idx["version"], voces=len(idx["voces"]), provisionales=prov, caducadas=cad, cambios_norma=cambios,
+                           dependen={s: [v["v"] for v in idx["voces"] if s in v["nb"]] for s in sorted({s for v in idx["voces"] for s in v["nb"]})})
+        print(f"Índice de conceptos {idx['version']}: {len(idx['voces'])} voces ({prov} provisionales, {len(cad)} caducadas)")
+        for v in idx["voces"]:
+            if v["cad"]:
+                print("   caducada:", v["v"], "<-", ", ".join(f"{x.get('n', '')} {x.get('k', '')} ({x['r']}{', vigilar' if x.get('v') else ''})".strip() for x in v["cad"]))
+        for sg, d in cambios.items():
+            print(f"   aviso para el Armero: {sg} cambió en {len(d['articulos'])} artículo(s) que ninguna voz cita: {', '.join(d['articulos'][:12])}{' …' if len(d['articulos']) > 12 else ''}")
     if solo_comprobar:
         return
     hoy = dt.date.today().isoformat()
-    meta_build = dict(compilado=hoy, corpus_commit=git_head(), normas=manifiesto)
-    payload = json.dumps(dict(normas=datos, build=meta_build), ensure_ascii=False, separators=(",", ":"))
+    meta_build = dict(compilado=hoy, corpus_commit=git_head(), normas=manifiesto, **({"indice": resumen_idx} if resumen_idx else {}))
+    payload = json.dumps(dict(normas=datos, build=meta_build, indice=idx), ensure_ascii=False, separators=(",", ":"))
     gz = gzip.compress(payload.encode("utf-8"), compresslevel=9, mtime=0)
     b64 = base64.b64encode(gz).decode()
     fuentes, logo = rellena_fuentes_y_logo()
