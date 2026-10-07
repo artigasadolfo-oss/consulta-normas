@@ -19,8 +19,9 @@ incrustados: funciona abriéndolo como archivo local, **sin conexión**, y tambi
   enlace al BOE, recientes.
 
 Normas incluidas: LEC, LO 1/2025, LAU, LPH, Código Civil, LOPJ, Ley 38/1999 de Ordenación de la Edificación (LOE),
-RDL 1/2007 (texto refundido de la Ley General de Consumidores y Usuarios, TRLGDCU), Ley valenciana 3/2004 de Ordenación
-y Fomento de la Calidad de la Edificación (LOFCE) y Constitución. (La LOPDGDD se retiró el 07-10-2026 a petición de Adolfo.)
+RDL 1/2007 (texto refundido de la Ley General de Consumidores y Usuarios, TRLGDCU), Decreto Legislativo 1/2019 (texto
+refundido de la Ley del Estatuto de las personas consumidoras y usuarias de la Comunitat Valenciana, EPCU-CV) y Constitución.
+(La LOPDGDD se retiró el 07-10-2026 a petición de Adolfo; la Ley valenciana 3/2004 de calidad de la edificación se probó y se descartó.)
 
 ## Origen y fidelidad del texto
 

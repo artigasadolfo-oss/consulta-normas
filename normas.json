@@ -83,14 +83,14 @@
    "articulos": 202
   },
   {
-   "id": "lofce",
-   "boe": "BOE-A-2004-13469",
-   "sigla": "LOFCE",
+   "id": "epcucv",
+   "boe": "DOGV-r-2019-90594",
+   "sigla": "EPCU-CV",
    "dir": "es-vc",
    "actualizada": "2025-05-31",
-   "sha256": "bbed1cc479ac5444edcb567335a89dc87fa4c3dff6b87e55156bee5cf6a6c188",
-   "bloques": 51,
-   "articulos": 49
+   "sha256": "2bdb98769cfa49ee6a9c63208510c95894b1077b9dfe7a7c8391e51845aab466",
+   "bloques": 97,
+   "articulos": 96
   },
   {
    "id": "ce",

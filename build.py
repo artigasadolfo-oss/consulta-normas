@@ -40,7 +40,7 @@ NORMAS = [
     dict(id="lopj",   boe="BOE-A-1985-12666", sigla="LOPJ",      corto="Ley Orgánica del Poder Judicial"),
     dict(id="loe",    boe="BOE-A-1999-21567", sigla="LOE",       corto="Ley de Ordenación de la Edificación"),
     dict(id="trlgdcu", boe="BOE-A-2007-20555", sigla="TRLGDCU",  corto="Ley General de Consumidores y Usuarios", previo_rdl="RDL 1/2007"),
-    dict(id="lofce",  boe="BOE-A-2004-13469", sigla="LOFCE",     corto="Ley valenciana de calidad de la edificación", dir="es-vc"),
+    dict(id="epcucv", boe="DOGV-r-2019-90594", sigla="EPCU-CV", corto="Estatuto valenciano de consumidores y usuarios", dir="es-vc", previo_rdl="DLeg 1/2019"),
     dict(id="ce",     boe="BOE-A-1978-31229", sigla="CE",        corto="Constitución Española"),
 ]
 
