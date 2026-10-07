@@ -113,5 +113,55 @@
    "articulos": 169,
    "disposiciones": 15
   }
- ]
+ ],
+ "indice": {
+  "version": "0.1-muestra",
+  "voces": 16,
+  "provisionales": 5,
+  "caducadas": [],
+  "cambios_norma": {},
+  "dependen": {
+   "CC": [
+    "Desahucio por precario",
+    "Intervención de terceros"
+   ],
+   "LAU": [
+    "Enervación del desahucio"
+   ],
+   "LEC": [
+    "Declinatoria",
+    "Desahucio por precario",
+    "Enervación del desahucio",
+    "Requisito de procedibilidad (MASC)",
+    "Falta de legitimación",
+    "Falta de jurisdicción / competencia internacional",
+    "Competencia objetiva",
+    "Competencia territorial y fueros imperativos",
+    "Sumisión expresa y tácita",
+    "Competencia funcional",
+    "Falta de capacidad para ser parte / procesal",
+    "Litisconsorcio pasivo necesario",
+    "Intervención de terceros",
+    "Postulación (abogado y procurador)",
+    "Acumulación de acciones",
+    "Acumulación de procesos"
+   ],
+   "LO 1/2025": [
+    "Requisito de procedibilidad (MASC)",
+    "Competencia objetiva"
+   ],
+   "LOE": [
+    "Intervención de terceros"
+   ],
+   "LOPJ": [
+    "Falta de jurisdicción / competencia internacional",
+    "Competencia objetiva",
+    "Sumisión expresa y tácita",
+    "Competencia funcional"
+   ],
+   "TRLGDCU": [
+    "Sumisión expresa y tácita"
+   ]
+  }
+ }
 }

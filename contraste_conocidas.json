@@ -1,0 +1,106 @@
+{
+ "LO 1/2025": {
+  "df13": [
+   "2c9422a6ca09",
+   "1244a035d456",
+   "tabla de cuantías: la API del BOE no la trae igual"
+  ],
+  "df21": [
+   "89b130657a77",
+   "cb6103f5c66d",
+   "texto citado de la reforma: formato distinto (el espejo lo deja entre «>»)"
+  ],
+  "df8": [
+   "a9aa42f8d5d7",
+   "2845b4bc29c9",
+   "anexos tabulares (miles de líneas): la API no los trae"
+  ]
+ },
+ "CC": {
+  "127": [
+   "9bf8e23ad915",
+   "6e67e2aa49cf",
+   "rótulo de rango de derogados («Arts. 127 a 130 derogados»)"
+  ],
+  "307": [
+   "e8d47056eefa",
+   "fce969e80b69",
+   "rótulo de rango «sin contenido»"
+  ],
+  "605": [
+   "9642d245c178",
+   "73e926142861",
+   "encabezado de capítulo dentro del cuerpo del espejo"
+  ],
+  "1863 bis": [
+   "9bf8e23ad915",
+   "ca2a91944c2e",
+   "rótulo de derogados"
+  ],
+  "1911": [
+   "75c7793a1239",
+   "9b5608288976",
+   "rótulo de derogados"
+  ],
+  "1975": [
+   "4430ddd59a8d",
+   "4ecbe6fb355a",
+   "encabezado «Disposición final» pegado al cuerpo"
+  ],
+  "1976": [
+   "40840558d144",
+   "bf317d301461",
+   "disposiciones transitorias pegadas al cuerpo"
+  ],
+  "1568": [
+   "6e873b8db139",
+   "06b9b84b3842",
+   "nota editorial sobre las primeras ediciones: la trae el BOE, el espejo no (no es texto normativo)"
+  ],
+  "_solo_boe": [
+   "301 a",
+   "1231 a"
+  ]
+ },
+ "LOPJ": {
+  "104": [
+   "9fe1b596f1f0",
+   "ea989fa3f745",
+   "encabezado «Capítulo único» dentro del cuerpo"
+  ],
+  "279": [
+   "ac4986195828",
+   "b1ae8829e9e6",
+   "rótulos de derogados repetidos"
+  ],
+  "292": [
+   "90d3dafe8e18",
+   "aaa1c2e3fe52",
+   "rótulos de derogados repetidos"
+  ],
+  "_solo_boe": [
+   "279 a"
+  ]
+ },
+ "TRLGDCU": {
+  "df1": [
+   "7f0ae68d6f04",
+   "ba0c48dd4370",
+   "dos disposiciones finales primeras (RDL y texto refundido) con claves coincidentes"
+  ],
+  "df2": [
+   "2c0c8df00a28",
+   "4c4ee133fa67",
+   "ídem"
+  ],
+  "df4": [
+   "6a32809b847b",
+   "95ea06ffaf1a",
+   "ídem; tablas"
+  ],
+  "_solo_boe": [
+   "ddu",
+   "unico"
+  ]
+ }
+}
