@@ -18,7 +18,9 @@ incrustados: funciona abriéndolo como archivo local, **sin conexión**, y tambi
 - Copiar (cita + texto + fecha de consolidación), notas de reforma del BOE (ocultas por defecto), tamaño de letra,
   enlace al BOE, recientes.
 
-Normas incluidas: LEC, LO 1/2025, LAU, LPH, Código Civil, LOPJ, LOPDGDD y Constitución.
+Normas incluidas: LEC, LO 1/2025, LAU, LPH, Código Civil, LOPJ, Ley 38/1999 de Ordenación de la Edificación (LOE),
+RDL 1/2007 (texto refundido de la Ley General de Consumidores y Usuarios, TRLGDCU), Ley valenciana 3/2004 de Ordenación
+y Fomento de la Calidad de la Edificación (LOFCE) y Constitución. (La LOPDGDD se retiró el 07-10-2026 a petición de Adolfo.)
 
 ## Origen y fidelidad del texto
 
@@ -32,7 +34,7 @@ literalmente (la propia página lo dice).
 ```
 cd ~/Programación/"Consulta de normas"
 python3 build.py                                   # regenera index.html y normas.json
-env -u PYTHONPATH python3.12 scripts/test_app.py   # 55 pruebas en Chromium real
+env -u PYTHONPATH python3.12 scripts/test_app.py   # 76 pruebas en Chromium real
 env -u PYTHONPATH python3.12 scripts/test_offline.py
 ```
 

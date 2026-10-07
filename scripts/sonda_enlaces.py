@@ -9,7 +9,7 @@ with sync_playwright() as p:
     pg.goto(URL); pg.wait_for_function("!document.querySelector('#carga')")
     muestras = []
     stats = {}
-    for nid, rango in [("lec", range(1, 828, 7)), ("lau", range(1, 52)), ("lph", range(1, 25)), ("cc", range(1, 1977, 25)), ("lopj", range(1, 643, 11)), ("ce", range(10, 170, 5)), ("lo1-2025", range(1, 25)), ("lopdgdd", range(1, 98, 3))]:
+    for nid, rango in [("lec", range(1, 828, 7)), ("lau", range(1, 52)), ("lph", range(1, 25)), ("cc", range(1, 1977, 25)), ("lopj", range(1, 643, 11)), ("ce", range(10, 170, 5)), ("lo1-2025", range(1, 25)), ("loe", range(1, 21)), ("trlgdcu", range(1, 171, 4)), ("lofce", range(1, 39))]:
         tot = 0
         for k in rango:
             pg.evaluate(f"location.hash='#a/{nid}/{k}'"); time.sleep(0.03)

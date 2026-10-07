@@ -38,7 +38,9 @@ NORMAS = [
     dict(id="lph",    boe="BOE-A-1960-10906", sigla="LPH",       corto="Ley de Propiedad Horizontal"),
     dict(id="cc",     boe="BOE-A-1889-4763",  sigla="CC",        corto="Código Civil"),
     dict(id="lopj",   boe="BOE-A-1985-12666", sigla="LOPJ",      corto="Ley Orgánica del Poder Judicial"),
-    dict(id="lopdgdd", boe="BOE-A-2018-16673", sigla="LOPDGDD",  corto="Ley Orgánica de Protección de Datos"),
+    dict(id="loe",    boe="BOE-A-1999-21567", sigla="LOE",       corto="Ley de Ordenación de la Edificación"),
+    dict(id="trlgdcu", boe="BOE-A-2007-20555", sigla="TRLGDCU",  corto="Ley General de Consumidores y Usuarios", previo_rdl="RDL 1/2007"),
+    dict(id="lofce",  boe="BOE-A-2004-13469", sigla="LOFCE",     corto="Ley valenciana de calidad de la edificación", dir="es-vc"),
     dict(id="ce",     boe="BOE-A-1978-31229", sigla="CE",        corto="Constitución Española"),
 ]
 
@@ -113,7 +115,7 @@ def limpia_nota(linea):
 
 
 def lee_norma(cfg):
-    ruta = ES / f"{cfg['boe']}.md"
+    ruta = CORPUS / cfg.get("dir", "es") / f"{cfg['boe']}.md"
     raw = ruta.read_bytes()
     texto = raw.decode("utf-8")
     m = re.match(r"^---\n(.*?)\n---\n", texto, re.S)
@@ -256,6 +258,20 @@ def parse_norma(cfg, lineas):
         ch["b"] = "\n".join(out)
     # descarta la cabecera si quedó vacía
     chunks = [c for c in chunks if c["k"] != "cab" or c["b"].strip()]
+    if cfg.get("previo_rdl"):
+        # Real Decreto Legislativo: lo que va antes del artículo 1 del texto refundido es del RD, no del texto
+        # (su artículo único y sus disposiciones). Se etiqueta aparte para que «DF 1» no sea ambiguo.
+        corte = next(i for i, c in enumerate(chunks) if c["k"] == "1")
+        for c in chunks[:corte]:
+            if c["k"] not in ("cab", "pre"):
+                c["k"] = "rd-" + c["k"]
+                c["e"] = cfg["previo_rdl"] + " · " + c["e"]
+        usados = {c["k"] for c in chunks[corte:]}
+        avisos[:] = [a for a in avisos if "duplicada" not in a]  # ya resueltas por el prefijo rd-
+        for c in chunks[corte:]:
+            base = c["k"].split("#")[0]
+            if "#" in c["k"] and base not in usados:
+                usados.discard(c["k"]); c["k"] = base; usados.add(base)
     return chunks, avisos
 
 
@@ -329,7 +345,7 @@ def construye(solo_comprobar=False):
                           titulo=meta.get("title", cfg["corto"]), act=meta.get("last_updated", ""),
                           est=meta.get("status", ""), url=meta.get("url_html_consolidada", ""),
                           ch=[dict(k=c["k"], e=c["e"], t=c["t"], s=c["s"], b=c["b"]) for c in chunks]))
-        manifiesto.append(dict(id=cfg["id"], boe=cfg["boe"], sigla=cfg["sigla"],
+        manifiesto.append(dict(id=cfg["id"], boe=cfg["boe"], sigla=cfg["sigla"], dir=cfg.get("dir", "es"),
                                actualizada=meta.get("last_updated", ""),
                                sha256=hashlib.sha256(raw).hexdigest(),
                                bloques=len(chunks), articulos=len(arts)))

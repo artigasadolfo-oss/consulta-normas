@@ -8,6 +8,8 @@ os.environ.pop("PYTHONPATH", None)
 from playwright.sync_api import sync_playwright
 
 AQUI = pathlib.Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(AQUI))
+import build
 URL = "file://" + str(AQUI / "index.html").replace(" ", "%20")
 CORPUS = pathlib.Path.home() / "Documents/iA/LEYES/legalize-es/es"
 CAPT = pathlib.Path(os.environ.get("CAPTURAS", AQUI / "scripts" / "_capturas"))
@@ -28,9 +30,9 @@ def check(nombre, cond, detalle=""):
         print(f"  FALLA {nombre} {detalle}")
 
 
-def fuente_articulo(boe, cabecera_regex):
+def fuente_articulo(boe, cabecera_regex, dir_="es"):
     """Texto del artículo directamente del .md (sin notas), para contrastar."""
-    txt = (CORPUS / f"{boe}.md").read_text(encoding="utf-8").split("\n")
+    txt = (CORPUS.parent / dir_ / f"{boe}.md").read_text(encoding="utf-8").split("\n")
     out, dentro = [], False
     for ln in txt:
         if re.match(r"^#{1,6} ", ln):
@@ -69,7 +71,9 @@ with sync_playwright() as p:
     print(f"carga: {time.time()-t0:.2f}s")
     check("carga sin errores JS", not errores, str(errores[:3]))
     check("sin peticiones a internet", not externas, str(externas[:3]))
-    check("8 normas en el menú", pg.locator("#nav-normas .navlink").count() == 8)
+    check("tantas normas en el menú como en build.py", pg.locator("#nav-normas .navlink").count() == len(build.NORMAS), str(pg.locator("#nav-normas .navlink").count()))
+    check("LOPDGDD ya no está", pg.locator("#nav-normas .navlink[data-n=lopdgdd]").count() == 0)
+    check("las tres nuevas están (LOE, TRLGDCU, LOFCE)", all(pg.locator(f"#nav-normas .navlink[data-n={x}]").count() == 1 for x in ("loe", "trlgdcu", "lofce")))
 
     print("\n[consulta directa]")
     consulta(pg, "282 LEC")
@@ -111,10 +115,34 @@ with sync_playwright() as p:
     consulta(pg, "9999 lec")
     check("9999 LEC: avisa de que no existe", "llega al 827" in pg.inner_text("#lista"), pg.inner_text("#lista")[:200])
 
+    print("\n[normas nuevas: LOE, TRLGDCU, LOFCE]")
+    consulta(pg, "17 loe")
+    check("17 LOE: cabecera", "Artículo 17" in pg.inner_text("#lector .a-h") and "LOE" in pg.inner_text("#lector .a-eye"), pg.inner_text("#lector .a-h"))
+    check("17 LOE: texto idéntico al BOE", lector_parrafos(pg) == fuente_articulo("BOE-A-1999-21567", r"Art[ií]culo 17\.") and len(lector_parrafos(pg)) > 3)
+    consulta(pg, "20 lofce")
+    check("20 LOFCE (corpus es-vc): texto idéntico", lector_parrafos(pg) == fuente_articulo("BOE-A-2004-13469", r"Art[ií]culo 20\.", "es-vc") and "recepción" in pg.inner_text("#lector .a-h").lower(), pg.inner_text("#lector .a-h"))
+    consulta(pg, "3 trlgdcu")
+    check("3 TRLGDCU: texto idéntico", lector_parrafos(pg) == fuente_articulo("BOE-A-2007-20555", r"Art[ií]culo 3\.") and "TRLGDCU" in pg.inner_text("#lector .a-eye"))
+    consulta(pg, "ley de consumidores y usuarios 59 bis")
+    check("alias «ley de consumidores y usuarios» + 59 bis", "59 bis" in pg.inner_text("#lector .a-h"), pg.inner_text("#lector .a-h"))
+    consulta(pg, "df 1 trlgdcu")
+    h_ = pg.inner_text("#lector .a-h")
+    check("DF 1 TRLGDCU es la del texto refundido, no la del RDL", "Disposición final primera" in h_ and "RDL" not in h_, h_)
+    consulta(pg, "recepción de la obra")
+    ids_ = pg.eval_on_selector_all("#lista .item", "els=>els.map(e=>e.querySelector('.sg-chip').textContent+' '+e.querySelector('.ar').textContent)")
+    print("   «recepción de la obra»:", ids_[:6])
+    check("«recepción de la obra» encuentra LOFCE 20 y LOE", any(x.startswith("LOFCE Art. 20") for x in ids_[:8]) and any(x.startswith("LOE") for x in ids_[:12]), str(ids_[:8]))
+    consulta(pg, "garantía conformidad consumidores")
+    check("concepto de consumo: hay resultados en TRLGDCU", pg.locator("#lista .item .sg-chip:text('TRLGDCU')").count() > 0)
+
     print("\n[sin norma / rango / lista]")
     consulta(pg, "21")
     n = pg.locator("#lista .item").count()
-    check("21 sin norma: sale en las 8 normas", n == 8, f"{n}")
+    esperadas = 0
+    for cfg_ in build.NORMAS:
+        _, _, l_ = build.lee_norma(cfg_); ch_, _ = build.parse_norma(cfg_, l_)
+        esperadas += any(c_["k"] == "21" for c_ in ch_)
+    check(f"21 sin norma: sale en las {esperadas} normas que lo tienen", n == esperadas, f"{n} vs {esperadas}")
     consulta(pg, "63-65 lec")
     arts = pg.locator("#lector article").count()
     check("63-65 LEC: tres artículos seguidos", arts == 3, f"{arts}")
@@ -172,13 +200,22 @@ with sync_playwright() as p:
         return pg.eval_on_selector_all("#lector a.ref", "els=>els.map(a=>[a.textContent,a.getAttribute('href')])")
     e = enlaces("25 lau")
     check("LAU 25: «artículo 1.518 del Código Civil» -> CC 1518 (no CC 1)", ["1.518", "#a/cc/1518"] in e, str(e))
-    consulta(pg, "4 lopdgdd")
-    check("LOPDGDD 4: «5.1.d) del Reglamento (UE)» NO se enlaza a la propia ley",
-          not any(h == "#a/lopdgdd/5/1" for _, h in pg.eval_on_selector_all("#lector a.ref", "els=>els.map(a=>[a.textContent,a.getAttribute('href')])")))
-    consulta(pg, "22 lopdgdd")
-    check("LOPDGDD 22: «2.2.c) del Reglamento (UE)» NO se enlaza", not any(h.startswith("#a/lopdgdd/2/") for _, h in pg.eval_on_selector_all("#lector a.ref", "els=>els.map(a=>[a.textContent,a.getAttribute('href')])")))
-    consulta(pg, "52 lopdgdd")
-    check("LOPDGDD 52: «artículo 6 de dicha ley» NO se enlaza", not any(h.startswith("#a/lopdgdd/6") for _, h in pg.eval_on_selector_all("#lector a.ref", "els=>els.map(a=>[a.textContent,a.getAttribute('href')])")))
+    def probar(nid, k, txt):
+        return pg.evaluate("([n,k,t])=>window.__NT.probar(n,k,t)", [nid, k, txt])
+    check("«artículo 5.1.d) del Reglamento (UE)» NO se enlaza (LEC 1 como contexto)", "<a" not in probar("lec", "1", "Al amparo del artículo 5.1.d) del Reglamento (UE) 2016/679, no será imputable."))
+    check("«artículo 2.2.c) del Reglamento (UE)» NO se enlaza", "<a" not in probar("lec", "1", "Al amparo del artículo 2.2.c) del Reglamento (UE) 2016/679, se considera excluido."))
+    check("«artículo 6 de dicha ley» NO se enlaza", "<a" not in probar("lec", "1", "lo previsto en el artículo 6 de dicha ley."))
+    check("«artículo 6 de la misma ley» NO se enlaza", "<a" not in probar("lau", "1", "lo previsto en el artículo 6 de la misma ley."))
+    check("«artículo 5 de la Ley Hipotecaria» NO se enlaza", "<a" not in probar("lec", "1", "conforme al artículo 5 de la Ley Hipotecaria."))
+    check("«artículo 1.518 del Código Civil» -> CC 1518", "#a/cc/1518" in probar("lau", "25", "conforme al artículo 1.518 del Código Civil, cuando"))
+    check("«artículo 443 de esta Ley» -> LEC 443", "#a/lec/443" in probar("lec", "22", "la vista prevenida en el artículo 443 de esta Ley, tras la cual"))
+    check("en la LO 1/2025 «artículo 63 de esta Ley» NO se enlaza (cita la ley que modifica)", "<a" not in probar("lo1-2025", "22", "según el artículo 63 de esta Ley."))
+    check("en la LO 1/2025 «artículo 63 de la Ley de Enjuiciamiento Civil» -> LEC 63", "#a/lec/63" in probar("lo1-2025", "22", "según el artículo 63 de la Ley de Enjuiciamiento Civil."))
+    check("«artículo 17 de la Ley de Ordenación de la Edificación» -> LOE 17", "#a/loe/17" in probar("lec", "1", "conforme al artículo 17 de la Ley de Ordenación de la Edificación."))
+    check("«artículo 3 del texto refundido de la Ley General para la Defensa de los Consumidores y Usuarios» -> TRLGDCU 3", "#a/trlgdcu/3" in probar("lec", "1", "con arreglo al artículo 3 del texto refundido de la Ley General para la Defensa de los Consumidores y Usuarios, aprobado"))
+    check("«artículo 20 de la Ley 3/2004» -> LOFCE 20", "#a/lofce/20" in probar("lec", "1", "según el artículo 20 de la Ley 3/2004, de 30 de junio"))
+    check("«artículo 51.1 y 2 de la Constitución»: enlaza el 51 (apartado 1) y NO el «2» (es apartado)", (lambda r: "#a/ce/51/1" in r and "#a/ce/2" not in r)(probar("trlgdcu", "1", "En desarrollo del artículo 51.1 y 2 de la Constitución que")))
+    check("«artículos 63 y 64 de esta Ley» sigue enlazando ambos", (lambda r: "#a/lec/63" in r and "#a/lec/64" in r)(probar("lec", "1", "conforme a los artículos 63 y 64 de esta Ley")))
     consulta(pg, "22 lec")
     check("LEC 22: «artículo 443 de esta Ley» -> LEC 443", any(h == "#a/lec/443" for _, h in pg.eval_on_selector_all("#lector a.ref", "els=>els.map(a=>[a.textContent,a.getAttribute('href')])")))
     consulta(pg, "13 lph")

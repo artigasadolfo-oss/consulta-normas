@@ -259,7 +259,9 @@ var ALIAS=[
  ['lph','ley de propiedad horizontal|propiedad horizontal|ley 49/1960|lph|ph'],
  ['cc','codigo civil|cod civil|cciv|cc'],
  ['lopj','ley organica del poder judicial|poder judicial|lo 6/1985|lopj'],
- ['lopdgdd','ley organica de proteccion de datos|lo 3/2018|lopdgdd|lopd'],
+ ['loe','ley de ordenacion de la edificacion|ordenacion de la edificacion|ley 38/1999|loe'],
+ ['trlgdcu','texto refundido de la ley general para la defensa de los consumidores y usuarios|ley general para la defensa de los consumidores y usuarios|real decreto legislativo 1/2007|rdl 1/2007|ley de consumidores y usuarios|consumidores y usuarios|ley de consumidores|trlgdcu|lgdcu|trlgdcyu'],
+ ['lofce','ley de ordenacion y fomento de la calidad de la edificacion|ordenacion y fomento de la calidad de la edificacion|ley valenciana de la edificacion|ley 3/2004|lofce'],
  ['ce','constitucion espanola|constitucion|ce']
 ];
 var ALIAS_MAP={},ALIAS_ALT='';
@@ -316,7 +318,7 @@ function resuelve(cons){
 
 /* ---------- búsqueda de texto ---------- */
 var STOP=new Set('de la el los las del en y a o por para con un una al se que su sus lo es no le les como mas ya sin sobre entre'.split(' '));
-var SAFE={lec:'lec',lau:'lau',lph:'lph',cc:'cc',cciv:'cc',lopj:'lopj',lopdgdd:'lopdgdd'};
+var SAFE={lec:'lec',lau:'lau',lph:'lph',cc:'cc',cciv:'cc',lopj:'lopj',loe:'loe',trlgdcu:'trlgdcu',lgdcu:'trlgdcu',lofce:'lofce'};
 function stem(t){if(t.length>=6&&/es$/.test(t))return t.slice(0,-2);if(t.length>=4&&/s$/.test(t))return t.slice(0,-1);return t}
 function patronAcentos(t){return t.replace(/[aeioun]/g,function(ch){return {a:'[aáàâä]',e:'[eéèêë]',i:'[iíìîï]',o:'[oóòôö]',u:'[uúùûü]',n:'[nñ]'}[ch]})}
 function buscarTexto(q,filtroAlias){
@@ -367,11 +369,13 @@ function buscarTexto(q,filtroAlias){
 var NOMBRES_NORMA=[
  ['lec','ley de enjuiciamiento civil|ley 1/2000|lec'],['lau','ley de arrendamientos urbanos|ley 29/1994|lau'],
  ['lph','ley sobre propiedad horizontal|ley de propiedad horizontal|ley 49/1960|lph'],['cc','codigo civil|cciv'],
- ['lopj','ley organica del poder judicial|ley organica 6/1985|lopj'],['lopdgdd','ley organica 3/2018|lopdgdd'],
+ ['lopj','ley organica del poder judicial|ley organica 6/1985|lopj'],['loe','ley de ordenacion de la edificacion|ley 38/1999|loe'],
+ ['trlgdcu','texto refundido de la ley general para la defensa de los consumidores y usuarios|ley general para la defensa de los consumidores y usuarios|real decreto legislativo 1/2007|trlgdcu|lgdcu'],
+ ['lofce','ley 3/2004|lofce'],
  ['lo1-2025','ley organica 1/2025'],['ce','constitucion espanola|constitucion|ce']
 ];
 var RE_NOM=NOMBRES_NORMA.map(function(x){return [x[0],new RegExp('^('+x[1].replace(/[\/.]/g,'\\$&')+')\\b')]});
-var RE_OTRA=/\b(?:de|del)\s+(?:la\s+|el\s+|los\s+|las\s+|esta\s+|este\s+|presente\s+|dicha\s+|dicho\s+|citad[oa]\s+|referid[oa]\s+|mencionad[oa]\s+|misma\s+|mismo\s+|propia\s+|propio\s+)?(?:ley|codigo|real|reglamento|constitucion|estatuto|texto|tratado|convenio|directiva|decreto|orden|lo\b|l\.o|lec\b|lopj\b|lau\b|lph\b|cc\b|ce\b|lopdgdd\b|norma|ordenanza|reglamento|carta|pacto|acuerdo|disposicion)/;
+var RE_OTRA=/\b(?:de|del)\s+(?:(?:la|el|los|las|esta|este|presente|dicha|dicho|citad[oa]|referid[oa]|mencionad[oa]|misma|mismo|propia|propio)\s+){0,2}(?:ley|codigo|real|reglamento|constitucion|estatuto|texto|tratado|convenio|directiva|decreto|orden|lo\b|l\.o|lec\b|lopj\b|lau\b|lph\b|cc\b|ce\b|lopdgdd\b|loe\b|trlgdcu\b|lgdcu\b|lofce\b|norma|ordenanza|reglamento|carta|pacto|acuerdo|disposicion)/;
 function destinoRef(resto,n,c){
   var s=norm(resto.slice(0,110)),corte=s.search(/[.;:](?=\s|$)/);if(corte>=0)s=s.slice(0,corte);
   var m=RE_OTRA.exec(s);
@@ -390,7 +394,10 @@ function enlaza(esc_txt,c){
   return esc_txt.replace(RE_REF,function(m,kw,cuerpo,off,whole){
     var dest=destinoRef(whole.slice(off+m.length),n,c);if(!dest)return m;
     var tn=POR[dest];if(!tn)return m;
+    var tuvoAp=false;
     var linked=cuerpo.replace(RE_NUM,function(x,a,sf,ap){
+      if(tuvoAp)return x;      // tras «51.1» lo que siga («y 2») son apartados, no artículos: ambiguo, no se enlaza
+      if(ap)tuvoAp=true;
       var num=+a.replace(/\./g,''),t=buscaArt(tn,num,sf?sf.toLowerCase():'');if(!t)return x;
       var h='#a/'+tn.id+'/'+encodeURIComponent(t.k)+(ap?'/'+ap:'');
       return '<a class="ref" href="'+h+'" title="'+esc(tn.sigla+' · '+t.e+(t.t?'. '+t.t:''))+'">'+x+'</a>';
@@ -730,6 +737,8 @@ function arranque(){
   if(!location.hash||location.hash==='#')elQ.focus();
   (window.requestIdleCallback||function(f){setTimeout(f,300)})(function(){indexa()});
 }
+/* gancho para las pruebas: devuelve el HTML con los enlaces que se crearían para un texto suelto */
+window.__NT={probar:function(nid,k,txt){return enlaza(esc(txt),POR[nid].map.get(k))}};
 if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol)){navigator.serviceWorker.register('sw.js').catch(function(){})}
 cargar().then(function(d){DATA=d;arranque()}).catch(function(err){document.getElementById('carga').innerHTML='No he podido abrir los datos.<br><br>'+esc(err.message||err)});
 })();
