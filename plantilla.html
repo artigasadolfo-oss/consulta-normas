@@ -38,6 +38,8 @@ button{font-family:inherit}
 .rec{font-size:12.5px;padding:6px 10px}
 .rec .sg{min-width:0;font-size:11px;color:var(--ocre-700)}
 .rec .nm{color:var(--ink-700);font-size:12.5px}
+#nav-normas .nm,.favbox .fn .nm{white-space:normal;overflow:visible;text-overflow:clip;line-height:1.28}
+#nav-normas .navlink,.favbox .fn{padding-top:7px;padding-bottom:7px}
 .favbox{margin:2px 0 4px;padding:3px;background:var(--ocre-50);border-radius:12px}
 .favbox .navlink:hover{background:rgba(255,255,255,.7)}
 .favbox .sg{color:var(--ocre-700);min-width:0}
@@ -776,7 +778,7 @@ function arranque(){
   prepara();
   var fs=LS.get('normas.fs',16);document.documentElement.style.setProperty('--fs',fs+'px');
   if(LS.get('normas.notas',false))document.body.classList.add('con-notas');
-  $('#nav-normas').innerHTML=NORMAS.map(function(n){return '<button class="navlink" data-n="'+n.id+'"><span class="sg">'+esc(n.sigla)+'</span><span class="nm">'+esc(n.corto)+'</span><span class="ct">'+n.cuenta+'</span></button>'}).join('');
+  $('#nav-normas').innerHTML=NORMAS.map(function(n){return '<button class="navlink" data-n="'+n.id+'"><span class="sg">'+esc(n.sigla)+'</span><span class="nm">'+esc(n.corto)+'</span></button>'}).join('');
   pintaRec();pintaFav();
   var act=NORMAS.map(function(n){return n.act}).sort().pop();
   var dias=Math.floor((Date.now()-Date.parse(COMPILADO))/86400000);

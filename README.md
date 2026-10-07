@@ -23,7 +23,7 @@ RDL 1/2007 (texto refundido de la Ley General de Consumidores y Usuarios, TRLGDC
 del Gobierno Valenciano de prestación de servicios a domicilio (D 11/1995, solo en el DOGV, importado a mano) y Constitución.
 (La LOPDGDD se retiró el 07-10-2026 a petición de Adolfo; la Ley valenciana 3/2004 de calidad de la edificación se probó y se descartó.)
 
-El número que se muestra junto a cada norma es el de **artículos reales** (con sus bis/ter, y los números que cubren los bloques derogados «Artículos X a Y»); las disposiciones adicionales, transitorias, derogatorias y finales se cuentan aparte («867 artículos · 49 disposiciones»).
+El número de artículos de cada norma se muestra en su cabecera y en la portada (no en el menú, para dejar sitio al título completo); es el de **artículos reales** (con sus bis/ter, y los números que cubren los bloques derogados «Artículos X a Y»); las disposiciones adicionales, transitorias, derogatorias y finales se cuentan aparte («867 artículos · 49 disposiciones»).
 
 ## Favoritos
 

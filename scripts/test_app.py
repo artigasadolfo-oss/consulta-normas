@@ -93,8 +93,15 @@ with sync_playwright() as p:
     check("las tres nuevas están (LOE, TRLGDCU)", all(pg.locator(f"#nav-normas .navlink[data-n={x}]").count() == 1 for x in ("loe", "trlgdcu")))
     # el número que se muestra es el de ARTÍCULOS reales (con bis/ter), sin disposiciones adicionales/transitorias/derogatorias/finales
     esperado = {"lec": 827 + 40, "lopj": 642 + 71, "cc": 1976 + 22, "ce": 169, "lau": 51 + 2, "lph": 24, "loe": 20}
-    got = {n: int(pg.inner_text(f"#nav-normas .navlink[data-n={n}] .ct")) for n in esperado}
-    check("menú: nº de artículos reales (sin disposiciones)", got == esperado, str(got))
+    def cuenta_cab(n):
+        pg.evaluate("h=>{location.hash=h}", f"#n/{n}"); time.sleep(0.3)
+        m_ = re.match(r"(\d+) artículos", pg.inner_text("#lector .a-meta"))
+        return int(m_.group(1)) if m_ else None
+    got = {n: cuenta_cab(n) for n in esperado}
+    check("cabecera de cada norma: nº de artículos reales (sin disposiciones)", got == esperado, str(got))
+    check("el menú de normas ya no muestra el número de artículos", pg.locator("#nav-normas .ct").count() == 0)
+    check("el menú muestra el título completo (sin recorte con «…»)", pg.evaluate("[...document.querySelectorAll('#nav-normas .nm')].every(e=>e.scrollWidth<=e.clientWidth+1)"))
+    pg.evaluate("h=>{location.hash=h}", ""); time.sleep(0.3)
     print("\n[favoritos]")
     def vaya(h):
         pg.evaluate("h=>{location.hash=h}", h); time.sleep(0.35)
