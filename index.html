@@ -45,7 +45,16 @@ button{font-family:inherit}
 .favbox{margin:2px 0 4px;padding:3px;background:var(--ocre-50);border-radius:12px}
 .favbox .navlink:hover{background:rgba(255,255,255,.7)}
 .favbox .sg{color:var(--ocre-700);min-width:0}
-.favbox .fa .sg{min-width:0}
+.favbox .fgrp+.fgrp{margin-top:1px}
+.fch{margin-left:auto;flex-shrink:0;width:26px;height:26px;display:grid;place-items:center;border-radius:7px;color:var(--ocre-700);cursor:pointer}
+.fch svg{width:14px;height:14px;transition:transform .15s}
+.fch:hover{background:rgba(255,255,255,.8)}
+.fn.abierta .fch svg{transform:rotate(90deg)}
+.fart-lista{margin:0 0 5px 17px;padding-left:4px;border-left:2px solid rgba(201,122,30,.30)}
+.favbox .fa{align-items:flex-start;padding:6px 4px 6px 8px;gap:8px}
+.favbox .fa .sg{min-width:50px;color:var(--ink-900);font-size:11.5px;white-space:nowrap;padding-top:1px}
+.favbox .fa .nm{white-space:normal;overflow:visible;text-overflow:clip;line-height:1.3;font-size:12px;color:var(--ink-600)}
+.favbox .fa .fs{width:24px;height:24px;margin-top:-2px}
 .favbox .st{width:12px;height:12px;flex-shrink:0;color:var(--ocre);fill:var(--ocre);stroke:var(--ocre)}
 .fs{margin-left:auto;flex-shrink:0;width:26px;height:26px;display:grid;place-items:center;border-radius:7px;color:var(--ink-300);cursor:pointer}
 .fs svg{width:15px;height:15px}
@@ -602,23 +611,34 @@ function esFavN(n,k){return favLista().some(function(f){return iguales(f,n,k)})}
 function alternaFavN(n,k){
   var f=LS.get('normas.fav',[]),i=-1;
   f.forEach(function(x,j){if(iguales(x,n,k))i=j});
-  if(i>=0)f.splice(i,1);else f.push(k==null?{n:n}:{n:n,k:k});
+  if(i>=0)f.splice(i,1);else{f.push(k==null?{n:n}:{n:n,k:k});if(k!=null)favAbre(n,true)}
   LS.set('normas.fav',f);pintaFav();return i<0;
 }
 function esFav(c){return esFavN(c.n.id,c.k)}
 function alternaFav(c){return alternaFavN(c.n.id,c.k)}
+var CHEV='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>';
+function favNormasOrden(){var v={},o=[];favLista().forEach(function(f){if(!v[f.n]){v[f.n]=1;o.push(f.n)}});return o}
+function favArtsDe(id){return favLista().filter(function(f){return f.n===id&&f.k!=null}).map(function(f){return POR[id].map.get(f.k)}).sort(function(a,b){return a.i-b.i})}
+function favAbierta(id){return !!LS.get('normas.favx',{})[id]}
+function favAbre(id,on){var x=LS.get('normas.favx',{});if(on)x[id]=1;else delete x[id];LS.set('normas.favx',x)}
+function descArt(c){var t=(c.t||'').trim();if(t)return t;var s=plano(c).replace(/^\s*\d+[.\-)]*\s*/,'').replace(/\s+/g,' ').trim();return s.length>80?s.slice(0,80).replace(/\s+\S*$/,'')+'…':s}
 function pintaFav(){
   var h='';
-  favLista().forEach(function(f){var n=POR[f.n];
-    if(f.k==null)h+='<button class="navlink fn" data-n="'+f.n+'">'+ESTRELLA+'<span class="sg">'+esc(n.sigla)+'</span><span class="nm">'+esc(n.corto)+'</span></button>';
-    else h+='<button class="navlink rec fa" data-n="'+f.n+'" data-k="'+esc(f.k)+'">'+ESTRELLA+'<span class="sg">'+esc(n.sigla)+'</span><span class="nm">'+esc(abrev(n.map.get(f.k)))+'</span></button>'});
-  $('#nav-fav').innerHTML=h||'<div class="vacio-fav">Pulsa la estrella de una norma (en la lista de abajo) o de un artículo para fijarla aquí. Quedan en el orden en que las fijes.</div>';
+  favNormasOrden().forEach(function(id){
+    var n=POR[id],arts=favArtsDe(id),ab=arts.length>0&&favAbierta(id);
+    h+='<div class="fgrp"><button class="navlink fn'+(ab?' abierta':'')+'" data-n="'+id+'">'+ESTRELLA+'<span class="sg">'+esc(n.sigla)+'</span><span class="nm">'+esc(n.corto)+'</span>'+
+      (arts.length?'<span class="fch" role="button" tabindex="0" data-n="'+id+'" aria-expanded="'+ab+'" aria-label="'+(ab?'Ocultar':'Mostrar')+' los artículos fijados de '+esc(n.sigla)+'" title="'+(ab?'Ocultar':'Mostrar')+' los artículos fijados">'+CHEV+'</span>':'')+'</button>';
+    if(ab)h+='<div class="fart-lista">'+arts.map(function(c){
+      return '<button class="navlink fa" data-n="'+id+'" data-k="'+esc(c.k)+'"><span class="sg">'+esc(abrev(c))+'</span><span class="nm">'+esc(descArt(c))+'</span>'+
+        '<span class="fs on" role="button" tabindex="0" data-n="'+id+'" data-k="'+esc(c.k)+'" aria-pressed="true" aria-label="Quitar '+esc(abrev(c))+' de favoritos" title="Quitar de favoritos">'+ESTRELLA_V+'</span></button>'}).join('')+'</div>';
+    h+='</div>'});
+  $('#nav-fav').innerHTML=h||'<div class="vacio-fav">Pulsa la estrella de una norma (en la lista de abajo) o de un artículo para fijarla aquí. Los artículos fijados cuelgan de su norma.</div>';
   var s=document.querySelectorAll('#nav-normas .fs');
   for(var i=0;i<s.length;i++){var on=esFavN(s[i].dataset.n,null);s[i].classList.toggle('on',on);s[i].setAttribute('aria-pressed',on);s[i].title=on?'Quitar de favoritos':'Fijar en favoritos'}
 }
 function restableceFav(){
   if(!window.confirm('¿Quitar todas las normas y artículos fijados en favoritos de este dispositivo?'))return;
-  LS.set('normas.fav',[]);pintaFav();toast('Favoritos vaciados');
+  LS.set('normas.fav',[]);LS.set('normas.favx',{});pintaFav();toast('Favoritos vaciados');
   var b=document.getElementById('b-fav');if(b&&ST.mostrados)pintaBotonFav(b,ST.mostrados[0]);
 }
 function pintaBotonFav(b,c){var on=esFav(c);b.classList.toggle('on',on);b.setAttribute('aria-pressed',on);b.title=(on?'Quitar de favoritos':'Fijar en favoritos')+' (F)'}
@@ -762,8 +782,15 @@ function clicNormas(e){
   var b=e.target.closest('.navlink');if(!b)return;cierraNav();go('#n/'+b.dataset.n)}
 $('#nav-normas').addEventListener('click',clicNormas);
 $('#nav-normas').addEventListener('keydown',function(e){if((e.key==='Enter'||e.key===' ')&&e.target.classList&&e.target.classList.contains('fs')){e.preventDefault();clicNormas(e)}});
-$('#nav-fav').addEventListener('click',function(e){var b=e.target.closest('.navlink');if(!b)return;cierraNav();
-  if(b.dataset.k!=null)go('#a/'+b.dataset.n+'/'+encodeURIComponent(b.dataset.k));else go('#n/'+b.dataset.n)});
+$('#nav-fav').addEventListener('click',function(e){
+  var s=e.target.closest('.fs');
+  if(s){e.preventDefault();e.stopPropagation();alternaFavN(s.dataset.n,s.dataset.k);toast('Quitado de favoritos');return}
+  var ch=e.target.closest('.fch');
+  if(ch){e.preventDefault();e.stopPropagation();favAbre(ch.dataset.n,!favAbierta(ch.dataset.n));pintaFav();return}
+  var b=e.target.closest('.navlink');if(!b)return;cierraNav();
+  if(b.dataset.k!=null)go('#a/'+b.dataset.n+'/'+encodeURIComponent(b.dataset.k));
+  else{if(favArtsDe(b.dataset.n).length)favAbre(b.dataset.n,true);pintaFav();go('#n/'+b.dataset.n)}});
+$('#nav-fav').addEventListener('keydown',function(e){var t=e.target;if((e.key==='Enter'||e.key===' ')&&t.classList&&(t.classList.contains('fs')||t.classList.contains('fch'))){e.preventDefault();t.click()}});
 $('#nav-rec').addEventListener('click',function(e){var b=e.target.closest('.navlink');if(!b)return;cierraNav();go('#a/'+b.dataset.n+'/'+encodeURIComponent(b.dataset.k))});
 $('#mnav').addEventListener('click',function(){document.body.classList.toggle('navopen')});
 $('#scrim').addEventListener('click',cierraNav);
