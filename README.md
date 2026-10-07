@@ -28,7 +28,7 @@ El número de artículos de cada norma se muestra en su cabecera y en la portada
 ## Favoritos
 
 Bloque «Favoritos» arriba del menú (resaltado en ocre): los **artículos que fijas** con la estrella de la barra del lector
-(o la tecla `F`), y las **5 normas más consultadas**, con su contador. Al estrenar, las 5 normas son LEC, LO 1/2025, LAU,
+(o la tecla `F`), y las **5 normas más consultadas** (sin contador visible). Al estrenar, las 5 normas son LEC, LO 1/2025, LAU,
 LPH y Cciv; pasan a ordenarse solas por uso. Cada artículo abierto suma una consulta a su norma. Todo se guarda solo en el
 dispositivo (`localStorage`: `normas.fav`, `normas.uso`), no viaja a ningún sitio y no se comparte entre dispositivos.
 «Restablecer favoritos» (al final de la portada) borra ambas cosas.

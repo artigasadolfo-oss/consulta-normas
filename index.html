@@ -47,7 +47,11 @@ button{font-family:inherit}
 .favbox .sg{color:var(--ocre-700);min-width:0}
 .favbox .fa .sg{min-width:0}
 .favbox .st{width:12px;height:12px;flex-shrink:0;color:var(--ocre);fill:var(--ocre);stroke:var(--ocre)}
-.favbox .fa+.fn{border-top:1px solid rgba(201,122,30,.22);margin-top:4px;padding-top:9px;border-radius:0 0 9px 9px}
+.fs{margin-left:auto;flex-shrink:0;width:26px;height:26px;display:grid;place-items:center;border-radius:7px;color:var(--ink-300);cursor:pointer}
+.fs svg{width:15px;height:15px}
+.fs:hover{color:var(--ocre);background:var(--ink-100)}
+.fs.on{color:var(--ocre)}
+.fs.on svg{fill:var(--ocre)}
 .favbox .vacio-fav{font-size:11.5px;color:var(--ink-500);padding:6px 10px}
 #b-fav.on{background:var(--ocre-50);border-color:var(--ocre);color:var(--ocre-700)}
 #b-fav.on svg{fill:var(--ocre);color:var(--ocre)}
@@ -589,39 +593,36 @@ function copiar(cs,btn){
   var fb=function(){var ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy');ok()}catch(e){toast('No he podido copiar')}ta.remove()};
   if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(txt).then(ok,fb);else fb();
 }
-/* ---------- favoritos: artículos fijados (★) + normas más consultadas ---------- */
-var DEF_FAV=['lec','lo1-2025','lau','lph','cc'],N_FAV=5;
+/* ---------- favoritos: lo que Adolfo fija a mano (normas y artículos), en el orden en que los fija ---------- */
 var ESTRELLA='<svg class="st" viewBox="0 0 24 24" stroke-width="1.6" stroke-linejoin="round"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.9L12 16.9 6.8 19.7l1-5.9L3.5 9.7l5.9-.8z"/></svg>';
-function contar(id){var u=LS.get('normas.uso',{});u[id]=(u[id]||0)+1;LS.set('normas.uso',u);pintaFav()}
-function favNormas(){
-  var u=LS.get('normas.uso',{});
-  return NORMAS.map(function(n,i){var d=DEF_FAV.indexOf(n.id);return {n:n,c:u[n.id]||0,o:d<0?100+i:d}})
-    .sort(function(a,b){return b.c-a.c||a.o-b.o}).slice(0,N_FAV);
-}
-function favArts(){return LS.get('normas.fav',[]).filter(function(f){return POR[f.n]&&POR[f.n].map.has(f.k)})}
-function esFav(c){return favArts().some(function(f){return f.n===c.n.id&&f.k===c.k})}
-function alternaFav(c){
+var ESTRELLA_V='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.9L12 16.9 6.8 19.7l1-5.9L3.5 9.7l5.9-.8z"/></svg>';
+function favLista(){return LS.get('normas.fav',[]).filter(function(f){return POR[f.n]&&(f.k==null||POR[f.n].map.has(f.k))})}
+function iguales(f,n,k){return f.n===n&&(f.k==null?k==null:f.k===k)}
+function esFavN(n,k){return favLista().some(function(f){return iguales(f,n,k)})}
+function alternaFavN(n,k){
   var f=LS.get('normas.fav',[]),i=-1;
-  f.forEach(function(x,j){if(x.n===c.n.id&&x.k===c.k)i=j});
-  if(i>=0)f.splice(i,1);else f.unshift({n:c.n.id,k:c.k});
+  f.forEach(function(x,j){if(iguales(x,n,k))i=j});
+  if(i>=0)f.splice(i,1);else f.push(k==null?{n:n}:{n:n,k:k});
   LS.set('normas.fav',f);pintaFav();return i<0;
 }
+function esFav(c){return esFavN(c.n.id,c.k)}
+function alternaFav(c){return alternaFavN(c.n.id,c.k)}
 function pintaFav(){
-  var fa=favArts(),fn=favNormas(),h='';
-  fa.forEach(function(f){var c=POR[f.n].map.get(f.k);
-    h+='<button class="navlink rec fa" data-n="'+f.n+'" data-k="'+esc(f.k)+'">'+ESTRELLA+'<span class="sg">'+esc(POR[f.n].sigla)+'</span><span class="nm">'+esc(abrev(c))+'</span></button>'});
-  fn.forEach(function(x,i){
-    h+='<button class="navlink fn" data-n="'+x.n.id+'"'+''+'><span class="sg">'+esc(x.n.sigla)+'</span><span class="nm">'+esc(x.n.corto)+'</span>'+(x.c?'<span class="ct" title="consultas en este dispositivo">'+x.c+'</span>':'')+'</button>'});
-  $('#nav-fav').innerHTML=h;
+  var h='';
+  favLista().forEach(function(f){var n=POR[f.n];
+    if(f.k==null)h+='<button class="navlink fn" data-n="'+f.n+'">'+ESTRELLA+'<span class="sg">'+esc(n.sigla)+'</span><span class="nm">'+esc(n.corto)+'</span></button>';
+    else h+='<button class="navlink rec fa" data-n="'+f.n+'" data-k="'+esc(f.k)+'">'+ESTRELLA+'<span class="sg">'+esc(n.sigla)+'</span><span class="nm">'+esc(abrev(n.map.get(f.k)))+'</span></button>'});
+  $('#nav-fav').innerHTML=h||'<div class="vacio-fav">Pulsa la estrella de una norma (en la lista de abajo) o de un artículo para fijarla aquí. Quedan en el orden en que las fijes.</div>';
+  var s=document.querySelectorAll('#nav-normas .fs');
+  for(var i=0;i<s.length;i++){var on=esFavN(s[i].dataset.n,null);s[i].classList.toggle('on',on);s[i].setAttribute('aria-pressed',on);s[i].title=on?'Quitar de favoritos':'Fijar en favoritos'}
 }
 function restableceFav(){
-  if(!window.confirm('¿Borrar los artículos fijados y el recuento de consultas de este dispositivo?'))return;
-  LS.set('normas.fav',[]);LS.set('normas.uso',{});pintaFav();toast('Favoritos restablecidos');
+  if(!window.confirm('¿Quitar todas las normas y artículos fijados en favoritos de este dispositivo?'))return;
+  LS.set('normas.fav',[]);pintaFav();toast('Favoritos vaciados');
   var b=document.getElementById('b-fav');if(b&&ST.mostrados)pintaBotonFav(b,ST.mostrados[0]);
 }
 function pintaBotonFav(b,c){var on=esFav(c);b.classList.toggle('on',on);b.setAttribute('aria-pressed',on);b.title=(on?'Quitar de favoritos':'Fijar en favoritos')+' (F)'}
 function registra(c){
-  contar(c.n.id);
   var rec=LS.get('normas.rec',[]).filter(function(r){return !(r.n===c.n.id&&r.k===c.k)});
   rec.unshift({n:c.n.id,k:c.k});rec=rec.slice(0,10);LS.set('normas.rec',rec);pintaRec();
 }
@@ -755,9 +756,14 @@ elLector.addEventListener('click',function(e){
   e.preventDefault();ST.pushed=true;go(a.getAttribute('href'));
 });
 $('#nav-buscar').addEventListener('click',function(){cierraNav();go('');elQ.focus()});
-$('#nav-normas').addEventListener('click',function(e){var b=e.target.closest('.navlink');if(!b)return;cierraNav();contar(b.dataset.n);go('#n/'+b.dataset.n)});
+function clicNormas(e){
+  var s=e.target.closest('.fs');
+  if(s){e.preventDefault();e.stopPropagation();var on=alternaFavN(s.dataset.n,null);toast(on?'Fijada en favoritos':'Quitada de favoritos');return}
+  var b=e.target.closest('.navlink');if(!b)return;cierraNav();go('#n/'+b.dataset.n)}
+$('#nav-normas').addEventListener('click',clicNormas);
+$('#nav-normas').addEventListener('keydown',function(e){if((e.key==='Enter'||e.key===' ')&&e.target.classList&&e.target.classList.contains('fs')){e.preventDefault();clicNormas(e)}});
 $('#nav-fav').addEventListener('click',function(e){var b=e.target.closest('.navlink');if(!b)return;cierraNav();
-  if(b.dataset.k!=null)go('#a/'+b.dataset.n+'/'+encodeURIComponent(b.dataset.k));else{contar(b.dataset.n);go('#n/'+b.dataset.n)}});
+  if(b.dataset.k!=null)go('#a/'+b.dataset.n+'/'+encodeURIComponent(b.dataset.k));else go('#n/'+b.dataset.n)});
 $('#nav-rec').addEventListener('click',function(e){var b=e.target.closest('.navlink');if(!b)return;cierraNav();go('#a/'+b.dataset.n+'/'+encodeURIComponent(b.dataset.k))});
 $('#mnav').addEventListener('click',function(){document.body.classList.toggle('navopen')});
 $('#scrim').addEventListener('click',cierraNav);
@@ -780,7 +786,7 @@ function arranque(){
   prepara();
   var fs=LS.get('normas.fs',16);document.documentElement.style.setProperty('--fs',fs+'px');
   if(LS.get('normas.notas',false))document.body.classList.add('con-notas');
-  $('#nav-normas').innerHTML=NORMAS.map(function(n){return '<button class="navlink" data-n="'+n.id+'"><span class="sg">'+esc(n.sigla)+'</span><span class="nm">'+esc(n.corto)+'</span></button>'}).join('');
+  $('#nav-normas').innerHTML=NORMAS.map(function(n){return '<button class="navlink" data-n="'+n.id+'"><span class="sg">'+esc(n.sigla)+'</span><span class="nm">'+esc(n.corto)+'</span><span class="fs" role="button" tabindex="0" data-n="'+n.id+'" aria-label="Fijar '+esc(n.sigla)+' en favoritos" aria-pressed="false">'+ESTRELLA_V+'</span></button>'}).join('');
   pintaRec();pintaFav();
   var act=NORMAS.map(function(n){return n.act}).sort().pop();
   var dias=Math.floor((Date.now()-Date.parse(COMPILADO))/86400000);
