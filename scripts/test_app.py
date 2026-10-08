@@ -571,6 +571,76 @@ with sync_playwright() as p:
     if pg.locator("#b-notas").count():
         check("Notas de reforma se muestran", pg.locator("#lector p.nota").first.is_visible())
 
+    print("\n[teclado: Cmd+K, j/k, flechas, Tab y Escape en todas las listas]")
+    def foco_():
+        return pg.evaluate("()=>{var a=document.activeElement;return a?(a.id||a.tagName):''}")
+    def suelta_():
+        pg.evaluate("()=>{if(document.activeElement)document.activeElement.blur()}")
+    def hash_():
+        return pg.evaluate("location.hash")
+    pantallas_ = ["#", "#q/arrendamiento", "#a/lec/22", "#t/lph", "#n", "#n/lau", "#i", "#i/declinatoria", "#f", "#f/" ]
+    mal_ = []
+    for h_ in pantallas_[:-1]:
+        vaya(h_); suelta_()
+        pg.keyboard.press("Meta+k"); time.sleep(0.1); a1_ = foco_(); suelta_()
+        pg.keyboard.press("Control+k"); time.sleep(0.1); a2_ = foco_(); suelta_()
+        if a1_ != "q" or a2_ != "q": mal_.append((h_, a1_, a2_))
+    check("teclado: Cmd+K y Ctrl+K llevan al buscador desde las 9 pantallas", not mal_, str(mal_))
+    # resultados de búsqueda: j/k mueven la selección
+    consulta(pg, "arrendamiento"); suelta_()
+    def sel_res():
+        return pg.evaluate("(()=>{var s=document.querySelector('#lista .item.sel');return s?s.dataset.ix:null})()")
+    pg.keyboard.press("j"); s1_ = sel_res(); pg.keyboard.press("j"); s2_ = sel_res(); pg.keyboard.press("k"); s3_ = sel_res()
+    check("teclado: j y k suben y bajan en los resultados de una búsqueda", (s1_, s2_, s3_) == ("1", "2", "1"), str((s1_, s2_, s3_)))
+    # índice de conceptos
+    def fila_sel(c_):
+        return pg.evaluate("(c=>{var s=document.querySelector(c+' .idx-row.sel');return s?s.getAttribute('href'):null})", c_)
+    vaya("#i"); suelta_()
+    pg.fill("#iq", ""); time.sleep(0.2); IDX_N_ = pg.locator("#idx-voces .idx-row").count()
+    check("teclado: el índice de conceptos lista todas las voces (más de 100)", IDX_N_ > 100, str(IDX_N_))
+    suelta_(); pg.keyboard.press("j"); time.sleep(0.25); h1_ = hash_(); r1_ = fila_sel("#idx-voces")
+    pg.keyboard.press("j"); time.sleep(0.25); h2_ = hash_()
+    pg.keyboard.press("k"); time.sleep(0.25); h3_ = hash_()
+    check("teclado: j y k recorren las voces del índice de conceptos y abren su ficha", h1_.startswith("#i/") and h2_.startswith("#i/") and h1_ != h2_ and h3_ == h1_ and r1_ == h1_, str((h1_, h2_, h3_)))
+    pg.keyboard.press("ArrowDown"); time.sleep(0.25)
+    check("teclado: la flecha abajo hace lo mismo que j", hash_() == h2_, hash_())
+    check("teclado: la voz abierta se ve en la lista (selección visible, sin salirse de la zona)", pg.evaluate("(()=>{var s=document.querySelector('#idx-voces .idx-row.sel');if(!s)return false;var r=s.getBoundingClientRect(),l=document.querySelector('#lista').getBoundingClientRect();return r.top>=l.top-1&&r.bottom<=l.bottom+1})()"))
+    # el filtro no se pierde al moverse y las flechas funcionan desde el propio campo
+    pg.fill("#iq", "a"); time.sleep(0.2); n_a_ = pg.locator("#idx-voces .idx-row").count()
+    pg.focus("#iq"); pg.keyboard.press("ArrowDown"); time.sleep(0.25); pg.keyboard.press("ArrowDown"); time.sleep(0.25)
+    check("teclado: moverse con flechas desde el filtro conserva el texto y el foco en el campo", pg.input_value("#iq") == "a" and foco_() == "iq" and pg.locator("#idx-voces .idx-row").count() == n_a_, f"{pg.input_value('#iq')!r} {foco_()} {n_a_}")
+    pg.keyboard.press("Escape"); time.sleep(0.2)
+    check("teclado: Escape limpia el filtro (y devuelve toda la lista) sin salir del campo", pg.input_value("#iq") == "" and foco_() == "iq" and pg.locator("#idx-voces .idx-row").count() == IDX_N_)
+    pg.keyboard.press("Escape"); time.sleep(0.1)
+    check("teclado: un segundo Escape sale del campo", foco_() != "iq", foco_())
+    # Tabulador: una sola parada en la lista (no 100+), y del filtro se salta al contenido
+    paradas_ = pg.evaluate("document.querySelectorAll('#idx-voces .idx-row[tabindex=\"0\"]').length"); fuera_ = pg.evaluate("document.querySelectorAll('#idx-voces .idx-row:not([tabindex=\"0\"])').length")
+    check("tabulador: la lista de voces tiene UNA sola parada (la voz abierta); las demás no estorban", paradas_ == 1 and fuera_ == IDX_N_ - 1 and all(pg.evaluate("[...document.querySelectorAll('#idx-voces .idx-row')].every(e=>e.getAttribute('tabindex')==='0'||e.getAttribute('tabindex')==='-1')") for _ in (0,)), f"{paradas_} {fuera_}")
+    pg.focus("#iq"); orden_ = []
+    for _ in range(4):
+        pg.keyboard.press("Tab"); orden_.append(pg.evaluate("(()=>{var a=document.activeElement;return a.closest('#idx-voces')?'fila':(a.closest('#lector')?'contenido':(a.id||a.tagName))})()"))
+    check("tabulador: filtro -> la voz abierta -> contenido de la ficha, en pocos saltos", orden_[0] == "fila" and "contenido" in orden_[1:], str(orden_))
+    # fórmulas de sala
+    vaya("#f"); suelta_()
+    check("teclado: la lista de fórmulas tiene UNA parada de tabulador", pg.evaluate("document.querySelectorAll('#fx-lista .idx-row[tabindex=\"0\"]').length") == 1)
+    pg.keyboard.press("j"); time.sleep(0.25); f1_ = hash_(); pg.keyboard.press("j"); time.sleep(0.25); f2_ = hash_(); pg.keyboard.press("k"); time.sleep(0.25); f3_ = hash_()
+    check("teclado: j y k recorren las fórmulas de sala y abren cada una", f1_.startswith("#f/") and f2_.startswith("#f/") and f1_ != f2_ and f3_ == f1_ and fila_sel("#fx-lista") == f1_, str((f1_, f2_, f3_)))
+    pg.click("#fq"); pg.keyboard.type("reposicion"); time.sleep(0.3); nf_ = pg.locator("#fx-lista .idx-row").count()
+    pg.keyboard.press("ArrowDown"); time.sleep(0.25); pg.keyboard.press("ArrowDown"); time.sleep(0.25)
+    check("teclado: en fórmulas el filtro sobrevive a moverse con flechas y j/k solo recorre las filtradas", pg.input_value("#fq") == "reposicion" and pg.locator("#fx-lista .idx-row").count() == nf_ and 0 < nf_ < 120 and foco_() == "fq", f"{nf_} {pg.input_value('#fq')!r}")
+    pg.keyboard.press("Escape"); time.sleep(0.2)
+    check("teclado: Escape limpia el filtro de fórmulas", pg.input_value("#fq") == "" and pg.locator("#fx-lista .idx-row").count() == 120)
+    pg.click(".fm-chip[data-m=juicio]"); time.sleep(0.3); suelta_(); pg.keyboard.press("j"); time.sleep(0.25)
+    sel_f_ = pg.evaluate("document.querySelector('#fx-lista .idx-row.sel')?document.querySelector('#fx-lista .idx-row.sel').getAttribute('href'):null")
+    todas_juicio_ = pg.evaluate("[...document.querySelectorAll('#fx-lista .idx-row')].map(e=>e.getAttribute('href'))")
+    check("teclado: con un momento elegido (juicio), j se queda dentro de esa lista", sel_f_ in todas_juicio_ and len(todas_juicio_) < 120, str(len(todas_juicio_)))
+    pg.click(".fm-chip[data-m='']"); time.sleep(0.2)
+    # índice de normas: la rueda de tabulador también
+    vaya("#n"); pg.fill("#nq", ""); time.sleep(0.2)
+    check("tabulador: la lista de normas tiene UNA parada", pg.evaluate("document.querySelectorAll('#n-lista .idx-row[tabindex=\"0\"]').length") == 1)
+    vaya("")
+    check("teclado: sin errores JS tras todo el recorrido", not errores, str(errores[:2]))
+
     print("\n[móvil]")
     m = br.new_context(viewport={"width": 390, "height": 844}, is_mobile=True, has_touch=True, device_scale_factor=2)
     mp = m.new_page(); merr = []
