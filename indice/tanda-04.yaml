@@ -1,0 +1,416 @@
+# Índice de conceptos de «Consulta de normas» — tanda 4 (sentencia, audiencia previa y prueba)
+# Revisor: armero. Espejo: legalize-es@aca28304d. Todo precepto citado se ha leído en el espejo en esta pasada.
+# Vigencia: scripts/contraste_boe.py --solo "LEC,CC,LOPJ,CE" (8-10-2026, 06:47) y --solo TRLGDCU. Distintos: LEC 22 y 685, CC 396.
+# Ninguno citado; sin vigencias futuras. Los 127 artículos citados son idénticos a boe.es: las 12 voces van «vigente». Ver notas.
+
+voces:
+  - voz: "Congruencia y motivación de la sentencia"
+    sinonimos: ["incongruencia", "incongruencia omisiva", "extra petita", "ultra petita", "citra petita", "falta de motivación", "sentencia inmotivada", "iura novit curia", "exhaustividad de la sentencia", "reformatio in peius"]
+    normas_base: ["LEC", "CE", "LOPJ"]
+    remisiones:
+      - {norma: "LEC", articulo: "218", apartado: "1", tipo: "regula", nota: "Sentencias claras, precisas y congruentes con las pretensiones; deciden todos los puntos objeto del debate."}
+      - {norma: "LEC", articulo: "218", apartado: "1, párrafo 2.º", tipo: "regula", nota: "Iura novit curia: aplica la norma correcta aunque no se cite, sin apartarse de la causa de pedir."}
+      - {norma: "LEC", articulo: "218", apartado: "2", tipo: "regula", nota: "Motivación: razones fácticas y jurídicas de la valoración de la prueba y de la aplicación del derecho."}
+      - {norma: "LEC", articulo: "218", apartado: "3", tipo: "regula", nota: "Varios puntos litigiosos: un pronunciamiento separado para cada uno."}
+      - {norma: "LEC", articulo: "216", tipo: "regula", nota: "Justicia rogada: se decide con los hechos, pruebas y pretensiones que aportan las partes."}
+      - {norma: "LEC", articulo: "209", apartado: "2.ª", tipo: "regula", nota: "Antecedentes: pretensiones, hechos alegados oportunamente, pruebas propuestas y practicadas y hechos probados."}
+      - {norma: "LEC", articulo: "209", apartado: "3.ª", tipo: "regula", nota: "Fundamentos: puntos de hecho y de derecho, razones del fallo y normas concretas aplicables."}
+      - {norma: "LEC", articulo: "209", apartado: "4.ª", tipo: "regula", nota: "Fallo numerado sobre cada pretensión y sobre costas; fija la cantidad sin dejarla a la ejecución (salvo art. 219)."}
+      - {norma: "LEC", articulo: "219", apartado: "2", tipo: "regula", nota: "Condena dineraria: importe exacto o bases claras para una simple operación aritmética en ejecución."}
+      - {norma: "CE", articulo: "120", apartado: "3", tipo: "regula", nota: "Las sentencias serán siempre motivadas y se pronunciarán en audiencia pública."}
+      - {norma: "LEC", articulo: "215", apartado: "2", tipo: "regula", nota: "Omisión manifiesta de pronunciamiento: complemento a petición escrita en cinco días desde la notificación."}
+      - {norma: "CE", articulo: "24", apartado: "1", tipo: "conexa", nota: "Tutela judicial efectiva sin indefensión."}
+      - {norma: "LOPJ", articulo: "248", apartado: "4", tipo: "conexa", nota: "Estructura: encabezamiento, antecedentes, hechos probados en su caso, fundamentos de derecho y fallo."}
+      - {norma: "LOPJ", articulo: "11", apartado: "3", tipo: "conexa", nota: "Deber de resolver siempre las pretensiones; desestimación formal solo por defecto insubsanable o no subsanado."}
+      - {norma: "LEC", articulo: "210", apartado: "3", tipo: "conexa", nota: "Sentencia oral en el verbal (no si se actúa sin abogado): pretensiones, pruebas, hechos probados y fundamentos."}
+      - {norma: "LEC", articulo: "459", tipo: "conexa", nota: "Apelación por infracción procesal: citar la norma, alegar la indefensión y acreditar la denuncia previa."}
+      - {norma: "LEC", articulo: "465", apartado: "3", tipo: "conexa", nota: "Infracción cometida al dictar sentencia: la Audiencia revoca y resuelve el fondo, sin devolver los autos."}
+      - {norma: "LEC", articulo: "465", apartado: "5", tipo: "conexa", nota: "Apelación: solo los puntos planteados en el recurso, oposición o impugnación; no cabe reforma peyorativa."}
+      - {norma: "LEC", articulo: "477", apartado: "2", tipo: "conexa", nota: "Casación por infracción de norma procesal o sustantiva, con interés casacional."}
+    no_consta_en_norma:
+      - "Las clases de incongruencia (omisiva, extra petita, ultra petita, por error) y su encaje en el art. 24 CE: jurisprudencial."
+      - "Motivación sucinta o por remisión y desestimación tácita de una pretensión: jurisprudencial."
+      - "Si para recurrir por incongruencia omisiva hay que haber pedido antes el complemento del art. 215: jurisprudencial."
+    afines: ["Aclaración, corrección y complemento de resoluciones", "Recurso de apelación (plazo, interposición, prueba en segunda instancia)", "Nulidad de actuaciones", "Tutela judicial efectiva e indefensión", "Carga de la prueba"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Audiencia previa: contenido y orden"
+    sinonimos: ["audiencia previa al juicio", "audiencia previa", "saneamiento procesal", "intento de acuerdo en la audiencia", "poder para transigir", "incomparecencia a la audiencia previa", "sentencia sin juicio"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "414", apartado: "1", tipo: "regula", nota: "El LAJ convoca en tres días tras la contestación; se celebra en veinte. Fines: acuerdo, saneamiento, objeto y prueba."}
+      - {norma: "LEC", articulo: "414", apartado: "2", tipo: "regula", nota: "Las partes comparecen asistidas de abogado; por videoconferencia si el tribunal lo acuerda (art. 137 bis)."}
+      - {norma: "LEC", articulo: "414", apartado: "2, párrafo 3.º", tipo: "regula", nota: "Si no acude la parte y su procurador no tiene poder para renunciar, allanarse o transigir: no comparecida."}
+      - {norma: "LEC", articulo: "414", apartado: "3", tipo: "regula", nota: "Nadie comparece: sobreseimiento. Solo el demandado: sobreseimiento salvo interés legítimo en sentencia de fondo."}
+      - {norma: "LEC", articulo: "414", apartado: "4", tipo: "regula", nota: "Falta el abogado del actor: sobreseimiento salvo interés del demandado; falta el del demandado: sigue con el actor."}
+      - {norma: "LEC", articulo: "415", apartado: "1", tipo: "regula", nota: "Abierto el acto, se comprueba si subsiste el litigio: cabe desistir, pedir homologación o suspender para un MASC."}
+      - {norma: "LEC", articulo: "415", apartado: "2", tipo: "regula", nota: "El acuerdo homologado tiene efectos de transacción judicial y se ejecuta como una sentencia."}
+      - {norma: "LEC", articulo: "416", apartado: "1", tipo: "regula", nota: "Saneamiento: capacidad y representación, cosa juzgada, litispendencia, litisconsorcio, inadecuación, defecto legal."}
+      - {norma: "LEC", articulo: "416", apartado: "2", tipo: "regula", nota: "Jurisdicción y competencia no se discuten aquí: van por declinatoria, salvo el control de oficio."}
+      - {norma: "LEC", articulo: "417", tipo: "regula", nota: "Orden de examen: el de los arts. 418 a 424; lo no resuelto oralmente, en un solo auto en cinco días."}
+      - {norma: "LEC", articulo: "418", apartado: "1", tipo: "regula", nota: "Defecto de capacidad o representación: se subsana en el acto o en un plazo de hasta diez días, con suspensión."}
+      - {norma: "LEC", articulo: "425", tipo: "regula", nota: "Cuestiones procesales no listadas en el art. 416: se resuelven con las reglas de la análoga."}
+      - {norma: "LEC", articulo: "426", apartado: "1", tipo: "regula", nota: "Alegaciones complementarias sin alterar sustancialmente pretensiones ni fundamentos."}
+      - {norma: "LEC", articulo: "427", apartado: "1", tipo: "regula", nota: "Cada parte se pronuncia sobre los documentos contrarios: admite, impugna, reconoce o propone prueba."}
+      - {norma: "LEC", articulo: "428", apartado: "1", tipo: "regula", nota: "Se fijan los hechos en que hay conformidad y disconformidad."}
+      - {norma: "LEC", articulo: "428", apartado: "3", tipo: "regula", nota: "Conformidad en todos los hechos y discusión solo jurídica: sentencia en veinte días, sin juicio."}
+      - {norma: "LEC", articulo: "429", apartado: "1", tipo: "regula", nota: "Sin acuerdo ni conformidad sobre los hechos, la audiencia sigue para proponer y admitir la prueba."}
+      - {norma: "LEC", articulo: "429", apartado: "2", tipo: "regula", nota: "Juicio en el plazo de un mes; con la conformidad de todas las partes, derivación a un MASC (art. 19.5)."}
+      - {norma: "LEC", articulo: "429", apartado: "8", tipo: "regula", nota: "Solo documentos no impugnados o periciales sin ratificar: sentencia sin juicio en veinte días."}
+      - {norma: "LEC", articulo: "438", apartado: "10", tipo: "conexa", nota: "Verbal: no hay audiencia previa; excepciones, cuantía y prueba se resuelven por auto antes de la vista."}
+      - {norma: "LEC", articulo: "443", apartado: "3", tipo: "conexa", nota: "Verbal: en la vista se hacen aclaraciones y se fijan los hechos controvertidos."}
+    no_consta_en_norma:
+      - "Si la parte tenida por no comparecida (art. 414.2) puede aún proponer prueba o alegar en la audiencia: jurisprudencial."
+    afines: ["Hechos controvertidos y fijación del objeto", "Proposición de prueba", "Transacción judicial", "Declinatoria", "Preclusión de alegaciones y hechos nuevos", "Suspensión del proceso"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Hechos controvertidos y fijación del objeto"
+    sinonimos: ["fijación de hechos controvertidos", "hechos conformes", "conformidad sobre los hechos", "hechos admitidos", "admisión tácita de hechos", "objeto del proceso", "hechos exentos de prueba"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "428", apartado: "1", tipo: "regula", nota: "Las partes, con el tribunal, fijan los hechos en que hay conformidad y disconformidad."}
+      - {norma: "LEC", articulo: "428", apartado: "2", tipo: "regula", nota: "A la vista del objeto, el tribunal puede exhortar a un acuerdo; si se alcanza, se aplica el art. 415."}
+      - {norma: "LEC", articulo: "428", apartado: "3", tipo: "regula", nota: "Conformidad en todos los hechos y discusión solo jurídica: sentencia en veinte días, sin juicio."}
+      - {norma: "LEC", articulo: "414", apartado: "1, párrafo 2.º", tipo: "regula", nota: "Fin de la audiencia: fijar con precisión el objeto y los extremos de hecho o de derecho controvertidos."}
+      - {norma: "LEC", articulo: "281", apartado: "1", tipo: "regula", nota: "La prueba recae sobre los hechos que guardan relación con la tutela que se pide."}
+      - {norma: "LEC", articulo: "281", apartado: "3", tipo: "regula", nota: "Hechos con plena conformidad de las partes: exentos de prueba, salvo materia fuera de su poder de disposición."}
+      - {norma: "LEC", articulo: "405", apartado: "2", tipo: "regula", nota: "La contestación admite o niega los hechos; el silencio o las evasivas pueden valer como admisión tácita."}
+      - {norma: "LEC", articulo: "426", apartado: "6", tipo: "regula", nota: "El tribunal pide aclaraciones; si no se dan, puede tener a la parte por conforme con los hechos contrarios."}
+      - {norma: "LEC", articulo: "412", apartado: "1", tipo: "regula", nota: "Fijado el objeto en demanda, contestación y reconvención, no puede alterarse después."}
+      - {norma: "LEC", articulo: "443", apartado: "3", tipo: "regula", nota: "Verbal: sin acuerdo, se da la palabra para aclarar y fijar los hechos sobre los que hay contradicción."}
+      - {norma: "LEC", articulo: "443", apartado: "4", tipo: "regula", nota: "Verbal: si no hay conformidad sobre todos, se practica la prueba admitida."}
+      - {norma: "LEC", articulo: "281", apartado: "4", tipo: "conexa", nota: "Hechos de notoriedad absoluta y general: no necesitan prueba."}
+      - {norma: "LEC", articulo: "429", apartado: "8", tipo: "conexa", nota: "Ordinario: solo documentos no impugnados o periciales sin ratificar: sentencia sin juicio en veinte días."}
+      - {norma: "LEC", articulo: "438", apartado: "10, párrafo 3.º", tipo: "conexa", nota: "Verbal: solo documentos no impugnados o periciales sin presencia del perito: sentencia sin vista."}
+      - {norma: "LEC", articulo: "433", apartado: "2", tipo: "conexa", nota: "Conclusiones: hecho por hecho, si está admitido, probado o incierto y qué resulta de la carga de la prueba."}
+      - {norma: "LEC", articulo: "217", apartado: "1", tipo: "conexa", nota: "Los hechos relevantes que quedan dudosos se resuelven contra quien tenía la carga de probarlos."}
+    no_consta_en_norma:
+      - "Si la fijación de hechos en el acta vincula al tribunal y a las partes en el juicio y en la sentencia: jurisprudencial."
+      - "Cuándo el silencio o la evasiva del art. 405.2 deben tenerse por admisión: el texto dice «podrá»; el criterio es jurisprudencial."
+    afines: ["Audiencia previa: contenido y orden", "Admisión de hechos y silencio en la contestación", "Carga de la prueba", "Presunciones y hechos exentos de prueba", "Preclusión de alegaciones y hechos nuevos"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Proposición de prueba"
+    sinonimos: ["proponer prueba", "escrito de proposición de prueba", "medios de prueba", "prueba en la audiencia previa", "prueba en el juicio verbal", "citación de testigos y peritos", "insuficiencia probatoria", "respuestas escritas de personas jurídicas"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "429", apartado: "1", tipo: "regula", nota: "Ordinario: se propone de palabra, con escrito detallado en el acto o, a lo sumo, en los dos días siguientes."}
+      - {norma: "LEC", articulo: "429", apartado: "1, párrafo 3.º", tipo: "regula", nota: "Si la prueba parece insuficiente, el tribunal indica los hechos afectados y puede señalar pruebas."}
+      - {norma: "LEC", articulo: "429", apartado: "1, párrafo 4.º", tipo: "regula", nota: "Tras esa advertencia, las partes pueden completar o modificar su proposición."}
+      - {norma: "LEC", articulo: "429", apartado: "5", tipo: "regula", nota: "Decir qué testigos y peritos se presentan y cuáles cita el tribunal, y qué declaraciones van por auxilio judicial."}
+      - {norma: "LEC", articulo: "284", tipo: "regula", nota: "Cada medio por separado, con domicilio de quien deba ser citado; en el ordinario, datos que falten en cinco días."}
+      - {norma: "LEC", articulo: "282", tipo: "regula", nota: "La prueba se practica a instancia de parte; de oficio, solo cuando la ley lo establece."}
+      - {norma: "LEC", articulo: "299", apartado: "1", tipo: "regula", nota: "Medios: interrogatorio de partes, documentos públicos y privados, peritos, reconocimiento judicial y testigos."}
+      - {norma: "LEC", articulo: "299", apartado: "2", tipo: "regula", nota: "También reproducción de palabra, sonido e imagen e instrumentos de archivo de datos."}
+      - {norma: "LEC", articulo: "299", apartado: "3", tipo: "regula", nota: "Cualquier otro medio que dé certeza sobre hechos relevantes, a instancia de parte."}
+      - {norma: "LEC", articulo: "438", apartado: "8", tipo: "regula", nota: "Verbal: proposición por escrito en cinco días comunes tras la contestación, indicando a quién hay que citar."}
+      - {norma: "LEC", articulo: "438", apartado: "9", tipo: "regula", nota: "Verbal: tres días desde el traslado de la proposición para impugnar (arts. 280, 283, 287 y 427)."}
+      - {norma: "LEC", articulo: "438", apartado: "10", tipo: "regula", nota: "Verbal: auto que admite la prueba y decide si hay vista; reposición con efecto suspensivo."}
+      - {norma: "LEC", articulo: "443", apartado: "4", tipo: "regula", nota: "Verbal: en la vista, la proposición puede completarse conforme al art. 429.1."}
+      - {norma: "LEC", articulo: "300", apartado: "1", tipo: "conexa", nota: "Orden de práctica: partes, testigos, peritos, reconocimiento judicial y reproducción, salvo otro acordado."}
+      - {norma: "LEC", articulo: "290", tipo: "conexa", nota: "Unidad de acto; la prueba fuera del juicio se señala con cinco días de antelación y se practica antes."}
+      - {norma: "LEC", articulo: "381", apartado: "1", tipo: "conexa", nota: "Respuestas escritas de personas jurídicas o entidades públicas, en los diez días anteriores al juicio o vista."}
+      - {norma: "LEC", articulo: "288", apartado: "1", tipo: "conexa", nota: "Multa de 60 a 600 euros al litigante por cuya causa no se practique a tiempo una prueba admitida."}
+    no_consta_en_norma:
+      - "Efecto de no presentar el escrito detallado en los dos días del art. 429.1: el texto «condiciona» la admisión; su alcance es jurisprudencial."
+      - "Qué prueba nueva cabe «completar» en la vista del verbal por la remisión del art. 443.4 al 429.1: jurisprudencial."
+    afines: ["Pertinencia y utilidad de la prueba; protesta", "Audiencia previa: contenido y orden", "Prueba anticipada y aseguramiento de la prueba", "Diligencias finales", "Vista del juicio verbal: desarrollo e incomparecencias"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Pertinencia y utilidad de la prueba; protesta"
+    sinonimos: ["prueba impertinente", "prueba inútil", "inadmisión de prueba", "prueba denegada", "protesta", "reposición contra la inadmisión de prueba", "pregunta inadmitida", "derecho a la prueba"]
+    normas_base: ["LEC", "CE"]
+    remisiones:
+      - {norma: "LEC", articulo: "283", apartado: "1", tipo: "regula", nota: "No se admite la prueba que no guarda relación con el objeto del proceso: impertinente."}
+      - {norma: "LEC", articulo: "283", apartado: "2", tipo: "regula", nota: "Tampoco la inútil: la que según criterios razonables y seguros nunca puede esclarecer los hechos controvertidos."}
+      - {norma: "LEC", articulo: "283", apartado: "3", tipo: "regula", nota: "Nunca se admite como prueba una actividad prohibida por la ley."}
+      - {norma: "LEC", articulo: "285", apartado: "1", tipo: "regula", nota: "El tribunal resuelve sobre la admisión de cada una de las pruebas propuestas."}
+      - {norma: "LEC", articulo: "285", apartado: "2", tipo: "regula", nota: "Contra la admisión o inadmisión, solo reposición en el acto; si se desestima, protesta para la segunda instancia."}
+      - {norma: "LEC", articulo: "446", tipo: "regula", nota: "Verbal: igual para lo que se resuelva sobre prueba en la vista: reposición en el acto y, desestimada, protesta."}
+      - {norma: "LEC", articulo: "438", apartado: "9", tipo: "regula", nota: "Verbal: tres días desde el traslado para impugnar la prueba contraria, también por impertinente o inútil (art. 283)."}
+      - {norma: "LEC", articulo: "438", apartado: "10", tipo: "regula", nota: "Verbal: la prueba se admite por auto antes de la vista; reposición con efecto suspensivo."}
+      - {norma: "LEC", articulo: "460", apartado: "2.1.ª", tipo: "regula", nota: "Apelación: prueba indebidamente denegada, si se intentó la reposición o se formuló protesta en la vista."}
+      - {norma: "LEC", articulo: "369", apartado: "2", tipo: "regula", nota: "Testigos: quien discrepe de la inadmisión de una pregunta pide que conste en acta su protesta."}
+      - {norma: "LEC", articulo: "372", apartado: "1", tipo: "regula", nota: "Repreguntas de las otras partes: se repelen las impertinentes o inútiles; cabe la protesta del art. 369.2."}
+      - {norma: "LEC", articulo: "459", tipo: "regula", nota: "La infracción procesal se alega en apelación acreditando que se denunció en su momento, si hubo ocasión."}
+      - {norma: "CE", articulo: "24", apartado: "2", tipo: "regula", nota: "Derecho a utilizar los medios de prueba pertinentes para la defensa."}
+      - {norma: "LEC", articulo: "302", apartado: "2", tipo: "conexa", nota: "Interrogatorio de parte: el tribunal decide en el acto sobre la admisibilidad de cada pregunta."}
+      - {norma: "LEC", articulo: "306", apartado: "1", tipo: "conexa", nota: "El tribunal repele las preguntas impertinentes o inútiles en el interrogatorio cruzado."}
+      - {norma: "LEC", articulo: "347", apartado: "1", tipo: "conexa", nota: "Peritos: solo se deniega la intervención pedida si es impertinente o inútil, o hay confidencialidad de mediación."}
+      - {norma: "LEC", articulo: "363", tipo: "conexa", nota: "Oídos tres testigos sobre un hecho, el tribunal puede prescindir de los demás si ya está ilustrado."}
+      - {norma: "LEC", articulo: "287", apartado: "1", tipo: "conexa", nota: "Prueba ilícita: se alega de inmediato y se resuelve en el juicio, antes de practicar la prueba."}
+      - {norma: "LEC", articulo: "272", tipo: "conexa", nota: "Documento extemporáneo: inadmisión sin recurso, que puede hacerse valer en la segunda instancia."}
+    no_consta_en_norma:
+      - "Cuándo la denegación de una prueba causa indefensión material con relevancia constitucional (art. 24.2 CE): jurisprudencial."
+      - "Si la protesta debe razonarse o basta con hacerla constar en el acta: jurisprudencial."
+    afines: ["Proposición de prueba", "Prueba ilícita", "Recurso de apelación (plazo, interposición, prueba en segunda instancia)", "Recurso de reposición", "Derecho a la prueba y a un proceso con todas las garantías"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Documentos: aportación e impugnación"
+    sinonimos: ["prueba documental", "impugnación de documentos", "aportación de documentos", "documento privado", "documento público", "copia simple", "autenticidad del documento", "cotejo de documentos", "designación de archivos", "documentos procesales"]
+    normas_base: ["LEC", "CC"]
+    remisiones:
+      - {norma: "LEC", articulo: "265", apartado: "1", tipo: "regula", nota: "Con demanda o contestación: documentos de fondo, medios del 299.2, certificaciones, dictámenes e informes."}
+      - {norma: "LEC", articulo: "265", apartado: "2", tipo: "regula", nota: "Sin disponer del documento, se designa el archivo; si cabe pedir copia fehaciente, hay que aportarla."}
+      - {norma: "LEC", articulo: "265", apartado: "3", tipo: "regula", nota: "El actor aporta en la audiencia previa o en la vista lo que se vuelve relevante por la contestación."}
+      - {norma: "LEC", articulo: "264", tipo: "regula", nota: "Documentos procesales: apoderamiento, representación, valor de la cosa litigiosa y acreditación del MASC."}
+      - {norma: "LEC", articulo: "267", tipo: "regula", nota: "Documento público: basta copia simple o imagen digitalizada; si se impugna, original, copia o certificación."}
+      - {norma: "LEC", articulo: "268", apartado: "1", tipo: "regula", nota: "Documento privado: original, copia autenticada o imagen digitalizada; si se impugna, se lleva el original."}
+      - {norma: "LEC", articulo: "268", apartado: "2", tipo: "regula", nota: "Copia simple del privado: vale como el original mientras nadie cuestione su conformidad."}
+      - {norma: "LEC", articulo: "269", apartado: "1", tipo: "regula", nota: "Lo que no se aporta en su momento ya no se admite, salvo los casos del art. 270."}
+      - {norma: "LEC", articulo: "269", apartado: "2", tipo: "regula", nota: "Sin los documentos del art. 266 (alimentos, retracto, posesión hereditaria…) no se admite la demanda."}
+      - {norma: "LEC", articulo: "427", apartado: "1", tipo: "regula", nota: "Audiencia previa: cada parte admite, impugna o reconoce los documentos contrarios o propone prueba."}
+      - {norma: "LEC", articulo: "438", apartado: "9", tipo: "regula", nota: "Verbal: la impugnación de documentos (art. 427) se hace por escrito en tres días desde el traslado de la prueba."}
+      - {norma: "LEC", articulo: "318", tipo: "regula", nota: "Documento público: prueba plena en original, copia fehaciente o copia simple no impugnada."}
+      - {norma: "LEC", articulo: "319", apartado: "1", tipo: "regula", nota: "Prueba plena del hecho o acto documentado, de su fecha y de la identidad de fedatario e intervinientes."}
+      - {norma: "LEC", articulo: "320", apartado: "1", tipo: "regula", nota: "Impugnada la autenticidad del público: cotejo con el original o verificación de la firma electrónica."}
+      - {norma: "LEC", articulo: "320", apartado: "3", tipo: "regula", nota: "Si el cotejo confirma la autenticidad: costas al impugnante y, si fue temerario, multa de 120 a 600 euros."}
+      - {norma: "LEC", articulo: "326", apartado: "1", tipo: "regula", nota: "Documento privado: prueba plena si no impugna su autenticidad la parte a quien perjudica."}
+      - {norma: "LEC", articulo: "326", apartado: "2", tipo: "regula", nota: "Impugnado: cotejo pericial de letras u otro medio; sin resultado o sin prueba, sana crítica."}
+      - {norma: "LEC", articulo: "334", apartado: "1", tipo: "regula", nota: "Copia reprográfica impugnada: cotejo con el original o, si no es posible, sana crítica."}
+      - {norma: "LEC", articulo: "349", apartado: "1", tipo: "conexa", nota: "Cotejo de letras por perito cuando se niega o pone en duda la autenticidad del documento privado."}
+      - {norma: "LEC", articulo: "350", apartado: "3", tipo: "conexa", nota: "Cuerpo de escritura: si el requerido se niega a formarlo, el documento se tiene por reconocido."}
+      - {norma: "LEC", articulo: "328", apartado: "1", tipo: "conexa", nota: "Exhibición entre partes de documentos que no están a disposición de quien la pide."}
+      - {norma: "LEC", articulo: "329", apartado: "1", tipo: "conexa", nota: "Negativa injustificada a exhibir: puede darse valor a la copia o a la versión del solicitante."}
+      - {norma: "CC", articulo: "1218", tipo: "conexa", nota: "El documento público prueba, aun contra tercero, el hecho que motiva su otorgamiento y su fecha."}
+      - {norma: "CC", articulo: "1225", tipo: "conexa", nota: "Documento privado reconocido legalmente: vale como escritura pública entre firmantes y causahabientes."}
+      - {norma: "CC", articulo: "1227", tipo: "conexa", nota: "Fecha del privado frente a terceros: desde su registro, la muerte de un firmante o su entrega a funcionario."}
+    no_consta_en_norma:
+      - "Si la impugnación genérica de «todos los documentos» obliga a quien los aporta a probar su autenticidad: jurisprudencial."
+      - "La diferencia entre impugnar la autenticidad y discutir el valor probatorio del documento: jurisprudencial."
+    afines: ["Documentos y pruebas posteriores (preclusión)", "Fuerza probatoria de documentos públicos y privados", "Exhibición de documentos entre partes y por terceros", "Medios de reproducción, correos y mensajería (WhatsApp) como prueba", "Audiencia previa: contenido y orden"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Documentos y pruebas posteriores (preclusión)"
+    sinonimos: ["documentos posteriores", "documento de fecha posterior", "documento de nueva noticia", "aportación tardía de documentos", "preclusión documental", "documento extemporáneo", "sentencia posterior como documento", "dictamen posterior"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "269", apartado: "1", tipo: "regula", nota: "Lo no aportado con demanda, contestación o audiencia previa ya no se admite, salvo los casos del art. 270."}
+      - {norma: "LEC", articulo: "270", apartado: "1.1.º", tipo: "regula", nota: "Admisible si es de fecha posterior y no pudo confeccionarse ni obtenerse antes."}
+      - {norma: "LEC", articulo: "270", apartado: "1.2.º", tipo: "regula", nota: "Admisible si es anterior y la parte justifica que no conocía su existencia."}
+      - {norma: "LEC", articulo: "270", apartado: "1.3.º", tipo: "regula", nota: "Admisible si no pudo obtenerse antes sin culpa de la parte, que lo designó o anunció en su momento."}
+      - {norma: "LEC", articulo: "270", apartado: "2", tipo: "regula", nota: "La contraria alega su improcedencia en el juicio o vista; mala fe o ánimo dilatorio: multa de 180 a 1.200 euros."}
+      - {norma: "LEC", articulo: "271", apartado: "1", tipo: "regula", nota: "Tras el juicio o vista no se admite nada, salvo las diligencias finales de la regla 3.ª del art. 435."}
+      - {norma: "LEC", articulo: "271", apartado: "2", tipo: "regula", nota: "Excepción: resoluciones judiciales o administrativas condicionantes, dictadas o notificadas tras las conclusiones."}
+      - {norma: "LEC", articulo: "272", tipo: "regula", nota: "Documento extemporáneo: inadmisión por providencia y devolución; sin recurso, salvo hacerlo valer en apelación."}
+      - {norma: "LEC", articulo: "265", apartado: "3", tipo: "regula", nota: "El actor aporta en la audiencia previa o en la vista lo que se vuelve relevante por la contestación."}
+      - {norma: "LEC", articulo: "426", apartado: "5", tipo: "regula", nota: "Audiencia previa: documentos y dictámenes justificados por alegaciones complementarias o hechos nuevos."}
+      - {norma: "LEC", articulo: "337", apartado: "1", tipo: "regula", nota: "Dictamen anunciado: cinco días antes de la audiencia previa (ordinario) o treinta desde demanda o contestación (verbal)."}
+      - {norma: "LEC", articulo: "338", apartado: "2", tipo: "regula", nota: "Dictamen motivado por la contestación o por la audiencia previa: al menos cinco días antes del juicio o vista."}
+      - {norma: "LEC", articulo: "435", apartado: "1.1.ª", tipo: "regula", nota: "No caben como diligencias finales las pruebas que pudieron proponerse en tiempo y forma."}
+      - {norma: "LEC", articulo: "435", apartado: "1.3.ª", tipo: "regula", nota: "Diligencias finales: prueba pertinente sobre hechos nuevos o de nueva noticia del art. 286."}
+      - {norma: "LEC", articulo: "460", apartado: "1", tipo: "regula", nota: "Apelación: solo documentos del art. 270 que no pudieron aportarse en la primera instancia."}
+      - {norma: "LEC", articulo: "460", apartado: "2.3.ª", tipo: "regula", nota: "Segunda instancia: prueba de hechos posteriores al plazo para sentencia o conocidos después."}
+      - {norma: "LEC", articulo: "286", apartado: "1", tipo: "conexa", nota: "Hecho nuevo tras las alegaciones y antes del plazo para sentencia: escrito de ampliación de hechos."}
+      - {norma: "LEC", articulo: "433", apartado: "1, párrafo 2.º", tipo: "conexa", nota: "Ordinario: hechos posteriores a la audiencia previa; se oye a las partes y se admite prueba antes de practicar la demás."}
+    no_consta_en_norma:
+      - "Cuándo un documento «no pudo obtenerse antes» por causa no imputable a la parte (art. 270.1.3.º): jurisprudencial."
+    afines: ["Documentos: aportación e impugnación", "Preclusión de alegaciones y hechos nuevos", "Diligencias finales", "Recurso de apelación (plazo, interposición, prueba en segunda instancia)", "Dictamen pericial de parte y judicial"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Carga de la prueba"
+    sinonimos: ["onus probandi", "carga probatoria", "hechos constitutivos", "hechos impeditivos, extintivos o excluyentes", "facilidad probatoria", "disponibilidad probatoria", "inversión de la carga de la prueba", "hecho dudoso", "hechos inciertos"]
+    normas_base: ["LEC", "CC", "TRLGDCU"]
+    remisiones:
+      - {norma: "LEC", articulo: "217", apartado: "1", tipo: "regula", nota: "Hechos relevantes dudosos al sentenciar: se desestima la pretensión de quien tenía la carga de probarlos."}
+      - {norma: "LEC", articulo: "217", apartado: "2", tipo: "regula", nota: "Actor y reconviniente prueban los hechos de los que nace el efecto jurídico que piden."}
+      - {norma: "LEC", articulo: "217", apartado: "3", tipo: "regula", nota: "Demandado y reconvenido prueban los hechos que impiden, extinguen o enervan esa eficacia."}
+      - {norma: "LEC", articulo: "217", apartado: "6", tipo: "regula", nota: "Estas reglas ceden ante una disposición legal expresa que reparta la carga con otro criterio."}
+      - {norma: "LEC", articulo: "217", apartado: "7", tipo: "regula", nota: "El tribunal debe tener presente la disponibilidad y facilidad probatoria de cada parte."}
+      - {norma: "LEC", articulo: "217", apartado: "4", tipo: "conexa", nota: "Competencia desleal y publicidad ilícita: el demandado prueba la exactitud de lo anunciado."}
+      - {norma: "LEC", articulo: "217", apartado: "5", tipo: "conexa", nota: "Discriminación por sexo u orientación: con indicios fundados, el demandado justifica sus medidas."}
+      - {norma: "LEC", articulo: "385", apartado: "1", tipo: "conexa", nota: "Presunción legal: dispensa de probar el hecho presunto si el indicio está admitido o probado."}
+      - {norma: "LEC", articulo: "385", apartado: "3", tipo: "conexa", nota: "Las presunciones legales admiten prueba en contrario, salvo prohibición expresa."}
+      - {norma: "LEC", articulo: "386", apartado: "1", tipo: "conexa", nota: "Presunción judicial: enlace preciso y directo entre hechos, razonado en la sentencia."}
+      - {norma: "LEC", articulo: "281", apartado: "3", tipo: "conexa", nota: "Hechos con plena conformidad de las partes: exentos de prueba, salvo materia indisponible."}
+      - {norma: "LEC", articulo: "304", tipo: "conexa", nota: "Incomparecencia al interrogatorio: pueden tenerse por reconocidos los hechos personales perjudiciales."}
+      - {norma: "LEC", articulo: "329", apartado: "1", tipo: "conexa", nota: "Negativa injustificada a exhibir un documento: puede valer la copia o versión del solicitante."}
+      - {norma: "LEC", articulo: "433", apartado: "2, párrafo 2.º", tipo: "conexa", nota: "En conclusiones se alega lo que resulta de la carga de la prueba sobre los hechos dudosos."}
+      - {norma: "CC", articulo: "1183", tipo: "conexa", nota: "Cosa perdida en poder del deudor: se presume su culpa, salvo prueba en contrario."}
+      - {norma: "TRLGDCU", articulo: "139", tipo: "conexa", nota: "Productos defectuosos: el perjudicado prueba el defecto, el daño y la relación de causalidad."}
+      - {norma: "TRLGDCU", articulo: "147", tipo: "conexa", nota: "Servicios: el prestador responde salvo que pruebe que cumplió los requisitos y la diligencia debida."}
+    no_consta_en_norma:
+      - "Cuándo la facilidad probatoria del art. 217.7 traslada de hecho la carga a la otra parte: jurisprudencial."
+      - "La prueba de hechos negativos y la llamada «prueba diabólica»: jurisprudencial."
+    afines: ["Presunciones y hechos exentos de prueba", "Hechos controvertidos y fijación del objeto", "Interrogatorio de parte y ficta confessio", "Responsabilidad por productos defectuosos", "Congruencia y motivación de la sentencia"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Interrogatorio de parte y ficta confessio"
+    sinonimos: ["interrogatorio de parte", "confesión judicial", "ficta confessio", "admisión tácita de hechos personales", "incomparecencia al interrogatorio", "respuestas evasivas", "negativa a declarar", "interrogatorio de persona jurídica"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "301", apartado: "1", tipo: "regula", nota: "Cada parte puede pedir el interrogatorio de las demás; el de un colitigante, solo si hay oposición de intereses."}
+      - {norma: "LEC", articulo: "301", apartado: "2", tipo: "regula", nota: "Si la parte no es el sujeto de la relación controvertida, cabe interrogar al titular."}
+      - {norma: "LEC", articulo: "302", apartado: "1", tipo: "regula", nota: "Preguntas orales, en sentido afirmativo, claras y precisas; las valoraciones se tienen por no hechas."}
+      - {norma: "LEC", articulo: "303", tipo: "regula", nota: "El interrogado y su abogado pueden impugnar en el acto las preguntas y señalar valoraciones improcedentes."}
+      - {norma: "LEC", articulo: "304", tipo: "regula", nota: "Incomparecencia: pueden tenerse por reconocidos los hechos personales enteramente perjudiciales; multa."}
+      - {norma: "LEC", articulo: "304", apartado: "párrafo 2.º", tipo: "regula", nota: "La citación debe advertir de ese efecto de la incomparecencia injustificada."}
+      - {norma: "LEC", articulo: "305", apartado: "1", tipo: "regula", nota: "Responde por sí, sin borrador; puede consultar documentos o notas si el tribunal lo considera conveniente."}
+      - {norma: "LEC", articulo: "306", apartado: "1", tipo: "regula", nota: "Tras el proponente, preguntan los abogados de las demás partes y el del declarante; el tribunal puede preguntar."}
+      - {norma: "LEC", articulo: "307", apartado: "1", tipo: "regula", nota: "Negativa a declarar: apercibimiento de tener por ciertos los hechos personales perjudiciales, salvo secreto legal."}
+      - {norma: "LEC", articulo: "307", apartado: "2", tipo: "regula", nota: "Respuestas evasivas o inconcluyentes: el mismo apercibimiento, de oficio o a instancia de parte."}
+      - {norma: "LEC", articulo: "308", tipo: "regula", nota: "Hechos no personales: responde según su conocimiento y puede proponer que conteste un tercero."}
+      - {norma: "LEC", articulo: "309", apartado: "1", tipo: "regula", nota: "Persona jurídica: si su representante no intervino, lo alega en la audiencia previa e identifica a quien lo hizo."}
+      - {norma: "LEC", articulo: "309", apartado: "3", tipo: "regula", nota: "Si dice desconocer quién intervino en los hechos, se trata como respuesta evasiva (art. 307)."}
+      - {norma: "LEC", articulo: "314", tipo: "regula", nota: "No se repite el interrogatorio sobre hechos que ya fueron objeto de declaración."}
+      - {norma: "LEC", articulo: "316", apartado: "1", tipo: "regula", nota: "Hechos reconocidos, personales y enteramente perjudiciales: ciertos si no los contradice el resto de la prueba."}
+      - {norma: "LEC", articulo: "316", apartado: "2", tipo: "regula", nota: "En lo demás, sana crítica, sin perjuicio de los arts. 304 y 307."}
+      - {norma: "LEC", articulo: "292", apartado: "4", tipo: "conexa", nota: "Litigante citado a interrogatorio que no comparece sin excusa: art. 304 y multa de 180 a 600 euros."}
+      - {norma: "LEC", articulo: "440", apartado: "párrafo 3.º", tipo: "conexa", nota: "Verbal: la citación advierte que, si no asiste quien deba ser interrogado, pueden darse por admitidos los hechos."}
+      - {norma: "LEC", articulo: "311", apartado: "1", tipo: "conexa", nota: "Enfermedad u otras circunstancias: declaración por videoconferencia o en el domicilio."}
+      - {norma: "LEC", articulo: "313", tipo: "conexa", nota: "Residente fuera de la demarcación: videoconferencia o, en los casos del art. 169.5, auxilio judicial."}
+      - {norma: "LEC", articulo: "315", apartado: "1", tipo: "conexa", nota: "Administraciones públicas: responden por escrito a la lista de preguntas declaradas pertinentes."}
+    no_consta_en_norma:
+      - "Cuándo aplicar la ficta confessio si hay otras pruebas sobre el mismo hecho: el texto dice «podrá»; el criterio es jurisprudencial."
+      - "Si una parte puede pedir su propio interrogatorio: el art. 301 solo prevé el de las demás; jurisprudencial."
+    afines: ["Testigos y tachas", "Carga de la prueba", "Hechos controvertidos y fijación del objeto", "Vista del juicio verbal: desarrollo e incomparecencias", "Juicio ordinario: práctica de la prueba y conclusiones"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Testigos y tachas"
+    sinonimos: ["prueba testifical", "testigo", "tacha de testigos", "razón de ciencia", "testigo-perito", "careo", "preguntas generales de la ley", "informe de detective", "indemnización al testigo", "testigo que no comparece"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "360", tipo: "regula", nota: "Testigos: personas con noticia de hechos controvertidos relativos al objeto del juicio."}
+      - {norma: "LEC", articulo: "361", tipo: "regula", nota: "Puede serlo cualquiera, salvo privados de razón o del sentido necesario; menores de 14 si tienen discernimiento."}
+      - {norma: "LEC", articulo: "362", tipo: "regula", nota: "Al proponerlos: nombre, apellidos, profesión y domicilio, o cargo y lugar donde citarlos."}
+      - {norma: "LEC", articulo: "363", tipo: "regula", nota: "Sin límite de número, pero los de más de tres por hecho los paga quien los propone; el juez puede prescindir."}
+      - {norma: "LEC", articulo: "365", apartado: "1", tipo: "regula", nota: "Juramento o promesa de decir verdad, con advertencia de las penas por falso testimonio."}
+      - {norma: "LEC", articulo: "366", apartado: "2", tipo: "regula", nota: "Los testigos no se comunican entre sí ni asisten a las declaraciones de los demás."}
+      - {norma: "LEC", articulo: "367", apartado: "1", tipo: "regula", nota: "Preguntas generales: parentesco, dependencia, interés, amistad o enemistad y condena por falso testimonio."}
+      - {norma: "LEC", articulo: "367", apartado: "2", tipo: "regula", nota: "A la vista de las respuestas, las partes señalan causas de parcialidad; constan en acta para valorarlas."}
+      - {norma: "LEC", articulo: "368", apartado: "2", tipo: "regula", nota: "Se admiten las preguntas conducentes; se inadmiten las ajenas a lo que el testigo conoce por sí."}
+      - {norma: "LEC", articulo: "370", apartado: "3", tipo: "regula", nota: "En cada respuesta el testigo expresa la razón de ciencia de lo que dice."}
+      - {norma: "LEC", articulo: "370", apartado: "4", tipo: "regula", nota: "Testigo-perito: se admiten sus conocimientos técnicos y cabe oponerle las tachas del art. 343."}
+      - {norma: "LEC", articulo: "372", apartado: "1", tipo: "regula", nota: "Repreguntas de las demás partes; se repelen las impertinentes o inútiles y cabe protesta."}
+      - {norma: "LEC", articulo: "373", apartado: "1", tipo: "regula", nota: "Careo entre testigos con graves contradicciones; también entre partes y testigos (373.2)."}
+      - {norma: "LEC", articulo: "376", tipo: "regula", nota: "Sana crítica: razón de ciencia, circunstancias del testigo, tachas y prueba sobre ellas."}
+      - {norma: "LEC", articulo: "377", apartado: "1", tipo: "regula", nota: "Tachas: parentesco hasta el cuarto grado, dependencia, interés, amistad o enemistad, falso testimonio."}
+      - {norma: "LEC", articulo: "377", apartado: "2", tipo: "regula", nota: "El proponente puede tachar a su testigo si conoce la causa después de proponerlo."}
+      - {norma: "LEC", articulo: "378", tipo: "regula", nota: "Plazo: desde que se admite la testifical hasta que empieza el juicio o la vista."}
+      - {norma: "LEC", articulo: "379", apartado: "1", tipo: "regula", nota: "Con la tacha se propone la prueba que la justifique, salvo la testifical."}
+      - {norma: "LEC", articulo: "379", apartado: "2", tipo: "regula", nota: "Si nadie se opone en tres días, se entiende reconocido el fundamento de la tacha."}
+      - {norma: "LEC", articulo: "380", apartado: "1", tipo: "regula", nota: "Informes no reconocidos (detectives): sus autores declaran como testigos. Remite al 265.1.4.º; hoy es el 5.º."}
+      - {norma: "LEC", articulo: "380", apartado: "1.1.ª", tipo: "regula", nota: "No cabe tachar por interés al autor del informe hecho por encargo de una parte."}
+      - {norma: "LEC", articulo: "292", apartado: "1", tipo: "conexa", nota: "Testigo citado que no comparece: multa de 180 a 600 euros, con audiencia previa de cinco días."}
+      - {norma: "LEC", articulo: "292", apartado: "3", tipo: "conexa", nota: "Incomparecencia sin excusa previa: el tribunal, oídas las partes, decide si suspende o sigue."}
+      - {norma: "LEC", articulo: "364", apartado: "1", tipo: "conexa", nota: "Testigo que reside fuera de la demarcación: preferentemente por videoconferencia."}
+      - {norma: "LEC", articulo: "371", apartado: "1", tipo: "conexa", nota: "Deber de secreto por estado o profesión: el testigo lo razona y el tribunal resuelve por providencia."}
+      - {norma: "LEC", articulo: "375", apartado: "1", tipo: "conexa", nota: "El testigo que comparece tiene derecho a indemnización a cargo de quien lo propuso."}
+      - {norma: "LEC", articulo: "429", apartado: "5", tipo: "conexa", nota: "Ordinario: en la audiencia previa se dice qué testigos se presentan y cuáles debe citar el tribunal."}
+    no_consta_en_norma:
+      - "Valor del testigo de referencia o «de oídas»: jurisprudencial."
+      - "Peso del testimonio del pariente o empleado de la parte: la ley lo remite a la sana crítica; los criterios son jurisprudenciales."
+    fuera_de_la_herramienta:
+      - "Código Penal, arts. 458 a 462: delito de falso testimonio, del que se advierte al testigo (art. 365 LEC)."
+    afines: ["Interrogatorio de parte y ficta confessio", "Dictamen pericial de parte y judicial", "Recusación y tacha de peritos", "Pertinencia y utilidad de la prueba; protesta", "Suspensión de la vista y nuevo señalamiento"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Dictamen pericial de parte y judicial"
+    sinonimos: ["prueba pericial", "perito de parte", "perito judicial", "dictamen pericial", "designación judicial de perito", "provisión de fondos del perito", "ratificación del perito", "tacha de peritos", "recusación de peritos", "anuncio de dictamen"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "335", apartado: "1", tipo: "regula", nota: "Hacen falta conocimientos científicos, técnicos o prácticos: dictamen de parte o de perito judicial."}
+      - {norma: "LEC", articulo: "335", apartado: "2", tipo: "regula", nota: "Todo perito jura o promete actuar con objetividad y conocer las sanciones penales."}
+      - {norma: "LEC", articulo: "336", apartado: "1", tipo: "regula", nota: "El dictamen de parte se aporta con la demanda o con la contestación."}
+      - {norma: "LEC", articulo: "336", apartado: "3", tipo: "regula", nota: "El actor solo puede no aportarlo si justifica que no podía esperar al dictamen para demandar."}
+      - {norma: "LEC", articulo: "336", apartado: "4", tipo: "regula", nota: "El demandado debe justificar que no pudo pedirlo y obtenerlo en el plazo para contestar."}
+      - {norma: "LEC", articulo: "337", apartado: "1", tipo: "regula", nota: "Anunciado: cinco días antes de la audiencia previa (ordinario) o treinta desde demanda o contestación (verbal)."}
+      - {norma: "LEC", articulo: "337", apartado: "2", tipo: "regula", nota: "Aportado, las partes dicen si el perito debe ir al juicio o vista y para qué."}
+      - {norma: "LEC", articulo: "338", apartado: "2", tipo: "regula", nota: "Dictamen motivado por la contestación o la audiencia previa: al menos cinco días antes del juicio o vista."}
+      - {norma: "LEC", articulo: "339", apartado: "2", tipo: "regula", nota: "Perito judicial pedido en demanda o contestación, a costa de quien lo pide; se designa en cinco días."}
+      - {norma: "LEC", articulo: "339", apartado: "3", tipo: "regula", nota: "Ordinario: perito judicial por lo alegado en la audiencia previa; verbal: pedido en la vista, que se interrumpe."}
+      - {norma: "LEC", articulo: "340", apartado: "1", tipo: "regula", nota: "Título oficial de la materia, o persona entendida si no hay título oficial."}
+      - {norma: "LEC", articulo: "341", apartado: "1", tipo: "regula", nota: "Designación judicial: listas de colegios; la primera por sorteo y luego por orden correlativo."}
+      - {norma: "LEC", articulo: "342", apartado: "3", tipo: "regula", nota: "Provisión de fondos: si no se consigna en cinco días, el perito queda eximido y no se nombra otro."}
+      - {norma: "LEC", articulo: "343", apartado: "1", tipo: "regula", nota: "Solo se recusa al perito judicial; al de parte se le tacha (parentesco, interés, dependencia, amistad…)."}
+      - {norma: "LEC", articulo: "343", apartado: "2", tipo: "regula", nota: "Tachas: en el ordinario, las del perito de demanda o contestación, en la audiencia previa; nunca tras el juicio."}
+      - {norma: "LEC", articulo: "344", apartado: "2", tipo: "regula", nota: "La tacha se valora con la prueba; tacha temeraria o desleal: multa de 60 a 600 euros."}
+      - {norma: "LEC", articulo: "346", tipo: "regula", nota: "El perito judicial dictamina por escrito; va al juicio si lo piden las partes o lo acuerda el tribunal."}
+      - {norma: "LEC", articulo: "347", apartado: "1", tipo: "regula", nota: "En el juicio: exposición, explicación, preguntas y objeciones, ampliación, crítica del perito contrario y tachas."}
+      - {norma: "LEC", articulo: "347", apartado: "2", tipo: "regula", nota: "El tribunal puede preguntar, pero no ordenar de oficio que se amplíe el dictamen (salvo el art. 339.5)."}
+      - {norma: "LEC", articulo: "348", tipo: "regula", nota: "Los dictámenes se valoran según las reglas de la sana crítica."}
+      - {norma: "LEC", articulo: "339", apartado: "1", tipo: "conexa", nota: "Beneficiario de justicia gratuita: anuncia el dictamen y se designa perito judicial."}
+      - {norma: "LEC", articulo: "339", apartado: "6", tipo: "conexa", nota: "Un solo perito titular por cada cuestión o conjunto de cuestiones."}
+      - {norma: "LEC", articulo: "336", apartado: "5", tipo: "conexa", nota: "El demandado puede pedir examinar cosas y lugares o, en daños personales, que el actor sea reconocido."}
+      - {norma: "LEC", articulo: "345", apartado: "1", tipo: "conexa", nota: "Las partes pueden presenciar las operaciones periciales si no estorban al perito."}
+      - {norma: "LEC", articulo: "124", apartado: "3", tipo: "conexa", nota: "Causas de recusación del perito judicial, además de las de la LOPJ."}
+      - {norma: "LEC", articulo: "427", apartado: "2", tipo: "conexa", nota: "Audiencia previa: los dictámenes presentados se admiten, contradicen o se pide su ampliación."}
+      - {norma: "LEC", articulo: "429", apartado: "8", tipo: "conexa", nota: "Si nadie pide la presencia de los peritos y no hay más prueba: sentencia sin juicio."}
+      - {norma: "LEC", articulo: "352", tipo: "conexa", nota: "Dictámenes instrumentales para entender o valorar otros medios de prueba (arts. 299.2 y 299.3)."}
+    no_consta_en_norma:
+      - "Valor del dictamen de parte impugnado cuyo autor no comparece a ratificarlo: jurisprudencial."
+      - "Criterios de la sana crítica para preferir un dictamen a otro: jurisprudenciales."
+    fuera_de_la_herramienta:
+      - "Ley 1/1996, de asistencia jurídica gratuita: designación y pago del perito del beneficiario (art. 339.1 LEC)."
+    afines: ["Recusación y tacha de peritos", "Documentos y pruebas posteriores (preclusión)", "Prueba anticipada y aseguramiento de la prueba", "Testigos y tachas", "Medios de reproducción, correos y mensajería (WhatsApp) como prueba"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Medios de reproducción, correos y mensajería (WhatsApp) como prueba"
+    sinonimos: ["WhatsApp como prueba", "capturas de pantalla", "pantallazos", "correo electrónico como prueba", "grabación de audio", "grabación de vídeo", "prueba electrónica", "prueba digital", "documento electrónico", "mensajes de texto", "transcripción de grabaciones"]
+    normas_base: ["LEC", "LOPJ", "CE"]
+    remisiones:
+      - {norma: "LEC", articulo: "299", apartado: "2", tipo: "regula", nota: "Medios de reproducción de palabra, sonido e imagen e instrumentos que archivan palabras, datos o cifras."}
+      - {norma: "LEC", articulo: "299", apartado: "3", tipo: "regula", nota: "Cualquier otro medio que dé certeza sobre hechos relevantes, a instancia de parte."}
+      - {norma: "LEC", articulo: "265", apartado: "1.2.º", tipo: "regula", nota: "Si la pretensión se funda en ellos, se aportan con la demanda o con la contestación."}
+      - {norma: "LEC", articulo: "382", apartado: "1", tipo: "regula", nota: "Reproducción ante el tribunal de palabras, imágenes y sonidos, con transcripción escrita de lo relevante."}
+      - {norma: "LEC", articulo: "382", apartado: "2", tipo: "regula", nota: "El proponente aporta dictámenes y pruebas instrumentales; la contraria, los suyos si discute la autenticidad."}
+      - {norma: "LEC", articulo: "382", apartado: "3", tipo: "regula", nota: "Las reproducciones se valoran según la sana crítica."}
+      - {norma: "LEC", articulo: "384", apartado: "1", tipo: "regula", nota: "Instrumentos de archivo de datos: los examina el tribunal y las partes pueden alegar con idéntico conocimiento."}
+      - {norma: "LEC", articulo: "384", apartado: "3", tipo: "regula", nota: "Se valoran por la sana crítica propia de su naturaleza."}
+      - {norma: "LEC", articulo: "326", apartado: "3", tipo: "regula", nota: "Documento electrónico impugnado (autenticidad, integridad, fecha): prueba del art. 326.2 y reglas del eIDAS."}
+      - {norma: "LEC", articulo: "326", apartado: "4", tipo: "regula", nota: "Con servicio de confianza cualificado se presume correcto; comprueba y paga el impugnante; multa de 300 a 1.200."}
+      - {norma: "LEC", articulo: "352", tipo: "regula", nota: "Dictamen pericial para conocer el contenido o valorar estos medios (arts. 299.2 y 299.3)."}
+      - {norma: "LEC", articulo: "287", apartado: "1", tipo: "regula", nota: "Si se obtuvo vulnerando derechos fundamentales, se alega de inmediato y se resuelve en el juicio."}
+      - {norma: "LOPJ", articulo: "11", apartado: "1", tipo: "regula", nota: "No surten efecto las pruebas obtenidas, directa o indirectamente, violentando derechos fundamentales."}
+      - {norma: "LEC", articulo: "383", apartado: "1", tipo: "conexa", nota: "Acta de la reproducción, con lo necesario para identificar grabaciones y lo aportado sobre ellas."}
+      - {norma: "LEC", articulo: "383", apartado: "2", tipo: "conexa", nota: "El soporte se conserva por el LAJ o en el expediente electrónico, sin alteraciones."}
+      - {norma: "LEC", articulo: "334", apartado: "1", tipo: "conexa", nota: "Copia impugnada: cotejo con el original o, si no es posible, sana crítica."}
+      - {norma: "LEC", articulo: "297", apartado: "1", tipo: "conexa", nota: "Aseguramiento de la prueba, incluso antes del pleito, si puede destruirse o alterarse."}
+      - {norma: "LEC", articulo: "289", apartado: "2", tipo: "conexa", nota: "Es inexcusable la presencia del juez en la reproducción de palabras, sonidos, imágenes y datos."}
+      - {norma: "CE", articulo: "18", apartado: "3", tipo: "conexa", nota: "Secreto de las comunicaciones, salvo resolución judicial."}
+      - {norma: "CE", articulo: "18", apartado: "1", tipo: "conexa", nota: "Derecho a la intimidad personal y familiar y a la propia imagen."}
+    no_consta_en_norma:
+      - "Si un correo o un mensaje es documento (art. 326) o medio de los arts. 382 a 384: la ley no lo dice; jurisprudencial."
+      - "Si la captura de pantalla impugnada exige pericial o basta otra prueba (p. ej., el otro interlocutor): jurisprudencial."
+      - "Si grabar una conversación en la que uno participa lesiona el secreto de las comunicaciones o la intimidad: jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Reglamento (UE) 910/2014 (eIDAS): servicios de confianza y firma electrónica a que remite el art. 326.3 y 4 LEC."
+      - "LO 3/2018, de protección de datos personales, y RGPD: licitud del tratamiento de imágenes y datos que se aportan."
+    afines: ["Documentos: aportación e impugnación", "Prueba ilícita", "Dictamen pericial de parte y judicial", "Prueba anticipada y aseguramiento de la prueba", "Fuerza probatoria de documentos públicos y privados"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"

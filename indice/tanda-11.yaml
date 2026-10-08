@@ -1,0 +1,396 @@
+# Índice de conceptos de «Consulta de normas» — tanda 11 (contratos, propiedad y sucesiones)
+# Revisor: armero. Espejo: legalize-es@aca28304d. Todo precepto citado se ha leído en el espejo en esta pasada.
+# Vigencia: contraste con la API de boe.es (scripts/contraste_boe.py --solo "CC,LEC,LOE,TRLGDCU,LOPJ,LAU,LPH", 08-10-2026).
+# Distintos: LEC 22 y 685, CC 396 (errata del espejo), LPH 10 y 34 artículos de la LAU. Ninguno está citado; ninguna versión futura
+# en los artículos citados. Voces 209 a 215, 239, 240 y 253 a 255 de la lista maestra (12 voces). Ver tanda-11-notas.md.
+
+voces:
+  - voz: "Ofrecimiento de pago y consignación"
+    sinonimos: ["consignación judicial", "consignación notarial", "ofrecimiento de pago", "mora del acreedor", "mora accipiendi", "negativa a recibir el pago", "acreedor desconocido", "liberación del deudor", "consignar la renta", "consignación de la cosa debida"]
+    normas_base: ["CC"]
+    remisiones:
+      - {norma: "CC", articulo: "1176", apartado: "párrafo 1.º", tipo: "regula", nota: "Si el acreedor rehúsa sin razón el pago ofrecido, el recibo o la cancelación de la garantía, el deudor se libera consignando."}
+      - {norma: "CC", articulo: "1176", apartado: "párrafo 2.º", tipo: "regula", nota: "Basta consignar sin ofrecimiento: acreedor ausente o impedido, varios pretendientes, acreedor desconocido o título extraviado."}
+      - {norma: "CC", articulo: "1176", apartado: "párrafo 3.º", tipo: "regula", nota: "También cabe cuando el cumplimiento se hace más gravoso al deudor por causas no imputables a él."}
+      - {norma: "CC", articulo: "1177", tipo: "regula", nota: "Hay que anunciarla antes a los interesados; es ineficaz si no se ajusta estrictamente a las reglas del pago."}
+      - {norma: "CC", articulo: "1178", tipo: "regula", nota: "La hace el deudor o un tercero, a disposición del Juzgado o del Notario, según la LJV o la legislación notarial."}
+      - {norma: "CC", articulo: "1179", tipo: "regula", nota: "Los gastos de la consignación procedente son de cuenta del acreedor."}
+      - {norma: "CC", articulo: "1180", tipo: "regula", nota: "Extingue la obligación su aceptación o la declaración de bien hecha; hasta entonces el deudor puede retirarla."}
+      - {norma: "CC", articulo: "1181", tipo: "regula", nota: "Si el acreedor autoriza la retirada, pierde su preferencia sobre la cosa y quedan libres codeudores y fiadores."}
+      - {norma: "CC", articulo: "1157", tipo: "conexa", nota: "Solo hay pago con la entrega completa de la cosa o la prestación debida: un ofrecimiento parcial no libera."}
+      - {norma: "CC", articulo: "1166", tipo: "conexa", nota: "No se puede obligar al acreedor a recibir cosa distinta de la debida, aunque valga igual o más."}
+      - {norma: "CC", articulo: "1169", tipo: "conexa", nota: "Salvo pacto, el acreedor no tiene que aceptar pagos parciales; sí el de la parte líquida de la deuda."}
+      - {norma: "CC", articulo: "1171", tipo: "conexa", nota: "Lugar del pago: el pactado; si no, donde estaba la cosa determinada; en otro caso, el domicilio del deudor."}
+    no_consta_en_norma:
+      - "Mora del acreedor y traslado del riesgo y de los intereses desde el ofrecimiento rechazado: jurisprudencial, el CC no la regula en general."
+      - "Ofrecimiento sin consignación posterior: no libera ni detiene los intereses moratorios: jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Ley 15/2015, de Jurisdicción Voluntaria, arts. 98 y 99: expediente de consignación judicial (a ella remite el art. 1178 CC)."
+      - "Ley del Notariado, art. 69: consignación ante notario (a la legislación notarial remite el art. 1178 CC)."
+    afines: ["Pago: prueba, imputación y pago por tercero", "Mora del deudor e intereses moratorios", "Renta: pago, recibo y actualización", "Enervación del desahucio"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Arras y señal"
+    sinonimos: ["arras", "señal", "arras penitenciales", "arras confirmatorias", "arras penales", "contrato de arras", "devolver las arras duplicadas", "perder la señal", "desistimiento con arras", "reserva de compra"]
+    normas_base: ["CC"]
+    remisiones:
+      - {norma: "CC", articulo: "1454", tipo: "regula", nota: "Compraventa con arras o señal: se puede desistir perdiéndolas el comprador o devolviéndolas duplicadas el vendedor."}
+      - {norma: "CC", articulo: "1255", tipo: "conexa", nota: "Autonomía de la voluntad: las partes pactan qué función cumplen las arras, dentro de la ley, la moral y el orden público."}
+      - {norma: "CC", articulo: "1124", apartado: "párrafo 2.º", tipo: "conexa", nota: "Si las arras no son penitenciales, ante el incumplimiento: cumplimiento o resolución con daños e intereses."}
+      - {norma: "CC", articulo: "1152", tipo: "conexa", nota: "Arras penales: funcionan como cláusula penal y sustituyen a la indemnización salvo pacto en contrario."}
+      - {norma: "CC", articulo: "1153", tipo: "conexa", nota: "Sin pacto claro, el acreedor no acumula cumplimiento y pena, ni el deudor se libera pagando la pena."}
+      - {norma: "CC", articulo: "1154", tipo: "conexa", nota: "El juez modera la pena si la obligación se cumplió en parte o irregularmente."}
+      - {norma: "CC", articulo: "1281", apartado: "párrafo 1.º", tipo: "conexa", nota: "Si los términos son claros, se está a su sentido literal: decisivo para calificar las arras."}
+      - {norma: "CC", articulo: "1279", tipo: "conexa", nota: "Perfecto el contrato, las partes pueden compelerse a otorgar la escritura pública."}
+    no_consta_en_norma:
+      - "Las arras son confirmatorias (parte del precio) salvo pacto claro de que son penitenciales: interpretación restrictiva jurisprudencial."
+      - "Arras penales como categoría distinta de las penitenciales y las confirmatorias: construcción jurisprudencial."
+      - "Ejercicio del desistimiento del 1454 antes de que se cumpla el contrato (no tras la entrega o el pago): jurisprudencial."
+    afines: ["Cláusula penal", "Incumplimiento y facultad resolutoria (art. 1124)", "Compraventa: entrega, precio y riesgos", "Interpretación de los contratos", "Forma del contrato y elevación a escritura pública"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Saneamiento por vicios ocultos"
+    sinonimos: ["vicios ocultos", "defectos ocultos", "acción redhibitoria", "acción quanti minoris", "acción estimatoria", "rebaja del precio", "seis meses vicios ocultos", "falta de conformidad", "garantía legal", "aliud pro alio", "vicios redhibitorios"]
+    normas_base: ["CC", "TRLGDCU", "LOE"]
+    remisiones:
+      - {norma: "CC", articulo: "1461", tipo: "conexa", nota: "El vendedor está obligado a la entrega y al saneamiento de la cosa vendida."}
+      - {norma: "CC", articulo: "1474", tipo: "conexa", nota: "El saneamiento comprende la posesión legal y pacífica (evicción) y los vicios o defectos ocultos."}
+      - {norma: "CC", articulo: "1484", apartado: "1", tipo: "regula", nota: "Vicio oculto que hace la cosa impropia para su uso o lo disminuye; no los manifiestos ni los que un perito comprador debía ver."}
+      - {norma: "CC", articulo: "1484", apartado: "2", tipo: "conexa", nota: "Venta de animales: el vendedor responde de la lesión, enfermedad o conducta con origen anterior a la venta."}
+      - {norma: "CC", articulo: "1485", tipo: "regula", nota: "Responde aunque ignorase los vicios; el pacto de exclusión solo vale si el vendedor los ignoraba."}
+      - {norma: "CC", articulo: "1486", tipo: "regula", nota: "Opción: desistir con abono de gastos o rebaja proporcional del precio; si conocía el vicio y calló, además daños."}
+      - {norma: "CC", articulo: "1487", tipo: "regula", nota: "Pérdida de la cosa por el vicio: restitución del precio y gastos; con daños si el vendedor lo conocía."}
+      - {norma: "CC", articulo: "1488", tipo: "conexa", nota: "Pérdida posterior por caso fortuito o culpa del comprador: precio pagado menos el valor al perderse."}
+      - {norma: "CC", articulo: "1489", tipo: "conexa", nota: "En las ventas judiciales no hay daños y perjuicios, pero sí lo demás."}
+      - {norma: "CC", articulo: "1490", tipo: "regula", nota: "Las acciones de los arts. 1485 a 1489 se extinguen a los seis meses desde la entrega de la cosa vendida."}
+      - {norma: "CC", articulo: "1496", tipo: "conexa", nota: "Animales: acción redhibitoria en cuarenta días desde la entrega, salvo usos locales distintos."}
+      - {norma: "TRLGDCU", articulo: "116", tipo: "regula", nota: "Con consumidor: las acciones de conformidad excluyen las de saneamiento del CC; siempre cabe indemnización."}
+      - {norma: "TRLGDCU", articulo: "117", apartado: "1", tipo: "regula", nota: "Falta de conformidad a la entrega: subsanación, rebaja o resolución por simple declaración, más daños; cabe suspender el pago."}
+      - {norma: "TRLGDCU", articulo: "120", apartado: "1", tipo: "regula", nota: "Responde de lo que se manifieste en tres años desde la entrega del bien; segunda mano, pacto de al menos un año."}
+      - {norma: "TRLGDCU", articulo: "121", apartado: "1", tipo: "regula", nota: "Se presume que la falta manifestada en los dos años siguientes a la entrega ya existía."}
+      - {norma: "TRLGDCU", articulo: "124", tipo: "regula", nota: "La acción prescribe a los cinco años desde que se manifiesta la falta de conformidad."}
+      - {norma: "TRLGDCU", articulo: "6", tipo: "conexa", nota: "Producto es todo bien mueble según el art. 335 CC."}
+      - {norma: "LOE", articulo: "17", apartado: "9", tipo: "conexa", nota: "La responsabilidad de los agentes de la edificación no excluye la del vendedor por los arts. 1484 y siguientes CC."}
+    no_consta_en_norma:
+      - "El plazo de seis meses del 1490 es de caducidad, no de prescripción, y no se interrumpe: jurisprudencial."
+      - "Aliud pro alio (cosa inhábil para su fin): incumplimiento del 1124 con plazo del 1964, no saneamiento: jurisprudencial."
+      - "Que la garantía de conformidad del TRLGDCU no alcance a la compraventa de inmuebles: el texto no lo dice expresamente."
+    fuera_de_la_herramienta:
+      - "Código de Comercio, arts. 336 y 342: venta mercantil; cuatro días si llegó embalada (cantidad o calidad) y treinta días para vicios internos."
+    afines: ["Saneamiento por evicción", "Compraventa: entrega, precio y riesgos", "Incumplimiento y facultad resolutoria (art. 1124)", "Responsabilidad de los agentes: plazos de 10, 3 y 1 año", "Caducidad de la acción (como excepción)"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Contrato de obra: precio, riesgo y vicios"
+    sinonimos: ["contrato de obra", "arrendamiento de obra", "ejecución de obra", "precio alzado", "ajuste alzado", "desistimiento del comitente", "riesgo de la obra", "ruina del edificio", "acción directa del subcontratista", "derecho de retención del contratista", "vicios de la construcción", "1591 CC"]
+    normas_base: ["CC", "LOE"]
+    remisiones:
+      - {norma: "CC", articulo: "1544", tipo: "regula", nota: "Arrendamiento de obra: una parte ejecuta una obra para la otra por precio cierto."}
+      - {norma: "CC", articulo: "1588", tipo: "regula", nota: "Se puede pactar que el contratista ponga solo su trabajo o también el material."}
+      - {norma: "CC", articulo: "1589", tipo: "regula", nota: "Si pone el material, sufre la pérdida de la obra destruida antes de entregarla, salvo mora del dueño en recibirla."}
+      - {norma: "CC", articulo: "1590", tipo: "regula", nota: "Si solo pone trabajo, pierde el precio si la obra se destruye antes de entregarla, salvo mora o mala calidad avisada."}
+      - {norma: "CC", articulo: "1591", apartado: "párrafo 1.º", tipo: "regula", nota: "Ruina por vicios de construcción en diez años desde que concluyó: contratista; y arquitecto si es del suelo o la dirección."}
+      - {norma: "CC", articulo: "1591", apartado: "párrafo 2.º", tipo: "regula", nota: "Si la causa es que el contratista faltó a las condiciones del contrato, la acción dura quince años."}
+      - {norma: "CC", articulo: "1592", tipo: "regula", nota: "Obra por piezas o medida: recepción y pago por partes; la parte pagada se presume aprobada y recibida."}
+      - {norma: "CC", articulo: "1593", tipo: "regula", nota: "Ajuste alzado sobre plano: no hay aumento de precio, salvo cambio de plano con aumento de obra autorizado por el dueño."}
+      - {norma: "CC", articulo: "1594", tipo: "regula", nota: "El dueño puede desistir aunque la obra haya empezado, indemnizando gastos, trabajo y utilidad esperada."}
+      - {norma: "CC", articulo: "1595", tipo: "conexa", nota: "Obra encargada por las cualidades del constructor: se extingue por su muerte; se paga lo ejecutado útil."}
+      - {norma: "CC", articulo: "1596", tipo: "conexa", nota: "El contratista responde del trabajo de las personas que ocupa en la obra."}
+      - {norma: "CC", articulo: "1597", tipo: "regula", nota: "Acción directa de quienes ponen trabajo o materiales contra el dueño, hasta lo que este deba al contratista."}
+      - {norma: "CC", articulo: "1598", tipo: "regula", nota: "Obra a satisfacción del dueño: sin conformidad, decide el juicio pericial; si aprueba un tercero, se está a él."}
+      - {norma: "CC", articulo: "1599", tipo: "regula", nota: "Salvo pacto o costumbre, el precio se paga al entregarse la obra."}
+      - {norma: "CC", articulo: "1600", tipo: "regula", nota: "Obra en cosa mueble: el que la ejecutó puede retenerla en prenda hasta que se le pague."}
+      - {norma: "CC", articulo: "1101", tipo: "conexa", nota: "Defectos que no son ruina: indemnización por cumplimiento defectuoso, contravención del tenor de la obligación."}
+      - {norma: "CC", articulo: "1964", apartado: "2", tipo: "conexa", nota: "La acción contractual por cumplimiento defectuoso prescribe a los cinco años desde que pudo exigirse."}
+      - {norma: "LOE", articulo: "17", apartado: "1", tipo: "regula", nota: "Desde la recepción: diez años estructura, tres habitabilidad y un año (constructor) acabados; sin perjuicio del contrato."}
+      - {norma: "LOE", articulo: "17", apartado: "6", tipo: "conexa", nota: "El constructor responde de su personal, de sus subcontratistas y de los productos que adquiere o acepta."}
+      - {norma: "LOE", articulo: "18", apartado: "1", tipo: "regula", nota: "Las acciones del art. 17 prescriben a los dos años desde que se producen los daños; quedan las contractuales."}
+      - {norma: "LOE", articulo: "dt 1", tipo: "regula", nota: "La LOE solo se aplica a obras cuya licencia se solicitó desde su entrada en vigor; antes, rige el 1591 CC."}
+    no_consta_en_norma:
+      - "Ruina funcional (defectos que hacen el edificio inútil para su fin, no solo el derrumbe): concepto jurisprudencial del 1591."
+      - "El plazo de diez años del 1591 es de garantía; la acción prescribe en el plazo general desde la ruina: jurisprudencial."
+      - "Obra de reforma sin licencia de edificación ni proyecto: si entra en la LOE o solo en el CC, criterio jurisprudencial."
+    afines: ["Responsabilidad de los agentes: plazos de 10, 3 y 1 año", "Concurrencia de la LOE con la responsabilidad contractual y el art. 1591 CC", "Recepción de la obra", "Daños y perjuicios por incumplimiento contractual", "Incumplimiento y facultad resolutoria (art. 1124)"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Responsabilidad extracontractual"
+    sinonimos: ["responsabilidad aquiliana", "culpa extracontractual", "art. 1902", "daños sin contrato", "responsabilidad por culpa", "responsabilidad civil", "plazo de un año del 1902", "indemnización de daños", "responsabilidad del empresario por sus empleados", "responsabilidad de los padres", "cosas arrojadas o caídas"]
+    normas_base: ["CC", "TRLGDCU"]
+    remisiones:
+      - {norma: "CC", articulo: "1902", tipo: "regula", nota: "Quien por acción u omisión causa daño a otro, interviniendo culpa o negligencia, debe repararlo."}
+      - {norma: "CC", articulo: "1903", tipo: "regula", nota: "Por hecho ajeno: padres, tutores, curadores representativos, empresarios, centros docentes; cesa probando la diligencia."}
+      - {norma: "CC", articulo: "1904", tipo: "conexa", nota: "Quien paga por sus dependientes repite contra ellos; el centro docente, contra el profesor solo por dolo o culpa grave."}
+      - {norma: "CC", articulo: "1905", tipo: "regula", nota: "Poseedor del animal: responde aunque escape; solo le exime la fuerza mayor o la culpa del perjudicado."}
+      - {norma: "CC", articulo: "1907", tipo: "regula", nota: "Propietario del edificio: daños por su ruina total o parcial debida a falta de las reparaciones necesarias."}
+      - {norma: "CC", articulo: "1908", tipo: "regula", nota: "Propietarios: explosiones, humos nocivos, caída de árboles en sitios de tránsito y emanaciones de cloacas."}
+      - {norma: "CC", articulo: "1909", tipo: "conexa", nota: "Si el daño de los arts. 1907 y 1908 viene de defecto de construcción, el tercero repite contra arquitecto o constructor."}
+      - {norma: "CC", articulo: "1910", tipo: "regula", nota: "El cabeza de familia que habita la casa responde de las cosas que se arrojan o caen de ella."}
+      - {norma: "CC", articulo: "1968", apartado: "2.º", tipo: "regula", nota: "La acción prescribe al año desde que lo supo el agraviado."}
+      - {norma: "CC", articulo: "1969", tipo: "conexa", nota: "Sin regla especial, la prescripción se cuenta desde el día en que la acción pudo ejercitarse."}
+      - {norma: "CC", articulo: "1973", tipo: "conexa", nota: "Se interrumpe por demanda, reclamación extrajudicial o reconocimiento del deudor."}
+      - {norma: "CC", articulo: "1089", tipo: "conexa", nota: "Fuentes de las obligaciones: también los actos y omisiones en que interviene culpa o negligencia."}
+      - {norma: "CC", articulo: "1092", tipo: "conexa", nota: "La responsabilidad civil nacida de delito se rige por el Código Penal."}
+      - {norma: "CC", articulo: "1093", tipo: "conexa", nota: "La culpa no penada por la ley se rige por el capítulo II del título XVI (arts. 1902 y siguientes)."}
+      - {norma: "CC", articulo: "1104", tipo: "conexa", nota: "Medida de la diligencia: la que exige la naturaleza de la obligación y las circunstancias; si no, buen padre de familia."}
+      - {norma: "CC", articulo: "1105", tipo: "conexa", nota: "Nadie responde de lo imprevisible o, previsto, inevitable, salvo ley o pacto."}
+      - {norma: "TRLGDCU", articulo: "128", tipo: "conexa", nota: "Daños por bienes o servicios defectuosos: el régimen especial no excluye la responsabilidad extracontractual."}
+      - {norma: "TRLGDCU", articulo: "143", apartado: "1", tipo: "conexa", nota: "Productos defectuosos: la acción prescribe a los tres años, no al año del 1968."}
+    no_consta_en_norma:
+      - "Inversión de la carga de la prueba y objetivación del riesgo en actividades peligrosas: jurisprudencial."
+      - "Solidaridad impropia entre corresponsables del daño (y su efecto en la interrupción de la prescripción): jurisprudencial."
+      - "Daños continuados: el año corre desde el resultado definitivo; daños permanentes, desde que se conocen: jurisprudencial."
+      - "Daño moral indemnizable y su cuantificación: jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Código Penal, arts. 109 a 122: responsabilidad civil derivada de delito (a él remite el art. 1092 CC)."
+      - "Ley sobre responsabilidad civil y seguro en la circulación de vehículos a motor (RDLeg 8/2004) y su baremo."
+      - "Ley 50/1980, de Contrato de Seguro, art. 76: acción directa contra la aseguradora del responsable."
+    afines: ["Responsabilidad por hecho ajeno", "Daños causados por animales, edificios y cosas", "Daños entre comunidad y propietarios (filtraciones)", "Daños y perjuicios por incumplimiento contractual", "Prescripción (como excepción)", "Interrupción de la prescripción", "Fuerza mayor y caso fortuito"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Abuso de derecho y buena fe"
+    sinonimos: ["abuso del derecho", "ejercicio antisocial del derecho", "buena fe", "mala fe", "doctrina de los actos propios", "venire contra factum proprium", "retraso desleal", "buena fe procesal", "integración del contrato", "multa por mala fe procesal", "abuso del servicio público de Justicia"]
+    normas_base: ["CC", "LEC", "LOPJ", "TRLGDCU"]
+    remisiones:
+      - {norma: "CC", articulo: "7", apartado: "1", tipo: "regula", nota: "Los derechos deben ejercitarse conforme a las exigencias de la buena fe."}
+      - {norma: "CC", articulo: "7", apartado: "2", tipo: "regula", nota: "No se ampara el abuso: exceso manifiesto por intención, objeto o circunstancias, con daño a tercero; indemnización y cese."}
+      - {norma: "CC", articulo: "1258", tipo: "regula", nota: "El contrato obliga también a las consecuencias conformes a la buena fe, al uso y a la ley."}
+      - {norma: "CC", articulo: "6", apartado: "4", tipo: "conexa", nota: "Fraude de ley: el acto al amparo de una norma con resultado prohibido no impide aplicar la norma eludida."}
+      - {norma: "CC", articulo: "1255", tipo: "conexa", nota: "Autonomía de la voluntad: límite de las leyes, la moral y el orden público."}
+      - {norma: "LEC", articulo: "247", apartado: "1", tipo: "regula", nota: "Todos los intervinientes en el proceso deben ajustarse a las reglas de la buena fe."}
+      - {norma: "LEC", articulo: "247", apartado: "2", tipo: "regula", nota: "Se rechazan fundadamente las peticiones con manifiesto abuso de derecho o fraude de ley o procesal."}
+      - {norma: "LEC", articulo: "247", apartado: "3", tipo: "regula", nota: "Multa de 180 a 6.000 euros, sin pasar de un tercio de la cuantía, por mala fe procesal o abuso del servicio."}
+      - {norma: "LEC", articulo: "247", apartado: "4", tipo: "conexa", nota: "Si la conducta es imputable al profesional, traslado al colegio y, con justicia gratuita, a la Comisión."}
+      - {norma: "LOPJ", articulo: "11", apartado: "1", tipo: "regula", nota: "Buena fe en todo procedimiento; no surte efecto la prueba obtenida violentando derechos fundamentales."}
+      - {norma: "LOPJ", articulo: "11", apartado: "2", tipo: "regula", nota: "Se rechazan peticiones, incidentes y excepciones con manifiesto abuso de derecho o fraude de ley o procesal."}
+      - {norma: "TRLGDCU", articulo: "82", apartado: "1", tipo: "conexa", nota: "Cláusula abusiva: no negociada que, contra la buena fe, causa desequilibrio importante en perjuicio del consumidor."}
+    no_consta_en_norma:
+      - "Doctrina de los actos propios (nadie puede ir contra sus actos propios, claros e inequívocos): jurisprudencial, apoyada en el 7.1."
+      - "Retraso desleal en el ejercicio de un derecho, sin llegar a la prescripción: jurisprudencial y de aplicación restrictiva."
+      - "Requisitos del abuso (uso formalmente legal, daño a interés no protegido, inmoralidad o antisocialidad): jurisprudencial."
+    afines: ["Fraude de ley y actos contrarios a normas imperativas", "Interpretación de los contratos", "Costas: vencimiento, temeridad y allanamiento", "Control de oficio de cláusulas abusivas en el proceso", "Requisitos del contrato y autonomía de la voluntad"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Cómputo civil de plazos"
+    sinonimos: ["cómputo de plazos civiles", "plazo sustantivo", "plazo civil", "de fecha a fecha", "días naturales", "días inhábiles en plazos civiles", "dies a quo", "dies ad quem", "plazo de caducidad", "plazo de prescripción", "día de gracia en plazos sustantivos"]
+    normas_base: ["CC", "LEC", "LOPJ"]
+    remisiones:
+      - {norma: "CC", articulo: "5", apartado: "1", tipo: "regula", nota: "Por días: se excluye el inicial y se empieza al siguiente; meses o años, de fecha a fecha; sin día equivalente, el último del mes."}
+      - {norma: "CC", articulo: "5", apartado: "2", tipo: "regula", nota: "En el cómputo civil no se excluyen los días inhábiles."}
+      - {norma: "CC", articulo: "1130", tipo: "regula", nota: "Plazo de la obligación por días desde uno determinado: este se excluye y se empieza al siguiente."}
+      - {norma: "CC", articulo: "1969", tipo: "conexa", nota: "La prescripción corre desde el día en que la acción pudo ejercitarse, salvo regla especial."}
+      - {norma: "CC", articulo: "1005", tipo: "conexa", nota: "Ejemplo legal de plazo civil en días naturales: treinta días para aceptar o repudiar tras la interpelación notarial."}
+      - {norma: "LEC", articulo: "133", apartado: "2", tipo: "conexa", nota: "Contraste: en los plazos procesales por días se excluyen los inhábiles."}
+      - {norma: "LEC", articulo: "133", apartado: "4", tipo: "conexa", nota: "Contraste: el plazo procesal que concluye en día inhábil se prorroga al siguiente hábil."}
+      - {norma: "LEC", articulo: "135", apartado: "5", tipo: "regula", nota: "Escrito sujeto a plazo procesal o sustantivo: se puede presentar hasta las quince horas del día hábil siguiente."}
+      - {norma: "LOPJ", articulo: "185", apartado: "1", tipo: "conexa", nota: "Los plazos procesales se computan según el CC, pero en los de días se excluyen los inhábiles."}
+      - {norma: "LOPJ", articulo: "185", apartado: "2", tipo: "conexa", nota: "Contraste: el plazo procesal cuyo último día es inhábil se prorroga al primer hábil siguiente."}
+    no_consta_en_norma:
+      - "Si el plazo civil que vence en día inhábil se prorroga al siguiente hábil: el art. 5 CC no lo dice; criterio jurisprudencial."
+      - "Agosto es hábil para los plazos sustantivos (prescripción, caducidad) aunque se ejerzan con demanda: jurisprudencial."
+      - "Plazos señalados por horas: de momento a momento; no consta en el CC."
+    afines: ["Plazos procesales: cómputo, días inhábiles y día de gracia", "Caducidad de la acción (como excepción)", "Prescripción (como excepción)", "Interrupción de la prescripción", "Impugnación de acuerdos (plazo del art. 18)"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Acción reivindicatoria y declarativa de dominio"
+    sinonimos: ["acción reivindicatoria", "reivindicación", "acción declarativa de dominio", "acción declarativa de propiedad", "recuperar la propiedad", "título de dominio", "identificación de la finca", "poseedor sin título", "prescripción de la acción reivindicatoria", "acción real", "reivindicar un mueble"]
+    normas_base: ["CC", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "348", apartado: "párrafo 2.º", tipo: "regula", nota: "El propietario tiene acción contra el tenedor y el poseedor de la cosa o del animal para reivindicarlo."}
+      - {norma: "CC", articulo: "348", apartado: "párrafo 1.º", tipo: "conexa", nota: "Propiedad: gozar y disponer de la cosa sin más limitaciones que las legales."}
+      - {norma: "CC", articulo: "609", tipo: "conexa", nota: "Modos de adquirir: ocupación, ley, donación, sucesión, contrato con tradición y prescripción. Es lo que se prueba."}
+      - {norma: "CC", articulo: "1462", tipo: "conexa", nota: "Tradición: poner la cosa en poder del comprador; la escritura pública equivale a la entrega salvo lo contrario."}
+      - {norma: "CC", articulo: "1473", tipo: "conexa", nota: "Doble venta: inmuebles, al primero que inscribe; sin inscripción, primer poseedor de buena fe o título más antiguo."}
+      - {norma: "CC", articulo: "448", tipo: "regula", nota: "El poseedor en concepto de dueño se presume con justo título y no se le puede obligar a exhibirlo."}
+      - {norma: "CC", articulo: "464", tipo: "regula", nota: "Muebles: la posesión de buena fe equivale al título; quien perdió la cosa o fue privado ilegalmente puede reivindicarla."}
+      - {norma: "CC", articulo: "1962", tipo: "regula", nota: "Acciones reales sobre muebles: seis años desde perdida la posesión, salvo usucapión anterior o hurto y robo."}
+      - {norma: "CC", articulo: "1963", tipo: "regula", nota: "Acciones reales sobre inmuebles: treinta años, sin perjuicio de la usucapión ganada por otro."}
+      - {norma: "CC", articulo: "1949", tipo: "conexa", nota: "Contra título inscrito no hay prescripción ordinaria en perjuicio de tercero sino por otro título inscrito."}
+      - {norma: "LEC", articulo: "250", apartado: "1.7.º", tipo: "conexa", nota: "Verbal para el titular de derecho real inscrito frente a quien se opone sin título inscrito."}
+      - {norma: "LEC", articulo: "251", apartado: "3.ª", tipo: "regula", nota: "Cuantía: valor del bien en las demandas sobre el disfrute, la validez o la existencia y extensión del dominio."}
+    no_consta_en_norma:
+      - "Requisitos de la reivindicatoria: título de dominio, identificación de la cosa y posesión del demandado: jurisprudencial."
+      - "Acción declarativa de dominio (sin pedir la entrega de la cosa): construcción jurisprudencial, solo exige título e identificación."
+      - "Si la reivindicatoria prescribe sola a los treinta años o solo se pierde cuando otro usucape: discutido; el 1963 salva la usucapión."
+    fuera_de_la_herramienta:
+      - "Ley Hipotecaria, arts. 34, 38 y 41: fe pública registral, presunción de titularidad y acción real registral."
+    afines: ["Usucapión", "Posesión: clases, adquisición y efectos", "Liquidación del estado posesorio: frutos, gastos y mejoras", "Tercería de dominio", "Tutela sumaria de la posesión", "Desahucio por precario", "Cuantía del proceso y su impugnación"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Copropiedad y acción de división de cosa común"
+    sinonimos: ["comunidad de bienes", "proindiviso", "condominio", "copropiedad", "acción de división", "actio communi dividundo", "extinción de condominio", "venta en pública subasta de la cosa común", "cosa indivisible", "pacto de indivisión", "administración de la cosa común", "uso de la cosa común"]
+    normas_base: ["CC", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "392", tipo: "regula", nota: "Hay comunidad cuando la propiedad de una cosa o derecho es pro indiviso de varios; a falta de pacto, rige este título."}
+      - {norma: "CC", articulo: "393", tipo: "regula", nota: "Beneficios y cargas en proporción a las cuotas, que se presumen iguales mientras no se pruebe lo contrario."}
+      - {norma: "CC", articulo: "394", tipo: "regula", nota: "Cada partícipe usa la cosa conforme a su destino, sin perjudicar a la comunidad ni impedir el uso de los demás."}
+      - {norma: "CC", articulo: "395", tipo: "regula", nota: "Todos deben contribuir a los gastos de conservación; solo se exime quien renuncia a su parte."}
+      - {norma: "CC", articulo: "397", tipo: "regula", nota: "Ninguno puede hacer alteraciones en la cosa común sin consentimiento de los demás, aunque fueran ventajosas."}
+      - {norma: "CC", articulo: "398", tipo: "regula", nota: "Administración por mayoría de intereses; sin mayoría o con acuerdo gravemente perjudicial, provee el juez."}
+      - {norma: "CC", articulo: "399", tipo: "regula", nota: "Cada condueño puede enajenar o hipotecar su parte, con efecto limitado a lo que se le adjudique al dividir."}
+      - {norma: "CC", articulo: "400", tipo: "regula", nota: "Nadie está obligado a permanecer en comunidad; pacto de indivisión de hasta diez años, prorrogable."}
+      - {norma: "CC", articulo: "401", tipo: "regula", nota: "No cabe dividir si la cosa queda inservible para su uso; un edificio puede dividirse en pisos o locales."}
+      - {norma: "CC", articulo: "402", tipo: "conexa", nota: "La división la hacen los interesados o árbitros o amigables componedores, con lotes proporcionales."}
+      - {norma: "CC", articulo: "403", tipo: "conexa", nota: "Acreedores y cesionarios de los partícipes pueden concurrir y oponerse; la división hecha solo se impugna por fraude u oposición."}
+      - {norma: "CC", articulo: "404", tipo: "regula", nota: "Cosa esencialmente indivisible: adjudicación a uno que indemniza a los demás o, sin acuerdo, venta y reparto del precio."}
+      - {norma: "CC", articulo: "405", tipo: "conexa", nota: "La división no perjudica a tercero: subsisten hipotecas, servidumbres y derechos personales contra la comunidad."}
+      - {norma: "CC", articulo: "406", tipo: "regula", nota: "A la división se aplican las reglas de la partición de la herencia."}
+      - {norma: "CC", articulo: "1062", tipo: "conexa", nota: "Por remisión del 406: basta que uno pida la venta en pública subasta con licitadores extraños."}
+      - {norma: "CC", articulo: "1965", tipo: "regula", nota: "No prescribe entre condueños la acción para pedir la división de la cosa común."}
+      - {norma: "CC", articulo: "1522", tipo: "conexa", nota: "Retracto de comuneros si se vende a un extraño la parte de uno o de todos los demás."}
+      - {norma: "LEC", articulo: "250", apartado: "1.16.º", tipo: "regula", nota: "La acción de división de cosa común se tramita por el juicio verbal, sea cual sea la cuantía."}
+      - {norma: "LEC", articulo: "251", apartado: "3.ª", tipo: "conexa", nota: "Cuantía de la división de la cosa común: valor del bien (regla 3.ª, 6.º)."}
+      - {norma: "LEC", articulo: "437", apartado: "4.4.ª", tipo: "conexa", nota: "En separación, divorcio o nulidad cualquiera de los cónyuges puede acumular la división de bienes en comunidad ordinaria."}
+    no_consta_en_norma:
+      - "Indivisibilidad económica (la cosa desmerece mucho al dividirse) equiparada a la material: jurisprudencial."
+      - "Comunero que usa en exclusiva la cosa común: debe compensar a los demás desde que se le reclama: jurisprudencial."
+      - "Subasta de la cosa común en ejecución de sentencia, con licitadores extraños si alguno lo pide: práctica jurisprudencial."
+    afines: ["Retracto legal de comuneros y colindantes", "Partición de la herencia y su impugnación", "División judicial de la herencia", "Ámbito del juicio verbal por materia y cuantía", "Sociedad civil y comunidad con actividad", "Disolución y liquidación de la sociedad de gananciales"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Legítimas: cuantía y cálculo"
+    sinonimos: ["legítima", "herederos forzosos", "legitimarios", "legítima estricta", "tercio de mejora", "tercio de libre disposición", "cálculo de la legítima", "relictum y donatum", "complemento de legítima", "suplemento de legítima", "reducción de disposiciones inoficiosas", "cuota viudal", "usufructo del viudo"]
+    normas_base: ["CC"]
+    remisiones:
+      - {norma: "CC", articulo: "806", tipo: "regula", nota: "Legítima: porción de bienes que el testador no puede disponer porque la ley la reserva a los herederos forzosos."}
+      - {norma: "CC", articulo: "807", tipo: "regula", nota: "Herederos forzosos: descendientes; a falta de ellos, ascendientes; y el viudo en la forma que fija el Código."}
+      - {norma: "CC", articulo: "808", tipo: "regula", nota: "Hijos: dos tercios (uno puede ser mejora) y un tercio libre; legítima estricta a favor del hijo con discapacidad."}
+      - {norma: "CC", articulo: "809", tipo: "regula", nota: "Ascendientes: la mitad de la herencia; un tercio si concurren con el viudo del causante."}
+      - {norma: "CC", articulo: "810", tipo: "conexa", nota: "Reparto de la legítima de los ascendientes entre padres y entre líneas."}
+      - {norma: "CC", articulo: "813", tipo: "regula", nota: "No se priva de la legítima sino por causa legal ni se grava, salvo usufructo viudal y arts. 782 y 808."}
+      - {norma: "CC", articulo: "815", tipo: "regula", nota: "El legitimario que recibió menos de su legítima puede pedir el complemento."}
+      - {norma: "CC", articulo: "816", tipo: "regula", nota: "Es nula la renuncia o transacción sobre la legítima futura; lo recibido por ella se colaciona."}
+      - {norma: "CC", articulo: "817", tipo: "regula", nota: "Las disposiciones testamentarias que mengüen la legítima se reducen a petición del legitimario."}
+      - {norma: "CC", articulo: "818", tipo: "regula", nota: "Base: valor de los bienes a la muerte menos deudas y cargas (no las testamentarias), más las donaciones colacionables."}
+      - {norma: "CC", articulo: "819", tipo: "regula", nota: "Imputación: donaciones a hijos sin carácter de mejora, a su legítima; a extraños, al tercio libre."}
+      - {norma: "CC", articulo: "820", tipo: "regula", nota: "Reducción: primero los legados, a prorrata; las donaciones se respetan mientras se cubra la legítima."}
+      - {norma: "CC", articulo: "821", tipo: "conexa", nota: "Legado reducible de finca indivisible: para el legatario si la reducción no absorbe la mitad del valor; si no, a los forzosos."}
+      - {norma: "CC", articulo: "822", tipo: "conexa", nota: "Habitación sobre la vivienda a favor del legitimario con discapacidad conviviente: no computa para las legítimas."}
+      - {norma: "CC", articulo: "834", tipo: "regula", nota: "Viudo no separado legalmente o de hecho que concurre con descendientes: usufructo del tercio de mejora."}
+      - {norma: "CC", articulo: "837", tipo: "regula", nota: "Viudo que concurre con ascendientes: usufructo de la mitad de la herencia."}
+      - {norma: "CC", articulo: "838", tipo: "regula", nota: "Viudo sin descendientes ni ascendientes: usufructo de dos tercios de la herencia."}
+      - {norma: "CC", articulo: "839", tipo: "conexa", nota: "Conmutación del usufructo viudal por renta, productos de bienes o capital, de mutuo acuerdo o por mandato judicial."}
+      - {norma: "CC", articulo: "840", tipo: "conexa", nota: "Viudo con hijos solo del causante: puede exigir capital o lote de bienes, a elección de los hijos."}
+      - {norma: "CC", articulo: "636", tipo: "conexa", nota: "Nadie puede dar por donación más de lo que puede dar por testamento; el exceso es inoficioso."}
+      - {norma: "CC", articulo: "654", tipo: "conexa", nota: "Donaciones inoficiosas: se reducen por el valor líquido a la muerte; surten efecto en vida y el donatario hace suyos los frutos."}
+      - {norma: "CC", articulo: "655", tipo: "conexa", nota: "Solo los legitimarios y sus causahabientes piden la reducción; no pueden renunciarla en vida del donante."}
+      - {norma: "CC", articulo: "656", tipo: "conexa", nota: "Si no caben todas las donaciones, se reducen primero las de fecha más reciente."}
+      - {norma: "CC", articulo: "1035", tipo: "conexa", nota: "El legitimario trae a la masa lo recibido a título lucrativo para computar legítimas y hacer la partición."}
+      - {norma: "CC", articulo: "1045", tipo: "conexa", nota: "Se colaciona el valor de lo donado al tiempo de evaluar los bienes hereditarios, no la cosa misma."}
+      - {norma: "CC", articulo: "1056", apartado: "párrafo 2.º", tipo: "conexa", nota: "Para conservar una empresa o sociedad, el testador puede ordenar pagar la legítima en metálico, aplazable hasta cinco años."}
+    no_consta_en_norma:
+      - "Valor de las donaciones computables para fijar la legítima (a la muerte o actualizado a la partición): jurisprudencial."
+      - "Plazo de la acción de complemento y de la de reducción de donaciones inoficiosas: no consta en norma; criterio jurisprudencial."
+      - "Legítima como pars bonorum (se paga con bienes de la herencia salvo norma que permita el metálico): jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Reglamento (UE) 650/2012: la ley de la residencia habitual o la nacional elegida decide si hay legítimas (extranjeros en Benidorm)."
+      - "Derechos civiles forales o especiales con legítimas propias (Aragón, Cataluña, Navarra, Baleares, Galicia, País Vasco)."
+    afines: ["Preterición y desheredación", "Reducción de donaciones inoficiosas", "Colación", "Derechos del cónyuge viudo", "Partición de la herencia y su impugnación", "Ley aplicable a la sucesión de extranjeros"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Partición de la herencia y su impugnación"
+    sinonimos: ["partición de la herencia", "partición hereditaria", "cuaderno particional", "contador-partidor", "rescisión de la partición por lesión", "lesión en más de la cuarta parte", "nulidad de la partición", "adición de la partición", "complemento de la partición", "partición hecha por el testador", "heredero preterido en la partición", "retracto de coherederos"]
+    normas_base: ["CC", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "1051", tipo: "regula", nota: "Nadie está obligado a seguir en la indivisión, salvo prohibición del testador, que cede ante las causas de extinción de la sociedad."}
+      - {norma: "CC", articulo: "1052", tipo: "regula", nota: "Cualquier coheredero con libre disposición puede pedir la partición en todo momento; reglas para ausentes y apoyos."}
+      - {norma: "CC", articulo: "1056", apartado: "párrafo 1.º", tipo: "regula", nota: "Se pasa por la partición hecha por el testador en cuanto no perjudique la legítima."}
+      - {norma: "CC", articulo: "1057", tipo: "regula", nota: "Contador-partidor testamentario; si no lo hay, dativo nombrado por LAJ o Notario a instancia del 50 % del haber."}
+      - {norma: "CC", articulo: "1058", tipo: "regula", nota: "Herederos mayores y con libre administración: reparten como tengan por conveniente."}
+      - {norma: "CC", articulo: "1059", tipo: "regula", nota: "Si no se entienden, queda a salvo la división judicial conforme a la LEC."}
+      - {norma: "CC", articulo: "1060", tipo: "conexa", nota: "Menores y personas con apoyos: aprobación judicial de la partición en los casos que indica."}
+      - {norma: "CC", articulo: "1061", tipo: "regula", nota: "Se guarda la posible igualdad, con lotes o cosas de la misma naturaleza, calidad o especie."}
+      - {norma: "CC", articulo: "1062", tipo: "regula", nota: "Cosa indivisible: a uno con abono en dinero; pero basta que uno pida la subasta con licitadores extraños."}
+      - {norma: "CC", articulo: "1063", tipo: "conexa", nota: "Abonos recíprocos: frutos y rentas percibidos, gastos útiles y necesarios y daños por malicia o negligencia."}
+      - {norma: "CC", articulo: "1067", tipo: "conexa", nota: "Retracto de coherederos: si uno vende su cuota a un extraño antes de partir, un mes desde que se les hace saber."}
+      - {norma: "CC", articulo: "1068", tipo: "regula", nota: "La partición legalmente hecha da a cada heredero la propiedad exclusiva de lo adjudicado."}
+      - {norma: "CC", articulo: "1069", tipo: "conexa", nota: "Tras la partición, los coherederos se deben recíprocamente evicción y saneamiento."}
+      - {norma: "CC", articulo: "1073", tipo: "regula", nota: "La partición se rescinde por las mismas causas que las obligaciones."}
+      - {norma: "CC", articulo: "1074", tipo: "regula", nota: "Rescisión por lesión en más de la cuarta parte, según el valor de las cosas al adjudicarse."}
+      - {norma: "CC", articulo: "1075", tipo: "regula", nota: "La partición del testador solo se impugna por lesión si perjudica la legítima o consta otra voluntad suya."}
+      - {norma: "CC", articulo: "1076", tipo: "regula", nota: "La acción rescisoria por lesión dura cuatro años desde que se hizo la partición."}
+      - {norma: "CC", articulo: "1077", tipo: "regula", nota: "El demandado elige indemnizar (en dinero o en la cosa) o consentir nueva partición, que no alcanza a los no afectados."}
+      - {norma: "CC", articulo: "1078", tipo: "conexa", nota: "No rescinde por lesión quien enajenó el todo o parte considerable de los inmuebles adjudicados."}
+      - {norma: "CC", articulo: "1079", tipo: "regula", nota: "La omisión de bienes no rescinde la partición: se completa o adiciona con lo omitido."}
+      - {norma: "CC", articulo: "1080", tipo: "regula", nota: "Partición con preterición de un heredero: no se rescinde salvo mala fe o dolo; se le paga su parte proporcional."}
+      - {norma: "CC", articulo: "1081", tipo: "regula", nota: "Es nula la partición hecha con quien se creyó heredero sin serlo."}
+      - {norma: "CC", articulo: "1082", tipo: "conexa", nota: "Los acreedores reconocidos pueden oponerse a la partición hasta que se les pague o afiance."}
+      - {norma: "CC", articulo: "1083", tipo: "conexa", nota: "Los acreedores de un coheredero pueden intervenir a su costa para evitar fraude o perjuicio."}
+      - {norma: "CC", articulo: "1965", tipo: "regula", nota: "No prescribe entre coherederos la acción para pedir la partición de la herencia."}
+      - {norma: "LEC", articulo: "782", apartado: "1", tipo: "conexa", nota: "División judicial: la pide cualquier coheredero o legatario de parte alícuota si no corresponde a contador, LAJ o Notario."}
+    no_consta_en_norma:
+      - "Nulidad de la partición (falta de consentimiento de un heredero, contador que excede sus facultades): régimen jurisprudencial."
+      - "Plazo de la acción para impugnar la partición por vicios del consentimiento: se aplica el 1301 por la remisión del 1073: jurisprudencial."
+      - "La partición del contador-partidor no necesita aprobación de los herederos y vale mientras no se impugne: jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Ley del Notariado, art. 66: nombramiento notarial de contador-partidor dativo y aprobación de la partición (art. 1057 CC)."
+    afines: ["División judicial de la herencia", "Albacea y contador-partidor", "Colación", "Legítimas: cuantía y cálculo", "Copropiedad y acción de división de cosa común", "Responsabilidad del heredero por deudas y beneficio de inventario"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Aceptación y repudiación de la herencia"
+    sinonimos: ["aceptación de la herencia", "repudiación de la herencia", "renuncia a la herencia", "aceptación tácita", "aceptación pura y simple", "interpelación notarial", "interpellatio in iure", "plazo para aceptar", "ius delationis", "derecho de transmisión", "repudiación en perjuicio de acreedores", "renuncia traslativa"]
+    normas_base: ["CC"]
+    remisiones:
+      - {norma: "CC", articulo: "988", tipo: "regula", nota: "La aceptación y la repudiación son actos enteramente voluntarios y libres."}
+      - {norma: "CC", articulo: "989", tipo: "regula", nota: "Sus efectos se retrotraen siempre al momento de la muerte del causante."}
+      - {norma: "CC", articulo: "990", tipo: "regula", nota: "No cabe aceptar ni repudiar en parte, a plazo ni bajo condición."}
+      - {norma: "CC", articulo: "991", tipo: "regula", nota: "Hay que estar cierto de la muerte del causante y del propio derecho a la herencia."}
+      - {norma: "CC", articulo: "992", tipo: "conexa", nota: "Pueden aceptar o repudiar quienes tienen la libre disposición de sus bienes."}
+      - {norma: "CC", articulo: "995", tipo: "conexa", nota: "Aceptada sin beneficio de inventario por un casado sin consentimiento del otro: no responden los bienes gananciales."}
+      - {norma: "CC", articulo: "996", tipo: "conexa", nota: "La persona con discapacidad acepta por sí, salvo lo que resulte de sus medidas de apoyo."}
+      - {norma: "CC", articulo: "997", tipo: "regula", nota: "Son irrevocables; solo se impugnan por vicio del consentimiento o si aparece un testamento desconocido."}
+      - {norma: "CC", articulo: "998", tipo: "regula", nota: "Se acepta pura y simplemente o a beneficio de inventario."}
+      - {norma: "CC", articulo: "999", tipo: "regula", nota: "Expresa (documento público o privado) o tácita; los actos de mera conservación o administración no son aceptación."}
+      - {norma: "CC", articulo: "1000", tipo: "regula", nota: "Se tiene por aceptada al vender, donar o ceder el derecho, o al renunciar a favor de coherederos concretos."}
+      - {norma: "CC", articulo: "1001", tipo: "regula", nota: "Repudiación en perjuicio de sus acreedores: el juez puede autorizarles a aceptar, solo hasta cubrir sus créditos."}
+      - {norma: "CC", articulo: "1002", tipo: "regula", nota: "Quien sustrae u oculta bienes de la herencia pierde la facultad de repudiar y queda heredero puro y simple."}
+      - {norma: "CC", articulo: "1003", tipo: "regula", nota: "La aceptación pura y simple hace responder de las cargas con los bienes de la herencia y con los propios."}
+      - {norma: "CC", articulo: "1004", tipo: "regula", nota: "Hasta nueve días después de la muerte no se puede accionar contra el heredero para que acepte o repudie."}
+      - {norma: "CC", articulo: "1005", tipo: "regula", nota: "Interpelación notarial: treinta días naturales; si calla, se entiende aceptada pura y simplemente."}
+      - {norma: "CC", articulo: "1006", tipo: "regula", nota: "Si el heredero muere sin aceptar ni repudiar, pasa a sus herederos el mismo derecho que él tenía."}
+      - {norma: "CC", articulo: "1007", tipo: "regula", nota: "Cada coheredero acepta o repudia por sí, y elige por sí entre aceptación pura o a beneficio de inventario."}
+      - {norma: "CC", articulo: "1008", tipo: "regula", nota: "La repudiación debe hacerse ante Notario en instrumento público."}
+      - {norma: "CC", articulo: "1009", tipo: "conexa", nota: "Quien repudia como heredero testamentario repudia también como intestado; al revés, no si ignoraba el testamento."}
+      - {norma: "CC", articulo: "1010", tipo: "conexa", nota: "Se puede aceptar a beneficio de inventario aunque el testador lo prohíba, o pedir inventario para deliberar."}
+      - {norma: "CC", articulo: "1019", tipo: "conexa", nota: "Tras deliberar, treinta días para manifestarse ante Notario; si calla, aceptación pura y simple."}
+      - {norma: "CC", articulo: "1280", apartado: "4.º", tipo: "conexa", nota: "Deben constar en documento público la cesión, repudiación y renuncia de derechos hereditarios."}
+    no_consta_en_norma:
+      - "Actos concretos que implican aceptación tácita (cobrar créditos, pleitear como heredero, liquidar el impuesto): casuística jurisprudencial."
+      - "En el derecho de transmisión del 1006 el transmisario hereda directamente del primer causante: jurisprudencial."
+      - "Plazo de la acción de petición de herencia: no consta en norma específica; jurisprudencial."
+    afines: ["Responsabilidad del heredero por deudas y beneficio de inventario", "Herencia yacente y comunidades sin personalidad como parte", "Partición de la herencia y su impugnación", "Acción subrogatoria y rescisión por fraude de acreedores", "Vicios del consentimiento: error, dolo e intimidación"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"

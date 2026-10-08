@@ -1,0 +1,370 @@
+# Índice de conceptos de «Consulta de normas» — tanda 5 (Juicio verbal, desahucios y procesos sumarios)
+# Revisor: armero. Espejo: legalize-es@aca28304d. Todo precepto citado se ha leído en el espejo en esta pasada.
+# Vigencia: contraste con la API de boe.es (scripts/contraste_boe.py, 08-10-2026) y lectura de la versión vigente de los
+# artículos afectados. Las voces que citan LEC 22, LEC 685 o la LAU van «provisional» (ver tanda-05-notas.md).
+# AVISO: RDL 29/2026 (vigor 08-10-2026) y RDL 28/2026 (vigor 15-11-2026) no están convalidados a esta fecha.
+
+voces:
+  - voz: "Desahucio por falta de pago"
+    sinonimos: ["desahucio por impago", "juicio de desahucio", "impago de alquiler", "desahucio de vivienda", "desahucio de local", "reclamación de rentas"]
+    normas_base: ["LEC", "LAU", "CC", "LO 1/2025"]
+    remisiones:
+      - {norma: "LEC", articulo: "250", apartado: "1.1.º", tipo: "regula", nota: "Juicio verbal, cualquiera que sea la cuantía: impago de rentas y recuperación de la finca arrendada."}
+      - {norma: "LEC", articulo: "249", apartado: "1.6.º", tipo: "conexa", nota: "Arrendamientos van al ordinario, salvo rentas, desahucio por impago o expiración, o cuantía valorable."}
+      - {norma: "LEC", articulo: "52", apartado: "1.7.º", tipo: "regula", nota: "Fuero imperativo: tribunal del lugar de la finca (art. 54.1)."}
+      - {norma: "LO 1/2025", articulo: "5", apartado: "2", tipo: "conexa", nota: "El desahucio no está entre las materias exceptuadas: rige el MASC previo como requisito de procedibilidad."}
+      - {norma: "LEC", articulo: "437", apartado: "3", tipo: "regula", nota: "Compromiso de condonar deuda y costas si desaloja en el plazo fijado (mínimo quince días); puede pedirse ya el lanzamiento."}
+      - {norma: "LEC", articulo: "437", apartado: "4.3.ª", tipo: "regula", nota: "Acumulación de rentas vencidas sin límite de cuantía y de la acción contra el fiador o avalista solidario requerido."}
+      - {norma: "LEC", articulo: "439", apartado: "3", tipo: "regula", nota: "Inadmisión si la demanda no indica las circunstancias que permiten o no enervar el desahucio."}
+      - {norma: "LEC", articulo: "439", apartado: "6", tipo: "regula", nota: "Si es vivienda: decir si es habitual del ocupante y si el actor es gran tenedor (certificación registral si lo niega)."}
+      - {norma: "LEC", articulo: "155", apartado: "3", tipo: "regula", nota: "Sin domicilio pactado en el contrato, el de la vivienda o local arrendado vale a todos los efectos."}
+      - {norma: "LEC", articulo: "164", apartado: "párrafo 3.º", tipo: "regula", nota: "Arrendatario no hallado en los domicilios del 155.3 ni otro comunicado: edictos sin más trámites."}
+      - {norma: "LEC", articulo: "438", apartado: "5", tipo: "regula", nota: "Requerimiento del LAJ: diez días para desalojar, pagar, enervar u oponerse; fija vista y lanzamiento."}
+      - {norma: "LEC", articulo: "438", apartado: "5, párrafo 5.º", tipo: "regula", nota: "Si no atiende el requerimiento ni se opone: decreto que termina el juicio y lanzamiento en la fecha fijada."}
+      - {norma: "LEC", articulo: "438", apartado: "5, párrafo 7.º", tipo: "regula", nota: "El decreto impone las costas e incluye las rentas que se devenguen hasta la entrega de la posesión."}
+      - {norma: "LEC", articulo: "438", apartado: "6", tipo: "regula", nota: "Si no comparece a la vista, desahucio sin más trámites; lanzamiento antes de treinta días desde la vista."}
+      - {norma: "LEC", articulo: "441", apartado: "5", tipo: "regula", nota: "Vivienda habitual: información y aviso de oficio a servicios sociales; posible suspensión por vulnerabilidad."}
+      - {norma: "LEC", articulo: "444", apartado: "1", tipo: "regula", nota: "Oposición limitada a alegar y probar el pago o la procedencia de la enervación."}
+      - {norma: "LEC", articulo: "22", apartado: "4", tipo: "regula", nota: "Enervación por decreto; no cabe si ya se enervó antes o hubo requerimiento fehaciente 30 días antes de demandar."}
+      - {norma: "LEC", articulo: "22", apartado: "5", tipo: "regula", nota: "Enervada la acción, costas al arrendatario salvo que no se cobrara por causa imputable al arrendador."}
+      - {norma: "LEC", articulo: "22", tipo: "conexa", nota: "Desde 08-10-2026, nuevo 22.6 (RDL 29/2026), aún no en el espejo: enervación a cargo de la Administración si hay vulnerabilidad."}
+      - {norma: "LEC", articulo: "447", apartado: "1", tipo: "regula", nota: "Sentencia en cinco días; tras allanamiento del 437.3, lanzamiento subsidiario sin más trámites."}
+      - {norma: "LEC", articulo: "447", apartado: "2", tipo: "regula", nota: "Sin cosa juzgada sobre el desahucio; sí la tienen los pronunciamientos sobre rentas y frente al fiador."}
+      - {norma: "LEC", articulo: "449", apartado: "1", tipo: "regula", nota: "Para apelar o recurrir en casación, el demandado acredita tener pagadas las rentas vencidas y las adelantadas."}
+      - {norma: "LEC", articulo: "449", apartado: "2", tipo: "regula", nota: "Recurso desierto si deja de pagar durante su tramitación; puede adelantar o consignar varios periodos."}
+      - {norma: "LEC", articulo: "549", apartado: "3", tipo: "regula", nota: "La solicitud de ejecución hecha en la demanda basta para el lanzamiento en el día y hora señalados."}
+      - {norma: "LEC", articulo: "549", apartado: "4", tipo: "regula", nota: "Sin plazo de espera de veinte días; si es vivienda habitual, antes del lanzamiento, trámite del 441.5 a 7."}
+      - {norma: "LEC", articulo: "251", apartado: "9.ª", tipo: "conexa", nota: "Juicios sobre arrendamientos: cuantía de una anualidad de renta, salvo que se reclamen rentas."}
+      - {norma: "LEC", articulo: "252", apartado: "2.ª", tipo: "conexa", nota: "Desahucio acumulado a reclamación de rentas: la cuantía es la de la acción de mayor valor."}
+      - {norma: "LEC", articulo: "21", apartado: "3", tipo: "conexa", nota: "Allanamiento por el compromiso del 437.3: si no desaloja en plazo, lanzamiento sin más trámite ni notificación."}
+      - {norma: "LAU", articulo: "27", apartado: "2.a)", tipo: "regula", nota: "Resolución de pleno derecho por falta de pago de la renta o de cantidades asumidas por el arrendatario."}
+      - {norma: "LAU", articulo: "27", apartado: "4", tipo: "conexa", nota: "Arrendamiento inscrito con pacto resolutorio: resuelve el requerimiento judicial o notarial no contestado en diez días."}
+      - {norma: "CC", articulo: "1555", apartado: "1.º", tipo: "conexa", nota: "Obligación del arrendatario de pagar el precio en los términos convenidos."}
+      - {norma: "CC", articulo: "1569", apartado: "2.ª", tipo: "conexa", nota: "Falta de pago del precio como causa de desahucio en el régimen del Código Civil."}
+    no_consta_en_norma:
+      - "Qué «cantidades debidas» o «asimiladas» (suministros, IBI, comunidad) permiten el desahucio: la LEC no las enumera."
+      - "Medio válido del requerimiento fehaciente de 30 días que impide enervar (burofax, notario, correo electrónico): el 22.4 no lo precisa."
+    fuera_de_la_herramienta:
+      - "RDL 29/2026, art. 2 (pendiente de convalidación): suspensión del proceso si el demandado es vulnerable y sin alternativa habitacional, hasta el 31-12-2030."
+      - "RDL 29/2026, disp. trans. 2.ª: aplica el art. 2 y el nuevo 22.6 LEC a las ejecuciones en curso sin lanzamiento practicado."
+    afines: ["Enervación del desahucio", "Vulnerabilidad y gran tenedor en la demanda", "Desahucio por expiración del plazo", "Lanzamiento", "Resolución del contrato por incumplimiento"]
+    # VIGENCIA: LEC 22 cambia el 08-10-2026 (nuevo 22.6; 22.1 a 22.5 idénticos) y la LAU cambia en bloque (27.2.a y 27.4 idénticos; cambia el 27.2.f). Provisional hasta que el espejo traiga el RDL 29/2026.
+    estado: "provisional"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Desahucio por expiración del plazo"
+    sinonimos: ["desahucio por fin de contrato", "expiración del término", "extinción del plazo contractual", "fin del alquiler de temporada", "no renovación del contrato", "desahucio por vencimiento"]
+    normas_base: ["LEC", "LAU", "CC"]
+    remisiones:
+      - {norma: "LEC", articulo: "250", apartado: "1.1.º", tipo: "regula", nota: "Juicio verbal: recuperar la finca arrendada por expiración del plazo fijado contractual o legalmente."}
+      - {norma: "LEC", articulo: "52", apartado: "1.7.º", tipo: "regula", nota: "Fuero imperativo: tribunal del lugar de la finca (art. 54.1)."}
+      - {norma: "LEC", articulo: "437", apartado: "3", tipo: "regula", nota: "Compromiso de condonar deuda y costas condicionado al desalojo voluntario: cabe también por expiración."}
+      - {norma: "LEC", articulo: "437", apartado: "4.3.ª", tipo: "regula", nota: "Acumulación de rentas vencidas y de la acción contra el fiador o avalista solidario requerido."}
+      - {norma: "LEC", articulo: "439", apartado: "6", tipo: "regula", nota: "Si es vivienda: decir si es habitual del ocupante y si el actor es gran tenedor."}
+      - {norma: "LEC", articulo: "441", apartado: "5", tipo: "regula", nota: "Vivienda habitual del demandado: aviso a servicios sociales y posible suspensión por vulnerabilidad."}
+      - {norma: "LEC", articulo: "438", apartado: "6", tipo: "regula", nota: "En todo desahucio: si no comparece, desahucio sin más trámites; fecha de lanzamiento en la resolución."}
+      - {norma: "LEC", articulo: "164", apartado: "párrafo 3.º", tipo: "regula", nota: "Arrendatario no hallado en los domicilios del 155.3 ni otro comunicado: edictos sin más trámites."}
+      - {norma: "LEC", articulo: "447", apartado: "2", tipo: "regula", nota: "Sin cosa juzgada sobre el desahucio; sí la tienen los pronunciamientos sobre rentas y frente al fiador."}
+      - {norma: "LEC", articulo: "549", apartado: "4", tipo: "regula", nota: "Sin plazo de espera de veinte días; si es vivienda habitual, antes del lanzamiento, trámite del 441.5 a 7."}
+      - {norma: "LEC", articulo: "703", apartado: "1", tipo: "conexa", nota: "Lanzamiento: basta un funcionario Gestor; las cosas no retiradas en plazo se tienen por abandonadas."}
+      - {norma: "LAU", articulo: "9", apartado: "1", tipo: "regula", nota: "Prórroga obligatoria anual hasta cinco años (siete si el arrendador es persona jurídica), salvo preaviso del inquilino."}
+      - {norma: "LAU", articulo: "9", apartado: "3", tipo: "regula", nota: "Necesidad del arrendador persona física pactada en el contrato: tras el primer año, preaviso de dos meses."}
+      - {norma: "LAU", articulo: "9 bis", tipo: "regula", nota: "Vivienda temporal: más de 31 días y, como regla, hasta 12 meses. El espejo dice «sin efecto»; rige desde 08-10-2026."}
+      - {norma: "LAU", articulo: "10", apartado: "1", tipo: "regula", nota: "Tras 5 o 7 años, prórroga anual hasta tres más si nadie preavisa (arrendador, 4 meses). Cambia el 15-11-2026."}
+      - {norma: "LAU", articulo: "10", apartado: "2", tipo: "conexa", nota: "Prórroga extraordinaria de un año al vulnerable que la pida; obligatoria si el arrendador es gran tenedor."}
+      - {norma: "LAU", articulo: "10", apartado: "3", tipo: "conexa", nota: "Zona tensionada: prórroga extraordinaria anual, hasta tres años, a solicitud del arrendatario."}
+      - {norma: "LAU", articulo: "dt 8", tipo: "regula", nota: "Temporada anterior al 08-10-2026: se extingue al fin del plazo pactado, sin prórroga. El espejo dice «sin efecto»."}
+      - {norma: "CC", articulo: "1565", tipo: "regula", nota: "Arrendamiento por tiempo determinado: concluye el día prefijado sin necesidad de requerimiento."}
+      - {norma: "CC", articulo: "1566", tipo: "regula", nota: "Tácita reconducción si sigue quince días con aquiescencia del arrendador, salvo requerimiento previo."}
+      - {norma: "CC", articulo: "1581", tipo: "conexa", nota: "Sin plazo pactado: por años, meses o días según se fije la renta; cesa cumplido el término."}
+      - {norma: "CC", articulo: "1569", apartado: "1.ª", tipo: "regula", nota: "Expiración del término como causa de desahucio en el régimen del Código Civil."}
+    no_consta_en_norma:
+      - "Si cabe demandar antes del vencimiento para que el desahucio surta efecto a su llegada: la LEC no lo regula."
+      - "Si la comunicación de no renovar excluye la tácita reconducción del 1566 CC: el texto exige «requerimiento» sin definirlo."
+    fuera_de_la_herramienta:
+      - "RDL 29/2026, disp. final 5.ª (pendiente de convalidación): prórroga extraordinaria de hasta dos años al arrendatario al corriente de pago."
+      - "RDL 28/2026 (vigor 15-11-2026, pendiente de convalidación): nuevo art. 10 LAU, prórrogas de 5 o 7 años, preaviso de 6 meses e indemnización."
+    vigilar:
+      - {norma: "LAU", articulo: "2"}
+      - {norma: "LAU", articulo: "3"}
+    afines: ["Desahucio por falta de pago", "Duración y prórroga del arrendamiento de vivienda", "Tácita reconducción", "Arrendamiento de temporada y para uso distinto de vivienda", "Lanzamiento"]
+    # VIGENCIA: LAU 9 (añade 9.4), 9 bis y dt 8 (en el espejo «sin efecto») según la API vigente desde 08-10-2026; LAU 10 tiene versión con vigencia 15-11-2026 que la API publica con fecha_vigencia vacía. Provisional.
+    estado: "provisional"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Vulnerabilidad y gran tenedor en la demanda"
+    sinonimos: ["gran tenedor", "gran tenedora de vivienda", "vulnerabilidad económica", "vulnerabilidad social", "servicios sociales en el desahucio", "suspensión del lanzamiento por vulnerabilidad"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "439", apartado: "6", tipo: "regula", nota: "Demandas para recuperar finca (250.1.1.º, 2.º, 4.º y 7.º): indicar si es vivienda habitual del ocupante."}
+      - {norma: "LEC", articulo: "439", apartado: "6.b)", tipo: "regula", nota: "Indicar si el actor es gran tenedor (art. 3.k Ley 12/2023); si lo niega, certificación registral de sus propiedades."}
+      - {norma: "LEC", articulo: "439", apartado: "7", tipo: "conexa", nota: "Los apartados 6.c) y 7 están anulados por la STC 26/2025, de 29 de enero (nota del espejo)."}
+      - {norma: "LEC", articulo: "441", apartado: "5", tipo: "regula", nota: "Vivienda habitual: el decreto informa de los servicios sociales y el juzgado les comunica de oficio el proceso."}
+      - {norma: "LEC", articulo: "441", apartado: "5, párrafo 3.º", tipo: "regula", nota: "Si la Administración confirma la vulnerabilidad, lo notifica al juzgado en diez días como máximo."}
+      - {norma: "LEC", articulo: "441", apartado: "5, párrafo 4.º", tipo: "regula", nota: "Actor gran tenedor: el oficio lo hace constar. Remite al 439.6 y 7, aunque el 439.7 está anulado."}
+      - {norma: "LEC", articulo: "441", apartado: "5, párrafo 5.º", tipo: "regula", nota: "Traslado a las partes por cinco días; se suspende la vista o el lanzamiento si las fechas son inmediatas."}
+      - {norma: "LEC", articulo: "441", apartado: "6", tipo: "regula", nota: "Auto de suspensión: máximo dos meses si el actor es persona física, cuatro si es jurídica."}
+      - {norma: "LEC", articulo: "441", apartado: "7", tipo: "regula", nota: "Ponderación, también de la vulnerabilidad del actor; umbrales de renta e IPREM y vulnerabilidad social."}
+      - {norma: "LEC", articulo: "549", apartado: "4, párrafo 2.º", tipo: "regula", nota: "Vivienda habitual: antes del lanzamiento debe haberse seguido el trámite del 441.5 a 7."}
+      - {norma: "LEC", articulo: "150", apartado: "4", tipo: "regula", nota: "La notificación que fija el lanzamiento de una vivienda se traslada a los servicios sociales."}
+      - {norma: "LEC", articulo: "686", apartado: "1", tipo: "conexa", nota: "Ejecución hipotecaria: el requerimiento de pago incluye las indicaciones del 441.5, con iguales efectos."}
+      - {norma: "LEC", articulo: "685", apartado: "2", tipo: "regula", nota: "Desde 08-10-2026 (RDL 29/2026, aún no en el espejo): la demanda hipotecaria dice si hay vivienda habitual y gran tenedor."}
+      - {norma: "LEC", articulo: "22", tipo: "conexa", nota: "Desde 08-10-2026, nuevo 22.6 (RDL 29/2026), aún no en el espejo: la Administración enerva si el inquilino es vulnerable."}
+      - {norma: "LEC", articulo: "704", apartado: "1", tipo: "conexa", nota: "Entrega de la vivienda habitual del ejecutado: un mes para desalojar, prorrogable otro con motivo fundado."}
+    no_consta_en_norma:
+      - "Si la omisión de las indicaciones del 439.6 es subsanable antes de inadmitir: la norma dice «no se admitirán» y no lo aclara."
+      - "Qué efecto tiene la remisión del 441.5 a los apartados 6.c) y 7 del 439, anulados: el texto no se ha adaptado."
+    fuera_de_la_herramienta:
+      - "Ley 12/2023, art. 3.k): concepto de gran tenedor (más de diez inmuebles residenciales o 1.500 m²), reformado por el RDL 29/2026."
+      - "RDL 29/2026, art. 2 (pendiente de convalidación): suspensión del proceso con demandado vulnerable sin alternativa habitacional, hasta el 31-12-2030."
+      - "Ley 39/2006, art. 2.2: concepto de persona dependiente al que remite el 441.7 LEC."
+    afines: ["Desahucio por falta de pago", "Desahucio por precario", "Ocupación ilegal de vivienda (desahucio exprés)", "Lanzamiento", "Ejecución hipotecaria: especialidades"]
+    # VIGENCIA: cita LEC 685 y 22, cambiados el 08-10-2026 por el RDL 29/2026 (texto leído en la API). 439 y 441 idénticos en espejo y boe.es. Provisional.
+    estado: "provisional"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Ocupación ilegal de vivienda (desahucio exprés)"
+    sinonimos: ["okupación", "okupas", "desahucio exprés", "recuperación inmediata de la posesión de la vivienda", "ignorados ocupantes", "usurpación de vivienda"]
+    normas_base: ["LEC", "LO 1/2025"]
+    remisiones:
+      - {norma: "LEC", articulo: "250", apartado: "1.4.º, párrafo 2.º", tipo: "regula", nota: "Solo persona física propietaria o poseedora legítima, entidades sin ánimo de lucro y entes públicos de vivienda social."}
+      - {norma: "LEC", articulo: "437", apartado: "3 bis", tipo: "regula", nota: "Demanda contra los desconocidos ocupantes; se acompaña el título en que se funda el derecho a poseer."}
+      - {norma: "LEC", articulo: "441", apartado: "1 bis", tipo: "regula", nota: "Notificación a quien habite la vivienda y a ignorados ocupantes; puede ir acompañada de los agentes de la autoridad."}
+      - {norma: "LEC", articulo: "441", apartado: "1 bis, párrafo 2.º", tipo: "regula", nota: "Si se pide la entrega inmediata, el decreto de admisión requiere a los ocupantes que aporten título en cinco días."}
+      - {norma: "LEC", articulo: "441", apartado: "1 bis, párrafo 3.º", tipo: "regula", nota: "Sin título bastante: auto de desalojo e inmediata entrega; si se identifica a los ocupantes, trámite del 441.5 a 7."}
+      - {norma: "LEC", articulo: "441", apartado: "1 bis, párrafo 4.º", tipo: "regula", nota: "Contra el auto del incidente no cabe recurso; se cumple contra cualquier ocupante que esté en la vivienda."}
+      - {norma: "LEC", articulo: "444", apartado: "1 bis", tipo: "regula", nota: "Oposición solo por título suficiente frente al actor para poseer o por falta de título del actor."}
+      - {norma: "LEC", articulo: "438", apartado: "7", tipo: "regula", nota: "Si no contestan en plazo, sentencia de inmediato; se ejecuta sin esperar los veinte días del art. 548."}
+      - {norma: "LEC", articulo: "439", apartado: "1", tipo: "regula", nota: "Inadmisión de la demanda posesoria interpuesta pasado un año desde el despojo."}
+      - {norma: "LEC", articulo: "439", apartado: "6", tipo: "regula", nota: "Requisitos de la demanda (250.1.4.º): si es vivienda habitual del ocupante y si el actor es gran tenedor."}
+      - {norma: "LEC", articulo: "441", apartado: "5", tipo: "regula", nota: "Vivienda habitual del demandado: información y aviso de oficio a servicios sociales; posible suspensión."}
+      - {norma: "LEC", articulo: "447", apartado: "2", tipo: "regula", nota: "La sentencia de tutela sumaria de la posesión no produce cosa juzgada."}
+      - {norma: "LEC", articulo: "150", apartado: "4", tipo: "conexa", nota: "La notificación que fija el lanzamiento de una vivienda se traslada a los servicios sociales."}
+      - {norma: "LEC", articulo: "704", apartado: "2", tipo: "conexa", nota: "Ocupantes distintos del ejecutado: diez días para presentar título; el ejecutante puede pedir su lanzamiento."}
+      - {norma: "LO 1/2025", articulo: "5", apartado: "2.e)", tipo: "regula", nota: "La tutela sumaria de la posesión está exceptuada del MASC previo: no hace falta negociar con el ocupante."}
+    no_consta_en_norma:
+      - "Ocupación consentida en origen (inquilino o precarista que no se va): el 250.1.4.º exige privación «sin su consentimiento»; el encaje es interpretativo."
+    fuera_de_la_herramienta:
+      - "Código Penal, arts. 202 (allanamiento de morada) y 245 (usurpación), y su cauce en la LECrim: no están en la herramienta."
+      - "RDL 29/2026, art. 2 (pendiente de convalidación): suspensión con demandado vulnerable sin alternativa; si alcanza a esta vía no lo precisa."
+    afines: ["Tutela sumaria de la posesión", "Desahucio por precario", "Vulnerabilidad y gran tenedor en la demanda", "Lanzamiento", "Inviolabilidad del domicilio en la ejecución y el lanzamiento"]
+    # VERIFICADO: la persona jurídica mercantil no figura entre los legitimados del 250.1.4.º, párrafo 2.º; le queda el 250.1.4.º general o el precario.
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Ámbito del juicio verbal por materia y cuantía"
+    sinonimos: ["juicio verbal", "verbal por razón de la materia", "verbal por razón de la cuantía", "límite de 15.000 euros", "clase de juicio", "verbal u ordinario"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "248", apartado: "2", tipo: "regula", nota: "Dos procesos declarativos: el juicio ordinario y el juicio verbal."}
+      - {norma: "LEC", articulo: "248", apartado: "3", tipo: "regula", nota: "La cuantía solo decide la clase de juicio en defecto de norma por razón de la materia."}
+      - {norma: "LEC", articulo: "250", apartado: "1", tipo: "regula", nota: "Verbal sea cual sea la cuantía: desahucios, precario, posesión, alimentos, cesación de consumo, división de cosa común…"}
+      - {norma: "LEC", articulo: "250", apartado: "1.15.º", tipo: "regula", nota: "Acciones de la LPH exclusivamente de reclamación de cantidad: verbal, sea cual fuere la cantidad."}
+      - {norma: "LEC", articulo: "250", apartado: "2", tipo: "regula", nota: "Por cuantía: verbal hasta 15.000 euros, si la materia no está en el art. 249.1."}
+      - {norma: "LEC", articulo: "249", apartado: "1", tipo: "regula", nota: "Ordinario sea cual sea la cuantía: honor, acuerdos sociales, retracto, arrendamientos y PH salvo las excepciones."}
+      - {norma: "LEC", articulo: "249", apartado: "2", tipo: "regula", nota: "Ordinario si la cuantía excede de 15.000 euros o el interés económico es imposible de calcular."}
+      - {norma: "LEC", articulo: "251", tipo: "regula", nota: "Reglas para fijar la cuantía según el interés económico de la demanda (dinero, bienes, arrendamientos…)."}
+      - {norma: "LEC", articulo: "252", tipo: "regula", nota: "Cuantía con pluralidad de objetos o partes; la reconvención y la acumulación de autos no la alteran (regla 5.ª)."}
+      - {norma: "LEC", articulo: "253", apartado: "3", tipo: "regula", nota: "Si no puede fijarse la cuantía ni en forma relativa, se sigue el juicio ordinario."}
+      - {norma: "LEC", articulo: "437", apartado: "4", tipo: "regula", nota: "Acumulación objetiva de acciones en el verbal: prohibida salvo las cuatro excepciones tasadas."}
+      - {norma: "LEC", articulo: "438", apartado: "2", tipo: "conexa", nota: "Sin reconvención en verbales sin cosa juzgada; en los demás, conexa y sin hacer improcedente el verbal."}
+      - {norma: "LEC", articulo: "23", apartado: "2.1.º", tipo: "conexa", nota: "Sin procurador en verbales determinados por cuantía que no exceda de 2.000 euros."}
+      - {norma: "LEC", articulo: "31", apartado: "2.1.º", tipo: "conexa", nota: "Sin abogado en verbales determinados por cuantía que no exceda de 2.000 euros."}
+      - {norma: "LEC", articulo: "455", apartado: "1", tipo: "conexa", nota: "No son apelables las sentencias de verbales por razón de la cuantía que no supere 3.000 euros."}
+      - {norma: "LEC", articulo: "447", apartado: "2", tipo: "conexa", nota: "Sin cosa juzgada: tutela sumaria de la posesión y desahucios por impago o por expiración del plazo."}
+    no_consta_en_norma: []
+    afines: ["Cuantía del proceso y su impugnación", "Inadecuación de procedimiento", "Contestación escrita en el verbal y petición de vista", "Acumulación de acciones"]
+    # VERIFICADO: 249.1 tiene 8 numerales y 250.1 tiene 16; el 249.1.6.º saca del ordinario las rentas y los desahucios por impago y expiración.
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Contestación escrita en el verbal y petición de vista"
+    sinonimos: ["contestación en el juicio verbal", "diez días para contestar", "solicitud de vista", "verbal sin vista", "excepciones procesales en el verbal", "auto del 438.10"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "438", apartado: "1", tipo: "regula", nota: "Admitida la demanda, traslado para contestar por escrito en diez días, como en el ordinario; si no, rebeldía."}
+      - {norma: "LEC", articulo: "438", apartado: "1, párrafo 2.º", tipo: "regula", nota: "Si cabe actuar sin abogado ni procurador, el decreto lo indica y ofrece impresos normalizados para contestar."}
+      - {norma: "LEC", articulo: "405", apartado: "2", tipo: "regula", nota: "Hay que admitir o negar los hechos; el silencio o la evasiva pueden valer como admisión tácita."}
+      - {norma: "LEC", articulo: "405", apartado: "3", tipo: "regula", nota: "Las excepciones procesales se alegan en la contestación."}
+      - {norma: "LEC", articulo: "438", apartado: "2", tipo: "regula", nota: "Reconvención: nunca en verbales sin cosa juzgada; en los demás, conexa y sin desbordar el verbal; diez días para contestarla."}
+      - {norma: "LEC", articulo: "438", apartado: "3", tipo: "regula", nota: "Crédito compensable en la contestación; si excede de la cuantía del verbal, se tiene por no alegado."}
+      - {norma: "LEC", articulo: "438", apartado: "8", tipo: "regula", nota: "Contestada la demanda: cinco días comunes para proponer prueba e indicar a quién citar a la vista."}
+      - {norma: "LEC", articulo: "438", apartado: "8, párrafo 2.º", tipo: "regula", nota: "En esos cinco días, el actor alega sobre las excepciones procesales opuestas en la contestación."}
+      - {norma: "LEC", articulo: "438", apartado: "9", tipo: "regula", nota: "Tres días desde el traslado de la proposición de prueba para impugnar documentos y dictámenes (280, 283, 287, 427)."}
+      - {norma: "LEC", articulo: "438", apartado: "10", tipo: "regula", nota: "Auto sobre cuantía, excepciones procesales, prueba y pertinencia de la vista; sin vista, autos conclusos."}
+      - {norma: "LEC", articulo: "438", apartado: "10, párrafo 2.º", tipo: "regula", nota: "Contra ese auto, recurso de reposición con efecto suspensivo."}
+      - {norma: "LEC", articulo: "438", apartado: "10, párrafo 3.º", tipo: "regula", nota: "Sentencia sin vista si solo hay documentos no impugnados o pericias sin necesidad de oír a los peritos."}
+      - {norma: "LEC", articulo: "440", tipo: "regula", nota: "Si hay vista, citación en cinco días; la vista se celebra en el plazo máximo de un mes."}
+      - {norma: "LEC", articulo: "438", apartado: "4", tipo: "conexa", nota: "Derechos reales inscritos (250.1.7.º): apercibimiento de sentencia si no contesta o no presta caución."}
+      - {norma: "LEC", articulo: "496", tipo: "conexa", nota: "Rebeldía del que no comparece en plazo; no equivale a allanamiento ni a admisión de hechos."}
+    no_consta_en_norma:
+      - "Si la petición de vista de una parte vincula al tribunal: el 438.10 le deja decidir su pertinencia y no menciona la solicitud."
+    afines: ["Ámbito del juicio verbal por materia y cuantía", "Vista del juicio verbal: desarrollo e incomparecencias", "Reconvención", "Proposición de prueba", "Rebeldía del demandado"]
+    # VERIFICADO: en el texto vigente la vista no depende de que la pidan las partes (438.10); el nombre de la voz recoge el uso forense.
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Vista del juicio verbal: desarrollo e incomparecencias"
+    sinonimos: ["vista del verbal", "incomparecencia del demandante", "incomparecencia del demandado", "conclusiones en el verbal", "sentencia oral", "desarrollo de la vista"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "440", apartado: "párrafo 2.º", tipo: "regula", nota: "La citación informa de la posibilidad de negociar o ir a mediación; las partes dicen su decisión en la vista o antes."}
+      - {norma: "LEC", articulo: "440", apartado: "párrafo 3.º", tipo: "regula", nota: "La vista no se suspende si falta el demandado; hechos admitidos si no acude al interrogatorio admitido (304)."}
+      - {norma: "LEC", articulo: "442", apartado: "1", tipo: "regula", nota: "Actor que no asiste: desistido, con costas e indemnización al demandado, salvo interés de este en la sentencia."}
+      - {norma: "LEC", articulo: "442", apartado: "2", tipo: "regula", nota: "Si no comparece el demandado, se celebra el juicio."}
+      - {norma: "LEC", articulo: "443", apartado: "1", tipo: "regula", nota: "Al abrir la vista se comprueba si subsiste el litigio; cabe acuerdo homologado o suspensión para un MASC."}
+      - {norma: "LEC", articulo: "443", apartado: "2", tipo: "conexa", nota: "El tribunal puede proponer derivar a un MASC antes de la prueba; se suspende si todas las partes aceptan."}
+      - {norma: "LEC", articulo: "443", apartado: "3", tipo: "regula", nota: "Sin acuerdo, palabra a las partes para aclaraciones y fijación de los hechos controvertidos."}
+      - {norma: "LEC", articulo: "443", apartado: "4", tipo: "regula", nota: "Se practican las pruebas admitidas; la proposición puede completarse conforme al 429.1."}
+      - {norma: "LEC", articulo: "429", apartado: "1", tipo: "conexa", nota: "Remisión del 443.4: el tribunal advierte la insuficiencia probatoria y las partes completan su prueba."}
+      - {norma: "LEC", articulo: "445", tipo: "regula", nota: "Prueba, diligencias finales y presunciones: normas generales y arts. 435 y 436."}
+      - {norma: "LEC", articulo: "446", tipo: "regula", nota: "Admisión o inadmisión de prueba en la vista: solo reposición en el acto y, si se desestima, protesta."}
+      - {norma: "LEC", articulo: "447", apartado: "1", tipo: "regula", nota: "Conclusiones orales si se conceden; sentencia en diez días (cinco en desahucio de finca urbana)."}
+      - {norma: "LEC", articulo: "447", apartado: "1, párrafo 2.º", tipo: "regula", nota: "Condena tras incomparecencia del demandado: lanzamiento en la fecha fijada sin más trámite."}
+      - {norma: "LEC", articulo: "438", apartado: "6", tipo: "regula", nota: "Desahucio: si el demandado no comparece a la vista, desahucio sin más trámites; citado para la sentencia."}
+      - {norma: "LEC", articulo: "210", apartado: "3", tipo: "regula", nota: "Sentencia oral en el verbal al concluir la vista, salvo si no interviene abogado (31.2)."}
+      - {norma: "LEC", articulo: "210", apartado: "4", tipo: "regula", nota: "Sentencia oral: cinco días desde la vista para anunciar interés en recurrir; apelación desde la notificación escrita."}
+    no_consta_en_norma:
+      - "Qué cabe «completar» en la vista tras el auto de admisión de prueba del 438.10: la remisión al 429.1 no lo concreta."
+      - "Si el demandado que llega con la vista empezada puede intervenir: el 442.2 solo dice que el juicio se celebra."
+    afines: ["Contestación escrita en el verbal y petición de vista", "Pertinencia y utilidad de la prueba; protesta", "Interrogatorio de parte y ficta confessio", "Suspensión de la vista y nuevo señalamiento", "Desistimiento"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Juicio monitorio y oposición"
+    sinonimos: ["proceso monitorio", "petición monitoria", "requerimiento de pago", "oposición al monitorio", "monitorio por facturas", "deuda dineraria documentada"]
+    normas_base: ["LEC", "LO 1/2025"]
+    remisiones:
+      - {norma: "LEC", articulo: "812", apartado: "1", tipo: "regula", nota: "Deuda dineraria de cualquier importe, líquida, determinada, vencida y exigible, acreditada documentalmente."}
+      - {norma: "LEC", articulo: "812", apartado: "1.2.ª", tipo: "regula", nota: "Bastan facturas, albaranes o certificaciones del acreedor si documentan habitualmente esa relación."}
+      - {norma: "LEC", articulo: "812", apartado: "2.1.º", tipo: "regula", nota: "También con documentos comerciales que acrediten una relación anterior duradera."}
+      - {norma: "LEC", articulo: "813", tipo: "regula", nota: "Competencia exclusiva del domicilio del deudor, sin sumisión; si se le halla en otro partido, se archiva."}
+      - {norma: "LEC", articulo: "814", tipo: "regula", nota: "Petición con identidad, domicilios, origen y cuantía de la deuda; cabe impreso; sin abogado ni procurador."}
+      - {norma: "LEC", articulo: "815", apartado: "1", tipo: "regula", nota: "Requerimiento: veinte días para pagar u oponerse de forma fundada y motivada; sin edictos salvo en PH."}
+      - {norma: "LEC", articulo: "815", apartado: "3", tipo: "regula", nota: "Si la cantidad no es correcta o hay cláusula abusiva, el juez puede proponer un requerimiento por menos."}
+      - {norma: "LEC", articulo: "816", apartado: "1", tipo: "regula", nota: "Sin pago ni oposición: decreto que termina el monitorio y ejecución sin esperar los veinte días del 548."}
+      - {norma: "LEC", articulo: "816", apartado: "2", tipo: "regula", nota: "Despachada la ejecución, nadie puede reclamar luego lo mismo en ordinario; devenga el interés del art. 576."}
+      - {norma: "LEC", articulo: "817", tipo: "regula", nota: "Si el deudor paga y lo acredita, archivo de las actuaciones."}
+      - {norma: "LEC", articulo: "818", apartado: "1", tipo: "regula", nota: "Con oposición en plazo, juicio que corresponda con cosa juzgada; abogado y procurador según la cuantía."}
+      - {norma: "LEC", articulo: "818", apartado: "1, párrafo 3.º", tipo: "regula", nota: "Oposición por pluspetición: sobre la cantidad reconocida se aplica el art. 21.2."}
+      - {norma: "LEC", articulo: "818", apartado: "2", tipo: "regula", nota: "Hasta la cuantía del verbal: sigue como verbal; el actor impugna la oposición en diez días y se propone prueba."}
+      - {norma: "LEC", articulo: "818", apartado: "2, párrafo 2.º", tipo: "regula", nota: "Mayor cuantía: demanda en un mes desde el traslado de la oposición o sobreseimiento con costas al acreedor."}
+      - {norma: "LEC", articulo: "818", apartado: "3", tipo: "regula", nota: "Rentas de finca urbana con oposición: juicio verbal, cualquiera que sea la cuantía."}
+      - {norma: "LEC", articulo: "23", apartado: "2.1.º", tipo: "conexa", nota: "La petición inicial del monitorio no requiere procurador."}
+      - {norma: "LEC", articulo: "31", apartado: "2.1.º", tipo: "conexa", nota: "La petición inicial del monitorio no requiere abogado."}
+      - {norma: "LEC", articulo: "21", apartado: "2", tipo: "conexa", nota: "Allanamiento parcial: auto ejecutable sobre lo reconocido, si cabe pronunciamiento separado."}
+      - {norma: "LO 1/2025", articulo: "5", apartado: "2", tipo: "conexa", nota: "El monitorio es proceso del libro IV LEC y no está exceptuado (sí el cambiario): rige el MASC previo."}
+    no_consta_en_norma:
+      - "Si el MASC previo se exige ya para la petición monitoria o solo al pasar a declarativo: el art. 5 LO 1/2025 habla de «demanda» y no lo precisa."
+    fuera_de_la_herramienta:
+      - "Reglamento (CE) 1896/2006 (proceso monitorio europeo): exento del MASC (art. 5.3 LO 1/2025); no está en la herramienta."
+    afines: ["Monitorio de propiedad horizontal", "Control de oficio de cláusulas abusivas en el proceso", "Ámbito del juicio verbal por materia y cuantía", "Requisito de procedibilidad (MASC)", "Oposición a la ejecución por motivos de fondo"]
+    # VERIFICADO: el monitorio está en el libro IV, título III LEC; el art. 5.2.h) LO 1/2025 exceptúa solo el juicio cambiario.
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Monitorio de propiedad horizontal"
+    sinonimos: ["monitorio de la comunidad de propietarios", "reclamación de cuotas de comunidad", "certificado de deuda de la comunidad", "propietario moroso", "deuda con la comunidad"]
+    normas_base: ["LEC", "LPH"]
+    remisiones:
+      - {norma: "LEC", articulo: "812", apartado: "2.2.º", tipo: "regula", nota: "Basta la certificación de impago de gastos comunes de la comunidad de propietarios."}
+      - {norma: "LEC", articulo: "813", tipo: "regula", nota: "Competente también el juzgado del lugar de la finca, a elección del solicitante; sin sumisión."}
+      - {norma: "LEC", articulo: "815", apartado: "2", tipo: "regula", nota: "Notificación en el domicilio designado para la comunidad; si no, en el piso o local; si no, edictos."}
+      - {norma: "LEC", articulo: "818", apartado: "2", tipo: "regula", nota: "Oposición hasta la cuantía del verbal: sigue como verbal; el actor impugna la oposición en diez días."}
+      - {norma: "LEC", articulo: "250", apartado: "1.15.º", tipo: "regula", nota: "Acciones de la LPH solo de reclamación de cantidad: verbal, sea cual fuere la cantidad."}
+      - {norma: "LEC", articulo: "449", apartado: "4", tipo: "regula", nota: "Para apelar la condena a pagar a la comunidad, el propietario acredita haber pagado o consignado."}
+      - {norma: "LEC", articulo: "52", apartado: "1.8.º", tipo: "conexa", nota: "Juicios en materia de propiedad horizontal: tribunal del lugar de la finca."}
+      - {norma: "LPH", articulo: "21", apartado: "2", tipo: "regula", nota: "Gastos ordinarios, extraordinarios y fondo de reserva; cabe demandar al titular registral para ejecutar el inmueble."}
+      - {norma: "LPH", articulo: "21", apartado: "3", tipo: "regula", nota: "Certificado del acuerdo de liquidación con desglose (secretario y visto bueno del presidente) y prueba de su notificación."}
+      - {norma: "LPH", articulo: "21", apartado: "4", tipo: "regula", nota: "Si el deudor se opone, embargo preventivo sin caución; el deudor puede enervarlo con garantías."}
+      - {norma: "LPH", articulo: "21", apartado: "5", tipo: "regula", nota: "Honorarios de abogado y procurador del monitorio a cargo del deudor, con el límite del 394.3 LEC."}
+      - {norma: "LPH", articulo: "21", apartado: "1", tipo: "conexa", nota: "Intereses desde que debió pagarse; la junta puede acordar medidas disuasorias no abusivas ni retroactivas."}
+      - {norma: "LPH", articulo: "21", apartado: "6", tipo: "conexa", nota: "La reclamación de gastos y fondo de reserva admite también mediación-conciliación o arbitraje."}
+      - {norma: "LPH", articulo: "9", apartado: "1.e)", tipo: "conexa", nota: "Deber de contribuir; preferencia del crédito y afección del piso: parte vencida del año y tres anteriores."}
+    no_consta_en_norma:
+      - "Oposición en un monitorio de PH de más de 15.000 euros: el 818.2 exige demanda nueva, pero el 250.1.15.º lo lleva siempre al verbal; el texto no lo concilia."
+      - "Cómo se prueba la notificación subsidiaria en el tablón de anuncios durante tres días: la LPH no fija la forma."
+    afines: ["Juicio monitorio y oposición", "Deudas con la comunidad, preferencia y afección", "Gastos comunes, cuota y fondo de reserva", "Embargo preventivo", "Legitimación del presidente"]
+    # VIGENCIA: LPH 21 y 9 idénticos en espejo y boe.es; la reforma del 23-10-2026 solo toca el art. 10 y la disp. adic. 3.ª LPH, no citados.
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Control de oficio de cláusulas abusivas en el proceso"
+    sinonimos: ["cláusulas abusivas de oficio", "control de abusividad", "examen de oficio de cláusulas", "abusividad en el monitorio", "abusividad en la ejecución", "consumidor y cláusula abusiva"]
+    normas_base: ["LEC", "TRLGDCU"]
+    remisiones:
+      - {norma: "LEC", articulo: "815", apartado: "3, párrafo 2.º", tipo: "regula", nota: "Monitorio contra consumidor: el juez examina las cláusulas y puede proponer requerimiento sin la parte abusiva."}
+      - {norma: "LEC", articulo: "815", apartado: "3, párrafo 3.º", tipo: "regula", nota: "El acreedor acepta o rechaza en diez días; el silencio es aceptación; si rechaza, se le tiene por desistido."}
+      - {norma: "LEC", articulo: "815", apartado: "3, párrafo 6.º", tipo: "regula", nota: "El auto que tiene por desistido al acreedor es directamente apelable."}
+      - {norma: "LEC", articulo: "552", apartado: "1, párrafo 2.º", tipo: "regula", nota: "Despacho de la ejecución: examen de oficio de las cláusulas de los títulos del 557.1; audiencia de quince días."}
+      - {norma: "LEC", articulo: "552", apartado: "4", tipo: "regula", nota: "Ejecución contra consumidor: mismo control; firme el auto, lo resuelto sobre abusividad tiene cosa juzgada."}
+      - {norma: "LEC", articulo: "557", apartado: "1.7.ª", tipo: "regula", nota: "Títulos no judiciales: el ejecutado puede oponerse porque el título contiene cláusulas abusivas."}
+      - {norma: "LEC", articulo: "561", apartado: "2", tipo: "regula", nota: "Apreciada la abusividad: improcedencia de la ejecución o despacho sin las cláusulas; cosa juzgada al ser firme."}
+      - {norma: "LEC", articulo: "695", apartado: "1.4.ª", tipo: "regula", nota: "Ejecución hipotecaria: oposición por abusiva la cláusula que funda la ejecución o fija la cantidad exigible."}
+      - {norma: "LEC", articulo: "695", apartado: "3", tipo: "regula", nota: "Estimada: sobreseimiento si la cláusula funda la ejecución; si no, sigue sin aplicarla; cosa juzgada."}
+      - {norma: "LEC", articulo: "695", apartado: "4", tipo: "conexa", nota: "Apelación contra el auto de sobreseimiento, de inaplicación o que desestima la oposición por abusividad."}
+      - {norma: "LEC", articulo: "34", apartado: "4", tipo: "regula", nota: "Cuenta del procurador frente a persona física: contrato y control de oficio de cláusulas antes del requerimiento."}
+      - {norma: "LEC", articulo: "35", apartado: "4", tipo: "regula", nota: "Honorarios del abogado frente a persona física: el mismo control de oficio previo al requerimiento."}
+      - {norma: "LEC", articulo: "250", apartado: "1.14.º", tipo: "conexa", nota: "Acciones individuales sobre condiciones generales de la contratación: juicio verbal."}
+      - {norma: "TRLGDCU", articulo: "82", tipo: "regula", nota: "Concepto: estipulación no negociada que, contra la buena fe, causa desequilibrio importante al consumidor."}
+      - {norma: "TRLGDCU", articulo: "83", tipo: "regula", nota: "Nulas de pleno derecho; el juez, oídas las partes, las declara nulas y el contrato subsiste si puede."}
+      - {norma: "TRLGDCU", articulo: "90", apartado: "2", tipo: "conexa", nota: "Abusiva la sumisión a tribunal distinto del domicilio del consumidor, del cumplimiento o del inmueble."}
+    no_consta_en_norma:
+      - "Control de oficio en el declarativo (ordinario o verbal): ninguna norma de la herramienta lo ordena; deriva de la jurisprudencia del TJUE."
+      - "Control en la ejecución de títulos judiciales o del monitorio no opuesto: los arts. 552 y 557 lo ciñen a los títulos del 557.1."
+    fuera_de_la_herramienta:
+      - "Directiva 93/13/CEE y jurisprudencia del TJUE: fundamento del control de oficio; no están en la herramienta."
+      - "Ley 7/1998, de condiciones generales de la contratación (incorporación y transparencia): no está en la herramienta."
+    afines: ["Cláusulas abusivas: concepto, nulidad e integración", "Concepto de consumidor y de empresario", "Juicio monitorio y oposición", "Oposición a la ejecución por motivos de fondo", "Oposición en la ejecución hipotecaria"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Tutela sumaria de la posesión"
+    sinonimos: ["interdicto", "interdicto de recobrar", "interdicto de retener", "despojo posesorio", "perturbación de la posesión", "acción posesoria"]
+    normas_base: ["LEC", "CC", "LO 1/2025"]
+    remisiones:
+      - {norma: "LEC", articulo: "250", apartado: "1.4.º", tipo: "regula", nota: "Juicio verbal para quien ha sido despojado de la tenencia o posesión de una cosa o derecho, o perturbado en ella."}
+      - {norma: "LEC", articulo: "439", apartado: "1", tipo: "regula", nota: "Inadmisión si se demanda pasado un año desde el acto de perturbación o despojo."}
+      - {norma: "LEC", articulo: "439", apartado: "6", tipo: "regula", nota: "Si se recupera una finca: decir si es vivienda habitual del ocupante y si el actor es gran tenedor."}
+      - {norma: "LEC", articulo: "441", apartado: "5", tipo: "regula", nota: "Vivienda habitual del demandado: aviso a servicios sociales y posible suspensión por vulnerabilidad."}
+      - {norma: "LEC", articulo: "438", apartado: "2", tipo: "regula", nota: "No cabe reconvención: la sentencia no produce cosa juzgada."}
+      - {norma: "LEC", articulo: "447", apartado: "2", tipo: "regula", nota: "La sentencia de tutela sumaria de la posesión no produce cosa juzgada: queda abierto el plenario."}
+      - {norma: "LEC", articulo: "251", apartado: "3.ª", tipo: "conexa", nota: "Cuantía: valor de la cosa cuando el proceso versa sobre la posesión (regla 3.ª, numeral 5.º)."}
+      - {norma: "LO 1/2025", articulo: "5", apartado: "2.e)", tipo: "regula", nota: "La tutela sumaria de la tenencia o posesión está exceptuada del MASC previo."}
+      - {norma: "CC", articulo: "430", tipo: "conexa", nota: "Posesión natural (tenencia) y civil (tenencia con intención de haber la cosa como suya)."}
+      - {norma: "CC", articulo: "438", tipo: "conexa", nota: "Adquisición de la posesión: ocupación material, sujeción a la voluntad o actos y formalidades legales."}
+      - {norma: "CC", articulo: "441", tipo: "regula", nota: "Nadie adquiere violentamente la posesión si el poseedor se opone: hay que pedir auxilio a la autoridad."}
+      - {norma: "CC", articulo: "444", tipo: "conexa", nota: "Los actos tolerados, clandestinos o violentos no afectan a la posesión."}
+      - {norma: "CC", articulo: "445", tipo: "regula", nota: "Contienda sobre el hecho de poseer: prefiere el poseedor actual, luego el más antiguo, luego el que tiene título."}
+      - {norma: "CC", articulo: "446", tipo: "regula", nota: "Todo poseedor debe ser respetado; si se le inquieta, amparado o restituido por las leyes procesales."}
+      - {norma: "CC", articulo: "460", apartado: "4", tipo: "regula", nota: "Se pierde la posesión por la de otro que dure más de un año, aun contra la voluntad del antiguo poseedor."}
+      - {norma: "CC", articulo: "466", tipo: "conexa", nota: "Quien recupera conforme a derecho la posesión perdida se entiende que la disfrutó sin interrupción."}
+      - {norma: "CC", articulo: "1968", apartado: "1.º", tipo: "regula", nota: "Prescribe en un año la acción para recobrar o retener la posesión."}
+    no_consta_en_norma:
+      - "Si el año es de caducidad (439.1 LEC, «no se admitirán») o de prescripción (1968.1.º CC) y si cabe interrumpirlo: los textos no lo concilian."
+      - "Requisitos del despojo o la perturbación (acto material, ánimo de despojar): construcción jurisprudencial."
+    afines: ["Ocupación ilegal de vivienda (desahucio exprés)", "Desahucio por precario", "Posesión: clases, adquisición y efectos", "Obra nueva y obra ruinosa", "Tutela de derechos reales inscritos"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"

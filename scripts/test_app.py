@@ -11,7 +11,7 @@ AQUI = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(AQUI))
 import build
 URL = "file://" + str(AQUI / "index.html").replace(" ", "%20")
-CORPUS = pathlib.Path.home() / "Documents/iA/LEYES/legalize-es/es"
+CORPUS = (build.TEXTO if (build.TEXTO / "es").is_dir() else pathlib.Path.home() / "Documents/iA/LEYES/legalize-es") / "es"   # el MISMO texto que el build
 CAPT = pathlib.Path(os.environ.get("CAPTURAS", AQUI / "scripts" / "_capturas"))
 CAPTURAS = "--capturas" in sys.argv
 if CAPTURAS:
@@ -271,9 +271,17 @@ with sync_playwright() as p:
     nc_ = pg.inner_text("#lector .idx-nc")
     check("índice: «No consta en norma» siempre visible y con sus 3 entradas (no plegado)", "No consta en norma" in nc_ and pg.locator("#lector .idx-nc li").count() == 3 and pg.locator("#lector details").count() == 0, nc_[:80])
     pg.evaluate("h=>{location.hash=h}", "#i/requisito-de-procedibilidad-masc"); time.sleep(0.3)
-    check("índice: las voces afines que existen son enlace; las que no, texto", pg.locator("#lector a[href='#i/desahucio-por-precario']").count() == 1 and "Costas y MASC" in pg.inner_text("#lector") and pg.locator("#lector a", has_text="Costas y MASC").count() == 0)
+    # las afines que existen como voz son enlace; las que aún no existen, texto (se calcula con las voces reales: crecen con cada tanda)
+    import unicodedata as _ud
+    _nq = lambda s: re.sub(r"\s+", " ", re.sub(r"[^a-z0-9 ]+", " ", "".join(ch for ch in _ud.normalize("NFD", s.lower()) if not _ud.combining(ch)))).strip()
+    _v, _a, _vs = build.indice.carga(AQUI / "indice")
+    _nombres = {_nq(x["voz"]) for x in _vs}
+    _af = next(x for x in _vs if build.indice.slug(x["voz"]) == "requisito-de-procedibilidad-masc").get("afines") or []
+    _con = [a for a in _af if _nq(a) in _nombres]; _sin = [a for a in _af if _nq(a) not in _nombres]
+    _links = pg.eval_on_selector_all("#lector a[href^='#i/']", "els=>els.map(a=>a.textContent)")
+    check("índice: las voces afines que existen son enlace; las que no, texto", bool(_af) and sorted(_links) == sorted(_con) and all(a in pg.inner_text("#lector") for a in _sin), f"enlaces={_links} esperados={_con} sin voz={_sin}")
     # cada remisión abre EXACTAMENTE su artículo, y su apartado se localiza
-    malas = []
+    malas, tolerados = [], []
     ids_norma = {n["sigla"]: n["id"] for n in build.NORMAS}
     for v_ in muestra:
         pg.evaluate("h=>{location.hash=h}", "#i/" + slug_(v_["voz"])); time.sleep(0.2)
@@ -284,21 +292,27 @@ with sync_playwright() as p:
             esperado = f"#a/{nid}/{__import__('urllib.parse').parse.quote(k_, safe='')}" + (f"/{ap_}" if ap_ else "")
             if esperado not in hrefs:
                 malas.append(("sin enlace", v_["voz"], r["norma"], r["articulo"], esperado)); continue
+            pg.evaluate("()=>document.querySelectorAll('.toast').forEach(e=>e.remove())")   # el aviso dura 2,6 s: no atribuir el de la remisión anterior
             pg.evaluate("h=>{location.hash=h}", esperado); time.sleep(0.12)
             cab = pg.inner_text("#lector .a-h")
             ok_cab = (cab.startswith("Artículo " + k_) if re.match(r"^\d", k_) else cab.startswith("Disposición"))
             toast_ = pg.evaluate("(document.querySelector('.toast')||{}).textContent||''")
+            if ok_cab and "No localizo el apartado" in toast_ and pg.evaluate("([n,k])=>window.__NT.avisoBoe(n,k,'2026-10-08')", [nid, k_]):
+                tolerados.append((v_["voz"], r["norma"], r["articulo"]))   # cita un apartado del texto NUEVO (reforma ya en vigor que el espejo no trae)
+                continue
             if not ok_cab or "No localizo" in toast_:
                 malas.append(("abre mal", v_["voz"], r["norma"], r["articulo"], cab[:40], toast_))
     total_rem = sum(len(v_["remisiones"]) for v_ in muestra)
-    check(f"índice: las {total_rem} remisiones de las {len(muestra)} voces abren su artículo (y su apartado se localiza)", not malas, "; ".join(f"{m[1]} -> {m[2]} {m[3]}: {m[-1] if m[0]=='abre mal' else 'sin enlace'}" for m in malas[:12]))
+    if tolerados:
+        print(f"  (aviso: {len(tolerados)} remisiones citan un apartado del texto nuevo de artículos con reforma publicada; el espejo aún no lo trae: {sorted({x[1] + ' ' + x[2] for x in tolerados})[:12]})")
+    check(f"índice: las {total_rem} remisiones de las {len(muestra)} voces abren su artículo (y su apartado se localiza, salvo reformas ya publicadas)", not malas, "; ".join(f"{m[1]} -> {m[2]} {m[3]}: {m[-1] if m[0]=='abre mal' else 'sin enlace'}" for m in malas[:12]))
     pg.evaluate("h=>{location.hash=h}", "#i/declinatoria"); time.sleep(0.3)
     pg.click("#lector ul.idx-lista a.ref >> nth=2"); time.sleep(0.4)
     h_art = pg.evaluate("location.hash"); pg.go_back(); time.sleep(0.5)
     check("índice: desde el artículo, «atrás» vuelve a la voz", h_art.startswith("#a/lec/65") and pg.evaluate("location.hash") == "#i/declinatoria", h_art + " -> " + pg.evaluate("location.hash"))
     pg.evaluate("h=>{location.hash=h}", "#i"); time.sleep(0.3)
     pg.fill("#iq", "masc"); time.sleep(0.2)
-    check("índice: el filtro encuentra por sinónimo («masc»)", pg.locator("#idx-voces .idx-row").count() == 1 and "MASC" in pg.inner_text("#idx-voces"))
+    check("índice: el filtro encuentra por sinónimo («masc»)", pg.locator("#idx-voces .idx-row").count() >= 1 and "Requisito de procedibilidad" in pg.inner_text("#idx-voces"), pg.inner_text("#idx-voces")[:120])
     pg.fill("#iq", "ocupacion sin titulo"); time.sleep(0.2)
     check("índice: el filtro ignora tildes y encuentra «ocupación sin título» (sinónimo)", pg.locator("#idx-voces .idx-row").count() == 1 and "precario" in pg.inner_text("#idx-voces").lower())
     pg.fill("#iq", "zzzz"); time.sleep(0.2)
@@ -433,6 +447,56 @@ with sync_playwright() as p:
     check("índice de la LPH: 32 entradas", pg.locator("#lista .item").count() == 32, str(pg.locator('#lista .item').count()))
     pg.click("#lista .item:has-text('Art. 18')"); time.sleep(0.4)
     check("abrir desde el índice", "Artículo 18" in pg.inner_text("#lector .a-h"))
+    # ---------- fórmulas de sala (contenido del Armero) ----------
+    print("\n[fórmulas de sala]")
+    import os as _os
+    _fv, _fa, _fs = build.formulas.carga(pathlib.Path(_os.environ.get("CONSULTA_NORMAS_FORMULAS", AQUI / "formulas")))
+    if _fs:
+        pg.evaluate("h=>{location.hash=h}", "#f"); time.sleep(0.6)
+        check("fórmulas: el menú lateral tiene «Fórmulas de sala» y queda marcado", pg.locator("#nav-formulas.sel").count() == 1)
+        check(f"fórmulas: la lista muestra las {len(_fs)} fórmulas", pg.locator("#lista .idx-row").count() == len(_fs), str(pg.locator("#lista .idx-row").count()))
+        check("fórmulas: el cuadro (tabla) muestra las mismas, con tres columnas", pg.locator("#lector table.fm-tab tbody tr:not(.fm-g)").count() == len(_fs) and pg.locator("#lector table.fm-tab thead th").count() == 3)
+        check("fórmulas: lleva el aviso «orientativas»", "Fórmulas orientativas" in pg.inner_text("#lector .idx-aviso"))
+        n_j = sum(1 for f in _fs if "juicio" in f["momento"])
+        pg.click("#lista .fm-chip[data-m=juicio]"); time.sleep(0.2)
+        check("fórmulas: filtrar por «Juicio» deja solo las de juicio (lista y cuadro)", pg.locator("#lista .idx-row").count() == n_j and pg.locator("#lector table.fm-tab tbody tr:not(.fm-g)").count() == n_j, f"{pg.locator('#lista .idx-row').count()} vs {n_j}")
+        pg.click("#lista .fm-chip[data-m='']"); time.sleep(0.2)
+        pg.fill("#fq", "zzzzzz"); time.sleep(0.2)
+        check("fórmulas: un filtro sin resultados lo dice", "Ninguna fórmula coincide" in pg.inner_text("#lista"))
+        pg.fill("#fq", build.indice.slug(_fs[0]["situacion"]).split("-")[0]); time.sleep(0.2)
+        check("fórmulas: filtrar por una palabra de la situación encuentra la fórmula", pg.locator("#lista .idx-row").count() >= 1)
+        pg.fill("#fq", ""); time.sleep(0.2)
+        malas_f = []
+        ids_ = {n["sigla"]: n["id"] for n in build.NORMAS}
+        import urllib.parse as _up
+        for f in _fs:
+            sl = build.indice.slug(f["situacion"])
+            pg.evaluate("h=>{location.hash=h}", "#f/" + sl); time.sleep(0.12)
+            hrefs = pg.eval_on_selector_all("#lector ul.idx-lista a.ref", "els=>els.map(a=>a.getAttribute('href'))")
+            esp = []
+            for b in f.get("bases") or []:
+                ap_ = build.indice.apartado_numerico(b.get("apartado"))
+                esp.append(f"#a/{ids_[b['norma']]}/{_up.quote(build.indice.clave_articulo(b['articulo']), safe='')}" + (f"/{ap_}" if ap_ else ""))
+            if hrefs != esp or pg.inner_text("#lector .a-h").strip() != f["situacion"].strip():
+                malas_f.append((f["situacion"], hrefs[:3], esp[:3]))
+        check(f"fórmulas: las {len(_fs)} fichas se abren y enlazan cada base a su artículo", not malas_f, str(malas_f[:3]))
+        f0 = next((f for f in _fs if f.get("bases")), _fs[0])
+        pg.evaluate("h=>{location.hash=h}", "#f/" + build.indice.slug(f0["situacion"])); time.sleep(0.4)
+        pg.click("#lector ul.idx-lista a.ref >> nth=0"); time.sleep(0.4)
+        check("fórmulas: pinchar una base abre el texto del artículo", pg.evaluate("location.hash").startswith("#a/") and "Art" in pg.inner_text("#lector .a-h"), pg.evaluate("location.hash"))
+        pg.evaluate("h=>{location.hash=h}", "#f/" + build.indice.slug(f0["situacion"])); time.sleep(0.4)
+        pg.click("#b-copiar-f"); time.sleep(0.3)
+        cp_f = pg.evaluate("navigator.clipboard.readText()")
+        check("fórmulas: Copiar deja en el portapapeles la fórmula y entre paréntesis su base", cp_f.startswith(f0["formula"].strip()[:40]) and (not f0.get("bases") or "(" in cp_f), cp_f[:90])
+        pg.evaluate("()=>{var f=window.__NT.fx().f[0];f.es='caducada';f.cad=[{n:'LEC',k:'302',r:'cambia'}];window.__NT.vistaFormulas(f.s)}"); time.sleep(0.3)
+        cad_f = pg.inner_text("#lector .idx-cad") if pg.locator("#lector .idx-cad").count() else ""
+        check("fórmulas: si caduca, aviso en rojo que nombra el artículo que cambió", "Caducada" in cad_f and "ha cambiado el texto de LEC" in cad_f and "Lee el texto vigente" in cad_f, cad_f)
+        check("fórmulas: la etiqueta «caducada» sale en la lista", pg.locator("#lista .idx-row .ie-cad").count() == 1)
+        pg.evaluate("()=>{var f=window.__NT.fx().f[0];f.es=f.eo;f.cad=[];window.__NT.vistaFormulas(null)}")
+    else:
+        print("  (sin ficheros en formulas/: se omiten las pruebas de la pantalla)")
+    pg.click("#nav-normas .navlink[data-n=lph]"); time.sleep(0.3)
+    pg.click("#lista .item:has-text('Art. 18')"); time.sleep(0.4)
     # avisos del contraste con boe.es (se simulan sobre los datos cargados: no dependen de la red)
     pg.evaluate("()=>{window.__NT.poner('lec',{'22':[['f','2026-10-08']],'33':[['d']],'439':[['d'],['f','2026-11-01']]})}")
     futura_ = pg.evaluate("()=>window.__NT.avisoBoe('lec','22','2026-10-07')")

@@ -17,6 +17,7 @@ artículo. Si falta o sobra una, el build FALLA en vez de publicar texto cojo.
 """
 import base64
 import datetime as dt
+import formulas
 import indice
 import gzip
 import hashlib
@@ -28,8 +29,11 @@ import sys
 from pathlib import Path
 
 AQUI = Path(__file__).resolve().parent
-CORPUS = Path.home() / "Documents/iA/LEYES/legalize-es"
+CORPUS = Path.home() / "Documents/iA/LEYES/legalize-es"   # el espejo (git): lo mueve un cron cada mañana
 ES = CORPUS / "es"
+# Texto desde el que se COMPILA. Por defecto, el espejo. Con CONSULTA_NORMAS_CORPUS=<carpeta> se compila desde una copia congelada
+# (es/, es-vc/ y un fichero `.commit` con el sha): sirve para no depender del espejo cuando este trae erratas (ocurrió el 08-10-2026).
+TEXTO = Path(os.environ["CONSULTA_NORMAS_CORPUS"]) if os.environ.get("CONSULTA_NORMAS_CORPUS") else CORPUS
 
 # id interno, BOE-ID, siglas, nombre corto, modo secuencial (ver parse_norma)
 NORMAS = [
@@ -116,7 +120,7 @@ def limpia_nota(linea):
 
 
 def lee_norma(cfg):
-    ruta = CORPUS / cfg.get("dir", "es") / f"{cfg['boe']}.md"
+    ruta = TEXTO / cfg.get("dir", "es") / f"{cfg['boe']}.md"
     raw = ruta.read_bytes()
     texto = raw.decode("utf-8")
     m = re.match(r"^---\n(.*?)\n---\n", texto, re.S)
@@ -353,6 +357,9 @@ def avisos_boe(normas):
 
 
 def git_head():
+    marca = TEXTO / ".commit"
+    if marca.is_file():
+        return marca.read_text(encoding="utf-8").strip()[:9]
     try:
         return subprocess.run(["git", "-C", str(CORPUS), "rev-parse", "--short", "HEAD"],
                               capture_output=True, text=True, timeout=20).stdout.strip()
@@ -452,11 +459,24 @@ def construye(solo_comprobar=False):
                 print("   caducada:", v["v"], "<-", ", ".join(f"{x.get('n', '')} {x.get('k', '')} ({x['r']}{', vigilar' if x.get('v') else ''})".strip() for x in v["cad"]))
         for sg, d in cambios.items():
             print(f"   aviso para el Armero: {sg} cambió en {len(d['articulos'])} artículo(s) que ninguna voz cita: {', '.join(d['articulos'][:12])}{' …' if len(d['articulos']) > 12 else ''}")
+    # Fórmulas de sala (contenido del Armero): se valida igual que el índice; falla la compilación si una base no existe
+    fx = formulas.compila(Path(os.environ.get("CONSULTA_NORMAS_FORMULAS", AQUI / "formulas")), claves_norma,
+                          lambda s, c: base_en_commit(claves_norma, s, c))
+    resumen_fx = None
+    if fx:
+        cad_fx = [f["si"] for f in fx["f"] if f["es"] == "caducada"]
+        resumen_fx = dict(version=fx["version"], formulas=len(fx["f"]), provisionales=sum(1 for f in fx["f"] if f["es"] == "provisional"), caducadas=cad_fx)
+        print(f"Fórmulas de sala {fx['version']}: {len(fx['f'])} fórmulas ({resumen_fx['provisionales']} provisionales, {len(cad_fx)} caducadas)")
+        for f in fx["f"]:
+            if f["cad"]:
+                print("   caducada:", f["si"], "<-", ", ".join(f"{x.get('n', '')} {x.get('k', '')} ({x['r']})".strip() for x in f["cad"]))
+        if resumen_idx is not None and cad_fx:  # el vigía ya avisa de las caducadas del índice: las de fórmulas viajan en la misma lista
+            resumen_idx["caducadas"] = resumen_idx["caducadas"] + ["Fórmula de sala: " + x for x in cad_fx]
     if solo_comprobar:
         return
     hoy = dt.date.today().isoformat()
-    meta_build = dict(compilado=hoy, corpus_commit=git_head(), normas=manifiesto, **({"boe_contrastado": av_fecha} if av_fecha else {}), **({"indice": resumen_idx} if resumen_idx else {}))
-    payload = json.dumps(dict(normas=datos, build=meta_build, indice=idx), ensure_ascii=False, separators=(",", ":"))
+    meta_build = dict(compilado=hoy, corpus_commit=git_head(), normas=manifiesto, **({"boe_contrastado": av_fecha} if av_fecha else {}), **({"indice": resumen_idx} if resumen_idx else {}), **({"formulas": resumen_fx} if resumen_fx else {}))
+    payload = json.dumps(dict(normas=datos, build=meta_build, indice=idx, formulas=fx), ensure_ascii=False, separators=(",", ":"))
     gz = gzip.compress(payload.encode("utf-8"), compresslevel=9, mtime=0)
     b64 = base64.b64encode(gz).decode()
     fuentes, logo = rellena_fuentes_y_logo()

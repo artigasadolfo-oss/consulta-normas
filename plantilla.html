@@ -66,6 +66,17 @@ button{font-family:inherit}
 .idx-aviso small{display:block;margin-top:4px;opacity:.85}
 .boe-av{border:1px solid rgba(201,122,30,.35);background:var(--ocre-50);color:var(--ocre-700);border-radius:10px;padding:9px 13px;font-size:12.5px;line-height:1.45;margin:0 0 14px}
 .boe-av b{font-weight:600}
+.fm-chips{display:flex;flex-wrap:wrap;gap:6px;padding:4px 12px 8px}
+.fm-chip.on{background:var(--ink-900);color:#fff;border-color:var(--ink-900)}
+.fm-tab{width:100%;border-collapse:collapse;font-size:.92em;line-height:1.45}
+.fm-tab th{text-align:left;font-family:var(--geo);text-transform:uppercase;font-size:10.5px;letter-spacing:.1em;color:var(--ink-500);padding:6px 8px;border-bottom:1px solid var(--ink-200)}
+.fm-tab td{vertical-align:top;padding:9px 8px;border-bottom:1px solid var(--ink-100)}
+.fm-tab tr.fm-g td{background:var(--ink-50);font-family:var(--geo);text-transform:uppercase;font-size:10.5px;font-weight:600;letter-spacing:.1em;color:var(--ocre-700);padding:7px 8px}
+.fm-tab td a{color:var(--ink-900);font-weight:600;text-decoration:none}
+.fm-tab td a.ref{color:var(--ocre-700);text-decoration:underline dotted;text-underline-offset:3px;white-space:nowrap}
+.fm-av{margin-top:5px;font-size:.88em;color:var(--ocre-700)}
+.fm-nb{color:var(--ink-500);font-size:.9em}
+.fm-formula{border-left:3px solid var(--ocre);background:var(--ink-50);border-radius:0 10px 10px 0;padding:14px 16px;margin:16px 0 10px;font-size:1.05em;line-height:1.6}
 .idx-filtro{padding:8px 12px 4px}
 .idx-filtro input{width:100%;border:1px solid var(--ink-200);border-radius:9px;padding:8px 11px;font:inherit;font-size:13px;background:#fff;color:var(--ink-900)}
 .idx-row{display:flex;align-items:baseline;gap:8px;padding:11px 14px;border-bottom:1px solid var(--ink-100);color:var(--ink-900);text-decoration:none;font-size:14px;font-weight:500}
@@ -225,6 +236,7 @@ body.con-notas .a-body p.nota{display:block}
   <div class="tree">
    <button class="navlink" id="nav-buscar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>Buscar</button>
    <button class="navlink" id="nav-indice" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h11a3 3 0 013 3v13H8a3 3 0 01-3-3V4z"/><path d="M5 17a3 3 0 013-3h11M9 8h6"/></svg>Índice de conceptos</button>
+   <button class="navlink" id="nav-formulas" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4V5z"/><path d="M8 9h8M8 12h5"/></svg>Fórmulas de sala</button>
    <div class="nsec" id="nsec-fav" title="Artículos que fijas con la estrella y las normas que más consultas en este dispositivo">Favoritos</div>
    <div class="favbox" id="nav-fav"></div>
    <div class="nsec">Normas</div>
@@ -258,7 +270,7 @@ var $=function(s,r){return (r||document).querySelector(s)};
 var esc=function(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')};
 var norm=function(s){return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')};
 var flat=function(s){return ' '+norm(s).replace(/[^a-z0-9]+/g,' ').trim()+' '};
-var DATA=null,NORMAS=[],POR={},INDEXADO=false,IDX=null;
+var DATA=null,NORMAS=[],POR={},INDEXADO=false,IDX=null,FX=null,FM={m:'',q:''};
 var ST={mode:'home',items:[],sel:-1,q:'',filtro:null,stack:false,hl:null,ap:null,ver:false,todos:[],nid:null,parcial:false};
 var LS={get:function(k,d){try{var v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},set:function(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
 var MOVIL=function(){return window.matchMedia('(max-width:860px)').matches};
@@ -576,6 +588,7 @@ function marcaSel(scroll){
 function marcaNav(){
   $('#nav-buscar').classList.toggle('sel',ST.mode==='home'||ST.mode==='q');
   $('#nav-indice').classList.toggle('sel',ST.mode==='indice');
+  $('#nav-formulas').classList.toggle('sel',ST.mode==='formulas');
   var l=document.querySelectorAll('#nav-normas .navlink');for(var i=0;i<l.length;i++)l[i].classList.toggle('sel',ST.mode==='norma'&&l[i].dataset.n===ST.nid);
 }
 
@@ -778,6 +791,89 @@ function vistaIndice(slug){
   marcaNav();
 }
 
+/* ---------- fórmulas de sala (contenido del Armero; taller solo lo muestra) ---------- */
+var AVISO_FM='Fórmulas orientativas. Comprueba la base y adáptalas al caso antes de decirlas en sala.';
+function fxPorSlug(s){for(var i=0;i<FX.f.length;i++)if(FX.f[i].s===s)return FX.f[i];return null}
+function fxFiltra(){
+  var q=normq(FM.q||''),gs=[],por={};
+  FX.f.forEach(function(f){
+    if(FM.m&&f.m.indexOf(FM.m)<0)return;
+    if(q&&normq(f.si+' '+f.g+' '+f.f).indexOf(q)<0)return;
+    if(!por[f.g]){por[f.g]=[];gs.push(f.g)}por[f.g].push(f);
+  });
+  var out=[];gs.forEach(function(g){out=out.concat(por[g])});return out;
+}
+function fxEtiq(f){return (f.es==='caducada'||f.es==='provisional')?'<span class="ie ie-'+(f.es==='caducada'?'cad':'prov')+'">'+f.es+'</span>':''}
+function remPlano(b){var d=document.createElement('div');d.innerHTML=remLabel(b);return d.textContent}
+function fxBases(f){return f.b.map(function(b){return '<a class="ref" href="#a/'+b.n+'/'+encodeURIComponent(b.k)+(b.a?'/'+b.a:'')+'">'+remLabel(b)+'</a>'}).join(' · ')}
+function fxLista(sel){
+  var fs=fxFiltra();
+  if(!fs.length)return '<div class="vacio">Ninguna fórmula coincide. Prueba con otra palabra o quita el filtro.</div>';
+  var h='',g=null;
+  fs.forEach(function(f){
+    if(f.g!==g){if(g!==null)h+='</div>';h+='<div class="gb"><div class="grp">'+esc(f.g)+'</div>';g=f.g}
+    h+='<a class="idx-row'+(f.s===sel?' sel':'')+'" href="#f/'+f.s+'"><span class="iv">'+esc(f.si)+'</span>'+fxEtiq(f)+'</a>';
+  });
+  return h+'</div>';
+}
+function fxTabla(){
+  var fs=fxFiltra();
+  if(!fs.length)return '<p>Ninguna fórmula coincide.</p>';
+  var h='<table class="fm-tab"><thead><tr><th>Situación</th><th>Fórmula</th><th>Base</th></tr></thead><tbody>',g=null;
+  fs.forEach(function(f){
+    if(f.g!==g){h+='<tr class="fm-g"><td colspan="3">'+esc(f.g)+'</td></tr>';g=f.g}
+    h+='<tr><td><a href="#f/'+f.s+'">'+esc(f.si)+'</a>'+fxEtiq(f)+'</td><td>'+esc(f.f)+(f.av?'<div class="fm-av">'+esc(f.av)+'</div>':'')+'</td><td>'+(fxBases(f)||'<span class="fm-nb">Uso forense</span>')+'</td></tr>';
+  });
+  return h+'</tbody></table>';
+}
+function fxDetalle(f){
+  var h='<div class="l-bar l-bar-i"><button class="btn volver" id="b-volver-f" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg>Fórmulas</button></div><div class="lect-in">';
+  h+='<div class="idx-aviso">'+esc(AVISO_FM)+(FX.aviso?'<small>'+esc(FX.aviso)+'</small>':'')+'</div>';
+  h+='<div class="a-eye">Fórmulas de sala <span>·</span> '+esc(f.g)+'</div><h2 class="a-h">'+esc(f.si)+'</h2>';
+  h+='<div class="a-meta">'+f.m.map(function(m){return '<span>'+esc(FX.momentos[m])+'</span>'}).join('')+'<span>Revisada el '+fdate(f.rv)+'</span><span>Revisor: '+esc(f.rr)+'</span>'+(f.es==='provisional'?'<span>Provisional: bases no contrastadas con el BOE</span>':'')+'</div>';
+  if(f.es==='caducada'){
+    var rz=(f.cad||[]).map(razonCad).filter(Boolean);
+    h+='<div class="idx-cad">Caducada: '+(rz.length?rz.join('; '):'el revisor la ha marcado como caducada')+'. Lee el texto vigente.</div>';
+  }
+  h+='<div class="fm-formula" id="fm-texto">'+esc(f.f)+'</div><button class="btn p" id="b-copiar-f" type="button">Copiar</button>';
+  if(f.p)h+='<div class="idx-sec">Qué se pide</div><p>'+esc(f.p)+'</p>';
+  if(f.av)h+='<div class="idx-nc"><b>Ojo:</b> '+esc(f.av)+'</div>';
+  if(f.b.length)h+='<div class="idx-sec">Base</div><ul class="idx-lista">'+f.b.map(function(b){return '<li><a class="ref" href="#a/'+b.n+'/'+encodeURIComponent(b.k)+(b.a?'/'+b.a:'')+'">'+remLabel(b)+'</a></li>'}).join('')+'</ul>';
+  if(f.nc.length)h+='<div class="idx-nc"><b>No consta en norma:</b><ul>'+f.nc.map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ul></div>';
+  return h+'</div>';
+}
+function fxCopia(f,btn){
+  var txt=f.f+(f.b.length?'\n('+f.b.map(remPlano).join('; ')+')':'');
+  var ok=function(){var t=btn.innerHTML;btn.textContent='Copiado';setTimeout(function(){btn.innerHTML=t},1600)};
+  var fb=function(){var ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy');ok()}catch(e){toast('No he podido copiar')}ta.remove()};
+  if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(txt).then(ok,fb);else fb();
+}
+function vistaFormulas(slug){
+  ST.mode='formulas';ST.items=[];ST.sel=-1;ST.stack=false;ST.mostrados=null;
+  elChips.innerHTML='';
+  var ms=['','audiencia_previa','juicio','vista_verbal'];
+  var chips=ms.map(function(m){return '<button type="button" class="chip fm-chip'+(FM.m===m?' on':'')+'" data-m="'+m+'">'+(m?esc(FX.momentos[m]):'Todas')+'</button>'}).join('');
+  elLista.innerHTML='<div class="lista-h">Fórmulas de sala<small>'+FX.f.length+'</small></div><div class="idx-filtro"><input id="fq" type="search" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Filtrar fórmulas…" aria-label="Filtrar fórmulas de sala" value="'+esc(FM.q||'')+'"></div><div class="fm-chips">'+chips+'</div><div id="fx-lista">'+fxLista(slug)+'</div>';
+  var f=slug&&fxPorSlug(slug);
+  function refresca(){
+    $('#fx-lista').innerHTML=fxLista(slug);
+    var c=elLista.querySelectorAll('.fm-chip');for(var i=0;i<c.length;i++)c[i].classList.toggle('on',c[i].dataset.m===FM.m);
+    if(!f){var t=$('#fx-tabla');if(t)t.innerHTML=fxTabla()}
+  }
+  $('#fq').addEventListener('input',function(e){FM.q=e.target.value;refresca()});
+  elLista.querySelector('.fm-chips').addEventListener('click',function(e){var b=e.target.closest('.fm-chip');if(!b)return;FM.m=b.dataset.m;refresca()});
+  if(f){
+    elLector.innerHTML=fxDetalle(f);elLector.scrollTop=0;
+    $('#b-volver-f').onclick=function(){document.body.classList.remove('ver-lector')};
+    $('#b-copiar-f').onclick=function(){fxCopia(f,this)};
+    document.body.classList.toggle('ver-lector',MOVIL());
+  }else{
+    elLector.innerHTML='<div class="lect-in"><div class="idx-aviso">'+esc(AVISO_FM)+(FX.aviso?'<small>'+esc(FX.aviso)+'</small>':'')+'</div><div class="a-eye">Fórmulas de sala</div><h2 class="a-h" style="font-size:20px">Objeciones, impugnaciones y protestas</h2><div class="a-meta">'+FX.f.length+' fórmulas'+(FX.version?' · versión '+esc(FX.version):'')+'</div><div id="fx-tabla">'+fxTabla()+'</div></div>';
+    document.body.classList.remove('ver-lector');
+  }
+  marcaNav();
+}
+
 /* ---------- enrutado ---------- */
 function go(h,o){
   o=o||{};
@@ -792,6 +888,7 @@ function parseHash(){
   if(p[0]==='a')return {t:'a',n:p[1],k:p[2],ap:p[3]||null};
   if(p[0]==='n')return {t:'n',n:p[1]};
   if(p[0]==='i')return {t:'i',s:p[1]||null};
+  if(p[0]==='f')return {t:'f',s:p[1]||null};
   return {t:'home'};
 }
 var ULTIMO_Q=null;
@@ -799,6 +896,7 @@ function apply(){
   var H=parseHash();if(H.t!=='a')ST.pushed=false;
   if(H.t==='home'){elQ.value='';$('#limpia').style.display='none';ST.q='';vistaInicio();return}
   if(H.t==='i'&&IDX){vistaIndice(H.s);return}
+  if(H.t==='f'&&FX){vistaFormulas(H.s);return}
   if(H.t==='n'){var n=POR[H.n];if(n){vistaNorma(n,null);elLector.innerHTML='<div class="lect-in"><div class="a-eye">'+esc(n.sigla)+'</div><h2 class="a-h" style="font-size:20px">'+esc(n.titulo)+'</h2><div class="a-meta">'+n.cuenta+' artículos'+(n.cdisp?' · '+n.cdisp+' disposiciones':'')+' · actualizada a '+fdate(n.act)+'</div><div class="a-body"><p>Elige un artículo del índice, o escribe arriba su número («282») seguido de «'+esc(n.sigla)+'».</p></div></div>';document.body.classList.remove('ver-lector')}return}
   if(H.t==='a'){
     var nn=POR[H.n],c=nn&&nn.map.get(H.k);if(!c){toast('Artículo no encontrado');vistaInicio();return}
@@ -907,6 +1005,7 @@ elLector.addEventListener('click',function(e){
 });
 $('#nav-buscar').addEventListener('click',function(){cierraNav();go('');elQ.focus()});
 $('#nav-indice').addEventListener('click',function(){cierraNav();go('#i')});
+$('#nav-formulas').addEventListener('click',function(){cierraNav();go('#f')});
 function clicNormas(e){
   var s=e.target.closest('.fs');
   if(s){e.preventDefault();e.stopPropagation();var on=alternaFavN(s.dataset.n,null);toast(on?'Fijada en favoritos':'Quitada de favoritos');return}
@@ -943,6 +1042,7 @@ window.addEventListener('hashchange',apply);
 function arranque(){
   prepara();
   IDX=DATA.indice||null;if(IDX)$('#nav-indice').style.display='';
+  FX=DATA.formulas||null;if(FX)$('#nav-formulas').style.display='';
   var fs=LS.get('normas.fs',16);document.documentElement.style.setProperty('--fs',fs+'px');
   if(LS.get('normas.notas',false))document.body.classList.add('con-notas');
   $('#nav-normas').innerHTML=NORMAS.map(function(n){return '<button class="navlink" data-n="'+n.id+'"><span class="sg">'+esc(n.sigla)+'</span><span class="nm">'+esc(n.corto)+'</span><span class="fs" role="button" tabindex="0" data-n="'+n.id+'" aria-label="Fijar '+esc(n.sigla)+' en favoritos" aria-pressed="false">'+ESTRELLA_V+'</span></button>'}).join('');
@@ -958,7 +1058,7 @@ function arranque(){
   (window.requestIdleCallback||function(f){setTimeout(f,300)})(function(){indexa()});
 }
 /* gancho para las pruebas: devuelve el HTML con los enlaces que se crearían para un texto suelto */
-window.__NT={poner:function(nid,av){POR[nid].av=av||undefined},avisoBoe:function(nid,k,hoy){return avisoBoe(POR[nid],{k:k},hoy)},probar:function(nid,k,txt){return enlaza(esc(txt),POR[nid].map.get(k))},idx:function(){return IDX},vistaIndice:function(s){vistaIndice(s)}};
+window.__NT={fx:function(){return FX},vistaFormulas:function(s){vistaFormulas(s)},poner:function(nid,av){POR[nid].av=av||undefined},avisoBoe:function(nid,k,hoy){return avisoBoe(POR[nid],{k:k},hoy)},probar:function(nid,k,txt){return enlaza(esc(txt),POR[nid].map.get(k))},idx:function(){return IDX},vistaIndice:function(s){vistaIndice(s)}};
 if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol)){navigator.serviceWorker.register('sw.js').catch(function(){})}
 cargar().then(function(d){DATA=d;arranque()}).catch(function(err){document.getElementById('carga').innerHTML='No he podido abrir los datos.<br><br>'+esc(err.message||err)});
 })();

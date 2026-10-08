@@ -1,0 +1,365 @@
+# Índice de conceptos de «Consulta de normas» — tanda 3 (resto de excepciones, partes y actuaciones)
+# Revisor: armero. Espejo: legalize-es@aca28304d. Todo precepto citado se ha leído en el espejo en esta pasada.
+# Vigencia: scripts/contraste_boe.py --solo "LEC,CC,LOPJ,CE,LO 1/2025", ejecutado el 8-10-2026 a las 06:36. Distintos: LEC 22 y 685,
+# CC 396. Sin vigencias futuras en esas normas. La única voz que cita un artículo afectado (LEC 22) va «provisional». Ver notas.
+
+voces:
+  - voz: "Carencia sobrevenida de objeto / satisfacción extraprocesal"
+    sinonimos: ["carencia sobrevenida de objeto", "satisfacción extraprocesal", "pérdida sobrevenida de interés legítimo", "pago después de la demanda", "terminación anticipada del proceso", "desaparición sobrevenida del objeto"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "22", apartado: "1", tipo: "regula", nota: "Sin interés legítimo sobrevenido y con acuerdo de las partes: decreto del LAJ que termina el proceso, sin costas."}
+      - {norma: "LEC", articulo: "22", apartado: "2", tipo: "regula", nota: "Si una parte lo niega motivadamente: comparecencia en diez días y auto en otros diez; costas al que pierda."}
+      - {norma: "LEC", articulo: "22", apartado: "2, párrafo 2.º", tipo: "regula", nota: "Si solo quedan en disputa las costas: auto de terminación con costas según el art. 395; cabe apelación."}
+      - {norma: "LEC", articulo: "22", apartado: "3", tipo: "regula", nota: "Sin recurso el auto que ordena seguir; apelable el que acuerda la terminación."}
+      - {norma: "LEC", articulo: "413", apartado: "1", tipo: "regula", nota: "La sentencia ignora los cambios posteriores, salvo que priven definitivamente de interés la pretensión."}
+      - {norma: "LEC", articulo: "413", apartado: "2", tipo: "regula", nota: "Si la pretensión pierde el interés legítimo, se aplica el art. 22."}
+      - {norma: "LEC", articulo: "395", apartado: "1", tipo: "conexa", nota: "Criterio de costas al que remite el 22.2: mala fe si hubo requerimiento fehaciente o rechazo del MASC."}
+      - {norma: "LEC", articulo: "21", tipo: "conexa", nota: "Si el demandado reconoce lo pedido en el proceso en vez de satisfacerlo fuera, es allanamiento: sentencia condenatoria."}
+      - {norma: "LEC", articulo: "22", apartado: "4", tipo: "conexa", nota: "Desahucio por impago: el pago enervador tiene régimen propio. El art. 22 tiene un apartado 6 desde el 08-10-2026."}
+      - {norma: "LEC", articulo: "443", apartado: "1", tipo: "conexa", nota: "Verbal: al abrir la vista el tribunal comprueba si subsiste el litigio."}
+    no_consta_en_norma:
+      - "Si la carencia sobrevenida puede apreciarse de oficio, sin que la alegue ninguna parte: jurisprudencial."
+      - "La carencia sobrevenida en apelación o casación: jurisprudencial; el art. 22 se redacta para la instancia."
+    afines: ["Allanamiento", "Desistimiento", "Enervación del desahucio", "Costas: vencimiento, temeridad y allanamiento"]
+    # VIGENCIA: el RDL 29/2026 añade el apartado 6 al art. 22 (vigente desde el 08-10-2026; el espejo aún no lo trae). Leída la versión
+    # vigente en la API de boe.es: los apartados 1 a 5 no cambian. Va «provisional» porque la huella del artículo entero cambiará.
+    estado: "provisional"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Compensación y nulidad alegadas por el demandado"
+    sinonimos: ["excepción de compensación", "crédito compensable", "compensación judicial", "excepción de nulidad del contrato", "nulidad alegada como excepción", "reconvención implícita"]
+    normas_base: ["LEC", "CC"]
+    remisiones:
+      - {norma: "LEC", articulo: "408", apartado: "1", tipo: "regula", nota: "Crédito compensable frente a condena dineraria: el actor lo contesta como una reconvención, aunque solo se pida absolución."}
+      - {norma: "LEC", articulo: "408", apartado: "2", tipo: "regula", nota: "Nulidad absoluta del negocio base de la demanda: el actor puede pedir contestarla en el plazo de la reconvención."}
+      - {norma: "LEC", articulo: "408", apartado: "3", tipo: "regula", nota: "La sentencia resuelve ambas cuestiones y esos pronunciamientos tienen fuerza de cosa juzgada."}
+      - {norma: "LEC", articulo: "407", apartado: "2", tipo: "regula", nota: "Plazo y forma de contestar a la reconvención (a los que remite el 408): veinte días, como la contestación."}
+      - {norma: "LEC", articulo: "438", apartado: "3", tipo: "regula", nota: "Verbal: cabe oponer crédito compensable; si excede de la cuantía del verbal, se tiene por no hecha la alegación."}
+      - {norma: "LEC", articulo: "438", apartado: "8", tipo: "regula", nota: "Verbal: contestado el crédito compensable o pasado el plazo, cinco días comunes para proponer prueba."}
+      - {norma: "CC", articulo: "1195", tipo: "regula", nota: "Compensación: dos personas recíprocamente acreedoras y deudoras por derecho propio."}
+      - {norma: "CC", articulo: "1196", tipo: "regula", nota: "Requisitos: deudas principales, de dinero o fungibles iguales, vencidas, líquidas y exigibles, sin retención de tercero."}
+      - {norma: "CC", articulo: "1202", tipo: "regula", nota: "Efecto: extingue ambas deudas en la cantidad concurrente, aunque las partes lo ignoren."}
+      - {norma: "CC", articulo: "6", apartado: "3", tipo: "regula", nota: "Nulidad de pleno derecho de los actos contrarios a normas imperativas o prohibitivas."}
+      - {norma: "CC", articulo: "1200", tipo: "conexa", nota: "No compensan las deudas de depósito o comodato ni los alimentos por título gratuito."}
+      - {norma: "CC", articulo: "1197", tipo: "conexa", nota: "El fiador puede oponer la compensación de lo que el acreedor deba al deudor principal."}
+      - {norma: "CC", articulo: "1198", tipo: "conexa", nota: "Cesión del crédito: qué compensación puede oponer el deudor al cesionario según consintiera o conociera la cesión."}
+      - {norma: "CC", articulo: "1300", tipo: "conexa", nota: "Anulabilidad por vicios: el 408.2 solo cubre la nulidad absoluta."}
+      - {norma: "LEC", articulo: "406", apartado: "2, párrafo 4.º", tipo: "conexa", nota: "Si la nulidad del 408.2 es materia mercantil, el juzgado civil se inhibe a favor del de lo Mercantil."}
+      - {norma: "LEC", articulo: "557", apartado: "1.2.ª", tipo: "conexa", nota: "Ejecución de títulos no judiciales: solo compensa el crédito líquido que conste en documento ejecutivo."}
+    no_consta_en_norma:
+      - "Si un crédito ilíquido o la anulabilidad pueden oponerse como excepción o exigen reconvención: jurisprudencial."
+      - "La «compensación judicial» de créditos que no reúnen el art. 1196 al tiempo de la demanda: jurisprudencial."
+    afines: ["Reconvención", "Cosa juzgada", "Nulidad y anulabilidad del contrato", "Oposición a la ejecución por motivos de fondo"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Preclusión de alegaciones y hechos nuevos"
+    sinonimos: ["preclusión", "hechos nuevos", "hechos de nueva noticia", "escrito de ampliación de hechos", "alegaciones complementarias", "mutatio libelli", "cambio de demanda", "cuestión nueva"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "136", tipo: "regula", nota: "Pasado el plazo o el término, se pierde la oportunidad de realizar el acto; el LAJ lo hace constar."}
+      - {norma: "LEC", articulo: "400", apartado: "1", tipo: "regula", nota: "Todos los hechos y fundamentos conocidos se alegan en la demanda; no cabe reservarlos para otro pleito."}
+      - {norma: "LEC", articulo: "400", apartado: "2", tipo: "regula", nota: "Lo que pudo alegarse se tiene por alegado a efectos de litispendencia y cosa juzgada."}
+      - {norma: "LEC", articulo: "412", tipo: "regula", nota: "Fijado el objeto en demanda, contestación y reconvención, no se altera; caben alegaciones complementarias."}
+      - {norma: "LEC", articulo: "426", apartado: "1", tipo: "regula", nota: "Audiencia previa: alegaciones complementarias sin alterar sustancialmente pretensiones ni fundamentos."}
+      - {norma: "LEC", articulo: "426", apartado: "3", tipo: "regula", nota: "Petición accesoria nueva: con conformidad contraria o si no merma la defensa del otro."}
+      - {norma: "LEC", articulo: "426", apartado: "4", tipo: "regula", nota: "Hechos posteriores o de nueva noticia: se alegan en la audiencia previa, con el control del 286.4."}
+      - {norma: "LEC", articulo: "286", tipo: "regula", nota: "Hecho nuevo tras la alegación y antes del plazo para sentencia: escrito de ampliación de hechos; cinco días al contrario."}
+      - {norma: "LEC", articulo: "286", apartado: "4", tipo: "regula", nota: "Se rechaza si no se acredita que es posterior o de conocimiento posterior; mala fe: multa de 120 a 600 euros."}
+      - {norma: "LEC", articulo: "433", apartado: "1, párrafo 2.º", tipo: "regula", nota: "Juicio ordinario: los hechos posteriores a la audiencia previa se alegan antes de practicar la prueba."}
+      - {norma: "LEC", articulo: "437", apartado: "1", tipo: "regula", nota: "Juicio verbal: rige la preclusión de alegaciones del ordinario."}
+      - {norma: "LEC", articulo: "433", apartado: "3", tipo: "conexa", nota: "En el informe final no pueden alterarse las pretensiones."}
+      - {norma: "LEC", articulo: "406", apartado: "4", tipo: "conexa", nota: "La carga de alegar todo del art. 400 rige también para la reconvención."}
+      - {norma: "LEC", articulo: "401", apartado: "1", tipo: "conexa", nota: "No se acumulan acciones después de contestada la demanda."}
+      - {norma: "LEC", articulo: "265", apartado: "3", tipo: "conexa", nota: "Actor: documentos cuyo interés surge de la contestación, en la audiencia previa o en la vista del verbal."}
+      - {norma: "LEC", articulo: "270", apartado: "1", tipo: "conexa", nota: "Documentos tardíos: solo si son de fecha o conocimiento posterior, o no pudieron obtenerse antes."}
+      - {norma: "LEC", articulo: "456", apartado: "1", tipo: "conexa", nota: "Apelación: con los hechos y fundamentos de las pretensiones formuladas en primera instancia."}
+      - {norma: "LEC", articulo: "460", apartado: "2.3.ª", tipo: "conexa", nota: "Segunda instancia: prueba de hechos posteriores al plazo para sentencia o conocidos después."}
+    no_consta_en_norma:
+      - "La prohibición de introducir cuestiones nuevas en apelación como regla autónoma: jurisprudencial; el 456.1 solo la apunta."
+      - "Cuándo un cambio de fundamento altera la causa de pedir («mutatio libelli» frente a «iura novit curia»): jurisprudencial."
+    afines: ["Cosa juzgada", "Litispendencia", "Ampliación de la demanda y prohibición de cambio de demanda", "Documentos y pruebas posteriores (preclusión)", "Audiencia previa: contenido y orden"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Cuestiones prejudiciales (penal, administrativa, civil)"
+    sinonimos: ["prejudicialidad penal", "prejudicialidad civil", "prejudicialidad administrativa", "cuestión prejudicial", "suspensión por causa penal", "falsedad documental en el proceso civil", "cuestión prejudicial europea"]
+    normas_base: ["LEC", "LOPJ", "CE"]
+    remisiones:
+      - {norma: "LOPJ", articulo: "10", apartado: "1", tipo: "regula", nota: "A efectos prejudiciales, cada orden puede conocer de asuntos que no le estén atribuidos privativamente."}
+      - {norma: "LOPJ", articulo: "10", apartado: "2", tipo: "regula", nota: "La cuestión penal decisiva suspende el procedimiento hasta que la resuelva el orden penal, salvo excepción legal."}
+      - {norma: "LEC", articulo: "40", apartado: "1", tipo: "regula", nota: "Hecho con apariencia de delito perseguible de oficio: el tribunal lo comunica al Fiscal por providencia."}
+      - {norma: "LEC", articulo: "40", apartado: "2", tipo: "regula", nota: "Solo se suspende si hay causa penal sobre hechos del pleito y su decisión puede influir de forma decisiva."}
+      - {norma: "LEC", articulo: "40", apartado: "3", tipo: "regula", nota: "La suspensión se acuerda por auto cuando el proceso está pendiente solo de sentencia."}
+      - {norma: "LEC", articulo: "40", apartado: "4", tipo: "regula", nota: "Falsedad de un documento decisivo: suspensión inmediata en cuanto se acredite la causa penal."}
+      - {norma: "LEC", articulo: "40", apartado: "5", tipo: "regula", nota: "No se suspende, o se alza, si la parte a quien favorece el documento renuncia a él."}
+      - {norma: "LEC", articulo: "40", apartado: "6", tipo: "regula", nota: "El LAJ alza la suspensión cuando la causa penal termina o queda paralizada."}
+      - {norma: "LEC", articulo: "41", tipo: "regula", nota: "Denegación: reposición (reproducible en apelación); suspensión: apelación; alzamiento: revisión."}
+      - {norma: "LEC", articulo: "42", apartado: "1", tipo: "regula", nota: "Cuestiones administrativas y sociales: el tribunal civil las conoce a efectos prejudiciales."}
+      - {norma: "LEC", articulo: "42", apartado: "2", tipo: "regula", nota: "Esa decisión no surte efecto fuera del proceso."}
+      - {norma: "LEC", articulo: "42", apartado: "3", tipo: "regula", nota: "Suspensión si lo manda la ley o lo piden las partes de acuerdo; el tribunal civil queda vinculado a lo que se decida."}
+      - {norma: "LEC", articulo: "43", tipo: "regula", nota: "Prejudicialidad civil: suspensión por auto si otro pleito decide una cuestión previa y no cabe acumular."}
+      - {norma: "LEC", articulo: "40", apartado: "7", tipo: "conexa", nota: "Si la causa por falsedad termina sin probarla, el perjudicado por la suspensión puede pedir daños y perjuicios."}
+      - {norma: "LEC", articulo: "569", tipo: "conexa", nota: "Ejecución: la denuncia no suspende; sí la causa penal que afecte a la validez del título, salvo caución."}
+      - {norma: "LEC", articulo: "697", tipo: "conexa", nota: "Ejecución hipotecaria: solo suspende la causa penal sobre falsedad del título o ilicitud del despacho."}
+      - {norma: "LOPJ", articulo: "4 bis", apartado: "2", tipo: "conexa", nota: "Cuestión prejudicial europea: se plantea por auto, previa audiencia de las partes."}
+      - {norma: "CE", articulo: "163", tipo: "conexa", nota: "Cuestión de inconstitucionalidad de una ley de la que dependa el fallo; el proceso se suspende por la LOTC (art. 35.3)."}
+    no_consta_en_norma:
+      - "Si basta la admisión a trámite de una denuncia o querella para «acreditar» la causa criminal del 40.2: jurisprudencial."
+      - "Los criterios para acordar la suspensión del art. 43, que es potestativa («podrá»): jurisprudenciales."
+    fuera_de_la_herramienta:
+      - "LOTC, arts. 35 a 37: planteamiento y tramitación de la cuestión de inconstitucionalidad, incluida la suspensión del proceso."
+      - "TFUE, art. 267: cuestión prejudicial ante el Tribunal de Justicia de la Unión Europea."
+    afines: ["Suspensión del proceso", "Litispendencia", "Acumulación de procesos", "Cuestión de inconstitucionalidad", "Suspensión de la ejecución"]
+    # VERIFICADO: CE 163 dice «en ningún caso serán suspensivos» (se refiere a la ley cuestionada); LOTC 35.3, leído en la API de boe.es,
+    # suspende el proceso judicial hasta la admisión y, admitida, hasta la sentencia del TC.
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Cuenta del procurador y jura de cuentas del abogado"
+    sinonimos: ["jura de cuentas", "cuenta del procurador", "reclamación de honorarios del abogado", "minuta impagada", "honorarios excesivos", "honorarios indebidos", "provisión de fondos"]
+    normas_base: ["LEC", "CC"]
+    remisiones:
+      - {norma: "LEC", articulo: "34", apartado: "1", tipo: "regula", nota: "Procurador: cuenta detallada y justificada ante el LAJ del lugar del asunto; sin abogado ni procurador."}
+      - {norma: "LEC", articulo: "34", apartado: "2", tipo: "regula", nota: "Pagar o impugnar en diez días; traslado al procurador por tres; decreto del LAJ y pago en cinco bajo apremio."}
+      - {norma: "LEC", articulo: "34", apartado: "2, párrafo 3.º", tipo: "regula", nota: "El decreto y el auto de revisión no prejuzgan la sentencia de un juicio declarativo posterior."}
+      - {norma: "LEC", articulo: "34", apartado: "3", tipo: "regula", nota: "Sin oposición en plazo, se despacha ejecución por el importe de la cuenta."}
+      - {norma: "LEC", articulo: "34", apartado: "4", tipo: "regula", nota: "Cliente persona física: se aporta el contrato y el juez controla de oficio las cláusulas abusivas; auto apelable."}
+      - {norma: "LEC", articulo: "35", apartado: "1", tipo: "regula", nota: "Abogado: minuta detallada y manifestación formal de que se debe; también sus herederos; sin abogado ni procurador."}
+      - {norma: "LEC", articulo: "35", apartado: "2", tipo: "regula", nota: "Indebidos: trámite del 34.2. Excesivos: regulación por los arts. 241 y ss., salvo presupuesto previo aceptado por escrito."}
+      - {norma: "LEC", articulo: "35", apartado: "3", tipo: "regula", nota: "Sin oposición en plazo, se despacha ejecución por el importe de la minuta."}
+      - {norma: "LEC", articulo: "35", apartado: "4", tipo: "regula", nota: "Cliente persona física: contrato y control de oficio de cláusulas abusivas, como en el 34.4."}
+      - {norma: "LEC", articulo: "246", apartado: "1", tipo: "conexa", nota: "Honorarios excesivos: si el abogado no acepta la reducción, informe del Colegio de Abogados."}
+      - {norma: "LEC", articulo: "29", tipo: "conexa", nota: "Provisión de fondos: el procurador puede pedir el apremio del poderdante ante el mismo tribunal."}
+      - {norma: "LEC", articulo: "242", apartado: "3", tipo: "conexa", nota: "Firme la condena en costas, abogados y procuradores presentan minuta y cuenta para la tasación."}
+      - {norma: "CC", articulo: "1967", apartado: "1.ª", tipo: "conexa", nota: "Tres años para honorarios de abogados, peritos, agentes y curiales, desde que cesaron los servicios."}
+    no_consta_en_norma:
+      - "Si el procurador está entre los «curiales» del art. 1967 (prescripción de tres años): jurisprudencial."
+      - "Si cabe la jura de cuentas por trabajos fuera del proceso (consulta, negociación previa o MASC): jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Arancel de derechos de los procuradores (real decreto propio): cuantía de los derechos que se reclaman en la cuenta."
+    afines: ["Postulación (abogado y procurador)", "Tasación de costas y su impugnación", "Mandato y rendición de cuentas", "Cláusulas abusivas: concepto, nulidad e integración"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Herencia yacente y comunidades sin personalidad como parte"
+    sinonimos: ["herencia yacente", "herederos desconocidos", "ignorados herederos", "comunidad hereditaria", "entidad sin personalidad", "comunidad de propietarios como parte", "comunidad de bienes", "patrimonio separado"]
+    normas_base: ["LEC", "CC", "LPH"]
+    remisiones:
+      - {norma: "LEC", articulo: "6", apartado: "1.4.º", tipo: "regula", nota: "Capacidad de las masas patrimoniales sin titular transitorio (herencia yacente) o con titular sin poder de disposición."}
+      - {norma: "LEC", articulo: "7", apartado: "5", tipo: "regula", nota: "Esas masas comparecen por quienes las administren conforme a la ley."}
+      - {norma: "LEC", articulo: "6", apartado: "1.5.º", tipo: "regula", nota: "Entidades sin personalidad a las que la ley reconozca capacidad para ser parte."}
+      - {norma: "LEC", articulo: "7", apartado: "6", tipo: "regula", nota: "Comparecen por la persona a quien la ley atribuya, en cada caso, su representación en juicio."}
+      - {norma: "LEC", articulo: "6", apartado: "2", tipo: "regula", nota: "Pueden ser demandadas las entidades irregulares con pluralidad de personas y bienes al servicio de un fin."}
+      - {norma: "LEC", articulo: "7", apartado: "7", tipo: "regula", nota: "Las entidades del 6.2 comparecen por quienes actúen en su nombre frente a terceros, de hecho o por pacto."}
+      - {norma: "LEC", articulo: "798", tipo: "regula", nota: "Antes de aceptar, el administrador judicial representa a la herencia en todos los pleitos; después, solo en la administración."}
+      - {norma: "CC", articulo: "1026", tipo: "regula", nota: "Herencia en administración (beneficio de inventario): el administrador ejercita y contesta sus acciones."}
+      - {norma: "LPH", articulo: "13", apartado: "3", tipo: "regula", nota: "El presidente representa a la comunidad de propietarios en juicio y fuera de él."}
+      - {norma: "CC", articulo: "1020", tipo: "conexa", nota: "Hasta la aceptación, el notario puede adoptar provisiones de administración y custodia de la herencia."}
+      - {norma: "LEC", articulo: "795", apartado: "2.º", tipo: "conexa", nota: "Administrador judicial: el viudo y, en su defecto, el heredero o legatario de parte alícuota con mayor parte."}
+      - {norma: "LEC", articulo: "16", tipo: "conexa", nota: "Muerte de la parte en curso: suspensión y sucesión; si los sucesores del demandado no comparecen, rebeldía."}
+      - {norma: "LEC", articulo: "544", tipo: "conexa", nota: "Ejecución contra entidades sin personalidad: frente a socios o gestores; no rige para comunidades de PH."}
+    no_consta_en_norma:
+      - "Demanda contra la herencia yacente o «ignorados herederos» y cuándo exige defensor judicial: jurisprudencial."
+      - "Que cualquier coheredero pueda litigar en beneficio de la comunidad hereditaria: jurisprudencial."
+      - "Que la comunidad de bienes ordinaria no sea parte y deban litigar los comuneros: jurisprudencial."
+    afines: ["Falta de capacidad para ser parte / procesal", "Legitimación del presidente", "Sucesión procesal (muerte de la parte y transmisión del objeto litigioso)", "Administración e intervención del caudal hereditario", "Litisconsorcio pasivo necesario"]
+    # VERIFICADO: la LPH no declara la capacidad para ser parte de la comunidad de propietarios; solo la representación del presidente (13.3).
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Plazos procesales: cómputo, días inhábiles y día de gracia"
+    sinonimos: ["cómputo de plazos procesales", "días inhábiles", "agosto inhábil", "día de gracia", "hasta las quince horas", "habilitación de días", "fuerza mayor en los plazos", "improrrogabilidad de plazos"]
+    normas_base: ["LEC", "LOPJ", "CC"]
+    remisiones:
+      - {norma: "LEC", articulo: "130", apartado: "2", tipo: "regula", nota: "Inhábiles: sábados, domingos, 24 de diciembre a 6 de enero, fiestas nacionales, festivos locales o autonómicos y agosto."}
+      - {norma: "LEC", articulo: "130", apartado: "3", tipo: "regula", nota: "Horas hábiles: de 8 a 20; para comunicación y ejecución, también de 20 a 22."}
+      - {norma: "LEC", articulo: "131", tipo: "regula", nota: "Habilitación por causa urgente; para lo urgente, agosto es hábil sin habilitar; sin recurso."}
+      - {norma: "LEC", articulo: "133", apartado: "1", tipo: "regula", nota: "Corre desde el día siguiente a la comunicación; el último día cuenta entero; plazos encadenados sin nueva notificación."}
+      - {norma: "LEC", articulo: "133", apartado: "2", tipo: "regula", nota: "Por días: se excluyen los inhábiles; en actuaciones urgentes, agosto no se excluye."}
+      - {norma: "LEC", articulo: "133", apartado: "3", tipo: "regula", nota: "Meses y años: de fecha a fecha; si no hay día equivalente, vence el último del mes."}
+      - {norma: "LEC", articulo: "133", apartado: "4", tipo: "regula", nota: "Si vence en sábado, domingo u otro inhábil, se prorroga al siguiente hábil."}
+      - {norma: "LEC", articulo: "134", apartado: "2", tipo: "regula", nota: "Plazos improrrogables, salvo fuerza mayor apreciada por decreto del LAJ; revisión con efecto suspensivo."}
+      - {norma: "LEC", articulo: "134", apartado: "3", tipo: "regula", nota: "Tres días hábiles de interrupción por nacimiento, enfermedad grave, muerte de pariente o baja del abogado o procurador."}
+      - {norma: "LEC", articulo: "135", apartado: "5", tipo: "regula", nota: "Día de gracia: hasta las 15:00 del día hábil siguiente al vencimiento, sea el plazo procesal o sustantivo."}
+      - {norma: "LEC", articulo: "135", apartado: "1, párrafo 3.º", tipo: "regula", nota: "Escrito telemático presentado en día u hora inhábil: se tiene por presentado el primer día y hora hábil siguiente."}
+      - {norma: "LEC", articulo: "151", apartado: "2", tipo: "regula", nota: "Vía Colegio de Procuradores: hecha al día hábil siguiente a la recepción; remitida tras las 15:00, al otro."}
+      - {norma: "LEC", articulo: "162", apartado: "2", tipo: "regula", nota: "Notificación electrónica no abierta en tres días: se tiene por hecha y el plazo corre desde el hábil siguiente al tercero."}
+      - {norma: "LEC", articulo: "162", apartado: "2, párrafo 4.º", tipo: "regula", nota: "Sin notificaciones electrónicas a profesionales en agosto ni del 24 de diciembre al 6 de enero."}
+      - {norma: "LOPJ", articulo: "182", tipo: "regula", nota: "Inhábiles: sábados, domingos, fiestas nacionales y festivos laborales autonómicos o locales; horas de 8 a 20."}
+      - {norma: "LOPJ", articulo: "183", tipo: "regula", nota: "Agosto y del 24 de diciembre al 6 de enero son inhábiles, salvo actuaciones urgentes."}
+      - {norma: "LOPJ", articulo: "185", tipo: "regula", nota: "Cómputo según el CC excluyendo inhábiles en los plazos por días; si el último es inhábil, se prorroga."}
+      - {norma: "LEC", articulo: "136", tipo: "conexa", nota: "Pasado el plazo, preclusión: se pierde el trámite."}
+      - {norma: "CC", articulo: "5", tipo: "conexa", nota: "Cómputo civil: desde el día siguiente; de fecha a fecha; sin excluir los inhábiles."}
+    no_consta_en_norma:
+      - "Alcance del día de gracia en plazos sustantivos de caducidad: la letra del 135.5 los incluye; la aplicación concreta es jurisprudencial."
+      - "Si los festivos de la localidad del despacho, y no los de la sede del tribunal, cuentan como inhábiles: jurisprudencial."
+    afines: ["Cómputo civil de plazos", "Preclusión de alegaciones y hechos nuevos", "Caducidad de la acción (como excepción)", "Actos de comunicación: domicilio, emplazamiento y edictos", "Actuaciones telemáticas y comparecencia por videoconferencia"]
+    # VERIFICADO: el 135.5 dice «procesal o sustantivo»; el día de gracia no es solo para plazos procesales.
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Actos de comunicación: domicilio, emplazamiento y edictos"
+    sinonimos: ["notificaciones", "emplazamiento", "citación", "requerimiento", "edictos", "Tablón Edictal Judicial Único", "averiguación de domicilio", "domicilio del demandado", "notificación en el domicilio arrendado"]
+    normas_base: ["LEC", "CE"]
+    remisiones:
+      - {norma: "LEC", articulo: "149", tipo: "regula", nota: "Clases: notificación, emplazamiento, citación, requerimiento, mandamiento y oficio."}
+      - {norma: "LEC", articulo: "152", apartado: "1", tipo: "regula", nota: "Los practica el Auxilio Judicial o, si se pide en el escrito inicial, el procurador de la parte."}
+      - {norma: "LEC", articulo: "153", tipo: "regula", nota: "Parte personada con procurador: todo se le comunica a través de él, también sentencias y actos personales."}
+      - {norma: "LEC", articulo: "155", apartado: "1", tipo: "regula", nota: "No personado obligado a relación electrónica: vía 162; si es primer emplazamiento y no lo abre en tres días, entrega y edictos."}
+      - {norma: "LEC", articulo: "155", apartado: "2", tipo: "regula", nota: "No obligado: primer emplazamiento por remisión al domicilio; la vía electrónica solo vale si la acepta."}
+      - {norma: "LEC", articulo: "155", apartado: "3", tipo: "regula", nota: "Domicilio del demandado: padrón, oficial, registros, trabajo no ocasional; arrendamiento: la finca arrendada salvo pacto."}
+      - {norma: "LEC", articulo: "156", tipo: "regula", nota: "Averiguación por el LAJ; no es imposible si el domicilio consta en registros públicos; si fracasa, edictos."}
+      - {norma: "LEC", articulo: "158", tipo: "regula", nota: "Sin constancia de recibo de la comunicación para personarse: entrega del art. 161."}
+      - {norma: "LEC", articulo: "160", apartado: "1", tipo: "regula", nota: "Correo certificado o medio con acuse: el LAJ da fe de lo remitido y une el acuse a los autos."}
+      - {norma: "LEC", articulo: "161", apartado: "2", tipo: "regula", nota: "Si el destinatario rehúsa recibir o firmar, la comunicación produce efectos."}
+      - {norma: "LEC", articulo: "161", apartado: "3", tipo: "regula", nota: "Ausente el destinatario: entrega a empleado, familiar o conviviente mayor de 14 años, o al conserje."}
+      - {norma: "LEC", articulo: "161", apartado: "4", tipo: "regula", nota: "Nadie en el domicilio: se averigua si vive allí; si no consta otro domicilio, se pasa al art. 156."}
+      - {norma: "LEC", articulo: "164", tipo: "regula", nota: "Edictos en el Tablón Edictal Judicial Único cuando no se conoce el domicilio o no se halla al destinatario."}
+      - {norma: "LEC", articulo: "164", apartado: "párrafo 3.º", tipo: "regula", nota: "Desahucio y rentas: sin hallar al inquilino en el domicilio del 155.3 ni otro comunicado, edictos sin más trámite."}
+      - {norma: "LEC", articulo: "166", tipo: "regula", nota: "Nulos si se apartan de la ley y causan indefensión; sanan si el interesado comparece sin denunciarlo."}
+      - {norma: "LEC", articulo: "157", tipo: "conexa", nota: "Registro Central de Rebeldes Civiles: inscripción tras averiguación fallida; permite ir a edictos."}
+      - {norma: "LEC", articulo: "162", apartado: "2", tipo: "conexa", nota: "Notificación electrónica no abierta en tres días: se tiene por hecha, salvo imposibilidad justificada."}
+      - {norma: "LEC", articulo: "151", apartado: "1", tipo: "conexa", nota: "Las resoluciones se notifican en tres días como máximo desde su fecha."}
+      - {norma: "CE", articulo: "24", apartado: "1", tipo: "conexa", nota: "Tutela judicial sin indefensión: fundamento de la nulidad del emplazamiento defectuoso."}
+    no_consta_en_norma:
+      - "Que los edictos sean el último recurso y exijan agotar antes las averiguaciones razonables, también en desahucio: doctrina constitucional."
+    afines: ["Rebeldía del demandado", "Plazos procesales: cómputo, días inhábiles y día de gracia", "Nulidad de actuaciones", "Rescisión de la sentencia firme a instancia del rebelde", "Desahucio por falta de pago"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Suspensión de la vista y nuevo señalamiento"
+    sinonimos: ["suspensión de la vista", "aplazamiento del juicio", "nuevo señalamiento", "coincidencia de señalamientos", "baja del abogado", "imposibilidad de asistir a la vista", "interrupción de la vista"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "183", apartado: "1", tipo: "regula", nota: "Imposibilidad de asistir por fuerza mayor o causa análoga: comunicarla de inmediato, acreditarla y pedir nuevo señalamiento."}
+      - {norma: "LEC", articulo: "183", apartado: "2", tipo: "regula", nota: "Imposibilidad del abogado, atendible y acreditada: el LAJ hace nuevo señalamiento."}
+      - {norma: "LEC", articulo: "183", apartado: "3", tipo: "regula", nota: "Imposibilidad de la parte: nuevo señalamiento si actúa sin abogado o si debe estar presente (interrogatorio)."}
+      - {norma: "LEC", articulo: "183", apartado: "5", tipo: "regula", nota: "Testigo o perito impedido: tres días a las partes y el tribunal decide si se señala de nuevo o se le oye fuera de la vista."}
+      - {norma: "LEC", articulo: "183", apartado: "6", tipo: "regula", nota: "Petición dilatoria o infundada: multa de hasta 600 euros al abogado o al litigante."}
+      - {norma: "LEC", articulo: "188", apartado: "1", tipo: "regula", nota: "La vista señalada solo se suspende por las causas tasadas de este apartado."}
+      - {norma: "LEC", articulo: "188", apartado: "1.3.º", tipo: "regula", nota: "Petición de ambas partes con justa causa, a juicio del LAJ."}
+      - {norma: "LEC", articulo: "188", apartado: "1.5.º", tipo: "regula", nota: "Muerte, enfermedad, baja o imposibilidad del abogado ya fuera de plazo del 183; urgencia médica: basta cualquier medio."}
+      - {norma: "LEC", articulo: "188", apartado: "1.6.º", tipo: "regula", nota: "Dos vistas del abogado el mismo día: pedirlo en tres días; prefiere la penal con preso y luego la más antigua."}
+      - {norma: "LEC", articulo: "188", apartado: "1.8.º", tipo: "regula", nota: "Imposibilidad técnica de la videoconferencia acordada."}
+      - {norma: "LEC", articulo: "189", tipo: "regula", nota: "Nuevo señalamiento al suspender, para el día más inmediato posible; respeta las bajas del abogado (179.3)."}
+      - {norma: "LEC", articulo: "179", apartado: "3", tipo: "regula", nota: "Suspensión del procedimiento a petición del abogado por muerte, accidente o enfermedad grave suya o de familiares."}
+      - {norma: "LEC", articulo: "190", tipo: "conexa", nota: "Cambio de juez tras el señalamiento: se comunica; la recusación en el acto suspende la vista."}
+      - {norma: "LEC", articulo: "193", tipo: "conexa", nota: "Vista ya iniciada: solo se interrumpe por las causas tasadas; si se reanuda en 20 días, señala el juez."}
+      - {norma: "LEC", articulo: "19", apartado: "4", tipo: "conexa", nota: "Distinto: suspensión del proceso a petición de las partes, por decreto y hasta sesenta días."}
+      - {norma: "LEC", articulo: "432", apartado: "2", tipo: "conexa", nota: "Juicio ordinario: si no comparece nadie, visto para sentencia; si comparece una parte, se celebra."}
+      - {norma: "LEC", articulo: "442", tipo: "conexa", nota: "Verbal: si falta el actor, desistimiento con costas; si falta el demandado, la vista se celebra."}
+    no_consta_en_norma:
+      - "Qué es «motivo de análoga entidad» a los del art. 183.1 para pedir nuevo señalamiento: jurisprudencial."
+      - "Si la coincidencia de señalamientos del procurador, no del abogado, permite suspender: el 188.1.6.º solo habla del abogado."
+    afines: ["Suspensión del proceso", "Vista del juicio verbal: desarrollo e incomparecencias", "Abstención y recusación de jueces y magistrados", "Actuaciones telemáticas y comparecencia por videoconferencia", "Plazos procesales: cómputo, días inhábiles y día de gracia"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Lengua de las actuaciones: valenciano, traducción e intérprete"
+    sinonimos: ["valenciano en el juicio", "lengua cooficial", "traducción de documentos", "intérprete", "documento en idioma extranjero", "traducción jurada", "lengua de signos"]
+    normas_base: ["LOPJ", "LEC", "CE"]
+    remisiones:
+      - {norma: "CE", articulo: "3", apartado: "1", tipo: "regula", nota: "El castellano es la lengua oficial del Estado."}
+      - {norma: "CE", articulo: "3", apartado: "2", tipo: "regula", nota: "Las demás lenguas españolas son oficiales en sus comunidades autónomas según sus Estatutos."}
+      - {norma: "LOPJ", articulo: "231", apartado: "2", tipo: "regula", nota: "Jueces y funcionarios pueden usar la lengua cooficial si ninguna parte se opone alegando indefensión."}
+      - {norma: "LOPJ", articulo: "231", apartado: "3", tipo: "regula", nota: "Partes, abogados, testigos y peritos pueden usar la lengua cooficial, de palabra y por escrito."}
+      - {norma: "LOPJ", articulo: "231", apartado: "4", tipo: "regula", nota: "Lo actuado en lengua cooficial vale sin traducir; se traduce si surte efecto fuera, si lo manda la ley o si hay indefensión."}
+      - {norma: "LOPJ", articulo: "231", apartado: "5", tipo: "regula", nota: "La habilitación de intérprete, también de lengua de signos, se rige por la ley procesal."}
+      - {norma: "LEC", articulo: "142", apartado: "2", tipo: "regula", nota: "Uso de la lengua cooficial por el tribunal, salvo oposición de parte por indefensión."}
+      - {norma: "LEC", articulo: "142", apartado: "3", tipo: "regula", nota: "Las partes, sus procuradores y abogados, testigos y peritos pueden usar la lengua cooficial."}
+      - {norma: "LEC", articulo: "142", apartado: "4", tipo: "regula", nota: "Validez sin traducción; traducción de oficio si surte efecto fuera, o a instancia de parte que alegue indefensión."}
+      - {norma: "LEC", articulo: "142", apartado: "5", tipo: "regula", nota: "En actuaciones orales, intérprete habilitado por providencia, con juramento o promesa."}
+      - {norma: "LEC", articulo: "143", apartado: "1", tipo: "regula", nota: "Quien no conoce el castellano ni la lengua cooficial: intérprete habilitado por decreto; acta bilingüe."}
+      - {norma: "LEC", articulo: "143", apartado: "2", tipo: "regula", nota: "Persona sorda: siempre intérprete de lengua de signos."}
+      - {norma: "LEC", articulo: "144", apartado: "1", tipo: "regula", nota: "Documento en idioma no oficial: se acompaña traducción."}
+      - {norma: "LEC", articulo: "144", apartado: "2", tipo: "regula", nota: "Traducción privada impugnable en cinco días: traducción oficial a costa del que la presentó, o del impugnante si coincide."}
+      - {norma: "LOPJ", articulo: "231", apartado: "1", tipo: "conexa", nota: "Regla general: jueces y funcionarios usan el castellano."}
+    no_consta_en_norma:
+      - "Cuándo el desconocimiento de la lengua cooficial causa indefensión y obliga a traducir: jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Estatuto de Autonomía de la Comunitat Valenciana, art. 6: cooficialidad del valenciano."
+      - "Ley 1/1996, de asistencia jurídica gratuita: intérprete gratuito en litigios transfronterizos (a la que remite el art. 143.1)."
+    afines: ["Tutela judicial efectiva e indefensión", "Documentos: aportación e impugnación", "Nulidad de actuaciones"]
+    # VERIFICADO: LOPJ 231 no sale en el contraste automático («solo espejo»); cotejado a mano con la API: la versión vigente
+    # (LO 5/2015, vigencia 28-10-2015) coincide con el espejo, también en el apartado 5.
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Rebeldía del demandado"
+    sinonimos: ["rebeldía", "demandado rebelde", "incomparecencia del demandado", "declaración de rebeldía", "rebeldía procesal", "ficta litis contestatio"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "496", apartado: "1", tipo: "regula", nota: "El LAJ declara rebelde al demandado que no comparece en forma en el plazo o la fecha señalados."}
+      - {norma: "LEC", articulo: "496", apartado: "2", tipo: "regula", nota: "La rebeldía no es allanamiento ni admisión de hechos, salvo que la ley diga otra cosa."}
+      - {norma: "LEC", articulo: "497", apartado: "1", tipo: "regula", nota: "Se notifica la declaración de rebeldía y después solo la resolución que pone fin al proceso."}
+      - {norma: "LEC", articulo: "497", apartado: "2", tipo: "regula", nota: "La sentencia se notifica en persona (art. 161) o, en paradero desconocido, por extracto en el Tablón Edictal."}
+      - {norma: "LEC", articulo: "498", tipo: "regula", nota: "Al emplazado por edictos se le comunica la pendencia del proceso en cuanto se sepa dónde hacerlo."}
+      - {norma: "LEC", articulo: "499", tipo: "regula", nota: "Si comparece después, sigue con él el proceso en el estado en que esté, sin retroceder."}
+      - {norma: "LEC", articulo: "500", tipo: "regula", nota: "Apelación y casación en plazo; si no se le notificó en persona, el plazo corre desde el edicto."}
+      - {norma: "LEC", articulo: "438", apartado: "1", tipo: "regula", nota: "Verbal: si no contesta en los diez días, se le declara en rebeldía."}
+      - {norma: "LEC", articulo: "460", apartado: "3", tipo: "regula", nota: "Rebelde personado tarde por causa no imputable: puede pedir en apelación toda la prueba."}
+      - {norma: "LEC", articulo: "501", tipo: "regula", nota: "Rescisión de la sentencia firme: fuerza mayor ininterrumpida o desconocimiento del pleito (cédula o edictos)."}
+      - {norma: "LEC", articulo: "502", tipo: "regula", nota: "Rescisión: veinte días o cuatro meses según la notificación; nunca después de dieciséis meses."}
+      - {norma: "LEC", articulo: "503", tipo: "regula", nota: "No cabe rescindir sentencias sin efecto de cosa juzgada (p. ej. desahucio por impago)."}
+      - {norma: "LEC", articulo: "504", tipo: "conexa", nota: "La demanda de rescisión no suspende la ejecución, salvo el art. 566; se tramita por el ordinario."}
+      - {norma: "LEC", articulo: "438", apartado: "6", tipo: "conexa", nota: "Desahucio: si el demandado no comparece a la vista, se declara el desahucio sin más trámites."}
+      - {norma: "LEC", articulo: "442", apartado: "2", tipo: "conexa", nota: "Verbal: si no comparece el demandado, se celebra la vista."}
+      - {norma: "LEC", articulo: "16", apartado: "3", tipo: "conexa", nota: "Demandado fallecido sin sucesores localizables o que no quieren comparecer: rebeldía."}
+      - {norma: "LEC", articulo: "157", tipo: "conexa", nota: "Registro Central de Rebeldes Civiles."}
+    no_consta_en_norma:
+      - "Que el actor deba probar los hechos pese a la rebeldía y cómo valorarla: se deduce del 496.2; su alcance, jurisprudencial."
+    afines: ["Rescisión de la sentencia firme a instancia del rebelde", "Actos de comunicación: domicilio, emplazamiento y edictos", "Admisión de hechos y silencio en la contestación", "Carga de la prueba", "Nulidad de actuaciones"]
+    # VERIFICADO: el 501.3.º sigue hablando de edictos publicados en «Boletines Oficiales»; el 164 los manda hoy al Tablón Edictal Judicial Único.
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Aclaración, corrección y complemento de resoluciones"
+    sinonimos: ["aclaración de sentencia", "rectificación de errores materiales", "error aritmético", "complemento de sentencia", "incongruencia omisiva", "subsanación de sentencia", "invariabilidad de las resoluciones"]
+    normas_base: ["LEC", "LOPJ"]
+    remisiones:
+      - {norma: "LEC", articulo: "214", apartado: "1", tipo: "regula", nota: "Firmada la resolución no se varía; sí cabe aclarar conceptos oscuros y rectificar errores materiales."}
+      - {norma: "LEC", articulo: "214", apartado: "2", tipo: "regula", nota: "Aclaración: de oficio o a instancia en dos días hábiles desde la publicación; se resuelve en tres."}
+      - {norma: "LEC", articulo: "214", apartado: "3", tipo: "regula", nota: "Errores materiales manifiestos y aritméticos: se rectifican en cualquier momento."}
+      - {norma: "LEC", articulo: "214", apartado: "4", tipo: "regula", nota: "Sin recurso contra lo que se decida, sin perjuicio de recurrir la resolución aclarada."}
+      - {norma: "LEC", articulo: "215", apartado: "1", tipo: "regula", nota: "Omisiones o defectos que impidan ejecutar sentencias y autos: subsanación por auto, plazos del 214."}
+      - {norma: "LEC", articulo: "215", apartado: "2", tipo: "regula", nota: "Pronunciamiento omitido sobre pretensión deducida: pedirlo en cinco días; traslado cinco días; auto."}
+      - {norma: "LEC", articulo: "215", apartado: "3", tipo: "regula", nota: "De oficio, en cinco días desde que se dicta, sin modificar lo ya acordado."}
+      - {norma: "LEC", articulo: "215", apartado: "4", tipo: "regula", nota: "Lo mismo hace el LAJ con sus decretos."}
+      - {norma: "LEC", articulo: "215", apartado: "5", tipo: "regula", nota: "Sin recurso; el plazo para recurrir se interrumpe al pedirlo y continúa desde la notificación de lo resuelto."}
+      - {norma: "LOPJ", articulo: "267", apartado: "1", tipo: "regula", nota: "Misma regla orgánica: no variar lo firmado; aclarar conceptos oscuros y rectificar errores materiales."}
+      - {norma: "LOPJ", articulo: "267", apartado: "5", tipo: "regula", nota: "Complemento de pronunciamientos omitidos: cinco días desde la notificación, traslado y auto."}
+      - {norma: "LOPJ", articulo: "267", apartado: "9", tipo: "regula", nota: "Los plazos de recurso se interrumpen y «comenzarán a computarse» desde el día siguiente a la notificación."}
+      - {norma: "LEC", articulo: "459", tipo: "conexa", nota: "Apelación por infracción procesal: hay que acreditar que se denunció oportunamente en la instancia."}
+    no_consta_en_norma:
+      - "Si el plazo del recurso se reinicia (LOPJ 267.9) o se reanuda (LEC 215.5, «continuando el cómputo»): los textos difieren; jurisprudencial."
+      - "Que pedir el complemento del 215.2 sea carga previa para alegar incongruencia omisiva en el recurso: jurisprudencial."
+      - "Dónde acaba el error material rectificable y empieza el error de juicio que solo se corrige por recurso: jurisprudencial."
+    afines: ["Congruencia y motivación de la sentencia", "Resoluciones procesales: clases y firmeza", "Recurso de apelación (plazo, interposición, prueba en segunda instancia)", "Nulidad de actuaciones"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"

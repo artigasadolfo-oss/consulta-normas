@@ -1,0 +1,436 @@
+# Índice de conceptos de «Consulta de normas» — tanda 12 (sucesiones, LOE, consumo y CE)
+# Revisor: armero. Espejo: legalize-es@aca28304d. Todo precepto citado se ha leído en el espejo en esta pasada.
+# Vigencia: contraste con la API de boe.es (scripts/contraste_boe.py --solo "CC,LEC,LOE,TRLGDCU,LOPJ,CE,LAU,LPH", 08-10-2026).
+# Distintos: LEC 22 y 685, CC 396 (errata del espejo), LPH 10 y 34 artículos de la LAU. Ninguno está citado; ninguna versión futura
+# en los artículos citados. Voces 256, 272, 273, 274, 280 a 284, 299 y 300 de la lista maestra (11 voces). Ver tanda-12-notas.md.
+
+voces:
+  - voz: "Responsabilidad del heredero por deudas y beneficio de inventario"
+    sinonimos: ["beneficio de inventario", "deudas de la herencia", "deudas del causante", "responsabilidad ultra vires", "aceptación a beneficio de inventario", "derecho a deliberar", "inventario notarial", "herencia en administración", "pérdida del beneficio de inventario", "acreedores de la herencia", "acreedores del heredero", "heredar deudas", "ejecución contra los herederos"]
+    normas_base: ["CC", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "659", tipo: "conexa", nota: "La herencia comprende los bienes, derechos y obligaciones del causante que no se extinguen por su muerte."}
+      - {norma: "CC", articulo: "661", tipo: "regula", nota: "Los herederos suceden al difunto, por el solo hecho de su muerte, en todos sus derechos y obligaciones."}
+      - {norma: "CC", articulo: "1003", tipo: "regula", nota: "Aceptación pura y simple: responde de todas las cargas con los bienes de la herencia y con los suyos propios."}
+      - {norma: "CC", articulo: "1010", tipo: "regula", nota: "Todo heredero puede aceptar a beneficio de inventario aunque lo prohíba el testador, o pedir inventario para deliberar."}
+      - {norma: "CC", articulo: "1011", tipo: "regula", nota: "La declaración de usar el beneficio de inventario se hace ante Notario."}
+      - {norma: "CC", articulo: "1013", tipo: "regula", nota: "Sin inventario fiel y exacto, hecho en forma y plazo, la declaración no produce efecto alguno."}
+      - {norma: "CC", articulo: "1014", tipo: "regula", nota: "Heredero que posee bienes: comunicarlo ante Notario y pedir el inventario en 30 días desde que sabe que es heredero."}
+      - {norma: "CC", articulo: "1015", tipo: "regula", nota: "Si no posee ni ha gestionado: el plazo corre desde que expira el del 1005 o desde que aceptó o gestionó."}
+      - {norma: "CC", articulo: "1016", tipo: "conexa", nota: "En los demás casos, sin demanda contra él, cabe mientras no prescriba la acción para reclamar la herencia."}
+      - {norma: "CC", articulo: "1017", tipo: "regula", nota: "Inventario: empieza en 30 días desde la citación de acreedores y legatarios y acaba en otros 60; prórroga notarial hasta un año."}
+      - {norma: "CC", articulo: "1018", tipo: "regula", nota: "Si por su culpa no se empieza o no se acaba el inventario en plazo y forma, se entiende aceptada pura y simplemente."}
+      - {norma: "CC", articulo: "1019", tipo: "conexa", nota: "Tras deliberar, 30 días para manifestar ante Notario si acepta o repudia; si calla, aceptación pura y simple."}
+      - {norma: "CC", articulo: "1023", tipo: "regula", nota: "Efectos: paga deudas solo hasta donde alcanzan los bienes de la herencia, conserva sus créditos y no hay confusión."}
+      - {norma: "CC", articulo: "1024", tipo: "regula", nota: "Pierde el beneficio si oculta bienes a sabiendas o vende sin autorización antes de pagar (salvo mercado o subasta notarial)."}
+      - {norma: "CC", articulo: "1026", tipo: "regula", nota: "Hasta pagar a acreedores y legatarios, la herencia está en administración; el administrador la representa en juicio."}
+      - {norma: "CC", articulo: "1027", tipo: "regula", nota: "El administrador no paga los legados sino después de pagar a todos los acreedores."}
+      - {norma: "CC", articulo: "1028", tipo: "conexa", nota: "Orden de pago: el de la sentencia de graduación; si no, por orden de presentación, con caución al acreedor preferente."}
+      - {norma: "CC", articulo: "1029", tipo: "conexa", nota: "Acreedores que aparecen tras pagar los legados: solo reclaman a los legatarios si no quedan bienes en la herencia."}
+      - {norma: "CC", articulo: "1031", tipo: "conexa", nota: "Si los bienes no alcanzan, el administrador rinde cuentas y responde de los perjuicios causados por su culpa."}
+      - {norma: "CC", articulo: "1032", tipo: "conexa", nota: "Pagados acreedores y legatarios, el heredero queda en el pleno goce del remanente."}
+      - {norma: "CC", articulo: "1034", tipo: "regula", nota: "Los acreedores del heredero no intervienen hasta que cobren los de la herencia; pueden embargar el remanente."}
+      - {norma: "CC", articulo: "1002", tipo: "conexa", nota: "Quien sustrae u oculta bienes de la herencia pierde la facultad de repudiar y queda heredero puro y simple."}
+      - {norma: "CC", articulo: "1005", tipo: "conexa", nota: "Interpelación notarial: si calla 30 días naturales, se entiende aceptada pura y simplemente."}
+      - {norma: "CC", articulo: "995", tipo: "conexa", nota: "Casado que acepta sin beneficio sin consentimiento del otro cónyuge: no responden los bienes gananciales."}
+      - {norma: "CC", articulo: "1082", tipo: "conexa", nota: "Los acreedores reconocidos pueden oponerse a la partición hasta que se les pague o afiance."}
+      - {norma: "CC", articulo: "1084", apartado: "párrafo 1.º", tipo: "regula", nota: "Hecha la partición, cobran por entero de cualquier heredero puro; del beneficiario, hasta su porción hereditaria."}
+      - {norma: "CC", articulo: "1084", apartado: "párrafo 2.º", tipo: "conexa", nota: "El heredero demandado puede hacer citar y emplazar a sus coherederos, salvo que solo él quedara obligado."}
+      - {norma: "CC", articulo: "1085", tipo: "conexa", nota: "El coheredero que paga más de su parte reclama a los demás la proporcional, aunque el acreedor le ceda sus acciones."}
+      - {norma: "CC", articulo: "1257", apartado: "párrafo 1.º", tipo: "conexa", nota: "Los contratos producen efecto entre las partes y sus herederos, salvo derechos u obligaciones intransmisibles."}
+      - {norma: "LEC", articulo: "540", apartado: "1", tipo: "regula", nota: "La ejecución se despacha o sigue frente a quien se acredite sucesor del ejecutado que figura en el título."}
+      - {norma: "LEC", articulo: "540", apartado: "2", tipo: "conexa", nota: "La sucesión se acredita con documentos fehacientes; si bastan, se despacha sin más trámite."}
+      - {norma: "LEC", articulo: "540", apartado: "3", tipo: "conexa", nota: "Sin documento fehaciente suficiente: audiencia de 15 días y el tribunal decide sobre la sucesión."}
+      - {norma: "LEC", articulo: "6", apartado: "1.4.º", tipo: "conexa", nota: "Tienen capacidad para ser parte los patrimonios que carecen transitoriamente de titular: la herencia yacente."}
+    no_consta_en_norma:
+      - "Responsabilidad de los coherederos antes de la partición (solidaria o solo con el caudal común): el CC la regula tras partir (1084); jurisprudencial."
+      - "Distinción entre deudas del causante y cargas de la herencia (gastos de entierro, de partición, impuesto): elaboración jurisprudencial."
+      - "Plazo de la acción para reclamar la herencia a que se remite el 1016: no consta en norma específica; jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Ley del Notariado, arts. 67 y 68: expediente notarial de formación de inventario (citación, contenido y plazos)."
+      - "Texto refundido de la Ley Concursal (RDLeg 1/2020), arts. 567 a 571: concurso de la herencia no aceptada pura y simplemente."
+    afines: ["Aceptación y repudiación de la herencia", "Herencia yacente y comunidades sin personalidad como parte", "Partición de la herencia y su impugnación", "Ejecución frente a herederos y frente al cónyuge", "Administración e intervención del caudal hereditario", "Sucesión procesal (muerte de la parte y transmisión del objeto litigioso)"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Responsabilidad de los agentes: plazos de 10, 3 y 1 año"
+    sinonimos: ["responsabilidad decenal", "vicios de la construcción", "defectos de construcción", "daños estructurales", "defectos de habitabilidad", "defectos de acabado", "responsabilidad del promotor", "responsabilidad del constructor", "responsabilidad del arquitecto", "artículo 17 LOE", "humedades y filtraciones de obra nueva", "seguro decenal"]
+    normas_base: ["LOE", "CC"]
+    remisiones:
+      - {norma: "LOE", articulo: "17", apartado: "1", tipo: "regula", nota: "Frente a propietarios y terceros adquirentes, desde la recepción sin reservas o la subsanación; sin perjuicio del contrato."}
+      - {norma: "LOE", articulo: "17", apartado: "1.a)", tipo: "regula", nota: "Diez años: daños por vicios en cimentación, soportes, vigas, forjados, muros de carga u otros elementos estructurales."}
+      - {norma: "LOE", articulo: "17", apartado: "1.b)", tipo: "regula", nota: "Tres años: vicios de elementos constructivos o instalaciones que incumplen los requisitos de habitabilidad del 3.1.c)."}
+      - {norma: "LOE", articulo: "17", apartado: "1, párrafo 2.º", tipo: "regula", nota: "Un año, solo el constructor: vicios de ejecución en elementos de terminación o acabado."}
+      - {norma: "LOE", articulo: "17", apartado: "2", tipo: "regula", nota: "Responsabilidad personal e individualizada, por actos propios y de las personas por las que se deba responder."}
+      - {norma: "LOE", articulo: "17", apartado: "3, párrafo 1.º", tipo: "regula", nota: "Solidaria si no se individualiza la causa o hay concurrencia de culpas sin poder precisar la intervención de cada agente."}
+      - {norma: "LOE", articulo: "17", apartado: "3, párrafo 2.º", tipo: "regula", nota: "En todo caso, el promotor responde solidariamente con los demás agentes ante los adquirentes."}
+      - {norma: "LOE", articulo: "17", apartado: "4", tipo: "conexa", nota: "Se extiende al gestor de cooperativas o comunidades que actúa como promotor por contrato o intervención decisoria."}
+      - {norma: "LOE", articulo: "17", apartado: "5", tipo: "conexa", nota: "Proyectistas contratados conjuntamente: solidarios; responden de los cálculos e informes que encargan a otros."}
+      - {norma: "LOE", articulo: "17", apartado: "6", tipo: "conexa", nota: "El constructor responde de su jefe de obra y dependientes, de los subcontratistas y de los productos que adquiere."}
+      - {norma: "LOE", articulo: "17", apartado: "7", tipo: "conexa", nota: "Directores: responden de la veracidad del certificado final; quien dirige proyecto ajeno asume sus defectos."}
+      - {norma: "LOE", articulo: "17", apartado: "8", tipo: "regula", nota: "No responden si prueban caso fortuito, fuerza mayor, acto de tercero o culpa del propio perjudicado."}
+      - {norma: "LOE", articulo: "17", apartado: "9", tipo: "conexa", nota: "Sin perjuicio de la responsabilidad del vendedor frente al comprador: contrato y arts. 1484 y siguientes CC."}
+      - {norma: "LOE", articulo: "3", apartado: "1.c)", tipo: "conexa", nota: "Habitabilidad: salubridad y estanqueidad, protección contra el ruido, ahorro de energía y otros aspectos funcionales."}
+      - {norma: "LOE", articulo: "6", apartado: "5", tipo: "regula", nota: "Los plazos de responsabilidad y garantía se cuentan desde el acta de recepción o desde la recepción tácita."}
+      - {norma: "LOE", articulo: "6", apartado: "4", tipo: "conexa", nota: "Recepción tácita: treinta días desde la notificación del fin de obra sin reservas ni rechazo motivado por escrito."}
+      - {norma: "LOE", articulo: "18", apartado: "1", tipo: "regula", nota: "La acción prescribe a los dos años desde que se producen los daños; quedan a salvo las acciones contractuales."}
+      - {norma: "LOE", articulo: "19", apartado: "1", tipo: "conexa", nota: "Garantías de referencia: un año (o retención del 5 %), tres años y diez años, por los mismos daños del art. 17."}
+      - {norma: "LOE", articulo: "da 2", tipo: "conexa", nota: "El seguro decenal es obligatorio en edificios de vivienda; no para el autopromotor de una vivienda unifamiliar propia."}
+      - {norma: "LOE", articulo: "2", apartado: "2", tipo: "conexa", nota: "Es edificación la obra nueva y la intervención que altera la configuración arquitectónica o el uso del edificio."}
+      - {norma: "LOE", articulo: "dt 1", tipo: "regula", nota: "La LOE rige obras cuya licencia se solicitó tras su entrada en vigor; las anteriores, por el art. 1591 CC."}
+      - {norma: "LOE", articulo: "da 7", tipo: "conexa", nota: "El agente demandado puede pedir, en plazo de contestar, que se notifique la demanda a otros agentes."}
+      - {norma: "CC", articulo: "1591", tipo: "conexa", nota: "Régimen anterior a la LOE: ruina por vicios en diez años desde que concluyó la obra; contratista y arquitecto."}
+      - {norma: "CC", articulo: "1101", tipo: "conexa", nota: "Vía contractual concurrente: indemnización por cumplimiento defectuoso frente a quien contrató la obra o vendió."}
+    no_consta_en_norma:
+      - "Los plazos del 17 son de garantía (el daño debe manifestarse dentro) y la acción prescribe aparte (18): así lo interpreta la jurisprudencia."
+      - "Daños morales, lucro cesante y otros no materiales quedan fuera del 17 LOE y van por la vía contractual: jurisprudencial."
+      - "Encaje de cada defecto (humedades, fisuras, aislamiento) en estructura, habitabilidad o acabado: casuística jurisprudencial."
+      - "Legitimación de la comunidad de propietarios para reclamar por vicios en elementos comunes y en los privativos: jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Código Técnico de la Edificación (RD 314/2006, de 17 de marzo): exigencias básicas que concretan los requisitos del art. 3 LOE."
+      - "Ley 50/1980, de Contrato de Seguro, art. 76: acción directa contra la aseguradora de responsabilidad civil del agente."
+    afines: ["Prescripción de las acciones de la LOE y repetición", "Agentes de la edificación y sus obligaciones", "Recepción de la obra", "Garantías y seguros de la edificación", "Concurrencia de la LOE con la responsabilidad contractual y el art. 1591 CC", "Contrato de obra: precio, riesgo y vicios", "Intervención de terceros"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Prescripción de las acciones de la LOE y repetición"
+    sinonimos: ["prescripción LOE", "dos años LOE", "artículo 18 LOE", "acción de repetición", "repetición entre agentes", "repetición de la aseguradora", "plazo para reclamar vicios de construcción", "interrupción de la prescripción LOE", "solidaridad impropia", "llamada al proceso de otros agentes"]
+    normas_base: ["LOE", "CC"]
+    remisiones:
+      - {norma: "LOE", articulo: "18", apartado: "1", tipo: "regula", nota: "Las acciones del art. 17 prescriben a los dos años desde que se producen los daños; quedan las contractuales."}
+      - {norma: "LOE", articulo: "18", apartado: "2", tipo: "regula", nota: "Repetición entre agentes o de la aseguradora: dos años desde la firmeza de la condena o desde la indemnización extrajudicial."}
+      - {norma: "LOE", articulo: "17", apartado: "1", tipo: "conexa", nota: "Plazos de 10, 3 y 1 año desde la recepción sin reservas o la subsanación: el daño debe aparecer dentro."}
+      - {norma: "LOE", articulo: "6", apartado: "5", tipo: "conexa", nota: "Los plazos de responsabilidad y garantía se cuentan desde el acta de recepción o la recepción tácita."}
+      - {norma: "LOE", articulo: "17", apartado: "3, párrafo 1.º", tipo: "conexa", nota: "Solidaridad solo si no se individualiza la causa o no se precisa la intervención de cada agente."}
+      - {norma: "LOE", articulo: "17", apartado: "5, párrafo 2.º", tipo: "conexa", nota: "El proyectista responde de cálculos e informes ajenos, sin perjuicio de repetir contra sus autores."}
+      - {norma: "LOE", articulo: "17", apartado: "6", tipo: "conexa", nota: "El constructor responde de subcontratistas y productos, sin perjuicio de la repetición a que haya lugar."}
+      - {norma: "LOE", articulo: "17", apartado: "7, párrafo 2.º", tipo: "conexa", nota: "Quien dirige obra con proyecto ajeno asume sus defectos, sin perjuicio de repetir frente al proyectista."}
+      - {norma: "LOE", articulo: "da 7", tipo: "regula", nota: "El demandado pide, en plazo de contestar, notificar la demanda a otros agentes; si no comparecen, la sentencia les es oponible."}
+      - {norma: "CC", articulo: "1973", tipo: "regula", nota: "La prescripción se interrumpe por demanda, reclamación extrajudicial o reconocimiento del deudor."}
+      - {norma: "CC", articulo: "1974", apartado: "párrafo 1.º", tipo: "regula", nota: "En las obligaciones solidarias, la interrupción aprovecha o perjudica por igual a todos los acreedores y deudores."}
+      - {norma: "CC", articulo: "1969", tipo: "conexa", nota: "Sin regla especial, la prescripción corre desde el día en que la acción pudo ejercitarse."}
+      - {norma: "CC", articulo: "1145", apartado: "párrafo 2.º", tipo: "conexa", nota: "El deudor solidario que paga solo reclama a cada codeudor su parte, con los intereses del anticipo."}
+      - {norma: "CC", articulo: "1964", apartado: "2", tipo: "conexa", nota: "La acción contractual por los mismos defectos prescribe a los cinco años desde que pudo exigirse."}
+      - {norma: "CC", articulo: "1591", tipo: "conexa", nota: "Obras anteriores a la LOE: diez años de garantía; quince la acción si el contratista faltó al contrato."}
+    no_consta_en_norma:
+      - "Solidaridad impropia de los agentes: la reclamación a uno no interrumpe la prescripción frente a los demás (no rige el 1974): jurisprudencial."
+      - "Día inicial de los dos años: cuando se conocen los daños y su alcance; en daños continuados, desde su consolidación: jurisprudencial."
+      - "Si cabe condenar al agente llamado por la da 7 sin que el actor dirija la demanda contra él: criterio jurisprudencial."
+    afines: ["Responsabilidad de los agentes: plazos de 10, 3 y 1 año", "Prescripción (como excepción)", "Interrupción de la prescripción", "Intervención de terceros", "Solidaridad y mancomunidad", "Concurrencia de la LOE con la responsabilidad contractual y el art. 1591 CC"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Cantidades anticipadas en la compra sobre plano"
+    sinonimos: ["compra sobre plano", "cantidades a cuenta", "anticipos al promotor", "aval de cantidades anticipadas", "seguro de caución", "cuenta especial", "Ley 57/1968", "devolución de cantidades entregadas a cuenta", "vivienda no entregada", "retraso en la entrega de la vivienda", "promoción paralizada", "responsabilidad del banco receptor"]
+    normas_base: ["LOE", "CC"]
+    remisiones:
+      - {norma: "LOE", articulo: "da 1", apartado: "Uno.1.a)", tipo: "regula", nota: "Desde la licencia, el promotor garantiza devolver lo entregado más interés legal con seguro de caución o aval solidario."}
+      - {norma: "LOE", articulo: "da 1", apartado: "Uno.1.b)", tipo: "regula", nota: "Anticipos en cuenta especial; la entidad de crédito, bajo su responsabilidad, exige la garantía para abrirla."}
+      - {norma: "LOE", articulo: "da 1", apartado: "Uno.2", tipo: "conexa", nota: "La garantía cubre lo aportado, impuestos incluidos, más el interés legal del dinero."}
+      - {norma: "LOE", articulo: "da 1", apartado: "Dos.1.a)", tipo: "conexa", nota: "Seguro de caución: póliza individual por adquirente, con identificación del inmueble."}
+      - {norma: "LOE", articulo: "da 1", apartado: "Dos.1.e)", tipo: "regula", nota: "El asegurador no opone al comprador las excepciones contra el promotor; tampoco el impago de la prima."}
+      - {norma: "LOE", articulo: "da 1", apartado: "Dos.1.h)", tipo: "regula", nota: "Requerimiento fehaciente al promotor; sin devolución en 30 días, se reclama al asegurador, que paga en 30 días."}
+      - {norma: "LOE", articulo: "da 1", apartado: "Dos.2.b)", tipo: "regula", nota: "Aval: tras requerir al promotor sin devolución en 30 días, se exige al avalista; o directamente si no cabe requerir."}
+      - {norma: "LOE", articulo: "da 1", apartado: "Dos.2.c)", tipo: "regula", nota: "El aval caduca a los dos años del incumplimiento si el comprador no requirió la rescisión y la devolución."}
+      - {norma: "LOE", articulo: "da 1", apartado: "Tres", tipo: "regula", nota: "El contrato debe recoger la obligación de devolver, la garantía y la cuenta; al firmar se entrega el documento de garantía."}
+      - {norma: "LOE", articulo: "da 1", apartado: "Cuatro", tipo: "regula", nota: "Obra no iniciada o vivienda no entregada: rescisión con devolución e intereses legales o prórroga pactada por escrito."}
+      - {norma: "LOE", articulo: "da 1", apartado: "Cinco", tipo: "conexa", nota: "La garantía se cancela con la licencia de primera ocupación y la entrega, o si el comprador rehúsa recibirla."}
+      - {norma: "LOE", articulo: "da 1", apartado: "Siete", tipo: "conexa", nota: "No garantizar es infracción de consumo: sanción de hasta el 25 % de las cantidades a asegurar."}
+      - {norma: "LOE", articulo: "dd 3", tipo: "regula", nota: "Deroga la Ley 57/1968 de cantidades anticipadas, con efectos desde el 1 de enero de 2016."}
+      - {norma: "CC", articulo: "1124", apartado: "párrafo 2.º", tipo: "conexa", nota: "Ante el incumplimiento, el comprador elige cumplimiento o resolución, con daños e intereses en ambos casos."}
+    no_consta_en_norma:
+      - "Contratos anteriores al 01-01-2016: siguen bajo la Ley 57/1968 derogada; la LOE no trae régimen transitorio expreso: jurisprudencial."
+      - "Responsabilidad del banco que recibe anticipos sin exigir garantía, aunque no estén en cuenta especial: doctrina jurisprudencial."
+      - "Si el retraso en la entrega permite resolver o solo el incumplimiento grave del plazo: criterio jurisprudencial."
+      - "Si la protección alcanza al comprador que adquiere con fin inversor o profesional: criterio jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Ley 57/1968, de cantidades anticipadas: derogada desde el 01-01-2016 (LOE dd 3), relevante para contratos anteriores."
+      - "Ley 50/1980, de Contrato de Seguro: rige el seguro de caución en lo no previsto (LOE da 1, Dos.1.l)."
+    afines: ["Incumplimiento y facultad resolutoria (art. 1124)", "Garantías y seguros de la edificación", "Compraventa: entrega, precio y riesgos", "Mora del deudor e intereses moratorios", "Concepto de consumidor y de empresario"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Concepto de consumidor y de empresario"
+    sinonimos: ["consumidor", "usuario", "consumidor y usuario", "empresario", "profesional", "relación de consumo", "contrato con consumidores", "consumidor persona jurídica", "finalidad mixta", "propósito ajeno a la actividad profesional", "consumidor vulnerable", "ámbito del TRLGDCU"]
+    normas_base: ["TRLGDCU", "LEC", "CE"]
+    remisiones:
+      - {norma: "TRLGDCU", articulo: "3", apartado: "1, párrafo 1.º", tipo: "regula", nota: "Consumidor: persona física que actúa con un propósito ajeno a su actividad comercial, empresarial, oficio o profesión."}
+      - {norma: "TRLGDCU", articulo: "3", apartado: "1, párrafo 2.º", tipo: "regula", nota: "También personas jurídicas y entes sin personalidad que actúan sin ánimo de lucro, ajenos a actividad comercial o empresarial."}
+      - {norma: "TRLGDCU", articulo: "3", apartado: "2", tipo: "conexa", nota: "Persona consumidora vulnerable: especial subordinación, indefensión o desprotección en una relación concreta de consumo."}
+      - {norma: "TRLGDCU", articulo: "4", tipo: "regula", nota: "Empresario: persona física o jurídica, privada o pública, que actúa con propósito relacionado con su actividad profesional."}
+      - {norma: "TRLGDCU", articulo: "2", tipo: "regula", nota: "La ley se aplica a las relaciones entre consumidores o usuarios y empresarios."}
+      - {norma: "TRLGDCU", articulo: "59", apartado: "1", tipo: "regula", nota: "Son contratos con consumidores los celebrados entre un consumidor o usuario y un empresario."}
+      - {norma: "TRLGDCU", articulo: "59", apartado: "2", tipo: "conexa", nota: "En lo no previsto en esta ley o en leyes especiales, rige el derecho común de los contratos."}
+      - {norma: "TRLGDCU", articulo: "59", apartado: "3", tipo: "conexa", nota: "Si el contrato incorpora condiciones generales, se somete además a la Ley 7/1998."}
+      - {norma: "TRLGDCU", articulo: "8", apartado: "1", tipo: "conexa", nota: "Derechos básicos: salud y seguridad, intereses económicos frente a cláusulas abusivas, indemnización e información."}
+      - {norma: "TRLGDCU", articulo: "10", tipo: "conexa", nota: "Es nula la renuncia previa a los derechos que la ley reconoce al consumidor y los actos en fraude de ley."}
+      - {norma: "TRLGDCU", articulo: "67", apartado: "2", tipo: "conexa", nota: "Las normas sobre abusivas se aplican aunque se elija otra ley si hay vínculo estrecho con el EEE; inmuebles allí situados."}
+      - {norma: "LEC", articulo: "52", apartado: "3", tipo: "conexa", nota: "Acciones individuales del consumidor: a su elección, el tribunal de su domicilio o el de los arts. 50 y 51."}
+      - {norma: "LEC", articulo: "54", apartado: "2", tipo: "conexa", nota: "No vale la sumisión expresa en contratos de adhesión, con condiciones generales o celebrados con consumidores."}
+      - {norma: "LEC", articulo: "11", apartado: "1", tipo: "conexa", nota: "Las asociaciones de consumidores defienden en juicio a sus asociados, a la asociación y los intereses generales."}
+      - {norma: "CE", articulo: "51", apartado: "1", tipo: "conexa", nota: "Los poderes públicos garantizan la defensa de los consumidores: seguridad, salud e intereses económicos."}
+    no_consta_en_norma:
+      - "Contrato con finalidad mixta: hay consumidor si el propósito profesional no es predominante: jurisprudencial (TS y TJUE)."
+      - "Quien compra una vivienda para alquilarla sin ser profesional puede ser consumidor: casuística jurisprudencial."
+      - "Fiador o avalista persona física de una deuda empresarial: consumidor si no tiene vínculo funcional con la empresa: jurisprudencial (TJUE)."
+      - "Apreciación de oficio de la condición de consumidor y carga de su prueba: jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Directivas 93/13/CEE y 2011/83/UE: la jurisprudencia del TJUE sobre ellas fija el alcance de «consumidor» y «profesional»."
+    afines: ["Cláusulas abusivas: concepto, nulidad e integración", "Control de oficio de cláusulas abusivas en el proceso", "Sumisión expresa y tácita", "Competencia territorial y fueros imperativos", "Consumidor vulnerable", "Irrenunciabilidad de los derechos del consumidor"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Cláusulas abusivas: concepto, nulidad e integración"
+    sinonimos: ["cláusula abusiva", "nulidad de cláusula abusiva", "desequilibrio importante", "buena fe contractual", "cláusula no negociada", "control de transparencia", "cláusula no transparente", "se tiene por no puesta", "integración del contrato", "interpretación contra el predisponente", "contra proferentem", "condiciones generales de la contratación"]
+    normas_base: ["TRLGDCU", "LEC", "CC"]
+    remisiones:
+      - {norma: "TRLGDCU", articulo: "82", apartado: "1", tipo: "regula", nota: "Abusiva: estipulación no negociada que, contra la buena fe, causa al consumidor un desequilibrio importante."}
+      - {norma: "TRLGDCU", articulo: "82", apartado: "2", tipo: "regula", nota: "Negociar una cláusula no salva el resto del contrato; el empresario prueba que hubo negociación individual."}
+      - {norma: "TRLGDCU", articulo: "82", apartado: "3", tipo: "regula", nota: "Se aprecia según el bien o servicio, las circunstancias al contratar y las demás cláusulas del contrato."}
+      - {norma: "TRLGDCU", articulo: "82", apartado: "4", tipo: "regula", nota: "Son abusivas en todo caso las de los arts. 85 a 90: voluntad del empresario, reciprocidad, garantías, competencia."}
+      - {norma: "TRLGDCU", articulo: "83", apartado: "párrafo 1.º", tipo: "regula", nota: "Nulas de pleno derecho y no puestas; el juez, oídas las partes, las anula y el contrato sigue si puede subsistir."}
+      - {norma: "TRLGDCU", articulo: "83", apartado: "párrafo 2.º", tipo: "regula", nota: "Las condiciones incorporadas de modo no transparente en perjuicio del consumidor son nulas de pleno derecho."}
+      - {norma: "TRLGDCU", articulo: "80", apartado: "1", tipo: "regula", nota: "Requisitos: claridad sin reenvíos no facilitados, legibilidad (letra de 2,5 mm como mínimo), buena fe y justo equilibrio."}
+      - {norma: "TRLGDCU", articulo: "80", apartado: "2", tipo: "regula", nota: "En acciones individuales, la cláusula dudosa se interpreta del modo más favorable al consumidor."}
+      - {norma: "TRLGDCU", articulo: "84", tipo: "conexa", nota: "Notarios y registradores no autorizan ni inscriben cláusulas declaradas abusivas en sentencia inscrita en el RCGC."}
+      - {norma: "TRLGDCU", articulo: "59", apartado: "3", tipo: "conexa", nota: "Contratos con condiciones generales: se someten además a la Ley 7/1998."}
+      - {norma: "TRLGDCU", articulo: "10", tipo: "conexa", nota: "La renuncia previa a los derechos del consumidor es nula."}
+      - {norma: "LEC", articulo: "815", apartado: "3, párrafo 2.º", tipo: "conexa", nota: "Monitorio contra consumidor: el juez puede proponer requerir solo el importe que resulte de excluir la cláusula abusiva."}
+      - {norma: "LEC", articulo: "552", apartado: "1, párrafo 2.º", tipo: "conexa", nota: "Al despachar ejecución de título no judicial, control de oficio de cláusulas abusivas con audiencia de 15 días."}
+      - {norma: "LEC", articulo: "557", apartado: "1.7.ª", tipo: "conexa", nota: "En la ejecución de títulos no judiciales, el deudor puede oponerse porque el título contiene cláusulas abusivas."}
+      - {norma: "CC", articulo: "1288", tipo: "conexa", nota: "La cláusula oscura no puede favorecer a la parte que ocasionó la oscuridad."}
+      - {norma: "CC", articulo: "1258", tipo: "conexa", nota: "El contrato obliga también a lo que exigen la buena fe, el uso y la ley."}
+    no_consta_en_norma:
+      - "Tras la nulidad, el juez no modera ni reescribe la cláusula; solo cabe norma dispositiva si el contrato no subsiste sin ella: jurisprudencial (TJUE)."
+      - "Control de transparencia material (comprensión real de la carga económica y jurídica de la cláusula): construcción jurisprudencial."
+      - "Restitución de lo pagado sin límite temporal y prescripción de la acción restitutoria: jurisprudencial (TJUE y TS)."
+      - "Cláusulas sobre el objeto principal o el precio: solo se controla su abusividad si no son transparentes: jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Ley 7/1998, de Condiciones Generales de la Contratación, arts. 5, 7 y 8: incorporación, no incorporación y nulidad."
+      - "Directiva 93/13/CEE, sobre cláusulas abusivas, y su interpretación por el TJUE."
+    afines: ["Cláusulas abusivas: lista legal (gastos, sumisión, penalizaciones)", "Control de oficio de cláusulas abusivas en el proceso", "Concepto de consumidor y de empresario", "Condiciones generales en el verbal y procedimiento testigo", "Interpretación de los contratos", "Oposición en la ejecución hipotecaria"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Cláusulas abusivas: lista legal (gastos, sumisión, penalizaciones)"
+    sinonimos: ["lista negra de cláusulas abusivas", "gastos de notaría y registro", "plusvalía a cargo del comprador", "sumisión a otros tribunales", "arbitraje no de consumo", "penalización desproporcionada", "indemnización desproporcionada", "permanencia abusiva", "redondeo al alza", "modificación unilateral del contrato", "subrogación en la hipoteca del promotor", "carga de la prueba invertida"]
+    normas_base: ["TRLGDCU"]
+    remisiones:
+      - {norma: "TRLGDCU", articulo: "82", apartado: "4", tipo: "regula", nota: "Son abusivas en todo caso las cláusulas que, conforme a los arts. 85 a 90, encajan en alguno de sus seis grupos."}
+      - {norma: "TRLGDCU", articulo: "85", apartado: "3", tipo: "regula", nota: "Reservar al empresario la interpretación o la modificación unilateral, salvo motivos válidos especificados."}
+      - {norma: "TRLGDCU", articulo: "85", apartado: "4", tipo: "conexa", nota: "Resolución anticipada solo para el empresario o, en los indefinidos, sin preaviso razonable."}
+      - {norma: "TRLGDCU", articulo: "85", apartado: "6", tipo: "regula", nota: "Indemnización desproporcionadamente alta a cargo del consumidor que no cumple."}
+      - {norma: "TRLGDCU", articulo: "85", apartado: "8", tipo: "conexa", nota: "Fechas de entrega meramente indicativas condicionadas a la voluntad del empresario."}
+      - {norma: "TRLGDCU", articulo: "85", apartado: "10", tipo: "regula", nota: "Fijar el precio al entregar o subirlo sin razones objetivas ni derecho del consumidor a resolver."}
+      - {norma: "TRLGDCU", articulo: "86", apartado: "1", tipo: "regula", nota: "Excluir o limitar los derechos por incumplimiento del empresario, incluida la conformidad y su indemnización."}
+      - {norma: "TRLGDCU", articulo: "86", apartado: "2", tipo: "regula", nota: "Excluir o limitar la responsabilidad del empresario por daños, muerte o lesiones del consumidor."}
+      - {norma: "TRLGDCU", articulo: "86", apartado: "4", tipo: "conexa", nota: "Privar al consumidor de compensar créditos, retener o consignar."}
+      - {norma: "TRLGDCU", articulo: "86", apartado: "7", tipo: "conexa", nota: "Cláusula de cierre: cualquier otra renuncia o limitación de los derechos del consumidor."}
+      - {norma: "TRLGDCU", articulo: "87", apartado: "2", tipo: "regula", nota: "Retener lo pagado si renuncia el consumidor, sin indemnización equivalente si renuncia el empresario."}
+      - {norma: "TRLGDCU", articulo: "87", apartado: "4", tipo: "conexa", nota: "Quedarse lo pagado por prestaciones no efectuadas cuando es el empresario quien resuelve."}
+      - {norma: "TRLGDCU", articulo: "87", apartado: "5", tipo: "conexa", nota: "Redondeo al alza del tiempo o del precio y cobro de lo no consumido de manera efectiva."}
+      - {norma: "TRLGDCU", articulo: "87", apartado: "6", tipo: "regula", nota: "Obstáculos para poner fin al contrato: permanencias excesivas, formalidades o indemnizaciones sin daño real."}
+      - {norma: "TRLGDCU", articulo: "88", apartado: "1", tipo: "conexa", nota: "Garantías desproporcionadas al riesgo; se presumen proporcionadas las financieras que siguen su normativa."}
+      - {norma: "TRLGDCU", articulo: "88", apartado: "2", tipo: "regula", nota: "Imponer al consumidor la carga de la prueba cuando debería corresponder a la otra parte."}
+      - {norma: "TRLGDCU", articulo: "89", apartado: "1", tipo: "conexa", nota: "Declaraciones de recepción sobre hechos ficticios y adhesión a cláusulas que no pudo conocer antes."}
+      - {norma: "TRLGDCU", articulo: "89", apartado: "3", tipo: "regula", nota: "Imponer al consumidor gastos de documentación y tramitación que por ley corresponden al empresario."}
+      - {norma: "TRLGDCU", articulo: "89", apartado: "3.a)", tipo: "conexa", nota: "Compraventa de vivienda: gastos de titulación propios del vendedor (obra nueva, PH, hipoteca de construcción)."}
+      - {norma: "TRLGDCU", articulo: "89", apartado: "3.b)", tipo: "conexa", nota: "Obligar a subrogarse en la hipoteca del empresario o penalizar que no se subrogue."}
+      - {norma: "TRLGDCU", articulo: "89", apartado: "3.c)", tipo: "regula", nota: "Hacer pagar al consumidor tributos cuyo sujeto pasivo es el empresario."}
+      - {norma: "TRLGDCU", articulo: "89", apartado: "3.d)", tipo: "conexa", nota: "Cargar al comprador las acometidas de suministros si la vivienda debe entregarse habitable."}
+      - {norma: "TRLGDCU", articulo: "89", apartado: "5", tipo: "regula", nota: "Recargos o penalizaciones sin prestación adicional que el consumidor pueda aceptar o rechazar con claridad."}
+      - {norma: "TRLGDCU", articulo: "89", apartado: "7", tipo: "conexa", nota: "Descubiertos en cuenta por encima del límite de la Ley 7/1995 (derogada; hoy Ley 16/2011)."}
+      - {norma: "TRLGDCU", articulo: "89", apartado: "8", tipo: "conexa", nota: "Renuncia del consumidor a elegir el notario que autorice el documento público."}
+      - {norma: "TRLGDCU", articulo: "90", apartado: "1", tipo: "regula", nota: "Sumisión a arbitrajes distintos del de consumo, salvo arbitrajes institucionales sectoriales creados por ley."}
+      - {norma: "TRLGDCU", articulo: "90", apartado: "2", tipo: "regula", nota: "Sumisión a tribunal distinto del domicilio del consumidor, del lugar de cumplimiento o de situación del inmueble."}
+      - {norma: "TRLGDCU", articulo: "90", apartado: "3", tipo: "conexa", nota: "Sumisión a derecho extranjero respecto del lugar de la declaración del consumidor o de la actividad del empresario."}
+      - {norma: "TRLGDCU", articulo: "91", tipo: "conexa", nota: "Valores, instrumentos financieros y divisas: no se aplican ciertas abusivas sobre modificación, resolución y precio."}
+    no_consta_en_norma:
+      - "Gastos de la hipoteca (notaría, registro, gestoría, tasación, impuesto) y su reparto tras la nulidad: criterio jurisprudencial (TS y TJUE)."
+      - "Interés de demora abusivo en préstamos personales a consumidores: más de dos puntos sobre el remuneratorio: jurisprudencial."
+      - "Vencimiento anticipado: su abusividad depende de la gravedad del incumplimiento previsto: jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Ley 16/2011, de contratos de crédito al consumo, art. 20.4: descubiertos, TAE máxima de 2,5 veces el interés legal (el 89.7 remite a la derogada Ley 7/1995)."
+      - "Ley 5/2019, de contratos de crédito inmobiliario: reparto legal de gastos y tope del interés de demora en préstamos hipotecarios."
+    afines: ["Cláusulas abusivas: concepto, nulidad e integración", "Control de oficio de cláusulas abusivas en el proceso", "Sumisión expresa y tácita", "Cláusula penal", "Oposición en la ejecución hipotecaria", "Concepto de consumidor y de empresario"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Garantía de conformidad de los bienes"
+    sinonimos: ["garantía legal", "garantía de tres años", "falta de conformidad", "reparación o sustitución", "rebaja del precio", "resolución por falta de conformidad", "producto defectuoso de consumo", "garantía de segunda mano", "garantía comercial", "reclamar al fabricante", "presunción de dos años", "conformidad de contenidos digitales"]
+    normas_base: ["TRLGDCU", "CC"]
+    remisiones:
+      - {norma: "TRLGDCU", articulo: "114", apartado: "1", tipo: "regula", nota: "Rige en la compraventa de bienes, existentes o por fabricar, y en el suministro de contenidos o servicios digitales."}
+      - {norma: "TRLGDCU", articulo: "114", apartado: "2", tipo: "conexa", nota: "Excluidos, entre otros: animales vivos, segunda mano en subasta administrativa, servicios no digitales y financieros."}
+      - {norma: "TRLGDCU", articulo: "59 bis", apartado: "2", tipo: "regula", nota: "Para esta garantía, «bienes» son las cosas muebles corporales: no alcanza a los inmuebles."}
+      - {norma: "TRLGDCU", articulo: "115", tipo: "regula", nota: "Hay conformidad si se cumplen los requisitos subjetivos y objetivos y, en su caso, la instalación o integración es correcta."}
+      - {norma: "TRLGDCU", articulo: "115 bis", tipo: "regula", nota: "Subjetivos: descripción, cantidad, calidad y funciones pactadas, aptitud para el fin aceptado, accesorios y actualizaciones."}
+      - {norma: "TRLGDCU", articulo: "115 ter", apartado: "1", tipo: "regula", nota: "Objetivos: aptitud para el uso normal, muestra o modelo, accesorios y cualidades esperables según la publicidad."}
+      - {norma: "TRLGDCU", articulo: "115 ter", apartado: "5", tipo: "conexa", nota: "No hay falta si al contratar se informó de la divergencia concreta y el consumidor la aceptó expresamente y por separado."}
+      - {norma: "TRLGDCU", articulo: "115 quater", tipo: "conexa", nota: "La instalación incorrecta hecha por el empresario o por instrucciones deficientes equivale a falta de conformidad."}
+      - {norma: "TRLGDCU", articulo: "116", tipo: "regula", nota: "Estas acciones excluyen las de saneamiento del CC; siempre cabe la indemnización de daños y perjuicios."}
+      - {norma: "TRLGDCU", articulo: "117", apartado: "1", tipo: "regula", nota: "Responde de la falta existente a la entrega: subsanación, rebaja o resolución por simple declaración; cabe suspender el pago."}
+      - {norma: "TRLGDCU", articulo: "118", apartado: "1", tipo: "regula", nota: "El consumidor elige reparación o sustitución, salvo que una sea imposible o de coste desproporcionado frente a la otra."}
+      - {norma: "TRLGDCU", articulo: "118", apartado: "4", tipo: "regula", nota: "La puesta en conformidad es gratuita (envío, mano de obra, materiales), en plazo razonable y sin mayores inconvenientes."}
+      - {norma: "TRLGDCU", articulo: "119", tipo: "regula", nota: "Rebaja o resolución si la reparación es imposible, no se hace o no en plazo, reaparece la falta o esta es muy grave."}
+      - {norma: "TRLGDCU", articulo: "119 ter", apartado: "2", tipo: "regula", nota: "No cabe resolver por falta de escasa importancia; la prueba de que lo es corresponde al empresario."}
+      - {norma: "TRLGDCU", articulo: "119 quater", apartado: "1", tipo: "conexa", nota: "El reembolso por rebaja o resolución se hace en catorce días, sin cargo alguno."}
+      - {norma: "TRLGDCU", articulo: "120", apartado: "1", tipo: "regula", nota: "Responde de lo que se manifieste en tres años desde la entrega (dos en lo digital); segunda mano, pacto de al menos un año."}
+      - {norma: "TRLGDCU", articulo: "121", apartado: "1", tipo: "regula", nota: "Se presume que la falta manifestada en los dos años siguientes a la entrega ya existía (un año en lo digital)."}
+      - {norma: "TRLGDCU", articulo: "122", tipo: "regula", nota: "La reparación suspende los plazos; durante un año tras la entrega ya conforme se responde de la misma falta."}
+      - {norma: "TRLGDCU", articulo: "123", apartado: "1", tipo: "conexa", nota: "Salvo prueba en contrario, la entrega se fecha por la factura, el tique o el albarán posterior."}
+      - {norma: "TRLGDCU", articulo: "124", tipo: "regula", nota: "La acción prescribe a los cinco años desde que se manifiesta la falta de conformidad."}
+      - {norma: "TRLGDCU", articulo: "125", apartado: "1", tipo: "regula", nota: "Si dirigirse al vendedor es imposible o muy gravoso, se reclama al productor la puesta en conformidad."}
+      - {norma: "TRLGDCU", articulo: "125", apartado: "2", tipo: "conexa", nota: "Quien respondió ante el consumidor repite contra el responsable en un año desde que ejecutó la medida."}
+      - {norma: "TRLGDCU", articulo: "127", apartado: "1", tipo: "conexa", nota: "La garantía comercial vincula en sus términos y en los de la publicidad, si esta es más favorable."}
+      - {norma: "TRLGDCU", articulo: "86", apartado: "1", tipo: "conexa", nota: "Es abusiva la cláusula que modifica en perjuicio del consumidor las normas legales sobre conformidad."}
+      - {norma: "TRLGDCU", articulo: "67", apartado: "3", tipo: "conexa", nota: "Los arts. 114 a 126 se aplican aunque se elija otra ley si el contrato tiene vínculo estrecho con el EEE."}
+      - {norma: "CC", articulo: "1490", tipo: "conexa", nota: "Contraste: el saneamiento del CC por vicios ocultos se extingue a los seis meses desde la entrega."}
+    no_consta_en_norma:
+      - "Falta manifestada después de la presunción del 121: la carga de probar que ya existía a la entrega recae en el consumidor: interpretación a contrario."
+      - "Si una reparación fallida permite pasar directamente a la resolución o exige un segundo intento: casuística jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Directivas (UE) 2019/771 (compraventa de bienes) y 2019/770 (contenidos y servicios digitales), que estos artículos transponen."
+    afines: ["Saneamiento por vicios ocultos", "Concepto de consumidor y de empresario", "Responsabilidad por productos defectuosos", "Reclamaciones de consumo y servicio de atención al cliente", "Cláusulas abusivas: lista legal (gastos, sumisión, penalizaciones)"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Desistimiento del consumidor"
+    sinonimos: ["derecho de desistimiento", "devolución en catorce días", "catorce días naturales", "compra por internet", "venta a distancia", "contrato fuera del establecimiento", "venta a domicilio", "formulario de desistimiento", "derecho de retracto del consumidor", "devolver la compra", "excursión promocional", "reembolso del precio"]
+    normas_base: ["TRLGDCU"]
+    remisiones:
+      - {norma: "TRLGDCU", articulo: "68", apartado: "1", tipo: "regula", nota: "Facultad de dejar sin efecto el contrato en plazo, sin justificar ni penalización; son nulas las cláusulas que penalicen."}
+      - {norma: "TRLGDCU", articulo: "68", apartado: "2", tipo: "regula", nota: "Solo existe cuando lo prevén la ley o un reglamento, o lo reconocen la oferta, la publicidad o el contrato."}
+      - {norma: "TRLGDCU", articulo: "68", apartado: "3", tipo: "conexa", nota: "El desistimiento legal se rige primero por su norma específica y, en su defecto, por este título."}
+      - {norma: "TRLGDCU", articulo: "69", apartado: "1", tipo: "regula", nota: "El empresario informa por escrito en el contrato y entrega un documento de desistimiento; la prueba es suya (69.2)."}
+      - {norma: "TRLGDCU", articulo: "70", tipo: "regula", nota: "Sin formalidad: basta acreditarlo; vale el envío del documento o la devolución de los productos."}
+      - {norma: "TRLGDCU", articulo: "71", apartado: "1", tipo: "regula", nota: "Plazo mínimo de catorce días naturales."}
+      - {norma: "TRLGDCU", articulo: "71", apartado: "3", tipo: "regula", nota: "Sin información, el plazo acaba doce meses después del inicial; si se informa antes, corre desde entonces."}
+      - {norma: "TRLGDCU", articulo: "73", tipo: "conexa", nota: "Desistir no implica gasto alguno para el consumidor."}
+      - {norma: "TRLGDCU", articulo: "74", apartado: "1", tipo: "conexa", nota: "Ejercido el desistimiento, las partes se restituyen las prestaciones según los arts. 1303 y 1308 CC."}
+      - {norma: "TRLGDCU", articulo: "76", tipo: "regula", nota: "El empresario devuelve lo cobrado en 14 días naturales sin retener gastos; si no, el consumidor lo reclama duplicado."}
+      - {norma: "TRLGDCU", articulo: "77", tipo: "conexa", nota: "Desistir del contrato financiado resuelve también el crédito vinculado, sin penalización."}
+      - {norma: "TRLGDCU", articulo: "78", tipo: "conexa", nota: "No desistir en plazo no impide después las acciones de nulidad o resolución."}
+      - {norma: "TRLGDCU", articulo: "79", tipo: "conexa", nota: "Desistimiento pactado: a falta de reglas propias, este título; no se puede exigir anticipo ni garantía por él."}
+      - {norma: "TRLGDCU", articulo: "92", apartado: "1", tipo: "regula", nota: "Contratos a distancia: sistema organizado sin presencia física simultánea (correo, internet, teléfono)."}
+      - {norma: "TRLGDCU", articulo: "92", apartado: "2", tipo: "regula", nota: "Fuera del establecimiento: en otro lugar, tras contacto personal fuera de él o en excursión organizada."}
+      - {norma: "TRLGDCU", articulo: "93", apartado: "e)", tipo: "conexa", nota: "No se aplica a la creación, adquisición o transmisión de inmuebles o derechos sobre ellos."}
+      - {norma: "TRLGDCU", articulo: "93", apartado: "f)", tipo: "conexa", nota: "Tampoco a construir edificios nuevos, transformarlos sustancialmente o alquilar alojamiento como vivienda."}
+      - {norma: "TRLGDCU", articulo: "102", apartado: "1", tipo: "regula", nota: "A distancia o fuera del establecimiento: catorce días naturales sin motivo; treinta en visitas no solicitadas o excursiones."}
+      - {norma: "TRLGDCU", articulo: "102", apartado: "2", tipo: "regula", nota: "Son nulas la penalización por desistir y la renuncia al derecho."}
+      - {norma: "TRLGDCU", articulo: "103", tipo: "regula", nota: "Excepciones: servicio ya ejecutado, bienes personalizados, perecederos, desprecintados por higiene, subastas, etc."}
+      - {norma: "TRLGDCU", articulo: "103", apartado: "l)", tipo: "regula", nota: "Sin desistimiento: alojamiento no destinado a vivienda, alquiler de vehículos y ocio con fecha o periodo fijados."}
+      - {norma: "TRLGDCU", articulo: "104", tipo: "regula", nota: "El plazo corre desde el contrato en los servicios y desde que se recibe el bien (o el último) en las ventas."}
+      - {norma: "TRLGDCU", articulo: "105", apartado: "1", tipo: "regula", nota: "Si no se informó del desistimiento, el plazo termina doce meses después del inicial."}
+      - {norma: "TRLGDCU", articulo: "106", apartado: "1", tipo: "regula", nota: "Se comunica con el formulario del anexo B o con otra declaración inequívoca antes de que venza el plazo."}
+      - {norma: "TRLGDCU", articulo: "106", apartado: "2", tipo: "regula", nota: "Basta enviar la comunicación dentro del plazo: cuenta la fecha de expedición."}
+      - {norma: "TRLGDCU", articulo: "106", apartado: "4", tipo: "conexa", nota: "La carga de probar que se desistió recae en el consumidor."}
+      - {norma: "TRLGDCU", articulo: "107", apartado: "1", tipo: "regula", nota: "Reembolso de todo lo pagado, también la entrega, en 14 días naturales y por el mismo medio de pago."}
+      - {norma: "TRLGDCU", articulo: "107", apartado: "3", tipo: "conexa", nota: "En las ventas, el empresario puede retener el reembolso hasta recibir los bienes o la prueba de su devolución."}
+      - {norma: "TRLGDCU", articulo: "108", apartado: "1", tipo: "regula", nota: "El consumidor devuelve en 14 días y paga solo los costes directos de devolución si fue informado de ello."}
+      - {norma: "TRLGDCU", articulo: "108", apartado: "2", tipo: "conexa", nota: "Solo responde de la pérdida de valor por manipular el bien más de lo necesario para probarlo."}
+      - {norma: "TRLGDCU", articulo: "108", apartado: "4", tipo: "conexa", nota: "Si pidió que el servicio empezara en el plazo, paga la parte proporcional ya prestada."}
+    no_consta_en_norma:
+      - "Alcance de las excepciones de bienes personalizados o desprecintados (colchones, cosméticos): casuística jurisprudencial (TJUE)."
+      - "Reserva de alojamiento turístico por plataforma: si entra en la excepción del 103.l depende de su finalidad: casuística jurisprudencial."
+      - "Uso intensivo del bien antes de devolverlo: solo genera responsabilidad por disminución de valor (108.2); sus límites, jurisprudenciales."
+    fuera_de_la_herramienta:
+      - "Ley 16/2011, de contratos de crédito al consumo, art. 28: desistimiento de catorce días naturales del contrato de crédito."
+      - "Ley 4/2012, de aprovechamiento por turno de bienes de uso turístico: régimen propio, excluido de este título (93.h)."
+    afines: ["Contratos a distancia y fuera del establecimiento", "Información precontractual e integración de la oferta y la publicidad", "Concepto de consumidor y de empresario", "Viajes combinados y servicios de viaje vinculados", "Irrenunciabilidad de los derechos del consumidor"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Tutela judicial efectiva e indefensión"
+    sinonimos: ["tutela judicial efectiva", "indefensión", "artículo 24 CE", "derecho de acceso a la jurisdicción", "pro actione", "derecho a una resolución motivada", "derecho al recurso", "incidente de nulidad de actuaciones", "nulidad por indefensión", "amparo constitucional", "emplazamiento defectuoso", "subsanación de defectos"]
+    normas_base: ["CE", "LOPJ", "LEC"]
+    remisiones:
+      - {norma: "CE", articulo: "24", apartado: "1", tipo: "regula", nota: "Todos tienen derecho a la tutela efectiva de jueces y tribunales sin que, en ningún caso, pueda producirse indefensión."}
+      - {norma: "CE", articulo: "24", apartado: "2", tipo: "conexa", nota: "Juez predeterminado, defensa y letrado, proceso público sin dilaciones y con garantías, y prueba pertinente."}
+      - {norma: "CE", articulo: "53", apartado: "2", tipo: "conexa", nota: "Los derechos del art. 14 y de la sección primera se tutelan ante los tribunales ordinarios y en amparo ante el TC."}
+      - {norma: "CE", articulo: "117", apartado: "3", tipo: "conexa", nota: "Juzgar y hacer ejecutar lo juzgado corresponde exclusivamente a los juzgados y tribunales."}
+      - {norma: "CE", articulo: "118", tipo: "conexa", nota: "Es obligado cumplir las sentencias firmes y colaborar con los tribunales en el proceso y en la ejecución."}
+      - {norma: "CE", articulo: "119", tipo: "conexa", nota: "La justicia es gratuita cuando lo disponga la ley y, siempre, para quien acredite insuficiencia de recursos."}
+      - {norma: "CE", articulo: "120", apartado: "3", tipo: "conexa", nota: "Las sentencias serán siempre motivadas y se pronunciarán en audiencia pública."}
+      - {norma: "LOPJ", articulo: "7", apartado: "3", tipo: "regula", nota: "Los jueces protegen los derechos e intereses legítimos, individuales y colectivos, sin que pueda haber indefensión."}
+      - {norma: "LOPJ", articulo: "11", apartado: "3", tipo: "regula", nota: "Se resuelve siempre sobre lo pedido; solo cabe desestimar por motivos formales si el defecto es insubsanable o no se subsana."}
+      - {norma: "LOPJ", articulo: "5", apartado: "1", tipo: "conexa", nota: "Las leyes se interpretan y aplican conforme a la Constitución y a la doctrina del Tribunal Constitucional."}
+      - {norma: "LOPJ", articulo: "5", apartado: "4", tipo: "conexa", nota: "Donde cabe casación, basta para fundarla la infracción de precepto constitucional."}
+      - {norma: "LOPJ", articulo: "238", apartado: "3.º", tipo: "regula", nota: "Nulidad de pleno derecho si se prescinde de normas esenciales del procedimiento y pudo producirse indefensión."}
+      - {norma: "LOPJ", articulo: "240", apartado: "1", tipo: "conexa", nota: "La nulidad y los defectos que causan indefensión se hacen valer por los recursos contra la resolución."}
+      - {norma: "LOPJ", articulo: "241", apartado: "1", tipo: "regula", nota: "Incidente excepcional de nulidad por vulneración de un derecho del 53.2 CE: veinte días, máximo cinco años."}
+      - {norma: "LEC", articulo: "225", apartado: "3.º", tipo: "regula", nota: "Es nulo el acto que prescinde de normas esenciales del procedimiento cuando pudo causar indefensión."}
+      - {norma: "LEC", articulo: "227", apartado: "2", tipo: "conexa", nota: "Antes de la resolución final, nulidad de oficio o a instancia, oídas las partes, si no cabe subsanar."}
+      - {norma: "LEC", articulo: "228", apartado: "1", tipo: "regula", nota: "Incidente de nulidad contra resolución firme: solo derechos del 53.2 CE no denunciables antes; veinte días."}
+      - {norma: "LEC", articulo: "231", tipo: "regula", nota: "El tribunal y el LAJ cuidan de que puedan subsanarse los defectos de los actos procesales de las partes."}
+      - {norma: "LEC", articulo: "459", tipo: "regula", nota: "Apelación por infracción procesal: citar la norma, alegar la indefensión y acreditar que se denunció a tiempo."}
+      - {norma: "LEC", articulo: "477", apartado: "6", tipo: "conexa", nota: "Casación por infracción procesal: la infracción debe haberse denunciado en la instancia y reproducido en la segunda."}
+      - {norma: "LEC", articulo: "218", apartado: "2", tipo: "conexa", nota: "Motivación: razonamientos fácticos y jurídicos sobre la prueba y el derecho, según la lógica y la razón."}
+    no_consta_en_norma:
+      - "Indefensión material, real y no imputable a la propia parte, como requisito de la nulidad: doctrina del Tribunal Constitucional."
+      - "Principio pro actione en el acceso a la jurisdicción; el acceso al recurso es de configuración legal: doctrina del TC."
+      - "Edictos solo tras agotar razonablemente la averiguación del domicilio del demandado: doctrina del TC sobre el 24.1."
+      - "Incongruencia omisiva o por exceso como lesión del 24.1: doctrina del TC."
+    fuera_de_la_herramienta:
+      - "Ley Orgánica 2/1979, del Tribunal Constitucional, art. 44: amparo contra actos judiciales; agotar la vía, denuncia previa y 30 días."
+    afines: ["Nulidad de actuaciones", "Derecho a la prueba y a un proceso con todas las garantías", "Congruencia y motivación de la sentencia", "Actos de comunicación: domicilio, emplazamiento y edictos", "Rescisión de la sentencia firme a instancia del rebelde", "Recurso de casación", "Recurso de apelación (plazo, interposición, prueba en segunda instancia)"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Derecho a la prueba y a un proceso con todas las garantías"
+    sinonimos: ["derecho a la prueba", "artículo 24.2 CE", "prueba pertinente", "denegación de prueba", "protesta", "proceso con todas las garantías", "proceso equitativo", "dilaciones indebidas", "prueba ilícita", "prueba en segunda instancia", "valoración de la prueba", "igualdad de armas"]
+    normas_base: ["CE", "LEC", "LOPJ"]
+    remisiones:
+      - {norma: "CE", articulo: "24", apartado: "2", tipo: "regula", nota: "Derecho a un proceso público sin dilaciones indebidas y con todas las garantías y a usar los medios de prueba pertinentes."}
+      - {norma: "CE", articulo: "24", apartado: "1", tipo: "conexa", nota: "Tutela judicial efectiva sin indefensión: la denegación de prueba decisiva la produce."}
+      - {norma: "CE", articulo: "120", apartado: "1", tipo: "conexa", nota: "Las actuaciones judiciales son públicas, con las excepciones de las leyes procesales."}
+      - {norma: "CE", articulo: "10", apartado: "2", tipo: "conexa", nota: "Los derechos fundamentales se interpretan conforme a la Declaración Universal y a los tratados ratificados por España."}
+      - {norma: "LOPJ", articulo: "11", apartado: "1", tipo: "regula", nota: "No surten efecto las pruebas obtenidas, directa o indirectamente, violentando derechos o libertades fundamentales."}
+      - {norma: "LEC", articulo: "281", apartado: "1", tipo: "regula", nota: "La prueba tiene por objeto los hechos que guardan relación con la tutela judicial que se pretende."}
+      - {norma: "LEC", articulo: "281", apartado: "3", tipo: "conexa", nota: "Están exentos de prueba los hechos en que hay plena conformidad, salvo materia indisponible."}
+      - {norma: "LEC", articulo: "281", apartado: "4", tipo: "conexa", nota: "No hay que probar los hechos de notoriedad absoluta y general."}
+      - {norma: "LEC", articulo: "283", apartado: "1", tipo: "regula", nota: "No se admite la prueba impertinente, sin relación con el objeto del proceso."}
+      - {norma: "LEC", articulo: "283", apartado: "2", tipo: "regula", nota: "Tampoco la inútil, que según criterios razonables y seguros nunca aclararía los hechos controvertidos."}
+      - {norma: "LEC", articulo: "283", apartado: "3", tipo: "conexa", nota: "Nunca se admite como prueba una actividad prohibida por la ley."}
+      - {norma: "LEC", articulo: "285", apartado: "2", tipo: "regula", nota: "Contra la admisión o inadmisión, solo reposición en el acto y, si se desestima, protesta para la segunda instancia."}
+      - {norma: "LEC", articulo: "446", tipo: "regula", nota: "En la vista del verbal, igual: reposición en el acto y protesta para hacerla valer en segunda instancia."}
+      - {norma: "LEC", articulo: "287", apartado: "1", tipo: "regula", nota: "La ilicitud de una prueba se alega de inmediato; el tribunal resuelve en el juicio, oídas las partes."}
+      - {norma: "LEC", articulo: "287", apartado: "2", tipo: "conexa", nota: "Contra esa resolución, reposición en el acto; se puede reproducir la impugnación en la apelación."}
+      - {norma: "LEC", articulo: "429", apartado: "1, párrafo 3.º", tipo: "conexa", nota: "Si la prueba propuesta parece insuficiente, el tribunal lo advierte y puede señalar la prueba conveniente."}
+      - {norma: "LEC", articulo: "460", apartado: "2", tipo: "regula", nota: "En apelación: prueba denegada con reposición o protesta, la admitida no practicada y la de hechos nuevos."}
+      - {norma: "LEC", articulo: "459", tipo: "conexa", nota: "La infracción procesal se alega en la apelación citando la norma, la indefensión y su denuncia oportuna."}
+      - {norma: "LEC", articulo: "218", apartado: "2", tipo: "conexa", nota: "La sentencia motiva la apreciación y valoración de las pruebas, según la lógica y la razón."}
+      - {norma: "LEC", articulo: "477", apartado: "5", tipo: "conexa", nota: "La valoración de la prueba no es casable, salvo error de hecho patente e inmediatamente verificable."}
+    no_consta_en_norma:
+      - "Solo hay lesión del derecho a la prueba si la denegada o no practicada era decisiva para el fallo: doctrina del TC."
+      - "Denegación inmotivada o arbitraria y prueba admitida que no se practica sin causa: lesionan el 24.2: doctrina del TC."
+      - "Prueba derivada de la ilícita y conexión de antijuridicidad: doctrina jurisprudencial."
+      - "Dilaciones indebidas: se miden por la complejidad, la conducta de las partes y la del órgano: doctrina del TC y del TEDH."
+    fuera_de_la_herramienta:
+      - "Convenio Europeo de Derechos Humanos, art. 6: proceso equitativo, interpretado por el TEDH (CE art. 10.2)."
+      - "Ley Orgánica 2/1979, del Tribunal Constitucional, art. 44: amparo por lesión del 24.2 imputable al órgano judicial."
+    afines: ["Tutela judicial efectiva e indefensión", "Pertinencia y utilidad de la prueba; protesta", "Prueba ilícita", "Proposición de prueba", "Recurso de apelación (plazo, interposición, prueba en segunda instancia)", "Carga de la prueba"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"

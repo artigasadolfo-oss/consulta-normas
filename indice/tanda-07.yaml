@@ -1,0 +1,394 @@
+# Índice de conceptos de «Consulta de normas» — tanda 7 (Propiedad horizontal, salvo obras comunes)
+# Revisor: armero. Espejo: legalize-es@aca28304d. Todo precepto citado se ha leído en el espejo en esta pasada.
+# Vigencia: contraste con la API de boe.es (scripts/contraste_boe.py --solo "LPH,CC,LEC", 08-10-2026 07:22): distintos LPH 10
+# (versión futura 23-10-2026), LEC 22 y 685, CC 396 (errata del espejo, sin cambio de fondo). Ver tanda-07-notas.md.
+# AVISO: el espejo YA muestra el art. 10 LPH y la da 3.ª LPH en la redacción de la Ley 4/2026, que no rige hasta el 23-10-2026.
+# Voces 113 a 121 y 123 a 125 de la lista maestra: 12 voces, 179 remisiones, 42 artículos distintos; 9 vigentes y 3 provisionales.
+
+voces:
+  - voz: "Impugnación de acuerdos (plazo del art. 18)"
+    sinonimos: ["impugnación de acuerdos de la junta", "impugnación de acuerdo comunitario", "nulidad de acuerdo de la comunidad", "acuerdo contrario a la ley o a los estatutos", "acuerdo lesivo", "salvar el voto", "caducidad de la impugnación"]
+    normas_base: ["LPH", "LEC", "LO 1/2025", "CC"]
+    remisiones:
+      - {norma: "LPH", articulo: "18", apartado: "1", tipo: "regula", nota: "Causas: contrario a ley o estatutos, gravemente lesivo para la comunidad, o grave perjuicio o abuso de derecho a un propietario."}
+      - {norma: "LPH", articulo: "18", apartado: "2", tipo: "regula", nota: "Legitimados: quien salvó el voto, ausentes y privados del voto. Al corriente o consignando, salvo si se impugnan cuotas."}
+      - {norma: "LPH", articulo: "18", apartado: "3", tipo: "regula", nota: "Caduca a los tres meses; al año si es contrario a la ley o a los estatutos. Ausentes: desde la comunicación del art. 9."}
+      - {norma: "LPH", articulo: "18", apartado: "4", tipo: "regula", nota: "Impugnar no suspende la ejecución del acuerdo, salvo cautelar pedida por el demandante, oída la comunidad."}
+      - {norma: "LPH", articulo: "9", apartado: "1.h)", tipo: "conexa", nota: "Domicilio para notificaciones; si falla, tablón de anuncios con efectos a los tres días naturales: arranca el plazo del ausente."}
+      - {norma: "LPH", articulo: "19", apartado: "3", tipo: "conexa", nota: "Acta cerrada en diez días naturales y remitida por el art. 9; desde el cierre, los acuerdos son ejecutivos."}
+      - {norma: "LPH", articulo: "17", apartado: "8", tipo: "conexa", nota: "El ausente citado que no discrepa en 30 días naturales tras ser informado cuenta como voto favorable."}
+      - {norma: "LPH", articulo: "15", apartado: "2", tipo: "conexa", nota: "Moroso sin voto ni cómputo en las mayorías; si se le privó del voto indebidamente, está legitimado (18.2)."}
+      - {norma: "LPH", articulo: "13", apartado: "3", tipo: "conexa", nota: "Se demanda a la comunidad, a la que representa en juicio el presidente."}
+      - {norma: "LEC", articulo: "249", apartado: "1.8.º", tipo: "regula", nota: "Juicio ordinario para las acciones de la LPH que no sean solo reclamación de cantidad."}
+      - {norma: "LEC", articulo: "52", apartado: "1.8.º", tipo: "regula", nota: "Competente el tribunal del lugar en que radique la finca."}
+      - {norma: "LO 1/2025", articulo: "5", apartado: "2", tipo: "regula", nota: "MASC previo en todo declarativo del libro II; la impugnación de acuerdos no figura entre las excepciones."}
+      - {norma: "LO 1/2025", articulo: "7", apartado: "1", tipo: "regula", nota: "La solicitud de MASC suspende la caducidad; se reanuda si en 30 días naturales no hay reunión ni respuesta escrita."}
+      - {norma: "CC", articulo: "5", tipo: "conexa", nota: "Plazos por meses o años, de fecha a fecha; en el cómputo civil no se excluyen los días inhábiles."}
+      - {norma: "LEC", articulo: "135", apartado: "5", tipo: "conexa", nota: "Escritos sujetos a plazo procesal o sustantivo: hasta las 15:00 del día hábil siguiente al vencimiento."}
+      - {norma: "CC", articulo: "7", apartado: "2", tipo: "conexa", nota: "Abuso de derecho y ejercicio antisocial: fundamento de la causa del 18.1.c) LPH."}
+    no_consta_en_norma:
+      - "Acuerdos nulos de pleno derecho (contra norma imperativa u orden público) no sujetos al plazo del 18.3: criterio jurisprudencial."
+      - "Si quien se abstiene en la junta debe salvar el voto para impugnar: criterio jurisprudencial."
+      - "Si el día de gracia del 135.5 LEC salva la demanda de impugnación presentada el día hábil siguiente: no lo resuelve el texto."
+      - "Impugnación de acuerdos negativos (la junta rechaza lo pedido): criterio jurisprudencial."
+    afines: ["Caducidad de la acción (como excepción)", "Actas y notificación de acuerdos", "Asistencia, representación y voto en junta (incluido el moroso)", "Mayorías y cómputo de votos", "Requisito de procedibilidad (MASC)", "Medidas cautelares: presupuestos"]
+    # VIGENCIA: LPH 9, 13, 15, 17, 18 y 19; LEC 52, 135 y 249; CC 5 y 7; LO 1/2025 5 y 7: idénticos al texto vigente de boe.es.
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Limitación de las viviendas de uso turístico en la comunidad"
+    sinonimos: ["vivienda turística en la comunidad", "prohibir pisos turísticos", "aprobación de la comunidad para VUT", "acuerdo de tres quintos", "alquiler vacacional en el edificio", "incremento de gastos a viviendas turísticas", "VUT"]
+    normas_base: ["LPH", "LAU", "LEC"]
+    remisiones:
+      - {norma: "LPH", articulo: "7", apartado: "3", tipo: "regula", nota: "Desde el 03-04-2025, ejercer la VUT exige aprobación previa y expresa de la comunidad, con la mayoría del 17.12."}
+      - {norma: "LPH", articulo: "7", apartado: "3, párrafo 2.º", tipo: "regula", nota: "VUT sin aprobación expresa: requerimiento de cesación del presidente y acción de cesación del apartado 2."}
+      - {norma: "LPH", articulo: "17", apartado: "12", tipo: "regula", nota: "Tres quintos de propietarios y cuotas para aprobar, limitar, condicionar o prohibir la VUT, o subir sus gastos hasta un 20 %."}
+      - {norma: "LPH", articulo: "da 2", tipo: "regula", nota: "Quien ya ejercía la VUT antes de la LO 1/2025, acogido a la normativa turística, sigue en sus condiciones y plazos."}
+      - {norma: "LPH", articulo: "17", apartado: "8", tipo: "conexa", nota: "Voto presunto del ausente que no discrepa en 30 días; no se aplica si la reforma es para aprovechamiento privativo."}
+      - {norma: "LPH", articulo: "17", apartado: "6", tipo: "conexa", nota: "Lo no regulado que modifique título o estatutos exige unanimidad; la VUT tiene su regla propia (17.12)."}
+      - {norma: "LPH", articulo: "7", apartado: "2", tipo: "conexa", nota: "Cesación: autorización de la junta, cautelar, indemnización y privación del uso hasta tres años."}
+      - {norma: "LPH", articulo: "5", apartado: "párrafo 3.º", tipo: "conexa", nota: "El título puede fijar reglas de uso o destino de los pisos; frente a terceros, solo si está inscrito."}
+      - {norma: "LPH", articulo: "18", apartado: "1", tipo: "conexa", nota: "El acuerdo es impugnable por las causas del art. 18, incluido el abuso de derecho."}
+      - {norma: "LAU", articulo: "5", apartado: "e)", tipo: "conexa", nota: "La VUT a la que remite la LPH es la cesión del 5.e) LAU: desde el 08-10-2026, nunca más de 31 días."}
+      - {norma: "LEC", articulo: "249", apartado: "1.8.º", tipo: "conexa", nota: "Acciones de la LPH que no son de cantidad (cesación, impugnación): juicio ordinario."}
+    no_consta_en_norma:
+      - "Si la prohibición por tres quintos alcanza a VUT anteriores a la LO 1/2025 (da 2.ª, 17.12 sin efecto retroactivo): jurisprudencial."
+      - "Si una prohibición estatutaria genérica de «actividades» alcanza a la VUT: criterio jurisprudencial."
+      - "Si la aprobación de la VUT de un propietario es «aprovechamiento privativo» que excluye el voto presunto del 17.8: no lo dice."
+      - "Cesión turística de más de 31 días: ya no es la del 5.e) LAU; si exige la aprobación del 7.3 LPH, no lo resuelve el texto."
+    fuera_de_la_herramienta:
+      - "Normativa turística de la Comunitat Valenciana (registro y requisitos de la VUT): a ella remiten el 7.3 y el 17.12 LPH."
+      - "RDL 29/2026 (pendiente de convalidación): da el texto vigente del art. 5.e) LAU; el espejo aún no lo trae."
+    afines: ["Vivienda de uso turístico: exclusión de la LAU", "Actividades prohibidas (acción de cesación)", "Mayorías y cómputo de votos", "Impugnación de acuerdos (plazo del art. 18)", "Gastos comunes, cuota y fondo de reserva"]
+    # VIGENCIA: LAU 5 distinto en el espejo (RDL 29/2026, vigor 08-10-2026): nota según la API vigente. LPH 5, 7, 17, 18 y da 2, LEC 249 idénticos.
+    estado: "provisional"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Deudas con la comunidad, preferencia y afección"
+    sinonimos: ["deuda de cuotas de comunidad", "afección real del piso", "preferencia del crédito de la comunidad", "certificado de deudas en la compraventa", "propietario moroso", "deuda del anterior propietario", "derramas"]
+    normas_base: ["LPH", "CC", "LEC"]
+    remisiones:
+      - {norma: "LPH", articulo: "9", apartado: "1.e)", tipo: "regula", nota: "Contribuir a los gastos generales según la cuota del título o lo especialmente establecido."}
+      - {norma: "LPH", articulo: "9", apartado: "1.e), párrafo 2.º", tipo: "regula", nota: "Crédito preferente (art. 1923 CC): parte vencida del año en curso y tres anteriores; por delante de los n.º 3.º a 5.º."}
+      - {norma: "LPH", articulo: "9", apartado: "1.e), párrafo 3.º", tipo: "regula", nota: "Afección: el adquirente, aun inscrito, responde con el piso de lo debido del año de la compra y los tres anteriores."}
+      - {norma: "LPH", articulo: "9", apartado: "1.e), párrafo 4.º", tipo: "regula", nota: "En la escritura, declaración de deudas y certificado del secretario (siete días naturales), salvo exoneración del comprador."}
+      - {norma: "LPH", articulo: "9", apartado: "1.i)", tipo: "regula", nota: "Sin comunicar el cambio de titular, el vendedor responde solidariamente de lo posterior, salvo conocimiento o notoriedad."}
+      - {norma: "LPH", articulo: "9", apartado: "1.f)", tipo: "conexa", nota: "Aportación al fondo de reserva según la cuota de participación."}
+      - {norma: "LPH", articulo: "17", apartado: "11", tipo: "regula", nota: "Derramas de mejoras: a cargo de quien sea propietario cuando las cantidades sean exigibles."}
+      - {norma: "LPH", articulo: "21", apartado: "1", tipo: "conexa", nota: "Intereses desde que debió pagarse; medidas disuasorias acordadas por la junta, no abusivas ni retroactivas."}
+      - {norma: "LPH", articulo: "21", apartado: "2", tipo: "conexa", nota: "Monitorio especial u otros procesos; cabe demandar al titular registral para ejecutar el inmueble inscrito."}
+      - {norma: "LPH", articulo: "15", apartado: "2", tipo: "conexa", nota: "El moroso no vota, salvo que haya impugnado judicialmente la deuda o la haya consignado."}
+      - {norma: "LPH", articulo: "22", apartado: "1", tipo: "conexa", nota: "Deudas de la comunidad con terceros: sus fondos y, después, cada propietario que fue parte, por su cuota."}
+      - {norma: "LPH", articulo: "22", apartado: "2", tipo: "conexa", nota: "El propietario al corriente al ser requerido puede oponerse a esa ejecución."}
+      - {norma: "CC", articulo: "1923", tipo: "regula", nota: "Preferencias sobre inmuebles: la LPH coloca el crédito comunitario delante de los n.º 3.º, 4.º y 5.º."}
+      - {norma: "CC", articulo: "1966", apartado: "3.ª", tipo: "conexa", nota: "Cinco años para pagos que deben hacerse por años o en plazos más breves."}
+      - {norma: "CC", articulo: "1964", apartado: "2", tipo: "conexa", nota: "Cinco años para las acciones personales sin plazo especial."}
+      - {norma: "LEC", articulo: "250", apartado: "1.15.º", tipo: "conexa", nota: "Reclamaciones de cantidad de la LPH: juicio verbal, sea cual fuere la cuantía."}
+      - {norma: "LEC", articulo: "812", apartado: "2.2.º", tipo: "conexa", nota: "Monitorio con certificación de impago de gastos comunes de la comunidad."}
+      - {norma: "LEC", articulo: "544", apartado: "párrafo 2.º", tipo: "conexa", nota: "No se ejecuta contra los comuneros como miembros de entidad sin personalidad: rige el art. 22 LPH."}
+    no_consta_en_norma:
+      - "Cómputo de «la anualidad en curso y los tres años anteriores» (desde la demanda, el embargo o la compra): criterio jurisprudencial."
+      - "Cómo se hace valer la afección frente al adquirente (demanda al titular registral, nota de embargo): criterio jurisprudencial."
+      - "Plazo de prescripción de las cuotas (1966.3.ª o 1964.2 CC): criterio jurisprudencial."
+      - "Rango del crédito comunitario frente al hipotecario en la ejecución (tercería de mejor derecho): criterio jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Ley y Reglamento Hipotecarios (inscripción, anotación de embargo y cargas): no están en la herramienta."
+      - "Estatuto de los Trabajadores (preferencia de los créditos salariales que salva el 9.1.e) LPH): no está en la herramienta."
+    afines: ["Monitorio de propiedad horizontal", "Gastos comunes, cuota y fondo de reserva", "Tercería de mejor derecho", "Prescripción (como excepción)", "Asistencia, representación y voto en junta (incluido el moroso)"]
+    # VIGENCIA: LPH 9, 15, 17, 21 y 22; CC 1923, 1964 y 1966; LEC 250, 544 y 812: idénticos al texto vigente de boe.es.
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Legitimación del presidente"
+    sinonimos: ["representación de la comunidad", "presidente de la comunidad en juicio", "autorización de la junta para litigar", "acuerdo para demandar", "vicepresidente", "relevo del presidente", "legitimación de la comunidad de propietarios"]
+    normas_base: ["LPH", "LEC"]
+    remisiones:
+      - {norma: "LPH", articulo: "13", apartado: "3", tipo: "regula", nota: "El presidente representa legalmente a la comunidad, en juicio y fuera de él, en todos los asuntos que la afecten."}
+      - {norma: "LPH", articulo: "13", apartado: "2", tipo: "regula", nota: "Nombramiento obligatorio entre propietarios; relevo pedido al juez en un mes; juez si la junta no logra designarlo."}
+      - {norma: "LPH", articulo: "13", apartado: "4", tipo: "conexa", nota: "Vicepresidentes: sustituyen al presidente en ausencia, vacante o imposibilidad."}
+      - {norma: "LPH", articulo: "13", apartado: "7", tipo: "conexa", nota: "Mandato de un año salvo estatutos; remoción anticipada por junta extraordinaria."}
+      - {norma: "LPH", articulo: "7", apartado: "2, párrafo 3.º", tipo: "regula", nota: "Acción de cesación: el presidente necesita autorización previa de la junta debidamente convocada."}
+      - {norma: "LPH", articulo: "21", apartado: "2", tipo: "regula", nota: "Monitorio: también puede reclamar el secretario administrador profesional, si lo acuerda la junta."}
+      - {norma: "LPH", articulo: "21", apartado: "3", tipo: "conexa", nota: "Certificado de deuda del secretario con visto bueno del presidente, salvo secretario-administrador profesional ajeno al pleito."}
+      - {norma: "LPH", articulo: "14", apartado: "e)", tipo: "conexa", nota: "La junta decide los demás asuntos de interés general: cauce del acuerdo que autoriza a litigar."}
+      - {norma: "LPH", articulo: "22", apartado: "1", tipo: "conexa", nota: "Condena a la comunidad: responden sus fondos y, subsidiariamente, los propietarios que fueron parte."}
+      - {norma: "LEC", articulo: "544", apartado: "párrafo 2.º", tipo: "conexa", nota: "La ejecución contra miembros de entidades sin personalidad no se aplica a la comunidad de propietarios."}
+    no_consta_en_norma:
+      - "Si el presidente necesita acuerdo previo de la junta para demandar fuera del 7.2 LPH: criterio jurisprudencial."
+      - "Acreditación del acuerdo autorizante con la demanda y subsanación de su falta: criterio jurisprudencial."
+      - "Legitimación del propietario individual para defender elementos comunes en beneficio de la comunidad: criterio jurisprudencial."
+      - "Capacidad para ser parte de la comunidad de propietarios: ni la LPH ni la LEC la reconocen de forma expresa."
+    afines: ["Falta de legitimación", "Herencia yacente y comunidades sin personalidad como parte", "Actividades prohibidas (acción de cesación)", "Monitorio de propiedad horizontal", "Administrador y secretario"]
+    # VIGENCIA: LPH 7, 13, 14, 21 y 22; LEC 544: idénticos al texto vigente de boe.es.
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Mayorías y cómputo de votos"
+    sinonimos: ["mayorías de la junta", "doble mayoría", "unanimidad", "tres quintos", "mayoría en segunda convocatoria", "voto presunto del ausente", "cómputo de cuotas de participación"]
+    normas_base: ["LPH", "CC"]
+    remisiones:
+      - {norma: "LPH", articulo: "17", apartado: "7", tipo: "regula", nota: "Regla general: mayoría de propietarios y de cuotas; en segunda, mayoría de asistentes con más de la mitad de sus cuotas."}
+      - {norma: "LPH", articulo: "17", apartado: "7, párrafo 2.º", tipo: "conexa", nota: "Sin mayoría posible: el juez resuelve en equidad si se pide en el mes siguiente a la segunda junta."}
+      - {norma: "LPH", articulo: "17", apartado: "6", tipo: "regula", nota: "Unanimidad para aprobar o modificar reglas del título o de los estatutos no reguladas expresamente en el art. 17."}
+      - {norma: "LPH", articulo: "17", apartado: "4", tipo: "regula", nota: "Tres quintos: mejoras no exigibles (el disidente no paga si superan tres mensualidades) y división, agregación o nuevas plantas."}
+      - {norma: "LPH", articulo: "17", apartado: "3", tipo: "regula", nota: "Tres quintos: portería, vigilancia y servicios de interés general; arrendar elementos comunes sin uso específico."}
+      - {norma: "LPH", articulo: "17", apartado: "2", tipo: "regula", nota: "Mayoría de propietarios y cuotas: accesibilidad y ascensor; mayoría simple: eficiencia energética hasta doce mensualidades."}
+      - {norma: "LPH", articulo: "17", apartado: "1", tipo: "regula", nota: "Un tercio de propietarios y cuotas: telecomunicaciones y renovables; no se repercute a quien no votó a favor."}
+      - {norma: "LPH", articulo: "17", apartado: "12", tipo: "regula", nota: "Tres quintos para aprobar, limitar, condicionar o prohibir la VUT o subir sus gastos hasta un 20 %."}
+      - {norma: "LPH", articulo: "17", apartado: "8", tipo: "regula", nota: "Ausente citado que no discrepa en 30 días naturales: voto favorable; no si el coste no es repercutible o es uso privativo."}
+      - {norma: "LPH", articulo: "17", apartado: "5", tipo: "conexa", nota: "Punto de recarga en plaza individual de garaje: basta la comunicación previa; coste a cargo del interesado."}
+      - {norma: "LPH", articulo: "17", apartado: "9", tipo: "conexa", nota: "Los acuerdos válidamente adoptados obligan a todos los propietarios."}
+      - {norma: "LPH", articulo: "15", apartado: "2", tipo: "regula", nota: "Moroso sin voto: ni su persona ni su cuota se computan para alcanzar las mayorías."}
+      - {norma: "LPH", articulo: "15", apartado: "1", tipo: "conexa", nota: "Pro indiviso: un solo representante. Usufructo: vota el nudo propietario, representado por el usufructuario."}
+      - {norma: "LPH", articulo: "16", apartado: "2, párrafo 3.º", tipo: "conexa", nota: "Primera convocatoria: mayoría de propietarios que sea mayoría de cuotas; si no, segunda sin quórum."}
+      - {norma: "LPH", articulo: "19", apartado: "2.f)", tipo: "conexa", nota: "El acta recoge nombres y cuotas de quienes votan a favor y en contra cuando importe para la validez."}
+      - {norma: "LPH", articulo: "24", apartado: "3.b)", tipo: "conexa", nota: "Agrupación de comunidades: la mayoría cualificada exige antes la misma mayoría en cada junta integrada."}
+      - {norma: "LPH", articulo: "13", apartado: "8", tipo: "conexa", nota: "Hasta cuatro propietarios: pueden regirse por el art. 398 CC si los estatutos lo establecen."}
+      - {norma: "CC", articulo: "398", tipo: "conexa", nota: "Comunidad ordinaria: mayoría de intereses; sin mayoría o con acuerdo gravemente perjudicial, provee el juez."}
+    no_consta_en_norma:
+      - "Propietario de varios pisos: si cuenta como uno o como varios en la mayoría de propietarios: criterio jurisprudencial."
+      - "Abstenciones y votos en blanco en el cómputo de la mayoría: criterio jurisprudencial."
+      - "El 15.1 remite a la «regla primera del artículo 17», numeración de 1999 (unanimidad, hoy 17.6): el texto no lo aclara."
+      - "Cómo se suma el voto presunto del 17.8 a la mayoría de presentes de la segunda convocatoria: criterio jurisprudencial."
+    afines: ["Junta de propietarios: convocatoria y orden del día", "Asistencia, representación y voto en junta (incluido el moroso)", "Impugnación de acuerdos (plazo del art. 18)", "Resolución judicial en equidad ante falta de mayoría", "Obras en elementos comunes y accesibilidad", "Limitación de las viviendas de uso turístico en la comunidad"]
+    # VIGENCIA: LPH 13, 15, 16, 17, 19 y 24; CC 398: idénticos al texto vigente de boe.es. No cita el art. 10 LPH.
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Junta de propietarios: convocatoria y orden del día"
+    sinonimos: ["convocatoria de la junta", "orden del día", "junta ordinaria", "junta extraordinaria", "segunda convocatoria", "junta universal", "plazo de antelación de la convocatoria"]
+    normas_base: ["LPH"]
+    remisiones:
+      - {norma: "LPH", articulo: "16", apartado: "1", tipo: "regula", nota: "Al menos una vez al año; además, cuando lo decida el presidente o lo pidan 1/4 de propietarios o el 25 % de cuotas."}
+      - {norma: "LPH", articulo: "16", apartado: "2", tipo: "regula", nota: "Convoca el presidente o los promotores: asuntos, lugar, día y hora; citación por el art. 9; lista de morosos y aviso."}
+      - {norma: "LPH", articulo: "16", apartado: "2, párrafo 2.º", tipo: "regula", nota: "Cualquier propietario puede pedir por escrito al presidente que un asunto entre en el orden del día de la siguiente junta."}
+      - {norma: "LPH", articulo: "16", apartado: "2, párrafo 3.º", tipo: "regula", nota: "Sin mayoría de propietarios y de cuotas en primera convocatoria, se celebra la segunda sin quórum."}
+      - {norma: "LPH", articulo: "16", apartado: "2, párrafo 4.º", tipo: "regula", nota: "Segunda: media hora después el mismo día, o nueva convocatoria en ocho días naturales con tres de antelación."}
+      - {norma: "LPH", articulo: "16", apartado: "3", tipo: "regula", nota: "Ordinaria anual con seis días de antelación; extraordinaria, la posible; universal si asisten todos y lo deciden."}
+      - {norma: "LPH", articulo: "14", tipo: "regula", nota: "Competencias de la junta: cargos, presupuesto y cuentas, obras de reparación, estatutos y asuntos de interés general."}
+      - {norma: "LPH", articulo: "9", apartado: "1.h)", tipo: "regula", nota: "Citaciones en el domicilio comunicado o en el piso; si no es posible, tablón de anuncios: efectos a los tres días naturales."}
+      - {norma: "LPH", articulo: "15", apartado: "2", tipo: "conexa", nota: "El moroso puede asistir y deliberar, pero no vota."}
+      - {norma: "LPH", articulo: "13", apartado: "7", tipo: "conexa", nota: "Remoción de cargos antes de plazo: junta convocada en sesión extraordinaria."}
+      - {norma: "LPH", articulo: "19", apartado: "2.e)", tipo: "conexa", nota: "El acta debe recoger el orden del día, el carácter de la junta y la convocatoria en que se celebra."}
+      - {norma: "LPH", articulo: "20", apartado: "b)", tipo: "conexa", nota: "El administrador prepara con antelación el plan de gastos que se somete a la junta."}
+      - {norma: "LPH", articulo: "18", apartado: "1", tipo: "conexa", nota: "Los defectos de convocatoria se hacen valer impugnando el acuerdo por el art. 18."}
+    no_consta_en_norma:
+      - "Acuerdos sobre asuntos que no figuran en el orden del día («ruegos y preguntas»): criterio jurisprudencial."
+      - "Junta convocada por quien no está legitimado (p. ej., el administrador sin orden del presidente): criterio jurisprudencial."
+      - "Cómputo de los seis días de antelación (desde el envío o desde la recepción): el texto no lo precisa."
+      - "Juntas telemáticas o mixtas: la LPH no las regula."
+    afines: ["Mayorías y cómputo de votos", "Asistencia, representación y voto en junta (incluido el moroso)", "Actas y notificación de acuerdos", "Impugnación de acuerdos (plazo del art. 18)", "Administrador y secretario"]
+    # VIGENCIA: LPH 9, 13, 14, 15, 16, 18, 19 y 20: idénticos al texto vigente de boe.es.
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Asistencia, representación y voto en junta (incluido el moroso)"
+    sinonimos: ["representación en la junta", "delegación de voto", "privación del derecho de voto", "propietario moroso en la junta", "voto del usufructuario", "copropietarios de un piso", "consignación de la deuda para votar"]
+    normas_base: ["LPH"]
+    remisiones:
+      - {norma: "LPH", articulo: "15", apartado: "1", tipo: "regula", nota: "Asistencia personal o por representante legal o voluntario; basta un escrito firmado por el propietario."}
+      - {norma: "LPH", articulo: "15", apartado: "1, párrafo 2.º", tipo: "regula", nota: "Piso pro indiviso: los cotitulares nombran un representante para asistir y votar."}
+      - {norma: "LPH", articulo: "15", apartado: "1, párrafo 3.º", tipo: "regula", nota: "Usufructo: vota el nudo propietario, representado por el usufructuario; delegación expresa para obras extraordinarias o de mejora."}
+      - {norma: "LPH", articulo: "15", apartado: "2", tipo: "regula", nota: "Moroso al iniciarse la junta: delibera sin voto, salvo impugnación judicial o consignación; el acta lo refleja."}
+      - {norma: "LPH", articulo: "16", apartado: "2", tipo: "regula", nota: "La convocatoria relaciona a los propietarios morosos y advierte de la privación del voto."}
+      - {norma: "LPH", articulo: "18", apartado: "2", tipo: "regula", nota: "Impugna quien fue privado indebidamente del voto; el moroso, consignando antes, salvo si impugna cuotas."}
+      - {norma: "LPH", articulo: "17", apartado: "8", tipo: "conexa", nota: "El ausente citado que no discrepa en 30 días naturales cuenta como voto favorable."}
+      - {norma: "LPH", articulo: "19", apartado: "2.d)", tipo: "conexa", nota: "El acta relaciona asistentes, cargos y representados, con sus cuotas de participación."}
+      - {norma: "LPH", articulo: "19", apartado: "4", tipo: "conexa", nota: "El secretario conserva cinco años las convocatorias, comunicaciones y apoderamientos."}
+      - {norma: "LPH", articulo: "24", apartado: "3.a)", tipo: "conexa", nota: "Agrupación de comunidades: la junta la forman los presidentes de las comunidades integradas, salvo pacto."}
+    no_consta_en_norma:
+      - "Quién puede ser representante (administrador, inquilino) y cuántas delegaciones acumula: la LPH solo exige escrito firmado."
+      - "Qué deudas son «vencidas» a efectos del 15.2 (derramas aprobadas sin liquidar, cuotas en litigio): criterio jurisprudencial."
+      - "El 15.1 remite a la «regla primera del artículo 17», numeración de 1999 (unanimidad, hoy 17.6): el texto no lo aclara."
+    afines: ["Mayorías y cómputo de votos", "Junta de propietarios: convocatoria y orden del día", "Impugnación de acuerdos (plazo del art. 18)", "Deudas con la comunidad, preferencia y afección"]
+    # VIGENCIA: LPH 15, 16, 17, 18, 19 y 24: idénticos al texto vigente de boe.es.
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Actas y notificación de acuerdos"
+    sinonimos: ["acta de la junta", "libro de actas", "notificación de acuerdos al ausente", "tablón de anuncios", "subsanación del acta", "firma del acta", "ejecutividad de los acuerdos"]
+    normas_base: ["LPH"]
+    remisiones:
+      - {norma: "LPH", articulo: "19", apartado: "1", tipo: "regula", nota: "Los acuerdos constan en un libro de actas diligenciado por el Registrador de la Propiedad."}
+      - {norma: "LPH", articulo: "19", apartado: "2", tipo: "regula", nota: "Contenido mínimo: fecha y lugar, convocante, carácter, asistentes y cuotas, orden del día y acuerdos con sus votos."}
+      - {norma: "LPH", articulo: "19", apartado: "3", tipo: "regula", nota: "Cierre con firmas de presidente y secretario al terminar o en diez días naturales; desde entonces, acuerdos ejecutivos."}
+      - {norma: "LPH", articulo: "19", apartado: "3, párrafo 2.º", tipo: "regula", nota: "El acta se remite a los propietarios por el procedimiento del art. 9."}
+      - {norma: "LPH", articulo: "19", apartado: "3, párrafo 3.º", tipo: "regula", nota: "Defectos subsanables si consta lo esencial y está firmada; subsanar antes de la siguiente junta, que lo ratifica."}
+      - {norma: "LPH", articulo: "19", apartado: "4", tipo: "regula", nota: "El secretario custodia los libros y conserva cinco años convocatorias, comunicaciones y apoderamientos."}
+      - {norma: "LPH", articulo: "9", apartado: "1.h)", tipo: "regula", nota: "Notificación en el domicilio comunicado al secretario o, en su defecto, en el piso, con plenos efectos si la recibe el ocupante."}
+      - {norma: "LPH", articulo: "9", apartado: "1.h), párrafo 2.º", tipo: "regula", nota: "Si no es posible, tablón de anuncios con diligencia firmada; surte efectos a los tres días naturales."}
+      - {norma: "LPH", articulo: "17", apartado: "8", tipo: "regula", nota: "Informado el ausente, tiene 30 días naturales para discrepar; si calla, su voto se suma al acuerdo."}
+      - {norma: "LPH", articulo: "18", apartado: "3", tipo: "regula", nota: "Para el ausente, el plazo de impugnación corre desde la comunicación del acuerdo por el art. 9."}
+      - {norma: "LPH", articulo: "13", apartado: "5", tipo: "conexa", nota: "Sin nombramiento separado, el presidente ejerce de secretario y de administrador."}
+      - {norma: "LPH", articulo: "20", apartado: "e)", tipo: "conexa", nota: "El administrador puede actuar de secretario y custodia la documentación a disposición de los titulares."}
+      - {norma: "LPH", articulo: "21", apartado: "3", tipo: "conexa", nota: "Monitorio: certificado del acuerdo de liquidación y prueba de su notificación al deudor (o tablón, tres días)."}
+    no_consta_en_norma:
+      - "Notificación por correo electrónico o mensajería: el 9.1.h) no la prevé; su validez es criterio jurisprudencial."
+      - "Si un acta sin firmas o cerrada fuera de plazo deja sin eficacia el acuerdo: criterio jurisprudencial."
+      - "Fuerza probatoria del acta frente a quien niega su contenido: criterio jurisprudencial y reglas generales de prueba."
+    afines: ["Impugnación de acuerdos (plazo del art. 18)", "Mayorías y cómputo de votos", "Junta de propietarios: convocatoria y orden del día", "Monitorio de propiedad horizontal", "Administrador y secretario"]
+    # VIGENCIA: LPH 9, 13, 17, 18, 19, 20 y 21: idénticos al texto vigente de boe.es.
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Actividades prohibidas (acción de cesación)"
+    sinonimos: ["acción de cesación", "actividades molestas", "actividades insalubres, nocivas, peligrosas o ilícitas", "ruidos de un vecino", "privación del uso de la vivienda", "requerimiento de cesación", "vecino conflictivo"]
+    normas_base: ["LPH", "LEC", "LO 1/2025", "CC"]
+    remisiones:
+      - {norma: "LPH", articulo: "7", apartado: "2", tipo: "regula", nota: "Prohibidas: las vetadas por los estatutos, las dañosas para la finca y las molestas, insalubres, nocivas, peligrosas o ilícitas."}
+      - {norma: "LPH", articulo: "7", apartado: "2, párrafo 2.º", tipo: "regula", nota: "El presidente, de oficio o a instancia de propietario u ocupante, requiere la cesación inmediata con apercibimiento."}
+      - {norma: "LPH", articulo: "7", apartado: "2, párrafo 3.º", tipo: "regula", nota: "Si persiste: demanda del presidente con autorización de la junta convocada al efecto; juicio ordinario en lo no previsto."}
+      - {norma: "LPH", articulo: "7", apartado: "2, párrafo 4.º", tipo: "regula", nota: "Con requerimiento fehaciente y certificación del acuerdo: cesación cautelar. Se demanda al propietario y, en su caso, al ocupante."}
+      - {norma: "LPH", articulo: "7", apartado: "2, párrafo 5.º", tipo: "regula", nota: "Sentencia: cesación, daños y privación del uso hasta tres años; al ocupante no propietario, extinción de derechos y lanzamiento."}
+      - {norma: "LPH", articulo: "7", apartado: "3", tipo: "conexa", nota: "Vivienda turística sin aprobación expresa de la comunidad: mismo requerimiento y misma acción de cesación."}
+      - {norma: "LPH", articulo: "9", apartado: "1.g)", tipo: "conexa", nota: "Diligencia debida en el uso del inmueble; se responde ante los demás de las infracciones y los daños causados."}
+      - {norma: "LPH", articulo: "5", apartado: "párrafo 3.º", tipo: "conexa", nota: "Los estatutos pueden fijar el uso o destino de los pisos; frente a terceros, solo si están inscritos."}
+      - {norma: "LPH", articulo: "13", apartado: "3", tipo: "conexa", nota: "El presidente representa a la comunidad en juicio."}
+      - {norma: "LEC", articulo: "249", apartado: "1.8.º", tipo: "regula", nota: "Acciones de la LPH que no son solo de cantidad, como la cesación: juicio ordinario."}
+      - {norma: "LEC", articulo: "52", apartado: "1.8.º", tipo: "regula", nota: "Competente el tribunal del lugar en que radique la finca."}
+      - {norma: "LO 1/2025", articulo: "5", apartado: "2", tipo: "conexa", nota: "MASC previo en los declarativos; la acción de cesación de la LPH no figura entre las excepciones."}
+      - {norma: "LO 1/2025", articulo: "5", apartado: "3", tipo: "conexa", nota: "No exigen MASC la demanda ejecutiva ni las medidas cautelares previas a la demanda."}
+      - {norma: "CC", articulo: "7", apartado: "2", tipo: "conexa", nota: "Abuso de derecho o ejercicio antisocial: indemnización y medidas que impidan que persista."}
+      - {norma: "CC", articulo: "1908", apartado: "2.º", tipo: "conexa", nota: "Los propietarios responden de los daños por humos excesivos, nocivos a las personas o a las propiedades."}
+      - {norma: "CC", articulo: "1902", tipo: "conexa", nota: "Quien causa daño por culpa o negligencia está obligado a repararlo."}
+    no_consta_en_norma:
+      - "Si un propietario puede ejercer por sí la acción del 7.2 cuando el presidente o la junta no actúan: criterio jurisprudencial."
+      - "Ruidos e inmisiones entre vecinos fuera del 7.2 (relaciones de vecindad): criterio jurisprudencial."
+      - "Una prohibición de destino (hostelería, despachos) solo vincula si es clara y consta en título o estatutos: criterio jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Normativa autonómica y ordenanzas municipales de ruido y de actividades: definen lo «molesto» y no están en la herramienta."
+      - "Código Penal (delito de desobediencia al que remite el 7.2 LPH): no está en la herramienta."
+    afines: ["Legitimación del presidente", "Limitación de las viviendas de uso turístico en la comunidad", "Medidas cautelares: presupuestos", "Inmisiones y relaciones de vecindad", "Requisito de procedibilidad (MASC)", "Resolución del contrato por incumplimiento"]
+    # VIGENCIA: LPH 5, 7, 9 y 13; LEC 52 y 249; LO 1/2025 5; CC 7, 1902 y 1908: idénticos al texto vigente de boe.es.
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Obras en elementos privativos"
+    sinonimos: ["obras en el piso", "reforma de la vivienda en comunidad", "cerramiento de terraza", "división o agregación de pisos", "alteración de fachada", "obras sin permiso de la comunidad", "modificación de elementos arquitectónicos"]
+    normas_base: ["LPH", "CC"]
+    remisiones:
+      - {norma: "LPH", articulo: "7", apartado: "1", tipo: "regula", nota: "Puede modificar su piso si no daña seguridad, estructura, configuración o estado exteriores ni derechos ajenos; avisa antes."}
+      - {norma: "LPH", articulo: "7", apartado: "1, párrafo 2.º", tipo: "regula", nota: "En el resto del inmueble no puede alterar nada; las reparaciones urgentes las comunica sin dilación al administrador."}
+      - {norma: "LPH", articulo: "3", apartado: "a)", tipo: "regula", nota: "Privativo: espacio delimitado con los elementos e instalaciones que le sirven en exclusiva y los anejos del título."}
+      - {norma: "CC", articulo: "396", tipo: "regula", nota: "Comunes: estructura, cubiertas, fachadas con su imagen o configuración y cierres, y conducciones hasta el espacio privativo."}
+      - {norma: "LPH", articulo: "17", apartado: "4, párrafo 3.º", tipo: "regula", nota: "Tres quintos: dividir, agregar o segregar pisos, nuevas plantas, cerrar terrazas o alterar estructura o cosas comunes."}
+      - {norma: "LPH", articulo: "17", apartado: "4, párrafo 4.º", tipo: "regula", nota: "Ninguna innovación puede inutilizar parte del edificio para un propietario sin su consentimiento expreso."}
+      - {norma: "LPH", articulo: "10", apartado: "3.b)", tipo: "regula", nota: "División, agregación o cerramientos: autorización administrativa, mayoría legal y consentimiento de los afectados."}
+      - {norma: "LPH", articulo: "10", apartado: "3.b), párrafo 2.º", tipo: "conexa", nota: "La junta fija con los afectados la indemnización y, por igual mayoría, las nuevas cuotas."}
+      - {norma: "LPH", articulo: "5", apartado: "párrafo 3.º", tipo: "conexa", nota: "Los estatutos pueden fijar reglas de uso, destino, conservación y reparaciones de los pisos."}
+      - {norma: "LPH", articulo: "9", apartado: "1.a)", tipo: "conexa", nota: "Respetar instalaciones generales y elementos comunes, aunque estén dentro del piso o sean de uso privativo."}
+      - {norma: "LPH", articulo: "9", apartado: "1.b)", tipo: "conexa", nota: "Mantener el piso sin perjudicar a la comunidad ni a otros propietarios; resarcir los daños causados."}
+      - {norma: "LPH", articulo: "9", apartado: "1.c)", tipo: "conexa", nota: "Consentir en el piso reparaciones y servidumbres que exija el servicio del inmueble, con derecho a resarcimiento."}
+      - {norma: "LPH", articulo: "17", apartado: "5", tipo: "conexa", nota: "Punto de recarga en plaza individual de garaje: basta la comunicación previa a la comunidad."}
+    no_consta_en_norma:
+      - "Consentimiento tácito de la comunidad por tolerancia prolongada de la obra: criterio jurisprudencial."
+      - "Plazo para exigir la reposición de una obra inconsentida en elemento común: criterio jurisprudencial."
+      - "Toldos, cerramientos o aparatos de aire en fachada que «no alteran la configuración»: criterio jurisprudencial."
+      - "Obras en locales autorizadas de forma genérica por el título (huecos, salidas de humos): criterio jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Licencia municipal y normativa urbanística (valenciana y Ley de Suelo estatal), a las que remite el 10.3 LPH: no están en la herramienta."
+    afines: ["Obras en elementos comunes y accesibilidad", "Mayorías y cómputo de votos", "Actividades prohibidas (acción de cesación)", "Título constitutivo, estatutos y cuota de participación", "Servidumbres y acceso para obras e instalaciones comunes"]
+    # VIGENCIA: LPH 10 distinto: el espejo ya trae la Ley 4/2026 (vigor 23-10-2026), que solo cambia el 10.1.b); el 10.3 citado
+    # es idéntico en ambas versiones. CC 396: errata del espejo («los elemento de cierre»). LPH 3, 5, 7, 9 y 17: idénticos.
+    estado: "provisional"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Gastos comunes, cuota y fondo de reserva"
+    sinonimos: ["cuotas de comunidad", "cuota de participación", "gastos generales", "fondo de reserva", "exención de gastos de locales", "presupuesto de la comunidad", "derrama"]
+    normas_base: ["LPH"]
+    remisiones:
+      - {norma: "LPH", articulo: "3", tipo: "regula", nota: "Cuota en centésimas: módulo de cargas y beneficios; las mejoras del piso no la alteran; solo cambia por los arts. 10 y 17."}
+      - {norma: "LPH", articulo: "5", apartado: "párrafo 2.º", tipo: "regula", nota: "La cuota la fija el título: superficie útil, emplazamiento, situación y uso presumible de los servicios comunes."}
+      - {norma: "LPH", articulo: "9", apartado: "1.e)", tipo: "regula", nota: "Contribuir a los gastos generales según la cuota del título o lo especialmente establecido."}
+      - {norma: "LPH", articulo: "9", apartado: "2", tipo: "regula", nota: "Generales: los no imputables a pisos concretos; no usar un servicio no exime de pagarlo, salvo el 17.4."}
+      - {norma: "LPH", articulo: "9", apartado: "1.f)", tipo: "regula", nota: "Fondo de reserva: conservación, reparación, rehabilitación y obras de accesibilidad y de eficiencia energética."}
+      - {norma: "LPH", articulo: "9", apartado: "1.f), párrafo 2.º", tipo: "regula", nota: "Titular, la comunidad; dotación nunca inferior al 10 % del último presupuesto ordinario."}
+      - {norma: "LPH", articulo: "9", apartado: "1.f), párrafo 3.º", tipo: "conexa", nota: "Con cargo al fondo cabe un seguro de daños de la finca o un contrato de mantenimiento permanente."}
+      - {norma: "LPH", articulo: "da 1", tipo: "conexa", nota: "El fondo no puede bajar del mínimo en el ejercicio; lo gastado en obras del art. 10 computa y se repone al siguiente."}
+      - {norma: "LPH", articulo: "14", apartado: "b)", tipo: "regula", nota: "La junta aprueba el plan de gastos e ingresos previsibles y las cuentas."}
+      - {norma: "LPH", articulo: "17", apartado: "6", tipo: "regula", nota: "Cambiar el reparto fijado en el título o los estatutos (cuotas, exenciones) exige unanimidad."}
+      - {norma: "LPH", articulo: "17", apartado: "4, párrafo 2.º", tipo: "regula", nota: "Mejora no exigible acordada por tres quintos y superior a tres mensualidades: el disidente no paga ni cambia su cuota."}
+      - {norma: "LPH", articulo: "17", apartado: "1, párrafo 2.º", tipo: "conexa", nota: "Telecomunicaciones y renovables: no se repercute a quien no votó a favor; si luego se conecta, paga con interés legal."}
+      - {norma: "LPH", articulo: "17", apartado: "2, párrafo 3.º", tipo: "conexa", nota: "Eficiencia energética por mayoría simple hasta doce mensualidades: es gasto general y el disidente no se libra."}
+      - {norma: "LPH", articulo: "17", apartado: "11", tipo: "conexa", nota: "Derramas de mejoras: a cargo de quien sea propietario cuando sean exigibles."}
+      - {norma: "LPH", articulo: "17", apartado: "12", tipo: "conexa", nota: "Por tres quintos, cuotas especiales o aumento de hasta un 20 % de los gastos de la vivienda turística."}
+      - {norma: "LPH", articulo: "18", apartado: "2", tipo: "conexa", nota: "Para impugnar acuerdos sobre las cuotas de participación no hace falta estar al corriente."}
+      - {norma: "LPH", articulo: "20", apartado: "b)", tipo: "conexa", nota: "El administrador prepara el plan de gastos previsibles y propone cómo atenderlos."}
+      - {norma: "LPH", articulo: "21", apartado: "2", tipo: "conexa", nota: "Reclamables gastos ordinarios, extraordinarios, generales o individualizables y fondo de reserva."}
+    no_consta_en_norma:
+      - "Alcance de la exención estatutaria de gastos a locales o bajos (ascensor, portal, obras nuevas): criterio jurisprudencial."
+      - "Reparto distinto del título, consentido durante años sin acuerdo unánime: criterio jurisprudencial."
+      - "Revisión judicial de una cuota de participación desproporcionada: el art. 5 solo menciona la «resolución judicial»."
+    vigilar:
+      - {norma: "LPH", articulo: "10"}
+    afines: ["Deudas con la comunidad, preferencia y afección", "Monitorio de propiedad horizontal", "Mayorías y cómputo de votos", "Obras en elementos comunes y accesibilidad", "Título constitutivo, estatutos y cuota de participación", "Gastos generales, servicios e IBI"]
+    # VIGENCIA: LPH 3, 5, 9, 14, 17, 18, 20, 21 y da 1: idénticos al texto vigente de boe.es. `vigilar` LPH 10 (derrama y
+    # afección de las obras obligatorias, 10.2): no se cita porque el espejo trae el texto que rige desde el 23-10-2026.
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Daños entre comunidad y propietarios (filtraciones)"
+    sinonimos: ["filtraciones", "humedades", "goteras", "daños por agua", "responsabilidad de la comunidad", "daños del vecino de arriba", "bajante comunitaria"]
+    normas_base: ["LPH", "CC", "LOE", "LEC"]
+    remisiones:
+      - {norma: "LPH", articulo: "10", apartado: "1.a)", tipo: "regula", nota: "Obras de conservación del inmueble y de sus instalaciones comunes: obligatorias, sin acuerdo previo de la junta."}
+      - {norma: "LPH", articulo: "20", apartado: "c)", tipo: "regula", nota: "El administrador dispone las reparaciones urgentes y da cuenta inmediata al presidente o a los propietarios."}
+      - {norma: "LPH", articulo: "14", apartado: "c)", tipo: "conexa", nota: "La junta aprueba las obras de reparación y es informada de las medidas urgentes del administrador."}
+      - {norma: "LPH", articulo: "7", apartado: "1, párrafo 2.º", tipo: "regula", nota: "Quien advierta reparaciones urgentes en lo común debe comunicarlo sin dilación al administrador."}
+      - {norma: "LPH", articulo: "9", apartado: "1.a)", tipo: "regula", nota: "Respetar instalaciones y elementos comunes, también los de uso privativo, evitando daños o desperfectos."}
+      - {norma: "LPH", articulo: "9", apartado: "1.b)", tipo: "regula", nota: "Conservar el piso y sus instalaciones privativas; resarcir los daños por su descuido o el de quienes dependan de él."}
+      - {norma: "LPH", articulo: "9", apartado: "1.c)", tipo: "regula", nota: "Consentir reparaciones y servidumbres para el servicio del inmueble; la comunidad resarce los daños que cause."}
+      - {norma: "LPH", articulo: "9", apartado: "1.d)", tipo: "conexa", nota: "Permitir la entrada en el piso para esas reparaciones."}
+      - {norma: "LPH", articulo: "9", apartado: "1.g)", tipo: "regula", nota: "Cada titular responde ante los demás de las infracciones cometidas y de los daños causados."}
+      - {norma: "LPH", articulo: "9", apartado: "1.f), párrafo 3.º", tipo: "conexa", nota: "Con cargo al fondo de reserva cabe un seguro de daños de la finca."}
+      - {norma: "LPH", articulo: "22", apartado: "1", tipo: "conexa", nota: "Condena a la comunidad: sus fondos y, subsidiariamente, cada propietario que fue parte, por su cuota."}
+      - {norma: "CC", articulo: "396", tipo: "regula", nota: "Comunes las conducciones de agua, desagüe, gas o electricidad hasta la entrada al privativo, cubiertas y fachadas."}
+      - {norma: "CC", articulo: "1902", tipo: "regula", nota: "Responsabilidad por culpa o negligencia: base de la reclamación entre vecinos o frente a la comunidad."}
+      - {norma: "CC", articulo: "1907", tipo: "regula", nota: "El propietario del edificio responde de los daños por ruina debida a falta de las reparaciones necesarias."}
+      - {norma: "CC", articulo: "1910", tipo: "conexa", nota: "Quien habita la casa responde de los daños por lo que se arroje o caiga de ella."}
+      - {norma: "CC", articulo: "1968", apartado: "2.º", tipo: "regula", nota: "Un año desde que lo supo el agraviado para la acción del art. 1902."}
+      - {norma: "CC", articulo: "1964", apartado: "2", tipo: "conexa", nota: "Cinco años para la acción personal sin plazo especial."}
+      - {norma: "LOE", articulo: "17", apartado: "1.b)", tipo: "conexa", nota: "Vicios que afectan a la habitabilidad: los agentes responden tres años desde la recepción de la obra."}
+      - {norma: "LOE", articulo: "3", apartado: "1.c)", tipo: "conexa", nota: "La habitabilidad incluye la salubridad y la estanqueidad del ambiente interior (c.1)."}
+      - {norma: "LOE", articulo: "18", apartado: "1", tipo: "conexa", nota: "Acción de la LOE: prescribe a los dos años desde que se producen los daños."}
+      - {norma: "LEC", articulo: "249", apartado: "1.8.º", tipo: "conexa", nota: "Acciones de la LPH que no son solo de cantidad (p. ej., obras más indemnización): juicio ordinario."}
+      - {norma: "LEC", articulo: "250", apartado: "1.15.º", tipo: "conexa", nota: "Acciones de la LPH solo de cantidad: juicio verbal, sea cual fuere la cuantía."}
+      - {norma: "LEC", articulo: "52", apartado: "1.8.º", tipo: "conexa", nota: "Juicios en materia de propiedad horizontal: tribunal del lugar de la finca."}
+    no_consta_en_norma:
+      - "Daños continuados por filtración: día inicial del año del 1968.2.º CC: criterio jurisprudencial."
+      - "Si la acción entre comunidad y propietario es por deberes de la LPH (cinco años) o extracontractual (un año): jurisprudencial."
+      - "Común o privativo cuando la fuga está en un ramal, la bajante o una terraza de uso privativo: criterio jurisprudencial."
+      - "Reclamación solo de indemnización: si es acción de la LPH (verbal, 250.1.15.º) o del 1902 (cauce por cuantía): no lo resuelve."
+    fuera_de_la_herramienta:
+      - "Ley de Contrato de Seguro (acción directa contra la aseguradora de la comunidad o del vecino, art. 76): no está en la herramienta."
+      - "Código Técnico de la Edificación (salubridad y protección frente a la humedad): no está en la herramienta."
+    afines: ["Obras en elementos comunes y accesibilidad", "Responsabilidad extracontractual", "Responsabilidad de los agentes: plazos de 10, 3 y 1 año", "Daños causados por animales, edificios y cosas", "Prescripción (como excepción)", "Legitimación del presidente", "Obras y conservación"]
+    # VIGENCIA: LPH 10 distinto: el espejo ya trae la Ley 4/2026 (vigor 23-10-2026), que solo cambia el 10.1.b); el 10.1.a)
+    # citado es idéntico en ambas versiones. CC 396: errata del espejo. LPH 7, 9, 14, 20 y 22; CC 1902, 1907, 1910, 1964 y 1968;
+    # LOE 3, 17 y 18; LEC 52, 249 y 250: idénticos al texto vigente de boe.es.
+    estado: "provisional"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"

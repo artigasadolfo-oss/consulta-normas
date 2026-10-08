@@ -1,0 +1,429 @@
+# Índice de conceptos de «Consulta de normas» — tanda 10 (tasación, herencia, vivienda familiar, obligaciones)
+# Revisor: armero. Espejo: legalize-es@aca28304d. Todo precepto citado se ha leído en el espejo en esta pasada.
+# Vigencia: contraste con la API de boe.es (scripts/contraste_boe.py --solo "LEC,CC,LO 1/2025,TRLGDCU,LAU", 08-10-2026 08:03):
+# distintos LEC 22 y 685, CC 396 (errata del espejo) y 34 artículos de la LAU (no el 15). LOE (contraste aparte): ninguno.
+# Ninguno de los distintos está citado; ninguna versión futura. Ver tanda-10-notas.md.
+# Voces 177, 184, 185 y 200 a 208 de la lista maestra (12 voces). Recuento y estados en tanda-10-notas.md.
+
+voces:
+  - voz: "Tasación de costas y su impugnación"
+    sinonimos: ["tasación de costas", "impugnación de la tasación", "honorarios excesivos", "partidas indebidas", "minuta de honorarios", "límite del tercio", "informe del Colegio de Abogados", "exoneración o moderación de costas", "cuenta del procurador en la tasación", "IVA en la tasación de costas"]
+    normas_base: ["LEC", "LO 1/2025"]
+    remisiones:
+      - {norma: "LEC", articulo: "242", apartado: "1", tipo: "regula", nota: "Firme la condena en costas, se tasan y se exigen por apremio si el condenado no las pagó antes de pedirse la tasación."}
+      - {norma: "LEC", articulo: "242", apartado: "2", tipo: "regula", nota: "Quien pide la tasación aporta los justificantes de lo que ya pagó y quiere recobrar."}
+      - {norma: "LEC", articulo: "242", apartado: "3", tipo: "regula", nota: "Procuradores, abogados y peritos presentan minuta detallada y cuenta justificada de suplidos."}
+      - {norma: "LEC", articulo: "242", apartado: "5", tipo: "conexa", nota: "Los honorarios no sujetos a arancel se fijan conforme a las normas del estatuto profesional."}
+      - {norma: "LEC", articulo: "243", apartado: "1", tipo: "regula", nota: "Tasa el LAJ del tribunal que conoció del proceso o del recurso, o el de la ejecución. El texto aún dice «Secretario»."}
+      - {norma: "LEC", articulo: "243", apartado: "2", tipo: "regula", nota: "Fuera lo inútil o no detallado; reduce al límite del 394.3 sin temeridad; IVA incluido y no computa para ese límite."}
+      - {norma: "LEC", articulo: "243", apartado: "3", tipo: "conexa", nota: "No entran las costas de incidentes en que se condenó expresamente al favorecido en lo principal."}
+      - {norma: "LEC", articulo: "244", apartado: "1", tipo: "regula", nota: "Traslado de la tasación a las partes por plazo común de diez días."}
+      - {norma: "LEC", articulo: "244", apartado: "2", tipo: "regula", nota: "Tras el traslado no se admite añadir partidas; queda a salvo reclamarlas por otra vía."}
+      - {norma: "LEC", articulo: "244", apartado: "3", tipo: "regula", nota: "Sin impugnación, decreto de aprobación; cabe revisión y contra el auto que la resuelve no hay recurso."}
+      - {norma: "LEC", articulo: "245", apartado: "1", tipo: "regula", nota: "La impugnación se hace dentro de los diez días del traslado."}
+      - {norma: "LEC", articulo: "245", apartado: "2", tipo: "regula", nota: "Motivos: partidas indebidas; y, en honorarios no sujetos a arancel, también excesivos."}
+      - {norma: "LEC", articulo: "245", apartado: "3", tipo: "regula", nota: "El favorecido puede impugnar por no incluir gastos justificados o la minuta entera de su abogado o perito."}
+      - {norma: "LEC", articulo: "245", apartado: "4", tipo: "regula", nota: "Hay que citar minutas, partidas concretas y razones; si no, decreto de inadmisión, recurrible en revisión."}
+      - {norma: "LEC", articulo: "245", apartado: "5", tipo: "regula", nota: "Exoneración o moderación si la sentencia coincide en lo sustancial con la propuesta MASC rechazada."}
+      - {norma: "LEC", articulo: "245 bis", apartado: "1", tipo: "regula", nota: "Pedida la exoneración o moderación, traslado de tres días a la otra parte."}
+      - {norma: "LEC", articulo: "245 bis", apartado: "2", tipo: "conexa", nota: "Si la acepta o calla, decreto que fija la cantidad; cabe revisión."}
+      - {norma: "LEC", articulo: "245 bis", apartado: "3", tipo: "regula", nota: "Si no la acepta, auto del tribunal sin costas con porcentaje y partidas reducidas; cabe reposición."}
+      - {norma: "LEC", articulo: "245 bis", apartado: "4", tipo: "conexa", nota: "La impugnación por excesivas o indebidas se tramita después, cuando sea firme lo resuelto sobre la exoneración."}
+      - {norma: "LEC", articulo: "246", apartado: "1", tipo: "regula", nota: "Excesivos: se oye al abogado cinco días y, si no acepta reducir, informe del Colegio (salvo informe previo del 438 bis)."}
+      - {norma: "LEC", articulo: "246", apartado: "2", tipo: "conexa", nota: "Honorarios de peritos excesivos: dictamen de su colegio, asociación o corporación."}
+      - {norma: "LEC", articulo: "246", apartado: "3", tipo: "regula", nota: "Con los informes, el LAJ dicta decreto que mantiene o modifica la tasación."}
+      - {norma: "LEC", articulo: "246", apartado: "4", tipo: "regula", nota: "Indebidas: traslado de tres días y decreto en otros tres; revisión, y contra el auto no hay recurso. Reglas de costas."}
+      - {norma: "LEC", articulo: "246", apartado: "5", tipo: "conexa", nota: "Indebida y, subsidiariamente, excesiva: se tramitan a la vez y lo excesivo espera a lo indebido."}
+      - {norma: "LEC", articulo: "246", apartado: "6", tipo: "conexa", nota: "En el incidente no se discute si la Administración debe pagar por la asistencia jurídica gratuita."}
+      - {norma: "LEC", articulo: "394", apartado: "3", tipo: "regula", nota: "Límite: un tercio de la cuantía por cada litigante favorecido; inestimables, 24.000 euros; no rige si hay temeridad."}
+      - {norma: "LEC", articulo: "32", apartado: "5", tipo: "regula", nota: "Sin preceptividad, fuera abogado y procurador, salvo temeridad, abuso u otro partido; consumidor con reclamación previa, sin límite."}
+      - {norma: "LEC", articulo: "241", apartado: "1", tipo: "conexa", nota: "Qué partidas son costas: honorarios preceptivos, edictos, depósitos, peritos, copias, aranceles y tasa."}
+      - {norma: "LEC", articulo: "539", apartado: "2", tipo: "conexa", nota: "En la ejecución, las costas no resueltas expresamente son del ejecutado sin necesidad de imposición."}
+      - {norma: "LO 1/2025", articulo: "7", apartado: "4", tipo: "conexa", nota: "Al resolver sobre costas o su tasación, el tribunal pondera la colaboración en el MASC y el abuso del servicio."}
+    no_consta_en_norma:
+      - "Criterios orientadores de los Colegios de Abogados: no vinculan al LAJ; se valora el trabajo efectivo y la cuantía: jurisprudencial."
+      - "Exclusión del IVA cuando el favorecido puede deducirlo: criterio jurisprudencial, el 243.2 no lo distingue."
+      - "Si el límite del tercio del 394.3 alcanza a las costas de los recursos: no consta en norma."
+    fuera_de_la_herramienta:
+      - "Ley 1/1996, art. 36: costas a favor del beneficiario (las cobran sus profesionales, que pueden instar la tasación) y en su contra."
+      - "RD 434/2024, arancel de los procuradores: es máximo y tiene un tope de 75.000 euros por asunto (242.4 LEC)."
+    afines: ["Costas: vencimiento, temeridad y allanamiento", "Costas y MASC", "Costas en los recursos", "Cuenta del procurador y jura de cuentas del abogado", "Liquidación de intereses y tasación de costas en la ejecución", "Recurso de revisión contra decretos del LAJ"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Incumplimiento y facultad resolutoria (art. 1124)"
+    sinonimos: ["resolución del contrato", "acción resolutoria", "facultad resolutoria implícita", "condición resolutoria tácita", "obligaciones recíprocas", "incumplimiento esencial", "exceptio non adimpleti contractus", "excepción de contrato no cumplido", "pacto comisorio", "resolución de la compraventa de inmueble"]
+    normas_base: ["CC"]
+    remisiones:
+      - {norma: "CC", articulo: "1124", apartado: "párrafo 1.º", tipo: "regula", nota: "La facultad de resolver va implícita en las obligaciones recíprocas si uno de los obligados no cumple."}
+      - {norma: "CC", articulo: "1124", apartado: "párrafo 2.º", tipo: "regula", nota: "El perjudicado elige cumplimiento o resolución, con daños e intereses; resolución si el cumplimiento resulta imposible."}
+      - {norma: "CC", articulo: "1124", apartado: "párrafo 3.º", tipo: "regula", nota: "El tribunal decreta la resolución, salvo causas justificadas para señalar plazo."}
+      - {norma: "CC", articulo: "1124", apartado: "párrafo 4.º", tipo: "conexa", nota: "Quedan a salvo los terceros adquirentes, según los arts. 1295 y 1298 y la Ley Hipotecaria."}
+      - {norma: "CC", articulo: "1100", tipo: "regula", nota: "Último párrafo: en las recíprocas nadie incurre en mora si el otro no cumple o no se allana a cumplir."}
+      - {norma: "CC", articulo: "1091", tipo: "conexa", nota: "Los contratos tienen fuerza de ley entre las partes y deben cumplirse a su tenor."}
+      - {norma: "CC", articulo: "1256", tipo: "conexa", nota: "La validez y el cumplimiento no pueden dejarse al arbitrio de uno de los contratantes."}
+      - {norma: "CC", articulo: "1101", tipo: "conexa", nota: "Responde de los daños quien incumple con dolo, negligencia o morosidad o contraviene el tenor de la obligación."}
+      - {norma: "CC", articulo: "1123", tipo: "conexa", nota: "Cumplida la condición resolutoria, se restituye lo percibido; pérdida, deterioro y mejoras según el 1122."}
+      - {norma: "CC", articulo: "1295", tipo: "conexa", nota: "Al que remite el 1124: no se recupera la cosa que está en poder de un tercero de buena fe."}
+      - {norma: "CC", articulo: "1503", tipo: "regula", nota: "Venta de inmueble: con fundado temor de perder cosa y precio, resolución inmediata; si no, art. 1124."}
+      - {norma: "CC", articulo: "1504", tipo: "regula", nota: "Inmueble: aun pactada la resolución automática, el comprador paga mientras no se le requiera judicial o notarialmente."}
+      - {norma: "CC", articulo: "1964", apartado: "2", tipo: "conexa", nota: "La acción resolutoria, personal, prescribe a los cinco años desde que pudo exigirse el cumplimiento."}
+    no_consta_en_norma:
+      - "Incumplimiento esencial o frustración del fin del contrato; el mero retraso no basta: jurisprudencial."
+      - "Resolución por declaración extrajudicial del acreedor, con control judicial posterior: jurisprudencial."
+      - "Efecto retroactivo de la resolución y restitución recíproca de prestaciones: jurisprudencial (el 1124 no lo dice)."
+      - "Excepción de contrato no cumplido o cumplido defectuosamente: jurisprudencial, con apoyo en el 1100."
+    afines: ["Daños y perjuicios por incumplimiento contractual", "Mora del deudor e intereses moratorios", "Cláusula penal", "Arras y señal", "Resolución del contrato por incumplimiento", "Compraventa: entrega, precio y riesgos", "Fuerza mayor y caso fortuito"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Daños y perjuicios por incumplimiento contractual"
+    sinonimos: ["indemnización de daños y perjuicios", "responsabilidad contractual", "daño emergente", "lucro cesante", "culpa contractual", "diligencia del buen padre de familia", "deudor doloso", "previsibilidad del daño", "liquidación de daños", "daño moral contractual"]
+    normas_base: ["CC", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "1101", tipo: "regula", nota: "Indemniza quien incumple con dolo, negligencia o morosidad o contraviene de cualquier modo el tenor de la obligación."}
+      - {norma: "CC", articulo: "1102", tipo: "regula", nota: "La responsabilidad por dolo es exigible siempre; la renuncia anticipada a esa acción es nula."}
+      - {norma: "CC", articulo: "1103", tipo: "regula", nota: "La responsabilidad por negligencia es exigible, pero los tribunales pueden moderarla."}
+      - {norma: "CC", articulo: "1104", tipo: "regula", nota: "Culpa: omisión de la diligencia que exige la obligación; en defecto de pacto, la del buen padre de familia."}
+      - {norma: "CC", articulo: "1105", tipo: "regula", nota: "Nadie responde de lo imprevisible o inevitable, salvo que lo diga la ley o la obligación."}
+      - {norma: "CC", articulo: "1106", tipo: "regula", nota: "Se indemniza la pérdida sufrida y la ganancia dejada de obtener."}
+      - {norma: "CC", articulo: "1107", apartado: "párrafo 1.º", tipo: "regula", nota: "Deudor de buena fe: solo los daños previstos o previsibles al contratar y consecuencia necesaria del incumplimiento."}
+      - {norma: "CC", articulo: "1107", apartado: "párrafo 2.º", tipo: "regula", nota: "Deudor doloso: todos los daños que conocidamente deriven del incumplimiento."}
+      - {norma: "CC", articulo: "1108", tipo: "conexa", nota: "Deuda de dinero en mora: la indemnización son los intereses pactados o, en su defecto, el interés legal."}
+      - {norma: "CC", articulo: "1098", tipo: "conexa", nota: "Obligación de hacer incumplida o mal hecha: se ejecuta a costa del deudor y cabe deshacer lo mal hecho."}
+      - {norma: "CC", articulo: "1124", apartado: "párrafo 2.º", tipo: "conexa", nota: "Con el cumplimiento o con la resolución cabe pedir el resarcimiento de daños y el abono de intereses."}
+      - {norma: "CC", articulo: "1152", tipo: "conexa", nota: "Si hay cláusula penal, la pena sustituye a la indemnización, salvo pacto en contrario."}
+      - {norma: "CC", articulo: "1270", apartado: "párrafo 2.º", tipo: "conexa", nota: "El dolo incidental no anula el contrato: solo obliga a indemnizar."}
+      - {norma: "CC", articulo: "1964", apartado: "2", tipo: "conexa", nota: "La acción contractual prescribe a los cinco años desde que pudo exigirse el cumplimiento."}
+      - {norma: "LEC", articulo: "219", apartado: "1", tipo: "regula", nota: "Hay que pedir condena cuantificada o con bases para una pura operación aritmética; no cabe diferirlo a ejecución."}
+      - {norma: "LEC", articulo: "219", apartado: "3", tipo: "conexa", nota: "Única excepción: pedir solo la condena genérica y dejar la liquidación para un pleito posterior."}
+      - {norma: "LEC", articulo: "712", tipo: "conexa", nota: "Cuando la ley lo permite, los daños se liquidan en ejecución por el procedimiento de los arts. 712 y siguientes."}
+    no_consta_en_norma:
+      - "Daño moral contractual y cuándo se indemniza: jurisprudencial."
+      - "Daño «ex re ipsa», que no necesita prueba por evidente: jurisprudencial."
+      - "Lucro cesante: probable y no meramente posible o soñado: jurisprudencial."
+      - "Deber de mitigar el daño y compensación del lucro con el daño: jurisprudencial."
+    afines: ["Incumplimiento y facultad resolutoria (art. 1124)", "Mora del deudor e intereses moratorios", "Cláusula penal", "Fuerza mayor y caso fortuito", "Responsabilidad extracontractual", "Prescripción (como excepción)", "Liquidación de daños, frutos y rendición de cuentas"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Mora del deudor e intereses moratorios"
+    sinonimos: ["mora del deudor", "constitución en mora", "intimación", "requerimiento de pago", "interés de demora", "interés legal del dinero", "anatocismo", "intereses de los intereses", "mora automática", "in illiquidis non fit mora"]
+    normas_base: ["CC", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "1100", tipo: "regula", nota: "Mora desde la exigencia judicial o extrajudicial; en las recíprocas, nadie incurre si el otro no cumple (último párrafo)."}
+      - {norma: "CC", articulo: "1100", apartado: "1.º", tipo: "regula", nota: "Sin intimación si la obligación o la ley lo declaran expresamente."}
+      - {norma: "CC", articulo: "1100", apartado: "2.º", tipo: "regula", nota: "Sin intimación si la fecha de cumplimiento fue el motivo determinante de la obligación."}
+      - {norma: "CC", articulo: "1101", tipo: "regula", nota: "La morosidad obliga a indemnizar los daños y perjuicios causados."}
+      - {norma: "CC", articulo: "1108", tipo: "regula", nota: "Deuda de dinero: salvo pacto, la indemnización son los intereses convenidos y, a falta de pacto, el interés legal."}
+      - {norma: "CC", articulo: "1109", tipo: "regula", nota: "Los intereses vencidos devengan el legal desde su reclamación judicial; en lo mercantil, el Código de Comercio."}
+      - {norma: "CC", articulo: "1096", tipo: "conexa", nota: "Párrafo 3.º: el deudor de cosa determinada en mora carga con el caso fortuito hasta la entrega."}
+      - {norma: "CC", articulo: "1110", tipo: "conexa", nota: "Recibir el capital sin reserva extingue los intereses; el último plazo sin reserva, los plazos anteriores."}
+      - {norma: "CC", articulo: "1501", apartado: "3.º", tipo: "conexa", nota: "El comprador debe intereses del precio desde la entrega si está en mora conforme al 1100."}
+      - {norma: "CC", articulo: "1124", apartado: "párrafo 2.º", tipo: "conexa", nota: "El abono de intereses acompaña tanto al cumplimiento como a la resolución."}
+      - {norma: "LEC", articulo: "576", apartado: "1", tipo: "conexa", nota: "Distinto: desde la sentencia de condena, interés legal más dos puntos (mora procesal)."}
+      - {norma: "LEC", articulo: "219", apartado: "1", tipo: "conexa", nota: "La demanda debe cuantificar los intereses o fijar las bases para calcularlos."}
+    no_consta_en_norma:
+      - "Abandono de la regla «in illiquidis non fit mora»; criterio de lo razonable de la reclamación: jurisprudencial."
+      - "Interés moratorio abusivo con consumidores (más de dos puntos sobre el remuneratorio) y sus efectos: jurisprudencial."
+    fuera_de_la_herramienta:
+      - "La Ley de Presupuestos de cada año (o su prórroga) fija el interés legal; las notas del espejo al 1108 (5 % y 4 %) son históricas."
+      - "Ley 3/2004, de morosidad en las operaciones comerciales: interés de demora y plazos de pago entre empresas."
+      - "Ley 5/2019, art. 25: persona física con hipoteca sobre inmueble residencial, demora = remuneratorio + 3 puntos, sin pacto en contra."
+    afines: ["Intereses de la mora procesal", "Daños y perjuicios por incumplimiento contractual", "Incumplimiento y facultad resolutoria (art. 1124)", "Préstamo e intereses", "Ofrecimiento de pago y consignación", "Pago: prueba, imputación y pago por tercero"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Cláusula penal"
+    sinonimos: ["pena convencional", "penalización contractual", "cláusula penal sustitutiva", "cláusula penal cumulativa", "pena moratoria", "moderación judicial de la pena", "indemnización pactada", "penalidad por incumplimiento", "indemnización desproporcionada al consumidor"]
+    normas_base: ["CC", "TRLGDCU"]
+    remisiones:
+      - {norma: "CC", articulo: "1152", apartado: "párrafo 1.º", tipo: "regula", nota: "La pena sustituye a la indemnización de daños e intereses por incumplimiento, si no se pactó otra cosa."}
+      - {norma: "CC", articulo: "1152", apartado: "párrafo 2.º", tipo: "regula", nota: "La pena solo es efectiva cuando sea exigible conforme al Código."}
+      - {norma: "CC", articulo: "1153", tipo: "regula", nota: "El deudor no se libera pagando la pena, ni el acreedor cobra pena y cumplimiento a la vez, salvo que se pactara."}
+      - {norma: "CC", articulo: "1154", tipo: "regula", nota: "El juez modera la pena si la obligación principal se cumplió en parte o irregularmente."}
+      - {norma: "CC", articulo: "1155", tipo: "regula", nota: "La nulidad de la pena no anula la obligación principal; la nulidad de esta arrastra la pena."}
+      - {norma: "CC", articulo: "1255", tipo: "conexa", nota: "Libertad de pactos dentro de las leyes, la moral y el orden público: base de la pena convencional."}
+      - {norma: "CC", articulo: "1101", tipo: "conexa", nota: "Sin pena pactada, o si se pactó cumulativa, la indemnización se rige por los arts. 1101 y siguientes."}
+      - {norma: "CC", articulo: "1454", tipo: "conexa", nota: "Arras penitenciales: el comprador desiste perdiéndolas o el vendedor devolviéndolas duplicadas."}
+      - {norma: "TRLGDCU", articulo: "85", apartado: "6", tipo: "regula", nota: "Abusiva la indemnización desproporcionadamente alta impuesta al consumidor que incumple."}
+      - {norma: "TRLGDCU", articulo: "83", tipo: "conexa", nota: "La cláusula abusiva es nula y se tiene por no puesta; el contrato subsiste si puede sin ella."}
+    no_consta_en_norma:
+      - "No cabe moderar por el 1154 si se previó y se produjo precisamente ese incumplimiento: jurisprudencial."
+      - "Pena abusiva con consumidor: no se modera, se anula entera (sin integración): jurisprudencial (TJUE y TS)."
+      - "Interpretación restrictiva de la pena y de su carácter cumulativo: jurisprudencial."
+    afines: ["Arras y señal", "Daños y perjuicios por incumplimiento contractual", "Incumplimiento y facultad resolutoria (art. 1124)", "Cláusulas abusivas: lista legal (gastos, sumisión, penalizaciones)", "Desistimiento del arrendatario"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Nulidad y anulabilidad del contrato"
+    sinonimos: ["nulidad absoluta", "nulidad radical", "nulidad de pleno derecho", "anulabilidad", "nulidad relativa", "acción de nulidad", "contrato inexistente", "falta de causa", "causa ilícita", "confirmación del contrato", "restitución de prestaciones", "caducidad de la acción de anulabilidad"]
+    normas_base: ["CC", "TRLGDCU", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "6", apartado: "3", tipo: "regula", nota: "Los actos contrarios a normas imperativas o prohibitivas son nulos de pleno derecho, salvo otro efecto previsto."}
+      - {norma: "CC", articulo: "1261", tipo: "regula", nota: "No hay contrato sin consentimiento, objeto cierto y causa."}
+      - {norma: "CC", articulo: "1275", tipo: "regula", nota: "El contrato sin causa o con causa ilícita no produce efecto alguno."}
+      - {norma: "CC", articulo: "1276", tipo: "conexa", nota: "La causa falsa anula, salvo que se pruebe otra verdadera y lícita."}
+      - {norma: "CC", articulo: "1259", tipo: "conexa", nota: "Párrafo 2.º: lo contratado en nombre ajeno sin poder es nulo, salvo ratificación antes de que el otro revoque."}
+      - {norma: "CC", articulo: "1289", tipo: "conexa", nota: "Párrafo 2.º: dudas insalvables sobre el objeto principal hacen nulo el contrato."}
+      - {norma: "CC", articulo: "1300", tipo: "regula", nota: "Anulabilidad: el contrato con sus requisitos esenciales pero con un vicio legal puede anularse aunque no haya lesión."}
+      - {norma: "CC", articulo: "1301", tipo: "regula", nota: "La acción de nulidad caduca a los cuatro años; el día inicial depende de la causa (1.º a 5.º)."}
+      - {norma: "CC", articulo: "1302", apartado: "1", tipo: "regula", nota: "Legitimados: los obligados principal o subsidiariamente por el contrato."}
+      - {norma: "CC", articulo: "1302", apartado: "4", tipo: "regula", nota: "No puede alegar el vicio quien lo causó, ni la minoría o la falta de apoyo el que contrató con el menor o con la persona."}
+      - {norma: "CC", articulo: "1303", tipo: "regula", nota: "Declarada la nulidad, restitución recíproca de las cosas con sus frutos y del precio con sus intereses."}
+      - {norma: "CC", articulo: "1305", tipo: "conexa", nota: "Causa u objeto ilícitos constitutivos de delito: sin acción entre los culpables; el no culpado recupera lo dado."}
+      - {norma: "CC", articulo: "1306", tipo: "conexa", nota: "Causa torpe sin delito: el culpable no repite lo dado ni exige lo prometido; el inocente sí repite."}
+      - {norma: "CC", articulo: "1307", tipo: "conexa", nota: "Si la cosa se perdió, se restituyen los frutos y su valor al perderse, con intereses."}
+      - {norma: "CC", articulo: "1308", tipo: "regula", nota: "Nadie está obligado a restituir mientras el otro no devuelva lo suyo."}
+      - {norma: "CC", articulo: "1309", tipo: "regula", nota: "La confirmación válida extingue la acción de nulidad."}
+      - {norma: "CC", articulo: "1310", tipo: "regula", nota: "Solo se confirman los contratos que reúnen los requisitos del 1261: los anulables, no los nulos."}
+      - {norma: "CC", articulo: "1311", tipo: "conexa", nota: "Confirmación expresa o tácita: acto que implica renunciar a la causa de nulidad, conocida y ya cesada."}
+      - {norma: "CC", articulo: "1313", tipo: "conexa", nota: "La confirmación purifica el contrato desde su celebración."}
+      - {norma: "CC", articulo: "1314", tipo: "conexa", nota: "Se extingue la acción si la cosa se perdió por dolo o culpa de quien podía ejercitarla, con salvedades."}
+      - {norma: "CC", articulo: "1290", tipo: "conexa", nota: "Distinto: la rescisión ataca contratos válidos y solo en los casos que la ley establece."}
+      - {norma: "TRLGDCU", articulo: "83", tipo: "regula", nota: "Cláusulas abusivas y no transparentes: nulas de pleno derecho; el contrato subsiste si puede sin ellas."}
+      - {norma: "TRLGDCU", articulo: "10", tipo: "conexa", nota: "Es nula la renuncia previa a los derechos del consumidor y lo hecho en fraude de ley."}
+      - {norma: "LEC", articulo: "408", apartado: "2", tipo: "regula", nota: "Si el demandado alega nulidad absoluta del negocio, el actor puede contestarla como a una reconvención."}
+      - {norma: "LEC", articulo: "408", apartado: "3", tipo: "regula", nota: "Lo que la sentencia resuelva sobre esa nulidad tiene fuerza de cosa juzgada."}
+    no_consta_en_norma:
+      - "La nulidad absoluta no caduca ni prescribe y puede apreciarse de oficio: jurisprudencial."
+      - "Si la anulabilidad debe pedirse por reconvención o basta la excepción: jurisprudencial (el 408.2 solo habla de nulidad absoluta)."
+      - "Nulidad parcial y conservación del contrato fuera del consumo: jurisprudencial."
+    afines: ["Vicios del consentimiento: error, dolo e intimidación", "Simulación y causa del contrato", "Fraude de ley y actos contrarios a normas imperativas", "Cláusulas abusivas: concepto, nulidad e integración", "Compensación y nulidad alegadas por el demandado", "Acción subrogatoria y rescisión por fraude de acreedores", "Requisitos del contrato y autonomía de la voluntad"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Vicios del consentimiento: error, dolo e intimidación"
+    sinonimos: ["error vicio", "error esencial", "error excusable", "dolo contractual", "dolo grave", "dolo incidental", "maquinaciones insidiosas", "violencia", "intimidación", "temor reverencial", "anulación por vicio del consentimiento", "error de cuenta"]
+    normas_base: ["CC"]
+    remisiones:
+      - {norma: "CC", articulo: "1265", tipo: "regula", nota: "Es nulo el consentimiento prestado por error, violencia, intimidación o dolo."}
+      - {norma: "CC", articulo: "1266", apartado: "párrafo 1.º", tipo: "regula", nota: "El error invalida si recae en la sustancia de la cosa o en las condiciones que principalmente movieron a contratar."}
+      - {norma: "CC", articulo: "1266", apartado: "párrafo 2.º", tipo: "regula", nota: "Error sobre la persona: solo si su consideración fue la causa principal del contrato."}
+      - {norma: "CC", articulo: "1266", apartado: "párrafo 3.º", tipo: "regula", nota: "El simple error de cuenta solo da lugar a su corrección."}
+      - {norma: "CC", articulo: "1267", apartado: "párrafo 1.º", tipo: "regula", nota: "Violencia: fuerza irresistible para arrancar el consentimiento."}
+      - {norma: "CC", articulo: "1267", apartado: "párrafo 2.º", tipo: "regula", nota: "Intimidación: temor racional y fundado de un mal inminente y grave en la persona, bienes o familia cercana."}
+      - {norma: "CC", articulo: "1267", apartado: "párrafo 3.º", tipo: "conexa", nota: "Para calificar la intimidación se atiende a la edad y condición de la persona."}
+      - {norma: "CC", articulo: "1267", apartado: "párrafo 4.º", tipo: "conexa", nota: "El temor de desagradar a quien se debe sumisión y respeto no anula."}
+      - {norma: "CC", articulo: "1268", tipo: "regula", nota: "La violencia o intimidación de un tercero también anula."}
+      - {norma: "CC", articulo: "1269", tipo: "regula", nota: "Dolo: palabras o maquinaciones insidiosas de un contratante sin las que el otro no habría contratado."}
+      - {norma: "CC", articulo: "1270", apartado: "párrafo 1.º", tipo: "regula", nota: "Para anular, el dolo ha de ser grave y no recíproco."}
+      - {norma: "CC", articulo: "1270", apartado: "párrafo 2.º", tipo: "regula", nota: "El dolo incidental no anula: solo obliga a indemnizar."}
+      - {norma: "CC", articulo: "1301", apartado: "1.º", tipo: "regula", nota: "Intimidación o violencia: los cuatro años corren desde que cesaron."}
+      - {norma: "CC", articulo: "1301", apartado: "2.º", tipo: "regula", nota: "Error o dolo: los cuatro años corren desde la consumación del contrato."}
+      - {norma: "CC", articulo: "1302", apartado: "4", tipo: "regula", nota: "Quien causó la intimidación, empleó el dolo o produjo el error no puede alegarlos."}
+      - {norma: "CC", articulo: "1303", tipo: "conexa", nota: "Anulado el contrato, restitución recíproca de cosas con frutos y precio con intereses."}
+      - {norma: "CC", articulo: "1311", tipo: "conexa", nota: "Confirmación tácita: actuar conociendo el vicio ya cesado con voluntad de renunciar a alegarlo."}
+      - {norma: "CC", articulo: "6", apartado: "1", tipo: "conexa", nota: "El error de derecho solo produce los efectos que las leyes determinen."}
+      - {norma: "CC", articulo: "1102", tipo: "conexa", nota: "La responsabilidad por dolo es irrenunciable de antemano."}
+    no_consta_en_norma:
+      - "Excusabilidad del error como requisito para anular: jurisprudencial."
+      - "Dolo por omisión o reticencia (callar lo que se debía informar): jurisprudencial."
+      - "«Consumación» en contratos de tracto sucesivo y productos financieros complejos: jurisprudencial."
+    afines: ["Nulidad y anulabilidad del contrato", "Interpretación de los contratos", "Información precontractual e integración de la oferta y la publicidad", "Saneamiento por vicios ocultos", "Daños y perjuicios por incumplimiento contractual"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Interpretación de los contratos"
+    sinonimos: ["interpretación literal", "intención de los contratantes", "actos coetáneos y posteriores", "interpretación sistemática", "interpretación contra proferentem", "cláusula oscura", "principio de conservación del contrato", "usos interpretativos", "integración del contrato", "interpretación más favorable al consumidor"]
+    normas_base: ["CC", "TRLGDCU"]
+    remisiones:
+      - {norma: "CC", articulo: "1281", apartado: "párrafo 1.º", tipo: "regula", nota: "Si los términos son claros y no dejan duda sobre la intención, se está al sentido literal."}
+      - {norma: "CC", articulo: "1281", apartado: "párrafo 2.º", tipo: "regula", nota: "Si las palabras contradicen la intención evidente de las partes, prevalece la intención."}
+      - {norma: "CC", articulo: "1282", tipo: "regula", nota: "La intención se juzga sobre todo por los actos de las partes coetáneos y posteriores al contrato."}
+      - {norma: "CC", articulo: "1283", tipo: "regula", nota: "Los términos generales no abarcan cosas o casos distintos de los que se quiso contratar."}
+      - {norma: "CC", articulo: "1284", tipo: "regula", nota: "La cláusula con varios sentidos se entiende en el más adecuado para que produzca efecto."}
+      - {norma: "CC", articulo: "1285", tipo: "regula", nota: "Las cláusulas se interpretan unas por otras: a la dudosa, el sentido que resulte del conjunto."}
+      - {norma: "CC", articulo: "1286", tipo: "regula", nota: "Palabras de varias acepciones: la más conforme a la naturaleza y objeto del contrato."}
+      - {norma: "CC", articulo: "1287", tipo: "regula", nota: "El uso o costumbre del país interpreta ambigüedades y suple cláusulas habituales omitidas."}
+      - {norma: "CC", articulo: "1288", tipo: "regula", nota: "La cláusula oscura no favorece a quien causó la oscuridad."}
+      - {norma: "CC", articulo: "1289", apartado: "párrafo 1.º", tipo: "regula", nota: "Duda irresoluble en lo accesorio: gratuito, menor transmisión; oneroso, mayor reciprocidad."}
+      - {norma: "CC", articulo: "1289", apartado: "párrafo 2.º", tipo: "regula", nota: "Duda irresoluble sobre el objeto principal: el contrato es nulo."}
+      - {norma: "CC", articulo: "1258", tipo: "conexa", nota: "Integración: el contrato obliga también a lo que exijan la buena fe, el uso y la ley."}
+      - {norma: "CC", articulo: "1091", tipo: "conexa", nota: "El contrato tiene fuerza de ley entre las partes y se cumple a su tenor."}
+      - {norma: "TRLGDCU", articulo: "80", apartado: "2", tipo: "regula", nota: "Acción individual de consumidor: en la duda prevalece la interpretación más favorable al consumidor."}
+      - {norma: "TRLGDCU", articulo: "80", apartado: "1.a)", tipo: "conexa", nota: "Las cláusulas no negociadas deben ser concretas, claras y sencillas, sin reenvíos a textos no entregados."}
+    no_consta_en_norma:
+      - "Prioridad del canon literal sin que excluya los demás; relación jerárquica entre los arts. 1281 a 1289: jurisprudencial."
+      - "En casación solo se revisa la interpretación ilógica, arbitraria o contraria a las reglas legales: jurisprudencial."
+    afines: ["Vicios del consentimiento: error, dolo e intimidación", "Nulidad y anulabilidad del contrato", "Abuso de derecho y buena fe", "Cláusulas abusivas: concepto, nulidad e integración", "Requisitos del contrato y autonomía de la voluntad"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Solidaridad y mancomunidad"
+    sinonimos: ["obligaciones solidarias", "deudores solidarios", "acreedores solidarios", "obligación mancomunada", "obligación parciaria", "presunción de mancomunidad", "acción de regreso entre codeudores", "solidaridad impropia", "obligación indivisible", "fiador solidario", "responsabilidad solidaria"]
+    normas_base: ["CC", "LEC", "LOE"]
+    remisiones:
+      - {norma: "CC", articulo: "1137", tipo: "regula", nota: "Varios deudores o acreedores no implica que cada uno deba o pueda exigir el todo: la solidaridad ha de pactarse expresamente."}
+      - {norma: "CC", articulo: "1138", tipo: "regula", nota: "Salvo otra cosa, crédito y deuda se presumen divididos en partes iguales y distintas."}
+      - {norma: "CC", articulo: "1139", tipo: "regula", nota: "Prestación indivisible: solo se cobra procediendo contra todos los deudores; nadie suple al insolvente."}
+      - {norma: "CC", articulo: "1140", tipo: "conexa", nota: "Cabe solidaridad aunque los obligados lo estén con distintos plazos y condiciones."}
+      - {norma: "CC", articulo: "1141", tipo: "regula", nota: "Cada acreedor solidario hace lo útil, no lo perjudicial; la acción contra un deudor solidario perjudica a todos."}
+      - {norma: "CC", articulo: "1142", tipo: "conexa", nota: "Se paga a cualquier acreedor solidario, pero si uno demandó, a ese."}
+      - {norma: "CC", articulo: "1143", tipo: "conexa", nota: "Novación, compensación, confusión o remisión con uno extinguen la deuda; responde ante los demás."}
+      - {norma: "CC", articulo: "1144", tipo: "regula", nota: "El acreedor elige demandar a uno, a varios o a todos, y puede seguir contra los demás hasta cobrar."}
+      - {norma: "CC", articulo: "1145", tipo: "regula", nota: "El pago de uno extingue la deuda; regreso contra cada codeudor por su parte con intereses; el insolvente se reparte."}
+      - {norma: "CC", articulo: "1146", tipo: "conexa", nota: "La quita a un deudor no le libra frente a los codeudores si la deuda se pagó entera."}
+      - {norma: "CC", articulo: "1147", tipo: "conexa", nota: "Imposibilidad sin culpa extingue; con culpa de uno, todos responden ante el acreedor."}
+      - {norma: "CC", articulo: "1148", tipo: "regula", nota: "El deudor solidario opone las excepciones de la obligación y las suyas; las personales de otro, solo en su parte."}
+      - {norma: "CC", articulo: "1150", tipo: "conexa", nota: "Mancomunada indivisible incumplida: indemnización; quien estaba dispuesto a cumplir solo paga su porción del precio."}
+      - {norma: "CC", articulo: "1974", apartado: "párrafo 1.º", tipo: "regula", nota: "En las solidarias, la interrupción de la prescripción aprovecha o perjudica a todos."}
+      - {norma: "CC", articulo: "1974", apartado: "párrafo 3.º", tipo: "regula", nota: "En las mancomunadas, reclamar a un deudor solo su parte no interrumpe frente a los demás."}
+      - {norma: "CC", articulo: "1084", tipo: "conexa", nota: "Tras la partición, cada heredero sin beneficio de inventario responde por entero de las deudas del causante."}
+      - {norma: "CC", articulo: "1822", tipo: "conexa", nota: "Párrafo 2.º: el fiador solidario se rige por las reglas de las obligaciones solidarias."}
+      - {norma: "LEC", articulo: "542", apartado: "1", tipo: "regula", nota: "La sentencia contra unos deudores solidarios no es título frente a los que no fueron parte."}
+      - {norma: "LEC", articulo: "542", apartado: "2", tipo: "conexa", nota: "Título extrajudicial: solo contra el deudor solidario que figura en él o en otro documento ejecutivo."}
+      - {norma: "LEC", articulo: "542", apartado: "3", tipo: "conexa", nota: "Con varios deudores solidarios en el título, ejecución por el total contra uno, varios o todos."}
+      - {norma: "LOE", articulo: "17", apartado: "3", tipo: "conexa", nota: "Edificación: solidaria si no se individualiza la causa; el promotor responde siempre solidariamente."}
+    no_consta_en_norma:
+      - "Solidaridad tácita deducida de la naturaleza del vínculo, pese al 1137: jurisprudencial."
+      - "Solidaridad impropia: la reclamación a un responsable no interrumpe frente a los demás: jurisprudencial."
+      - "Que no hay litisconsorcio pasivo necesario entre deudores solidarios: jurisprudencial."
+    afines: ["Litisconsorcio pasivo necesario", "Interrupción de la prescripción", "Fianza", "Responsabilidad de los agentes: plazos de 10, 3 y 1 año", "Ejecución frente a herederos y frente al cónyuge", "Responsabilidad del heredero por deudas y beneficio de inventario"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Interrupción de la prescripción"
+    sinonimos: ["interrumpir la prescripción", "reclamación extrajudicial", "burofax interruptivo", "reconocimiento de deuda", "requerimiento fehaciente", "interrupción por demanda", "efecto interruptivo del MASC", "reinicio del plazo", "interrupción frente al fiador", "interrupción frente a codeudores"]
+    normas_base: ["CC", "LO 1/2025"]
+    remisiones:
+      - {norma: "CC", articulo: "1973", tipo: "regula", nota: "Interrumpen: el ejercicio ante los tribunales, la reclamación extrajudicial del acreedor y el reconocimiento del deudor."}
+      - {norma: "CC", articulo: "1974", apartado: "párrafo 1.º", tipo: "regula", nota: "Obligaciones solidarias: la interrupción aprovecha o perjudica a todos los acreedores y deudores."}
+      - {norma: "CC", articulo: "1974", apartado: "párrafo 2.º", tipo: "regula", nota: "Lo mismo frente a los herederos del deudor, en toda clase de obligaciones."}
+      - {norma: "CC", articulo: "1974", apartado: "párrafo 3.º", tipo: "regula", nota: "Mancomunadas: reclamar a un deudor solo su parte no interrumpe frente a los demás."}
+      - {norma: "CC", articulo: "1975", tipo: "regula", nota: "Al fiador le alcanza la reclamación judicial al deudor, no la extrajudicial ni el reconocimiento privado."}
+      - {norma: "LO 1/2025", articulo: "7", apartado: "1", tipo: "regula", nota: "La solicitud de MASC interrumpe desde el intento de comunicación; se reinicia sin reunión ni respuesta en 30 días."}
+      - {norma: "LO 1/2025", articulo: "7", apartado: "2", tipo: "regula", nota: "Con tercero neutral: mediación, art. 4 Ley 5/2012; conciliador, desde que la recibe; experto, desde su designación."}
+      - {norma: "LO 1/2025", articulo: "7", apartado: "3", tipo: "conexa", nota: "Sin acuerdo, la demanda debe presentarse en un año para tener por cumplido el requisito de procedibilidad."}
+      - {norma: "CC", articulo: "1969", tipo: "conexa", nota: "El plazo corre desde que la acción pudo ejercitarse."}
+      - {norma: "CC", articulo: "1970", tipo: "conexa", nota: "Obligaciones de capital con interés o renta: el plazo corre desde el último pago de la renta o del interés."}
+      - {norma: "CC", articulo: "1945", tipo: "conexa", nota: "Usucapión: la interrumpe la citación judicial al poseedor, aun de juez incompetente."}
+      - {norma: "CC", articulo: "1946", tipo: "conexa", nota: "Usucapión: no interrumpe la citación nula, ni la demanda desistida, caducada o desestimada."}
+      - {norma: "CC", articulo: "1947", tipo: "conexa", nota: "Usucapión: la conciliación interrumpe si se demanda en los dos meses siguientes."}
+    no_consta_en_norma:
+      - "Efecto de la interrupción: el plazo se reinicia entero; lo dice la doctrina, no el 1973."
+      - "Si la demanda inadmitida, desistida o caducada interrumpe la prescripción extintiva (el 1946 es para usucapión): jurisprudencial."
+      - "Reclamación extrajudicial recepticia, sin forma, pero que debe llegar al deudor; carga de su prueba: jurisprudencial."
+      - "Solidaridad impropia: la reclamación a un responsable no interrumpe frente a los demás: jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Ley 5/2012, de mediación, art. 4: la solicitud recibida por el mediador interrumpe la prescripción y suspende la caducidad (7.2.a)."
+      - "Ley 15/2015, de jurisdicción voluntaria: efectos de la conciliación ante LAJ, notario o registrador (remisión del 7.2.d)."
+    afines: ["Prescripción (como excepción)", "Caducidad de la acción (como excepción)", "Requisito de procedibilidad (MASC)", "Solidaridad y mancomunidad", "Cómputo civil de plazos", "Fianza"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "División judicial de la herencia"
+    sinonimos: ["juicio de testamentaría", "partición judicial", "división de herencia", "contador-partidor judicial", "operaciones divisorias", "junta de herederos", "oposición a las operaciones divisorias", "acción de partición", "actio familiae erciscundae", "rescisión de la partición por lesión", "complemento de la partición"]
+    normas_base: ["LEC", "CC"]
+    remisiones:
+      - {norma: "LEC", articulo: "782", apartado: "1", tipo: "regula", nota: "La pide cualquier coheredero o legatario de parte alícuota, salvo que deba hacerla un contador-partidor designado."}
+      - {norma: "LEC", articulo: "782", apartado: "2", tipo: "regula", nota: "Con la solicitud, certificado de defunción y título de heredero o legatario del solicitante."}
+      - {norma: "LEC", articulo: "782", apartado: "3", tipo: "regula", nota: "Los acreedores no pueden instarla; sus acciones van al declarativo, sin suspender la división."}
+      - {norma: "LEC", articulo: "782", apartado: "4", tipo: "regula", nota: "Acreedores reconocidos o con título ejecutivo: pueden oponerse a la partición hasta que se les pague o afiance."}
+      - {norma: "LEC", articulo: "782", apartado: "5", tipo: "conexa", nota: "Los acreedores de un coheredero pueden intervenir a su costa para evitar fraude."}
+      - {norma: "LEC", articulo: "783", apartado: "1", tipo: "conexa", nota: "Si se pide y procede, se acuerdan la intervención del caudal y el inventario."}
+      - {norma: "LEC", articulo: "783", apartado: "2", tipo: "regula", nota: "El LAJ convoca a junta a herederos, legatarios de parte alícuota y viudo dentro de los diez días."}
+      - {norma: "LEC", articulo: "783", apartado: "4", tipo: "conexa", nota: "Se cita al Ministerio Fiscal por los menores sin representante y los ausentes de paradero desconocido."}
+      - {norma: "LEC", articulo: "784", apartado: "2", tipo: "regula", nota: "En la junta se acuerdan el contador y los peritos; no más de un perito por clase de bienes."}
+      - {norma: "LEC", articulo: "784", apartado: "3", tipo: "regula", nota: "Sin acuerdo, contador por sorteo entre abogados con despacho en el lugar del juicio; peritos igual."}
+      - {norma: "LEC", articulo: "785", apartado: "3", tipo: "conexa", nota: "A instancia de parte, el LAJ fija plazo al contador; si lo incumple, responde de los daños."}
+      - {norma: "LEC", articulo: "786", apartado: "1", tipo: "regula", nota: "Operaciones conforme a la ley de la sucesión y a las reglas del testador sin dañar legítimas; evitar indivisión."}
+      - {norma: "LEC", articulo: "786", apartado: "2", tipo: "regula", nota: "Dos meses como máximo; escrito con relación de bienes, avalúo, liquidación, división y adjudicación."}
+      - {norma: "LEC", articulo: "787", apartado: "1", tipo: "regula", nota: "Traslado de diez días para oponerse por escrito, con los puntos concretos y sus razones."}
+      - {norma: "LEC", articulo: "787", apartado: "2", tipo: "regula", nota: "Sin oposición o con conformidad, decreto que aprueba las operaciones y manda protocolizarlas."}
+      - {norma: "LEC", articulo: "787", apartado: "3", tipo: "regula", nota: "Con oposición, comparecencia ante el tribunal con el contador dentro de diez días."}
+      - {norma: "LEC", articulo: "787", apartado: "5", tipo: "regula", nota: "Sin acuerdo, se sigue por el juicio verbal; la sentencia no produce cosa juzgada y cabe el ordinario posterior."}
+      - {norma: "LEC", articulo: "788", apartado: "1", tipo: "conexa", nota: "Aprobada la partición, el LAJ entrega a cada uno lo adjudicado y sus títulos."}
+      - {norma: "LEC", articulo: "788", apartado: "3", tipo: "conexa", nota: "Si un acreedor se opuso (782.4), no se entrega nada hasta que esté pagado o garantizado."}
+      - {norma: "LEC", articulo: "789", tipo: "regula", nota: "En cualquier momento los interesados pueden apartarse y, de común acuerdo, pedir el sobreseimiento."}
+      - {norma: "LEC", articulo: "792", apartado: "1.2.º", tipo: "conexa", nota: "Al pedir la división, cualquier coheredero puede pedir la intervención del caudal, salvo prohibición del testador."}
+      - {norma: "LEC", articulo: "52", apartado: "1.4.º", tipo: "regula", nota: "Competencia: último domicilio del causante; si fue extranjero, último en España o donde esté la mayoría de bienes."}
+      - {norma: "CC", articulo: "1051", tipo: "regula", nota: "Nadie está obligado a seguir en la indivisión; la prohibición del testador cede ante las causas de extinción de la sociedad."}
+      - {norma: "CC", articulo: "1052", tipo: "regula", nota: "Todo coheredero con libre disposición puede pedir la partición en cualquier tiempo."}
+      - {norma: "CC", articulo: "1965", tipo: "regula", nota: "La acción para pedir la partición de la herencia no prescribe entre coherederos."}
+      - {norma: "CC", articulo: "1056", tipo: "conexa", nota: "Si el testador partió, se pasa por su partición mientras no perjudique la legítima."}
+      - {norma: "CC", articulo: "1057", tipo: "conexa", nota: "Contador-partidor testamentario; sin él, el dativo que nombra el LAJ o el notario a petición del 50 % del haber."}
+      - {norma: "CC", articulo: "1058", tipo: "conexa", nota: "Herederos mayores y capaces pueden partir como quieran."}
+      - {norma: "CC", articulo: "1059", tipo: "regula", nota: "Si no se entienden sobre el modo de partir, queda a salvo la vía de la Ley de Enjuiciamiento Civil."}
+      - {norma: "CC", articulo: "1061", tipo: "regula", nota: "Se ha de guardar la posible igualdad, con lotes de cosas de la misma naturaleza, calidad o especie."}
+      - {norma: "CC", articulo: "1062", tipo: "regula", nota: "Cosa indivisible: se adjudica a uno abonando el exceso; basta que un heredero pida subasta pública con extraños."}
+      - {norma: "CC", articulo: "1063", tipo: "conexa", nota: "Los coherederos se abonan rentas y frutos percibidos, gastos útiles y necesarios y daños por malicia o negligencia."}
+      - {norma: "CC", articulo: "1064", tipo: "conexa", nota: "Gastos de partición en interés común, a cargo de la herencia; los de interés particular, de quien los causa."}
+      - {norma: "CC", articulo: "1068", tipo: "conexa", nota: "La partición legalmente hecha da a cada heredero la propiedad exclusiva de lo adjudicado."}
+      - {norma: "CC", articulo: "1073", tipo: "conexa", nota: "Las particiones se rescinden por las mismas causas que las obligaciones."}
+      - {norma: "CC", articulo: "1074", tipo: "conexa", nota: "Rescisión por lesión en más de la cuarta parte, según el valor al adjudicarse."}
+      - {norma: "CC", articulo: "1076", tipo: "conexa", nota: "La acción rescisoria por lesión dura cuatro años desde la partición."}
+      - {norma: "CC", articulo: "1079", tipo: "conexa", nota: "Omitir bienes no rescinde la partición: se completa o adiciona."}
+      - {norma: "CC", articulo: "1080", tipo: "conexa", nota: "Preterición de un heredero: no se rescinde salvo mala fe o dolo; se le paga su parte."}
+      - {norma: "CC", articulo: "1081", tipo: "conexa", nota: "La partición hecha con quien se creyó heredero sin serlo es nula."}
+      - {norma: "CC", articulo: "1082", tipo: "conexa", nota: "Los acreedores reconocidos pueden oponerse a la partición hasta que se les pague o afiance."}
+    no_consta_en_norma:
+      - "Fecha de valoración de los bienes (fallecimiento o partición) y su actualización: jurisprudencial."
+      - "Plazo y causas para impugnar por nulidad la partición del contador-partidor: jurisprudencial."
+      - "Si en este cauce se discute la inclusión o exclusión de bienes del caudal: no lo resuelve la LEC fuera del inventario de la intervención."
+    fuera_de_la_herramienta:
+      - "Reglamento (UE) 650/2012, de sucesiones: ley aplicable a la sucesión de extranjeros (el 786.1 remite a ella)."
+      - "Ley 15/2015 (expediente ante el LAJ) y Ley del Notariado, arts. 50 y 66: nombramiento del contador-partidor dativo y aprobación de su partición."
+    afines: ["Partición de la herencia y su impugnación", "Administración e intervención del caudal hereditario", "Herencia yacente y comunidades sin personalidad como parte", "Copropiedad y acción de división de cosa común", "Albacea y contador-partidor", "Legítimas: cuantía y cálculo", "Liquidación del régimen económico matrimonial (procedimiento)"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Uso de la vivienda familiar"
+    sinonimos: ["atribución del uso de la vivienda familiar", "domicilio conyugal", "vivienda conyugal", "ajuar familiar", "uso de la vivienda a los hijos menores", "cónyuge no titular", "interés más necesitado de protección", "limitación temporal del uso", "extinción del uso de la vivienda", "vivienda arrendada tras el divorcio", "custodia compartida y vivienda"]
+    normas_base: ["CC", "LEC", "LAU"]
+    remisiones:
+      - {norma: "CC", articulo: "96", apartado: "1", tipo: "regula", nota: "Sin acuerdo aprobado, el uso es de los hijos menores y del cónyuge con quien queden, hasta que todos sean mayores."}
+      - {norma: "CC", articulo: "96", apartado: "1, párrafo 2.º", tipo: "regula", nota: "Hijos mayores con discapacidad que aconseje seguir en la vivienda: se equiparan a los menores; el juez fija el plazo."}
+      - {norma: "CC", articulo: "96", apartado: "1, párrafo 3.º", tipo: "regula", nota: "Extinguido el uso, la vivienda de los hijos sin independencia económica se atiende como alimentos entre parientes."}
+      - {norma: "CC", articulo: "96", apartado: "1, párrafo 4.º", tipo: "regula", nota: "Hijos repartidos entre ambos cónyuges: resuelve el juez lo procedente."}
+      - {norma: "CC", articulo: "96", apartado: "2", tipo: "regula", nota: "Sin hijos: al no titular, por tiempo prudencial, si su interés es el más necesitado de protección."}
+      - {norma: "CC", articulo: "96", apartado: "3", tipo: "regula", nota: "Para disponer de la vivienda atribuida, consentimiento de ambos o autorización judicial; se inscribe en el Registro."}
+      - {norma: "CC", articulo: "90", apartado: "1.c)", tipo: "regula", nota: "El convenio regulador debe contener la atribución del uso de la vivienda y del ajuar familiar."}
+      - {norma: "CC", articulo: "90", apartado: "2", tipo: "conexa", nota: "El juez aprueba el convenio salvo que dañe a los hijos o perjudique gravemente a un cónyuge."}
+      - {norma: "CC", articulo: "90", apartado: "3", tipo: "conexa", nota: "Las medidas se modifican por nuevas necesidades de los hijos o cambio de circunstancias de los cónyuges."}
+      - {norma: "CC", articulo: "91", tipo: "regula", nota: "Sin acuerdo, la sentencia fija las medidas sobre la vivienda familiar; se modifican si cambian sustancialmente las circunstancias."}
+      - {norma: "CC", articulo: "103", apartado: "2.ª", tipo: "regula", nota: "Medida provisional: uso para el cónyuge del interés familiar más necesitado de protección, con inventario del ajuar."}
+      - {norma: "CC", articulo: "1320", tipo: "conexa", nota: "Disponer de la vivienda habitual exige el consentimiento de ambos o autorización judicial, aunque sea de uno."}
+      - {norma: "LEC", articulo: "771", apartado: "1", tipo: "regula", nota: "Medidas previas a la demanda (arts. 102 y 103 CC) ante el tribunal del domicilio; sin abogado ni procurador para pedirlas."}
+      - {norma: "LEC", articulo: "771", apartado: "2", tipo: "conexa", nota: "Si urge, el tribunal acuerda de inmediato sobre custodia y uso de la vivienda; sin recurso."}
+      - {norma: "LEC", articulo: "771", apartado: "5", tipo: "regula", nota: "Las medidas previas caducan si la demanda no se presenta en treinta días."}
+      - {norma: "LEC", articulo: "773", apartado: "1", tipo: "conexa", nota: "Medidas provisionales pedidas en la demanda; el acuerdo de los cónyuges no vincula para las definitivas."}
+      - {norma: "LEC", articulo: "774", apartado: "4", tipo: "regula", nota: "Sin acuerdo aprobado, la sentencia fija las medidas definitivas sobre la vivienda familiar."}
+      - {norma: "LEC", articulo: "774", apartado: "5", tipo: "conexa", nota: "Los recursos contra la sentencia no suspenden la eficacia de las medidas."}
+      - {norma: "LEC", articulo: "775", apartado: "1", tipo: "regula", nota: "Modificación de medidas definitivas si han variado sustancialmente las circunstancias."}
+      - {norma: "LAU", articulo: "15", apartado: "1", tipo: "regula", nota: "Vivienda arrendada: el cónyuge no arrendatario sigue en ella si se le atribuye; con uso largo, pasa a ser el arrendatario."}
+      - {norma: "LAU", articulo: "15", apartado: "2", tipo: "regula", nota: "Debe comunicarlo al arrendador en dos meses desde la notificación de la resolución, con copia."}
+    no_consta_en_norma:
+      - "Entrada de una nueva pareja en la vivienda: pierde su carácter familiar y cesa o se revisa el uso: jurisprudencial."
+      - "Custodia compartida: uso temporal por el 96.2 por analogía, al interés más necesitado: jurisprudencial."
+      - "Vivienda propiedad de un tercero (p. ej., padres de un cónyuge): precario frente a él: jurisprudencial."
+      - "Parejas de hecho: aplicación analógica del art. 96: jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Ley valenciana 5/2011, de relaciones familiares: anulada por la STC 192/2016; en Benidorm rige el Código Civil."
+    afines: ["Separación y divorcio contenciosos", "Divorcio de mutuo acuerdo y convenio regulador", "Medidas provisionales en familia", "Modificación de medidas definitivas", "Vivienda familiar: disposición por el cónyuge titular", "Separación o divorcio del arrendatario", "Desahucio por precario"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"

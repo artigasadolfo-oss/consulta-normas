@@ -1,0 +1,331 @@
+# Índice de conceptos de «Consulta de normas» — tanda 2 (Requisitos previos y excepciones procesales)
+# Revisor: armero. Espejo: legalize-es@aca28304d. Todo precepto citado se ha leído en el espejo en esta pasada.
+# Vigencia: los 91 artículos distintos citados se han cotejado, artículo entero, con boe.es (scripts/contraste_boe.py,
+# ejecutado el 8-10-2026 a las 00:06): 91 idénticos al texto vigente y ninguno con reforma de vigencia futura. Por eso van «vigente».
+# Ninguna voz cita LEC 22 ni 685, LPH 10, CC 396 ni artículo alguno de la LAU (las normas con cambios pendientes o recientes).
+
+voces:
+  - voz: "Litispendencia"
+    sinonimos: ["excepción de litispendencia", "pendencia de otro juicio", "litis pendencia", "proceso pendiente sobre el mismo objeto", "perpetuatio iurisdictionis"]
+    normas_base: ["LEC", "LOPJ"]
+    remisiones:
+      - {norma: "LEC", articulo: "410", tipo: "regula", nota: "Nace con la interposición de la demanda, si después es admitida."}
+      - {norma: "LEC", articulo: "416", apartado: "1.2.ª", tipo: "regula", nota: "Audiencia previa: se examina junto con la cosa juzgada, tras capacidad y representación."}
+      - {norma: "LEC", articulo: "421", tipo: "regula", nota: "Identidad conforme al 222.2-3: fin de la audiencia y sobreseimiento en cinco días; si es dudosa, auto."}
+      - {norma: "LEC", articulo: "222", apartado: "2", tipo: "regula", nota: "Medida del objeto idéntico (por remisión del 421.1): pretensiones de demanda, reconvención y art. 408."}
+      - {norma: "LEC", articulo: "222", apartado: "3", tipo: "regula", nota: "Medida subjetiva (por remisión del 421.1): partes, herederos y causahabientes."}
+      - {norma: "LEC", articulo: "400", apartado: "2", tipo: "regula", nota: "Hechos y fundamentos que pudieron alegarse en el primer pleito cuentan como alegados."}
+      - {norma: "LEC", articulo: "405", apartado: "3", tipo: "regula", nota: "Se alega en la contestación como excepción procesal."}
+      - {norma: "LEC", articulo: "437", apartado: "1", tipo: "regula", nota: "Juicio verbal: rigen las reglas del ordinario sobre litispendencia."}
+      - {norma: "LEC", articulo: "438", apartado: "10", tipo: "regula", nota: "Juicio verbal: el tribunal resuelve las excepciones procesales por auto, antes de la vista."}
+      - {norma: "LEC", articulo: "411", tipo: "conexa", nota: "Perpetuación: los cambios posteriores de domicilio o de la cosa no alteran jurisdicción ni competencia."}
+      - {norma: "LEC", articulo: "78", apartado: "1", tipo: "conexa", nota: "No procede acumular procesos si basta la excepción de litispendencia."}
+      - {norma: "LEC", articulo: "43", tipo: "conexa", nota: "Prejudicialidad civil: suspensión si el otro pleito decide una cuestión previa y no cabe acumular."}
+      - {norma: "LOPJ", articulo: "22 nonies", tipo: "conexa", nota: "Litispendencia internacional: por las normas procesales generales."}
+    no_consta_en_norma:
+      - "La triple identidad de sujetos, objeto y causa de pedir como fórmula: jurisprudencial; la ley remite al art. 222."
+      - "La «litispendencia impropia» o por conexión prejudicial: jurisprudencial; el texto solo prevé la suspensión del art. 43."
+    afines: ["Cosa juzgada", "Acumulación de procesos", "Suspensión del proceso", "Preclusión de alegaciones y hechos nuevos"]
+    # VERIFICADO: el art. 421.1 define la litispendencia por remisión a los apartados 2 y 3 del 222; no hay definición propia.
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-07"
+    revisor: "armero"
+
+  - voz: "Cosa juzgada"
+    sinonimos: ["cosa juzgada material", "cosa juzgada formal", "efecto positivo de la cosa juzgada", "efecto prejudicial", "res iudicata", "excepción de cosa juzgada", "non bis in idem civil"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "222", apartado: "1", tipo: "regula", nota: "Efecto negativo: excluye un proceso posterior con objeto idéntico, sea la sentencia estimatoria o no."}
+      - {norma: "LEC", articulo: "222", apartado: "2", tipo: "regula", nota: "Alcanza demanda, reconvención y compensación o nulidad del 408; hechos nuevos: los posteriores a la preclusión."}
+      - {norma: "LEC", articulo: "222", apartado: "3", tipo: "regula", nota: "Límite subjetivo: partes, herederos, causahabientes; estado civil frente a terceros desde el Registro."}
+      - {norma: "LEC", articulo: "222", apartado: "4", tipo: "regula", nota: "Efecto positivo: vincula al tribunal posterior si lo juzgado es antecedente lógico y las partes coinciden."}
+      - {norma: "LEC", articulo: "207", tipo: "regula", nota: "Cosa juzgada formal: resoluciones firmes y plazos de recurso agotados."}
+      - {norma: "LEC", articulo: "400", tipo: "regula", nota: "Hay que alegar todos los hechos y títulos conocidos; los que pudieron alegarse se tienen por alegados."}
+      - {norma: "LEC", articulo: "408", apartado: "3", tipo: "regula", nota: "La compensación y la nulidad alegadas por el demandado también pasan en cosa juzgada."}
+      - {norma: "LEC", articulo: "416", apartado: "1.2.ª", tipo: "regula", nota: "Audiencia previa: cuestión procesal que se examina con la litispendencia."}
+      - {norma: "LEC", articulo: "421", tipo: "regula", nota: "Sobreseimiento si hay identidad; no si solo opera el efecto positivo (222.4): el pleito sigue."}
+      - {norma: "LEC", articulo: "447", apartado: "2", tipo: "regula", nota: "Sin cosa juzgada: posesión sumaria y desahucio por impago o plazo; sí la tienen las rentas acumuladas."}
+      - {norma: "LEC", articulo: "447", apartado: "3", tipo: "regula", nota: "Sin cosa juzgada: tutela de derechos reales inscritos frente a quien no tiene título inscrito."}
+      - {norma: "LEC", articulo: "447", apartado: "4", tipo: "regula", nota: "Tampoco las resoluciones a las que otras leyes nieguen ese efecto."}
+      - {norma: "LEC", articulo: "438", apartado: "2", tipo: "conexa", nota: "No cabe reconvención en los verbales cuya sentencia no produce cosa juzgada."}
+      - {norma: "LEC", articulo: "438", apartado: "10", tipo: "conexa", nota: "Juicio verbal: la excepción se resuelve por auto antes de la vista."}
+    no_consta_en_norma:
+      - "Si la sentencia de precario produce cosa juzgada: el 447.2 no lo incluye y la norma no lo resuelve."
+      - "La apreciación de oficio de la cosa juzgada: jurisprudencial; el art. 416 no lo dice."
+    afines: ["Litispendencia", "Preclusión de alegaciones y hechos nuevos", "Compensación y nulidad alegadas por el demandado", "Desahucio por precario"]
+    # VERIFICADO: CC 1252 (presunción de cosa juzgada) fue derogado por la LEC de 2000; no se cita.
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-07"
+    revisor: "armero"
+
+  - voz: "Inadecuación de procedimiento"
+    sinonimos: ["procedimiento inadecuado", "inadecuación del procedimiento", "error en la clase de juicio", "juicio verbal en lugar de ordinario", "cauce procesal inadecuado"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "416", apartado: "1.4.ª", tipo: "regula", nota: "Audiencia previa: cuarta cuestión procesal."}
+      - {norma: "LEC", articulo: "422", tipo: "regula", nota: "Por cuantía: se oye a las partes y se decide en el acto; si toca verbal, vista, salvo caducidad: sobreseimiento."}
+      - {norma: "LEC", articulo: "423", tipo: "regula", nota: "Por materia: en el acto o en cinco días; si toca verbal, citación a vista, salvo caducidad o falta de requisitos."}
+      - {norma: "LEC", articulo: "249", tipo: "regula", nota: "Ordinario por materia (arrendamientos no valorables, retracto, LPH salvo cantidad) y por cuantía de más de 15.000 euros."}
+      - {norma: "LEC", articulo: "250", apartado: "2", tipo: "regula", nota: "Verbal por cuantía: hasta 15.000 euros, salvo las materias del 249.1."}
+      - {norma: "LEC", articulo: "254", tipo: "regula", nota: "El LAJ corrige de oficio la clase de juicio; nunca se inadmite la demanda por ese motivo."}
+      - {norma: "LEC", articulo: "255", tipo: "regula", nota: "Impugnación por cuantía en la contestación: en el ordinario, audiencia previa; en el verbal, art. 438.10."}
+      - {norma: "LEC", articulo: "438", apartado: "10", tipo: "regula", nota: "Juicio verbal: auto sobre cuantía y excepciones procesales; cabe reposición con efecto suspensivo."}
+      - {norma: "LEC", articulo: "405", apartado: "3", tipo: "regula", nota: "Se alega en la contestación como excepción procesal."}
+      - {norma: "LEC", articulo: "425", tipo: "conexa", nota: "Circunstancias procesales no listadas en el 416: se resuelven por analogía."}
+      - {norma: "LEC", articulo: "73", apartado: "1.2.º", tipo: "conexa", nota: "Acumular acciones exige que no deban ventilarse en juicios de diferente tipo por razón de la materia."}
+    no_consta_en_norma:
+      - "Si basta la tramitación por un cauce más amplio sin indefensión para desestimar la excepción: jurisprudencial."
+    afines: ["Cuantía del proceso y su impugnación", "Ámbito del juicio verbal por materia y cuantía", "Caducidad de la acción (como excepción)", "Acumulación de acciones"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-07"
+    revisor: "armero"
+
+  - voz: "Defecto legal en el modo de proponer la demanda"
+    sinonimos: ["defecto legal", "demanda defectuosa", "falta de claridad de la demanda", "oscuridad de la demanda", "petitum indeterminado", "excepción de defecto legal"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "416", apartado: "1.5.ª", tipo: "regula", nota: "Falta de claridad o precisión en las partes o en la petición, en la demanda o en la reconvención."}
+      - {norma: "LEC", articulo: "424", apartado: "1", tipo: "regula", nota: "Lo alegan demandado o actor, o se aprecia de oficio: se admiten aclaraciones en la audiencia."}
+      - {norma: "LEC", articulo: "424", apartado: "2", tipo: "regula", nota: "Sobreseimiento solo si es imposible saber qué se pide o frente a quién."}
+      - {norma: "LEC", articulo: "399", apartado: "1", tipo: "regula", nota: "La demanda fija «con claridad y precisión lo que se pida» y separa hechos y fundamentos."}
+      - {norma: "LEC", articulo: "399", apartado: "5", tipo: "regula", nota: "Peticiones separadas; las subsidiarias, por su orden y separadamente."}
+      - {norma: "LEC", articulo: "405", apartado: "3", tipo: "regula", nota: "Se alega en la contestación como excepción procesal."}
+      - {norma: "LEC", articulo: "406", apartado: "3", tipo: "conexa", nota: "Reconvención: debe expresar con claridad la tutela pedida; pedir la absolución no es reconvenir."}
+      - {norma: "LEC", articulo: "437", apartado: "2", tipo: "conexa", nota: "Verbal sin abogado ni procurador: basta demanda sucinta, pero con petición clara y precisa."}
+      - {norma: "LEC", articulo: "425", tipo: "conexa", nota: "Defectos no listados en el 416 se resuelven por analogía."}
+      - {norma: "LEC", articulo: "219", apartado: "1", tipo: "conexa", nota: "Condena dineraria: cuantificar o fijar bases aritméticas; no cabe dejarlo a la ejecución."}
+    no_consta_en_norma:
+      - "Si una petición sin cuantificar (art. 219) se trata como defecto legal o como cuestión de fondo: jurisprudencial."
+    afines: ["Cuantía del proceso y su impugnación", "Audiencia previa: contenido y orden", "Reconvención"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-07"
+    revisor: "armero"
+
+  - voz: "Cuantía del proceso y su impugnación"
+    sinonimos: ["impugnación de la cuantía", "cuantía de la demanda", "cuantía indeterminada", "valor de la cosa litigiosa", "interés económico de la demanda", "cuantía inestimable"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "251", tipo: "regula", nota: "Reglas de cálculo: dinero, bienes (nunca bajo el catastral), rentas periódicas, arrendamientos (una anualidad)."}
+      - {norma: "LEC", articulo: "252", tipo: "regula", nota: "Pluralidad de acciones o partes; desahucio más rentas: la de mayor valor; reconvención no altera la cuantía."}
+      - {norma: "LEC", articulo: "253", tipo: "regula", nota: "El actor la expresa y justifica; cabe en forma relativa; si es inestimable, juicio ordinario."}
+      - {norma: "LEC", articulo: "254", tipo: "regula", nota: "Control de oficio por el LAJ; nunca se inadmite por cuantía; diez días para subsanar si faltan datos."}
+      - {norma: "LEC", articulo: "255", tipo: "regula", nota: "Se impugna en la contestación si cambia el juicio o el acceso a la apelación; ordinario: audiencia previa."}
+      - {norma: "LEC", articulo: "422", tipo: "regula", nota: "Audiencia previa: se oye a las partes y se decide en el acto; si procede el verbal, se señala vista."}
+      - {norma: "LEC", articulo: "438", apartado: "10", tipo: "regula", nota: "Juicio verbal: la impugnación de la cuantía se resuelve por auto antes de la vista; reposición suspensiva."}
+      - {norma: "LEC", articulo: "249", apartado: "2", tipo: "regula", nota: "Ordinario: más de 15.000 euros o interés económico incalculable."}
+      - {norma: "LEC", articulo: "250", apartado: "2", tipo: "regula", nota: "Verbal: hasta 15.000 euros si la materia no está en el 249.1."}
+      - {norma: "LEC", articulo: "455", apartado: "1", tipo: "conexa", nota: "Sin apelación las sentencias de verbales por cuantía no superior a 3.000 euros."}
+      - {norma: "LEC", articulo: "73", apartado: "1.1.º", tipo: "conexa", nota: "Al ordinario se puede acumular la acción que por cuantía iría al verbal."}
+    no_consta_en_norma:
+      - "Si la cuantía fijada en la instancia vincula para el acceso a la casación o a la tasación de costas: jurisprudencial."
+    afines: ["Inadecuación de procedimiento", "Ámbito del juicio verbal por materia y cuantía", "Acumulación de acciones", "Tasación de costas y su impugnación"]
+    # VERIFICADO: 255.1 solo permite impugnar si cambia el procedimiento o el acceso a la apelación; la impugnación «a efectos de costas» no está en la ley.
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-07"
+    revisor: "armero"
+
+  - voz: "Caducidad de la acción (como excepción)"
+    sinonimos: ["caducidad", "plazo de caducidad", "acción caducada", "plazo de ejercicio", "excepción de caducidad"]
+    normas_base: ["CC", "LPH", "LEC", "LO 1/2025", "LOE"]
+    remisiones:
+      - {norma: "LPH", articulo: "18", apartado: "3", tipo: "regula", nota: "Impugnación de acuerdos: tres meses; un año si son contrarios a la ley o a los estatutos; ausentes, desde la comunicación."}
+      - {norma: "CC", articulo: "1301", tipo: "regula", nota: "Anulabilidad: «caducará» a los cuatro años; el día inicial depende de la causa."}
+      - {norma: "CC", articulo: "1490", tipo: "regula", nota: "Vicios ocultos en la compraventa: las acciones se extinguen a los seis meses desde la entrega."}
+      - {norma: "CC", articulo: "1524", tipo: "regula", nota: "Retracto legal: nueve días desde la inscripción o, si no, desde que se conoció la venta."}
+      - {norma: "CC", articulo: "1508", tipo: "regula", nota: "Retracto convencional: cuatro años sin pacto; con pacto, nunca más de diez."}
+      - {norma: "LEC", articulo: "518", tipo: "regula", nota: "La acción ejecutiva fundada en sentencia, transacción judicial, laudo o mediación caduca a los cinco años."}
+      - {norma: "LEC", articulo: "556", apartado: "1, párrafo 2.º", tipo: "regula", nota: "La caducidad de la acción ejecutiva se opone a la ejecución de sentencia."}
+      - {norma: "LEC", articulo: "557", apartado: "1.4.ª", tipo: "regula", nota: "Títulos no judiciales: prescripción y caducidad son causa de oposición a la ejecución."}
+      - {norma: "LEC", articulo: "422", apartado: "2", tipo: "regula", nota: "Si el cauce correcto era el verbal y la demanda está fuera del plazo de caducidad: sobreseimiento."}
+      - {norma: "LEC", articulo: "423", apartado: "3", tipo: "regula", nota: "Lo mismo si la inadecuación es por razón de la materia."}
+      - {norma: "LO 1/2025", articulo: "7", apartado: "1", tipo: "regula", nota: "La solicitud de MASC suspende la caducidad desde el intento de comunicación; se reanuda si no hay respuesta."}
+      - {norma: "CC", articulo: "5", tipo: "regula", nota: "Cómputo civil: días desde el siguiente; meses y años, de fecha a fecha; sin excluir inhábiles."}
+      - {norma: "LOE", articulo: "17", apartado: "1", tipo: "conexa", nota: "Plazos de garantía de 10, 3 y 1 año desde la recepción: el daño debe manifestarse dentro de ellos."}
+      - {norma: "LEC", articulo: "405", apartado: "1", tipo: "conexa", nota: "Se alega en la contestación como excepción material."}
+    no_consta_en_norma:
+      - "Que la caducidad se aprecia de oficio y no admite interrupción: jurisprudencial; solo el MASC la «suspende» (LO 1/2025, art. 7)."
+      - "Si un plazo es de caducidad o de prescripción cuando la ley no lo nombra (p. ej. CC 1490, «se extinguirán»): jurisprudencial."
+      - "Naturaleza de los plazos de la LOE 17.1 (garantía, no caducidad de la acción): jurisprudencial."
+    afines: ["Prescripción (como excepción)", "Impugnación de acuerdos (plazo del art. 18)", "Caducidad de la acción ejecutiva", "Cómputo civil de plazos", "Caducidad de la instancia"]
+    # PENDIENTE: retracto arrendaticio (LAU 25 y 31) no se cita: la LAU cambia el 08-10-2026; entra en la voz «Derechos de tanteo y retracto del arrendatario».
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-07"
+    revisor: "armero"
+
+  - voz: "Prescripción (como excepción)"
+    sinonimos: ["prescripción extintiva", "excepción de prescripción", "acción prescrita", "plazo de prescripción", "dies a quo", "prescripción de la acción"]
+    normas_base: ["CC", "LO 1/2025", "LOE", "TRLGDCU", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "1930", tipo: "regula", nota: "Párrafo 2.º: los derechos y acciones de cualquier clase se extinguen por prescripción."}
+      - {norma: "CC", articulo: "1961", tipo: "regula", nota: "Prescriben por el mero lapso del tiempo legal."}
+      - {norma: "CC", articulo: "1964", apartado: "2", tipo: "regula", nota: "Acciones personales sin plazo especial: cinco años desde que puede exigirse el cumplimiento."}
+      - {norma: "CC", articulo: "1966", tipo: "regula", nota: "Cinco años: alimentos, rentas de arrendamientos y pagos anuales o más breves."}
+      - {norma: "CC", articulo: "1967", tipo: "regula", nota: "Tres años: honorarios de abogados, peritos y profesionales; desde que cesan los servicios."}
+      - {norma: "CC", articulo: "1968", tipo: "regula", nota: "Un año: acción posesoria y responsabilidad extracontractual del 1902, desde que lo supo el agraviado."}
+      - {norma: "CC", articulo: "1963", tipo: "regula", nota: "Acciones reales sobre inmuebles: treinta años."}
+      - {norma: "CC", articulo: "1969", tipo: "regula", nota: "Regla general del día inicial: desde que la acción pudo ejercitarse."}
+      - {norma: "CC", articulo: "1971", tipo: "regula", nota: "Obligaciones declaradas por sentencia: desde su firmeza."}
+      - {norma: "CC", articulo: "1973", tipo: "regula", nota: "Interrumpen: demanda, reclamación extrajudicial del acreedor y reconocimiento de la deuda."}
+      - {norma: "CC", articulo: "1974", tipo: "regula", nota: "Solidarias: la interrupción alcanza a todos; mancomunadas: solo al deudor reclamado."}
+      - {norma: "CC", articulo: "1975", tipo: "regula", nota: "Fiador: le afecta la reclamación judicial al deudor, no la extrajudicial ni el reconocimiento privado."}
+      - {norma: "CC", articulo: "1935", tipo: "regula", nota: "Renuncia de la prescripción ganada, también tácita."}
+      - {norma: "CC", articulo: "1965", tipo: "regula", nota: "No prescriben la partición de herencia, la división de cosa común ni el deslinde."}
+      - {norma: "LO 1/2025", articulo: "7", apartado: "1", tipo: "regula", nota: "La solicitud de MASC interrumpe la prescripción; se reinicia si no hay reunión ni respuesta en 30 días."}
+      - {norma: "LOE", articulo: "18", tipo: "regula", nota: "Acciones de la LOE: dos años desde el daño; repetición, dos años desde la condena o el pago."}
+      - {norma: "TRLGDCU", articulo: "124", tipo: "regula", nota: "Falta de conformidad: cinco años desde que se manifiesta."}
+      - {norma: "TRLGDCU", articulo: "143", tipo: "regula", nota: "Productos defectuosos: tres años desde el perjuicio; repetición, un año desde el pago."}
+      - {norma: "CC", articulo: "1939", tipo: "conexa", nota: "Derecho transitorio; su nota remite a la DT 5.ª de la Ley 42/2015 para las relaciones ya existentes."}
+      - {norma: "LEC", articulo: "557", apartado: "1.4.ª", tipo: "regula", nota: "Ejecución de títulos no judiciales: la prescripción es causa de oposición."}
+      - {norma: "LEC", articulo: "405", apartado: "1", tipo: "conexa", nota: "Se alega en la contestación como excepción material."}
+    no_consta_en_norma:
+      - "Que no se aprecia de oficio y que se interpreta restrictivamente: jurisprudencial."
+      - "Daños continuados y el día inicial del art. 1968.2.º: jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Ley 42/2015, disposición transitoria 5.ª: plazo de las acciones personales nacidas antes de su entrada en vigor."
+    afines: ["Caducidad de la acción (como excepción)", "Interrupción de la prescripción", "Requisito de procedibilidad (MASC)", "Cómputo civil de plazos", "Responsabilidad extracontractual"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-07"
+    revisor: "armero"
+
+  - voz: "Reconvención"
+    sinonimos: ["demanda reconvencional", "contrademanda", "mutua petición", "reconvención implícita", "reconvención en el juicio verbal", "reconvención frente a terceros"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "406", apartado: "1", tipo: "regula", nota: "Se formula al contestar; solo se admite si hay conexión con las pretensiones de la demanda."}
+      - {norma: "LEC", articulo: "406", apartado: "2", tipo: "regula", nota: "Inadmisible sin competencia objetiva o si va a otro tipo de juicio; cabe la conexa de cuantía de verbal."}
+      - {norma: "LEC", articulo: "406", apartado: "3", tipo: "regula", nota: "Va tras la contestación, con la forma del 399; pedir solo la absolución no es reconvenir."}
+      - {norma: "LEC", articulo: "406", apartado: "4", tipo: "regula", nota: "Preclusión del art. 400: hay que alegar todos los hechos y títulos conocidos."}
+      - {norma: "LEC", articulo: "407", tipo: "regula", nota: "Cabe contra terceros litisconsortes del actor; contestación en veinte días."}
+      - {norma: "LEC", articulo: "409", tipo: "regula", nota: "Se tramita y resuelve a la vez y en la misma forma que la demanda principal."}
+      - {norma: "LEC", articulo: "438", apartado: "2", tipo: "regula", nota: "Verbal: nunca en los que no producen cosa juzgada; en los demás, si hay conexión; contestación en diez días."}
+      - {norma: "LEC", articulo: "252", apartado: "5.ª", tipo: "regula", nota: "La reconvención no altera la cuantía ni la clase de juicio."}
+      - {norma: "LEC", articulo: "222", apartado: "2", tipo: "conexa", nota: "La cosa juzgada alcanza también a las pretensiones de la reconvención."}
+      - {norma: "LEC", articulo: "408", apartado: "1", tipo: "conexa", nota: "El crédito compensable se alega sin reconvenir; el actor contesta como a una reconvención."}
+      - {norma: "LEC", articulo: "438", apartado: "3", tipo: "conexa", nota: "Verbal: si el crédito compensable excede de la cuantía del verbal, se tiene por no alegado."}
+      - {norma: "LEC", articulo: "416", apartado: "1.5.ª", tipo: "conexa", nota: "El defecto legal se examina también respecto de la reconvención."}
+    no_consta_en_norma:
+      - "Qué grado de conexión basta (mismo contrato, mismos hechos, mismo bien): jurisprudencial; el 406.1 no la define."
+    afines: ["Compensación y nulidad alegadas por el demandado", "Cuantía del proceso y su impugnación", "Cosa juzgada", "Contestación escrita en el verbal y petición de vista"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-07"
+    revisor: "armero"
+
+  - voz: "Allanamiento"
+    sinonimos: ["allanarse a la demanda", "allanamiento parcial", "allanamiento total", "conformidad con la demanda", "reconocimiento de las pretensiones", "compromiso de condonación en el desahucio"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "21", apartado: "1", tipo: "regula", nota: "Total: sentencia de condena conforme a lo pedido; si hay fraude o perjuicio de tercero, auto que lo rechaza."}
+      - {norma: "LEC", articulo: "21", apartado: "2", tipo: "regula", nota: "Parcial: auto inmediato, ejecutable, si cabe pronunciamiento separado; el resto sigue."}
+      - {norma: "LEC", articulo: "21", apartado: "3", tipo: "regula", nota: "Desahucio con compromiso del 437.3: si no desaloja en plazo, lanzamiento sin más trámite."}
+      - {norma: "LEC", articulo: "19", apartado: "1", tipo: "regula", nota: "Facultad de disposición, salvo prohibición legal o interés general o de tercero."}
+      - {norma: "LEC", articulo: "19", apartado: "3", tipo: "regula", nota: "Cabe en primera instancia, en los recursos o en la ejecución."}
+      - {norma: "LEC", articulo: "405", apartado: "1", tipo: "regula", nota: "Puede manifestarse en la contestación, total o parcial."}
+      - {norma: "LEC", articulo: "25", apartado: "2.1.º", tipo: "regula", nota: "El procurador necesita poder especial para allanarse."}
+      - {norma: "LEC", articulo: "395", apartado: "1", tipo: "regula", nota: "Antes de contestar, sin costas, salvo mala fe: requerimiento fehaciente previo o rechazo del acuerdo o del MASC."}
+      - {norma: "LEC", articulo: "395", apartado: "2", tipo: "regula", nota: "Tras contestar: vencimiento del art. 394.1."}
+      - {norma: "LEC", articulo: "395", apartado: "3", tipo: "regula", nota: "Si no acudió sin causa al MASC preceptivo y luego se allana: costas, salvo circunstancias excepcionales."}
+      - {norma: "LEC", articulo: "437", apartado: "3", tipo: "regula", nota: "Desahucio: el actor puede ofrecer condonar deuda y costas a cambio de desalojo en plazo (mínimo quince días)."}
+      - {norma: "LEC", articulo: "438", apartado: "5, párrafo 2.º", tipo: "regula", nota: "Aceptar ese compromiso equivale a allanamiento con los efectos del art. 21."}
+      - {norma: "LEC", articulo: "414", apartado: "2", tipo: "conexa", nota: "Audiencia previa: sin la parte ni poder para allanarse o transigir, se la tiene por no comparecida."}
+      - {norma: "LEC", articulo: "447", apartado: "1, párrafo 2.º", tipo: "conexa", nota: "La sentencia por allanamiento en desahucio fija ya el lanzamiento subsidiario."}
+    no_consta_en_norma: []
+    afines: ["Costas: vencimiento, temeridad y allanamiento", "Costas y MASC", "Desistimiento", "Transacción judicial", "Desahucio por falta de pago"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-07"
+    revisor: "armero"
+
+  - voz: "Desistimiento"
+    sinonimos: ["desistir de la demanda", "desistimiento unilateral", "desistimiento bilateral", "desistimiento tácito", "renuncia a la acción", "abandono del proceso", "desistimiento del recurso"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "20", apartado: "2", tipo: "regula", nota: "Unilateral: antes del emplazamiento o citación del demandado, o en cualquier momento si está en rebeldía."}
+      - {norma: "LEC", articulo: "20", apartado: "3", tipo: "regula", nota: "Emplazado el demandado: diez días; si no se opone, sobreseimiento y cabe nuevo juicio; si se opone, decide el juez."}
+      - {norma: "LEC", articulo: "20", apartado: "1", tipo: "conexa", nota: "La renuncia es otra cosa: sentencia absolutoria del demandado."}
+      - {norma: "LEC", articulo: "396", tipo: "regula", nota: "Costas: al actor si el desistimiento no requiere consentimiento; sin costas si el demandado lo consiente."}
+      - {norma: "LEC", articulo: "25", apartado: "2.1.º", tipo: "regula", nota: "El procurador necesita poder especial para desistir."}
+      - {norma: "LEC", articulo: "414", apartado: "3", tipo: "regula", nota: "Audiencia previa: si solo comparece el demandado y no alega interés en sentencia, sobreseimiento."}
+      - {norma: "LEC", articulo: "414", apartado: "4", tipo: "regula", nota: "Si falta el abogado del actor: sobreseimiento, salvo interés legítimo del demandado."}
+      - {norma: "LEC", articulo: "442", apartado: "1", tipo: "regula", nota: "Verbal: si el actor no asiste, se le tiene por desistido, con costas e indemnización si se pide."}
+      - {norma: "LEC", articulo: "415", apartado: "1", tipo: "regula", nota: "Audiencia previa: si hay acuerdo, las partes pueden desistir del proceso (desistimiento bilateral)."}
+      - {norma: "LEC", articulo: "443", apartado: "1", tipo: "regula", nota: "Vista del verbal: igual posibilidad de desistir si hay acuerdo."}
+      - {norma: "LEC", articulo: "450", tipo: "regula", nota: "Desistimiento de recursos: antes de resolverse; en casación, no tras el señalamiento."}
+      - {norma: "LEC", articulo: "19", apartado: "3", tipo: "conexa", nota: "Cabe en primera instancia, en los recursos o en la ejecución."}
+      - {norma: "LEC", articulo: "16", apartado: "3", tipo: "conexa", nota: "Muerte del actor sin sucesores personados: decreto que lo tiene por desistido, salvo oposición."}
+    no_consta_en_norma:
+      - "Con qué criterio resuelve el juez la oposición del demandado (art. 20.3, «lo que estime oportuno»): jurisprudencial."
+    afines: ["Allanamiento", "Transacción judicial", "Costas: vencimiento, temeridad y allanamiento", "Postulación (abogado y procurador)"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-07"
+    revisor: "armero"
+
+  - voz: "Transacción judicial"
+    sinonimos: ["transacción", "acuerdo homologado", "homologación del acuerdo", "acuerdo en la audiencia previa", "convenio judicial", "acuerdo transaccional"]
+    normas_base: ["LEC", "CC"]
+    remisiones:
+      - {norma: "LEC", articulo: "19", apartado: "2", tipo: "regula", nota: "El tribunal que conoce del pleito homologa el acuerdo si respeta los límites del 19.1."}
+      - {norma: "LEC", articulo: "19", apartado: "1", tipo: "regula", nota: "Límites: prohibición legal, interés general o de tercero; no tras señalarse la deliberación de la casación."}
+      - {norma: "LEC", articulo: "415", apartado: "1", tipo: "regula", nota: "Audiencia previa: si hay acuerdo, desistir o pedir la homologación; el juez comprueba capacidad y poder."}
+      - {norma: "LEC", articulo: "415", apartado: "2", tipo: "regula", nota: "El acuerdo homologado vale como transacción judicial, se ejecuta como una sentencia y se impugna como la transacción."}
+      - {norma: "LEC", articulo: "443", apartado: "1", tipo: "regula", nota: "Vista del verbal: mismas reglas de homologación, ejecución e impugnación del acuerdo."}
+      - {norma: "LEC", articulo: "414", apartado: "2", tipo: "regula", nota: "Si la parte va solo por procurador, este necesita poder para transigir o se la tiene por no comparecida."}
+      - {norma: "LEC", articulo: "25", apartado: "2.1.º", tipo: "regula", nota: "La transacción exige poder especial del procurador."}
+      - {norma: "LEC", articulo: "517", apartado: "2.3.º", tipo: "regula", nota: "Título ejecutivo: la resolución que aprueba u homologa la transacción judicial."}
+      - {norma: "LEC", articulo: "518", tipo: "regula", nota: "La acción para ejecutarla caduca a los cinco años de la firmeza de la resolución."}
+      - {norma: "LEC", articulo: "206", apartado: "1.2.ª", tipo: "regula", nota: "La aprobación judicial de transacciones se hace por auto."}
+      - {norma: "CC", articulo: "1809", tipo: "regula", nota: "Concepto: concesiones recíprocas para evitar un pleito o poner fin al empezado."}
+      - {norma: "CC", articulo: "1814", tipo: "regula", nota: "No se transige sobre estado civil, cuestiones matrimoniales ni alimentos futuros."}
+      - {norma: "CC", articulo: "1815", tipo: "regula", nota: "Solo comprende lo expresado; la renuncia general se ciñe a lo discutido."}
+      - {norma: "CC", articulo: "1816", tipo: "regula", nota: "Autoridad de cosa juzgada entre las partes; la vía de apremio, solo para la transacción judicial."}
+      - {norma: "CC", articulo: "1817", tipo: "regula", nota: "Anulable por error, dolo, violencia o falsedad; el error de hecho no se opone a quien dejó un pleito."}
+      - {norma: "CC", articulo: "1819", tipo: "regula", nota: "Rescindible si se transigió ignorando una sentencia firme."}
+      - {norma: "LEC", articulo: "21", apartado: "3", tipo: "conexa", nota: "Desahucio: el compromiso del 437.3 aceptado se homologa como transacción con lanzamiento automático."}
+      - {norma: "LEC", articulo: "751", apartado: "1", tipo: "conexa", nota: "Capacidad, filiación y matrimonio: la transacción no surte efecto, salvo materias disponibles (751.3)."}
+      - {norma: "LEC", articulo: "556", apartado: "1, párrafo 2.º", tipo: "conexa", nota: "Contra la ejecución de sentencia cabe oponer transacciones en documento público para evitarla."}
+    no_consta_en_norma:
+      - "Cauce para impugnar el acuerdo homologado: el 415.2 remite a la «forma» de impugnar la transacción judicial, que la LEC no regula."
+    afines: ["Allanamiento", "Desistimiento", "Requisito de procedibilidad (MASC)", "Títulos ejecutivos", "Postulación (abogado y procurador)"]
+    # VERIFICADO: búsqueda de «transacci» en toda la LEC del espejo: ningún artículo regula la impugnación de la transacción judicial.
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-07"
+    revisor: "armero"
+
+  - voz: "Suspensión del proceso"
+    sinonimos: ["suspensión del procedimiento", "suspensión por acuerdo de las partes", "prejudicialidad penal", "cuestión prejudicial", "suspensión por enfermedad del abogado", "archivo provisional", "suspensión para mediación"]
+    normas_base: ["LEC", "LOPJ"]
+    remisiones:
+      - {norma: "LEC", articulo: "19", apartado: "4", tipo: "regula", nota: "A petición de todas las partes: decreto del LAJ, máximo sesenta días, sin perjuicio del interés general o de tercero."}
+      - {norma: "LEC", articulo: "179", apartado: "2", tipo: "regula", nota: "Reanudación a instancia de parte; si nadie la pide en cinco días tras el plazo, archivo provisional."}
+      - {norma: "LEC", articulo: "179", apartado: "3", tipo: "regula", nota: "Abogado: muerte o enfermedad grave de familiares (3 o 5 días hábiles), su baja (máx. 30 días), nacimiento."}
+      - {norma: "LEC", articulo: "179", apartado: "4", tipo: "regula", nota: "Acreditación documental con la solicitud, con datos para avisar a los citados; documentación reservada."}
+      - {norma: "LEC", articulo: "19", apartado: "5", tipo: "regula", nota: "Derivación a MASC propuesta por el tribunal; con conformidad, las partes piden juntas la suspensión."}
+      - {norma: "LEC", articulo: "415", apartado: "3", tipo: "regula", nota: "Terminado el MASC sin acuerdo, cualquiera pide alzar la suspensión y nueva fecha."}
+      - {norma: "LEC", articulo: "443", apartado: "2", tipo: "regula", nota: "Verbal: derivación a MASC en la vista, plazo fijado por el juez y una prórroga posible."}
+      - {norma: "LEC", articulo: "40", tipo: "regula", nota: "Penal: solo si hay causa criminal y su decisión es decisiva; se acuerda pendiente solo de sentencia, salvo falsedad."}
+      - {norma: "LEC", articulo: "41", tipo: "regula", nota: "Recursos: deniega, reposición (reproducible en apelación); acuerda, apelación; alzamiento, revisión."}
+      - {norma: "LEC", articulo: "42", apartado: "3", tipo: "regula", nota: "Administrativa o social: suspensión solo si la ley lo prevé o las partes lo piden de acuerdo."}
+      - {norma: "LEC", articulo: "43", tipo: "regula", nota: "Civil: si otro proceso decide una cuestión previa y no cabe acumular; reposición o apelación."}
+      - {norma: "LEC", articulo: "16", apartado: "1", tipo: "regula", nota: "Muerte de un litigante: suspensión hasta que se persone el sucesor."}
+      - {norma: "LEC", articulo: "64", apartado: "1", tipo: "regula", nota: "La declinatoria suspende el plazo para contestar y el procedimiento hasta resolverse."}
+      - {norma: "LOPJ", articulo: "4 bis", apartado: "2", tipo: "regula", nota: "Cuestión prejudicial europea: por auto, previa audiencia de las partes."}
+      - {norma: "LOPJ", articulo: "5", apartado: "2", tipo: "regula", nota: "Cuestión de inconstitucionalidad si de la validez de una ley depende el fallo."}
+      - {norma: "LEC", articulo: "188", apartado: "1.7.º", tipo: "conexa", nota: "La suspensión del proceso arrastra la de la vista señalada."}
+    no_consta_en_norma:
+      - "Si basta una denuncia sin causa criminal abierta para la prejudicialidad penal: el 40.2.1.ª exige acreditar la causa; su alcance es jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Régimen de la cuestión prejudicial europea (TFUE, art. 267) y de la de inconstitucionalidad (LOTC, art. 35), con su efecto suspensivo."
+    afines: ["Cuestiones prejudiciales (penal, administrativa, civil)", "Suspensión de la vista y nuevo señalamiento", "Caducidad de la instancia", "Litispendencia", "Acumulación de procesos"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-07"
+    revisor: "armero"

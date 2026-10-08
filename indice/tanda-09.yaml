@@ -1,0 +1,441 @@
+# Índice de conceptos de «Consulta de normas» — tanda 9 (hipotecaria, cautelares, recursos y costas)
+# Revisor: armero. Espejo: legalize-es@aca28304d. Todo precepto citado se ha leído en el espejo en esta pasada.
+# Vigencia: contraste con la API de boe.es (scripts/contraste_boe.py --solo "LEC,LOPJ,LO 1/2025,TRLGDCU,CE,CC", 08-10-2026 07:51):
+# distintos LEC 22 y 685, CC 396 (errata del espejo). LOPJ, LO 1/2025, TRLGDCU y CE: ninguno. Ver tanda-09-notas.md.
+# AVISO: el art. 685.2 LEC del espejo muestra en negrita párrafos anulados por la STC 26/2025; desde el 08-10-2026 rige otro texto.
+# Voces 142, 143, 144, 162 y 169 a 176 de la lista maestra (12 voces). Recuento y estados en tanda-09-notas.md.
+
+voces:
+  - voz: "Ejecución hipotecaria: especialidades"
+    sinonimos: ["procedimiento de ejecución hipotecaria", "ejecución directa sobre bienes hipotecados", "acción hipotecaria", "ejecución de hipoteca", "vencimiento anticipado", "requerimiento de pago al deudor hipotecario", "certificación de dominio y cargas", "liberación del bien hipotecado", "hipotecante no deudor", "tercer poseedor"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "681", apartado: "1", tipo: "regula", nota: "La deuda con prenda o hipoteca puede reclamarse directamente contra los bienes gravados, con las especialidades de este capítulo."}
+      - {norma: "LEC", articulo: "682", apartado: "1", tipo: "regula", nota: "Solo si la ejecución se dirige exclusivamente contra los bienes hipotecados o pignorados."}
+      - {norma: "LEC", articulo: "682", apartado: "2.1.º", tipo: "regula", nota: "La escritura fija el precio de tasación para subasta, nunca inferior al 75 % de la tasación oficial."}
+      - {norma: "LEC", articulo: "682", apartado: "2.2.º", tipo: "regula", nota: "La escritura fija un domicilio del deudor para requerimientos y notificaciones."}
+      - {norma: "LEC", articulo: "683", apartado: "1", tipo: "conexa", nota: "Cambio de ese domicilio: dentro de la misma población, sin consentimiento del acreedor; fuera, con él."}
+      - {norma: "LEC", articulo: "684", apartado: "1.1.º", tipo: "regula", nota: "Inmuebles: tribunal del lugar de la finca; no rige la sumisión expresa ni tácita."}
+      - {norma: "LEC", articulo: "684", apartado: "2", tipo: "conexa", nota: "El tribunal examina de oficio su competencia territorial."}
+      - {norma: "LEC", articulo: "685", apartado: "1", tipo: "regula", nota: "Demanda contra el deudor y, en su caso, el hipotecante no deudor o el tercer poseedor que acreditó su adquisición."}
+      - {norma: "LEC", articulo: "685", apartado: "2", tipo: "regula", nota: "Título y certificación registral; indicar vivienda habitual y gran tenedor. Texto del RDL 29/2026, aún no en el espejo."}
+      - {norma: "LEC", articulo: "685", apartado: "5", tipo: "conexa", nota: "Para seguir luego contra avalistas o fiadores por lo que falte (579.1), deben haber sido notificados de la demanda."}
+      - {norma: "LEC", articulo: "686", apartado: "1", tipo: "regula", nota: "El auto manda requerir de pago al deudor, hipotecante no deudor o tercer poseedor en el domicilio del Registro."}
+      - {norma: "LEC", articulo: "686", apartado: "2", tipo: "regula", nota: "Sin requerimiento judicial si se acredita el notarial previo hecho en el domicilio registral (581.2)."}
+      - {norma: "LEC", articulo: "686", apartado: "3", tipo: "regula", nota: "Fallido el requerimiento en el domicilio registral y hechas averiguaciones: edictos del art. 164."}
+      - {norma: "LEC", articulo: "688", apartado: "1", tipo: "regula", nota: "Certificación de dominio y cargas con inserción literal de la hipoteca y constancia de su subsistencia."}
+      - {norma: "LEC", articulo: "688", apartado: "3", tipo: "conexa", nota: "Si la hipoteca no existe o está cancelada, el LAJ pone fin a la ejecución por decreto."}
+      - {norma: "LEC", articulo: "689", apartado: "1", tipo: "conexa", nota: "Al último titular registral no requerido se le notifica para que intervenga o pague antes del remate."}
+      - {norma: "LEC", articulo: "690", apartado: "1", tipo: "conexa", nota: "Diez días tras el requerimiento, el acreedor puede pedir la administración o posesión interina de la finca."}
+      - {norma: "LEC", articulo: "691", apartado: "1", tipo: "regula", nota: "Veinte días después del requerimiento y las notificaciones, subasta a instancia del actor, deudor o tercer poseedor."}
+      - {norma: "LEC", articulo: "691", apartado: "4", tipo: "conexa", nota: "Sean muebles o inmuebles, la subasta sigue las reglas de la subasta de inmuebles."}
+      - {norma: "LEC", articulo: "691", apartado: "6", tipo: "conexa", nota: "Caben el convenio de realización y la realización por persona o entidad especializada."}
+      - {norma: "LEC", articulo: "692", apartado: "1", tipo: "regula", nota: "El remate paga principal, intereses y costas dentro de la cobertura hipotecaria; el exceso, a los acreedores posteriores."}
+      - {norma: "LEC", articulo: "693", apartado: "1", tipo: "regula", nota: "Impago parcial: basta que venzan tres plazos mensuales o cuotas equivalentes a tres meses."}
+      - {norma: "LEC", articulo: "693", apartado: "2", tipo: "regula", nota: "Vencimiento total si se pactó e inscribió; persona física y vivienda: art. 24 Ley 5/2019 y art. 129 bis LH."}
+      - {norma: "LEC", articulo: "693", apartado: "3", tipo: "regula", nota: "Vivienda habitual: el deudor libera el bien consignando lo vencido, sin consentimiento del acreedor; otra vez, tras 3 años."}
+      - {norma: "LEC", articulo: "697", tipo: "conexa", nota: "Solo se suspende por causa penal sobre falsedad del título o invalidez del despacho (art. 569)."}
+      - {norma: "LEC", articulo: "698", apartado: "1", tipo: "regula", nota: "Lo demás (nulidad del título, cuantía, vencimiento) va al juicio que corresponda, sin suspender la ejecución."}
+      - {norma: "LEC", articulo: "698", apartado: "2", tipo: "conexa", nota: "En ese juicio cabe pedir que se retenga lo que deba entregarse al acreedor, con garantía si no hay solvencia notoria."}
+      - {norma: "LEC", articulo: "575", apartado: "1 bis", tipo: "conexa", nota: "Ejecución de vivienda habitual: las costas exigibles al deudor no pasan del 5 % de lo reclamado."}
+      - {norma: "LEC", articulo: "579", apartado: "1", tipo: "conexa", nota: "Si el producto de la subasta no cubre el crédito, se sigue por lo que falte con las normas ordinarias."}
+    no_consta_en_norma:
+      - "Vencimiento anticipado declarado abusivo: si se sobresee o se sigue por lo vencido, criterio jurisprudencial (TJUE y TS)."
+      - "Elección entre esta vía y la ejecución ordinaria sobre el bien hipotecado (579.1): el texto no la ordena."
+    fuera_de_la_herramienta:
+      - "Ley Hipotecaria (arts. 129 y 129 bis) y su Reglamento: venta extrajudicial y vencimiento anticipado inscrito."
+      - "Ley 5/2019, de crédito inmobiliario, art. 24: requisitos del vencimiento anticipado; a él remite el 693.2 LEC."
+      - "Ley 1/2013, art. 1, y RDL 6/2012 (Código de Buenas Prácticas): suspensión de lanzamientos y medidas para deudores vulnerables."
+      - "RDL 29/2026, arts. 1.5 y 2: suspensión hasta el 31-12-2030 de lanzamientos de vulnerables sin alternativa (pendiente de convalidar)."
+    afines: ["Oposición en la ejecución hipotecaria", "Adjudicación al acreedor y vivienda habitual", "Deuda remanente tras ejecutar la vivienda habitual", "Despacho de la ejecución y plazo de espera", "Vulnerabilidad y gran tenedor en la demanda", "Subasta: convocatoria, posturas y aprobación del remate", "Cargas anteriores y ocupantes del inmueble subastado"]
+    # VIGENCIA: cita LEC 685, cambiado el 08-10-2026 por el RDL 29/2026 (texto leído en la API, versión BOE-A-2026-20823). Provisional.
+    estado: "provisional"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Oposición en la ejecución hipotecaria"
+    sinonimos: ["oposición del deudor hipotecario", "causas tasadas de oposición", "cláusula abusiva en la ejecución hipotecaria", "cláusula suelo en la ejecución", "vencimiento anticipado abusivo", "sobreseimiento de la ejecución hipotecaria", "comparecencia de oposición", "apelación del auto de oposición"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "695", apartado: "1", tipo: "regula", nota: "Solo se admite la oposición fundada en las cuatro causas tasadas del apartado."}
+      - {norma: "LEC", articulo: "695", apartado: "1.1.ª", tipo: "regula", nota: "Extinción de la garantía o de la obligación: con certificación registral de cancelación o escritura de carta de pago."}
+      - {norma: "LEC", articulo: "695", apartado: "1.2.ª", tipo: "regula", nota: "Error en la cantidad si la deuda es el saldo de una cuenta: se aporta la libreta o se precisa la discrepancia."}
+      - {norma: "LEC", articulo: "695", apartado: "1.3.ª", tipo: "conexa", nota: "Muebles o prenda sin desplazamiento: sujeción a otra garantía o embargo inscritos antes, con certificación."}
+      - {norma: "LEC", articulo: "695", apartado: "1.4.ª", tipo: "regula", nota: "Carácter abusivo de una cláusula que funde la ejecución o haya determinado la cantidad exigible."}
+      - {norma: "LEC", articulo: "695", apartado: "2", tipo: "regula", nota: "La oposición suspende la ejecución; comparecencia con quince días desde la citación y auto en dos días."}
+      - {norma: "LEC", articulo: "695", apartado: "3", tipo: "regula", nota: "Causas 1.ª y 3.ª: sobreseimiento; 2.ª: fija la cantidad; 4.ª: sobresee o sigue sin la cláusula, con cosa juzgada."}
+      - {norma: "LEC", articulo: "695", apartado: "4", tipo: "regula", nota: "Apelable el auto que sobresee, inaplica una cláusula o desestima la causa 4.ª; los demás, sin recurso."}
+      - {norma: "LEC", articulo: "552", apartado: "1", tipo: "regula", nota: "Antes de despachar, el tribunal examina de oficio las cláusulas abusivas del título y oye quince días a las partes."}
+      - {norma: "LEC", articulo: "552", apartado: "4", tipo: "regula", nota: "Contrato con consumidor: control de oficio de las cláusulas que fundan la ejecución o la cantidad; cosa juzgada."}
+      - {norma: "LEC", articulo: "557", apartado: "1.7.ª", tipo: "conexa", nota: "Régimen común de los títulos no judiciales: la cláusula abusiva también es causa de oposición."}
+      - {norma: "LEC", articulo: "556", apartado: "1", tipo: "conexa", nota: "Plazo general de diez días desde la notificación del auto para oponerse; el 695 no fija otro."}
+      - {norma: "LEC", articulo: "696", apartado: "1", tipo: "conexa", nota: "Tercería de dominio: título de fecha fehaciente e inscrito antes que la hipoteca."}
+      - {norma: "LEC", articulo: "696", apartado: "2", tipo: "conexa", nota: "Admitida la tercería, se suspende la ejecución sobre los bienes a que se refiere."}
+      - {norma: "LEC", articulo: "697", tipo: "regula", nota: "Fuera de oposición y tercería, solo suspende la causa penal sobre falsedad del título o invalidez del despacho."}
+      - {norma: "LEC", articulo: "698", apartado: "1", tipo: "regula", nota: "Cualquier otra reclamación, incluida la nulidad del título o la cuantía, va al juicio que corresponda y no suspende."}
+      - {norma: "LEC", articulo: "698", apartado: "2", tipo: "conexa", nota: "En ese juicio cabe pedir la retención de lo que deba entregarse al acreedor."}
+      - {norma: "LEC", articulo: "698", apartado: "3", tipo: "conexa", nota: "Si el acreedor afianza la cantidad retenida, se alza la retención."}
+      - {norma: "LEC", articulo: "561", apartado: "2", tipo: "conexa", nota: "Régimen común: el auto que aprecia la abusividad determina sus consecuencias y, firme, hace cosa juzgada."}
+    no_consta_en_norma:
+      - "Plazo para oponerse en la ejecución hipotecaria: el 695 no lo fija; la aplicación del 556.1 es criterio jurisprudencial."
+      - "Costas de la oposición hipotecaria: el 695 no las regula; si rige el 561, criterio jurisprudencial."
+      - "Abusividad de vencimiento anticipado, intereses de demora o cláusula suelo y su efecto en la ejecución: criterio del TJUE y del TS."
+      - "Control de oficio de la abusividad ya despachada la ejecución, sin oposición del deudor: criterio jurisprudencial (TJUE)."
+    fuera_de_la_herramienta:
+      - "Ley 1/2013, disposición transitoria 4.ª: incidente extraordinario de oposición por abusividad en ejecuciones anteriores."
+      - "Ley 5/2019 (arts. 24 y 25) y art. 114 de la Ley Hipotecaria: vencimiento anticipado e intereses de demora."
+    afines: ["Ejecución hipotecaria: especialidades", "Control de oficio de cláusulas abusivas en el proceso", "Cláusulas abusivas: concepto, nulidad e integración", "Oposición a la ejecución por motivos de fondo", "Tercería de dominio", "Recurso de apelación (plazo, interposición, prueba en segunda instancia)"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Adjudicación al acreedor y vivienda habitual"
+    sinonimos: ["adjudicación al ejecutante", "adjudicación por el 70 %", "adjudicación por el 60 %", "subasta desierta", "subasta sin postores", "mejora de postura por el ejecutado", "cesión de remate", "aprobación del remate de la vivienda habitual", "imputación de pagos"]
+    normas_base: ["LEC", "LO 1/2025"]
+    remisiones:
+      - {norma: "LEC", articulo: "691", apartado: "4", tipo: "conexa", nota: "La subasta del bien hipotecado sigue las reglas de la subasta de inmuebles."}
+      - {norma: "LEC", articulo: "647", apartado: "2", tipo: "regula", nota: "El ejecutante puja sin consignar; para adjudicarse ha de pujar. Si no hubo pujas, no puede pedir la adjudicación."}
+      - {norma: "LEC", articulo: "647", apartado: "3", tipo: "conexa", nota: "El ejecutante puede ceder el remate; la deuda se reduce por el importe total del remate, no por el de la cesión."}
+      - {norma: "LEC", articulo: "670", apartado: "1", tipo: "regula", nota: "Postura igual o superior al 70 % del valor de subasta: el LAJ aprueba el remate al día siguiente del cierre."}
+      - {norma: "LEC", articulo: "670", apartado: "2", tipo: "regula", nota: "Si el mejor postor es el ejecutante y supera el principal, se liquida y consigna la diferencia; si no, quiebra."}
+      - {norma: "LEC", articulo: "670", apartado: "3", tipo: "regula", nota: "Postura bajo el 70 %: en diez días el ejecutado puede presentar mejorante por el 60 % o lo que cubra la deuda."}
+      - {norma: "LEC", articulo: "670", apartado: "3, párrafo 4.º", tipo: "regula", nota: "Sin mejora: remate si llega al 50 %, o al 40 % si cubre todo; por debajo decide el LAJ ponderando las circunstancias."}
+      - {norma: "LEC", articulo: "670", apartado: "3, párrafo 5.º", tipo: "conexa", nota: "Contra el decreto que aprueba o deniega el remate, revisión directa ante el tribunal."}
+      - {norma: "LEC", articulo: "670", apartado: "3, párrafo 6.º", tipo: "regula", nota: "Vivienda habitual: no menos del 70 %, o de lo debido con mínimo del 60 %; si puja el ejecutante, se eleva a esos importes."}
+      - {norma: "LEC", articulo: "670", apartado: "5", tipo: "conexa", nota: "El adjudicatario acepta las cargas anteriores y se subroga en ellas."}
+      - {norma: "LEC", articulo: "670", apartado: "7", tipo: "regula", nota: "Hasta aprobar el remate o la adjudicación, el ejecutado libera el bien pagando principal, intereses y costas."}
+      - {norma: "LEC", articulo: "671", tipo: "regula", nota: "Subasta desierta: alzamiento del embargo, salvo que el ejecutado designe adjudicatario por el 50 % (40 % si cubre todo)."}
+      - {norma: "LEC", articulo: "671", apartado: "párrafo 3.º", tipo: "conexa", nota: "Petición por menos: decide el LAJ con los criterios del 670.3; revisión directa ante el tribunal."}
+      - {norma: "LEC", articulo: "671", apartado: "párrafo 4.º", tipo: "conexa", nota: "De común acuerdo, las partes pueden pedir nueva subasta u otra forma de pago (convenio del art. 640)."}
+      - {norma: "LEC", articulo: "654", apartado: "3", tipo: "regula", nota: "Si no basta: imputación a intereses remuneratorios, principal, moratorios y costas, con certificado de lo pendiente."}
+      - {norma: "LEC", articulo: "579", apartado: "2", tipo: "regula", nota: "Vivienda habitual: liberación pagando el 65 % en 5 años o el 80 % en 10; y rebaja por la plusvalía de la reventa."}
+      - {norma: "LEC", articulo: "669", apartado: "3", tipo: "conexa", nota: "Si el poseedor facilita la inspección, el deudor puede pedir que se le reduzca la deuda hasta un 2 %."}
+      - {norma: "LEC", articulo: "692", apartado: "1", tipo: "conexa", nota: "Deudor propietario: el exceso sobre la cobertura hipotecaria paga el resto del crédito tras los acreedores posteriores."}
+      - {norma: "LEC", articulo: "673", tipo: "conexa", nota: "Título inscribible: testimonio del decreto de adjudicación."}
+      - {norma: "LEC", articulo: "674", tipo: "conexa", nota: "Mandamiento de cancelación de la hipoteca ejecutada y de las cargas posteriores."}
+      - {norma: "LEC", articulo: "675", apartado: "2", tipo: "conexa", nota: "Inmueble ocupado: lanzamiento de ocupantes sin título; el adquirente lo pide en un año desde la adquisición."}
+      - {norma: "LO 1/2025", articulo: "dt 9", apartado: "1", tipo: "conexa", nota: "La reforma rige solo en procesos incoados desde el 3-4-2025; en los anteriores, el acreedor pide la adjudicación (vivienda: 70/60 %)."}
+    no_consta_en_norma:
+      - "Ejecución incoada antes del 3-4-2025 con subasta posterior: si rige el 671 nuevo o el anterior, la dt 9.ª no lo precisa."
+      - "Si el propio ejecutante puede ser la «persona designada» del 671: el texto no lo aclara."
+      - "Valor de subasta frente a valor de mercado y enriquecimiento injusto del acreedor adjudicatario: criterio jurisprudencial."
+    fuera_de_la_herramienta:
+      - "RDL 29/2026, art. 1.4 y 1.5: límites a adquirir viviendas por menos del 70 % del valor de mercado y suspensión de lanzamientos (sin convalidar)."
+      - "Ley Hipotecaria y su Reglamento: inscripción de la adjudicación y cancelación de cargas."
+    afines: ["Ejecución hipotecaria: especialidades", "Deuda remanente tras ejecutar la vivienda habitual", "Subasta: convocatoria, posturas y aprobación del remate", "Cargas anteriores y ocupantes del inmueble subastado", "Lanzamiento", "Recurso de revisión contra decretos del LAJ"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Medidas cautelares: presupuestos"
+    sinonimos: ["periculum in mora", "fumus boni iuris", "apariencia de buen derecho", "peligro por la mora procesal", "tutela cautelar", "solicitud de medidas cautelares", "medidas cautelares innominadas", "caución del solicitante", "instrumentalidad de las medidas"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "721", apartado: "1", tipo: "regula", nota: "El actor, principal o reconvencional, pide bajo su responsabilidad las medidas que aseguren la sentencia estimatoria."}
+      - {norma: "LEC", articulo: "721", apartado: "2", tipo: "regula", nota: "No se acuerdan de oficio ni más gravosas que las pedidas, salvo procesos especiales y el apartado 3."}
+      - {norma: "LEC", articulo: "721", apartado: "3", tipo: "conexa", nota: "Acción individual de consumidor suspendida por el art. 43: el tribunal puede acordarlas de oficio y sin caución."}
+      - {norma: "LEC", articulo: "726", apartado: "1", tipo: "regula", nota: "Características: exclusivamente conducente a la efectividad de la tutela y no sustituible por otra menos gravosa."}
+      - {norma: "LEC", articulo: "726", apartado: "2", tipo: "regula", nota: "Caben órdenes y prohibiciones de contenido similar a lo pedido, temporales y sin prejuzgar la sentencia."}
+      - {norma: "LEC", articulo: "727", tipo: "regula", nota: "Lista abierta: embargo preventivo, administración, depósito, inventario, anotaciones, cese de actividad y otras (11.ª)."}
+      - {norma: "LEC", articulo: "727", apartado: "5.ª", tipo: "conexa", nota: "Anotación preventiva de demanda o de inicio de un MASC sobre bienes inscribibles."}
+      - {norma: "LEC", articulo: "728", apartado: "1", tipo: "regula", nota: "Peligro por la mora procesal: justificar que, sin la medida, la sentencia estimatoria podría quedar frustrada."}
+      - {norma: "LEC", articulo: "728", apartado: "1, párrafo 2.º", tipo: "regula", nota: "No se acuerdan para alterar situaciones consentidas largo tiempo, salvo que se justifique el retraso."}
+      - {norma: "LEC", articulo: "728", apartado: "2", tipo: "regula", nota: "Apariencia de buen derecho: datos y documentos para un juicio provisional e indiciario favorable."}
+      - {norma: "LEC", articulo: "728", apartado: "3", tipo: "regula", nota: "Caución suficiente por los daños al demandado, en las formas del 529.3; dispensable en acciones colectivas de consumo."}
+      - {norma: "LEC", articulo: "730", apartado: "1", tipo: "regula", nota: "De ordinario se piden con la demanda principal."}
+      - {norma: "LEC", articulo: "730", apartado: "2", tipo: "conexa", nota: "Antes de la demanda, si hay urgencia o necesidad; caducan si no se demanda en veinte días."}
+      - {norma: "LEC", articulo: "730", apartado: "4", tipo: "conexa", nota: "Después de la demanda o pendiente recurso, solo por hechos y circunstancias que lo justifiquen entonces."}
+      - {norma: "LEC", articulo: "731", apartado: "1", tipo: "conexa", nota: "Accesoriedad: terminado el proceso se alzan, salvo condena, que las mantiene durante la espera del art. 548."}
+      - {norma: "LEC", articulo: "732", apartado: "1", tipo: "regula", nota: "La solicitud justifica con claridad y precisión cada presupuesto."}
+      - {norma: "LEC", articulo: "732", apartado: "2", tipo: "regula", nota: "Se acompañan los documentos o se ofrece la prueba; para el actor, la prueba precluye con la solicitud."}
+      - {norma: "LEC", articulo: "732", apartado: "3", tipo: "regula", nota: "Hay que ofrecer caución, con su tipo y la justificación del importe."}
+      - {norma: "LEC", articulo: "733", apartado: "1", tipo: "conexa", nota: "Regla general: se resuelve oído el demandado."}
+      - {norma: "LEC", articulo: "735", apartado: "2", tipo: "regula", nota: "El auto acuerda si concurren peligro y apariencia de buen derecho; apelable sin efecto suspensivo."}
+      - {norma: "LEC", articulo: "736", apartado: "1", tipo: "conexa", nota: "El auto que deniega es apelable con tramitación preferente; costas según el art. 394."}
+      - {norma: "LEC", articulo: "736", apartado: "2", tipo: "conexa", nota: "Denegada, puede reiterarse si cambian las circunstancias."}
+      - {norma: "LEC", articulo: "737", tipo: "conexa", nota: "La caución se presta antes de cualquier acto de cumplimiento de la medida."}
+      - {norma: "LEC", articulo: "723", apartado: "1", tipo: "conexa", nota: "Competente: el de la primera instancia o, antes de la demanda, el competente para el asunto principal."}
+    no_consta_en_norma:
+      - "Ponderación entre peligro, apariencia de buen derecho y proporcionalidad: criterio jurisprudencial."
+      - "Cuantía de la caución: el 728.3 no da baremo; criterio del tribunal caso por caso."
+    fuera_de_la_herramienta:
+      - "Ley 60/2003 de arbitraje (art. 722 LEC) y Ley Hipotecaria, art. 42 (anotaciones preventivas): no están en la herramienta."
+    afines: ["Embargo preventivo", "Anotación preventiva de demanda", "Caución", "Medidas cautelares sin audiencia y oposición", "Medidas cautelares antes de la demanda", "Modificación, alzamiento y caución sustitutoria"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Recurso de apelación (plazo, interposición, prueba en segunda instancia)"
+    sinonimos: ["apelación", "segunda instancia", "recurso ante la Audiencia Provincial", "escrito de interposición", "plazo de veinte días para apelar", "prueba en segunda instancia", "documentos en apelación", "sentencias no apelables", "límite de 3.000 euros", "reformatio in peius", "apelación por infracción procesal", "consignación de rentas para recurrir"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "455", apartado: "1", tipo: "regula", nota: "Apelables las sentencias de todo juicio y los autos definitivos; no las de verbales por cuantía de hasta 3.000 euros."}
+      - {norma: "LEC", articulo: "455", apartado: "2.2.º", tipo: "regula", nota: "De lo resuelto en primera instancia conoce la Audiencia Provincial de la circunscripción."}
+      - {norma: "LEC", articulo: "456", apartado: "1", tipo: "regula", nota: "Nuevo examen de lo actuado, con los fundamentos de la primera instancia y, en su caso, prueba en la segunda."}
+      - {norma: "LEC", articulo: "456", apartado: "2", tipo: "conexa", nota: "Contra sentencia desestimatoria o auto que pone fin al proceso, la apelación no suspende."}
+      - {norma: "LEC", articulo: "456", apartado: "3", tipo: "conexa", nota: "La sentencia estimatoria apelada puede ejecutarse provisionalmente (título II del libro III)."}
+      - {norma: "LEC", articulo: "457", tipo: "conexa", nota: "Ya no hay escrito de preparación: el artículo está sin contenido desde la Ley 37/2011."}
+      - {norma: "LEC", articulo: "458", apartado: "1", tipo: "regula", nota: "Se interpone ante el tribunal que ha de resolverlo, en veinte días desde la notificación, con copia de la resolución."}
+      - {norma: "LEC", articulo: "458", apartado: "2", tipo: "regula", nota: "El escrito expone las alegaciones y cita la resolución apelada y los pronunciamientos que impugna."}
+      - {norma: "LEC", articulo: "458", apartado: "3", tipo: "conexa", nota: "El tribunal de apelación reclama los autos; el de origen los remite y emplaza a los no recurrentes por diez días."}
+      - {norma: "LEC", articulo: "458", apartado: "4", tipo: "regula", nota: "Apelable y en plazo: el LAJ lo tiene por interpuesto; si no, decide el tribunal y, si inadmite, devuelve los autos."}
+      - {norma: "LEC", articulo: "459", tipo: "regula", nota: "Infracción procesal: citar la norma, alegar la indefensión y acreditar que se denunció cuando hubo ocasión."}
+      - {norma: "LEC", articulo: "460", apartado: "1", tipo: "regula", nota: "Solo documentos de los casos del art. 270 que no pudieron aportarse en primera instancia."}
+      - {norma: "LEC", articulo: "460", apartado: "2", tipo: "regula", nota: "Prueba: la denegada con reposición o protesta, la admitida y no practicada sin culpa, y la de hechos nuevos."}
+      - {norma: "LEC", articulo: "460", apartado: "3", tipo: "conexa", nota: "El rebelde que se personó tarde sin culpa puede pedir en segunda instancia toda la prueba que le convenga."}
+      - {norma: "LEC", articulo: "461", apartado: "1", tipo: "regula", nota: "Traslado a las demás partes por diez días para oponerse o impugnar lo que les sea desfavorable."}
+      - {norma: "LEC", articulo: "464", apartado: "1", tipo: "regula", nota: "El tribunal decide en diez días sobre la prueba; si se admite, vista dentro del mes por los trámites del verbal."}
+      - {norma: "LEC", articulo: "464", apartado: "2", tipo: "conexa", nota: "Sin prueba, cabe vista si la pide una parte o el tribunal la considera necesaria."}
+      - {norma: "LEC", articulo: "465", apartado: "2", tipo: "conexa", nota: "Se resuelve en diez días tras la vista o, sin ella, en un mes desde los trámites del art. 461."}
+      - {norma: "LEC", articulo: "465", apartado: "3", tipo: "conexa", nota: "Infracción procesal cometida al dictar sentencia: se revoca y se resuelve sobre el fondo."}
+      - {norma: "LEC", articulo: "465", apartado: "4", tipo: "conexa", nota: "Nulidad radical: se reponen las actuaciones, salvo que el vicio pueda subsanarse en la segunda instancia."}
+      - {norma: "LEC", articulo: "465", apartado: "5", tipo: "regula", nota: "Solo se resuelven los puntos del recurso y de la oposición o impugnación; no se perjudica al apelante."}
+      - {norma: "LEC", articulo: "449", apartado: "1", tipo: "regula", nota: "Procesos con lanzamiento: el demandado acredita al recurrir tener pagadas las rentas vencidas y las adelantadas."}
+      - {norma: "LEC", articulo: "449", apartado: "2", tipo: "conexa", nota: "Si deja de pagar durante el recurso, se declara desierto en cualquier estado."}
+      - {norma: "LEC", articulo: "449", apartado: "4", tipo: "regula", nota: "Deudas con la comunidad: el condenado acredita al recurrir haber pagado o consignado la condena."}
+      - {norma: "LEC", articulo: "449", apartado: "6", tipo: "conexa", nota: "Antes de rechazar o declarar desierto el recurso, se da ocasión de subsanar (art. 231)."}
+      - {norma: "LEC", articulo: "448", apartado: "2", tipo: "conexa", nota: "El plazo corre desde el día siguiente a la notificación o a la de su aclaración o denegación."}
+      - {norma: "LEC", articulo: "285", apartado: "2", tipo: "conexa", nota: "Prueba inadmitida: reposición en el acto y protesta para hacerla valer en la segunda instancia."}
+      - {norma: "LEC", articulo: "397", tipo: "conexa", nota: "La apelación sobre las costas de la primera instancia se resuelve con el art. 394."}
+      - {norma: "LEC", articulo: "466", tipo: "conexa", nota: "Contra la sentencia de la Audiencia Provincial cabe recurso de casación."}
+    no_consta_en_norma:
+      - "Alcance de la revisión de la valoración de la prueba en apelación: criterio jurisprudencial."
+      - "Cuantía de 3.000 euros (455.1): si se mide por la del proceso o por el gravamen, criterio jurisprudencial."
+      - "Autos no definitivos apelables: solo cuando un precepto lo dice; no hay una lista única en la LEC."
+    afines: ["Impugnación de la sentencia por el apelado", "Depósito para recurrir", "Costas en los recursos", "Recurso de casación", "Recurso de queja", "Ejecución provisional y su oposición", "Pertinencia y utilidad de la prueba; protesta"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Impugnación de la sentencia por el apelado"
+    sinonimos: ["impugnación adhesiva", "adhesión a la apelación", "apelación adhesiva", "escrito de oposición e impugnación", "impugnación de la resolución apelada", "reformatio in peius"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "461", apartado: "1", tipo: "regula", nota: "En los diez días para oponerse, el apelado puede impugnar la resolución en lo que le resulte desfavorable."}
+      - {norma: "LEC", articulo: "461", apartado: "2", tipo: "regula", nota: "La impugnación de quien no recurrió se formula con los requisitos del escrito de interposición."}
+      - {norma: "LEC", articulo: "461", apartado: "3", tipo: "regula", nota: "El apelado puede aportar documentos y pedir prueba (art. 460) y alegar sobre la admisibilidad de los del apelante."}
+      - {norma: "LEC", articulo: "461", apartado: "4", tipo: "regula", nota: "De la impugnación se da traslado al apelante principal por diez días sobre su admisibilidad y la prueba."}
+      - {norma: "LEC", articulo: "465", apartado: "5", tipo: "regula", nota: "El fallo solo perjudica al apelante si se estima la impugnación del inicialmente apelado."}
+      - {norma: "LEC", articulo: "458", apartado: "2", tipo: "conexa", nota: "Contenido exigido: alegaciones, resolución apelada y pronunciamientos que se impugnan."}
+      - {norma: "LEC", articulo: "458", apartado: "4, párrafo 3.º", tipo: "conexa", nota: "El recurrido puede alegar en su oposición la inadmisibilidad de la apelación."}
+      - {norma: "LEC", articulo: "456", apartado: "1", tipo: "conexa", nota: "El objeto de la apelación se fija con los fundamentos de hecho y de derecho de la primera instancia."}
+      - {norma: "LEC", articulo: "450", apartado: "1", tipo: "conexa", nota: "El recurrente puede desistir del recurso antes de que se resuelva."}
+      - {norma: "LEC", articulo: "450", apartado: "2", tipo: "conexa", nota: "Si desisten solo algunos recurrentes, se abandonan las pretensiones exclusivas de quienes desisten."}
+      - {norma: "LEC", articulo: "460", apartado: "2", tipo: "conexa", nota: "La prueba que puede pedir el impugnante es la misma que la del apelante."}
+      - {norma: "LEC", articulo: "398", apartado: "1", tipo: "conexa", nota: "Costas del recurso: se aplica el art. 394."}
+    no_consta_en_norma:
+      - "Si la impugnación sobrevive al desistimiento o inadmisión de la apelación principal: el 450 no lo dice; criterio jurisprudencial."
+      - "Si cabe impugnar pronunciamientos que afectan a otro apelado distinto del apelante: criterio jurisprudencial."
+      - "Si la impugnación exige depósito propio: la disposición adicional 15.ª LOPJ no la menciona."
+    afines: ["Recurso de apelación (plazo, interposición, prueba en segunda instancia)", "Depósito para recurrir", "Costas en los recursos", "Desistimiento"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Recurso de reposición"
+    sinonimos: ["reposición", "recurso contra providencia", "recurso contra auto no definitivo", "recurso contra diligencia de ordenación", "reposición oral en la vista", "protesta", "pie de recurso"]
+    normas_base: ["LEC", "LOPJ"]
+    remisiones:
+      - {norma: "LEC", articulo: "451", apartado: "1", tipo: "regula", nota: "Contra diligencias de ordenación y decretos no definitivos, ante el LAJ, salvo que quepa revisión directa."}
+      - {norma: "LEC", articulo: "451", apartado: "2", tipo: "regula", nota: "Contra providencias y autos no definitivos, ante el mismo tribunal que los dictó."}
+      - {norma: "LEC", articulo: "451", apartado: "3", tipo: "regula", nota: "La reposición no suspende la resolución recurrida."}
+      - {norma: "LEC", articulo: "452", apartado: "1", tipo: "regula", nota: "Plazo de cinco días; hay que expresar la infracción en que incurre la resolución."}
+      - {norma: "LEC", articulo: "452", apartado: "2", tipo: "regula", nota: "Sin esos requisitos se inadmite: por providencia irrecurrible o, ante el LAJ, por decreto recurrible en revisión."}
+      - {norma: "LEC", articulo: "453", apartado: "1", tipo: "regula", nota: "Admitido, plazo común de cinco días a las demás partes para impugnarlo."}
+      - {norma: "LEC", articulo: "453", apartado: "2", tipo: "regula", nota: "Se resuelve sin más trámite, por auto o decreto, en cinco días."}
+      - {norma: "LEC", articulo: "454", tipo: "regula", nota: "Contra el auto que lo resuelve no hay recurso, salvo queja; la cuestión se reproduce al recurrir la definitiva."}
+      - {norma: "LEC", articulo: "454 bis", apartado: "1", tipo: "conexa", nota: "Contra el decreto del LAJ que resuelve la reposición cabe revisión ante el tribunal."}
+      - {norma: "LEC", articulo: "285", apartado: "2", tipo: "regula", nota: "En la vista, la admisión o inadmisión de prueba solo admite reposición, resuelta en el acto; si se desestima, protesta."}
+      - {norma: "LEC", articulo: "552", apartado: "2", tipo: "conexa", nota: "Auto que deniega el despacho de la ejecución: reposición potestativa antes de la apelación."}
+      - {norma: "LEC", articulo: "448", apartado: "1", tipo: "conexa", nota: "Se recurren las resoluciones que afectan desfavorablemente a la parte."}
+      - {norma: "LEC", articulo: "448", apartado: "2", tipo: "conexa", nota: "El plazo corre desde el día siguiente a la notificación o a la de su aclaración o denegación."}
+      - {norma: "LEC", articulo: "208", apartado: "4", tipo: "conexa", nota: "Toda resolución dice si es firme o qué recurso cabe, ante qué órgano y en qué plazo."}
+      - {norma: "LEC", articulo: "215", apartado: "5", tipo: "conexa", nota: "Pedir aclaración o complemento interrumpe el plazo para recurrir."}
+      - {norma: "LOPJ", articulo: "da 15", apartado: "4", tipo: "conexa", nota: "Depósito de 25 euros; no se exige para la reposición previa a la queja."}
+      - {norma: "LOPJ", articulo: "da 15", apartado: "2", tipo: "conexa", nota: "El depósito solo se exige en recursos que se tramitan por escrito: no en la reposición oral en vista."}
+    no_consta_en_norma:
+      - "Reposición oral contra resoluciones dictadas en vista fuera del 285.2: el texto no la generaliza; criterio jurisprudencial."
+      - "Pie de recurso erróneo (208.4) y su efecto sobre el plazo: criterio jurisprudencial y constitucional."
+    afines: ["Recurso de revisión contra decretos del LAJ", "Recurso de queja", "Depósito para recurrir", "Pertinencia y utilidad de la prueba; protesta", "Resoluciones procesales: clases y firmeza"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Recurso de revisión contra decretos del LAJ"
+    sinonimos: ["recurso de revisión", "recurso directo de revisión", "revisión del decreto del letrado", "recurso contra decreto", "control judicial de los decretos"]
+    normas_base: ["LEC", "LOPJ"]
+    remisiones:
+      - {norma: "LEC", articulo: "454 bis", apartado: "1", tipo: "regula", nota: "Revisión contra el decreto que resuelve la reposición; revisión directa contra decretos que ponen fin o impiden seguir."}
+      - {norma: "LEC", articulo: "454 bis", apartado: "1, párrafo 2.º", tipo: "regula", nota: "También revisión directa en los casos que la ley prevé expresamente."}
+      - {norma: "LEC", articulo: "454 bis", apartado: "2", tipo: "regula", nota: "Cinco días, citando la infracción; admitido por diligencia, cinco días comunes para impugnarlo."}
+      - {norma: "LEC", articulo: "454 bis", apartado: "2, párrafo 2.º", tipo: "conexa", nota: "Sin los requisitos de admisibilidad, el tribunal lo inadmite por providencia."}
+      - {norma: "LEC", articulo: "454 bis", apartado: "2, párrafo 3.º", tipo: "regula", nota: "Resuelve el tribunal, sin más trámite, por auto en cinco días."}
+      - {norma: "LEC", articulo: "454 bis", apartado: "2, párrafo 4.º", tipo: "conexa", nota: "Contra la admisión o inadmisión no cabe recurso."}
+      - {norma: "LEC", articulo: "454 bis", apartado: "3", tipo: "regula", nota: "Contra el auto que lo resuelve, apelación solo si pone fin al procedimiento o impide su continuación."}
+      - {norma: "LEC", articulo: "451", apartado: "1", tipo: "regula", nota: "Lo demás del LAJ (diligencias y decretos no definitivos) va en reposición ante él, salvo revisión directa."}
+      - {norma: "LEC", articulo: "452", apartado: "2", tipo: "conexa", nota: "El decreto que inadmite una reposición es directamente recurrible en revisión."}
+      - {norma: "LEC", articulo: "244", apartado: "3", tipo: "conexa", nota: "Decreto que aprueba la tasación de costas: revisión directa; contra el auto, ningún recurso."}
+      - {norma: "LEC", articulo: "551", apartado: "5", tipo: "conexa", nota: "Decreto de medidas ejecutivas: revisión directa sin efecto suspensivo ante el tribunal de la orden general."}
+      - {norma: "LEC", articulo: "670", apartado: "3, párrafo 5.º", tipo: "conexa", nota: "Decreto que aprueba o deniega el remate: revisión directa ante el tribunal."}
+      - {norma: "LEC", articulo: "690", apartado: "3", tipo: "conexa", nota: "Resolución sobre las cuentas de la administración interina de la finca hipotecada: revisión directa."}
+      - {norma: "LEC", articulo: "225", apartado: "6.º", tipo: "conexa", nota: "Es nulo resolver por diligencia o decreto lo que la ley reserva a providencia, auto o sentencia."}
+      - {norma: "LOPJ", articulo: "da 15", apartado: "4", tipo: "conexa", nota: "Depósito de 25 euros; no se exige para la revisión contra el decreto que resuelve una reposición."}
+    no_consta_en_norma:
+      - "Decretos que otro precepto declara irrecurribles: si cabe revisión ante el juez, criterio constitucional (STC 15/2020, en nota del espejo)."
+    afines: ["Recurso de reposición", "Depósito para recurrir", "Tasación de costas y su impugnación", "Resoluciones procesales: clases y firmeza", "Subasta: convocatoria, posturas y aprobación del remate"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Depósito para recurrir"
+    sinonimos: ["depósito", "consignación para recurrir", "depósito de 50 euros", "depósito de 25 euros", "subsanación del depósito", "pérdida del depósito", "cuenta de depósitos y consignaciones"]
+    normas_base: ["LOPJ", "LEC"]
+    remisiones:
+      - {norma: "LOPJ", articulo: "da 15", apartado: "1", tipo: "regula", nota: "Recursos ordinarios y extraordinarios, revisión y rescisión a instancia del rebelde exigen depósito en el orden civil."}
+      - {norma: "LOPJ", articulo: "da 15", apartado: "2", tipo: "regula", nota: "Solo para recursos que se tramitan por escrito."}
+      - {norma: "LOPJ", articulo: "da 15", apartado: "3", tipo: "regula", nota: "Contra resoluciones que ponen fin o impiden seguir: 30 euros la queja; 50 la apelación, la casación y la rescisión."}
+      - {norma: "LOPJ", articulo: "da 15", apartado: "3.e)", tipo: "conexa", nota: "Fija 50 euros para la revisión, pero el apartado 14 excluye la revisión civil, que sigue el art. 513 LEC."}
+      - {norma: "LOPJ", articulo: "da 15", apartado: "4", tipo: "regula", nota: "Resoluciones que no ponen fin, y reposición o revisión ante el LAJ: 25 euros; salvo revisión del decreto de reposición."}
+      - {norma: "LOPJ", articulo: "da 15", apartado: "5", tipo: "regula", nota: "Exentos el Ministerio Fiscal, el Estado, las comunidades autónomas, las entidades locales y sus organismos autónomos."}
+      - {norma: "LOPJ", articulo: "da 15", apartado: "6", tipo: "regula", nota: "La notificación indica el depósito y su forma; se acredita haberlo consignado al interponer el recurso."}
+      - {norma: "LOPJ", articulo: "da 15", apartado: "7", tipo: "regula", nota: "Sin depósito no se admite; defecto u omisión: dos días para subsanar o queda firme la resolución."}
+      - {norma: "LOPJ", articulo: "da 15", apartado: "8", tipo: "regula", nota: "Si se estima total o parcialmente el recurso, se devuelve todo el depósito."}
+      - {norma: "LOPJ", articulo: "da 15", apartado: "9", tipo: "regula", nota: "Inadmitido o confirmada la resolución, el recurrente pierde el depósito."}
+      - {norma: "LOPJ", articulo: "da 15", apartado: "13", tipo: "conexa", nota: "El depósito es compatible con la tasa judicial."}
+      - {norma: "LOPJ", articulo: "da 15", apartado: "14", tipo: "regula", nota: "No se aplica a la revisión de sentencias firmes en el orden civil, que sigue la LEC."}
+      - {norma: "LEC", articulo: "513", apartado: "1", tipo: "regula", nota: "Demanda de revisión de sentencia firme: depósito de 300 euros, que se devuelve si se estima."}
+      - {norma: "LEC", articulo: "513", apartado: "2", tipo: "conexa", nota: "Falta o insuficiencia no subsanada en el plazo del LAJ (máximo cinco días): se repele la demanda."}
+      - {norma: "LEC", articulo: "241", apartado: "1.3.º", tipo: "conexa", nota: "Los depósitos necesarios para recurrir son costas."}
+      - {norma: "LEC", articulo: "449", apartado: "1", tipo: "conexa", nota: "Distinto del depósito: en procesos con lanzamiento hay que acreditar las rentas pagadas para recurrir."}
+      - {norma: "LEC", articulo: "449", apartado: "4", tipo: "conexa", nota: "Distinto del depósito: deudas con la comunidad, pago o consignación de la condena para recurrir."}
+      - {norma: "LEC", articulo: "449", apartado: "5", tipo: "conexa", nota: "Esas consignaciones caben por aval solidario a primer requerimiento u otro medio de disponibilidad inmediata."}
+      - {norma: "LEC", articulo: "231", tipo: "conexa", nota: "Tribunal y LAJ cuidan de que se subsanen los defectos de los actos de las partes."}
+    no_consta_en_norma:
+      - "Si la impugnación del apelado (art. 461 LEC) exige depósito propio: la disposición no lo dice; criterio jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Ley 1/1996, de asistencia jurídica gratuita, art. 6.5: exención de depósitos del beneficiario."
+      - "Ley 10/2012, de tasas judiciales: la tasa es compatible con el depósito (apartado 13)."
+    afines: ["Recurso de apelación (plazo, interposición, prueba en segunda instancia)", "Recurso de reposición", "Recurso de revisión contra decretos del LAJ", "Recurso de queja", "Revisión de sentencias firmes", "Rescisión de la sentencia firme a instancia del rebelde"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Nulidad de actuaciones"
+    sinonimos: ["nulidad de pleno derecho", "incidente de nulidad", "incidente excepcional de nulidad", "indefensión", "defecto de emplazamiento", "nulidad procesal", "retroacción de actuaciones", "conservación de actos", "subsanación de defectos"]
+    normas_base: ["LOPJ", "LEC", "CE"]
+    remisiones:
+      - {norma: "LOPJ", articulo: "238", tipo: "regula", nota: "Nulidad de pleno derecho: falta de jurisdicción o competencia, violencia, falta de abogado o de LAJ preceptivos."}
+      - {norma: "LOPJ", articulo: "238", apartado: "3.º", tipo: "regula", nota: "Prescindir de normas esenciales del procedimiento, si por ello ha podido producirse indefensión."}
+      - {norma: "LOPJ", articulo: "240", apartado: "1", tipo: "regula", nota: "La nulidad y los defectos de forma con indefensión se hacen valer por los recursos o medios legales."}
+      - {norma: "LOPJ", articulo: "240", apartado: "2", tipo: "regula", nota: "De oficio o a instancia, antes de la resolución final, si no cabe subsanar; en recurso, no de oficio salvo excepciones."}
+      - {norma: "LOPJ", articulo: "241", apartado: "1", tipo: "regula", nota: "Incidente excepcional: lesión de derecho del 53.2 CE no denunciable antes, sin recurso; 20 días, máximo cinco años."}
+      - {norma: "LOPJ", articulo: "241", apartado: "2", tipo: "regula", nota: "No suspende salvo acuerdo; alegaciones en cinco días; si se desestima, costas y multa de 90 a 600 euros por temeridad."}
+      - {norma: "LOPJ", articulo: "239", tipo: "conexa", nota: "Actos bajo violencia o intimidación: nulos, con todos los condicionados por ellos."}
+      - {norma: "LOPJ", articulo: "242", tipo: "conexa", nota: "Actuación fuera de plazo: solo se anula si lo impone la naturaleza del término."}
+      - {norma: "LOPJ", articulo: "243", apartado: "1", tipo: "regula", nota: "La nulidad no arrastra a los actos independientes ni a los que no habrían cambiado sin la infracción."}
+      - {norma: "LOPJ", articulo: "243", apartado: "3", tipo: "conexa", nota: "Se procura subsanar los defectos de las partes si mostraron voluntad de cumplir los requisitos."}
+      - {norma: "LEC", articulo: "225", tipo: "regula", nota: "Lista paralela a la del 238 LOPJ, con un caso más: resolver por diligencia o decreto lo reservado al juez (6.º)."}
+      - {norma: "LEC", articulo: "227", apartado: "1", tipo: "regula", nota: "La nulidad se hace valer por los recursos contra la resolución de que se trate."}
+      - {norma: "LEC", articulo: "227", apartado: "2", tipo: "regula", nota: "Declaración de oficio o a instancia antes de la resolución final; en recurso, no de oficio salvo excepciones."}
+      - {norma: "LEC", articulo: "228", apartado: "1", tipo: "regula", nota: "Incidente excepcional en la LEC, con el mismo plazo de 20 días y el tope de cinco años."}
+      - {norma: "LEC", articulo: "228", apartado: "2", tipo: "conexa", nota: "Tramitación, efectos y costas del incidente, en términos iguales a los del 241.2 LOPJ."}
+      - {norma: "LEC", articulo: "230", tipo: "conexa", nota: "Conservación de los actos independientes del nulo."}
+      - {norma: "LEC", articulo: "231", tipo: "conexa", nota: "Tribunal y LAJ cuidan de que se subsanen los defectos de los actos de las partes."}
+      - {norma: "LEC", articulo: "df 17", tipo: "conexa", nota: "Dice que los arts. 225 a 230 no se aplican hasta reformar la LOPJ, que se reformó por la LO 19/2003."}
+      - {norma: "LEC", articulo: "459", tipo: "conexa", nota: "En apelación, la infracción procesal exige citar la norma, la indefensión y haberla denunciado a tiempo."}
+      - {norma: "LEC", articulo: "465", apartado: "4", tipo: "conexa", nota: "Apelación con nulidad radical: se reponen las actuaciones, salvo que se subsane en la segunda instancia."}
+      - {norma: "CE", articulo: "24", apartado: "1", tipo: "regula", nota: "Tutela judicial efectiva sin que pueda producirse indefensión."}
+      - {norma: "CE", articulo: "53", apartado: "2", tipo: "conexa", nota: "Derechos del art. 14 y de la sección 1.ª del capítulo segundo: son los que abren el incidente excepcional."}
+    no_consta_en_norma:
+      - "Si la df 17.ª LEC sigue vedando los arts. 225 a 230 tras la LO 19/2003: el texto no lo aclara; la práctica cita ambas leyes."
+      - "Indefensión material frente a formal y diligencia exigible a la parte: criterio del Tribunal Constitucional."
+      - "Incidente del 241 LOPJ como vía previa obligada al amparo: criterio del Tribunal Constitucional."
+    fuera_de_la_herramienta:
+      - "Ley Orgánica 2/1979, del Tribunal Constitucional, art. 44: recurso de amparo tras agotar la vía judicial."
+    afines: ["Tutela judicial efectiva e indefensión", "Recurso de apelación (plazo, interposición, prueba en segunda instancia)", "Rescisión de la sentencia firme a instancia del rebelde", "Revisión de sentencias firmes", "Actos de comunicación: domicilio, emplazamiento y edictos", "Aclaración, corrección y complemento de resoluciones"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Costas: vencimiento, temeridad y allanamiento"
+    sinonimos: ["condena en costas", "criterio del vencimiento", "serias dudas de hecho o de derecho", "temeridad", "mala fe", "estimación parcial", "límite del tercio de la cuantía", "costas del allanamiento", "costas del desistimiento", "honorarios no preceptivos"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "394", apartado: "1", tipo: "regula", nota: "Se imponen a quien ve rechazadas todas sus pretensiones, salvo serias dudas de hecho o de derecho razonadas."}
+      - {norma: "LEC", articulo: "394", apartado: "1, párrafo 2.º", tipo: "regula", nota: "La duda jurídica se aprecia con la jurisprudencia recaída en casos similares."}
+      - {norma: "LEC", articulo: "394", apartado: "2", tipo: "regula", nota: "Estimación parcial: cada parte las suyas y las comunes por mitad, salvo temeridad."}
+      - {norma: "LEC", articulo: "394", apartado: "3", tipo: "regula", nota: "Honorarios no sujetos a arancel: máximo un tercio de la cuantía por litigante; inestimables, 24.000 euros."}
+      - {norma: "LEC", articulo: "394", apartado: "3, párrafo 2.º", tipo: "regula", nota: "El límite del tercio no rige si se declara la temeridad del condenado."}
+      - {norma: "LEC", articulo: "394", apartado: "3, párrafo 3.º", tipo: "conexa", nota: "Beneficiario de justicia gratuita: paga solo en los casos de la Ley 1/1996; si gana, cobran sus profesionales."}
+      - {norma: "LEC", articulo: "394", apartado: "5", tipo: "conexa", nota: "Nunca se imponen al Ministerio Fiscal."}
+      - {norma: "LEC", articulo: "395", apartado: "1", tipo: "regula", nota: "Allanamiento antes de contestar: sin costas, salvo mala fe o abuso del servicio público de Justicia."}
+      - {norma: "LEC", articulo: "395", apartado: "1, párrafo 2.º", tipo: "regula", nota: "Hay mala fe si hubo requerimiento fehaciente previo o se rechazó el acuerdo ofrecido o el MASC."}
+      - {norma: "LEC", articulo: "395", apartado: "2", tipo: "regula", nota: "Allanamiento después de contestar: se aplica el vencimiento del 394.1."}
+      - {norma: "LEC", articulo: "396", apartado: "1", tipo: "regula", nota: "Desistimiento no consentido: el actor paga todas las costas."}
+      - {norma: "LEC", articulo: "396", apartado: "2", tipo: "regula", nota: "Desistimiento consentido: sin condena a ninguna parte."}
+      - {norma: "LEC", articulo: "397", tipo: "conexa", nota: "La apelación sobre las costas de la primera instancia se resuelve con el art. 394."}
+      - {norma: "LEC", articulo: "398", apartado: "1", tipo: "conexa", nota: "Costas de la apelación: se aplica el art. 394."}
+      - {norma: "LEC", articulo: "241", apartado: "1", tipo: "regula", nota: "Qué son costas: honorarios preceptivos, edictos, depósitos, peritos, copias, aranceles y tasa."}
+      - {norma: "LEC", articulo: "243", apartado: "2", tipo: "conexa", nota: "No entran actuaciones inútiles; se reducen honorarios por encima del límite del 394.3 sin temeridad; con IVA."}
+      - {norma: "LEC", articulo: "32", apartado: "5", tipo: "regula", nota: "Abogado y procurador no preceptivos: se excluyen, salvo temeridad, abuso o domicilio en otro partido judicial."}
+      - {norma: "LEC", articulo: "22", apartado: "1", tipo: "conexa", nota: "Satisfacción extraprocesal con acuerdo de las partes: terminación sin condena en costas."}
+      - {norma: "LEC", articulo: "22", apartado: "2, párrafo 2.º", tipo: "conexa", nota: "Si solo se discuten las costas, el auto puede imponerlas con los criterios del art. 395."}
+      - {norma: "LEC", articulo: "247", apartado: "3", tipo: "conexa", nota: "Mala fe o abuso del servicio público de Justicia: multa de 180 a 6.000 euros, sin pasar del tercio de la cuantía."}
+    no_consta_en_norma:
+      - "Temeridad y mala fe a efectos de costas: el texto no las define; criterio jurisprudencial."
+      - "Estimación sustancial de la demanda equiparada a total: criterio jurisprudencial."
+      - "«Abuso del servicio público de Justicia»: la LEC lo usa sin definirlo; criterio jurisprudencial en formación."
+    fuera_de_la_herramienta:
+      - "Ley 1/1996, de asistencia jurídica gratuita: costas del beneficiario; a ella remiten los arts. 241.1 y 394.3 LEC."
+    # VIGENCIA: cita LEC 22 (apartados 1 y 2, idénticos en la API); el RDL 29/2026 le añade el apartado 6, que el espejo no trae. Provisional.
+    afines: ["Costas y MASC", "Tasación de costas y su impugnación", "Costas en los recursos", "Allanamiento", "Desistimiento", "Carencia sobrevenida de objeto / satisfacción extraprocesal", "Buena fe procesal, abuso del servicio de justicia y multas"]
+    estado: "provisional"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Costas y MASC"
+    sinonimos: ["costas y medios adecuados de solución de controversias", "rechazo de la negociación previa", "negativa a negociar", "exoneración de costas", "moderación de costas", "oferta rechazada y costas", "abuso del servicio público de Justicia", "reclamación previa del consumidor"]
+    normas_base: ["LEC", "LO 1/2025"]
+    remisiones:
+      - {norma: "LEC", articulo: "394", apartado: "1, párrafo 3.º", tipo: "regula", nota: "MASC preceptivo o acordado: no hay costas a favor de quien rehusó participar sin justa causa."}
+      - {norma: "LEC", articulo: "394", apartado: "2, párrafo 2.º", tipo: "regula", nota: "Quien no acudió sin causa al MASC preceptivo o acordado puede ser condenado aunque la estimación sea parcial."}
+      - {norma: "LEC", articulo: "394", apartado: "4", tipo: "regula", nota: "Si el requerido rehusó la negociación previa, el requirente queda exento de costas, salvo abuso."}
+      - {norma: "LEC", articulo: "395", apartado: "1, párrafo 2.º", tipo: "regula", nota: "Allanamiento previo a contestar: hay mala fe si rechazó el acuerdo ofrecido o el MASC."}
+      - {norma: "LEC", articulo: "395", apartado: "3", tipo: "regula", nota: "No acudió sin causa al MASC y luego se allana: costas, salvo circunstancias excepcionales motivadas."}
+      - {norma: "LEC", articulo: "245", apartado: "5", tipo: "regula", nota: "El condenado pide exoneración o moderación si su propuesta en el MASC fue rechazada y la sentencia coincide en lo sustancial."}
+      - {norma: "LEC", articulo: "245", apartado: "5, párrafo 2.º", tipo: "regula", nota: "Igual efecto si se rechazó sin justificación la propuesta del tercero neutral y la sentencia coincide con ella."}
+      - {norma: "LEC", articulo: "245", apartado: "5, párrafo 3.º", tipo: "regula", nota: "Hay que aportar la documentación íntegra de la propuesta, dispensada de confidencialidad; si no, inadmisión."}
+      - {norma: "LEC", articulo: "245 bis", apartado: "1", tipo: "regula", nota: "La solicitud de exoneración o moderación se traslada tres días a la parte favorecida."}
+      - {norma: "LEC", articulo: "245 bis", apartado: "2", tipo: "regula", nota: "Si la acepta o calla, decreto del LAJ con la cantidad debida; recurso de revisión."}
+      - {norma: "LEC", articulo: "245 bis", apartado: "3", tipo: "regula", nota: "Si se opone, auto del tribunal sin costas, con porcentaje y partidas reducidas; recurso de reposición."}
+      - {norma: "LEC", articulo: "245 bis", apartado: "4", tipo: "conexa", nota: "Firme lo anterior, se tramita en su caso la impugnación por honorarios excesivos o indebidos."}
+      - {norma: "LEC", articulo: "32", apartado: "5, párrafo 2.º", tipo: "regula", nota: "Consumidor con reclamación extrajudicial previa que litiga con abogado y procurador no preceptivos: se incluyen, sin el límite del 394.3."}
+      - {norma: "LO 1/2025", articulo: "7", apartado: "4", tipo: "regula", nota: "Al resolver sobre costas, su tasación y multas, el tribunal pondera la colaboración en el MASC y el abuso."}
+      - {norma: "LO 1/2025", articulo: "9", apartado: "2.b)", tipo: "regula", nota: "Excepción a la confidencialidad: solo para la exoneración o moderación de costas del art. 245 LEC."}
+      - {norma: "LO 1/2025", articulo: "5", apartado: "1", tipo: "conexa", nota: "Acudir antes a un MASC es requisito de procedibilidad de la demanda civil."}
+      - {norma: "LO 1/2025", articulo: "5", apartado: "3", tipo: "conexa", nota: "No hace falta MASC para la demanda ejecutiva, las cautelares previas ni las diligencias preliminares."}
+      - {norma: "LO 1/2025", articulo: "10", apartado: "1", tipo: "conexa", nota: "La actividad negociadora o su intento debe constar documentalmente."}
+      - {norma: "LO 1/2025", articulo: "11", apartado: "2", tipo: "conexa", nota: "Honorarios del tercero neutral: por acuerdo previo; si se rechaza el propuesto unilateralmente, se abonan los devengados."}
+      - {norma: "LO 1/2025", articulo: "17", apartado: "4", tipo: "conexa", nota: "Oferta vinculante rechazada o no aceptada en un mes: decae y el requisito de procedibilidad se tiene por cumplido."}
+    no_consta_en_norma:
+      - "«Justa causa» para rehusar el MASC y propuesta «sustancialmente coincidente» (245.5): el texto no los define."
+      - "Si el 394.4 alcanza al requerido que simplemente no contestó la solicitud de negociación: no lo precisa."
+      - "Quién paga al tercero neutral rechazado (11.2 LO 1/2025: «deberá esta abonar»): el texto no precisa qué parte."
+    fuera_de_la_herramienta:
+      - "Ley 5/2012, de mediación, art. 4: efectos de la solicitud de mediación, al que remite el 7.2.a) LO 1/2025."
+    afines: ["Costas: vencimiento, temeridad y allanamiento", "Requisito de procedibilidad (MASC)", "Tasación de costas y su impugnación", "Confidencialidad del MASC", "Oferta vinculante confidencial", "Allanamiento"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"

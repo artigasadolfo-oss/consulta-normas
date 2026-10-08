@@ -1,0 +1,1831 @@
+# Fórmulas de sala de «Consulta de normas» — tanda 01 (audiencia previa, juicio ordinario y vista del verbal)
+# Revisor: armero. Espejo: legalize-es@aca28304d. Todo precepto citado se ha leído en el espejo en esta pasada.
+# Encargo: docs/consulta-armero-formulas-sala-08-10-2026.md. Notas: formulas-sala-01-notas.md.
+# Vigencia: contraste con la API de boe.es (scripts/contraste_boe.py --solo "LEC,LOPJ,CE,LO 1/2025", 08-10-2026). Distintos: LEC 22 y 685,
+# ninguno citado como base (el 22 solo en `vigilar`); ninguna versión futura. 120 fórmulas: 8 del cuadro de Adolfo + 112 nuevas.
+# Sin campos nuevos: se usan solo los del formato del encargo.
+
+formulas:
+  # ───────────────────────── 1-8. CUADRO DE ADOLFO (verificado) ─────────────────────────
+  - situacion: "Pregunta a la parte con valoración o calificación"
+    grupo: "Interrogatorio de parte"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Con la venia, Señoría: la pregunta incorpora una valoración. Interesamos que se tenga por no formulada en esos términos.»"
+    pide: "Que se tenga por no realizada la valoración o calificación y, en su caso, que se reformule la pregunta."
+    aviso: "La objeción la tiene la parte que declara y su abogado (303 y 306.3); hay que hacerla en el acto, antes de que se conteste."
+    bases:
+      - { norma: LEC, articulo: "302", apartado: "1" }
+      - { norma: LEC, articulo: "303" }
+      - { norma: LEC, articulo: "306", apartado: "3" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Pregunta al testigo con valoración o calificación"
+    grupo: "Testigos"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Con la venia, Señoría: la pregunta al testigo incorpora una valoración. Interesamos que se tenga por no formulada en esos términos.»"
+    pide: "Que se tenga por no realizada la valoración o calificación."
+    aviso: "La impugnación corresponde a las partes distintas de la que formula la pregunta, en el acto mismo del interrogatorio (369.1)."
+    bases:
+      - { norma: LEC, articulo: "368", apartado: "1" }
+      - { norma: LEC, articulo: "369", apartado: "1" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Pregunta impertinente o inútil (a la parte o al testigo)"
+    grupo: "Objeciones comunes a parte y testigos"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Nos oponemos, Señoría: la pregunta no guarda relación con los hechos controvertidos fijados y no puede contribuir a esclarecerlos. Interesamos que se repela.»"
+    pide: "Que el tribunal repela la pregunta antes de que se conteste."
+    aviso: "Si el testigo responde pese a la inadmisión, la respuesta no constará en acta (368.3); pedirlo así si ocurre."
+    bases:
+      - { norma: LEC, articulo: "283", apartado: "1" }
+      - { norma: LEC, articulo: "283", apartado: "2" }
+      - { norma: LEC, articulo: "302", apartado: "2" }
+      - { norma: LEC, articulo: "306", apartado: "1" }
+      - { norma: LEC, articulo: "306", apartado: "3" }
+      - { norma: LEC, articulo: "368", apartado: "2" }
+      - { norma: LEC, articulo: "369", apartado: "1" }
+      - { norma: LEC, articulo: "372", apartado: "1" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Pregunta a un testigo sobre juicios técnicos o de opinión"
+    grupo: "Testigos"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Con la venia: el testigo no es perito. La pregunta no versa sobre hechos que conozca, sino que le pide un juicio técnico. Interesamos su inadmisión.»"
+    pide: "Que se inadmita la pregunta por no referirse a los conocimientos propios de un testigo."
+    aviso: "Si el testigo tiene conocimientos técnicos sobre la materia, el tribunal admitirá lo que agregue sobre los hechos (testigo-perito, 370.4): entonces lo que cabe es hacer notar las circunstancias de tacha del 343."
+    bases:
+      - { norma: LEC, articulo: "368", apartado: "2, párrafo 2.º" }
+      - { norma: LEC, articulo: "360" }
+      - { norma: LEC, articulo: "370", apartado: "4" }
+      - { norma: LEC, articulo: "369", apartado: "1" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Inadmisión de una pregunta nuestra"
+    grupo: "Objeciones comunes a parte y testigos"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Con todo respeto, Señoría, solicitamos que conste en acta nuestra protesta por la inadmisión de la pregunta, que era: […].»"
+    pide: "Que conste la protesta y el tenor literal de la pregunta inadmitida."
+    aviso: "Sin protesta en el acto no podrá acreditarse en apelación que se denunció la infracción (459). Para la parte no hay norma de protesta propia: se aplica el mismo uso."
+    bases:
+      - { norma: LEC, articulo: "369", apartado: "2" }
+      - { norma: LEC, articulo: "372", apartado: "1, párrafo 2.º" }
+      - { norma: LEC, articulo: "459" }
+    no_consta_en_norma:
+      - "Protesta por inadmisión de preguntas en el interrogatorio de PARTE: la LEC solo la prevé para testigos (369.2 y 372.1); su extensión a la parte es uso forense."
+      - "Enunciar la pregunta inadmitida para que quede en la grabación: uso forense, no lo exige la norma."
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Denegación de una prueba propuesta"
+    grupo: "Proposición y admisión de prueba"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Interponemos recurso de reposición contra la inadmisión de [la prueba], que es pertinente y útil para el hecho controvertido [n.º]. Si se desestima, formulamos protesta a efectos de la segunda instancia.»"
+    pide: "Que se reponga la resolución y se admita la prueba; subsidiariamente, que conste la protesta."
+    aviso: "Sin reposición en el acto y protesta no podrá pedirse esa prueba en apelación (460.2.1.ª). En el verbal, la admisión se decide por auto escrito (438.10), recurrible en reposición por escrito; la reposición oral es para lo resuelto en la vista (446)."
+    bases:
+      - { norma: LEC, articulo: "285", apartado: "2" }
+      - { norma: LEC, articulo: "446" }
+      - { norma: LEC, articulo: "460", apartado: "2.1.ª" }
+      - { norma: LEC, articulo: "438", apartado: "10" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Respuestas evasivas o inconcluyentes de la parte contraria"
+    grupo: "Interrogatorio de parte"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Con la venia: las respuestas del declarante son evasivas. Interesamos que se le aperciba conforme al artículo 307 de que pueden tenerse por reconocidos los hechos.»"
+    pide: "Que se haga al declarante el apercibimiento del 307.1."
+    aviso: "El efecto (tener por reconocidos los hechos) solo alcanza a hechos en que intervino personalmente y le perjudican; se valora en sentencia (316.2)."
+    bases:
+      - { norma: LEC, articulo: "307", apartado: "2" }
+      - { norma: LEC, articulo: "307", apartado: "1" }
+      - { norma: LEC, articulo: "316", apartado: "2" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Incomparecencia de la parte contraria citada a interrogatorio (también persona jurídica)"
+    grupo: "Interrogatorio de parte"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Con la venia: la parte citada a interrogatorio con el apercibimiento del 304 no comparece. Interesamos que se tengan por reconocidos los hechos en que intervino y le perjudican, y que se le imponga la multa del 292.4.»"
+    pide: "Admisión tácita de los hechos personales perjudiciales (304) e imposición de la multa (292.4, en relación con el 292.1)."
+    aviso: "El 304 es facultativo («podrá») y exige que la citación contuviera el apercibimiento; comprobarlo antes. La multa requiere audiencia previa de cinco días (292.1)."
+    bases:
+      - { norma: LEC, articulo: "304" }
+      - { norma: LEC, articulo: "292", apartado: "4" }
+      - { norma: LEC, articulo: "292", apartado: "1" }
+      - { norma: LEC, articulo: "440" }
+    no_consta_en_norma:
+      - "Aplicación del 304 a la persona jurídica que no comparece por medio de representante (qué hechos son «personales» suyos): elaboración jurisprudencial; la LEC solo regula la persona jurídica que sí declara (309)."
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  # ───────────────────────── AUDIENCIA PREVIA: APERTURA, ACUERDO Y COMPARECENCIA ─────────────────────────
+  - situacion: "Apertura de la audiencia: las partes han llegado a un acuerdo"
+    grupo: "Audiencia previa: apertura y acuerdo"
+    momento: ["audiencia_previa", "vista_verbal"]
+    formula: "«Con la venia: las partes hemos alcanzado un acuerdo que ponga fin al proceso. Lo aportamos y solicitamos su homologación judicial.»"
+    pide: "Homologación del acuerdo, con efectos de transacción judicial y ejecutable como tal."
+    aviso: "El tribunal examina antes la capacidad y el poder de disposición de quienes asisten: llevar poder especial si no comparece la parte personalmente."
+    bases:
+      - { norma: LEC, articulo: "415", apartado: "1" }
+      - { norma: LEC, articulo: "415", apartado: "2" }
+      - { norma: LEC, articulo: "443", apartado: "1" }
+      - { norma: LEC, articulo: "19", apartado: "2" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Suspensión del proceso para acudir a un medio adecuado de solución de controversias"
+    grupo: "Audiencia previa: apertura y acuerdo"
+    momento: ["audiencia_previa", "vista_verbal"]
+    formula: "«De común acuerdo, las partes solicitamos la suspensión del proceso conforme al artículo 19.4 para someternos a [mediación / otro MASC].»"
+    pide: "Suspensión del proceso, que no podrá superar sesenta días."
+    aviso: "Terminada la negociación sin acuerdo, cualquiera de las partes debe pedir que se alce la suspensión y se señale la continuación (415.3)."
+    bases:
+      - { norma: LEC, articulo: "415", apartado: "1, párrafo 3.º" }
+      - { norma: LEC, articulo: "415", apartado: "3" }
+      - { norma: LEC, articulo: "19", apartado: "4" }
+      - { norma: LEC, articulo: "443", apartado: "1" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "El tribunal plantea derivar el litigio a un medio adecuado de solución de controversias"
+    grupo: "Audiencia previa: apertura y acuerdo"
+    momento: ["audiencia_previa", "vista_verbal"]
+    formula: "«Esta parte [presta / no presta] su conformidad a la derivación. [En caso negativo:] La negativa obedece a la siguiente justa causa: […]. Interesamos que conste en acta.»"
+    pide: "Que conste la posición de la parte y, si se rehúsa, su justa causa."
+    aviso: "Rehusar sin justa causa un MASC acordado por el tribunal con conformidad de las partes, o legalmente preceptivo, puede costar las costas aun ganando (394.1, párrafo 3.º, y 394.2, párrafo 2.º)."
+    bases:
+      - { norma: LEC, articulo: "19", apartado: "5" }
+      - { norma: LEC, articulo: "429", apartado: "2, párrafo 2.º" }
+      - { norma: LEC, articulo: "443", apartado: "2" }
+      - { norma: LEC, articulo: "394", apartado: "1, párrafo 3.º" }
+      - { norma: LEC, articulo: "394", apartado: "2, párrafo 2.º" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "La contraria comparece solo por procurador sin poder para renunciar, allanarse o transigir"
+    grupo: "Audiencia previa: apertura y acuerdo"
+    momento: ["audiencia_previa"]
+    formula: "«Con la venia: la parte contraria no comparece personalmente y su procurador carece de poder para renunciar, allanarse o transigir. Interesamos que se la tenga por no comparecida a la audiencia.»"
+    pide: "Que se tenga a la parte por no comparecida, con los efectos del 414.3 y 414.4."
+    aviso: "Si es el actor el que se tiene por no comparecido, el proceso se sobresee salvo que el demandado alegue interés legítimo en la sentencia de fondo (414.3)."
+    bases:
+      - { norma: LEC, articulo: "414", apartado: "2, párrafo 3.º" }
+      - { norma: LEC, articulo: "414", apartado: "3" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "No comparece el actor o su abogado a la audiencia previa (habla el demandado)"
+    grupo: "Audiencia previa: apertura y acuerdo"
+    momento: ["audiencia_previa"]
+    formula: "«Esta parte alega interés legítimo en la continuación del procedimiento para que se dicte sentencia sobre el fondo, por [razón]. Interesamos que no se sobresea.»"
+    pide: "Que la audiencia continúe pese a la incomparecencia del actor o de su abogado."
+    aviso: "Si el demandado no lo alega en el acto, el proceso se sobresee (414.3 y 414.4)."
+    bases:
+      - { norma: LEC, articulo: "414", apartado: "3, párrafo 2.º" }
+      - { norma: LEC, articulo: "414", apartado: "4" }
+    no_consta_en_norma:
+      - "Qué constituye «interés legítimo» en la continuación (p. ej. evitar un segundo pleito, haber reconvenido): elaboración jurisprudencial."
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  # ───────────────────────── AUDIENCIA PREVIA: EXCEPCIONES PROCESALES ─────────────────────────
+  - situacion: "Defecto de capacidad o representación subsanable (de la parte propia)"
+    grupo: "Excepciones procesales"
+    momento: ["audiencia_previa"]
+    formula: "«El defecto alegado es subsanable. Aportamos en este acto [el poder / el documento]; subsidiariamente, interesamos plazo de hasta diez días para subsanarlo, con suspensión de la audiencia.»"
+    pide: "Que se tenga por subsanado el defecto o se conceda plazo no superior a diez días."
+    aviso: "Si no se subsana en plazo, auto que pone fin al proceso; si afecta a la personación del demandado, rebeldía (418.2 y 418.3)."
+    bases:
+      - { norma: LEC, articulo: "418", apartado: "1" }
+      - { norma: LEC, articulo: "418", apartado: "2" }
+      - { norma: LEC, articulo: "418", apartado: "3" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Defecto de capacidad o representación en la contestación o la reconvención (lo alega el actor)"
+    grupo: "Excepciones procesales"
+    momento: ["audiencia_previa"]
+    formula: "«Con la venia: advertimos en la representación de la demandada el siguiente defecto: […]. Interesamos que se requiera su subsanación y, de no producirse, que se la declare en rebeldía.»"
+    pide: "Requerimiento de subsanación y, en su defecto, declaración de rebeldía sin constancia de lo actuado."
+    bases:
+      - { norma: LEC, articulo: "418", apartado: "1" }
+      - { norma: LEC, articulo: "418", apartado: "3" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Oposición a la acumulación de acciones (sostenida en la audiencia)"
+    grupo: "Excepciones procesales"
+    momento: ["audiencia_previa"]
+    formula: "«Nos ratificamos en la oposición a la acumulación formulada en la contestación: las acciones [razón: incompatibles / sin nexo]. Interesamos que se declare inadmisible y que el proceso siga solo por [acción].»"
+    pide: "Resolución oral sobre la admisibilidad de la acumulación."
+    aviso: "Solo cabe si el demandado se opuso motivadamente en la contestación (419 y 405.1); el tribunal oye antes al actor."
+    bases:
+      - { norma: LEC, articulo: "419" }
+      - { norma: LEC, articulo: "405", apartado: "1" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Falta de litisconsorcio pasivo necesario alegada por el demandado (habla el actor)"
+    grupo: "Excepciones procesales"
+    momento: ["audiencia_previa"]
+    formula: "«[Opción A:] Presentamos escrito dirigiendo la demanda contra [litisconsortes], con sus copias, e interesamos su emplazamiento. [Opción B:] Nos oponemos: la relación jurídica no exige su llamada porque […].»"
+    pide: "A: emplazamiento de los nuevos demandados con suspensión de la audiencia. B: que se desestime la excepción."
+    aviso: "Al integrar la litis solo pueden añadirse las alegaciones imprescindibles, sin alterar sustancialmente la causa de pedir (420.1). Si se estima la excepción y no se integra en plazo, archivo (420.4)."
+    bases:
+      - { norma: LEC, articulo: "420", apartado: "1" }
+      - { norma: LEC, articulo: "420", apartado: "2" }
+      - { norma: LEC, articulo: "420", apartado: "3" }
+      - { norma: LEC, articulo: "420", apartado: "4" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Litispendencia o cosa juzgada"
+    grupo: "Excepciones procesales"
+    momento: ["audiencia_previa"]
+    formula: "«Con la venia: existe [otro proceso pendiente / sentencia firme] sobre objeto idéntico, que acreditamos con […]. Interesamos que se dé por finalizada la audiencia y se dicte auto de sobreseimiento.»"
+    pide: "Sobreseimiento; o, si la sentencia anterior solo es prejudicial, que se respete su efecto vinculante (222.4)."
+    aviso: "Si el tribunal la rechaza, lo declara motivadamente en el acto y la audiencia sigue (421.2); pedir que conste la motivación."
+    bases:
+      - { norma: LEC, articulo: "421", apartado: "1" }
+      - { norma: LEC, articulo: "421", apartado: "2" }
+      - { norma: LEC, articulo: "421", apartado: "3" }
+    vigilar:
+      - { norma: LEC, articulo: "222" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Impugnación de la cuantía o de la clase de juicio por razón de la cuantía (ordinario)"
+    grupo: "Excepciones procesales"
+    momento: ["audiencia_previa"]
+    formula: "«Nos ratificamos en la impugnación de la cuantía: correctamente calculada asciende a […], según [regla del art. 251/252], lo que determina [el verbal / la apelabilidad]. Interesamos que así se resuelva en el acto.»"
+    pide: "Resolución oral motivada sobre el valor de la cosa litigiosa y el procedimiento."
+    aviso: "Solo si se impugnó en la contestación (255.2). En el verbal no se resuelve en sala, sino por el auto del 438.10 (255.3). Si procede el verbal y la acción estaba caducada, sobreseimiento (422.2)."
+    bases:
+      - { norma: LEC, articulo: "255", apartado: "1" }
+      - { norma: LEC, articulo: "255", apartado: "2" }
+      - { norma: LEC, articulo: "422", apartado: "1" }
+      - { norma: LEC, articulo: "422", apartado: "2" }
+    vigilar:
+      - { norma: LEC, articulo: "251" }
+      - { norma: LEC, articulo: "252" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Inadecuación del procedimiento por razón de la materia"
+    grupo: "Excepciones procesales"
+    momento: ["audiencia_previa"]
+    formula: "«Con la venia: por razón de la materia, el asunto debe sustanciarse por los trámites del [juicio verbal, art. 250.1.n.º]. Interesamos que así se declare y se cite a las partes a la vista.»"
+    pide: "Declaración de inadecuación y cita a vista (o sobreseimiento si la demanda estaba caducada)."
+    bases:
+      - { norma: LEC, articulo: "423", apartado: "1" }
+      - { norma: LEC, articulo: "423", apartado: "3" }
+    vigilar:
+      - { norma: LEC, articulo: "250" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Defecto legal en el modo de proponer la demanda, la contestación o la reconvención"
+    grupo: "Excepciones procesales"
+    momento: ["audiencia_previa"]
+    formula: "«[Quien la alega:] Interesamos que se requiera a la contraria para que precise [partes / petición]. [Quien la sufre:] Aclaramos en este acto que lo pedido es […], con lo que el defecto queda subsanado.»"
+    pide: "Aclaración en el acto; sobreseimiento solo si es imposible saber qué se pide o frente a quién."
+    aviso: "El sobreseimiento es excepcional (424.2): la aclaración en el acto lo evita."
+    bases:
+      - { norma: LEC, articulo: "416", apartado: "1.5.ª" }
+      - { norma: LEC, articulo: "424", apartado: "1" }
+      - { norma: LEC, articulo: "424", apartado: "2" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Falta del requisito de procedibilidad (actividad negociadora previa no acreditada)"
+    grupo: "Excepciones procesales"
+    momento: ["audiencia_previa"]
+    formula: "«Con la venia: la demanda se interpuso sin acreditar la actividad negociadora previa exigida como requisito de procedibilidad [o sin identidad de objeto]. Interesamos que se aprecie el defecto procesal.»"
+    pide: "Apreciación del óbice procesal (por analogía, 425) y las consecuencias que el tribunal determine."
+    aviso: "Debió alegarse en la contestación como excepción procesal (405.3). Comprobar antes que la materia no esté exceptuada (art. 5.2 LO 1/2025)."
+    bases:
+      - { norma: "LO 1/2025", articulo: "5", apartado: "1" }
+      - { norma: "LO 1/2025", articulo: "5", apartado: "2" }
+      - { norma: LEC, articulo: "403", apartado: "2" }
+      - { norma: LEC, articulo: "264", apartado: "4.º" }
+      - { norma: LEC, articulo: "425" }
+      - { norma: LEC, articulo: "405", apartado: "3" }
+    no_consta_en_norma:
+      - "Tratamiento en la audiencia previa de la falta de MASC no detectada en la admisión (si es subsanable, si conduce a sobreseimiento): la LEC solo prevé la inadmisión de la demanda (403.2); doctrina de las Audiencias aún dividida."
+    estado: "provisional"   # PENDIENTE: confirmar criterio jurisprudencial consolidado sobre subsanabilidad y sobreseimiento en la audiencia previa.
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "La contraria intenta discutir en la audiencia la jurisdicción o la competencia"
+    grupo: "Excepciones procesales"
+    momento: ["audiencia_previa"]
+    formula: "«Nos oponemos, Señoría: la falta de jurisdicción o de competencia no puede impugnarse en la audiencia previa; debió proponerse por declinatoria.»"
+    pide: "Que no se admita la cuestión, salvo apreciación de oficio por el tribunal."
+    aviso: "El tribunal conserva la facultad de apreciar de oficio su falta de jurisdicción o de competencia (416.2, párrafo 2.º)."
+    bases:
+      - { norma: LEC, articulo: "416", apartado: "2" }
+    vigilar:
+      - { norma: LEC, articulo: "63" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  # ───────────────────────── AUDIENCIA PREVIA: ALEGACIONES, HECHOS NUEVOS Y PRECLUSIÓN ─────────────────────────
+  - situacion: "Alegaciones complementarias propias a lo expuesto de contrario"
+    grupo: "Alegaciones complementarias y preclusión"
+    momento: ["audiencia_previa"]
+    formula: "«Con la venia, al amparo del artículo 426.1 formulamos la siguiente alegación complementaria, en relación con lo que la contestación expone sobre […], sin alterar nuestra pretensión ni sus fundamentos: […].»"
+    pide: "Que se tenga por formulada la alegación complementaria."
+    aviso: "Si la alegación altera sustancialmente la pretensión o su fundamento, será rechazada (426.1 y 412.1)."
+    bases:
+      - { norma: LEC, articulo: "426", apartado: "1" }
+      - { norma: LEC, articulo: "412", apartado: "2" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "La contraria, so capa de alegación complementaria, cambia la demanda o la contestación"
+    grupo: "Alegaciones complementarias y preclusión"
+    momento: ["audiencia_previa"]
+    formula: "«Nos oponemos, Señoría: no es una alegación complementaria, sino un cambio sustancial de [la pretensión / la causa de pedir], vedado por los artículos 412.1 y 426.1. Interesamos que se tenga por no formulada.»"
+    pide: "Que no se admita la alteración del objeto del proceso."
+    aviso: "Si se admite, pedir que conste la oposición: la indefensión habrá de acreditarse en apelación como denunciada en tiempo (459)."
+    bases:
+      - { norma: LEC, articulo: "412", apartado: "1" }
+      - { norma: LEC, articulo: "426", apartado: "1" }
+      - { norma: LEC, articulo: "459" }
+    no_consta_en_norma:
+      - "Frontera entre «complementar» y «alterar sustancialmente» la pretensión: elaboración jurisprudencial (mutatio libelli)."
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Aclaración de alegaciones propias o rectificación de extremos secundarios"
+    grupo: "Alegaciones complementarias y preclusión"
+    momento: ["audiencia_previa"]
+    formula: "«Aclaramos la alegación [n.º] de la demanda en el sentido de que […]; y rectificamos el extremo secundario relativo a [p. ej. un error de cálculo], sin alterar la pretensión ni su fundamento.»"
+    pide: "Que se tenga por hecha la aclaración o rectificación."
+    bases:
+      - { norma: LEC, articulo: "426", apartado: "2" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Petición accesoria o complementaria añadida en la audiencia (oposición)"
+    grupo: "Alegaciones complementarias y preclusión"
+    momento: ["audiencia_previa"]
+    formula: "«No prestamos conformidad a la adición. Su planteamiento en este acto nos impide ejercer el derecho de defensa en condiciones de igualdad, porque […]. Interesamos que se inadmita.»"
+    pide: "Inadmisión de la petición añadida."
+    aviso: "Si la contraria calla, la adición se admite sin más (426.3): la oposición hay que hacerla en el acto."
+    bases:
+      - { norma: LEC, articulo: "426", apartado: "3" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Alegación de hecho nuevo o de nueva noticia en la audiencia (propia)"
+    grupo: "Alegaciones complementarias y preclusión"
+    momento: ["audiencia_previa"]
+    formula: "«Alegamos como hecho [posterior a la demanda / de nueva noticia] el siguiente: […]. Acreditamos en este acto [su fecha / cuándo lo conocimos] con […], y aportamos los documentos que lo justifican.»"
+    pide: "Que se admita el hecho nuevo y los documentos que lo justifican."
+    aviso: "Si no se acredita cumplidamente que es posterior, el tribunal lo rechaza por providencia; si se pretende de nueva noticia sin justificarlo, puede rechazarse y multarse de 120 a 600 euros (286.4)."
+    bases:
+      - { norma: LEC, articulo: "426", apartado: "4" }
+      - { norma: LEC, articulo: "426", apartado: "5" }
+      - { norma: LEC, articulo: "286", apartado: "4" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Oposición al hecho «nuevo» o «de nueva noticia» de la contraria"
+    grupo: "Alegaciones complementarias y preclusión"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Nos oponemos: no se acredita que el hecho sea posterior [ni que se conociera después]; pudo alegarse en [la demanda / la contestación]. Interesamos que no se tome en consideración y, por su ánimo dilatorio, la multa del 286.4.»"
+    pide: "Rechazo del hecho por providencia y, en su caso, multa de 120 a 600 euros."
+    aviso: "Si se admite, negar el hecho expresamente y proponer en el acto la prueba pertinente sobre él (286.2 y 286.3)."
+    bases:
+      - { norma: LEC, articulo: "286", apartado: "4" }
+      - { norma: LEC, articulo: "426", apartado: "4" }
+      - { norma: LEC, articulo: "433", apartado: "1, párrafo 2.º" }
+      - { norma: LEC, articulo: "286", apartado: "2" }
+      - { norma: LEC, articulo: "286", apartado: "3" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Pretensión de ampliar la demanda o acumular acciones después de contestada"
+    grupo: "Alegaciones complementarias y preclusión"
+    momento: ["audiencia_previa", "vista_verbal"]
+    formula: "«Nos oponemos, Señoría: contestada la demanda no cabe acumular acciones ni ampliarla contra nuevos demandados (art. 401). Lo que se pretende es una acción nueva. Interesamos su inadmisión.»"
+    pide: "Que se inadmita la ampliación."
+    bases:
+      - { norma: LEC, articulo: "401", apartado: "1" }
+      - { norma: LEC, articulo: "401", apartado: "2" }
+      - { norma: LEC, articulo: "412", apartado: "1" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Hechos de la demanda no negados en la contestación o negados con evasivas"
+    grupo: "Fijación de hechos"
+    momento: ["audiencia_previa", "vista_verbal"]
+    formula: "«Interesamos que se tengan por admitidos los hechos [n.º], que la demandada no negó en su contestación [o respondió con evasivas], y que se excluyan de los controvertidos.»"
+    pide: "Admisión tácita de los hechos perjudiciales y su exclusión de la prueba."
+    aviso: "Es facultativo para el tribunal («podrá»); los hechos admitidos quedan exentos de prueba (281.3)."
+    bases:
+      - { norma: LEC, articulo: "405", apartado: "2" }
+      - { norma: LEC, articulo: "281", apartado: "3" }
+      - { norma: LEC, articulo: "428", apartado: "1" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Escritos oscuros de la contraria: pedir que el tribunal requiera aclaración"
+    grupo: "Fijación de hechos"
+    momento: ["audiencia_previa"]
+    formula: "«Interesamos que se requiera a la contraria para que aclare [el hecho / el argumento] de su escrito, con el apercibimiento de que, si no lo hace, podrá tenérsela por conforme con lo que alegamos de contrario.»"
+    pide: "Requerimiento de aclaración con el apercibimiento del 426.6."
+    bases:
+      - { norma: LEC, articulo: "426", apartado: "6" }
+    no_consta_en_norma:
+      - "Que la parte pueda instar el requerimiento: la norma lo atribuye al tribunal («podrá también requerir»); pedirlo es uso forense."
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Fijación de los hechos controvertidos"
+    grupo: "Fijación de hechos"
+    momento: ["audiencia_previa", "vista_verbal"]
+    formula: "«Para esta parte, son hechos conformes los [n.º] y controvertidos los siguientes: primero, […]; segundo, […]. Interesamos que se fijen en esos términos.»"
+    pide: "Que el tribunal fije los hechos conformes y los controvertidos."
+    aviso: "Lo que no se fije como controvertido podrá luego tenerse por impertinente al proponer o practicar la prueba (283.1): fijar todos los que interesan."
+    bases:
+      - { norma: LEC, articulo: "428", apartado: "1" }
+      - { norma: LEC, articulo: "443", apartado: "3" }
+      - { norma: LEC, articulo: "281", apartado: "3" }
+      - { norma: LEC, articulo: "283", apartado: "1" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Conformidad sobre todos los hechos: la discrepancia es solo jurídica"
+    grupo: "Fijación de hechos"
+    momento: ["audiencia_previa"]
+    formula: "«Las partes estamos conformes en todos los hechos y la discrepancia se reduce a una cuestión jurídica. Interesamos que se dicte sentencia sin necesidad de juicio.»"
+    pide: "Sentencia en veinte días desde la terminación de la audiencia."
+    bases:
+      - { norma: LEC, articulo: "428", apartado: "3" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Solo hay prueba documental no impugnada (o periciales sin ratificación pedida)"
+    grupo: "Fijación de hechos"
+    momento: ["audiencia_previa"]
+    formula: "«Siendo la única prueba admitida la documental, ya aportada y no impugnada, interesamos que se dicte sentencia sin celebración de juicio.»"
+    pide: "Sentencia en veinte días sin juicio."
+    aviso: "En el verbal el equivalente se decide en el auto del 438.10, párrafo 3.º, no en sala."
+    bases:
+      - { norma: LEC, articulo: "429", apartado: "8" }
+      - { norma: LEC, articulo: "438", apartado: "10, párrafo 3.º" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  # ───────────────────────── AUDIENCIA PREVIA: DOCUMENTOS Y DICTÁMENES ─────────────────────────
+  - situacion: "Aportación por el actor de documentos que solo resultan relevantes por la contestación"
+    grupo: "Documentos y dictámenes en la audiencia"
+    momento: ["audiencia_previa", "vista_verbal"]
+    formula: "«Al amparo del artículo 265.3 aportamos los documentos [n.º], cuya relevancia se pone de manifiesto a consecuencia de lo alegado en la contestación sobre […].»"
+    pide: "Que se admitan y unan los documentos."
+    aviso: "Hay que explicar el nexo con la contestación: si no, se inadmiten como presentados fuera de plazo (269.1)."
+    bases:
+      - { norma: LEC, articulo: "265", apartado: "3" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Documento o prueba precluida que la contraria intenta aportar en la audiencia"
+    grupo: "Documentos y dictámenes en la audiencia"
+    momento: ["audiencia_previa", "vista_verbal"]
+    formula: "«Nos oponemos a la aportación: es un documento [de fecha anterior / del que la parte disponía] que debió acompañarse a [la demanda / la contestación]. No responde a la contestación ni a hecho nuevo. Interesamos su inadmisión y devolución.»"
+    pide: "Inadmisión por providencia y devolución del documento."
+    aviso: "La providencia de inadmisión no tiene recurso: se hace valer en segunda instancia (272). Si se admite, pedir que conste la oposición."
+    bases:
+      - { norma: LEC, articulo: "269", apartado: "1" }
+      - { norma: LEC, articulo: "265", apartado: "3" }
+      - { norma: LEC, articulo: "270", apartado: "1" }
+      - { norma: LEC, articulo: "272" }
+      - { norma: LEC, articulo: "136" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Impugnación de la autenticidad de un documento privado de contrario"
+    grupo: "Impugnación de documentos"
+    momento: ["audiencia_previa", "vista_verbal"]
+    formula: "«Impugnamos la autenticidad del documento [n.º] de contrario, porque [la firma no es de nuestro representado / el documento ha sido alterado]. No lo reconocemos.»"
+    pide: "Que el documento no haga prueba plena; la carga del cotejo o la prueba de autenticidad pasa a quien lo presentó."
+    aviso: "Si no se impugna aquí, el documento privado hace prueba plena (326.1). Si el cotejo acredita la autenticidad, costas del cotejo y posible multa por temeridad (326.2 y 320.3)."
+    bases:
+      - { norma: LEC, articulo: "427", apartado: "1" }
+      - { norma: LEC, articulo: "326", apartado: "1" }
+      - { norma: LEC, articulo: "326", apartado: "2" }
+      - { norma: LEC, articulo: "320", apartado: "3" }
+    no_consta_en_norma:
+      - "Ineficacia de la impugnación genérica o «a efectos dialécticos» (sin razón concreta): criterio jurisprudencial."
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Impugnación de documento público o de su copia"
+    grupo: "Impugnación de documentos"
+    momento: ["audiencia_previa", "vista_verbal"]
+    formula: "«Impugnamos la autenticidad de la copia del documento público [n.º]. Interesamos que se coteje con su original o matriz [o que se verifique la firma electrónica].»"
+    pide: "Cotejo o comprobación con el original."
+    aviso: "Si el cotejo confirma la autenticidad, los gastos son del impugnante y cabe multa de 120 a 600 euros por temeridad (320.3)."
+    bases:
+      - { norma: LEC, articulo: "427", apartado: "1" }
+      - { norma: LEC, articulo: "267" }
+      - { norma: LEC, articulo: "320", apartado: "1" }
+      - { norma: LEC, articulo: "320", apartado: "2" }
+      - { norma: LEC, articulo: "320", apartado: "3" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Impugnación de copia simple o reprográfica (fotografías, planos, impresiones)"
+    grupo: "Impugnación de documentos"
+    momento: ["audiencia_previa", "vista_verbal"]
+    formula: "«Cuestionamos la conformidad con su original de la copia del documento [n.º]. Interesamos que se aporte el original y se coteje.»"
+    pide: "Aportación del original y cotejo; si no es posible, valoración por sana crítica."
+    bases:
+      - { norma: LEC, articulo: "268", apartado: "2" }
+      - { norma: LEC, articulo: "334", apartado: "1" }
+      - { norma: LEC, articulo: "334", apartado: "2" }
+      - { norma: LEC, articulo: "334", apartado: "3" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Impugnación de documento electrónico (correos, mensajería, archivos con sello o firma)"
+    grupo: "Impugnación de documentos"
+    momento: ["audiencia_previa", "vista_verbal"]
+    formula: "«Impugnamos la autenticidad e integridad [y la fecha y hora] del documento electrónico [n.º]. Corresponde a quien lo aporta acreditarlas por cotejo pericial u otro medio.»"
+    pide: "Que se practique la comprobación pericial a cargo de quien lo aportó."
+    aviso: "Si lleva un servicio de confianza cualificado, se presume la característica y la comprobación es a cargo del impugnante, con costas y multa de 300 a 1.200 euros si es temeraria (326.4)."
+    bases:
+      - { norma: LEC, articulo: "326", apartado: "3" }
+      - { norma: LEC, articulo: "326", apartado: "4" }
+      - { norma: LEC, articulo: "427", apartado: "1" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Posición sobre el dictamen pericial de contrario"
+    grupo: "Documentos y dictámenes en la audiencia"
+    momento: ["audiencia_previa"]
+    formula: "«No admitimos el dictamen de contrario: lo contradecimos en [método / premisas / conclusiones]. Interesamos que su autor comparezca al juicio para explicarlo y responder a nuestras preguntas y objeciones.»"
+    pide: "Citación del perito al juicio con la intervención que se expresa (347.1)."
+    aviso: "Si nadie pide su presencia y la única prueba es documental o pericial no ratificada, puede dictarse sentencia sin juicio (429.8)."
+    bases:
+      - { norma: LEC, articulo: "427", apartado: "2" }
+      - { norma: LEC, articulo: "337", apartado: "2" }
+      - { norma: LEC, articulo: "347", apartado: "1" }
+      - { norma: LEC, articulo: "429", apartado: "8" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Dictamen pericial de contrario aportado fuera de plazo"
+    grupo: "Documentos y dictámenes en la audiencia"
+    momento: ["audiencia_previa", "vista_verbal"]
+    formula: "«Nos oponemos a la admisión del dictamen: no se aportó con [la demanda / la contestación] ni se anunció justificando la imposibilidad, y se presenta [fuera del plazo del 337.1]. Interesamos que se inadmita.»"
+    pide: "Inadmisión del dictamen por extemporáneo."
+    aviso: "Plazo del dictamen anunciado: cinco días antes de la audiencia previa (ordinario) o treinta desde la demanda o contestación (verbal), prorrogable con causa (337.1). Si la necesidad nace de la contestación o de la audiencia, rige el 338."
+    bases:
+      - { norma: LEC, articulo: "336", apartado: "1" }
+      - { norma: LEC, articulo: "336", apartado: "3" }
+      - { norma: LEC, articulo: "336", apartado: "4" }
+      - { norma: LEC, articulo: "337", apartado: "1" }
+      - { norma: LEC, articulo: "338", apartado: "1" }
+      - { norma: LEC, articulo: "269", apartado: "1" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Tacha del perito de parte que firmó el dictamen de la demanda o la contestación"
+    grupo: "Peritos"
+    momento: ["audiencia_previa", "vista_verbal"]
+    formula: "«Formulamos tacha del perito [nombre] por [ser pariente / tener interés / dependencia / amistad o enemistad / otra circunstancia] (art. 343.1.n.º), y proponemos para acreditarla [documental].»"
+    pide: "Que se tenga por formulada la tacha y se valore al apreciar el dictamen."
+    aviso: "En el ordinario, la tacha de los peritos de demanda y contestación debe proponerse en la audiencia previa; en el verbal, nunca después de la vista. No cabe prueba testifical de la tacha (343.2). Tacha temeraria: multa de 60 a 600 euros (344.2)."
+    bases:
+      - { norma: LEC, articulo: "343", apartado: "1" }
+      - { norma: LEC, articulo: "343", apartado: "2" }
+      - { norma: LEC, articulo: "344", apartado: "2" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Petición de perito judicial por las alegaciones complementarias de la audiencia"
+    grupo: "Documentos y dictámenes en la audiencia"
+    momento: ["audiencia_previa", "vista_verbal"]
+    formula: "«Las alegaciones complementarias admitidas hacen necesaria una pericia sobre […]. En lugar de aportar dictamen propio, interesamos que el tribunal designe perito [y, si hay acuerdo, que sea […]].»"
+    pide: "Designación judicial de perito (o del perito acordado por las partes)."
+    aviso: "Fuera de este supuesto, el perito judicial solo puede pedirse en la demanda o la contestación (339.2, párrafo 2.º). En el verbal, la vista se interrumpe hasta que se emita (339.3, párrafo 2.º)."
+    bases:
+      - { norma: LEC, articulo: "427", apartado: "3" }
+      - { norma: LEC, articulo: "427", apartado: "4" }
+      - { norma: LEC, articulo: "339", apartado: "3" }
+      - { norma: LEC, articulo: "339", apartado: "4" }
+      - { norma: LEC, articulo: "339", apartado: "2, párrafo 2.º" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Informe de detective privado aportado de contrario"
+    grupo: "Documentos y dictámenes en la audiencia"
+    momento: ["audiencia_previa", "vista_verbal"]
+    formula: "«No reconocemos como ciertos los hechos del informe [n.º]. Interesamos que su autor declare como testigo, que acredite antes su habilitación y se ratifique, y que el interrogatorio se limite a los hechos del informe.»"
+    pide: "Testifical del autor con las reglas del 380."
+    aviso: "No cabe tachar al detective por interés solo porque lo contrató la parte (380.1.1.ª). Sus valoraciones técnicas se rigen por el testigo-perito (380.2)."
+    bases:
+      - { norma: LEC, articulo: "265", apartado: "1.5.º" }
+      - { norma: LEC, articulo: "427", apartado: "2" }
+      - { norma: LEC, articulo: "380", apartado: "1" }
+      - { norma: LEC, articulo: "380", apartado: "2" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  # ───────────────────────── PROPOSICIÓN Y ADMISIÓN DE PRUEBA ─────────────────────────
+  - situacion: "Proposición de prueba en la audiencia previa"
+    grupo: "Proposición y admisión de prueba"
+    momento: ["audiencia_previa", "vista_verbal"]
+    formula: "«Proponemos los siguientes medios de prueba, por separado: interrogatorio de [parte], documental [n.º], testifical de [nombres], pericial de [perito]. Aportamos en este acto el escrito detallado.»"
+    pide: "Admisión de cada medio de prueba propuesto."
+    aviso: "Si no se entrega el escrito detallado en el acto, la admisión queda condicionada a presentarlo en los dos días siguientes (429.1, párrafo 2.º). En el verbal la proposición es escrita (438.8) y en la vista solo se completa (443.4)."
+    bases:
+      - { norma: LEC, articulo: "429", apartado: "1, párrafo 2.º" }
+      - { norma: LEC, articulo: "284" }
+      - { norma: LEC, articulo: "299", apartado: "1" }
+      - { norma: LEC, articulo: "438", apartado: "8" }
+      - { norma: LEC, articulo: "443", apartado: "4" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "El tribunal advierte que la prueba propuesta puede ser insuficiente"
+    grupo: "Proposición y admisión de prueba"
+    momento: ["audiencia_previa", "vista_verbal"]
+    formula: "«A la vista de lo indicado por Su Señoría sobre el hecho [n.º], completamos nuestra proposición con [medio de prueba].»"
+    pide: "Admisión de la prueba que completa o modifica la proposición."
+    aviso: "Si no se completa ahora, esa prueba no podrá pedirse luego como diligencia final (435.1.1.ª)."
+    bases:
+      - { norma: LEC, articulo: "429", apartado: "1, párrafos 3.º y 4.º" }
+      - { norma: LEC, articulo: "443", apartado: "4" }
+      - { norma: LEC, articulo: "435", apartado: "1.1.ª" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Oposición a la admisión de una prueba de contrario (impertinente, inútil o prohibida)"
+    grupo: "Proposición y admisión de prueba"
+    momento: ["audiencia_previa", "vista_verbal"]
+    formula: "«Nos oponemos a la admisión de [medio de prueba]: [no guarda relación con el objeto del proceso / no puede contribuir a esclarecer los hechos controvertidos / es una actividad prohibida por la ley].»"
+    pide: "Inadmisión de la prueba; si se admite, reposición y, en su caso, protesta."
+    aviso: "La resolución que admite también es recurrible en reposición en el acto (285.2 y 446): sin ella no cabe reproducir la queja en apelación."
+    bases:
+      - { norma: LEC, articulo: "283", apartado: "1" }
+      - { norma: LEC, articulo: "283", apartado: "2" }
+      - { norma: LEC, articulo: "283", apartado: "3" }
+      - { norma: LEC, articulo: "285", apartado: "2" }
+      - { norma: LEC, articulo: "446" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Prueba obtenida con vulneración de derechos fundamentales (prueba ilícita)"
+    grupo: "Proposición y admisión de prueba"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Alegamos que en la obtención de [la prueba] se ha vulnerado el derecho fundamental a [intimidad / secreto de las comunicaciones / …]. Interesamos que se resuelva con carácter previo y se declare su ilicitud.»"
+    pide: "Resolución previa sobre la ilicitud, con práctica de la prueba sobre ese extremo."
+    aviso: "Hay que alegarlo de inmediato. Contra lo resuelto solo cabe reposición en el acto, quedando a salvo reproducirlo en la apelación contra la sentencia (287.2). En el verbal se resuelve en el auto del 438.10 (287.3)."
+    bases:
+      - { norma: LEC, articulo: "287", apartado: "1" }
+      - { norma: LEC, articulo: "287", apartado: "2" }
+      - { norma: LEC, articulo: "287", apartado: "3" }
+      - { norma: LEC, articulo: "433", apartado: "1" }
+      - { norma: LEC, articulo: "283", apartado: "3" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Testigos y peritos: quién los presenta y quién debe ser citado"
+    grupo: "Proposición y admisión de prueba"
+    momento: ["audiencia_previa"]
+    formula: "«Esta parte se compromete a presentar en el juicio a [testigos/peritos]; interesamos que se cite judicialmente a [nombres], cuyo domicilio es […]. Interesamos auxilio judicial para [declarante].»"
+    pide: "Citación judicial de los indicados y, en su caso, exhorto."
+    aviso: "La suspensión o interrupción por incomparecencia que regulan los artículos 292.3 y 193.1.3.º se refiere a testigos y peritos citados judicialmente: el que nos comprometimos a traer corre de nuestra cuenta."
+    bases:
+      - { norma: LEC, articulo: "429", apartado: "5" }
+      - { norma: LEC, articulo: "284" }
+    no_consta_en_norma:
+      - "Consecuencia de la incomparecencia del testigo que la parte se comprometió a presentar: la norma solo regula la del citado judicialmente; criterio forense."
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Exhibición de documentos en poder de la contraria"
+    grupo: "Proposición y admisión de prueba"
+    momento: ["audiencia_previa", "vista_verbal"]
+    formula: "«Proponemos la exhibición por la demandada del documento [descripción], que no está a nuestra disposición y se refiere al objeto del proceso. Acompañamos copia simple [o indicamos su contenido]: […].»"
+    pide: "Requerimiento de exhibición, con la advertencia de los efectos del 329."
+    aviso: "Ante la negativa injustificada, pedir que se dé valor a la copia o a la versión aportada (329.1) o que se requiera su aportación (329.2)."
+    bases:
+      - { norma: LEC, articulo: "328", apartado: "1" }
+      - { norma: LEC, articulo: "328", apartado: "2" }
+      - { norma: LEC, articulo: "329", apartado: "1" }
+      - { norma: LEC, articulo: "329", apartado: "2" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Declaración escrita de una persona jurídica o entidad pública sobre hechos de su actividad"
+    grupo: "Proposición y admisión de prueba"
+    momento: ["audiencia_previa"]
+    formula: "«Proponemos que [entidad] responda por escrito, en los diez días anteriores al juicio, a los siguientes extremos: […], por referirse a su actividad sin que el conocimiento pueda individualizarse en persona física.»"
+    pide: "Requerimiento a la entidad con apercibimiento de multa de 150 a 600 euros."
+    aviso: "Si la respuesta es oscura o incompleta, pedir que se cite al juicio a la persona física que pueda aclararla (381.3). En el verbal se pide en el plazo de proposición escrita (438.8)."
+    bases:
+      - { norma: LEC, articulo: "381", apartado: "1" }
+      - { norma: LEC, articulo: "381", apartado: "2" }
+      - { norma: LEC, articulo: "381", apartado: "3" }
+      - { norma: LEC, articulo: "438", apartado: "8" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Persona jurídica: su representante no intervino en los hechos"
+    grupo: "Proposición y admisión de prueba"
+    momento: ["audiencia_previa"]
+    formula: "«[Si la representamos:] Nuestro representante legal no intervino en los hechos; quien intervino fue [nombre, cargo], cuya citación interesamos [como testigo, si ya no pertenece a la entidad].»"
+    pide: "Que se cite a juicio a la persona física que intervino en nombre de la entidad."
+    aviso: "Hay que alegarlo en la audiencia previa (309.1). Si en el juicio el representante dice desconocer quién intervino, se trata como respuesta evasiva o negativa a declarar (309.3)."
+    bases:
+      - { norma: LEC, articulo: "309", apartado: "1" }
+      - { norma: LEC, articulo: "309", apartado: "3" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Interrogatorio de un colitigante"
+    grupo: "Proposición y admisión de prueba"
+    momento: ["audiencia_previa", "vista_verbal"]
+    formula: "«[Proponente:] Existe oposición de intereses con el codemandado [nombre] en cuanto a […], por lo que proponemos su interrogatorio. [Oponente:] No hay conflicto entre colitigantes; nos oponemos.»"
+    pide: "Admisión o inadmisión del interrogatorio del colitigante."
+    bases:
+      - { norma: LEC, articulo: "301", apartado: "1" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Proposición de reconocimiento judicial"
+    grupo: "Reconocimiento judicial"
+    momento: ["audiencia_previa", "vista_verbal"]
+    formula: "«Proponemos reconocimiento judicial de [lugar / objeto], sobre estos extremos: […]. Concurriremos con [técnico]. Interesamos que los testigos [nombres] declaren acto seguido, en el lugar.»"
+    pide: "Admisión del reconocimiento, señalamiento con cinco días de antelación y, en su caso, testifical en el acto."
+    aviso: "La contraria puede añadir extremos y debe anunciar si llevará técnico (353.2, párrafo 2.º). La testifical en el lugar es a costa del que la pide (357.1)."
+    bases:
+      - { norma: LEC, articulo: "353", apartado: "1" }
+      - { norma: LEC, articulo: "353", apartado: "2" }
+      - { norma: LEC, articulo: "353", apartado: "3" }
+      - { norma: LEC, articulo: "357", apartado: "1" }
+      - { norma: LEC, articulo: "357", apartado: "2" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Cotejo de letras ante la firma negada de un documento privado"
+    grupo: "Impugnación de documentos"
+    momento: ["audiencia_previa", "vista_verbal"]
+    formula: "«Negada la autenticidad del documento [n.º], proponemos cotejo pericial de letras por perito judicial, con los indubitados [escritura / DNI / documentos reconocidos]; en su defecto, cuerpo de escritura del firmante.»"
+    pide: "Cotejo por perito designado por el tribunal."
+    aviso: "Si el requerido se niega a formar cuerpo de escritura, el documento se considera reconocido (350.3)."
+    bases:
+      - { norma: LEC, articulo: "326", apartado: "2" }
+      - { norma: LEC, articulo: "349", apartado: "1" }
+      - { norma: LEC, articulo: "349", apartado: "3" }
+      - { norma: LEC, articulo: "350", apartado: "1" }
+      - { norma: LEC, articulo: "350", apartado: "2" }
+      - { norma: LEC, articulo: "350", apartado: "3" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Grabaciones de audio o vídeo propuestas como prueba"
+    grupo: "Proposición y admisión de prueba"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«[Proponente:] Proponemos la reproducción de la grabación [n.º] y acompañamos su transcripción. [Contraria:] Cuestionamos su autenticidad y exactitud; aportamos [dictamen] e interesamos que conste en acta su identificación.»"
+    pide: "Reproducción ante el tribunal, acta identificativa y custodia del soporte."
+    aviso: "El proponente debe acompañar la transcripción de lo relevante (382.1). Si la obtención vulnera derechos fundamentales, ver la fórmula de prueba ilícita."
+    bases:
+      - { norma: LEC, articulo: "382", apartado: "1" }
+      - { norma: LEC, articulo: "382", apartado: "2" }
+      - { norma: LEC, articulo: "383", apartado: "1" }
+      - { norma: LEC, articulo: "383", apartado: "2" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Prueba anticipada ya practicada: pedir que se repita"
+    grupo: "Proposición y admisión de prueba"
+    momento: ["audiencia_previa", "vista_verbal"]
+    formula: "«La prueba de [medio] se practicó anticipadamente; siendo posible ahora, interesamos que se practique de nuevo en el juicio.»"
+    pide: "Repetición de la prueba; el tribunal valorará ambas por sana crítica."
+    aviso: "La anticipada antes del proceso pierde valor si la demanda no se presentó en dos meses desde su práctica, salvo fuerza mayor (295.3)."
+    bases:
+      - { norma: LEC, articulo: "295", apartado: "4" }
+      - { norma: LEC, articulo: "295", apartado: "3" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  # ───────────────────────── JUICIO O VISTA: CUESTIONES PREVIAS A LA PRUEBA ─────────────────────────
+  - situacion: "Documento presentado en el juicio o la vista una vez precluido el momento de aportarlo"
+    grupo: "Prueba precluida en el juicio"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Alegamos la improcedencia de tomar en consideración el documento: no es posterior, ni se desconocía, ni fue imposible obtenerlo antes con designación oportuna. Interesamos su inadmisión y, por mala fe, la multa del 270.2.»"
+    pide: "Que se resuelva en el acto no tomarlo en consideración; multa de 180 a 1.200 euros si hay ánimo dilatorio o mala fe."
+    aviso: "Si no se alega en el juicio o la vista, se pierde la ocasión (270.2). Después del juicio no se admite ningún documento salvo diligencias finales o resoluciones del 271.2."
+    bases:
+      - { norma: LEC, articulo: "270", apartado: "1" }
+      - { norma: LEC, articulo: "270", apartado: "2" }
+      - { norma: LEC, articulo: "271", apartado: "1" }
+      - { norma: LEC, articulo: "272" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Aportación de documento propio en el juicio por ser posterior o de conocimiento sobrevenido"
+    grupo: "Prueba precluida en el juicio"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Aportamos el documento [n.º], de fecha [posterior a la audiencia previa / que no pudo obtenerse antes pese a su designación / cuya existencia desconocíamos], lo que acreditamos con […].»"
+    pide: "Admisión del documento al amparo del 270.1."
+    bases:
+      - { norma: LEC, articulo: "270", apartado: "1.1.º" }
+      - { norma: LEC, articulo: "270", apartado: "1.2.º" }
+      - { norma: LEC, articulo: "270", apartado: "1.3.º" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Hecho nuevo o de nueva noticia alegado al inicio del juicio o la vista"
+    grupo: "Prueba precluida en el juicio"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Antes de la práctica de la prueba, alegamos el siguiente hecho [acaecido / conocido] después de la audiencia previa: […], y proponemos sobre él [medio de prueba].»"
+    pide: "Que se oiga a las partes y se admita la prueba sobre el hecho nuevo."
+    aviso: "Se alega en el juicio si cabe hacerlo allí; si no, por escrito de ampliación de hechos inmediatamente (286.1). Debe acreditarse su carácter sobrevenido (286.4)."
+    bases:
+      - { norma: LEC, articulo: "433", apartado: "1, párrafo 2.º" }
+      - { norma: LEC, articulo: "286", apartado: "1" }
+      - { norma: LEC, articulo: "286", apartado: "3" }
+      - { norma: LEC, articulo: "286", apartado: "4" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Incomparecencia de un testigo o perito citado judicialmente"
+    grupo: "Incidencias de sala"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«El testigo [nombre], citado judicialmente, no comparece sin excusa. Su declaración es imprescindible para el hecho [n.º]. Interesamos la interrupción del juicio, nueva citación con apercibimiento y la multa del 292.1.»"
+    pide: "Interrupción o suspensión, nueva citación bajo apercibimiento de desobediencia y multa de 180 a 600 euros."
+    aviso: "El tribunal decide, oyendo a las partes, si suspende o continúa (292.3): hay que explicar en el acto por qué la declaración es imprescindible (193.1.3.º)."
+    bases:
+      - { norma: LEC, articulo: "292", apartado: "1" }
+      - { norma: LEC, articulo: "292", apartado: "2" }
+      - { norma: LEC, articulo: "292", apartado: "3" }
+      - { norma: LEC, articulo: "193", apartado: "1.3.º" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Prueba admitida que no se ha practicado a tiempo por causa de la contraria"
+    grupo: "Incidencias de sala"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«La prueba de [medio], admitida, no se ha ejecutado a tiempo por causa de la demandada. Interesamos que se le imponga la multa del artículo 288 y que se practique como diligencia final.»"
+    pide: "Multa de 60 a 600 euros, previa audiencia, y diligencia final."
+    bases:
+      - { norma: LEC, articulo: "288", apartado: "1" }
+      - { norma: LEC, articulo: "288", apartado: "2" }
+      - { norma: LEC, articulo: "435", apartado: "1.2.ª" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  # ───────────────────────── INTERROGATORIO DE PARTE (ADEMÁS DE LAS FILAS 1, 7 Y 8) ─────────────────────────
+  - situacion: "Pregunta capciosa, sugestiva o confusa a nuestro cliente"
+    grupo: "Interrogatorio de parte"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Con la venia: la pregunta no está formulada con la debida claridad y precisión; [presupone un hecho no acreditado / induce la respuesta]. Interesamos que se reformule.»"
+    pide: "Que se inadmita o se reformule antes de contestar."
+    aviso: "La LEC no menciona las preguntas capciosas ni sugestivas: la objeción se ancla en la exigencia de claridad y precisión y en la prohibición de valoraciones (302.1)."
+    bases:
+      - { norma: LEC, articulo: "302", apartado: "1" }
+      - { norma: LEC, articulo: "303" }
+      - { norma: LEC, articulo: "306", apartado: "3" }
+    no_consta_en_norma:
+      - "Categorías de pregunta «capciosa» y «sugestiva»: proceden de la LECrim (fuera de la herramienta) y del uso forense; en la LEC no constan."
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Pregunta repetida o ya contestada"
+    grupo: "Objeciones comunes a parte y testigos"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Señoría, la pregunta ya ha sido formulada y contestada. Es inútil reiterarla; interesamos que se repela.»"
+    pide: "Que el tribunal repela la pregunta por inútil."
+    bases:
+      - { norma: LEC, articulo: "306", apartado: "1" }
+      - { norma: LEC, articulo: "372", apartado: "1" }
+      - { norma: LEC, articulo: "283", apartado: "2" }
+    no_consta_en_norma:
+      - "Pregunta «ya contestada» como causa propia de inadmisión: no consta; se reconduce a la inutilidad (306.1 y 372.1)."
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "El declarante contesta con apoyo de un borrador de respuestas"
+    grupo: "Interrogatorio de parte"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Con la venia: el declarante está leyendo respuestas preparadas. Interesamos que se le indique que responda por sí mismo, sin borrador, y que conste.»"
+    pide: "Que se impida el uso del borrador; solo cabe consultar documentos o notas si el tribunal lo considera conveniente."
+    bases:
+      - { norma: LEC, articulo: "305", apartado: "1" }
+      - { norma: LEC, articulo: "370", apartado: "2" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "El declarante no contesta afirmativa o negativamente"
+    grupo: "Interrogatorio de parte"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Señoría, interesamos que se requiera al declarante para que conteste primero sí o no, y añada después las explicaciones que estime.»"
+    pide: "Respuesta afirmativa o negativa, o precisa y concreta si no cabe."
+    aviso: "Si persiste, pedir el apercibimiento del 307 (fila de evasivas)."
+    bases:
+      - { norma: LEC, articulo: "305", apartado: "2" }
+      - { norma: LEC, articulo: "307", apartado: "2" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Negativa de la parte a declarar"
+    grupo: "Interrogatorio de parte"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Ante la negativa a declarar, interesamos que se aperciba en el acto al declarante de que pueden tenerse por reconocidos como ciertos los hechos de las preguntas en que intervino personalmente y le perjudican.»"
+    pide: "Apercibimiento del 307.1."
+    aviso: "No procede si concurre un deber legal de secreto (307.1)."
+    bases:
+      - { norma: LEC, articulo: "307", apartado: "1" }
+      - { norma: LEC, articulo: "316", apartado: "1" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Hechos no personales del declarante: propuesta de que conteste un tercero"
+    grupo: "Interrogatorio de parte"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«[Proponente de la prueba:] No aceptamos la sustitución por el tercero propuesto; el declarante debe contestar según sus conocimientos, dando razón de su origen.»"
+    pide: "Que el declarante responda; o, si se acepta, que el tercero conteste con las consecuencias de la declaración."
+    aviso: "Sin aceptación del proponente no hay sustitución, pero el declarante puede pedir que el tercero declare como testigo; decide el tribunal (308)."
+    bases:
+      - { norma: LEC, articulo: "308" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Representante de persona jurídica que no intervino en el hecho o dice no saber quién intervino"
+    grupo: "Interrogatorio de parte"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Interesamos que el representante identifique a la persona que intervino en nombre de la entidad; y, si manifiesta desconocerla, que se tenga como respuesta evasiva con los efectos del artículo 307.»"
+    pide: "Identificación y citación del interviniente como diligencia final; o efectos del 307."
+    bases:
+      - { norma: LEC, articulo: "309", apartado: "2" }
+      - { norma: LEC, articulo: "309", apartado: "3" }
+      - { norma: LEC, articulo: "435", apartado: "1.2.ª" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Varios declarantes sobre los mismos hechos (incomunicación)"
+    grupo: "Interrogatorio de parte"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Habiendo de declarar [varias partes / litisconsortes] sobre los mismos hechos, interesamos que se adopten medidas para que no se comuniquen ni presencien las declaraciones de los otros.»"
+    pide: "Medidas de incomunicación."
+    bases:
+      - { norma: LEC, articulo: "310" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Nuevo interrogatorio de la parte sobre hechos ya declarados"
+    grupo: "Interrogatorio de parte"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Nos oponemos: la parte ya ha declarado en este proceso sobre esos mismos hechos. No procede reiterar el interrogatorio.»"
+    pide: "Inadmisión del interrogatorio reiterado."
+    aviso: "No impide repetir el interrogatorio practicado como prueba anticipada si una parte lo pide y es posible (295.4)."
+    bases:
+      - { norma: LEC, articulo: "314" }
+      - { norma: LEC, articulo: "295", apartado: "4" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  # ───────────────────────── TESTIGOS (ADEMÁS DE LAS FILAS 2 Y 4) ─────────────────────────
+  - situacion: "Circunstancias de parcialidad reveladas en las preguntas generales al testigo"
+    grupo: "Testigos"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«A la vista de la respuesta del testigo sobre [su relación con la parte], ponemos de manifiesto esa circunstancia relativa a su imparcialidad e interesamos que se le interrogue sobre ella y conste en acta.»"
+    pide: "Interrogatorio sobre la imparcialidad y constancia para la valoración en sentencia."
+    aviso: "Es la vía cuando la causa se descubre en el acto; la tacha formal tiene plazo propio (378)."
+    bases:
+      - { norma: LEC, articulo: "367", apartado: "1" }
+      - { norma: LEC, articulo: "367", apartado: "2" }
+      - { norma: LEC, articulo: "378" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Tacha de un testigo de contrario"
+    grupo: "Testigos"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Formulamos tacha del testigo [nombre] por [parentesco / dependencia / interés / amistad o enemistad / condena por falso testimonio] (art. 377.1.n.º), y proponemos para acreditarla [documental].»"
+    pide: "Que se tenga por formulada la tacha y se valore con la declaración."
+    aviso: "Plazo: desde que se admite la testifical hasta que comienza el juicio o la vista (378). No cabe probar la tacha con testigos (379.1)."
+    bases:
+      - { norma: LEC, articulo: "377", apartado: "1" }
+      - { norma: LEC, articulo: "378" }
+      - { norma: LEC, articulo: "379", apartado: "1" }
+      - { norma: LEC, articulo: "379", apartado: "3" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Oposición a la tacha de un testigo propio"
+    grupo: "Testigos"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Nos oponemos a la tacha del testigo [nombre]: la causa alegada no concurre, porque […]. Aportamos [documentos].»"
+    pide: "Que se desestime la tacha al valorar la prueba."
+    aviso: "Si no se opone uno en los tres días siguientes a su formulación, se entiende que reconoce su fundamento (379.2): si se formula en sala, contestar en el acto."
+    bases:
+      - { norma: LEC, articulo: "379", apartado: "2" }
+      - { norma: LEC, articulo: "344", apartado: "2" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "El testigo no da razón de ciencia de lo que afirma"
+    grupo: "Testigos"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Señoría, interesamos que el testigo exprese la razón de ciencia de lo que acaba de decir: si lo presenció, se lo contaron o lo deduce.»"
+    pide: "Que el testigo exprese su razón de ciencia."
+    aviso: "La razón de ciencia es criterio legal de valoración del testimonio (376): si no la da, recordarlo en conclusiones."
+    bases:
+      - { norma: LEC, articulo: "370", apartado: "3" }
+      - { norma: LEC, articulo: "376" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Testigos que han presenciado declaraciones de otros o se han comunicado"
+    grupo: "Testigos"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Con la venia: el testigo [nombre], pendiente de declarar, ha permanecido en sala durante la declaración de [otro testigo]. Interesamos que conste en acta a efectos de su valoración.»"
+    pide: "Constancia del incidente y medidas para evitar la comunicación."
+    bases:
+      - { norma: LEC, articulo: "366", apartado: "2" }
+      - { norma: LEC, articulo: "376" }
+    no_consta_en_norma:
+      - "Efecto procesal de la infracción del 366.2 (exclusión del testimonio o solo merma de credibilidad): no consta; criterio judicial."
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "El testigo responde a una pregunta ya inadmitida"
+    grupo: "Testigos"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Señoría, la pregunta había sido inadmitida: interesamos que la respuesta no conste en acta.»"
+    pide: "Que la respuesta no conste."
+    bases:
+      - { norma: LEC, articulo: "368", apartado: "3" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Graves contradicciones entre testigos, o entre testigo y parte: careo"
+    grupo: "Testigos"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Al término de este interrogatorio, y dadas las graves contradicciones con lo declarado por [testigo / parte] sobre […], interesamos careo entre ambos; pedimos que se advierta al testigo que no se ausente.»"
+    pide: "Careo acto seguido."
+    aviso: "Debe pedirse al término del interrogatorio (373.3): después no hay ocasión."
+    bases:
+      - { norma: LEC, articulo: "373", apartado: "1" }
+      - { norma: LEC, articulo: "373", apartado: "2" }
+      - { norma: LEC, articulo: "373", apartado: "3" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Testigo-perito: manifestaciones técnicas del testigo"
+    grupo: "Testigos"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«En cuanto a las manifestaciones técnicas que el testigo agrega, hacemos notar que concurre en él la circunstancia de tacha del artículo 343.1.[n.º]: […].»"
+    pide: "Que se tenga en cuenta la circunstancia al valorar esas manifestaciones."
+    bases:
+      - { norma: LEC, articulo: "370", apartado: "4" }
+      - { norma: LEC, articulo: "343", apartado: "1" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "El testigo invoca el deber de secreto profesional"
+    grupo: "Testigos"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«[Si conviene que declare:] El secreto invocado no alcanza a este hecho, porque […]. Interesamos que se resuelva que el testigo debe responder [o, si se le libera, que conste en acta y qué preguntas afecta].»"
+    pide: "Resolución motivada sobre el fundamento de la negativa."
+    bases:
+      - { norma: LEC, articulo: "371", apartado: "1" }
+    vigilar:
+      - { norma: LOPJ, articulo: "542" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "El tribunal pretende prescindir de testigos tras oír a tres sobre el mismo hecho"
+    grupo: "Testigos"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Con la venia: el testigo [nombre] depone sobre un hecho distinto [o sobre un aspecto no aclarado del mismo hecho]: […]. Interesamos que se le oiga; en otro caso, formulamos protesta.»"
+    pide: "Que se oiga al testigo; subsidiariamente, protesta."
+    bases:
+      - { norma: LEC, articulo: "363" }
+      - { norma: LEC, articulo: "285", apartado: "2" }
+      - { norma: LEC, articulo: "446" }
+    no_consta_en_norma:
+      - "Recurribilidad de la decisión de obviar testigos ya admitidos (363, párrafo 2.º): la norma no la regula; se aplica por analogía el régimen de inadmisión de prueba (285.2 y 446)."
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "El autor de un informe (detective) declara como testigo"
+    grupo: "Testigos"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Antes de las preguntas, interesamos que el testigo acredite su habilitación profesional, reconozca el informe y se ratifique. Nos oponemos a preguntas que excedan de los hechos consignados en él.»"
+    pide: "Acreditación, reconocimiento, ratificación y limitación del interrogatorio."
+    bases:
+      - { norma: LEC, articulo: "380", apartado: "1.2.ª" }
+      - { norma: LEC, articulo: "380", apartado: "1.3.ª" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  # ───────────────────────── PERITOS EN EL JUICIO O LA VISTA ─────────────────────────
+  - situacion: "Intervención del perito: exposición, explicación y respuesta a objeciones"
+    grupo: "Peritos"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Interesamos que el perito explique [el punto n.º] del dictamen y responda a nuestras objeciones sobre [método / premisas / conclusiones].»"
+    pide: "La intervención del 347.1.2.º y 3.º."
+    aviso: "El tribunal solo puede denegarla por impertinente o inútil o por deber de confidencialidad de una mediación previa (347.1, párrafo 2.º)."
+    bases:
+      - { norma: LEC, articulo: "347", apartado: "1.2.º" }
+      - { norma: LEC, articulo: "347", apartado: "1.3.º" }
+      - { norma: LEC, articulo: "347", apartado: "1, párrafo 2.º" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Ampliación del dictamen a puntos conexos"
+    grupo: "Peritos"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Interesamos que el perito manifieste si puede ampliar su dictamen al punto conexo [X] en este acto y, si no, su opinión sobre la utilidad de la ampliación y el plazo que precisaría.»"
+    pide: "Respuesta del perito sobre la ampliación."
+    bases:
+      - { norma: LEC, articulo: "347", apartado: "1.4.º" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Crítica del dictamen de contrario por nuestro perito"
+    grupo: "Peritos"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Interesamos que nuestro perito, presente en sala, formule su crítica del dictamen de contrario.»"
+    pide: "Intervención del perito propio para criticar el dictamen ajeno."
+    bases:
+      - { norma: LEC, articulo: "347", apartado: "1.5.º" }
+    no_consta_en_norma:
+      - "Careo o declaración conjunta de peritos: no consta en la LEC como tal; se practica por uso forense al amparo del 347.1.5.º."
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "El tribunal acuerda de oficio ampliar el dictamen de un perito de parte"
+    grupo: "Peritos"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Con todo respeto, Señoría: el tribunal puede preguntar y pedir explicaciones al perito, pero no acordar de oficio la ampliación del dictamen. Formulamos protesta.»"
+    pide: "Que no se acuerde la ampliación de oficio; protesta si se mantiene."
+    aviso: "La ampliación de oficio solo cabe con peritos designados de oficio en filiación, capacidad o procesos matrimoniales (339.5)."
+    bases:
+      - { norma: LEC, articulo: "347", apartado: "2" }
+      - { norma: LEC, articulo: "339", apartado: "5" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Tacha de un perito con dictamen aportado después de la demanda o la contestación"
+    grupo: "Peritos"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Formulamos tacha del perito [nombre], autor del dictamen aportado [con posterioridad], por [causa del art. 343.1]; proponemos para acreditarla [documental].»"
+    pide: "Que se tenga por formulada la tacha."
+    aviso: "En el verbal, nunca después de la vista (343.2). El perito designado judicialmente no se tacha: se recusa (343.1)."
+    bases:
+      - { norma: LEC, articulo: "347", apartado: "1.6.º" }
+      - { norma: LEC, articulo: "343", apartado: "1" }
+      - { norma: LEC, articulo: "343", apartado: "2" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Dictamen sin juramento o promesa de objetividad, o perito sin título oficial"
+    grupo: "Peritos"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Hacemos notar que el dictamen [no contiene la manifestación de objetividad del artículo 335.2 / está firmado por quien carece del título oficial que corresponde a la materia]. Interesamos que se tenga en cuenta al valorarlo.»"
+    pide: "Que conste el defecto para la valoración del dictamen."
+    bases:
+      - { norma: LEC, articulo: "335", apartado: "2" }
+      - { norma: LEC, articulo: "340", apartado: "1" }
+    no_consta_en_norma:
+      - "Consecuencia de la falta de juramento o de titulación (inadmisión, subsanación o mera valoración): la LEC no la fija; criterio jurisprudencial."
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  # ───────────────────────── DOCUMENTAL, REPRODUCCIÓN Y RECONOCIMIENTO EN EL JUICIO ─────────────────────────
+  - situacion: "Negativa injustificada de la contraria a exhibir un documento"
+    grupo: "Documental en el juicio"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Ante la negativa injustificada a exhibir [documento], interesamos que se atribuya valor probatorio a la copia que aportamos [o a nuestra versión de su contenido].»"
+    pide: "Efecto del 329.1 o, alternativamente, requerimiento de aportación (329.2)."
+    bases:
+      - { norma: LEC, articulo: "329", apartado: "1" }
+      - { norma: LEC, articulo: "329", apartado: "2" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Examen de soportes informáticos o contables en sala"
+    grupo: "Documental en el juicio"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Interesamos que el soporte se examine de modo que esta parte pueda conocerlo con idéntico conocimiento que el tribunal, y alegar sobre él.»"
+    pide: "Examen contradictorio del instrumento y su documentación bajo la fe del letrado de la Administración de Justicia."
+    bases:
+      - { norma: LEC, articulo: "384", apartado: "1" }
+      - { norma: LEC, articulo: "384", apartado: "2" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Observaciones durante el reconocimiento judicial"
+    grupo: "Reconocimiento judicial"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Con la venia, hacemos la siguiente observación sobre [lo reconocido]: […]. Interesamos que se oiga también al técnico que nos acompaña, previo juramento o promesa.»"
+    pide: "Constancia de la observación y audiencia del técnico."
+    bases:
+      - { norma: LEC, articulo: "354", apartado: "2" }
+      - { norma: LEC, articulo: "354", apartado: "3" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  # ───────────────────────── CONCLUSIONES, DILIGENCIAS FINALES, COSTAS Y SENTENCIA ─────────────────────────
+  - situacion: "Conclusiones en el juicio ordinario"
+    grupo: "Conclusiones"
+    momento: ["juicio"]
+    formula: "«Sobre los hechos controvertidos: primero, el hecho [n.º] ha quedado probado por [prueba, con remisión a autos]; segundo, [hecho] debe tenerse por cierto por presunción; tercero, [hecho dudoso]: la carga era de la contraria.»"
+    pide: "Que se tengan por probados o inciertos los hechos en los términos expuestos."
+    aviso: "Orden legal: primero los hechos propios, luego los de contrario; después, informe jurídico. Las pretensiones no pueden alterarse en este momento (433.3)."
+    bases:
+      - { norma: LEC, articulo: "433", apartado: "2" }
+      - { norma: LEC, articulo: "433", apartado: "3" }
+    vigilar:
+      - { norma: LEC, articulo: "217" }
+      - { norma: LEC, articulo: "386" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "La contraria altera en conclusiones su pretensión"
+    grupo: "Conclusiones"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Con la venia: la contraria está alterando en conclusiones su pretensión [o introduciendo un hecho no alegado], lo que veda el artículo 433.3. Interesamos que no se tome en consideración y que conste nuestra protesta.»"
+    pide: "Que no se tenga en cuenta la alteración; constancia de la protesta."
+    aviso: "Una sentencia que acoja la pretensión alterada incurriría en incongruencia (218.1): la protesta prepara ese motivo de apelación (459)."
+    bases:
+      - { norma: LEC, articulo: "433", apartado: "3" }
+      - { norma: LEC, articulo: "412", apartado: "1" }
+      - { norma: LEC, articulo: "218", apartado: "1" }
+      - { norma: LEC, articulo: "459" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Turno de conclusiones en la vista del juicio verbal"
+    grupo: "Conclusiones"
+    momento: ["vista_verbal"]
+    formula: "«Con la venia, practicada la prueba, interesamos un breve turno de conclusiones.»"
+    pide: "Que se conceda turno de conclusiones orales."
+    aviso: "En el verbal el turno es potestativo («podrá conceder», 447.1): pedirlo expresamente; si se niega, que conste."
+    bases:
+      - { norma: LEC, articulo: "447", apartado: "1" }
+      - { norma: LEC, articulo: "185", apartado: "4" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Petición de diligencias finales"
+    grupo: "Diligencias finales"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Interesamos como diligencia final la práctica de [prueba], admitida y no practicada por causa ajena a esta parte [o referida al hecho nuevo del artículo 286].»"
+    pide: "Auto que acuerde la diligencia final, a practicar en veinte días."
+    aviso: "Solo a instancia de parte, y nunca para pruebas que pudieron proponerse en tiempo, incluidas las sugeridas por el tribunal en la audiencia (435.1.1.ª). Practicada, hay cinco días para escrito de valoración (436.1)."
+    bases:
+      - { norma: LEC, articulo: "435", apartado: "1" }
+      - { norma: LEC, articulo: "436", apartado: "1" }
+      - { norma: LEC, articulo: "445" }
+      - { norma: LEC, articulo: "447", apartado: "1" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Oposición a diligencias finales de contrario"
+    grupo: "Diligencias finales"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Nos oponemos: la prueba que se pide pudo proponerse en tiempo y forma [y el tribunal llegó a advertir la insuficiencia en la audiencia]. No cabe como diligencia final.»"
+    pide: "Que no se acuerde la diligencia final."
+    bases:
+      - { norma: LEC, articulo: "435", apartado: "1.1.ª" }
+      - { norma: LEC, articulo: "429", apartado: "1, párrafo 3.º" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Petición de costas al cerrar el juicio o la vista"
+    grupo: "Conclusiones"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Interesamos la condena en costas de la contraria por el vencimiento [y su temeridad, porque […]]; hacemos notar además que rehusó sin justa causa el medio adecuado de solución de controversias al que fue convocada.»"
+    pide: "Condena en costas; declaración de temeridad para excluir el límite del tercio (394.3)."
+    aviso: "La negativa injustificada a un MASC priva de costas a quien rehusó incluso si gana (394.1, párrafo 3.º), y puede justificarlas en estimación parcial (394.2, párrafo 2.º)."
+    bases:
+      - { norma: LEC, articulo: "394", apartado: "1" }
+      - { norma: LEC, articulo: "394", apartado: "2" }
+      - { norma: LEC, articulo: "394", apartado: "3" }
+      - { norma: "LO 1/2025", articulo: "7", apartado: "4" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Resolución oral sin motivación o sin indicación de recursos"
+    grupo: "Resoluciones en sala"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Con todo respeto, Señoría, interesamos que se exprese la motivación sucinta de la resolución, si es o no firme y qué recursos caben.»"
+    pide: "Motivación sucinta e indicación de firmeza y recursos."
+    bases:
+      - { norma: LEC, articulo: "210", apartado: "1" }
+      - { norma: CE, articulo: "120", apartado: "3" }
+      - { norma: CE, articulo: "24", apartado: "1" }
+    no_consta_en_norma:
+      - "El 120.3 CE se refiere a sentencias; su extensión a resoluciones orales interlocutorias es doctrina constitucional del 24.1 CE."
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Sentencia oral en el juicio verbal"
+    grupo: "Resoluciones en sala"
+    momento: ["vista_verbal"]
+    formula: "«[No recurrir:] Esta parte manifiesta su decisión de no recurrir. [Recurrir:] Esta parte no renuncia al recurso y manifestará por escrito su interés en recurrir en el plazo legal.»"
+    pide: "Declaración de firmeza (si todas renuncian) o reserva del recurso."
+    aviso: "Hay cinco días desde la vista para el escrito que manifiesta el interés en recurrir y los pronunciamientos afectados (210.4). La sentencia oral no cabe donde no interviene abogado (210.3)."
+    bases:
+      - { norma: LEC, articulo: "210", apartado: "3" }
+      - { norma: LEC, articulo: "210", apartado: "4" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Concepto oscuro o error material en una resolución dictada en sala"
+    grupo: "Resoluciones en sala"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Interesamos la aclaración del pronunciamiento relativo a […], que resulta oscuro [o la rectificación del error material en …].»"
+    pide: "Aclaración o rectificación."
+    aviso: "Fuera del acto, la aclaración se pide en dos días hábiles desde la publicación y el complemento de pronunciamientos omitidos en cinco desde la notificación (214.2 y 215.2); ambos interrumpen el plazo de recurso (215.5)."
+    bases:
+      - { norma: LEC, articulo: "214", apartado: "1" }
+      - { norma: LEC, articulo: "214", apartado: "2" }
+      - { norma: LEC, articulo: "214", apartado: "3" }
+      - { norma: LEC, articulo: "215", apartado: "2" }
+      - { norma: LEC, articulo: "215", apartado: "5" }
+    no_consta_en_norma:
+      - "Petición de aclaración oral en el mismo acto: la LEC regula la escrita (214.2); pedirla en sala es uso forense."
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Resolución judicial o administrativa posterior a las conclusiones y decisiva"
+    grupo: "Resoluciones en sala"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Aportamos la [sentencia / resolución administrativa] de fecha [posterior a las conclusiones], condicionante o decisiva para resolver, e interesamos su unión con traslado a las demás partes.»"
+    pide: "Admisión de la resolución, con traslado por cinco días y suspensión del plazo para sentencia."
+    bases:
+      - { norma: LEC, articulo: "271", apartado: "2" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  # ───────────────────────── INCIDENCIAS DE SALA ─────────────────────────
+  - situacion: "Infracción procesal causante de indefensión durante el acto"
+    grupo: "Incidencias de sala"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Con la venia: se está prescindiendo de [norma esencial del procedimiento], lo que nos causa indefensión porque […]. Interesamos que se declare la nulidad de [la actuación] y, en otro caso, que conste nuestra protesta.»"
+    pide: "Nulidad previa audiencia de las partes; subsidiariamente, protesta."
+    aviso: "En apelación hay que acreditar que la infracción se denunció oportunamente (459): sin protesta en el acto se pierde el motivo."
+    bases:
+      - { norma: LEC, articulo: "225", apartado: "3.º" }
+      - { norma: LEC, articulo: "227", apartado: "2" }
+      - { norma: LEC, articulo: "459" }
+      - { norma: LOPJ, articulo: "238", apartado: "3.º" }
+      - { norma: LOPJ, articulo: "240", apartado: "2" }
+      - { norma: CE, articulo: "24", apartado: "1" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Falla la grabación de la vista"
+    grupo: "Incidencias de sala"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Con la venia: advertimos que el sistema de grabación no está funcionando [desde …]. Interesamos que se documente por acta del letrado de la Administración de Justicia [o que se repita lo no grabado].»"
+    pide: "Documentación subsidiaria por acta o repetición del tramo afectado."
+    aviso: "Sin grabación ni acta no hay forma de revisar en apelación lo ocurrido; denunciarlo en el acto (459)."
+    bases:
+      - { norma: LEC, articulo: "187", apartado: "1" }
+      - { norma: LEC, articulo: "187", apartado: "2" }
+      - { norma: LEC, articulo: "147" }
+    no_consta_en_norma:
+      - "Repetición del acto o nulidad por pérdida de la grabación: no consta; criterio jurisprudencial según haya o no indefensión."
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Petición de copia de la grabación"
+    grupo: "Incidencias de sala"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Interesamos, a nuestra costa, copia o acceso electrónico a la grabación de este acto.»"
+    pide: "Copia de la grabación."
+    bases:
+      - { norma: LEC, articulo: "147", apartado: "párrafo 6.º" }
+      - { norma: LEC, articulo: "187", apartado: "1, párrafo 2.º" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Cuestión incidental que el tribunal no puede resolver en el acto"
+    grupo: "Incidencias de sala"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«La cuestión planteada requiere [prueba / estudio] que no cabe resolver en el acto. Interesamos la interrupción de la vista y su reanudación en la fecha más próxima.»"
+    pide: "Interrupción y nuevo señalamiento (en el acto si es posible)."
+    bases:
+      - { norma: LEC, articulo: "193", apartado: "1.1.º" }
+      - { norma: LEC, articulo: "193", apartado: "3" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Suspensión de la vista de común acuerdo o por imposibilidad sobrevenida"
+    grupo: "Incidencias de sala"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«[De acuerdo:] Las partes solicitamos de común acuerdo la suspensión por [justa causa]. [Imposibilidad:] Interesamos la suspensión por imposibilidad absoluta de [parte citada a interrogatorio / abogado], sobrevenida y acreditada con […].»"
+    pide: "Suspensión y nuevo señalamiento."
+    aviso: "Si la imposibilidad se conocía con tiempo, había que pedir nuevo señalamiento por el 183: la suspensión del 188 es para lo sobrevenido. Urgencia médica del mismo día: basta cualquier medio, con acreditación posterior (188.1.5.º)."
+    bases:
+      - { norma: LEC, articulo: "188", apartado: "1.3.º" }
+      - { norma: LEC, articulo: "188", apartado: "1.4.º" }
+      - { norma: LEC, articulo: "188", apartado: "1.5.º" }
+      - { norma: LEC, articulo: "183", apartado: "1" }
+      - { norma: LEC, articulo: "430" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Fallo técnico de la videoconferencia"
+    grupo: "Incidencias de sala"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Con la venia: la conexión con [interviniente] no permite el buen desarrollo del acto [no se oye / no hay imagen]. Interesamos la suspensión y que conste en acta.»"
+    pide: "Suspensión por imposibilidad técnica."
+    bases:
+      - { norma: LEC, articulo: "188", apartado: "1.8.º" }
+    vigilar:
+      - { norma: LOPJ, articulo: "229" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Interrupciones o limitación indebida de la palabra del abogado"
+    grupo: "Incidencias de sala"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Con todo respeto, Señoría: interesamos el amparo de esta defensa en su libertad de expresión y defensa, para concluir la intervención sobre [cuestión debatida], y que conste en acta.»"
+    pide: "Amparo en la libertad de expresión y defensa; constancia."
+    aviso: "El tribunal puede retirar la palabra tras dos advertencias si uno se separa notoriamente de lo debatido (186.2): ceñirse a la cuestión refuerza la protesta."
+    bases:
+      - { norma: LOPJ, articulo: "542", apartado: "2" }
+      - { norma: LEC, articulo: "186", apartado: "2.º" }
+      - { norma: CE, articulo: "24", apartado: "2" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Corrección disciplinaria impuesta al abogado en sala"
+    grupo: "Incidencias de sala"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Interesamos que se hagan constar el hecho que motiva la corrección, nuestras alegaciones, que formulamos ahora: […], y el acuerdo que se adopte.»"
+    pide: "Constancia del hecho, las alegaciones y el acuerdo; audiencia antes de la multa."
+    aviso: "Contra la corrección: recurso de audiencia en justicia en cinco días y, después o directamente, alzada ante la Sala de Gobierno en cinco días (556 LOPJ)."
+    bases:
+      - { norma: LOPJ, articulo: "553" }
+      - { norma: LOPJ, articulo: "554", apartado: "2" }
+      - { norma: LOPJ, articulo: "555", apartado: "2" }
+      - { norma: LOPJ, articulo: "556" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Actuación de la contraria contraria a la buena fe procesal"
+    grupo: "Incidencias de sala"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Interesamos que se rechace la [petición / incidente] por manifiesto abuso de derecho o fraude procesal y que se deduzca pieza separada para la multa del artículo 247.3.»"
+    pide: "Rechazo de la petición y multa por mala fe procesal (180 a 6.000 euros, máximo un tercio de la cuantía)."
+    bases:
+      - { norma: LEC, articulo: "247", apartado: "1" }
+      - { norma: LEC, articulo: "247", apartado: "2" }
+      - { norma: LEC, articulo: "247", apartado: "3" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Rectificación de hechos o conceptos tras la prueba en una vista"
+    grupo: "Conclusiones"
+    momento: ["vista_verbal"]
+    formula: "«Con la venia, para rectificar un hecho: la contraria ha afirmado que […], cuando de la prueba resulta que […].»"
+    pide: "Que conste la rectificación."
+    bases:
+      - { norma: LEC, articulo: "185", apartado: "4" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  # ───────────────────────── JUICIO VERBAL: VISTA ─────────────────────────
+  - situacion: "No comparece el demandante a la vista (habla el demandado)"
+    grupo: "Juicio verbal: vista"
+    momento: ["vista_verbal"]
+    formula: "«No compareciendo el actor, interesamos que se le tenga por desistido, con imposición de costas y condena a indemnizarnos los daños y perjuicios, que acreditamos con […]. [O bien:] Alegamos interés legítimo en la sentencia de fondo.»"
+    pide: "Desistimiento con costas e indemnización, o continuación para sentencia de fondo."
+    aviso: "La indemnización solo si se solicita y acreditan los daños en el acto (442.1)."
+    bases:
+      - { norma: LEC, articulo: "442", apartado: "1" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "No comparece el demandado a la vista (habla el actor)"
+    grupo: "Juicio verbal: vista"
+    momento: ["vista_verbal"]
+    formula: "«No compareciendo la demandada, interesamos que se celebre la vista y, admitido su interrogatorio, que se tengan por reconocidos los hechos en que intervino y le perjudican.»"
+    pide: "Celebración de la vista y efecto del 304."
+    bases:
+      - { norma: LEC, articulo: "442", apartado: "2" }
+      - { norma: LEC, articulo: "440", apartado: "párrafo 3.º" }
+      - { norma: LEC, articulo: "304" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Aclaraciones y fijación de hechos al inicio de la vista"
+    grupo: "Juicio verbal: vista"
+    momento: ["vista_verbal"]
+    formula: "«Con la venia, aclaramos que […]. Son hechos conformes los [n.º]; controvertidos, los siguientes: […].»"
+    pide: "Fijación de hechos controvertidos."
+    aviso: "Tras la reforma de la LO 1/2025, la contestación es escrita (438.1): en la vista no se contesta, se aclara y se fijan hechos."
+    bases:
+      - { norma: LEC, articulo: "443", apartado: "3" }
+      - { norma: LEC, articulo: "438", apartado: "1" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Crédito compensable que excede de la cuantía del verbal"
+    grupo: "Juicio verbal: vista"
+    momento: ["vista_verbal"]
+    formula: "«El crédito que se opone en compensación excede de la cuantía del juicio verbal. Interesamos que se tenga por no hecha la alegación y se remita a la demandada al procedimiento que corresponda.»"
+    pide: "Que se tenga por no hecha la alegación de compensación."
+    bases:
+      - { norma: LEC, articulo: "438", apartado: "3" }
+    vigilar:
+      - { norma: LEC, articulo: "408" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Desahucio por falta de pago: el demandado alega causas distintas del pago o la enervación"
+    grupo: "Juicio verbal: vista"
+    momento: ["vista_verbal"]
+    formula: "«Nos oponemos a que se discutan [obras, compensaciones, otras cuestiones]: en el desahucio por impago solo cabe alegar y probar el pago o la procedencia de la enervación. Interesamos que no se admitan esas alegaciones ni su prueba.»"
+    pide: "Que se limite la vista a las causas tasadas."
+    aviso: "La sentencia de desahucio carece de cosa juzgada salvo en las cantidades acumuladas (447.2)."
+    bases:
+      - { norma: LEC, articulo: "444", apartado: "1" }
+      - { norma: LEC, articulo: "447", apartado: "2" }
+    vigilar:
+      - { norma: LEC, articulo: "22" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Reposición contra la admisión o inadmisión de prueba en la vista"
+    grupo: "Juicio verbal: vista"
+    momento: ["vista_verbal"]
+    formula: "«Interponemos recurso de reposición contra la [admisión / inadmisión] de [prueba], por […]. Si se desestima, formulamos protesta para hacer valer nuestro derecho en la segunda instancia.»"
+    pide: "Reposición resuelta en el acto; protesta."
+    bases:
+      - { norma: LEC, articulo: "446" }
+      - { norma: LEC, articulo: "460", apartado: "2.1.ª" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Petición de perito judicial en la vista del verbal"
+    grupo: "Juicio verbal: vista"
+    momento: ["vista_verbal"]
+    formula: "«Interesamos que el tribunal designe perito para dictaminar sobre […], con interrupción de la vista hasta que se emita el dictamen [y, si hay acuerdo, que sea […]].»"
+    pide: "Designación judicial de perito e interrupción de la vista."
+    aviso: "Fuera de lo nacido de alegaciones nuevas, el perito judicial debe pedirse en la demanda o la contestación (339.2, párrafo 2.º): justificar por qué se pide ahora."
+    bases:
+      - { norma: LEC, articulo: "339", apartado: "3, párrafo 2.º" }
+      - { norma: LEC, articulo: "339", apartado: "2, párrafo 2.º" }
+      - { norma: LEC, articulo: "339", apartado: "4" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"

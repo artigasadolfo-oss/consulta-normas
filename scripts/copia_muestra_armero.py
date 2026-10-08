@@ -13,3 +13,7 @@ print("indice/muestra.yaml  <-", md.name)
 for t in sorted((AQUI / "docs/indice").glob("tanda-*.yaml")):
     shutil.copyfile(t, AQUI / "indice" / t.name)
     print(f"indice/{t.name}  <- docs/indice/{t.name}")
+(AQUI / "formulas").mkdir(exist_ok=True)
+for t in sorted((AQUI / "docs/indice").glob("formulas-sala-*.yaml")):
+    shutil.copyfile(t, AQUI / "formulas" / t.name)
+    print(f"formulas/{t.name}  <- docs/indice/{t.name}")
