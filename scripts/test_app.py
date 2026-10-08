@@ -582,7 +582,7 @@ with sync_playwright() as p:
         _, _, l_ = build.lee_norma(cfg_); ch_, _ = build.parse_norma(cfg_, l_)
         for c_ in ch_:
             for ln_ in (c_["b"] if isinstance(c_["b"], list) else str(c_["b"]).split("\n")):
-                if re.match(r"^\s*§", ln_):
+                if re.match(r"^\s*(?:#{1,6}\s*)?§", ln_):   # en la fuente la línea suelta es «##### § 1.º …»
                     sueltos_.append((cfg_["sigla"], c_["k"], ln_[:50]))
     check("ningún artículo lleva dentro un rótulo «§» suelto (es estructura)", not sueltos_, str(sueltos_[:4]))
     def lector_(h):
