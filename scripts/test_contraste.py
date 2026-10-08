@@ -52,6 +52,29 @@ caso("«Disposición adicional primera» -> da1", "da1" in vig, list(vig))
 caso("«Artículo treinta y uno» -> 31", "31" in vig, list(vig))
 caso("«283 bis a)» -> «283 bis a» (como el espejo)", "283 bis a" in vig, list(vig))
 caso("clave_de_titulo: «Art 1» (CC) -> 1; «Artículo único» -> unico", c.clave_de_titulo("Art 1") == "1" and c.clave_de_titulo("Artículo único") == "unico")
+casos_letra = {"Artículo doscientos treinta y uno": "231", "Artículo cuatrocientos cincuenta y cinco": "455", "Artículo doscientos dieciséis bis ": "216 bis",
+               "Artículo ciento uno": "101", "Artículo cien": "100", "Artículo noventa y nueve": "99", "Artículo veintiuno": "21",
+               "Artículo primero": "1", "Artículo cuarto bis": "4 bis", "Artículo quinto": "5", "Artículo treinta y uno": "31", "Artículo uno": "1"}
+mal = {t: (c.clave_de_titulo(t), esp) for t, esp in casos_letra.items() if c.clave_de_titulo(t) != esp}
+caso("clave_de_titulo: cardinales en letra con centenas (231, 455, 216 bis) y sin romper los ordinales («primero», «cuarto bis»)", not mal, str(mal))
+caso("cardinal_en_letras: «tercero» y «cuarto» son ordinales, no cardinales", c.cardinal_en_letras(["tercero"]) == (None, 0) and c.cardinal_en_letras(["cuarto", "bis"]) == (None, 0))
+xml = doc(bloque("adoscientostreintayuno", "Artículo doscientos treinta y uno", ver("20150101", "20150101", ["Artículo doscientos treinta y uno", "1. Texto 231."])),
+          bloque("acuatrocientoscincuentaycinco", "Artículo cuatrocientos cincuenta y cinco", ver("20150101", "20150101", ["Artículo cuatrocientos cincuenta y cinco", "Texto 455."])),
+          bloque("a216bis", "Artículo doscientos dieciséis bis ", ver("20150101", "20150101", ["Artículo 216 bis.", "Texto 216 bis."])),
+          bloque("a216bis2", "Artículo doscientos dieciséis bis 2", ver("20150101", "20150101", ["Artículo 216 bis 2.", "Texto 216 bis 2."])),
+          bloque("a216bis3", "Artículo doscientos dieciséis bis 3", ver("20150101", "20150101", ["Artículo 216 bis 3.", "Texto 216 bis 3."])))
+vig, _ = c.bloques_boe(xml, HOY)
+caso("LOPJ: 231 y 455, titulados en letra TAMBIÉN en su primer párrafo, se emparejan (antes salían «solo en el espejo» y no se contrastaban)", "231" in vig and "455" in vig, list(vig))
+caso("LOPJ: «216 bis», «216 bis 2» y «216 bis 3» son TRES artículos distintos (antes el 2 y el 3 se perdían detrás del primero)", {"216 bis", "216 bis 2", "216 bis 3"} <= set(vig) and vig["216 bis 2"] != vig["216 bis"], list(vig))
+caso("el texto de «216 bis 2» es el suyo, no el del «216 bis»", vig["216 bis 2"].endswith(c.esqueleto("Texto 216 bis 2.")), vig.get("216 bis 2"))
+
+print("[formato nuevo del espejo (legalize v0.4): subcarpeta = 2 primeros caracteres del SHA-1 del identificador]")
+rp = c.rutas_posibles(dict(boe="BOE-A-2000-323"))
+caso("rutas posibles de la LEC: la antigua y la del formato nuevo (es/06/…)", rp == ["es/BOE-A-2000-323.md", "es/06/BOE-A-2000-323.md"], rp)
+rp = c.rutas_posibles(dict(boe="BOE-A-1889-4763"))
+caso("rutas posibles del CC: es/df/… (comprobado contra el origen real)", rp[1] == "es/df/BOE-A-1889-4763.md", rp)
+meta, cuerpo = c.cabecera_meta('---\ntitle: "Ley 1/2000"\nlast_updated: "2026-10-08"\nstatus: "in_force"\n---\n###### Artículo 1.\n\nTexto.\n')
+caso("cabecera_meta: lee last_updated y status y deja el cuerpo", meta.get("last_updated") == "2026-10-08" and meta.get("status") == "in_force" and cuerpo.startswith("###### Artículo 1."), (meta, cuerpo[:30]))
 
 print("[ruido que NO debe contar]")
 a = c.esqueleto("Artículo 22 quáter. Plazo. 1.º Dentro de «cinco» días — art. 3.")

@@ -40,7 +40,7 @@ def limpia_espejo(t):
 
 SUFIJOS = ("bis|ter|quater|quáter|quinquies|sexies|septies|octies|nonies|novies|decies|undecies|duodecies|terdecies|quaterdecies|quindecies|"
            "sexdecies|septdecies|octodecies")
-ROTULO = re.compile(r"^\s*Art[ií]culo\s+(\d+(?:\s+(?:" + SUFIJOS + r"))?(?:\s+[a-z]\b)?)\s*\.?", re.I)
+ROTULO = re.compile(r"^\s*Art[ií]culo\s+(\d+(?:\s+(?:" + SUFIJOS + r")(?:\s+\d{1,2}\b)?)?(?:\s+[a-z]\b)?)\s*\.?", re.I)   # «216 bis 2» (artículo real de la LOPJ) no es el «216 bis»
 ROTULO_LETRA = re.compile(r"^\s*Art[ií]culo\s+(?:[a-záéíóúñ]+)(?:\s+y\s+[a-záéíóúñ]+)?(?:\s+(?:" + SUFIJOS + r"))?\s*\.", re.I)
 
 
@@ -111,9 +111,35 @@ def numero_compuesto(primero, resto):
     return None
 
 
+DECENAS = {"treinta": 30, "cuarenta": 40, "cincuenta": 50, "sesenta": 60, "setenta": 70, "ochenta": 80, "noventa": 90}
+CENTENAS = {"cien": 100, "ciento": 100, "doscientos": 200, "trescientos": 300, "cuatrocientos": 400, "quinientos": 500,
+            "seiscientos": 600, "setecientos": 700, "ochocientos": 800, "novecientos": 900}
+
+
+def cardinal_en_letras(toks):
+    """Cardinal compuesto en letra al principio de una lista de palabras -> (valor, palabras consumidas), o (None, 0).
+    ['doscientos','treinta','y','uno','bis'] -> (231, 4); ['cuatrocientos','cincuenta','y','cinco'] -> (455, 4); ['primero'] -> (None, 0).
+    El BOE titula así algunos artículos de la LOPJ (231, 455…): sin esto no se emparejan con el espejo y quedan SIN CONTRASTAR."""
+    t = [build.sin_tildes(x.lower()) for x in toks]
+    i = total = 0
+    if i < len(t) and t[i] in CENTENAS:
+        total += CENTENAS[t[i]]
+        i += 1
+    if i < len(t) and t[i] in DECENAS:
+        total += DECENAS[t[i]]
+        i += 1
+        if i + 1 < len(t) and t[i] == "y" and build.CARD.get(t[i + 1], 99) < 10:
+            total += build.CARD[t[i + 1]]
+            i += 2
+    elif i < len(t) and t[i] in build.CARD:
+        total += build.CARD[t[i]]
+        i += 1
+    return (total, i) if total else (None, 0)
+
+
 def clave_de_titulo(titulo):
     """«Artículo 22 quáter» / «Art 22 quáter» -> «22 quater»; «Artículo primero» -> «1»; «Artículo único» -> «unico»;
-    «Disposición adicional primera» -> «da1»; None si no es ni lo uno ni lo otro."""
+    «Artículo doscientos treinta y uno» -> «231»; «Disposición adicional primera» -> «da1»; None si no es ni lo uno ni lo otro."""
     t = (titulo or "").strip().rstrip(".").replace(")", "")  # «283 bis a)» -> «283 bis a», como en el espejo
     m = re.match(r"^Art(?:[ií]culo)?\.?\s+(.+)$", t, re.I)
     if m:
@@ -122,6 +148,10 @@ def clave_de_titulo(titulo):
         if re.match(r"^[uú]nico$", primero, re.I):
             return "unico"
         if not re.match(r"^\d", primero):
+            toks = resto.split()
+            n, usadas = cardinal_en_letras(toks)
+            if n:
+                return indice.clave_articulo(f"{n} {' '.join(toks[usadas:])}".strip())
             n = numero_compuesto(primero, suf)
             if n is None:
                 n = build.numero_en_letra(primero)
@@ -228,18 +258,34 @@ def compara(boe, esp, conocidas=None):
                 solo_espejo=sorted((k for k in esp if k not in boe), key=indice.orden_natural))
 
 
+def rutas_posibles(cfg):
+    """Rutas de una norma dentro del espejo: la antigua (`es/BOE-….md`) y la del formato nuevo de legalize (v0.4, desde octubre de 2026),
+    que reparte las leyes en subcarpetas con los dos primeros caracteres del SHA-1 del identificador (`es/06/BOE-A-2000-323.md`)."""
+    d = cfg.get("dir", "es")
+    return [f"{d}/{cfg['boe']}.md", f"{d}/{hashlib.sha1(cfg['boe'].encode()).hexdigest()[:2]}/{cfg['boe']}.md"]
+
+
+def cabecera_meta(txt):
+    m = re.match(r"^---\n(.*?)\n---\n", txt, re.S)
+    meta = {}
+    for ln in (m.group(1).splitlines() if m else []):
+        k, _, v = ln.partition(":")
+        meta[k.strip()] = v.strip().strip('"')
+    return meta, (txt[m.end():] if m else txt)
+
+
 def chunks_de(cfg, commit=None):
-    """Chunks de una norma: del árbol de trabajo o, con `commit`, de `git show commit:ruta` (mismo parser que el build)."""
+    """Chunks de una norma: del árbol de trabajo o, con `commit`, de `git show commit:ruta` (mismo parser que el build). Con `commit` se
+    prueba la ruta antigua y la del formato nuevo de legalize."""
     if not commit:
         raw, meta, lineas = build.lee_norma(cfg)
         return build.parse_norma(cfg, lineas)[0], meta
-    ruta = f"{cfg.get('dir', 'es')}/{cfg['boe']}.md"
-    r = subprocess.run(["git", "-C", str(build.CORPUS), "show", f"{commit}:{ruta}"], capture_output=True, timeout=90)
-    if r.returncode != 0:
-        return None, {}
-    txt = r.stdout.decode("utf-8")
-    m = re.match(r"^---\n(.*?)\n---\n", txt, re.S)
-    return build.parse_norma(cfg, txt[m.end():].split("\n"))[0], {}
+    for ruta in rutas_posibles(cfg):
+        r = subprocess.run(["git", "-C", str(build.CORPUS), "show", f"{commit}:{ruta}"], capture_output=True, timeout=90)
+        if r.returncode == 0:
+            meta, cuerpo = cabecera_meta(r.stdout.decode("utf-8"))
+            return build.parse_norma(cfg, cuerpo.split("\n"))[0], meta
+    return None, {}
 
 
 def contrasta(solo=None, cache=None, commit=None, hoy=None, normas=None):
