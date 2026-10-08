@@ -40,7 +40,10 @@ def limpia_espejo(t):
 
 SUFIJOS = ("bis|ter|quater|quáter|quinquies|sexies|septies|octies|nonies|novies|decies|undecies|duodecies|terdecies|quaterdecies|quindecies|"
            "sexdecies|septdecies|octodecies")
-ROTULO = re.compile(r"^\s*Art[ií]culo\s+(\d+(?:\s+(?:" + SUFIJOS + r"))?(?:\s+[a-z]\b)?)\s*\.?", re.I)
+# «624. bis.» (punto antes del bis, TRLC) también es una clave de una pieza; «504 bis 2» (LECrim) solo para la CLAVE, no para quitar el
+# rótulo (en «Artículo 304 bis. 1. Será…» el «1.» es el apartado y no se debe comer)
+ROTULO = re.compile(r"^\s*Art[ií]culo\s+(\d+(?:\.?\s+(?:" + SUFIJOS + r")\b)?(?:\s+[a-z]\b)?)\s*\.?", re.I)
+ROTULO_CLAVE = re.compile(r"^\s*Art[ií]culo\s+(\d+(?:\.?\s+(?:" + SUFIJOS + r")\b)?(?:\s+(?:[a-z]|\d+(?=\s*\.?\s*$))\b)?)\s*\.?", re.I)
 ROTULO_LETRA = re.compile(r"^\s*Art[ií]culo\s+(?:[a-záéíóúñ]+)(?:\s+y\s+[a-záéíóúñ]+)?(?:\s+(?:" + SUFIJOS + r"))?\s*\.", re.I)
 
 
@@ -59,7 +62,8 @@ def esqueleto(texto):
     t = ORD_RE.sub("", t)
     t = re.sub(r"[\W_]+", "", t)
     # fórmula promulgatoria final («Por tanto, mando a todos los españoles…»): el BOE consolidado la omite, el espejo la conserva
-    return re.sub(r"(portantomandoatodoslosespanoles|dadaenelpalaciodeelpardo).*$", "", t)
+    # idem la firma de los RD/Decretos que aprueban una norma («Dado en Madrid…», «Dado en San Ildefonso…», «Así lo dispongo…»)
+    return re.sub(r"(portantomandoatodoslosespanoles|dadaenelpalaciodeelpardo|dadoenmadrid|dadoensanildefonso|asilodispongoporelpresente).*$", "", t)
 
 
 def descarga(boe_id, que="texto", cache=None, timeout=120):
@@ -155,7 +159,7 @@ def clave_orden(v_idx):
     return (v.get("fecha_publicacion") or "00000000", fv, i)
 
 
-def bloques_boe(xml_texto, hoy=None):
+def bloques_boe(xml_texto, hoy=None, rd_duplicados=False):
     """Texto de cada artículo/disposición según la API del BOE. Devuelve (vigente, futuras):
     vigente = {clave: esqueleto} de la versión más recientemente publicada entre las que YA están en vigor en `hoy`;
     futuras = {clave: fecha 'AAAA-MM-DD'} de la primera reforma que entra en vigor DESPUÉS de `hoy`, solo si su texto difiere del vigente
@@ -170,9 +174,15 @@ def bloques_boe(xml_texto, hoy=None):
         k = None
         if vs0:  # el atributo `titulo` va en letra («Artículo quinto bis»); el primer párrafo lleva la cifra («Artículo 5 bis.»)
             primero = next((texto_p(p) for p in vs0[-1].findall("p")), "")
-            m = ROTULO.match(primero)
-            k = indice.clave_articulo(m.group(1)) if m else None
+            m = ROTULO_CLAVE.match(primero)
+            k = indice.clave_articulo(m.group(1).replace(".", "")) if m else None
         k = k or clave_de_titulo(b.get("titulo"))
+        if k and k in vigente and rd_duplicados and ("rd-" + k) not in vigente:
+            # norma con RD/Decreto de aprobación delante (opción `anexo` de build.py): la primera aparición de la clave es la del RD,
+            # que el espejo etiqueta «rd-<clave>»; esta segunda es la de la norma aprobada
+            vigente["rd-" + k] = vigente.pop(k)
+            if k in futuras:
+                futuras["rd-" + k] = futuras.pop(k)
         if not k or k in vigente:
             continue
         vs = [(v.get("fecha_vigencia") or "00000000", i, v) for i, v in enumerate(b.findall("version"))]
@@ -188,9 +198,12 @@ def bloques_boe(xml_texto, hoy=None):
     return vigente, futuras
 
 
-def bloques_espejo(chunks):
-    """{clave: esqueleto} del texto del espejo (título y cuerpo, sin las notas de reforma que empiezan por «>»)."""
+def bloques_espejo(chunks, rd_a_llano=False):
+    """{clave: esqueleto} del texto del espejo (título y cuerpo, sin las notas de reforma que empiezan por «>»).
+    rd_a_llano (normas con opción `anexo`): los bloques «rd-X» del RD de aprobación se llaman «X» si esa clave no la usa la norma
+    aprobada, que es como los nombra la API del BOE; si la usa, se quedan como «rd-X» (ver bloques_boe)."""
     out = {}
+    propias = {c["k"] for c in chunks}
     for c in chunks:
         if c["k"] in ("cab", "pre"):
             continue
@@ -198,8 +211,13 @@ def bloques_espejo(chunks):
         # fuera: notas («>») y toda línea de encabezado («#…»): rótulos de la «Redacción anterior» y de capítulos/títulos que el espejo deja en el cuerpo
         cuerpo = "\n".join(ln for ln in b.split("\n") if not ln.lstrip().startswith(">") and not re.match(r'^\s*#', ln))
         e = c.get("e") or ""
+        clave = c["k"]
+        if rd_a_llano and clave.startswith("rd-"):
+            e = e.split(" · ", 1)[-1]       # fuera la etiqueta «RD 434/2024 · »: la API no la lleva
+            if clave[3:] not in propias:
+                clave = clave[3:]
         rotulo = "" if re.match(r"^Art[ií]culo\b", e, re.I) else e  # el rótulo de artículo no se compara (la clave ya lo identifica)
-        out[c["k"]] = esqueleto(limpia_espejo(" ".join([rotulo, c.get("t") or "", cuerpo])))
+        out[clave] = esqueleto(limpia_espejo(" ".join([rotulo, c.get("t") or "", cuerpo])))
     return out
 
 
@@ -252,8 +270,9 @@ def contrasta(solo=None, cache=None, commit=None, hoy=None, normas=None):
             continue
         try:
             chunks, meta = chunks_de(cfg, commit)
-            vig, fut = bloques_boe(descarga(cfg["boe"], "texto", cache), hoy)
-            r = compara(vig, bloques_espejo(chunks), carga_conocidas().get(cfg["sigla"]))
+            rd = bool(cfg.get("anexo"))
+            vig, fut = bloques_boe(descarga(cfg["boe"], "texto", cache), hoy, rd_duplicados=rd)
+            r = compara(vig, bloques_espejo(chunks, rd_a_llano=rd), carga_conocidas().get(cfg["sigla"]))
             r["conocidas_obsoletas"] = []
             r["futuras"] = dict(sorted(fut.items(), key=lambda kv: indice.orden_natural(kv[0])))
             r["boe_actualizada"] = fecha_actualizacion(cfg["boe"], cache)

@@ -18,9 +18,13 @@ incrustados: funciona abriéndolo como archivo local, **sin conexión**, y tambi
 - Copiar (cita + texto + fecha de consolidación), notas de reforma del BOE (ocultas por defecto), tamaño de letra,
   enlace al BOE, recientes.
 
-Normas incluidas: LEC, LO 1/2025, LAU, LPH, Código Civil, LOPJ, Ley 38/1999 de Ordenación de la Edificación (LOE),
+Normas incluidas (21): LEC, LO 1/2025, LAU, LPH, Código Civil, LOPJ, Ley 38/1999 de Ordenación de la Edificación (LOE),
 RDL 1/2007 (texto refundido de la Ley General de Consumidores y Usuarios, TRLGDCU), Decreto 11/1995
-del Gobierno Valenciano de prestación de servicios a domicilio (D 11/1995, solo en el DOGV, importado a mano) y Constitución.
+del Gobierno Valenciano de prestación de servicios a domicilio (D 11/1995, solo en el DOGV, importado a mano), Constitución y,
+añadidas el 08-10-2026 para compartir fuente con LexArt: Ley 12/2023 (vivienda), Ley Hipotecaria (LH), Texto refundido de la Ley Concursal
+(TRLC), Ley 5/2012 (mediación), Ley de la Jurisdicción Voluntaria (LJV), Estatuto General de la Abogacía (EGAE, RD 135/2021),
+Ley de Asistencia Jurídica Gratuita (LAJG), Código Penal (CP), Ley de Enjuiciamiento Criminal (LECrim), LO 5/2024 del Derecho de Defensa (LODD)
+y Arancel de la Procura (RD 434/2024).
 (La LOPDGDD se retiró el 07-10-2026 a petición de Adolfo; la Ley valenciana 3/2004 de calidad de la edificación se probó y se descartó.)
 
 El número de artículos de cada norma se muestra en su cabecera y en la portada (no en el menú, para dejar sitio al título completo); es el de **artículos reales** (con sus bis/ter, y los números que cubren los bloques derogados «Artículos X a Y»); las disposiciones adicionales, transitorias, derogatorias y finales se cuentan aparte («867 artículos · 49 disposiciones»).
@@ -67,8 +71,24 @@ env -u PYTHONPATH python3.12 scripts/test_app.py   # 76 pruebas en Chromium real
 env -u PYTHONPATH python3.12 scripts/test_offline.py
 ```
 
-Para añadir una norma: una línea en `NORMAS` de `build.py` (BOE-ID, siglas) y, si tiene alias propios,
-en `ALIAS` y `NOMBRES_NORMA` de `plantilla.html`.
+Para añadir una norma: una línea en `NORMAS` de `build.py` (BOE-ID, siglas) y, si tiene alias propios, el campo `alias` (formas de
+citarla, separadas por `|`, en minúscula y sin tildes) y `nombres` (cómo la nombran otras normas, para enlazar las remisiones): `build.py`
+los vuelca en `ALIAS`, `NOMBRES_NORMA`, `SAFE` y `RE_OTRA` de la plantilla. Las diez primeras llevan los suyos escritos a mano en `plantilla.html`.
+Opciones del analizador (por norma): `secuencial` (LO 1/2025), `previo_rdl` (etiqueta del RD/Decreto que aprueba el texto refundido o la norma),
+`anexo` (regex del encabezado desde el que empieza el texto aprobado: lo anterior es del RD y sus bloques llevan la clave `rd-…`; sin `anexo`,
+el corte es el primer artículo 1), `rangos_abrev` (reconoce «Arts. 934 a 946», LECrim). El analizador entiende además «Artículo 624. bis.»,
+«588 bis b.», «1º.», «Artículos 638 y 639» y «Disposición adicional primera» sin punto. Las disposiciones, el preámbulo y el encabezado de las
+normas con `alias` enlazan solo con nombre explícito de la ley (en ellas el texto citado suele ser de otra ley).
+
+## Exportación para LexArt
+
+`python3 scripts/exportar_para_lexart.py` (después de `python3 build.py`) escribe `salida/lexart-corpus.json` (carpeta ignorada por git). Parte de
+`build.analiza()`, la misma función que usa el build de la web: LexArt no vuelve a trocear nada. Falla si la suma de bloques no coincide con la que
+cuenta `build.py` / `normas.json`, si una clave se repite o si un bloque pierde líneas. Esquema `consulta-normas/lexart-corpus@1`
+(documentado entero en la cabecera del script): por norma `id, sigla, boe, titulo, corto, alias[], url, estado, actualizada, sha256, dir, fuente,
+recuento{articulos, disposiciones, bloques}` y `bloques[]` con `clave, rotulo, titulo, ubicacion[], tipo (articulo|disposicion|preambulo|encabezado),
+ambito (norma|real_decreto), rango?, texto, notas[]`. Incluye la Constitución y el D 11/1995 (`fuente: "DOGV, importado a mano"`).
+Pruebas: `env -u PYTHONPATH python3.12 scripts/test_nuevas.py`.
 
 ## Vigía
 

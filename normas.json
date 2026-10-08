@@ -112,6 +112,127 @@
    "bloques": 186,
    "articulos": 169,
    "disposiciones": 15
+  },
+  {
+   "id": "ley12-2023",
+   "boe": "BOE-A-2023-12203",
+   "sigla": "Ley 12/2023",
+   "dir": "es",
+   "actualizada": "2026-10-05",
+   "sha256": "29b622256ad6385811f27dcdbc947bedc11c821e0c8497116fc4b011d1d67ebe",
+   "bloques": 58,
+   "articulos": 36,
+   "disposiciones": 20
+  },
+  {
+   "id": "lh",
+   "boe": "BOE-A-1946-2453",
+   "sigla": "LH",
+   "dir": "es",
+   "actualizada": "2025-01-03",
+   "sha256": "80af6f73099a131fd1702e1f88f9e5cc09e1f3056bf05019ffe3b91ce11da575",
+   "bloques": 351,
+   "articulos": 336,
+   "disposiciones": 14
+  },
+  {
+   "id": "trlc",
+   "boe": "BOE-A-2020-4859",
+   "sigla": "TRLC",
+   "dir": "es",
+   "actualizada": "2025-01-03",
+   "sha256": "486bdf5ea9f8b7398d6465c67bcbfbfb964ef23d9042b775b4a2b005cfe728b1",
+   "bloques": 825,
+   "articulos": 813,
+   "disposiciones": 11
+  },
+  {
+   "id": "ley5-2012",
+   "boe": "BOE-A-2012-9112",
+   "sigla": "Ley 5/2012",
+   "dir": "es",
+   "actualizada": "2025-01-03",
+   "sha256": "2530926f98562f0d71d49c94351bbc9545dbd341c74b153952e8986d8fb35096",
+   "bloques": 44,
+   "articulos": 27,
+   "disposiciones": 15
+  },
+  {
+   "id": "ljv",
+   "boe": "BOE-A-2015-7391",
+   "sigla": "LJV",
+   "dir": "es",
+   "actualizada": "2025-01-03",
+   "sha256": "2ba6a519df6d9682b7c7564449ce8f94d15abc90fe70bba0d9d40cbf4e69f8c5",
+   "bloques": 200,
+   "articulos": 165,
+   "disposiciones": 33
+  },
+  {
+   "id": "egae",
+   "boe": "BOE-A-2021-4568",
+   "sigla": "EGAE",
+   "dir": "es",
+   "actualizada": "2021-03-24",
+   "sha256": "c9b496d0b258ddcf70aeb30a29d4d407e83b6c38e9a05353081ca9ff32d34b67",
+   "bloques": 153,
+   "articulos": 141,
+   "disposiciones": 11
+  },
+  {
+   "id": "lajg",
+   "boe": "BOE-A-1996-750",
+   "sigla": "LAJG",
+   "dir": "es",
+   "actualizada": "2025-01-03",
+   "sha256": "2a989b9df6521afc923c1f4622bd1ad889eb97c41c44ae326a1bc29cdd98c705",
+   "bloques": 71,
+   "articulos": 55,
+   "disposiciones": 14
+  },
+  {
+   "id": "cp",
+   "boe": "BOE-A-1995-25444",
+   "sigla": "CP",
+   "dir": "es",
+   "actualizada": "2026-04-09",
+   "sha256": "887d80c89b2d8d63d7e70ab6cd4a0d9d94502b1b9a4cad28b384ec63ee82ca7c",
+   "bloques": 780,
+   "articulos": 750,
+   "disposiciones": 23
+  },
+  {
+   "id": "lecrim",
+   "boe": "BOE-A-1882-6036",
+   "sigla": "LECrim",
+   "dir": "es",
+   "actualizada": "2026-04-09",
+   "sha256": "02969a4bcff2be31e0d117d02710230a2bfc311d56f08292abe68f48c5c1ba08",
+   "bloques": 1095,
+   "articulos": 1131,
+   "disposiciones": 15
+  },
+  {
+   "id": "lodd",
+   "boe": "BOE-A-2024-23630",
+   "sigla": "LODD",
+   "dir": "es",
+   "actualizada": "2024-11-14",
+   "sha256": "b1b344ff2143583b2745e9b414ba6bc1b4380c02bc3a55841be4db9f84540980",
+   "bloques": 41,
+   "articulos": 24,
+   "disposiciones": 15
+  },
+  {
+   "id": "arancel",
+   "boe": "BOE-A-2024-8706",
+   "sigla": "Arancel",
+   "dir": "es",
+   "actualizada": "2024-09-18",
+   "sha256": "35f5960695b30d536da6523c9ba02582aca3a5f6a31f75a4b700173d5f9802c6",
+   "bloques": 93,
+   "articulos": 85,
+   "disposiciones": 7
   }
  ],
  "boe_contrastado": "2026-10-08",

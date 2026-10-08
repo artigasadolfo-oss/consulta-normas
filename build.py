@@ -49,6 +49,38 @@ NORMAS = [
     dict(id="trlgdcu", boe="BOE-A-2007-20555", sigla="TRLGDCU",  corto="Ley General de Consumidores y Usuarios", previo_rdl="RDL 1/2007"),
     dict(id="d11-1995", boe="DOGV-1995-833645", sigla="D 11/1995", corto="Decreto valenciano de servicios a domicilio", dir="es-vc", dogv_id=42036),
     dict(id="ce",     boe="BOE-A-1978-31229", sigla="CE",        corto="Constitución Española"),
+    # --- normas que la web comparte con LexArt (encargo N-1, 08-10-2026) ---
+    # alias: formas de citarla en la búsqueda directa («1 CP»), en minúscula y sin tildes. nombres: cómo la nombra otra norma
+    # («del Código Penal»), para enlazar las remisiones. anexo: encabezado desde el que empieza el texto que aprueba una
+    # norma (el Decreto, el RD o el RDLeg que la aprueba va antes y se etiqueta con previo_rdl).
+    dict(id="ley12-2023", boe="BOE-A-2023-12203", sigla="Ley 12/2023", corto="Ley 12/2023, por el derecho a la vivienda",
+         alias="ley 12/2023|ley de vivienda|ley de la vivienda|ley por el derecho a la vivienda",
+         nombres="ley 12/2023|ley por el derecho a la vivienda"),
+    dict(id="lh",     boe="BOE-A-1946-2453",  sigla="LH",        corto="Ley Hipotecaria", anexo=r"TÍTULO I\. Del Registro", previo_rdl="Decreto de 8-2-1946",
+         alias="lh|ley hipotecaria", nombres="ley hipotecaria|lh|decreto de 8 de febrero de 1946"),
+    dict(id="trlc",   boe="BOE-A-2020-4859",  sigla="TRLC",      corto="Texto refundido de la Ley Concursal", anexo=r"TEXTO REFUNDIDO DE LA LEY CONCURSAL", previo_rdl="RDLeg 1/2020",
+         alias="trlc|ley concursal|texto refundido de la ley concursal|lc|real decreto legislativo 1/2020|rdleg 1/2020",
+         nombres="texto refundido de la ley concursal|real decreto legislativo 1/2020|trlc"),
+    dict(id="ley5-2012", boe="BOE-A-2012-9112", sigla="Ley 5/2012", corto="Ley 5/2012, de mediación en asuntos civiles y mercantiles",
+         alias="ley 5/2012|ley de mediacion", nombres="ley 5/2012|ley de mediacion en asuntos civiles y mercantiles"),
+    dict(id="ljv",    boe="BOE-A-2015-7391",  sigla="LJV",       corto="Ley de la Jurisdicción Voluntaria",
+         alias="ljv|ley de jurisdiccion voluntaria|ley de la jurisdiccion voluntaria|ley 15/2015",
+         nombres="ley de la jurisdiccion voluntaria|ley 15/2015|ljv"),
+    dict(id="egae",   boe="BOE-A-2021-4568",  sigla="EGAE",      corto="Estatuto General de la Abogacía Española (RD 135/2021)", anexo=r"ESTATUTO GENERAL DE LA ABOGAC", previo_rdl="RD 135/2021",
+         alias="egae|estatuto general de la abogacia|estatuto general de la abogacia espanola|rd 135/2021|real decreto 135/2021",
+         nombres="estatuto general de la abogacia espanola|estatuto general de la abogacia|real decreto 135/2021|egae"),
+    dict(id="lajg",   boe="BOE-A-1996-750",   sigla="LAJG",      corto="Ley de Asistencia Jurídica Gratuita",
+         alias="lajg|ley de asistencia juridica gratuita|ley 1/1996", nombres="ley de asistencia juridica gratuita|ley 1/1996|lajg"),
+    dict(id="cp",     boe="BOE-A-1995-25444", sigla="CP",        corto="Código Penal",
+         alias="cp|codigo penal|cod penal|ley organica 10/1995", nombres="codigo penal|ley organica 10/1995|cp"),
+    dict(id="lecrim", boe="BOE-A-1882-6036",  sigla="LECrim",    corto="Ley de Enjuiciamiento Criminal", anexo=r"LEY DE ENJUICIAMIENTO CRIMINAL", previo_rdl="RD 14-9-1882", rangos_abrev=True,
+         alias="lecrim|lecr|ley de enjuiciamiento criminal|enjuiciamiento criminal", nombres="ley de enjuiciamiento criminal|lecrim"),
+    dict(id="lodd",   boe="BOE-A-2024-23630", sigla="LODD",      corto="Ley Orgánica 5/2024, del Derecho de Defensa",
+         alias="lodd|ley organica del derecho de defensa|ley organica 5/2024|lo 5/2024|ley 5/2024",
+         nombres="ley organica del derecho de defensa|ley organica 5/2024|lodd"),
+    dict(id="arancel", boe="BOE-A-2024-8706", sigla="Arancel",   corto="Arancel de derechos de los profesionales de la Procura (RD 434/2024)", anexo=r"ARANCEL DE DERECHOS", previo_rdl="RD 434/2024",
+         alias="arancel|arancel de la procura|arancel de procuradores|arancel procuradores|rd 434/2024|real decreto 434/2024",
+         nombres="arancel de derechos de los profesionales de la procura|arancel de la procura|real decreto 434/2024"),
 ]
 
 HEAD = re.compile(r"^(#{1,6})\s+(.*\S)\s*$")
@@ -56,13 +88,18 @@ ESTRUCT = re.compile(r"^(LIBRO|TÍTULO|TITULO|CAPÍTULO|CAPITULO|SECCIÓN|Secci�
 PREAM = re.compile(r"^(PREÁMBULO|EXPOSICIÓN DE MOTIVOS)\b", re.I)
 SUF = (r"bis|ter|qu[aá]ter|quinquies|sexies|septies|octies|nonies|decies|undecies|"
        r"duodecies|terdecies|quaterdecies|quindecies|sexdecies")
+# Tres formas del sufijo que el BOE escribe de distintas maneras: «283 bis a)» (letra con paréntesis), «588 bis b.» (letra sin paréntesis,
+# LECrim) y «624. bis.» (punto antes del bis, TRLC); y el «1º.» de los Reales Decretos antiguos.
 ART = re.compile(
-    rf"^Art[ií]culo\s+(\d+)(?:\s+({SUF}))?(?:\s+(?:([a-z])\)|(\d+)\b))?\s*\.?\s*(.*)$", re.I)
-ART_RANGO = re.compile(r"^Art[ií]culos?\s+(\d+)\s+a\s+(\d+)\s*\.?\s*(.*)$", re.I)
+    rf"^Art[ií]culo\s+(\d+)[º°]?(?:(?:\.\s+|\s+)({SUF})\b)?(?:\s+(?:([a-z])(\)|(?=\s*\.))|(\d+)\b))?\s*\.?\s*(.*)$", re.I)
+ART_RANGO = re.compile(r"^Art[ií]culos?\s+(\d+)\s+(a|y)\s+(\d+)\s*\.?\s*(.*)$", re.I)   # «Artículos 279 a 291», «Artículos 638 y 639» (CP)
+# «Arts. 934 a 946» (LECrim): solo con la opción rangos_abrev, porque el CC trae rótulos así y su resultado no debe cambiar
+ART_RANGO_ABREV = re.compile(r"^Arts?\.\s+(\d+)\s+(a|y)\s+(\d+)\s*\.?\s*(.*)$", re.I)
 ART_PALABRA = re.compile(r"^Art[ií]culo\s+([a-záéíóúü]+)\s*\.\s*(.*)$", re.I)
 ART_UNICO = re.compile(r"^Art[ií]culo\s+[uú]nico\s*\.?\s*(.*)$", re.I)
+# El punto tras el ordinal puede faltar si el rótulo acaba ahí («Disposición adicional primera», «Disposición final» en la LECrim).
 DISP = re.compile(
-    r"^Disposici[oó]n\s+(adicional|transitoria|final|derogatoria)(?:\s+([^.]+?))?\s*\.\s*(.*)$", re.I)
+    r"^Disposici[oó]n\s+(adicional|transitoria|final|derogatoria)(?:\s+([^.]+?))?\s*(?:\.\s*(.*))?$", re.I)
 
 ORD_BASE = {"primera": 1, "primero": 1, "segunda": 2, "segundo": 2, "tercera": 3, "tercero": 3,
             "cuarta": 4, "cuarto": 4, "quinta": 5, "quinto": 5, "sexta": 6, "sexto": 6,
@@ -144,6 +181,8 @@ def parse_norma(cfg, lineas):
     intro = []          # líneas tras una cabecera estructural, antes del siguiente artículo
     ultimo_num = 0
     vistos = set()
+    anexo_visto = False      # opción anexo: ya se ha pasado el encabezado desde el que empieza el texto aprobado
+    primero_anexo = None     # primer bloque del texto aprobado (lo anterior es del RD/Decreto que lo aprueba)
 
     def etiqueta_ruta():
         return " · ".join(t for _, t in ruta)
@@ -153,11 +192,13 @@ def parse_norma(cfg, lineas):
         actual = None
 
     def abre(k, e, t):
-        nonlocal actual, intro
-        ch = dict(k=k, e=e, t=t, s=etiqueta_ruta(), b=list(intro))
+        nonlocal actual, intro, primero_anexo
+        ch = dict(k=k, e=e, t=t, s=etiqueta_ruta(), b=list(intro), r=[x for _, x in ruta])
         intro = []
         chunks.append(ch)
         actual = ch
+        if anexo_visto and primero_anexo is None:
+            primero_anexo = ch
 
     # Cabecera previa (título, notas, "JUAN CARLOS I", etc.)
     abre("cab", "Encabezado", "", )
@@ -171,28 +212,39 @@ def parse_norma(cfg, lineas):
             if txt_plano.startswith("«") or txt_plano.startswith('"'):
                 actual["b"].append(ln) if actual else intro.append(ln)
                 continue
+            # --- comienzo del texto aprobado (opción anexo). Si el encabezado no es estructural («TEXTO REFUNDIDO DE…»),
+            # se consume como cabecera: no debe quedar colgando al final de la última disposición del RD.
+            if cfg.get("anexo") and not anexo_visto and nivel <= 5 and re.match(cfg["anexo"], txt_plano, re.I):
+                anexo_visto = True
+                if not ESTRUCT.match(txt_plano):
+                    cierra()
+                    continue
             # --- artículo
             ma = ART.match(txt_plano) if nivel == 6 else None
             mr = ART_RANGO.match(txt_plano) if nivel == 6 else None
+            if mr is None and nivel == 6 and cfg.get("rangos_abrev"):
+                mr = ART_RANGO_ABREV.match(txt_plano)
             mp = ART_PALABRA.match(txt_plano) if nivel == 6 else None
             if mp and numero_en_letra(mp.group(1)) is None:
                 mp = None
             mu = ART_UNICO.match(txt_plano) if nivel == 6 else None
             md = DISP.match(txt_plano) if nivel == 6 else None
+            if mr and mr.group(2).lower() == "y" and int(mr.group(3)) != int(mr.group(1)) + 1:
+                mr = None       # «Artículos 5 y 9» no es un rango: solo «N y N+1» (derogados consecutivos)
             if mr:
                 ma = None
             if ma or mr or mp or mu or md:
                 if mr:
-                    k = f"{int(mr.group(1))}-{int(mr.group(2))}"
-                    e = f"Artículos {int(mr.group(1))} a {int(mr.group(2))}"
-                    t = mr.group(3).strip()
+                    k = f"{int(mr.group(1))}-{int(mr.group(3))}"
+                    e = f"Artículos {int(mr.group(1))} {mr.group(2).lower()} {int(mr.group(3))}"
+                    t = mr.group(4).strip()
                 elif mp:
                     num = numero_en_letra(mp.group(1))
                     k, e, t = str(num), f"Artículo {num}", mp.group(2).strip()
                     ultimo_num = num
                 elif ma:
                     num = int(ma.group(1)); suf = (ma.group(2) or "").lower().replace("á", "a")
-                    extra = (ma.group(3) or ma.group(4) or "").lower()
+                    extra = (ma.group(3) or ma.group(5) or "").lower()
                     if cfg.get("secuencial") and (suf or extra or num != ultimo_num + 1):
                         # cabecera de un artículo CITADO dentro de otro (norma modificadora)
                         (actual["b"] if actual else intro).append(ln)
@@ -203,8 +255,8 @@ def parse_norma(cfg, lineas):
                     k = " ".join(partes)
                     e = "Artículo " + k
                     if ma.group(3):
-                        e = f"Artículo {num} {suf} {extra})".replace("  ", " ")
-                    t = ma.group(5).strip()
+                        e = f"Artículo {num} {suf} {extra}{ma.group(4)}".replace("  ", " ")
+                    t = ma.group(6).strip()
                 elif mu:
                     k, e, t = "unico", "Artículo único", mu.group(1).strip()
                 else:
@@ -214,7 +266,7 @@ def parse_norma(cfg, lineas):
                     pref = {"adicional": "da", "transitoria": "dt", "final": "df", "derogatoria": "dd"}[tipo]
                     k = f"{pref}{n}" if n is not None else f"{pref}-{sin_tildes(ordtxt.lower()).replace(' ', '-')}"
                     e = f"Disposición {tipo}" + (f" {ordtxt}" if ordtxt else "")
-                    t = md.group(3).strip()
+                    t = (md.group(3) or "").strip()
                 t = t.replace("**", "").strip()
                 if cfg.get("secuencial") and k in vistos:
                     (actual["b"] if actual else intro).append(ln)
@@ -268,7 +320,12 @@ def parse_norma(cfg, lineas):
     if cfg.get("previo_rdl"):
         # Real Decreto Legislativo: lo que va antes del artículo 1 del texto refundido es del RD, no del texto
         # (su artículo único y sus disposiciones). Se etiqueta aparte para que «DF 1» no sea ambiguo.
-        corte = next(i for i, c in enumerate(chunks) if c["k"] == "1")
+        if cfg.get("anexo"):
+            if primero_anexo is None:
+                raise SystemExit(f"[{cfg['sigla']}] opción anexo: no encuentro el encabezado {cfg['anexo']!r}")
+            corte = next(i for i, c in enumerate(chunks) if c is primero_anexo)
+        else:
+            corte = next(i for i, c in enumerate(chunks) if c["k"] == "1")
         for c in chunks[:corte]:
             if c["k"] not in ("cab", "pre"):
                 c["k"] = "rd-" + c["k"]
@@ -279,6 +336,8 @@ def parse_norma(cfg, lineas):
             base = c["k"].split("#")[0]
             if "#" in c["k"] and base not in usados:
                 usados.discard(c["k"]); c["k"] = base; usados.add(base)
+        if cfg.get("anexo"):   # con anexo, un duplicado que sobreviva al prefijo es real: se avisa
+            avisos.extend(f"clave duplicada {c['k'].split('#')[0]!r}: se renombra" for c in chunks if "#" in c["k"])
     return chunks, avisos
 
 
@@ -424,14 +483,36 @@ def cuenta_real(chunks):
     return len(sueltos) + len(cubiertos), disp
 
 
+def alias_para_plantilla():
+    """Textos que sustituyen las marcas @@…@@ de plantilla.html para las normas con `alias` en NORMAS (las diez primeras llevan los suyos
+    escritos en la plantilla). Mismo formato que ALIAS, NOMBRES_NORMA, SAFE y RE_OTRA de la plantilla."""
+    con = [c for c in NORMAS if c.get("alias")]
+    solos = [c for c in con if re.fullmatch(r"[A-Za-z]+", c["sigla"])]   # siglas de una palabra (LH, CP, LECrim…)
+    # SAFE: palabras que, puestas al final o al principio de una búsqueda de concepto, la limitan a esa norma. «Arancel» no: es palabra corriente.
+    safe = [c for c in solos if c["id"] != "arancel"]
+    return {
+        "@@ALIAS_NUEVAS@@": "".join(f",\n [{json.dumps(c['id'])},{json.dumps(c['alias'])}]" for c in con),
+        "@@NOMBRES_NUEVOS@@": "".join(f",[{json.dumps(c['id'])},{json.dumps(c['nombres'])}]" for c in con if c.get("nombres")),
+        "@@SAFE_NUEVAS@@": "".join(f",{c['sigla'].lower()}:{json.dumps(c['sigla'].lower())}" for c in safe),
+        "@@OTRA_NUEVAS@@": "".join(f"|{c['sigla'].lower()}\\b" for c in solos),
+    }
+
+
+def analiza(cfg):
+    """Lee, trocea y verifica una norma. Es el ÚNICO camino de análisis: lo usan el build de la web y el exportador para LexArt
+    (scripts/exportar_para_lexart.py), de modo que los dos ven exactamente los mismos bloques.
+    -> (raw, meta, chunks, avisos, n_cabeceras_consumidas, n_articulos, n_disposiciones)"""
+    raw, meta, lineas = lee_norma(cfg)
+    chunks, avisos = parse_norma(cfg, lineas)
+    n_cab = verifica_sin_perdidas(cfg, lineas, chunks)
+    n_art, n_disp = cuenta_real(chunks)
+    return raw, meta, chunks, avisos, n_cab, n_art, n_disp
+
+
 def construye(solo_comprobar=False):
     datos, manifiesto, resumen, claves_norma = [], [], [], {}
     for cfg in NORMAS:
-        raw, meta, lineas = lee_norma(cfg)
-        chunks, avisos = parse_norma(cfg, lineas)
-        n_cab = verifica_sin_perdidas(cfg, lineas, chunks)
-        arts = [c for c in chunks if c["k"] not in ("cab", "pre")]
-        n_art, n_disp = cuenta_real(chunks)
+        raw, meta, chunks, avisos, n_cab, n_art, n_disp = analiza(cfg)
         claves_norma[cfg["sigla"]] = dict(id=cfg["id"], keys={c["k"] for c in chunks}, cfg=cfg, status=meta.get("status"),
                                           mapa=indice.mapa_huellas(chunks), ruta=f"{cfg.get('dir', 'es')}/{cfg['boe']}.md")
         resumen.append(f"{cfg['sigla']:10s} {n_art:5d} artículos + {n_disp:3d} disposiciones  "
@@ -440,6 +521,7 @@ def construye(solo_comprobar=False):
         datos.append(dict(id=cfg["id"], boe=cfg["boe"], sigla=cfg["sigla"], corto=cfg["corto"],
                           titulo=meta.get("title", cfg["corto"]), act=meta.get("last_updated", ""),
                           est=meta.get("status", ""), url=meta.get("url_html_consolidada", ""), ca=n_art, cd=n_disp,
+                          **({"dm": True} if cfg.get("alias") else {}),
                           ch=[dict(k=c["k"], e=c["e"], t=c["t"], s=c["s"], b=c["b"]) for c in chunks]))
         manifiesto.append(dict(id=cfg["id"], boe=cfg["boe"], sigla=cfg["sigla"], dir=cfg.get("dir", "es"),
                                **({"dogv_id": cfg["dogv_id"]} if cfg.get("dogv_id") else {}),
@@ -488,6 +570,8 @@ def construye(solo_comprobar=False):
     b64 = base64.b64encode(gz).decode()
     fuentes, logo = rellena_fuentes_y_logo()
     plantilla = (AQUI / "plantilla.html").read_text(encoding="utf-8")
+    for marca, valor in alias_para_plantilla().items():
+        plantilla = plantilla.replace(marca, valor)
     html = (plantilla.replace("/*@@FUENTES@@*/", fuentes)
                      .replace("@@LOGO@@", logo)
                      .replace("@@DATOS@@", b64)

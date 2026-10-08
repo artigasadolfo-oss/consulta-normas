@@ -371,7 +371,7 @@ var ALIAS=[
  ['loe','ley de ordenacion de la edificacion|ordenacion de la edificacion|ley 38/1999|loe'],
  ['trlgdcu','texto refundido de la ley general para la defensa de los consumidores y usuarios|ley general para la defensa de los consumidores y usuarios|real decreto legislativo 1/2007|rdl 1/2007|ley de consumidores y usuarios|consumidores y usuarios|ley de consumidores|trlgdcu|lgdcu|trlgdcyu'],
  ['d11-1995','decreto 11/1995|decreto valenciano de servicios a domicilio|decreto de servicios a domicilio|d 11/1995|d11/1995|dec 11/1995'],
- ['ce','constitucion espanola|constitucion|ce']
+ ['ce','constitucion espanola|constitucion|ce']@@ALIAS_NUEVAS@@
 ];
 var ALIAS_MAP={},ALIAS_ALT='';
 (function(){var l=[];ALIAS.forEach(function(a){a[1].split('|').forEach(function(x){ALIAS_MAP[x]=a[0];l.push(x)})});l.sort(function(a,b){return b.length-a.length});ALIAS_ALT=l.map(function(x){return x.replace(/[.*+?^${}()|[\]\\\/]/g,'\\$&')}).join('|')})();
@@ -434,7 +434,7 @@ function resuelve(cons){
 
 /* ---------- búsqueda de texto ---------- */
 var STOP=new Set('de la el los las del en y a o por para con un una al se que su sus lo es no le les como mas ya sin sobre entre'.split(' '));
-var SAFE={lec:'lec',lau:'lau',lph:'lph',cc:'cc',cciv:'cc',lopj:'lopj',loe:'loe',trlgdcu:'trlgdcu',lgdcu:'trlgdcu'};
+var SAFE={lec:'lec',lau:'lau',lph:'lph',cc:'cc',cciv:'cc',lopj:'lopj',loe:'loe',trlgdcu:'trlgdcu',lgdcu:'trlgdcu'@@SAFE_NUEVAS@@};
 function stem(t){if(t.length>=6&&/es$/.test(t))return t.slice(0,-2);if(t.length>=4&&/s$/.test(t))return t.slice(0,-1);return t}
 function patronAcentos(t){return t.replace(/[aeioun]/g,function(ch){return {a:'[aáàâä]',e:'[eéèêë]',i:'[iíìîï]',o:'[oóòôö]',u:'[uúùûü]',n:'[nñ]'}[ch]})}
 function buscarTexto(q,filtroAlias){
@@ -488,14 +488,16 @@ var NOMBRES_NORMA=[
  ['lopj','ley organica del poder judicial|ley organica 6/1985|lopj'],['loe','ley de ordenacion de la edificacion|ley 38/1999|loe'],
  ['trlgdcu','texto refundido de la ley general para la defensa de los consumidores y usuarios|ley general para la defensa de los consumidores y usuarios|real decreto legislativo 1/2007|trlgdcu|lgdcu'],
  ['d11-1995','decreto 11/1995'],
- ['lo1-2025','ley organica 1/2025'],['ce','constitucion espanola|constitucion|ce']
+ ['lo1-2025','ley organica 1/2025'],['ce','constitucion espanola|constitucion|ce']@@NOMBRES_NUEVOS@@
 ];
 var RE_NOM=NOMBRES_NORMA.map(function(x){return [x[0],new RegExp('^('+x[1].replace(/[\/.]/g,'\\$&')+')\\b')]});
-var RE_OTRA=/\b(?:de|del)\s+(?:(?:la|el|los|las|esta|este|presente|dicha|dicho|citad[oa]|referid[oa]|mencionad[oa]|misma|mismo|propia|propio)\s+){0,2}(?:ley|codigo|real|reglamento|constitucion|estatut|texto|tratado|convenio|directiva|decreto|orden|lo\b|l\.o|lec\b|lopj\b|lau\b|lph\b|cc\b|ce\b|lopdgdd\b|loe\b|trlgdcu\b|lgdcu\b|norma|ordenanza|reglamento|carta|pacto|acuerdo|disposicion)/;
+var RE_OTRA=/\b(?:de|del)\s+(?:(?:la|el|los|las|esta|este|presente|dicha|dicho|citad[oa]|referid[oa]|mencionad[oa]|misma|mismo|propia|propio)\s+){0,2}(?:ley|codigo|real|reglamento|constitucion|estatut|texto|tratado|convenio|directiva|decreto|orden|lo\b|l\.o|lec\b|lopj\b|lau\b|lph\b|cc\b|ce\b|lopdgdd\b|loe\b|trlgdcu\b|lgdcu\b@@OTRA_NUEVAS@@|norma|ordenanza|reglamento|carta|pacto|acuerdo|disposicion)/;
 function destinoRef(resto,n,c){
   var s=norm(resto.slice(0,110)),corte=s.search(/[.;:](?=\s|$)/);if(corte>=0)s=s.slice(0,corte);
   var m=RE_OTRA.exec(s);
-  var propia=n.secuencial_mod,esAncla=(c.k==='pre'||c.k==='cab');
+  /* dm (normas añadidas en N-1): en sus disposiciones, preámbulo y encabezado el texto citado suele ser de OTRA ley (las DF que
+     modifican la LEC, el CC…): solo se enlaza con nombre explícito, como en la LO 1/2025 */
+  var propia=n.secuencial_mod||(n.dm&&/^(d[adtf]|rd-|pre$|cab$)/.test(c.k)),esAncla=(c.k==='pre'||c.k==='cab');
   if(!m){return (propia||esAncla)?null:n.id}
   var tras=s.slice(m.index).replace(/^(?:de|del)\s+(?:la\s+|el\s+|los\s+|las\s+)?/,'');
   if(/^(esta|este|presente)\b/.test(norm(s.slice(m.index).replace(/^(?:de|del)\s+/,'').replace(/^(?:la\s+|el\s+)/,'')))){return propia?null:n.id}
