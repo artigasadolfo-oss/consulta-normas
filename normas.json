@@ -117,7 +117,7 @@
  "boe_contrastado": "2026-10-08",
  "indice": {
   "version": "0.1-muestra",
-  "voces": 252,
+  "voces": 264,
   "provisionales": 38,
   "caducadas": [],
   "cambios_norma": {},
@@ -248,7 +248,15 @@
     "Albacea y contador-partidor",
     "Ley aplicable a la sucesión de extranjeros",
     "Bienes privativos y gananciales",
-    "Deudas y responsabilidad de la sociedad de gananciales"
+    "Deudas y responsabilidad de la sociedad de gananciales",
+    "Disolución y liquidación de la sociedad de gananciales",
+    "Separación de bienes y compensación por trabajo doméstico",
+    "Vivienda familiar: disposición por el cónyuge titular",
+    "Recepción de la obra",
+    "Concurrencia de la LOE con la responsabilidad contractual y el art. 1591 CC",
+    "Información precontractual e integración de la oferta y la publicidad",
+    "Responsabilidad por productos defectuosos",
+    "Responsabilidad por servicios defectuosos"
    ],
    "CE": [
     "Cuestiones prejudiciales (penal, administrativa, civil)",
@@ -294,7 +302,8 @@
     "Arrendamiento de cosas en el Código Civil (régimen supletorio)",
     "Tácita reconducción",
     "Cargas anteriores y ocupantes del inmueble subastado",
-    "Usufructo"
+    "Usufructo",
+    "Vivienda familiar: disposición por el cónyuge titular"
    ],
    "LEC": [
     "Declinatoria",
@@ -485,7 +494,11 @@
     "Servidumbres: constitución, extinción y acciones",
     "Servidumbre de paso",
     "Ley aplicable a la sucesión de extranjeros",
-    "Deudas y responsabilidad de la sociedad de gananciales"
+    "Deudas y responsabilidad de la sociedad de gananciales",
+    "Disolución y liquidación de la sociedad de gananciales",
+    "Separación de bienes y compensación por trabajo doméstico",
+    "Información precontractual e integración de la oferta y la publicidad",
+    "Responsabilidad por productos defectuosos"
    ],
    "LO 1/2025": [
     "Requisito de procedibilidad (MASC)",
@@ -535,7 +548,12 @@
     "Cantidades anticipadas en la compra sobre plano",
     "Fuerza mayor y caso fortuito",
     "Responsabilidad por hecho ajeno",
-    "Daños causados por animales, edificios y cosas"
+    "Daños causados por animales, edificios y cosas",
+    "Agentes de la edificación y sus obligaciones",
+    "Garantías y seguros de la edificación",
+    "Recepción de la obra",
+    "Concurrencia de la LOE con la responsabilidad contractual y el art. 1591 CC",
+    "Información precontractual e integración de la oferta y la publicidad"
    ],
    "LOPJ": [
     "Falta de jurisdicción / competencia internacional",
@@ -619,7 +637,13 @@
     "Cláusulas abusivas: lista legal (gastos, sumisión, penalizaciones)",
     "Garantía de conformidad de los bienes",
     "Desistimiento del consumidor",
-    "Fraude de ley y actos contrarios a normas imperativas"
+    "Fraude de ley y actos contrarios a normas imperativas",
+    "Concurrencia de la LOE con la responsabilidad contractual y el art. 1591 CC",
+    "Contratos a distancia y fuera del establecimiento",
+    "Información precontractual e integración de la oferta y la publicidad",
+    "Viajes combinados y servicios de viaje vinculados",
+    "Responsabilidad por productos defectuosos",
+    "Responsabilidad por servicios defectuosos"
    ]
   }
  },

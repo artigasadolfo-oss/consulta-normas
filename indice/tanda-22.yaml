@@ -1,0 +1,466 @@
+# Índice de conceptos de «Consulta de normas» — tanda 22 (prioridad B: voces 267 a 269, 275 a 278 y 285 a 289; cierre de los bloques 14 y 15 y parte del 16)
+# Revisor: armero. Espejo: legalize-es@aca28304d, leído con `git show aca28304d:es/…` (no el árbol de trabajo, que hoy trae erratas).
+# Todo precepto citado se ha leído en el espejo en esta pasada. Vigencia: contraste con la API de boe.es (08-10-2026).
+# Ver tanda-22-notas.md.
+
+voces:
+  - voz: "Disolución y liquidación de la sociedad de gananciales"
+    sinonimos: ["disolución de la sociedad de gananciales", "liquidación de gananciales", "fin de la sociedad de gananciales", "causas de disolución", "disolución judicial de gananciales", "separación de hecho de más de un año", "comunidad postganancial", "inventario de gananciales", "activo y pasivo de la sociedad", "reintegros y reembolsos entre cónyuges", "división por mitad", "adjudicación preferente", "vivienda del viudo en la liquidación", "alimentos durante la liquidación", "deudas tras la liquidación", "liquidación de dos matrimonios sucesivos"]
+    normas_base: ["CC", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "1392", tipo: "regula", nota: "Concluye de pleno derecho por disolución o nulidad del matrimonio, separación legal o pacto de otro régimen."}
+      - {norma: "CC", articulo: "1393", tipo: "regula", nota: "Disolución judicial a petición de uno: apoyos con representación plena, fraude, separación de hecho de más de un año, falta de información."}
+      - {norma: "CC", articulo: "1394", tipo: "regula", nota: "Efectos desde que se acuerda; en el pleito, inventario, medidas de administración y licencia judicial para lo extraordinario."}
+      - {norma: "CC", articulo: "1395", tipo: "conexa", nota: "Nulidad con un cónyuge de mala fe: el otro puede liquidar por las reglas de participación; el de mala fe no participa."}
+      - {norma: "CC", articulo: "95", tipo: "regula", nota: "La sentencia, el decreto o la escritura del convenio disuelven el régimen y aprueban su liquidación si hay acuerdo."}
+      - {norma: "CC", articulo: "1373", tipo: "conexa", nota: "Embargo de gananciales por deuda propia: el otro cónyuge puede pedir que se sustituya por la cuota del deudor y se disuelve."}
+      - {norma: "CC", articulo: "1396", tipo: "regula", nota: "Disuelta la sociedad, se liquida empezando por un inventario del activo y del pasivo."}
+      - {norma: "CC", articulo: "1397", tipo: "regula", nota: "Activo: gananciales existentes, valor actualizado de lo enajenado en fraude y lo pagado por la sociedad a cargo de un cónyuge."}
+      - {norma: "CC", articulo: "1398", tipo: "regula", nota: "Pasivo: deudas de la sociedad, privativos gastados en su interés y lo pagado por un cónyuge a cargo de ella, actualizado."}
+      - {norma: "CC", articulo: "1399", tipo: "regula", nota: "Se pagan primero las deudas de la sociedad, empezando por las alimenticias; si no alcanza, concurrencia y prelación de créditos."}
+      - {norma: "CC", articulo: "1400", tipo: "conexa", nota: "Sin metálico, pueden ofrecerse bienes en pago; si un partícipe o acreedor lo pide, se venden y se paga con el precio."}
+      - {norma: "CC", articulo: "1401", tipo: "regula", nota: "Los acreedores conservan su crédito contra el deudor; el no deudor responde con lo adjudicado si hubo inventario."}
+      - {norma: "CC", articulo: "1402", tipo: "conexa", nota: "Los acreedores tienen en la liquidación los derechos que la ley les da en la partición de herencias."}
+      - {norma: "CC", articulo: "1403", tipo: "regula", nota: "Pagadas las deudas, se abonan las indemnizaciones y reintegros de cada cónyuge, compensando lo que deba a la sociedad."}
+      - {norma: "CC", articulo: "1404", tipo: "regula", nota: "El remanente es el haber de la sociedad y se divide por mitad entre los cónyuges o sus herederos."}
+      - {norma: "CC", articulo: "1405", tipo: "conexa", nota: "El cónyuge acreedor personal del otro puede cobrarse con bienes comunes, salvo pago voluntario."}
+      - {norma: "CC", articulo: "1406", tipo: "regula", nota: "Adjudicación preferente: bienes de uso personal, explotación que gestiona, local profesional y, por muerte del otro, la vivienda."}
+      - {norma: "CC", articulo: "1407", tipo: "regula", nota: "Local o vivienda: en propiedad o con derecho de uso o habitación, abonando en dinero el exceso sobre el haber."}
+      - {norma: "CC", articulo: "1408", tipo: "regula", nota: "Hasta entregar el haber, alimentos de la masa común a cónyuges e hijos, rebajados en lo que excedan de frutos y rentas."}
+      - {norma: "CC", articulo: "1409", tipo: "conexa", nota: "Liquidación simultánea de dos matrimonios de una persona: toda clase de pruebas; en la duda, reparto proporcional."}
+      - {norma: "CC", articulo: "1410", tipo: "regula", nota: "En lo no previsto (inventario, tasación, división, adjudicaciones), las normas de la partición de la herencia."}
+      - {norma: "CC", articulo: "1062", tipo: "conexa", nota: "Cosa indivisible: se adjudica a uno abonando el exceso; basta que uno pida la venta en subasta con licitadores extraños."}
+      - {norma: "CC", articulo: "1435", tipo: "conexa", nota: "Extinguida la sociedad constante matrimonio, rige la separación de bienes salvo que se pacte otro régimen."}
+      - {norma: "CC", articulo: "1374", tipo: "conexa", nota: "Disuelta por embargo, rige la separación salvo que el cónyuge opte en tres meses por una nueva sociedad de gananciales."}
+      - {norma: "CC", articulo: "1321", tipo: "conexa", nota: "Por muerte de un cónyuge, el ajuar de la vivienda común se entrega al viudo sin computárselo en su haber."}
+      - {norma: "LEC", articulo: "808", apartado: "1", tipo: "conexa", nota: "Admitida la demanda matrimonial o iniciado el proceso de disolución, cualquier cónyuge o heredero pide el inventario."}
+      - {norma: "LEC", articulo: "810", apartado: "1", tipo: "conexa", nota: "Concluido el inventario y firme la disolución, cualquier cónyuge o sus herederos piden la liquidación judicial."}
+    no_consta_en_norma:
+      - "Comunidad postganancial: régimen de los bienes entre la disolución y la liquidación; no lo regula el CC; jurisprudencial."
+      - "Fecha de disolución cuando hubo separación de hecho larga y ruptura efectiva de la convivencia: jurisprudencial."
+      - "Si la acción para pedir la liquidación prescribe: el CC no lo dice; jurisprudencial."
+      - "Valoración de los bienes al tiempo de liquidar y actualización de reintegros (arts. 1358 y 1398): criterio jurisprudencial."
+    afines: ["Liquidación del régimen económico matrimonial (procedimiento)", "Bienes privativos y gananciales", "Deudas y responsabilidad de la sociedad de gananciales", "Separación de bienes y compensación por trabajo doméstico", "Derechos del cónyuge viudo", "Partición de la herencia y su impugnación"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Separación de bienes y compensación por trabajo doméstico"
+    sinonimos: ["separación de bienes", "régimen de separación", "capitulaciones de separación", "compensación por trabajo doméstico", "trabajo para la casa", "compensación del 1438", "contribución a las cargas del matrimonio", "cargas del matrimonio", "bienes de titularidad dudosa", "bienes en proindiviso entre cónyuges", "cónyuge que administra bienes del otro", "deudas de cada cónyuge", "régimen económico matrimonial valenciano", "Ley 10/2007 valenciana", "casados en la Comunidad Valenciana entre 2008 y 2016"]
+    normas_base: ["CC", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "1435", tipo: "regula", nota: "Hay separación si se pactó, si se excluyó la sociedad de gananciales sin otra regla o si esta se extingue constante matrimonio."}
+      - {norma: "CC", articulo: "1436", tipo: "conexa", nota: "La demanda de separación de bienes se anota y la sentencia firme se inscribe en el Registro de la Propiedad y en el Civil."}
+      - {norma: "CC", articulo: "1437", tipo: "regula", nota: "Cada cónyuge es dueño de lo que tenía y de lo que adquiera, y lo administra, disfruta y dispone libremente."}
+      - {norma: "CC", articulo: "1438", tipo: "regula", nota: "Cargas en proporción a los recursos; el trabajo para la casa es contribución y da derecho a compensación al extinguirse el régimen."}
+      - {norma: "CC", articulo: "1439", tipo: "regula", nota: "El cónyuge que gestiona bienes del otro responde como mandatario, sin rendir cuentas de frutos consumidos en las cargas."}
+      - {norma: "CC", articulo: "1440", tipo: "regula", nota: "Las obligaciones de cada cónyuge son de su exclusiva responsabilidad."}
+      - {norma: "CC", articulo: "1440", apartado: "párrafo 2.º", tipo: "regula", nota: "Por la potestad doméstica ordinaria responden ambos según los arts. 1319 y 1438."}
+      - {norma: "CC", articulo: "1441", tipo: "regula", nota: "Si no se puede acreditar a cuál de los cónyuges pertenece un bien, corresponde a ambos por mitad."}
+      - {norma: "CC", articulo: "1442", tipo: "conexa", nota: "Declarado un cónyuge en concurso, se aplica la legislación concursal."}
+      - {norma: "CC", articulo: "1443", tipo: "conexa", nota: "La separación decretada no se altera por la reconciliación ni por desaparecer la causa que la motivó."}
+      - {norma: "CC", articulo: "1444", tipo: "conexa", nota: "Los cónyuges pueden pactar en capitulaciones volver al régimen anterior; lo aportado de nuevo se considera privativo."}
+      - {norma: "CC", articulo: "1315", tipo: "regula", nota: "El régimen económico del matrimonio es el que los cónyuges estipulen en capitulaciones, con los límites del Código."}
+      - {norma: "CC", articulo: "1316", tipo: "conexa", nota: "Sin capitulaciones o si son ineficaces, rige la sociedad de gananciales."}
+      - {norma: "CC", articulo: "1317", tipo: "regula", nota: "El cambio de régimen durante el matrimonio no perjudica los derechos ya adquiridos por terceros."}
+      - {norma: "CC", articulo: "1325", tipo: "regula", nota: "En capitulaciones se puede estipular, modificar o sustituir el régimen económico, antes o durante el matrimonio (1326)."}
+      - {norma: "CC", articulo: "1327", tipo: "regula", nota: "Las capitulaciones solo valen si constan en escritura pública."}
+      - {norma: "CC", articulo: "1328", tipo: "conexa", nota: "Es nula la estipulación contraria a las leyes o buenas costumbres o que limite la igualdad de derechos de los cónyuges."}
+      - {norma: "CC", articulo: "1333", tipo: "conexa", nota: "Las capitulaciones y los cambios de régimen se mencionan en la inscripción del matrimonio y, si afectan a inmuebles, en el Registro."}
+      - {norma: "CC", articulo: "1318", tipo: "regula", nota: "Los bienes de los cónyuges están sujetos a las cargas; si uno no contribuye, el juez adopta medidas a instancia del otro."}
+      - {norma: "CC", articulo: "1319", apartado: "párrafo 2.º", tipo: "conexa", nota: "Deudas por necesidades ordinarias: responden los comunes y los del deudor; subsidiariamente, los del otro cónyuge."}
+      - {norma: "CC", articulo: "1324", tipo: "conexa", nota: "Entre cónyuges basta la confesión del otro para probar la propiedad, sin perjudicar a legitimarios ni acreedores."}
+      - {norma: "CC", articulo: "1323", tipo: "conexa", nota: "Los cónyuges pueden transmitirse bienes y contratar entre sí."}
+      - {norma: "CC", articulo: "400", tipo: "conexa", nota: "Ningún copropietario está obligado a permanecer en la comunidad: cualquiera puede pedir la división."}
+      - {norma: "CC", articulo: "97", apartado: "4.ª", tipo: "conexa", nota: "La dedicación pasada y futura a la familia es circunstancia para fijar la pensión compensatoria."}
+      - {norma: "CC", articulo: "103", apartado: "3.ª", tipo: "conexa", nota: "Medida provisional sobre las cargas; el trabajo de atender a los hijos comunes se considera contribución."}
+      - {norma: "LEC", articulo: "806", tipo: "conexa", nota: "El procedimiento de liquidación es para regímenes con masa común de bienes; la separación de bienes no la tiene."}
+    no_consta_en_norma:
+      - "Requisitos de la compensación del art. 1438 (dedicación exclusiva o no, trabajo fuera de casa) y su cálculo: jurisprudencial."
+      - "Compatibilidad de la compensación del art. 1438 con la pensión compensatoria y cauce procesal para pedirla: jurisprudencial."
+      - "Aplicación del art. 1438 a las parejas de hecho: no lo prevé el CC; jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Ley valenciana 10/2007 (separación de bienes como régimen supletorio): nula por la STC 82/2016, de 28 de abril."
+      - "STC 82/2016, FJ 8: no afecta a situaciones consolidadas; los casados bajo esa ley siguen en su régimen salvo capitulaciones."
+    afines: ["Bienes privativos y gananciales", "Disolución y liquidación de la sociedad de gananciales", "Capitulaciones matrimoniales", "Pensión compensatoria", "Copropiedad y acción de división de cosa común", "Ley aplicable al régimen económico de extranjeros"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Vivienda familiar: disposición por el cónyuge titular"
+    sinonimos: ["venta de la vivienda familiar", "hipotecar la vivienda familiar", "consentimiento del cónyuge no titular", "vivienda habitual de la familia", "autorización judicial para vender la vivienda", "anulabilidad por falta de consentimiento del cónyuge", "manifestación sobre el carácter de vivienda habitual", "adquirente de buena fe", "vivienda con uso atribuido en el divorcio", "disposición de la vivienda privativa", "muebles de uso ordinario", "renuncia al arrendamiento de la vivienda familiar", "desistimiento del arrendatario casado", "actos dispositivos sin consentimiento del cónyuge"]
+    normas_base: ["CC", "LAU"]
+    remisiones:
+      - {norma: "CC", articulo: "1320", tipo: "regula", nota: "Disponer de derechos sobre la vivienda habitual y los muebles de uso ordinario exige el consentimiento de ambos o autorización judicial."}
+      - {norma: "CC", articulo: "1320", apartado: "párrafo 2.º", tipo: "regula", nota: "La manifestación errónea o falsa del disponente sobre el carácter de la vivienda no perjudica al adquirente de buena fe."}
+      - {norma: "CC", articulo: "1322", tipo: "regula", nota: "Lo hecho sin el consentimiento exigido y no confirmado es anulable a instancia del cónyuge omitido o de sus herederos."}
+      - {norma: "CC", articulo: "1322", apartado: "párrafo 2.º", tipo: "conexa", nota: "Son nulos los actos a título gratuito sobre bienes comunes sin el consentimiento del otro cónyuge."}
+      - {norma: "CC", articulo: "1301", apartado: "5.º", tipo: "regula", nota: "La acción caduca a los cuatro años desde la disolución de la sociedad o del matrimonio, salvo conocimiento suficiente anterior."}
+      - {norma: "CC", articulo: "96", apartado: "3", tipo: "regula", nota: "Vivienda con uso atribuido: para disponer, consentimiento de ambos o autorización judicial; se hace constar en el Registro."}
+      - {norma: "CC", articulo: "103", apartado: "2.ª", tipo: "conexa", nota: "Admitida la demanda matrimonial, el juez decide qué cónyuge sigue en el uso de la vivienda familiar."}
+      - {norma: "CC", articulo: "1377", tipo: "regula", nota: "Si la vivienda es ganancial: actos onerosos con consentimiento de ambos; si uno lo niega, el juez puede autorizarlos."}
+      - {norma: "CC", articulo: "1378", tipo: "conexa", nota: "Son nulos los actos a título gratuito sobre gananciales sin el consentimiento de ambos, salvo liberalidades de uso."}
+      - {norma: "CC", articulo: "1389", apartado: "párrafo 2.º", tipo: "conexa", nota: "El cónyuge administrador por apoyo o abandono necesita autorización judicial para disponer de inmuebles."}
+      - {norma: "CC", articulo: "1391", tipo: "conexa", nota: "Acto en fraude del consorte: el autor debe su importe a la sociedad y, si el adquirente obró de mala fe, el acto es rescindible."}
+      - {norma: "CC", articulo: "1406", tipo: "conexa", nota: "Por muerte del otro cónyuge, el viudo puede pedir que se incluya con preferencia en su haber la vivienda habitual."}
+      - {norma: "LAU", articulo: "12", apartado: "1", tipo: "conexa", nota: "Si el arrendatario desiste o no renueva sin consentimiento del cónyuge conviviente, el arriendo puede seguir a favor de este."}
+      - {norma: "LAU", articulo: "12", apartado: "3", tipo: "conexa", nota: "Abandono sin manifestación: sigue a favor del cónyuge que notifique por escrito al arrendador en un mes."}
+      - {norma: "LAU", articulo: "12", apartado: "4", tipo: "conexa", nota: "Se aplica también a la pareja con dos años de convivencia o con descendencia común."}
+    no_consta_en_norma:
+      - "Si el art. 1320 alcanza a la hipoteca, al arrendamiento o a la renuncia de derechos sobre la vivienda: jurisprudencial."
+      - "Concepto de vivienda habitual de la familia (separación de hecho, segunda residencia): jurisprudencial."
+      - "Si el art. 1320 alcanza al embargo y a la ejecución forzosa de la vivienda familiar por deudas del titular: no lo dice; jurisprudencial."
+      - "Aplicación del art. 1320 a las parejas de hecho: no lo prevé el CC; jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Reglamento Hipotecario, art. 91.1: para inscribir la disposición, el titular manifiesta en la escritura que no es vivienda familiar."
+    afines: ["Uso de la vivienda familiar", "Bienes privativos y gananciales", "Nulidad y anulabilidad del contrato", "Separación y divorcio contenciosos", "Medidas provisionales en familia", "Separación o divorcio del arrendatario"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Agentes de la edificación y sus obligaciones"
+    sinonimos: ["agentes de la edificación", "promotor", "promotor inmobiliario", "proyectista", "arquitecto", "constructor", "contratista", "jefe de obra", "subcontratista", "director de obra", "director de la ejecución de la obra", "arquitecto técnico", "aparejador", "dirección facultativa", "laboratorio de control de calidad", "suministrador de productos de construcción", "gestor de cooperativas", "obligaciones del propietario del edificio", "Libro del Edificio", "ámbito de la LOE"]
+    normas_base: ["LOE"]
+    remisiones:
+      - {norma: "LOE", articulo: "8", tipo: "regula", nota: "Agentes: toda persona que interviene en la edificación; sus obligaciones las fijan la LOE, otras normas y su contrato."}
+      - {norma: "LOE", articulo: "9", apartado: "1", tipo: "regula", nota: "Promotor: quien decide, impulsa, programa y financia las obras, para sí o para enajenarlas o cederlas."}
+      - {norma: "LOE", articulo: "9", apartado: "2", tipo: "regula", nota: "Obligaciones del promotor: título sobre el solar, licencias, acta de recepción, seguros y documentación al adquirente."}
+      - {norma: "LOE", articulo: "10", apartado: "1", tipo: "regula", nota: "Proyectista: redacta el proyecto por encargo del promotor; cada autor de un proyecto parcial asume su titularidad."}
+      - {norma: "LOE", articulo: "10", apartado: "2", tipo: "regula", nota: "Obligaciones del proyectista: titulación habilitante según el uso del edificio y proyecto ajustado a la normativa y al contrato."}
+      - {norma: "LOE", articulo: "11", apartado: "1", tipo: "regula", nota: "Constructor: asume ante el promotor ejecutar la obra con medios propios o ajenos, sujeto al proyecto y al contrato."}
+      - {norma: "LOE", articulo: "11", apartado: "2", tipo: "regula", nota: "Obligaciones del constructor: ejecutar según proyecto e instrucciones, jefe de obra, subcontratas, acta de recepción y garantías."}
+      - {norma: "LOE", articulo: "12", apartado: "1", tipo: "regula", nota: "Director de obra: dirige el desarrollo de la obra en lo técnico, estético, urbanístico y medioambiental."}
+      - {norma: "LOE", articulo: "12", apartado: "3", tipo: "regula", nota: "Obligaciones del director de obra: verificar cimentación y estructura, resolver contingencias, certificado final."}
+      - {norma: "LOE", articulo: "13", apartado: "1", tipo: "regula", nota: "Director de la ejecución: dirige la ejecución material y controla la construcción y la calidad de lo edificado."}
+      - {norma: "LOE", articulo: "13", apartado: "2", tipo: "regula", nota: "Sus obligaciones: verificar los productos recibidos, dirigir la ejecución material, Libro de Órdenes y certificado final."}
+      - {norma: "LOE", articulo: "14", apartado: "3", tipo: "conexa", nota: "Entidades y laboratorios de control de calidad: asistencia técnica y entrega de resultados al responsable de su aceptación."}
+      - {norma: "LOE", articulo: "15", apartado: "3", tipo: "conexa", nota: "Suministrador: entregar los productos según el pedido, respondiendo de origen, identidad y calidad."}
+      - {norma: "LOE", articulo: "16", apartado: "1", tipo: "regula", nota: "Propietarios: conservar el edificio con uso y mantenimiento adecuados y transmitir documentación, seguros y garantías."}
+      - {norma: "LOE", articulo: "16", apartado: "2", tipo: "conexa", nota: "Usuarios: usar el edificio conforme a las instrucciones de uso y mantenimiento."}
+      - {norma: "LOE", articulo: "17", apartado: "4", tipo: "regula", nota: "Responden como promotores el gestor de cooperativas o de comunidades de propietarios y figuras análogas."}
+      - {norma: "LOE", articulo: "17", apartado: "6", tipo: "regula", nota: "El constructor responde directamente de su jefe de obra, de sus subcontratistas y de los productos que acepta."}
+      - {norma: "LOE", articulo: "17", apartado: "7", tipo: "regula", nota: "Los directores responden de la veracidad del certificado final; quien dirige un proyecto ajeno asume sus defectos."}
+      - {norma: "LOE", articulo: "17", apartado: "5", tipo: "conexa", nota: "Varios proyectistas contratados conjuntamente responden solidariamente; el proyectista responde de los cálculos que encarga."}
+      - {norma: "LOE", articulo: "7", tipo: "conexa", nota: "Documentación de la obra ejecutada (Libro del Edificio): acta de recepción, agentes e instrucciones de uso; se entrega a los usuarios."}
+      - {norma: "LOE", articulo: "2", apartado: "1", tipo: "conexa", nota: "La LOE se aplica a la construcción de edificios permanentes, públicos o privados, de los usos que enumera."}
+      - {norma: "LOE", articulo: "2", apartado: "2", tipo: "conexa", nota: "Son edificación la obra nueva (salvo la de escasa entidad) y las intervenciones que alteran la configuración arquitectónica."}
+      - {norma: "LOE", articulo: "1", apartado: "3", tipo: "conexa", nota: "Las Administraciones que actúan como agentes se rigen por la legislación de contratos públicos y, en lo demás, por la LOE."}
+    no_consta_en_norma:
+      - "Responsabilidad del vendedor no promotor y de la promotora que solo vende (comercializa): jurisprudencial."
+      - "Responsabilidad del arquitecto técnico frente a la del arquitecto superior por defectos de ejecución: jurisprudencial."
+    afines: ["Responsabilidad de los agentes: plazos de 10, 3 y 1 año", "Prescripción de las acciones de la LOE y repetición", "Garantías y seguros de la edificación", "Recepción de la obra", "Contrato de obra: precio, riesgo y vicios", "Requisitos básicos de la edificación y documentación de la obra"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Garantías y seguros de la edificación"
+    sinonimos: ["seguro decenal", "seguro de daños materiales", "seguro trienal", "seguro de caución de la edificación", "garantía financiera", "retención del 5 %", "garantía anual de acabados", "franquicia del seguro decenal", "exclusiones del seguro decenal", "reclamación a la aseguradora decenal", "autopromotor", "escritura de obra nueva sin seguro", "liquidación de la promotora", "capital asegurado"]
+    normas_base: ["LOE"]
+    remisiones:
+      - {norma: "LOE", articulo: "19", apartado: "1", tipo: "regula", nota: "Garantías: un año para acabados (o retención del 5 %), tres para habitabilidad y diez para elementos estructurales."}
+      - {norma: "LOE", articulo: "19", apartado: "2", tipo: "regula", nota: "Seguro de daños: tomador el constructor (1 año) o el promotor (3 y 10); asegurados el promotor y los sucesivos adquirentes."}
+      - {norma: "LOE", articulo: "19", apartado: "3", tipo: "regula", nota: "Caución: asegurados los adquirentes; pago a primer requerimiento; sin excepciones contra el tomador."}
+      - {norma: "LOE", articulo: "19", apartado: "4", tipo: "conexa", nota: "Iniciada la cobertura, no se puede rescindir ni resolver el seguro de mutuo acuerdo antes del plazo."}
+      - {norma: "LOE", articulo: "19", apartado: "5", tipo: "regula", nota: "Capital mínimo sobre el coste final de ejecución material: 5 %, 30 % y 100 %, según la garantía."}
+      - {norma: "LOE", articulo: "19", apartado: "6", tipo: "conexa", nota: "El asegurador elige entre pagar en metálico la valoración de los daños o repararlos."}
+      - {norma: "LOE", articulo: "19", apartado: "7", tipo: "regula", nota: "Quien incumple la obligación de suscribir las garantías responde personalmente."}
+      - {norma: "LOE", articulo: "19", apartado: "8", tipo: "regula", nota: "Sin franquicias en la garantía anual; en la trienal y la decenal, no más del 1 % del capital de cada unidad registral."}
+      - {norma: "LOE", articulo: "19", apartado: "9", tipo: "regula", nota: "Salvo pacto, no cubren daños personales, a contiguos o muebles, obras posteriores, mal uso, fuerza mayor ni reservas pendientes."}
+      - {norma: "LOE", articulo: "20", apartado: "1", tipo: "regula", nota: "No se autoriza ni inscribe la escritura de obra nueva sin acreditar y testimoniar las garantías del art. 19."}
+      - {norma: "LOE", articulo: "20", apartado: "2", tipo: "conexa", nota: "Sin acreditar las garantías, no se cierra la hoja del promotor individual ni se inscribe la liquidación de la promotora."}
+      - {norma: "LOE", articulo: "da2", tipo: "regula", nota: "Garantía decenal exigible en edificios de vivienda (no al autopromotor de vivienda propia, salvo si vende); las demás, por real decreto."}
+      - {norma: "LOE", articulo: "9", apartado: "2.d)", tipo: "conexa", nota: "Es obligación del promotor suscribir los seguros del art. 19."}
+      - {norma: "LOE", articulo: "11", apartado: "2.h)", tipo: "conexa", nota: "Es obligación del constructor suscribir las garantías del art. 19."}
+      - {norma: "LOE", articulo: "16", apartado: "1", tipo: "conexa", nota: "El propietario debe recibir, conservar y transmitir los seguros y garantías con que cuente la obra."}
+      - {norma: "LOE", articulo: "18", apartado: "2", tipo: "conexa", nota: "La repetición de los aseguradores contra los agentes prescribe en dos años desde la condena firme o el pago extrajudicial."}
+      - {norma: "LOE", articulo: "6", apartado: "5", tipo: "conexa", nota: "Los plazos de responsabilidad y garantía se cuentan desde el acta de recepción o la recepción tácita."}
+    no_consta_en_norma:
+      - "Plazo para que el adquirente, como asegurado (LOE 19.2.a), reclame a la aseguradora decenal: no lo fija la LOE; jurisprudencial."
+      - "Si la aseguradora puede oponer al adquirente defectos de la póliza o la conducta del promotor tomador: jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Ley 50/1980, de Contrato de Seguro: régimen general del seguro de daños y del de caución, supletorio de la LOE."
+    afines: ["Agentes de la edificación y sus obligaciones", "Responsabilidad de los agentes: plazos de 10, 3 y 1 año", "Prescripción de las acciones de la LOE y repetición", "Recepción de la obra", "Cantidades anticipadas en la compra sobre plano"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Recepción de la obra"
+    sinonimos: ["recepción de la obra", "acta de recepción", "recepción con reservas", "recepción sin reservas", "recepción tácita", "rechazo de la obra", "certificado final de obra", "fin de obra", "subsanación de reservas", "entrega de la obra al promotor", "obra a satisfacción del propietario", "recepción por partes", "pago del precio a la entrega", "inicio de los plazos de garantía", "riesgo antes de la entrega"]
+    normas_base: ["LOE", "CC"]
+    remisiones:
+      - {norma: "LOE", articulo: "6", apartado: "1", tipo: "regula", nota: "Acto por el que el constructor entrega la obra concluida y el promotor la acepta, con o sin reservas, total o por fases."}
+      - {norma: "LOE", articulo: "6", apartado: "2", tipo: "regula", nota: "Acta firmada por promotor y constructor: partes, fecha del certificado final, coste, reservas y plazo, y garantías."}
+      - {norma: "LOE", articulo: "6", apartado: "2.d)", tipo: "regula", nota: "Las reservas se especifican de manera objetiva con plazo de subsanación; la subsanación consta en acta aparte."}
+      - {norma: "LOE", articulo: "6", apartado: "3", tipo: "regula", nota: "El promotor puede rechazar la obra no terminada o no conforme al contrato, motivándolo por escrito en el acta."}
+      - {norma: "LOE", articulo: "6", apartado: "4", tipo: "regula", nota: "Salvo pacto, recepción en treinta días desde la notificación escrita del fin de obra; si no hay reservas ni rechazo, es tácita."}
+      - {norma: "LOE", articulo: "6", apartado: "5", tipo: "regula", nota: "Los plazos de responsabilidad y garantía se cuentan desde el acta de recepción o desde la recepción tácita."}
+      - {norma: "LOE", articulo: "17", apartado: "1", tipo: "regula", nota: "Los plazos de 10, 3 y 1 año corren desde la recepción sin reservas o desde la subsanación de estas."}
+      - {norma: "LOE", articulo: "19", apartado: "9.i)", tipo: "conexa", nota: "Las garantías no cubren los siniestros de partes con reservas no subsanadas en nueva acta."}
+      - {norma: "LOE", articulo: "7", tipo: "conexa", nota: "El acta de recepción forma parte de la documentación de la obra ejecutada que se entrega a los usuarios."}
+      - {norma: "LOE", articulo: "9", apartado: "2.c)", tipo: "conexa", nota: "El promotor debe suscribir el acta de recepción."}
+      - {norma: "LOE", articulo: "11", apartado: "2.f)", tipo: "conexa", nota: "El constructor debe firmar el acta de replanteo y el acta de recepción."}
+      - {norma: "LOE", articulo: "12", apartado: "3.e)", tipo: "conexa", nota: "El director de obra suscribe el certificado final de obra."}
+      - {norma: "CC", articulo: "1592", tipo: "regula", nota: "Obra por piezas o medida: se puede exigir que se reciba y pague por partes; la parte pagada se presume aprobada y recibida."}
+      - {norma: "CC", articulo: "1598", tipo: "regula", nota: "Obra a satisfacción del propietario: a falta de conformidad, decide el juicio pericial; si aprueba un tercero, se está a lo que decida."}
+      - {norma: "CC", articulo: "1599", tipo: "regula", nota: "Salvo pacto o costumbre, el precio de la obra se paga al hacerse la entrega."}
+      - {norma: "CC", articulo: "1589", tipo: "conexa", nota: "Si el contratista puso el material, sufre la pérdida de la obra destruida antes de entregarla, salvo mora en recibirla."}
+      - {norma: "CC", articulo: "1590", tipo: "conexa", nota: "Si solo puso su trabajo, no cobra si la obra se destruye antes de la entrega, salvo mora o mala calidad advertida del material."}
+    no_consta_en_norma:
+      - "Efectos de la ocupación o el uso de la obra por el promotor como recepción tácita, fuera del art. 6.4: jurisprudencial."
+      - "Recepción como límite de la responsabilidad contractual por defectos aparentes no reservados: jurisprudencial."
+    afines: ["Agentes de la edificación y sus obligaciones", "Responsabilidad de los agentes: plazos de 10, 3 y 1 año", "Garantías y seguros de la edificación", "Contrato de obra: precio, riesgo y vicios", "Concurrencia de la LOE con la responsabilidad contractual y el art. 1591 CC"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Concurrencia de la LOE con la responsabilidad contractual y el art. 1591 CC"
+    sinonimos: ["ruina del edificio", "responsabilidad decenal del Código Civil", "artículo 1591", "ruina funcional", "vicios de la construcción", "defectos constructivos", "acción contractual contra el promotor vendedor", "incumplimiento contractual por defectos", "concurrencia de acciones", "edificios anteriores a la LOE", "licencia anterior a la LOE", "saneamiento del vendedor de vivienda", "acción de quince años", "prescripción de cinco años", "daños a terceros por defecto de construcción"]
+    normas_base: ["LOE", "CC", "TRLGDCU"]
+    remisiones:
+      - {norma: "LOE", articulo: "17", apartado: "1", tipo: "regula", nota: "La responsabilidad legal de los agentes es sin perjuicio de sus responsabilidades contractuales."}
+      - {norma: "LOE", articulo: "17", apartado: "9", tipo: "regula", nota: "Queda a salvo la responsabilidad del vendedor ante el comprador por el contrato, los arts. 1484 y ss. CC y la ley de compraventa."}
+      - {norma: "LOE", articulo: "18", apartado: "1", tipo: "regula", nota: "Las acciones de la LOE prescriben en dos años desde el daño, sin perjuicio de las acciones por incumplimiento contractual."}
+      - {norma: "LOE", articulo: "dt1", tipo: "regula", nota: "La LOE se aplica a las obras cuyo proyecto pidió licencia tras su entrada en vigor; a las anteriores, no."}
+      - {norma: "LOE", articulo: "df4", tipo: "conexa", nota: "La LOE entró en vigor a los seis meses de su publicación en el BOE."}
+      - {norma: "CC", articulo: "1591", tipo: "regula", nota: "Ruina por vicios de construcción en diez años desde que concluyó: responde el contratista; el arquitecto, por vicio del suelo o dirección."}
+      - {norma: "CC", articulo: "1591", apartado: "párrafo 2.º", tipo: "regula", nota: "Si la causa es que el contratista faltó a las condiciones del contrato, la acción de indemnización dura quince años."}
+      - {norma: "CC", articulo: "1101", tipo: "regula", nota: "Indemnizan los daños quienes incurren en dolo, negligencia o morosidad o contravienen de cualquier modo la obligación."}
+      - {norma: "CC", articulo: "1124", tipo: "conexa", nota: "Ante el incumplimiento, el perjudicado puede exigir el cumplimiento o la resolución, con indemnización en ambos casos."}
+      - {norma: "CC", articulo: "1964", apartado: "2", tipo: "regula", nota: "Las acciones personales sin plazo especial prescriben a los cinco años desde que puede exigirse el cumplimiento."}
+      - {norma: "CC", articulo: "1484", apartado: "1", tipo: "conexa", nota: "El vendedor responde de los defectos ocultos que hacen la cosa impropia para su uso o disminuyen este uso."}
+      - {norma: "CC", articulo: "1486", tipo: "conexa", nota: "El comprador opta entre desistir o rebajar el precio; si el vendedor conocía los vicios, además indemnización."}
+      - {norma: "CC", articulo: "1490", tipo: "conexa", nota: "Las acciones de saneamiento por vicios ocultos se extinguen a los seis meses desde la entrega."}
+      - {norma: "CC", articulo: "1596", tipo: "conexa", nota: "El contratista responde del trabajo de las personas que emplea en la obra."}
+      - {norma: "CC", articulo: "1907", tipo: "conexa", nota: "El propietario responde de los daños por ruina del edificio debida a falta de las reparaciones necesarias."}
+      - {norma: "CC", articulo: "1909", tipo: "conexa", nota: "Si la ruina que daña a un tercero se debe a defecto de construcción, se repite contra el arquitecto o el constructor."}
+      - {norma: "TRLGDCU", articulo: "149", tipo: "conexa", nota: "Quien construye o comercializa viviendas como empresario responde de sus defectos no cubiertos por un régimen legal específico."}
+      - {norma: "LOE", articulo: "da7", tipo: "conexa", nota: "El agente demandado puede pedir, al contestar, que se notifique la demanda a otros agentes, a quienes vinculará la sentencia."}
+    no_consta_en_norma:
+      - "Concepto de ruina funcional (vicios que hacen inútil el edificio para su destino) bajo el art. 1591: jurisprudencial."
+      - "Compatibilidad y elección entre la acción de la LOE, la contractual (1101 y 1124) y el saneamiento: jurisprudencial."
+      - "Solidaridad impropia entre los agentes y su efecto sobre la interrupción de la prescripción: jurisprudencial."
+      - "Si el art. 1591 sigue aplicándose a obras no residenciales o fuera del ámbito de la LOE: discutido; jurisprudencial."
+    afines: ["Responsabilidad de los agentes: plazos de 10, 3 y 1 año", "Prescripción de las acciones de la LOE y repetición", "Contrato de obra: precio, riesgo y vicios", "Saneamiento por vicios ocultos", "Incumplimiento y facultad resolutoria (art. 1124)", "Responsabilidad por servicios defectuosos"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Contratos a distancia y fuera del establecimiento"
+    sinonimos: ["contrato a distancia", "compra por internet", "comercio electrónico", "venta online", "venta telefónica", "contratación telefónica", "venta a domicilio", "contrato fuera del establecimiento", "venta en excursión", "excursión promocional", "visita no solicitada", "botón de pedido con obligación de pago", "confirmación del contrato en soporte duradero", "plazo de entrega de 30 días", "producto no disponible", "devolución del doble", "cargo fraudulento con tarjeta", "reserva online de alojamiento", "multipropiedad y vacaciones"]
+    normas_base: ["TRLGDCU"]
+    remisiones:
+      - {norma: "TRLGDCU", articulo: "92", apartado: "1", tipo: "regula", nota: "A distancia: sistema organizado de venta sin presencia simultánea, usando solo técnicas a distancia hasta celebrar el contrato."}
+      - {norma: "TRLGDCU", articulo: "92", apartado: "2", tipo: "regula", nota: "Fuera del establecimiento: en otro lugar, tras contacto personal fuera de él o durante una excursión organizada por el empresario."}
+      - {norma: "TRLGDCU", articulo: "92", apartado: "4", tipo: "regula", nota: "Los contratos y ofertas fuera del establecimiento se presumen sometidos a este título; el empresario prueba lo contrario."}
+      - {norma: "TRLGDCU", articulo: "92", apartado: "3", tipo: "conexa", nota: "Son válidas las cláusulas más beneficiosas para el consumidor, sin perjuicio de la irrenunciabilidad."}
+      - {norma: "TRLGDCU", articulo: "93", tipo: "regula", nota: "Excluidos, entre otros: servicios financieros, inmuebles, construcción, alquiler de vivienda, juego, transporte y multipropiedad."}
+      - {norma: "TRLGDCU", articulo: "59 bis", apartado: "1.k)", tipo: "conexa", nota: "Establecimiento mercantil: instalación inmueble de venta al por menor permanente o móvil habitual del empresario."}
+      - {norma: "TRLGDCU", articulo: "97", apartado: "1", tipo: "regula", nota: "Información precontractual obligatoria: identidad, precio total, entrega, desistimiento, garantía legal, duración, reclamaciones."}
+      - {norma: "TRLGDCU", articulo: "97", apartado: "5", tipo: "regula", nota: "Esa información forma parte del contrato y no se altera sin pacto expreso; el empresario prueba que la dio."}
+      - {norma: "TRLGDCU", articulo: "97", apartado: "6", tipo: "conexa", nota: "Si no informó de gastos adicionales o de devolución, el consumidor no tiene que pagarlos."}
+      - {norma: "TRLGDCU", articulo: "98", apartado: "2", tipo: "regula", nota: "Pedido electrónico con pago: botón «pedido con obligación de pago» o fórmula análoga; si no, el consumidor no queda obligado."}
+      - {norma: "TRLGDCU", articulo: "98", apartado: "6", tipo: "regula", nota: "Si llama el empresario, debe confirmar la oferta por escrito; el consumidor solo queda vinculado al aceptarla firmando o por escrito."}
+      - {norma: "TRLGDCU", articulo: "98", apartado: "7", tipo: "regula", nota: "Confirmación del contrato en soporte duradero, a más tardar al entregar los bienes o antes de iniciar el servicio."}
+      - {norma: "TRLGDCU", articulo: "99", apartado: "1", tipo: "regula", nota: "Fuera del establecimiento, la información se da en papel u otro soporte duradero aceptado, al menos en castellano."}
+      - {norma: "TRLGDCU", articulo: "99", apartado: "2", tipo: "regula", nota: "El empresario entrega copia del contrato firmado o su confirmación en papel u otro soporte duradero."}
+      - {norma: "TRLGDCU", articulo: "100", apartado: "1", tipo: "regula", nota: "Sin copia ni confirmación del contrato, el consumidor puede anularlo por vía de acción o de excepción."}
+      - {norma: "TRLGDCU", articulo: "100", apartado: "2", tipo: "conexa", nota: "El empresario no puede invocar esa nulidad, salvo incumplimiento exclusivo del consumidor."}
+      - {norma: "TRLGDCU", articulo: "101", apartado: "1", tipo: "regula", nota: "La falta de respuesta a la oferta nunca vale como aceptación."}
+      - {norma: "TRLGDCU", articulo: "102", apartado: "1", tipo: "regula", nota: "Desistimiento en catorce días naturales sin motivo ni coste, salvo las excepciones del art. 103."}
+      - {norma: "TRLGDCU", articulo: "102", apartado: "1, párrafo 2.º", tipo: "regula", nota: "Visitas no solicitadas al domicilio o excursiones del empresario: el plazo se amplía a treinta días naturales."}
+      - {norma: "TRLGDCU", articulo: "103", apartado: "l)", tipo: "regula", nota: "Sin desistimiento: alojamiento no residencial, alquiler de vehículos, comida u ocio con fecha o periodo de ejecución fijados."}
+      - {norma: "TRLGDCU", articulo: "103", tipo: "conexa", nota: "Otras excepciones: servicio ya ejecutado con consentimiento, bienes personalizados, perecederos o desprecintados, subastas."}
+      - {norma: "TRLGDCU", articulo: "105", apartado: "1", tipo: "regula", nota: "Si no se informó del desistimiento, el plazo termina doce meses después del inicial."}
+      - {norma: "TRLGDCU", articulo: "109", tipo: "regula", nota: "Salvo pacto, el pedido se ejecuta sin demora indebida y como máximo en treinta días naturales."}
+      - {norma: "TRLGDCU", articulo: "110", tipo: "regula", nota: "Bien no disponible: se devuelve lo pagado sin demora; con retraso injustificado, el consumidor puede reclamar el doble."}
+      - {norma: "TRLGDCU", articulo: "111", tipo: "conexa", nota: "Sustitución por bien similar de igual o mayor calidad solo si se informó de ello; caben desistimiento y resolución."}
+      - {norma: "TRLGDCU", articulo: "112", apartado: "1", tipo: "regula", nota: "Cargo fraudulento o indebido con la tarjeta: el titular puede exigir su anulación inmediata."}
+      - {norma: "TRLGDCU", articulo: "112", apartado: "2", tipo: "conexa", nota: "Si la compra la hizo el titular y anula sin desistir ni resolver, indemniza al empresario."}
+      - {norma: "TRLGDCU", articulo: "113", tipo: "regula", nota: "Fuera del establecimiento responden solidariamente el empresario y el agente o comisionista que actuó en nombre propio."}
+      - {norma: "TRLGDCU", articulo: "62", apartado: "1, párrafo 2.º", tipo: "conexa", nota: "Contrato telefónico con infracción de la normativa de llamadas no solicitadas: se presume que no hay voluntad y es nulo."}
+      - {norma: "TRLGDCU", articulo: "94", tipo: "conexa", nota: "En la contratación electrónica se aplica además la normativa de comercio electrónico, preferente en caso de contradicción."}
+    no_consta_en_norma:
+      - "Contratos por WhatsApp o correo con un comercio sin sistema organizado de venta a distancia: si entran en el art. 92.1; jurisprudencial."
+      - "Naturaleza del doble del art. 110 (pena o indemnización) y su compatibilidad con los intereses de demora: jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Ley 34/2002, de servicios de la sociedad de la información y de comercio electrónico: contratación por vía electrónica."
+    afines: ["Desistimiento del consumidor", "Información precontractual e integración de la oferta y la publicidad", "Concepto de consumidor y de empresario", "Garantía de conformidad de los bienes", "Irrenunciabilidad de los derechos del consumidor", "Servicios a domicilio: presupuesto y factura"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Información precontractual e integración de la oferta y la publicidad"
+    sinonimos: ["información precontractual", "deber de información al consumidor", "publicidad vinculante", "integración de la publicidad en el contrato", "oferta vinculante", "folleto publicitario", "memoria de calidades", "precio total con impuestos", "gastos adicionales ocultos", "pagos adicionales por defecto", "casillas premarcadas", "recargo por pago con tarjeta", "información en castellano y valenciano", "factura en papel", "copia del contrato al consumidor", "documentación de la vivienda nueva", "carga de la prueba de la información", "integración del contrato por buena fe", "interpretación contra el predisponente"]
+    normas_base: ["TRLGDCU", "CC", "LOE", "LEC"]
+    remisiones:
+      - {norma: "TRLGDCU", articulo: "60", apartado: "1", tipo: "regula", nota: "Antes de vincularse, información clara, comprensible, veraz y suficiente sobre las condiciones jurídicas y económicas."}
+      - {norma: "TRLGDCU", articulo: "60", apartado: "2", tipo: "regula", nota: "Información relevante: características, identidad, precio, pago y entrega, garantías, duración, desistimiento y reclamaciones."}
+      - {norma: "TRLGDCU", articulo: "60", apartado: "2.c)", tipo: "regula", nota: "Precio total con impuestos; en toda información y publicidad, desglosando incrementos, descuentos y gastos repercutidos."}
+      - {norma: "TRLGDCU", articulo: "60", apartado: "4", tipo: "regula", nota: "Gratis y al menos en castellano; a petición de parte, también en la otra lengua oficial del lugar."}
+      - {norma: "TRLGDCU", articulo: "60", apartado: "5", tipo: "regula", nota: "La carga de probar que se cumplió el deber de información incumbe al empresario."}
+      - {norma: "TRLGDCU", articulo: "60 bis", apartado: "1", tipo: "regula", nota: "Todo pago adicional exige consentimiento expreso; no vale el deducido de opciones por defecto que haya que rechazar."}
+      - {norma: "TRLGDCU", articulo: "60 ter", apartado: "1", tipo: "conexa", nota: "El cargo por usar un medio de pago no puede superar el coste que soporta el empresario."}
+      - {norma: "TRLGDCU", articulo: "61", apartado: "1", tipo: "regula", nota: "Oferta, promoción y publicidad se ajustan a la naturaleza y características del bien o servicio y a las condiciones del contrato."}
+      - {norma: "TRLGDCU", articulo: "61", apartado: "2", tipo: "regula", nota: "Lo ofrecido en la oferta o la publicidad es exigible aunque no figure en el contrato, y cuenta para la conformidad."}
+      - {norma: "TRLGDCU", articulo: "61", apartado: "3", tipo: "regula", nota: "Si el contrato tiene cláusulas más beneficiosas, prevalecen sobre la oferta o la publicidad."}
+      - {norma: "TRLGDCU", articulo: "65", tipo: "regula", nota: "El contrato se integra en beneficio del consumidor por la buena fe objetiva, también si se omitió información relevante."}
+      - {norma: "TRLGDCU", articulo: "63", apartado: "1", tipo: "regula", nota: "Se entrega al consumidor justificante o copia con las condiciones esenciales, incluidas las generales aceptadas."}
+      - {norma: "TRLGDCU", articulo: "63", apartado: "3", tipo: "conexa", nota: "Derecho a factura en papel sin coste; la electrónica exige consentimiento expreso y revocable."}
+      - {norma: "TRLGDCU", articulo: "62", apartado: "1", tipo: "conexa", nota: "Debe constar de forma inequívoca la voluntad del consumidor de contratar o de poner fin al contrato."}
+      - {norma: "TRLGDCU", articulo: "64", tipo: "regula", nota: "En la primera transmisión de viviendas se entrega además la documentación de la LOE o la norma autonómica."}
+      - {norma: "TRLGDCU", articulo: "20", apartado: "1", tipo: "regula", nota: "La oferta comercial con precio y características debe identificar al empresario, el precio final completo y el desistimiento."}
+      - {norma: "TRLGDCU", articulo: "20", apartado: "6", tipo: "conexa", nota: "Incumplirlo es práctica desleal por engañosa a efectos de la Ley de Competencia Desleal."}
+      - {norma: "TRLGDCU", articulo: "18", apartado: "1", tipo: "conexa", nota: "El etiquetado y la presentación no deben inducir a error sobre características, cualidades o efectos del bien o servicio."}
+      - {norma: "TRLGDCU", articulo: "8", apartado: "1.d)", tipo: "conexa", nota: "La información correcta sobre bienes y servicios es derecho básico del consumidor."}
+      - {norma: "TRLGDCU", articulo: "97", apartado: "1", tipo: "conexa", nota: "En contratos a distancia y fuera del establecimiento, lista reforzada de información precontractual."}
+      - {norma: "TRLGDCU", articulo: "59", apartado: "2", tipo: "conexa", nota: "Lo no previsto en el TRLGDCU o leyes especiales se rige por el derecho común de los contratos."}
+      - {norma: "CC", articulo: "1258", tipo: "conexa", nota: "El contrato obliga a lo pactado y a las consecuencias conformes a la buena fe, al uso y a la ley."}
+      - {norma: "CC", articulo: "1288", tipo: "conexa", nota: "La cláusula oscura no se interpreta a favor de quien causó la oscuridad."}
+      - {norma: "CC", articulo: "1266", tipo: "conexa", nota: "El error invalida si recae sobre la sustancia o las condiciones que principalmente motivaron el contrato."}
+      - {norma: "LOE", articulo: "7", tipo: "conexa", nota: "La documentación de la obra ejecutada (Libro del Edificio) se entrega a los usuarios finales."}
+      - {norma: "LEC", articulo: "217", apartado: "4", tipo: "conexa", nota: "En los procesos sobre publicidad ilícita, el demandado prueba la exactitud y veracidad de lo que la publicidad expresa."}
+    no_consta_en_norma:
+      - "Vinculación de la memoria de calidades y los folletos de la promotora en la compraventa de vivienda: aplicación jurisprudencial del art. 61."
+      - "Efecto civil de omitir información relevante (integración, anulabilidad por error o dolo, indemnización): jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Ley 3/1991, de Competencia Desleal, art. 7 (omisiones engañosas), al que remite el art. 20.6 TRLGDCU."
+    afines: ["Contratos a distancia y fuera del establecimiento", "Concepto de consumidor y de empresario", "Cláusulas abusivas: concepto, nulidad e integración", "Garantía de conformidad de los bienes", "Vicios del consentimiento: error, dolo e intimidación", "Interpretación de los contratos"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Viajes combinados y servicios de viaje vinculados"
+    sinonimos: ["viaje combinado", "paquete turístico", "viaje organizado", "agencia de viajes", "organizador", "minorista", "servicios de viaje vinculados", "cancelación del viaje", "anulación del viaje por el viajero", "penalización por cancelación", "circunstancias inevitables y extraordinarias", "subida del precio del viaje", "cesión del viaje", "falta de conformidad en el viaje", "hotel distinto del contratado", "reducción del precio del viaje", "indemnización por vacaciones frustradas", "repatriación", "insolvencia de la agencia", "garantía de la agencia", "error en la reserva"]
+    normas_base: ["TRLGDCU"]
+    remisiones:
+      - {norma: "TRLGDCU", articulo: "150", apartado: "1", tipo: "regula", nota: "El libro cuarto rige la oferta, contratación y ejecución de viajes combinados y servicios de viaje vinculados."}
+      - {norma: "TRLGDCU", articulo: "150", apartado: "2", tipo: "conexa", nota: "Excluidos: viajes de menos de 24 horas sin alojamiento, ocasionales sin ánimo de lucro y los de negocios con convenio general."}
+      - {norma: "TRLGDCU", articulo: "150", apartado: "3", tipo: "regula", nota: "No se eximen quienes declaren actuar como meros intermediarios o prestadores de un solo servicio."}
+      - {norma: "TRLGDCU", articulo: "151", apartado: "1", tipo: "regula", nota: "Definiciones: servicio de viaje, viaje combinado, servicios vinculados, organizador, minorista, falta de conformidad."}
+      - {norma: "TRLGDCU", articulo: "152", tipo: "conexa", nota: "El empresario responde de los errores técnicos de su sistema de reservas y de los cometidos al gestionar la reserva."}
+      - {norma: "TRLGDCU", articulo: "153", apartado: "1", tipo: "regula", nota: "Información precontractual: formulario normalizado, características, precio total, pagos, mínimo de viajeros, documentación."}
+      - {norma: "TRLGDCU", articulo: "154", apartado: "1", tipo: "regula", nota: "La información sobre servicios, precio, pagos, mínimo de personas y penalización forma parte del contrato."}
+      - {norma: "TRLGDCU", articulo: "154", apartado: "2", tipo: "conexa", nota: "Si no se informó de comisiones, recargos u otros costes adicionales, el viajero no los soporta."}
+      - {norma: "TRLGDCU", articulo: "155", apartado: "1", tipo: "regula", nota: "Copia o confirmación del contrato en soporte duradero; en papel si se celebró en presencia de ambas partes."}
+      - {norma: "TRLGDCU", articulo: "156", tipo: "regula", nota: "La carga de probar el cumplimiento de los deberes de información recae en el empresario."}
+      - {norma: "TRLGDCU", articulo: "157", tipo: "regula", nota: "Cesión del viaje a quien reúna las condiciones, avisando con siete días naturales; cedente y cesionario responden solidariamente."}
+      - {norma: "TRLGDCU", articulo: "158", tipo: "regula", nota: "Subida del precio solo si se pactó, por combustible, tasas o divisas, notificada veinte días antes; más del 8 %: art. 159."}
+      - {norma: "TRLGDCU", articulo: "159", tipo: "regula", nota: "Cambio sustancial antes del viaje o subida superior al 8 %: el viajero acepta o resuelve sin penalización; reembolso en 14 días."}
+      - {norma: "TRLGDCU", articulo: "160", apartado: "1", tipo: "regula", nota: "El viajero puede resolver antes del inicio pagando una penalización adecuada y justificable."}
+      - {norma: "TRLGDCU", articulo: "160", apartado: "2", tipo: "regula", nota: "Circunstancias inevitables y extraordinarias en destino: resolución sin penalización y reembolso íntegro, sin más compensación."}
+      - {norma: "TRLGDCU", articulo: "160", apartado: "3", tipo: "regula", nota: "El organizador puede cancelar sin compensar si no hay el mínimo de viajeros, avisando en plazo, o por circunstancias inevitables."}
+      - {norma: "TRLGDCU", articulo: "160", apartado: "4", tipo: "regula", nota: "Los reembolsos se hacen sin demora indebida y en un máximo de catorce días naturales."}
+      - {norma: "TRLGDCU", articulo: "160", apartado: "5", tipo: "conexa", nota: "Contratado fuera del establecimiento: desistimiento en catorce días sin justificación."}
+      - {norma: "TRLGDCU", articulo: "161", apartado: "1", tipo: "regula", nota: "Organizador y minorista responden de la ejecución según su ámbito de gestión; si no gestionan la reclamación, solidariamente."}
+      - {norma: "TRLGDCU", articulo: "161", apartado: "2", tipo: "regula", nota: "El viajero debe comunicar sin demora indebida la falta de conformidad que observe durante el viaje."}
+      - {norma: "TRLGDCU", articulo: "161", apartado: "3", tipo: "regula", nota: "El organizador debe subsanar la falta de conformidad salvo imposibilidad o coste desproporcionado."}
+      - {norma: "TRLGDCU", articulo: "161", apartado: "6", tipo: "regula", nota: "Falta de conformidad sustancial no subsanada: resolución sin penalización, reducción, indemnización y repatriación."}
+      - {norma: "TRLGDCU", articulo: "162", apartado: "1", tipo: "regula", nota: "Reducción del precio por todo periodo con falta de conformidad, salvo que sea imputable al viajero."}
+      - {norma: "TRLGDCU", articulo: "162", apartado: "2", tipo: "regula", nota: "Indemnización adecuada por cualquier daño o perjuicio derivado de la falta de conformidad, pagada sin demora."}
+      - {norma: "TRLGDCU", articulo: "162", apartado: "3", tipo: "regula", nota: "No hay indemnización si la falta es imputable al viajero, a un tercero ajeno e imprevisible o a circunstancias inevitables."}
+      - {norma: "TRLGDCU", articulo: "162", apartado: "5", tipo: "conexa", nota: "Compatible con los derechos de los reglamentos de pasajeros, descontándose lo cobrado por una u otra vía."}
+      - {norma: "TRLGDCU", articulo: "163", apartado: "2", tipo: "conexa", nota: "Organizador y minorista deben prestar asistencia adecuada al viajero en dificultades."}
+      - {norma: "TRLGDCU", articulo: "164", apartado: "1", tipo: "regula", nota: "Organizadores y minoristas deben constituir una garantía frente a su insolvencia, con repatriación si incluye transporte."}
+      - {norma: "TRLGDCU", articulo: "165", tipo: "regula", nota: "Garantía de la responsabilidad contractual, que el viajero puede reclamar directamente al sistema de cobertura."}
+      - {norma: "TRLGDCU", articulo: "167", apartado: "1", tipo: "regula", nota: "Servicios de viaje vinculados: el empresario garantiza el reembolso de los pagos si un servicio no se ejecuta por su insolvencia."}
+      - {norma: "TRLGDCU", articulo: "168", apartado: "1", tipo: "regula", nota: "En los vinculados debe informar de que no rigen los derechos del viaje combinado y cada prestador responde de lo suyo."}
+      - {norma: "TRLGDCU", articulo: "168", apartado: "2", tipo: "regula", nota: "Si no garantiza ni informa, se aplican los derechos de cesión, resolución y ejecución del viaje combinado."}
+      - {norma: "TRLGDCU", articulo: "169", tipo: "regula", nota: "Las reclamaciones de este libro prescriben a los dos años."}
+      - {norma: "TRLGDCU", articulo: "93", apartado: "g)", tipo: "conexa", nota: "Al viaje combinado no se aplica el título de contratos a distancia, salvo los apartados 2 y 6 del art. 98."}
+    no_consta_en_norma:
+      - "Daño moral por vacaciones frustradas y su cuantificación: jurisprudencial."
+      - "Dies a quo del plazo de dos años del art. 169 (fin del viaje o fecha prevista): no lo fija la ley; jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Reglamento (CE) 261/2004: compensación y asistencia a pasajeros aéreos, citado por el art. 162.5 TRLGDCU."
+    afines: ["Contratos a distancia y fuera del establecimiento", "Información precontractual e integración de la oferta y la publicidad", "Concepto de consumidor y de empresario", "Fuerza mayor y caso fortuito", "Daños y perjuicios por incumplimiento contractual", "Cláusulas abusivas: lista legal (gastos, sumisión, penalizaciones)"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Responsabilidad por productos defectuosos"
+    sinonimos: ["producto defectuoso", "responsabilidad del fabricante", "responsabilidad del productor", "importador en la Unión Europea", "defecto de fabricación", "defecto de diseño", "defecto de información", "seguridad legítimamente esperada", "daños por un electrodoméstico", "explosión o incendio de un aparato", "riesgos del desarrollo", "franquicia de 500 euros", "plazo de tres años", "extinción a los diez años", "proveedor que no identifica al fabricante", "culpa de la víctima", "responsabilidad solidaria de productores"]
+    normas_base: ["TRLGDCU", "CC", "LEC"]
+    remisiones:
+      - {norma: "TRLGDCU", articulo: "128", tipo: "regula", nota: "Todo perjudicado tiene derecho a ser indemnizado por los daños causados por los bienes o servicios en los términos de este libro."}
+      - {norma: "TRLGDCU", articulo: "128", apartado: "párrafo 2.º", tipo: "conexa", nota: "Estas acciones no excluyen las contractuales (incluida la falta de conformidad) ni la extracontractual, con daños morales."}
+      - {norma: "TRLGDCU", articulo: "129", apartado: "1", tipo: "regula", nota: "Cubre daños personales, incluida la muerte, y materiales en bienes destinados y usados principalmente para uso privado."}
+      - {norma: "TRLGDCU", articulo: "130", tipo: "regula", nota: "Son ineficaces frente al perjudicado las cláusulas que excluyan o limiten esta responsabilidad."}
+      - {norma: "TRLGDCU", articulo: "132", tipo: "regula", nota: "Los responsables del mismo daño lo son solidariamente; quien paga repite según su participación."}
+      - {norma: "TRLGDCU", articulo: "133", tipo: "conexa", nota: "La intervención de un tercero no reduce la responsabilidad; el que paga puede reclamarle su parte."}
+      - {norma: "TRLGDCU", articulo: "134", apartado: "1", tipo: "conexa", nota: "Desde la declaración judicial de responsabilidad hasta el pago, compensación sobre la indemnización según la LEC."}
+      - {norma: "TRLGDCU", articulo: "135", tipo: "regula", nota: "Los productores responden de los daños causados por los defectos de los productos que fabriquen o importen."}
+      - {norma: "TRLGDCU", articulo: "136", tipo: "regula", nota: "Producto: cualquier bien mueble, aunque esté unido o incorporado a otro mueble o inmueble, y el gas y la electricidad."}
+      - {norma: "TRLGDCU", articulo: "137", apartado: "1", tipo: "regula", nota: "Defectuoso: no ofrece la seguridad legítimamente esperable según su presentación, uso previsible y momento de circulación."}
+      - {norma: "TRLGDCU", articulo: "137", apartado: "2", tipo: "regula", nota: "Es defectuoso, en todo caso, el que no ofrece la seguridad de los demás ejemplares de la misma serie."}
+      - {norma: "TRLGDCU", articulo: "137", apartado: "3", tipo: "conexa", nota: "No es defectuoso solo porque después se ponga en circulación otro más perfeccionado."}
+      - {norma: "TRLGDCU", articulo: "138", apartado: "1", tipo: "regula", nota: "Productor: el del art. 5 y el fabricante o importador en la UE del producto terminado, de un componente o de la materia prima."}
+      - {norma: "TRLGDCU", articulo: "138", apartado: "2", tipo: "regula", nota: "Si no se identifica al productor, responde el proveedor salvo que lo identifique en tres meses."}
+      - {norma: "TRLGDCU", articulo: "5", tipo: "conexa", nota: "Productor es también quien se presenta como tal poniendo su nombre, marca o signo en el bien o su envase."}
+      - {norma: "TRLGDCU", articulo: "139", tipo: "regula", nota: "El perjudicado debe probar el defecto, el daño y la relación de causalidad entre ambos."}
+      - {norma: "TRLGDCU", articulo: "140", apartado: "1", tipo: "regula", nota: "Se exonera si prueba: no lo puso en circulación, defecto posterior, uso no profesional, norma imperativa o riesgos del desarrollo."}
+      - {norma: "TRLGDCU", articulo: "140", apartado: "3", tipo: "conexa", nota: "En medicamentos y alimentos no cabe alegar los riesgos del desarrollo."}
+      - {norma: "TRLGDCU", articulo: "141", tipo: "regula", nota: "Franquicia de 500 euros en daños materiales y límite global por muerte y lesiones de una serie con el mismo defecto."}
+      - {norma: "TRLGDCU", articulo: "142", tipo: "regula", nota: "El daño en el propio producto no se indemniza por este régimen, sino por la legislación civil y mercantil."}
+      - {norma: "TRLGDCU", articulo: "143", apartado: "1", tipo: "regula", nota: "Prescribe a los tres años desde el perjuicio si se conoce al responsable; la repetición, al año desde el pago."}
+      - {norma: "TRLGDCU", articulo: "143", apartado: "2", tipo: "conexa", nota: "La interrupción de la prescripción se rige por el Código Civil."}
+      - {norma: "TRLGDCU", articulo: "144", tipo: "regula", nota: "Los derechos se extinguen a los diez años de la puesta en circulación del producto, salvo reclamación judicial iniciada."}
+      - {norma: "TRLGDCU", articulo: "145", tipo: "regula", nota: "Culpa concurrente del perjudicado o de quien dependa de él: la responsabilidad puede reducirse o suprimirse."}
+      - {norma: "TRLGDCU", articulo: "146", tipo: "regula", nota: "El proveedor que suministró sabiendo del defecto responde como productor, con repetición contra este."}
+      - {norma: "CC", articulo: "1902", tipo: "conexa", nota: "Régimen general: quien por acción u omisión culposa causa daño a otro debe repararlo."}
+      - {norma: "CC", articulo: "1968", apartado: "2.º", tipo: "conexa", nota: "La acción extracontractual del art. 1902 prescribe al año desde que lo supo el agraviado."}
+      - {norma: "LEC", articulo: "576", apartado: "1", tipo: "conexa", nota: "La condena dineraria devenga desde la primera instancia el interés legal más dos puntos."}
+    # VIGENCIA: TRLGDCU 128 a 146 idénticos al texto vigente de boe.es. La Directiva (UE) 2024/2853 debe transponerse a más tardar el 09-12-2026 (ver notas).
+    no_consta_en_norma:
+      - "Distinción entre defecto de fabricación, de diseño y de información, y prueba del defecto por presunciones: jurisprudencial."
+      - "Si el daño en el propio producto se reclama por saneamiento, conformidad o art. 1101 CC: jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Directiva (UE) 2024/2853, art. 2.1: se aplica a productos introducidos en el mercado después del 09-12-2026."
+      - "Directiva (UE) 2024/2853, art. 22.1: transposición a más tardar el 09-12-2026; deroga la Directiva 85/374/CEE (art. 21)."
+    afines: ["Responsabilidad por servicios defectuosos", "Responsabilidad extracontractual", "Garantía de conformidad de los bienes", "Concepto de consumidor y de empresario", "Daños causados por animales, edificios y cosas", "Carga de la prueba"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Responsabilidad por servicios defectuosos"
+    sinonimos: ["servicio defectuoso", "responsabilidad del prestador de servicios", "daños causados por un servicio", "reparación de vivienda mal hecha", "rehabilitación de vivienda", "ascensor averiado", "taller mecánico", "instalación de gas o electricidad", "servicios sanitarios", "responsabilidad médica privada", "transporte", "responsabilidad objetiva del art. 148", "inversión de la carga de la prueba", "límite de 3.005.060,52 euros", "daños por defectos de la vivienda", "promotor y vendedor de viviendas"]
+    normas_base: ["TRLGDCU", "CC"]
+    remisiones:
+      - {norma: "TRLGDCU", articulo: "147", tipo: "regula", nota: "El prestador responde de los daños salvo que pruebe que cumplió los requisitos reglamentarios y la diligencia del servicio."}
+      - {norma: "TRLGDCU", articulo: "148", tipo: "regula", nota: "Régimen especial: responde de los daños en el correcto uso de servicios que garantizan niveles de eficacia o seguridad con controles."}
+      - {norma: "TRLGDCU", articulo: "148", apartado: "párrafo 2.º", tipo: "regula", nota: "Incluye siempre sanitarios, reparación de electrodomésticos, ascensores y vehículos, obras en viviendas, gas, electricidad y transporte."}
+      - {norma: "TRLGDCU", articulo: "148", apartado: "párrafo 3.º", tipo: "conexa", nota: "Salvo otras leyes, esta responsabilidad tiene un límite de 3.005.060,52 euros."}
+      - {norma: "TRLGDCU", articulo: "149", tipo: "regula", nota: "El art. 148 se aplica a quien construye o comercializa viviendas como empresario, por defectos sin régimen legal específico."}
+      - {norma: "TRLGDCU", articulo: "128", tipo: "regula", nota: "Derecho a indemnización por daños de bienes o servicios, sin perjuicio de las acciones contractuales o extracontractuales."}
+      - {norma: "TRLGDCU", articulo: "129", apartado: "1", tipo: "conexa", nota: "Daños personales y materiales en bienes de uso o consumo privado usados principalmente así por el perjudicado."}
+      - {norma: "TRLGDCU", articulo: "130", tipo: "regula", nota: "Son ineficaces frente al perjudicado las cláusulas de exoneración o limitación de responsabilidad."}
+      - {norma: "TRLGDCU", articulo: "132", tipo: "regula", nota: "Varios responsables del mismo daño responden solidariamente, con repetición según su participación."}
+      - {norma: "TRLGDCU", articulo: "133", tipo: "conexa", nota: "La intervención de un tercero no reduce la responsabilidad frente al perjudicado."}
+      - {norma: "TRLGDCU", articulo: "134", apartado: "1", tipo: "conexa", nota: "Compensación por el retraso en pagar la indemnización desde la declaración judicial de responsabilidad."}
+      - {norma: "TRLGDCU", articulo: "8", apartado: "1.c)", tipo: "conexa", nota: "La indemnización de los daños y la reparación de los perjuicios es derecho básico del consumidor."}
+      - {norma: "CC", articulo: "1101", tipo: "conexa", nota: "Responsabilidad contractual por dolo, negligencia, morosidad o contravención de la obligación."}
+      - {norma: "CC", articulo: "1104", tipo: "conexa", nota: "La culpa es omitir la diligencia que exige la naturaleza de la obligación según personas, tiempo y lugar."}
+      - {norma: "CC", articulo: "1105", tipo: "conexa", nota: "Nadie responde de sucesos imprevisibles o inevitables, salvo que la ley o la obligación lo digan."}
+      - {norma: "CC", articulo: "1902", tipo: "conexa", nota: "Responsabilidad extracontractual por acción u omisión culposa."}
+      - {norma: "CC", articulo: "1903", tipo: "conexa", nota: "Los dueños o directores de una empresa responden de los daños causados por sus dependientes en el servicio."}
+      - {norma: "CC", articulo: "1964", apartado: "2", tipo: "conexa", nota: "Acciones personales sin plazo especial: cinco años desde que puede exigirse el cumplimiento."}
+      - {norma: "CC", articulo: "1968", apartado: "2.º", tipo: "conexa", nota: "Acción extracontractual: un año desde que lo supo el agraviado."}
+    no_consta_en_norma:
+      - "Plazo de prescripción de la acción por servicios defectuosos: el TRLGDCU no lo fija; contractual o extracontractual, jurisprudencial."
+      - "Alcance de la responsabilidad objetiva del art. 148 en la sanidad (solo aspectos funcionales u organizativos): jurisprudencial."
+      - "Relación del art. 149 con la LOE (régimen legal específico) en defectos de vivienda: jurisprudencial."
+    afines: ["Responsabilidad por productos defectuosos", "Responsabilidad extracontractual", "Responsabilidad por hecho ajeno", "Daños y perjuicios por incumplimiento contractual", "Concurrencia de la LOE con la responsabilidad contractual y el art. 1591 CC", "Concepto de consumidor y de empresario"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
