@@ -1,0 +1,489 @@
+# Índice de conceptos de «Consulta de normas» — tanda 21 (prioridad B: voces 247, 248 y 257 a 266, cierre del bloque 13 y bloque 14)
+# Revisor: armero. Espejo: legalize-es@aca28304d, leído con `git show aca28304d:es/…` (no el árbol de trabajo, que hoy trae erratas).
+# Todo precepto citado se ha leído en el espejo en esta pasada. Vigencia: contraste con la API de boe.es (08-10-2026).
+# Ver tanda-21-notas.md.
+
+voces:
+  - voz: "Luces, vistas y distancias"
+    sinonimos: ["servidumbre de luces", "servidumbre de vistas", "ventanas sobre finca vecina", "vistas rectas", "vistas oblicuas", "vistas de costado", "balcones y voladizos", "huecos de 30 centímetros", "distancia de dos metros", "distancia de 60 centímetros", "cerrar huecos del vecino", "edificar a menos de tres metros", "distancia de plantaciones", "árboles cerca de la linde", "ramas y raíces del vecino", "aguas del tejado", "vertiente de tejados", "servidumbre de desagüe", "construcciones nocivas junto a pared ajena"]
+    normas_base: ["CC"]
+    remisiones:
+      - {norma: "CC", articulo: "580", tipo: "regula", nota: "Ningún medianero puede abrir ventana ni hueco en pared medianera sin consentimiento del otro."}
+      - {norma: "CC", articulo: "581", tipo: "regula", nota: "En pared propia contigua a finca ajena: huecos de luces de 30 cm en cuadro, junto al techo, con reja de hierro y red de alambre."}
+      - {norma: "CC", articulo: "581", apartado: "párrafo 2.º", tipo: "regula", nota: "El vecino puede cerrar esos huecos si adquiere la medianería y no se pactó lo contrario."}
+      - {norma: "CC", articulo: "581", apartado: "párrafo 3.º", tipo: "regula", nota: "También puede cubrirlos edificando en su terreno o levantando pared contigua a la del hueco."}
+      - {norma: "CC", articulo: "582", tipo: "regula", nota: "Vistas rectas, balcones o voladizos sobre finca vecina: exigen dos metros entre la pared y la propiedad ajena."}
+      - {norma: "CC", articulo: "582", apartado: "párrafo 2.º", tipo: "regula", nota: "Vistas de costado u oblicuas: exigen 60 centímetros de distancia."}
+      - {norma: "CC", articulo: "583", tipo: "regula", nota: "Cómputo: rectas, desde la línea exterior de la pared o del voladizo; oblicuas, desde la línea de separación."}
+      - {norma: "CC", articulo: "584", tipo: "regula", nota: "Las distancias del 582 no se aplican a edificios separados por una vía pública."}
+      - {norma: "CC", articulo: "585", tipo: "regula", nota: "Adquirido el derecho a vistas directas, balcones o miradores, el sirviente no puede edificar a menos de tres metros."}
+      - {norma: "CC", articulo: "537", tipo: "conexa", nota: "Las servidumbres continuas y aparentes se adquieren por título o por prescripción de veinte años."}
+      - {norma: "CC", articulo: "538", tipo: "regula", nota: "Prescripción: en las negativas, el plazo corre desde que el dominante prohíbe por acto formal al sirviente el hecho lícito."}
+      - {norma: "CC", articulo: "533", tipo: "conexa", nota: "Servidumbre negativa: prohíbe al dueño del sirviente hacer algo que le sería lícito sin ella."}
+      - {norma: "CC", articulo: "541", tipo: "conexa", nota: "El signo aparente puesto por el dueño de dos fincas vale como título al enajenar una, salvo exclusión o retirada."}
+      - {norma: "CC", articulo: "546", apartado: "2.º", tipo: "conexa", nota: "Extinción por no uso de veinte años; en las continuas, desde un acto contrario a la servidumbre."}
+      - {norma: "CC", articulo: "586", tipo: "regula", nota: "Los tejados deben verter las aguas pluviales sobre suelo propio o vía pública, recogiéndolas sin perjudicar al contiguo."}
+      - {norma: "CC", articulo: "587", tipo: "conexa", nota: "El predio que sufre la vertiente puede edificar recibiendo las aguas en su tejado o dándoles otra salida sin perjuicio."}
+      - {norma: "CC", articulo: "588", tipo: "conexa", nota: "Patio enclavado sin salida para las aguas: servidumbre forzosa de desagüe, con indemnización."}
+      - {norma: "CC", articulo: "590", tipo: "regula", nota: "Pozos, chimeneas, hornos, establos o industrias nocivas junto a pared ajena: distancias reglamentarias y obras de resguardo."}
+      - {norma: "CC", articulo: "590", apartado: "párrafo 2.º", tipo: "conexa", nota: "A falta de reglamento, las precauciones necesarias previo dictamen pericial."}
+      - {norma: "CC", articulo: "591", tipo: "regula", nota: "Árboles: distancia de ordenanza o costumbre; en su defecto, dos metros los altos y 50 cm los arbustos o árboles bajos."}
+      - {norma: "CC", articulo: "591", apartado: "párrafo 2.º", tipo: "regula", nota: "El vecino puede pedir que se arranquen los árboles plantados después a menor distancia."}
+      - {norma: "CC", articulo: "592", tipo: "regula", nota: "Ramas que invaden: pedir que se corten; raíces que invaden: el dueño del suelo las corta por sí mismo."}
+      - {norma: "CC", articulo: "593", tipo: "conexa", nota: "Árboles de seto vivo medianero: se presumen medianeros y cabe exigir su derribo, salvo los que sirven de mojón."}
+      - {norma: "CC", articulo: "589", tipo: "conexa", nota: "Edificar o plantar cerca de plazas fuertes o fortalezas se sujeta a sus leyes y reglamentos."}
+    no_consta_en_norma:
+      - "Que abrir huecos en pared propia sea acto tolerado y no posesorio, sin hacer correr la prescripción: jurisprudencial."
+      - "Calificación del balcón o voladizo sobre finca ajena como servidumbre positiva desde su apertura: jurisprudencial."
+      - "Aplicación de estas distancias entre pisos de un mismo edificio en propiedad horizontal: no lo regula el CC; jurisprudencial."
+    afines: ["Servidumbres: constitución, extinción y acciones", "Medianería", "Inmisiones y relaciones de vecindad", "Usucapión", "Obra nueva y obra ruinosa"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Usufructo"
+    sinonimos: ["usufructuario", "nudo propietario", "nuda propiedad", "derecho de usufructo", "usufructo vitalicio", "usufructo sucesivo", "frutos del usufructo", "inventario y fianza del usufructuario", "reparaciones ordinarias y extraordinarias", "IBI y cargas del usufructo", "arrendamiento por el usufructuario", "extinción del usufructo", "abuso del usufructuario", "usufructo de cosas consumibles", "cuasiusufructo", "usufructo de herencia y deudas"]
+    normas_base: ["CC", "LAU"]
+    remisiones:
+      - {norma: "CC", articulo: "467", tipo: "regula", nota: "Derecho a disfrutar bienes ajenos conservando su forma y sustancia, salvo que el título o la ley autoricen otra cosa."}
+      - {norma: "CC", articulo: "468", tipo: "regula", nota: "Se constituye por ley, por actos entre vivos o de última voluntad y por prescripción."}
+      - {norma: "CC", articulo: "469", tipo: "conexa", nota: "Sobre todos o parte de los frutos, a favor de uno o varios, simultánea o sucesivamente, a plazo o bajo condición."}
+      - {norma: "CC", articulo: "470", tipo: "regula", nota: "Rige el título constitutivo; en su defecto o por insuficiencia, las normas del Código."}
+      - {norma: "CC", articulo: "471", tipo: "regula", nota: "El usufructuario percibe todos los frutos naturales, industriales y civiles."}
+      - {norma: "CC", articulo: "472", tipo: "conexa", nota: "Frutos pendientes: al empezar, del usufructuario; al extinguirse, del propietario, que abona los gastos de cultivo."}
+      - {norma: "CC", articulo: "474", tipo: "regula", nota: "Los frutos civiles se perciben día por día y son del usufructuario en proporción al tiempo del usufructo."}
+      - {norma: "CC", articulo: "480", tipo: "regula", nota: "Puede usar, arrendar y enajenar su derecho, pero sus contratos se resuelven al fin del usufructo (salvo rústicos)."}
+      - {norma: "CC", articulo: "481", tipo: "conexa", nota: "Cosas que se deterioran con el uso: se restituyen como estén, indemnizando el deterioro por dolo o negligencia."}
+      - {norma: "CC", articulo: "482", tipo: "regula", nota: "Cosas consumibles: pagar el avalúo si se dieron estimadas; si no, restituir igual cantidad y calidad o su precio."}
+      - {norma: "CC", articulo: "487", tipo: "regula", nota: "Mejoras útiles o de recreo sin derecho a indemnización; puede retirarlas si no daña los bienes."}
+      - {norma: "CC", articulo: "488", tipo: "conexa", nota: "El usufructuario puede compensar los desperfectos con las mejoras hechas."}
+      - {norma: "CC", articulo: "489", tipo: "regula", nota: "El nudo propietario puede enajenar, pero no alterar forma ni sustancia ni perjudicar al usufructuario."}
+      - {norma: "CC", articulo: "490", tipo: "conexa", nota: "Usufructo de cuota de cosa común: ejerce la administración; dividida la cosa, recae sobre la parte adjudicada."}
+      - {norma: "CC", articulo: "491", tipo: "regula", nota: "Antes de entrar en el goce: inventario con citación del propietario y fianza."}
+      - {norma: "CC", articulo: "492", tipo: "regula", nota: "Sin fianza: vendedor o donante con reserva de usufructo, padres y cónyuge viudo (salvo nuevo matrimonio)."}
+      - {norma: "CC", articulo: "493", tipo: "conexa", nota: "Puede dispensarse de inventario o fianza si no resulta perjuicio a nadie."}
+      - {norma: "CC", articulo: "494", tipo: "conexa", nota: "Sin fianza debida: administración de inmuebles, venta de muebles, inversión del metálico o retención por el propietario."}
+      - {norma: "CC", articulo: "497", tipo: "regula", nota: "El usufructuario cuida las cosas como un buen padre de familia."}
+      - {norma: "CC", articulo: "498", tipo: "conexa", nota: "Si enajena o arrienda su derecho, responde del menoscabo causado por culpa del sustituto."}
+      - {norma: "CC", articulo: "500", tipo: "regula", nota: "Reparaciones ordinarias, a cargo del usufructuario; si no las hace tras requerimiento, las hace el propietario a su costa."}
+      - {norma: "CC", articulo: "501", tipo: "regula", nota: "Reparaciones extraordinarias, a cargo del propietario; el usufructuario avisa si son urgentes."}
+      - {norma: "CC", articulo: "502", tipo: "regula", nota: "Extraordinarias: el propietario que las hace cobra interés legal; si no, las hace el usufructuario y cobra el aumento de valor."}
+      - {norma: "CC", articulo: "503", tipo: "conexa", nota: "El propietario puede hacer obras y mejoras si no disminuye el valor del usufructo."}
+      - {norma: "CC", articulo: "504", tipo: "regula", nota: "Cargas y contribuciones anuales y gravámenes de los frutos, a cargo del usufructuario mientras dure el usufructo."}
+      - {norma: "CC", articulo: "505", tipo: "regula", nota: "Contribuciones impuestas directamente sobre el capital, a cargo del propietario, con intereses a cargo del usufructuario."}
+      - {norma: "CC", articulo: "507", tipo: "conexa", nota: "Cobro de créditos usufructuados: libre con fianza; sin ella, con autorización del propietario o del juez."}
+      - {norma: "CC", articulo: "508", tipo: "conexa", nota: "El usufructuario universal paga el legado de renta vitalicia o alimentos; el de cuota, en proporción."}
+      - {norma: "CC", articulo: "509", tipo: "conexa", nota: "El usufructuario de finca hipotecada no paga la deuda garantizada; si la pierde por ejecución, le responde el propietario."}
+      - {norma: "CC", articulo: "510", tipo: "conexa", nota: "Usufructo de herencia: puede anticipar lo de las deudas y recuperarlo sin interés al extinguirse."}
+      - {norma: "CC", articulo: "511", tipo: "conexa", nota: "Debe comunicar al propietario los actos de terceros que lesionen la propiedad, o responde de los daños."}
+      - {norma: "CC", articulo: "512", tipo: "conexa", nota: "Gastos, costas y condenas de los pleitos sobre el usufructo, a cargo del usufructuario."}
+      - {norma: "CC", articulo: "513", tipo: "regula", nota: "Extinción: muerte, plazo o condición, consolidación, renuncia, pérdida total, resolución del derecho del constituyente, prescripción."}
+      - {norma: "CC", articulo: "514", tipo: "conexa", nota: "Pérdida parcial: el usufructo continúa sobre la parte restante."}
+      - {norma: "CC", articulo: "515", tipo: "conexa", nota: "A favor de pueblo, corporación o sociedad, no más de treinta años."}
+      - {norma: "CC", articulo: "517", tipo: "conexa", nota: "Perecido el edificio, el usufructuario disfruta del suelo y de los materiales."}
+      - {norma: "CC", articulo: "520", tipo: "regula", nota: "El mal uso no extingue el usufructo; con perjuicio considerable, el propietario puede pedir la entrega pagando el líquido."}
+      - {norma: "CC", articulo: "521", tipo: "conexa", nota: "Usufructo a favor de varias personas vivas: dura hasta la muerte de la última."}
+      - {norma: "CC", articulo: "522", tipo: "regula", nota: "Terminado, se entrega la cosa al propietario, salvo retención por desembolsos reintegrables; se cancela la fianza."}
+      - {norma: "CC", articulo: "528", tipo: "conexa", nota: "Las normas del usufructo se aplican a los derechos de uso y habitación en lo que no se opongan."}
+      - {norma: "LAU", articulo: "13", apartado: "2", tipo: "conexa", nota: "Los arrendamientos otorgados por el usufructuario se extinguen al término de su derecho, además de por las causas de la LAU."}
+    no_consta_en_norma:
+      - "Usufructo con facultad de disponer y sus límites: construcción jurisprudencial y notarial."
+      - "Reparto entre usufructuario y nudo propietario de las derramas extraordinarias de la comunidad: no lo resuelve el CC; jurisprudencial."
+    afines: ["Derechos de uso y habitación", "Derechos del cónyuge viudo", "Legítimas: cuantía y cálculo", "Liquidación del estado posesorio: frutos, gastos y mejoras", "Arrendamiento de cosas en el Código Civil (régimen supletorio)"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Preterición y desheredación"
+    sinonimos: ["preterición", "heredero forzoso omitido", "hijo olvidado en el testamento", "preterición intencional", "preterición no intencional", "desheredación", "desheredar a un hijo", "causas de desheredación", "maltrato de obra", "injurias graves al testador", "negación de alimentos", "desheredación injusta", "reconciliación", "complemento de la legítima", "indignidad para suceder", "intangibilidad de la legítima"]
+    normas_base: ["CC"]
+    remisiones:
+      - {norma: "CC", articulo: "813", tipo: "regula", nota: "Solo se priva de la legítima en los casos legales; sobre ella no cabe gravamen, condición ni sustitución, salvo excepciones."}
+      - {norma: "CC", articulo: "814", tipo: "regula", nota: "La preterición no perjudica la legítima: se reduce la institución de heredero antes que legados y mejoras."}
+      - {norma: "CC", articulo: "814", apartado: "párrafo 2.º", tipo: "regula", nota: "Preterición no intencional de descendientes: si son todos, se anula lo patrimonial; si no, la institución de heredero."}
+      - {norma: "CC", articulo: "815", tipo: "regula", nota: "El legitimario que recibió por cualquier título menos de su legítima puede pedir el complemento."}
+      - {norma: "CC", articulo: "806", tipo: "conexa", nota: "Legítima: porción reservada por la ley a los herederos forzosos, de la que el testador no puede disponer."}
+      - {norma: "CC", articulo: "807", tipo: "conexa", nota: "Herederos forzosos: descendientes; a falta de ellos, ascendientes; y el viudo en la forma que fija el Código."}
+      - {norma: "CC", articulo: "848", tipo: "regula", nota: "La desheredación solo cabe por alguna de las causas que expresamente señala la ley."}
+      - {norma: "CC", articulo: "849", tipo: "regula", nota: "Solo puede hacerse en testamento, expresando la causa legal en que se funda."}
+      - {norma: "CC", articulo: "850", tipo: "regula", nota: "Si el desheredado niega la causa, la prueba de su certeza corresponde a los herederos del testador."}
+      - {norma: "CC", articulo: "851", tipo: "regula", nota: "Desheredación injusta: anula la institución de heredero en lo que perjudique al desheredado; valen legados y mejoras."}
+      - {norma: "CC", articulo: "852", tipo: "regula", nota: "Son causas de desheredación las de indignidad del art. 756, números 1.º, 2.º, 3.º, 5.º y 6.º, en los términos de los arts. 853 a 855."}
+      - {norma: "CC", articulo: "853", tipo: "regula", nota: "Descendientes: además, negar alimentos sin motivo legítimo y maltratar de obra o injuriar gravemente de palabra."}
+      - {norma: "CC", articulo: "854", tipo: "regula", nota: "Ascendientes: pérdida de la patria potestad (art. 170), negar alimentos o atentar contra la vida del otro progenitor."}
+      - {norma: "CC", articulo: "855", tipo: "regula", nota: "Cónyuge: incumplir grave o reiteradamente los deberes conyugales, negar alimentos o atentar contra la vida del testador."}
+      - {norma: "CC", articulo: "856", tipo: "regula", nota: "La reconciliación posterior priva del derecho a desheredar y deja sin efecto la desheredación ya hecha."}
+      - {norma: "CC", articulo: "857", tipo: "regula", nota: "Los descendientes del desheredado ocupan su lugar y conservan los derechos de herederos forzosos a la legítima."}
+      - {norma: "CC", articulo: "756", tipo: "conexa", nota: "Causas de indignidad para suceder (atentados, delitos contra la familia, denuncia falsa, coacción sobre el testamento)."}
+      - {norma: "CC", articulo: "757", tipo: "conexa", nota: "La indignidad no surte efecto si el testador la conocía al testar o la remite después en documento público."}
+      - {norma: "CC", articulo: "816", tipo: "conexa", nota: "Es nula la renuncia o transacción sobre la legítima futura; lo recibido por ella se trae a colación."}
+    # VIGENCIA: CC 756.2.º trae en el espejo la errata «de un menoro del ejercicio» (léase «menor o del»); contraste_boe.py no la ve porque compara sin espacios. Sin cambio de fondo. (Ver notas.)
+    no_consta_en_norma:
+      - "Maltrato psicológico y abandono emocional como maltrato de obra del art. 853.2.ª: jurisprudencial."
+      - "Distinción entre preterición intencional y no intencional y su prueba: jurisprudencial."
+      - "Plazo para impugnar la desheredación o hacer valer la preterición: el CC no lo fija expresamente; jurisprudencial."
+    afines: ["Legítimas: cuantía y cálculo", "Nulidad e interpretación del testamento", "Reducción de donaciones inoficiosas", "Sucesión intestada", "Alimentos entre parientes", "Partición de la herencia y su impugnación"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Reducción de donaciones inoficiosas"
+    sinonimos: ["donación inoficiosa", "inoficiosidad", "reducción de donaciones", "reducción de legados", "donaciones que perjudican la legítima", "cómputo de la legítima", "relictum y donatum", "imputación de donaciones", "donación a un hijo como anticipo de legítima", "donación a extraños", "legado de usufructo que excede el tercio libre", "cautela socini", "finca indivisible en la reducción"]
+    normas_base: ["CC"]
+    remisiones:
+      - {norma: "CC", articulo: "636", tipo: "regula", nota: "Nadie puede dar ni recibir por donación más de lo que puede dar o recibir por testamento; el exceso es inoficioso."}
+      - {norma: "CC", articulo: "654", tipo: "regula", nota: "Se reducen en el exceso, computando el líquido al morir el donante; surten efecto en vida y el donatario hace suyos los frutos."}
+      - {norma: "CC", articulo: "654", apartado: "párrafo 2.º", tipo: "conexa", nota: "La reducción se rige por este capítulo y por los arts. 820 y 821."}
+      - {norma: "CC", articulo: "655", tipo: "regula", nota: "Solo piden la reducción los legitimarios o herederos de cuota y sus herederos o causahabientes."}
+      - {norma: "CC", articulo: "655", apartado: "párrafo 2.º", tipo: "regula", nota: "No pueden renunciar a ese derecho en vida del donante, ni expresamente ni consintiendo la donación."}
+      - {norma: "CC", articulo: "655", apartado: "párrafo 3.º", tipo: "regula", nota: "Ni donatarios, ni legatarios que no sean de parte alícuota, ni acreedores del difunto pueden pedirla ni aprovecharla."}
+      - {norma: "CC", articulo: "656", tipo: "regula", nota: "Si no caben todas en la parte disponible, se suprimen o reducen primero las de fecha más reciente."}
+      - {norma: "CC", articulo: "817", tipo: "regula", nota: "Las disposiciones testamentarias que mengüen la legítima se reducen, a petición del legitimario, en lo inoficioso."}
+      - {norma: "CC", articulo: "818", tipo: "regula", nota: "Legítima: valor de los bienes al morir, menos deudas y cargas (no las testamentarias)."}
+      - {norma: "CC", articulo: "818", apartado: "párrafo 2.º", tipo: "regula", nota: "Al valor líquido se agrega el de las donaciones colacionables."}
+      - {norma: "CC", articulo: "819", tipo: "regula", nota: "Donaciones a hijos sin carácter de mejora: a su legítima; a extraños: a la parte libre; el exceso se reduce."}
+      - {norma: "CC", articulo: "820", tipo: "regula", nota: "Orden: se respetan las donaciones mientras se cubra la legítima, reduciendo antes las mandas, a prorrata."}
+      - {norma: "CC", articulo: "820", apartado: "3.º", tipo: "regula", nota: "Legado de usufructo o renta vitalicia que excede lo disponible: cumplirlo o entregar la parte libre."}
+      - {norma: "CC", articulo: "821", tipo: "regula", nota: "Finca indivisible: para el legatario si la reducción no absorbe la mitad de su valor; si no, para los legitimarios."}
+      - {norma: "CC", articulo: "822", tipo: "conexa", nota: "No computa para la legítima la habitación de la vivienda habitual a favor del legitimario con discapacidad conviviente."}
+      - {norma: "CC", articulo: "825", tipo: "conexa", nota: "La donación a un descendiente legitimario no es mejora si el donante no declara expresamente la voluntad de mejorar."}
+      - {norma: "CC", articulo: "815", tipo: "conexa", nota: "El legitimario que recibió menos de su legítima puede pedir el complemento."}
+      - {norma: "CC", articulo: "1035", tipo: "conexa", nota: "El heredero forzoso que concurre con otros trae a la masa lo recibido del causante en vida, para computar legítimas y partir."}
+      - {norma: "CC", articulo: "1036", tipo: "conexa", nota: "La dispensa de colación o la repudiación del donatario no impiden reducir la donación inoficiosa."}
+      - {norma: "CC", articulo: "1045", tipo: "conexa", nota: "En la colación se trae el valor de lo donado al tiempo de evaluar los bienes hereditarios, no la cosa misma."}
+    no_consta_en_norma:
+      - "Plazo de ejercicio de la acción de reducción de donaciones: el CC no lo fija; jurisprudencial."
+      - "Valor de lo donado a efectos de cómputo (al tiempo de donar o actualizado a la muerte): discutido; jurisprudencial y doctrinal."
+      - "Cautela socini y su validez: construcción jurisprudencial a partir del art. 820.3.º."
+    afines: ["Legítimas: cuantía y cálculo", "Colación", "Donación y su revocación", "Preterición y desheredación", "Partición de la herencia y su impugnación"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Colación"
+    sinonimos: ["colación hereditaria", "traer a colación", "donaciones colacionables", "dispensa de colación", "anticipo de herencia", "donación a un hijo en vida", "colación de gastos de carrera", "regalos de boda", "valor de lo colacionado", "tomar de menos", "igualación de coherederos", "colación de los nietos"]
+    normas_base: ["CC"]
+    remisiones:
+      - {norma: "CC", articulo: "1035", tipo: "regula", nota: "El heredero forzoso que concurre con otros trae a la masa lo recibido del causante en vida por título lucrativo."}
+      - {norma: "CC", articulo: "1036", tipo: "regula", nota: "No hay colación si el donante la dispensó expresamente o el donatario repudia, salvo que la donación sea inoficiosa."}
+      - {norma: "CC", articulo: "1037", tipo: "regula", nota: "Lo dejado en testamento no se colaciona salvo disposición contraria del testador, a salvo las legítimas."}
+      - {norma: "CC", articulo: "1038", tipo: "regula", nota: "Los nietos que heredan en representación del padre colacionan lo que este debería, aunque no lo hayan heredado."}
+      - {norma: "CC", articulo: "1038", apartado: "párrafo 2.º", tipo: "conexa", nota: "Colacionan también lo que ellos mismos recibieron del causante, salvo disposición contraria que no perjudique legítimas."}
+      - {norma: "CC", articulo: "1039", tipo: "conexa", nota: "Los padres no colacionan en la herencia de sus ascendientes lo donado por estos a sus hijos."}
+      - {norma: "CC", articulo: "1040", tipo: "conexa", nota: "No se colaciona lo donado al consorte del hijo; si se donó a ambos, el hijo colaciona la mitad."}
+      - {norma: "CC", articulo: "1041", tipo: "regula", nota: "No se colacionan alimentos, educación, curación de enfermedades, aprendizaje ni regalos de costumbre."}
+      - {norma: "CC", articulo: "1041", apartado: "párrafo 2.º", tipo: "conexa", nota: "Ni los gastos para cubrir las necesidades especiales del descendiente con discapacidad."}
+      - {norma: "CC", articulo: "1042", tipo: "regula", nota: "Gastos de carrera profesional o artística: solo si el padre lo dispone o perjudican la legítima, descontando el gasto en casa."}
+      - {norma: "CC", articulo: "1043", tipo: "conexa", nota: "Se colacionan las cantidades pagadas por el padre para pagar deudas del hijo y gastos análogos."}
+      - {norma: "CC", articulo: "1044", tipo: "conexa", nota: "Regalos de boda (joyas, vestidos, equipos): solo se reducen en lo que exceda en un décimo o más de lo disponible."}
+      - {norma: "CC", articulo: "1045", tipo: "regula", nota: "No se trae la cosa donada sino su valor al tiempo en que se evalúen los bienes hereditarios."}
+      - {norma: "CC", articulo: "1045", apartado: "párrafo 2.º", tipo: "regula", nota: "Aumento, deterioro o pérdida posterior de lo donado: a cargo, riesgo o beneficio del donatario."}
+      - {norma: "CC", articulo: "1046", tipo: "conexa", nota: "Lo donado por ambos cónyuges se colaciona por mitad en la herencia de cada uno; lo donado por uno, en la suya."}
+      - {norma: "CC", articulo: "1047", tipo: "regula", nota: "El donatario toma de menos tanto como ya recibió; los coherederos reciben el equivalente en bienes de igual naturaleza."}
+      - {norma: "CC", articulo: "1048", tipo: "conexa", nota: "Si no es posible, igualación en metálico o valores; sin ellos, venta en subasta de otros bienes."}
+      - {norma: "CC", articulo: "1049", tipo: "conexa", nota: "Los frutos e intereses de lo colacionable se deben a la masa solo desde la apertura de la sucesión."}
+      - {norma: "CC", articulo: "1050", tipo: "regula", nota: "La contienda sobre la colación no impide seguir la partición, prestando fianza."}
+      - {norma: "CC", articulo: "818", apartado: "párrafo 2.º", tipo: "conexa", nota: "Para fijar la legítima, al valor líquido del caudal se agrega el de las donaciones colacionables."}
+      - {norma: "CC", articulo: "819", tipo: "conexa", nota: "Las donaciones a hijos que no sean mejora se imputan a su legítima."}
+      - {norma: "CC", articulo: "825", tipo: "conexa", nota: "La donación a un descendiente legitimario no es mejora sin declaración expresa de voluntad de mejorar."}
+      - {norma: "CC", articulo: "816", tipo: "conexa", nota: "Lo recibido por renuncia o transacción nula sobre la legítima futura se trae a colación."}
+    no_consta_en_norma:
+      - "Distinción entre colación (cuenta de partición) y cómputo de la legítima (art. 818): doctrinal y jurisprudencial."
+      - "Admisión de la dispensa de colación tácita o deducida del título: jurisprudencial, frente a la letra del art. 1036."
+      - "Colación de la donación encubierta bajo compraventa simulada: jurisprudencial."
+    afines: ["Reducción de donaciones inoficiosas", "Legítimas: cuantía y cálculo", "Partición de la herencia y su impugnación", "División judicial de la herencia", "Donación y su revocación"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Nulidad e interpretación del testamento"
+    sinonimos: ["nulidad del testamento", "impugnación del testamento", "capacidad para testar", "testamento otorgado con demencia", "juicio notarial de capacidad", "testamento ológrafo", "protocolización del ológrafo", "adveración", "testamento abierto notarial", "testamento cerrado", "defectos de forma del testamento", "testamento captado", "violencia, dolo o fraude en el testamento", "interpretación del testamento", "voluntad del testador", "revocación del testamento", "testamento posterior", "causa falsa", "error en la persona del heredero", "condiciones ilícitas", "testamento mancomunado"]
+    normas_base: ["CC"]
+    remisiones:
+      - {norma: "CC", articulo: "662", tipo: "regula", nota: "Pueden testar todos aquellos a quienes la ley no lo prohíbe expresamente."}
+      - {norma: "CC", articulo: "663", tipo: "regula", nota: "No pueden testar el menor de catorce años ni quien no pueda conformar o expresar su voluntad ni aun con apoyos."}
+      - {norma: "CC", articulo: "665", tipo: "regula", nota: "La persona con discapacidad testa si, a juicio del notario, comprende y manifiesta el alcance de sus disposiciones."}
+      - {norma: "CC", articulo: "666", tipo: "regula", nota: "La capacidad del testador se aprecia únicamente al tiempo de otorgar el testamento."}
+      - {norma: "CC", articulo: "664", tipo: "conexa", nota: "El testamento hecho antes de la enajenación mental es válido."}
+      - {norma: "CC", articulo: "685", tipo: "regula", nota: "El notario identifica al testador y debe asegurarse de que, a su juicio, tiene la capacidad legal para testar."}
+      - {norma: "CC", articulo: "696", tipo: "conexa", nota: "El notario da fe de conocer o identificar al testador y hace constar su juicio de capacidad."}
+      - {norma: "CC", articulo: "686", apartado: "párrafo 2.º", tipo: "conexa", nota: "Impugnado por falta de identificación, prueba la identidad quien sostiene la validez."}
+      - {norma: "CC", articulo: "673", tipo: "regula", nota: "Es nulo el testamento otorgado con violencia, dolo o fraude."}
+      - {norma: "CC", articulo: "674", tipo: "conexa", nota: "Quien con dolo, fraude o violencia impide testar a aquel de quien es heredero abintestato pierde su derecho a la herencia."}
+      - {norma: "CC", articulo: "670", tipo: "regula", nota: "El testamento es personalísimo: no puede dejarse al arbitrio de tercero ni otorgarse por comisario o mandatario."}
+      - {norma: "CC", articulo: "669", tipo: "regula", nota: "Prohibido el testamento mancomunado: dos o más personas en un mismo instrumento."}
+      - {norma: "CC", articulo: "733", tipo: "conexa", nota: "No vale en España el testamento mancomunado de españoles otorgado en el extranjero aunque allí se admita."}
+      - {norma: "CC", articulo: "687", tipo: "regula", nota: "Es nulo el testamento otorgado sin observar las formalidades establecidas."}
+      - {norma: "CC", articulo: "688", tipo: "regula", nota: "Ológrafo: solo mayores de edad; todo escrito y firmado por el testador, con año, mes y día; salvar las enmiendas."}
+      - {norma: "CC", articulo: "689", tipo: "regula", nota: "El ológrafo debe protocolizarse ante notario en los cinco años siguientes al fallecimiento."}
+      - {norma: "CC", articulo: "690", tipo: "conexa", nota: "Quien tenga un ológrafo debe presentarlo ante notario en diez días desde que sabe la muerte, o responde de los daños."}
+      - {norma: "CC", articulo: "693", apartado: "párrafo 3.º", tipo: "regula", nota: "Autorizada o no la protocolización del ológrafo, los no conformes litigan en el juicio que corresponda."}
+      - {norma: "CC", articulo: "695", tipo: "regula", nota: "Abierto: voluntad expresada al notario, redacción con lugar, fecha y hora, lectura y firma en el acto."}
+      - {norma: "CC", articulo: "697", tipo: "conexa", nota: "Testigos en el abierto: solo si el testador no sabe o no puede firmar, o si él o el notario lo piden."}
+      - {norma: "CC", articulo: "699", tipo: "conexa", nota: "Las formalidades del abierto se practican en un solo acto, sin interrupción salvo accidente pasajero."}
+      - {norma: "CC", articulo: "705", tipo: "conexa", nota: "Nulo el abierto por defecto de forma, responde el notario si hubo malicia o negligencia o ignorancia inexcusables."}
+      - {norma: "CC", articulo: "715", tipo: "regula", nota: "Es nulo el cerrado sin las formalidades legales, pero vale como ológrafo si reúne sus requisitos."}
+      - {norma: "CC", articulo: "703", tipo: "conexa", nota: "El otorgado en peligro de muerte o epidemia caduca a los dos meses de cesar el peligro o sin elevarlo en tres meses."}
+      - {norma: "CC", articulo: "675", tipo: "regula", nota: "Interpretación: sentido literal salvo que conste claramente otra voluntad; en la duda, la intención según el testamento."}
+      - {norma: "CC", articulo: "675", apartado: "párrafo 2.º", tipo: "regula", nota: "El testador no puede prohibir que se impugne el testamento en los casos de nulidad legal."}
+      - {norma: "CC", articulo: "668", apartado: "párrafo 2.º", tipo: "conexa", nota: "Aunque no use la palabra heredero, vale como institución si su voluntad es clara."}
+      - {norma: "CC", articulo: "767", tipo: "regula", nota: "La causa falsa de la institución o del legado se tiene por no escrita, salvo que sin ella no se habría dispuesto."}
+      - {norma: "CC", articulo: "773", tipo: "regula", nota: "El error en el nombre o cualidades del heredero no vicia la institución si se sabe ciertamente quién es."}
+      - {norma: "CC", articulo: "792", tipo: "regula", nota: "Las condiciones imposibles o contrarias a la ley o a las buenas costumbres se tienen por no puestas."}
+      - {norma: "CC", articulo: "793", tipo: "conexa", nota: "La condición absoluta de no casarse se tiene por no puesta, salvo la impuesta al viudo por su consorte o parientes."}
+      - {norma: "CC", articulo: "672", tipo: "conexa", nota: "Es nula la disposición que remite a cédulas o papeles privados que no reúnan los requisitos del ológrafo."}
+      - {norma: "CC", articulo: "737", tipo: "regula", nota: "Las disposiciones testamentarias son esencialmente revocables, aunque el testador diga lo contrario."}
+      - {norma: "CC", articulo: "738", tipo: "regula", nota: "La revocación exige las solemnidades necesarias para testar."}
+      - {norma: "CC", articulo: "739", tipo: "regula", nota: "El testamento posterior perfecto revoca el anterior, salvo que el testador quiera que subsista."}
+      - {norma: "CC", articulo: "739", apartado: "párrafo 2.º", tipo: "conexa", nota: "El anterior recobra fuerza si se revoca el posterior declarando expresamente que valga el primero."}
+      - {norma: "CC", articulo: "740", tipo: "conexa", nota: "La revocación surte efecto aunque el segundo testamento caduque por incapacidad o renuncia de los nombrados."}
+      - {norma: "CC", articulo: "742", tipo: "conexa", nota: "Se presume revocado el cerrado hallado en casa del testador con cubiertas rotas, sellos quebrantados o firmas alteradas."}
+      - {norma: "CC", articulo: "743", tipo: "regula", nota: "Los testamentos solo caducan o son ineficaces en los casos expresamente previstos en el Código."}
+    no_consta_en_norma:
+      - "Presunción de capacidad que resulta del juicio notarial y prueba necesaria para destruirla: jurisprudencial."
+      - "Plazo de la acción de nulidad del testamento (imprescriptible o sujeta a plazo, según la causa): jurisprudencial."
+      - "Captación de la voluntad como forma de dolo del art. 673: jurisprudencial."
+      - "Admisión de prueba extrínseca para interpretar el testamento: jurisprudencial."
+    afines: ["Preterición y desheredación", "Sucesión intestada", "Albacea y contador-partidor", "Ley aplicable a la sucesión de extranjeros", "Medidas judiciales de apoyo a personas con discapacidad", "Vicios del consentimiento: error, dolo e intimidación"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Sucesión intestada"
+    sinonimos: ["sucesión legítima", "abintestato", "herencia sin testamento", "declaración de herederos", "orden de suceder", "herederos legales", "derecho de representación", "sucesión por estirpes", "sucesión por cabezas", "grados de parentesco", "hermanos de doble vínculo", "medio hermanos", "sobrinos", "colaterales hasta el cuarto grado", "el Estado como heredero", "testamento que no dispone de todos los bienes"]
+    normas_base: ["CC"]
+    remisiones:
+      - {norma: "CC", articulo: "912", tipo: "regula", nota: "Hay sucesión legítima sin testamento o con testamento nulo, sin institución en todos los bienes, o si el heredero falta o repudia."}
+      - {norma: "CC", articulo: "913", tipo: "regula", nota: "A falta de herederos testamentarios, la ley llama a los parientes, al viudo y al Estado."}
+      - {norma: "CC", articulo: "658", tipo: "conexa", nota: "La sucesión se defiere por testamento o, a falta de este, por la ley; cabe en parte por cada vía."}
+      - {norma: "CC", articulo: "914", tipo: "conexa", nota: "Las incapacidades para suceder por testamento se aplican a la sucesión intestada."}
+      - {norma: "CC", articulo: "915", tipo: "conexa", nota: "La proximidad del parentesco se determina por el número de generaciones; cada generación forma un grado."}
+      - {norma: "CC", articulo: "918", tipo: "regula", nota: "Cómputo de grados: en la recta se sube hasta el tronco; en la colateral se sube al tronco común y se baja."}
+      - {norma: "CC", articulo: "921", tipo: "regula", nota: "El pariente más próximo excluye al más remoto, salvo representación; los del mismo grado heredan por partes iguales."}
+      - {norma: "CC", articulo: "922", tipo: "regula", nota: "Si alguno del mismo grado no quiere o no puede suceder, su parte acrece a los demás, salvo representación."}
+      - {norma: "CC", articulo: "923", tipo: "regula", nota: "Si repudian todos los más próximos, heredan los del grado siguiente por derecho propio, sin representar al repudiante."}
+      - {norma: "CC", articulo: "924", tipo: "regula", nota: "Derecho de representación: los parientes suceden en todos los derechos que tendría el representado."}
+      - {norma: "CC", articulo: "925", tipo: "regula", nota: "Representación: siempre en la línea recta descendente, nunca en la ascendente; en colateral, solo hijos de hermanos."}
+      - {norma: "CC", articulo: "926", tipo: "regula", nota: "Por representación se hereda por estirpes: el representante no recibe más que el representado."}
+      - {norma: "CC", articulo: "928", tipo: "conexa", nota: "No se pierde el derecho de representar a una persona por haber renunciado a su herencia."}
+      - {norma: "CC", articulo: "929", tipo: "regula", nota: "No se representa a una persona viva salvo en los casos de desheredación o incapacidad."}
+      - {norma: "CC", articulo: "930", tipo: "regula", nota: "La sucesión corresponde en primer lugar a la línea recta descendente."}
+      - {norma: "CC", articulo: "931", tipo: "regula", nota: "Los hijos y descendientes suceden sin distinción de sexo, edad o filiación."}
+      - {norma: "CC", articulo: "932", tipo: "regula", nota: "Los hijos heredan por derecho propio y por partes iguales."}
+      - {norma: "CC", articulo: "933", tipo: "conexa", nota: "Los nietos y demás descendientes heredan por representación."}
+      - {norma: "CC", articulo: "934", tipo: "conexa", nota: "Concurriendo hijos con descendientes de hijos premuertos: aquellos por derecho propio, estos por representación."}
+      - {norma: "CC", articulo: "935", tipo: "regula", nota: "A falta de descendientes heredan los ascendientes."}
+      - {norma: "CC", articulo: "936", tipo: "conexa", nota: "El padre y la madre heredan por partes iguales."}
+      - {norma: "CC", articulo: "937", tipo: "conexa", nota: "Si sobrevive uno solo de los padres, hereda toda la herencia."}
+      - {norma: "CC", articulo: "938", tipo: "conexa", nota: "A falta de padre y madre, los ascendientes más próximos en grado."}
+      - {norma: "CC", articulo: "940", tipo: "conexa", nota: "Ascendientes de igual grado y distinta línea: mitad paternos, mitad maternos; en cada línea, por cabezas (941)."}
+      - {norma: "CC", articulo: "942", tipo: "conexa", nota: "Queda a salvo la reserva y la reversión de los arts. 811 y 812."}
+      - {norma: "CC", articulo: "944", tipo: "regula", nota: "Sin descendientes ni ascendientes, y antes que los colaterales, hereda todo el cónyuge viudo."}
+      - {norma: "CC", articulo: "945", tipo: "regula", nota: "No hereda el cónyuge separado legalmente o de hecho."}
+      - {norma: "CC", articulo: "946", tipo: "regula", nota: "Hermanos e hijos de hermanos suceden con preferencia a los demás colaterales."}
+      - {norma: "CC", articulo: "948", tipo: "conexa", nota: "Hermanos con sobrinos de doble vínculo: los hermanos por cabezas y los sobrinos por estirpes."}
+      - {norma: "CC", articulo: "949", tipo: "regula", nota: "Hermanos de padre y madre con medio hermanos: aquellos toman doble porción que estos."}
+      - {norma: "CC", articulo: "950", tipo: "conexa", nota: "Si solo hay medio hermanos, de padre y de madre, heredan todos por partes iguales."}
+      - {norma: "CC", articulo: "927", tipo: "conexa", nota: "Los sobrinos heredan por representación si concurren con tíos; solos, por partes iguales."}
+      - {norma: "CC", articulo: "954", tipo: "regula", nota: "A falta de cónyuge, hermanos y sobrinos, heredan los colaterales hasta el cuarto grado, y no más allá."}
+      - {norma: "CC", articulo: "955", tipo: "conexa", nota: "Estos colaterales suceden sin distinción de líneas ni preferencia por el doble vínculo."}
+      - {norma: "CC", articulo: "956", tipo: "regula", nota: "A falta de todos los anteriores hereda el Estado, que liquida el caudal y destina dos tercios a fines sociales."}
+      - {norma: "CC", articulo: "957", tipo: "conexa", nota: "El Estado hereda siempre a beneficio de inventario, sin necesidad de declararlo."}
+      - {norma: "CC", articulo: "958", tipo: "conexa", nota: "El Estado toma posesión tras la declaración administrativa de heredero."}
+      - {norma: "CC", articulo: "914 bis", tipo: "conexa", nota: "Animales de compañía sin disposición testamentaria: a los sucesores que los reclamen; sin acuerdo, decide el juez."}
+    no_consta_en_norma:
+      - "Representación del indigno o desheredado en la línea colateral (sobrinos): discutida; jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Ley del Notariado, art. 55: la declaración de herederos abintestato se tramita por acta de notoriedad ante notario."
+      - "Ley del Notariado, art. 56: requisitos del acta (dos testigos, anuncios) y reserva de acudir al proceso declarativo."
+    afines: ["Derechos del cónyuge viudo", "Aceptación y repudiación de la herencia", "Nulidad e interpretación del testamento", "Preterición y desheredación", "Partición de la herencia y su impugnación", "Ley aplicable a la sucesión de extranjeros"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Derechos del cónyuge viudo"
+    sinonimos: ["cónyuge viudo", "viuda", "cónyuge supérstite", "usufructo viudal", "cuota legal usufructuaria", "legítima del viudo", "conmutación del usufructo del viudo", "viudo separado de hecho", "reconciliación de los cónyuges", "ajuar doméstico", "vivienda habitual del viudo", "atribución preferente de la vivienda", "viudo heredero abintestato", "pareja de hecho en la herencia"]
+    normas_base: ["CC"]
+    remisiones:
+      - {norma: "CC", articulo: "807", tipo: "conexa", nota: "El viudo o viuda es heredero forzoso en la forma y medida que establece el Código."}
+      - {norma: "CC", articulo: "834", tipo: "regula", nota: "El cónyuge no separado legalmente ni de hecho, con descendientes, tiene el usufructo del tercio de mejora."}
+      - {norma: "CC", articulo: "835", tipo: "regula", nota: "Separados que se reconciliaron con notificación al juzgado o al notario: el viudo conserva sus derechos."}
+      - {norma: "CC", articulo: "837", tipo: "regula", nota: "Sin descendientes pero con ascendientes: usufructo de la mitad de la herencia."}
+      - {norma: "CC", articulo: "838", tipo: "regula", nota: "Sin descendientes ni ascendientes: usufructo de los dos tercios de la herencia."}
+      - {norma: "CC", articulo: "839", tipo: "regula", nota: "Los herederos pueden conmutar el usufructo por renta vitalicia, productos de bienes o capital, por acuerdo o mandato judicial."}
+      - {norma: "CC", articulo: "839", apartado: "párrafo 2.º", tipo: "regula", nota: "Mientras no se conmute, todos los bienes de la herencia quedan afectos al pago del usufructo del viudo."}
+      - {norma: "CC", articulo: "840", tipo: "regula", nota: "Con hijos solo del causante, el viudo puede exigir la conmutación por capital o lote de bienes, a elección de los hijos."}
+      - {norma: "CC", articulo: "813", apartado: "párrafo 2.º", tipo: "conexa", nota: "El usufructo del viudo es excepción a la prohibición de gravar la legítima."}
+      - {norma: "CC", articulo: "492", tipo: "conexa", nota: "El cónyuge sobreviviente no presta fianza por la cuota legal usufructuaria, salvo que contraiga nuevo matrimonio."}
+      - {norma: "CC", articulo: "944", tipo: "regula", nota: "Abintestato, sin descendientes ni ascendientes, el viudo hereda todo antes que los colaterales."}
+      - {norma: "CC", articulo: "945", tipo: "regula", nota: "No hay llamamiento abintestato si el cónyuge estaba separado legalmente o de hecho."}
+      - {norma: "CC", articulo: "1321", tipo: "regula", nota: "El ajuar de la vivienda habitual común se entrega al viudo sin computárselo en su haber, salvo objetos de extraordinario valor."}
+      - {norma: "CC", articulo: "1406", tipo: "regula", nota: "En la liquidación de gananciales, por muerte del otro, el viudo puede pedir que se incluya en su haber la vivienda habitual."}
+      - {norma: "CC", articulo: "1407", tipo: "regula", nota: "Puede pedir la propiedad o un derecho de uso o habitación, abonando en dinero el exceso sobre su haber."}
+      - {norma: "CC", articulo: "822", apartado: "párrafo 4.º", tipo: "conexa", nota: "La habitación del legitimario con discapacidad coexiste con los derechos del cónyuge de los arts. 1406 y 1407."}
+      - {norma: "CC", articulo: "831", tipo: "conexa", nota: "Puede conferirse al cónyuge en testamento la facultad de mejorar y distribuir la herencia entre los hijos comunes."}
+      - {norma: "CC", articulo: "855", tipo: "conexa", nota: "Causas específicas para desheredar al cónyuge."}
+      - {norma: "CC", articulo: "9", apartado: "8", tipo: "conexa", nota: "Los derechos que por ley se atribuyen al cónyuge supérstite se rigen por la ley de los efectos del matrimonio."}
+    no_consta_en_norma:
+      - "Derechos sucesorios de la pareja de hecho: el CC no se los reconoce; solo por testamento o derecho autonómico."
+      - "Cálculo del valor del usufructo viudal para conmutarlo: no lo fija el CC; se acude a criterios fiscales o periciales."
+    afines: ["Usufructo", "Sucesión intestada", "Legítimas: cuantía y cálculo", "Disolución y liquidación de la sociedad de gananciales", "Uso de la vivienda familiar", "Derechos de uso y habitación"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Albacea y contador-partidor"
+    sinonimos: ["albacea", "albaceazgo", "ejecutor testamentario", "albacea universal", "albaceas mancomunados", "plazo del albaceazgo", "prórroga del albaceazgo", "rendición de cuentas del albacea", "remoción del albacea", "contador-partidor", "comisario partidor", "contador-partidor dativo", "partición por contador", "pago en metálico de la legítima", "aprobación de la partición por notario o LAJ"]
+    normas_base: ["CC"]
+    remisiones:
+      - {norma: "CC", articulo: "892", tipo: "regula", nota: "El testador puede nombrar uno o más albaceas."}
+      - {norma: "CC", articulo: "893", tipo: "conexa", nota: "No puede ser albacea quien no tenga capacidad para obligarse, ni el menor."}
+      - {norma: "CC", articulo: "894", tipo: "conexa", nota: "El albacea puede ser universal o particular; varios, mancomunada, sucesiva o solidariamente."}
+      - {norma: "CC", articulo: "895", tipo: "regula", nota: "Mancomunados: vale lo hecho por todos, por uno autorizado por los demás o, en disidencia, por la mayoría."}
+      - {norma: "CC", articulo: "896", tipo: "conexa", nota: "En caso de suma urgencia, uno de los mancomunados puede actuar bajo su responsabilidad, dando cuenta a los demás."}
+      - {norma: "CC", articulo: "897", tipo: "conexa", nota: "Sin solidaridad ni orden fijados por el testador, se entienden nombrados mancomunadamente."}
+      - {norma: "CC", articulo: "898", tipo: "regula", nota: "Cargo voluntario: se entiende aceptado si no se excusa en seis días desde que conoce el nombramiento o la muerte."}
+      - {norma: "CC", articulo: "899", tipo: "conexa", nota: "Aceptado, debe desempeñarlo; puede renunciar con justa causa a criterio del LAJ o del notario."}
+      - {norma: "CC", articulo: "900", tipo: "conexa", nota: "Si no acepta o renuncia sin justa causa, pierde lo que le dejó el testador, salvo la legítima."}
+      - {norma: "CC", articulo: "901", tipo: "regula", nota: "El albacea tiene las facultades que le confiera expresamente el testador y no sean contrarias a la ley."}
+      - {norma: "CC", articulo: "902", tipo: "regula", nota: "Facultades legales: funeral, pagar legados en metálico con beneplácito del heredero, vigilar la ejecución y conservar bienes."}
+      - {norma: "CC", articulo: "903", tipo: "conexa", nota: "Sin dinero para funeral y legados, promueve la venta de muebles y, si no basta, de inmuebles, con intervención de herederos."}
+      - {norma: "CC", articulo: "904", tipo: "regula", nota: "Sin plazo fijado, un año desde la aceptación o desde que terminen los litigios sobre la validez del testamento."}
+      - {norma: "CC", articulo: "905", tipo: "regula", nota: "Prórroga testamentaria; sin fijarla, un año más; después, el LAJ o el notario pueden conceder otra."}
+      - {norma: "CC", articulo: "906", tipo: "conexa", nota: "Herederos y legatarios pueden prorrogar el plazo por acuerdo unánime; por mayoría, no más de un año."}
+      - {norma: "CC", articulo: "907", tipo: "regula", nota: "El albacea rinde cuentas a los herederos; si debía distribuir bienes según el testador, al juez; no cabe dispensa."}
+      - {norma: "CC", articulo: "908", tipo: "regula", nota: "Cargo gratuito salvo remuneración del testador, sin perjuicio de cobrar los trabajos de partición."}
+      - {norma: "CC", articulo: "909", tipo: "conexa", nota: "El albacea no puede delegar el cargo sin autorización expresa del testador."}
+      - {norma: "CC", articulo: "910", tipo: "regula", nota: "Termina por muerte, imposibilidad, renuncia, remoción (apreciada por el juez) o expiración del plazo."}
+      - {norma: "CC", articulo: "911", tipo: "conexa", nota: "Terminado el albaceazgo o no aceptado, la ejecución corresponde a los herederos."}
+      - {norma: "CC", articulo: "1057", tipo: "regula", nota: "El testador puede encomendar la partición a cualquier persona que no sea coheredero."}
+      - {norma: "CC", articulo: "1057", apartado: "párrafo 2.º", tipo: "regula", nota: "Contador-partidor dativo: lo nombra el LAJ o el notario a petición de quienes representen al menos el 50 % del haber."}
+      - {norma: "CC", articulo: "1057", apartado: "párrafo 3.º", tipo: "conexa", nota: "Con coherederos menores o sujetos a tutela, el contador inventaría con citación de sus representantes."}
+      - {norma: "CC", articulo: "1056", tipo: "conexa", nota: "Se pasa por la partición hecha por el testador en cuanto no perjudique la legítima."}
+      - {norma: "CC", articulo: "841", tipo: "regula", nota: "El testador o el contador-partidor autorizado pueden adjudicar bienes a un descendiente y pagar en metálico a los demás."}
+      - {norma: "CC", articulo: "843", tipo: "conexa", nota: "Esa partición requiere aprobación del LAJ o notario, salvo confirmación expresa de todos los descendientes."}
+      - {norma: "CC", articulo: "844", tipo: "conexa", nota: "La decisión de pago en metálico caduca si no se comunica en un año desde la apertura o no se paga en otro año."}
+    no_consta_en_norma:
+      - "Facultad del contador-partidor de interpretar el testamento y límites de su partición (no puede disponer ni transigir): jurisprudencial."
+      - "Plazo del contador-partidor: el CC no lo fija; se aplica por analogía el del albacea (art. 904), según la jurisprudencia."
+    afines: ["Partición de la herencia y su impugnación", "División judicial de la herencia", "Nulidad e interpretación del testamento", "Administración e intervención del caudal hereditario", "Mandato y rendición de cuentas"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Ley aplicable a la sucesión de extranjeros"
+    sinonimos: ["sucesión internacional", "herencia de extranjero", "residente extranjero fallecido en España", "ley nacional del causante", "residencia habitual del causante", "professio iuris", "elección de ley en testamento", "reenvío", "orden público y ley extranjera", "prueba del derecho extranjero", "competencia internacional en sucesiones", "testamento otorgado en el extranjero", "forma del testamento internacional", "vecindad civil", "británicos en Benidorm", "certificado sucesorio europeo"]
+    normas_base: ["CC", "LEC", "LOPJ"]
+    remisiones:
+      - {norma: "CC", articulo: "9", apartado: "8", tipo: "regula", nota: "Norma interna: ley nacional del causante al fallecer; testamento válido según la ley nacional al otorgarlo, ajustando legítimas."}
+      - {norma: "CC", articulo: "9", apartado: "1", tipo: "conexa", nota: "La ley personal es la de la nacionalidad y rige, entre otras materias, la sucesión por causa de muerte."}
+      - {norma: "CC", articulo: "12", apartado: "1", tipo: "conexa", nota: "La calificación para determinar la norma de conflicto se hace siempre con arreglo a la ley española."}
+      - {norma: "CC", articulo: "12", apartado: "2", tipo: "regula", nota: "La remisión al derecho extranjero es a su ley material, sin reenvío salvo el que se haga a la ley española."}
+      - {norma: "CC", articulo: "12", apartado: "3", tipo: "regula", nota: "No se aplica la ley extranjera contraria al orden público."}
+      - {norma: "CC", articulo: "12", apartado: "6", tipo: "regula", nota: "Tribunales y autoridades aplican de oficio las normas de conflicto del derecho español."}
+      - {norma: "CC", articulo: "11", apartado: "1", tipo: "regula", nota: "Forma del testamento: ley del lugar de otorgamiento, la del contenido, la personal del disponente o la del inmueble."}
+      - {norma: "CC", articulo: "16", apartado: "1", tipo: "conexa", nota: "Conflictos internos entre derechos civiles españoles: ley personal por vecindad civil, sin reglas de orden público ni reenvío."}
+      - {norma: "CC", articulo: "14", apartado: "1", tipo: "conexa", nota: "La sujeción al derecho civil común o foral se determina por la vecindad civil."}
+      - {norma: "CC", articulo: "732", tipo: "conexa", nota: "Los españoles pueden testar en el extranjero con las formas del país donde se hallen."}
+      - {norma: "LEC", articulo: "281", apartado: "2", tipo: "regula", nota: "El derecho extranjero debe probarse en su contenido y vigencia; el tribunal puede valerse de otros medios de averiguación."}
+      - {norma: "LOPJ", articulo: "22 quater", apartado: "g)", tipo: "regula", nota: "Competencia española en sucesiones: última residencia habitual en España, o bienes en España y causante español."}
+    fuera_de_la_herramienta:
+      - "Reglamento (UE) 650/2012, art. 83.1: se aplica a las sucesiones de quienes fallezcan el 17-08-2015 o después."
+      - "Reglamento (UE) 650/2012, art. 21: ley de la residencia habitual del causante al fallecer, salvo vínculo manifiestamente más estrecho."
+      - "Reglamento (UE) 650/2012, art. 22: el causante puede elegir en disposición mortis causa la ley de su nacionalidad."
+      - "Reglamento (UE) 650/2012, art. 23: esa ley rige toda la sucesión (legítimas, desheredación, colación, partición, deudas)."
+      - "Reglamento (UE) 650/2012, art. 34: reenvío limitado desde la ley de un tercer Estado; nunca si hubo elección de ley."
+      - "Reglamento (UE) 650/2012, art. 4: competencia de los tribunales del Estado de la última residencia habitual del causante."
+    no_consta_en_norma:
+      - "Concepto de residencia habitual del causante: autónomo del Reglamento; lo perfilan el TJUE y sus considerandos."
+      - "Aplicación del art. 9.8 CC tras el Reglamento: queda para sucesiones anteriores al 17-08-2015 y conflictos internos (vecindad civil)."
+    afines: ["Nulidad e interpretación del testamento", "Sucesión intestada", "Legítimas: cuantía y cálculo", "Falta de jurisdicción / competencia internacional", "Ley aplicable al régimen económico de extranjeros", "Derechos del cónyuge viudo"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Bienes privativos y gananciales"
+    sinonimos: ["sociedad de gananciales", "bien ganancial", "bien privativo", "carácter privativo o ganancial", "presunción de ganancialidad", "vivienda comprada antes del matrimonio", "compra con dinero privativo y ganancial", "atribución de ganancialidad", "confesión de privatividad", "herencia o donación a un cónyuge", "frutos de bienes privativos", "mejoras en bienes privativos", "reembolso a la sociedad", "subrogación real", "precio aplazado"]
+    normas_base: ["CC"]
+    remisiones:
+      - {norma: "CC", articulo: "1344", tipo: "regula", nota: "Son comunes las ganancias o beneficios obtenidos por cualquiera de los cónyuges, que se atribuyen por mitad al disolverse."}
+      - {norma: "CC", articulo: "1345", tipo: "conexa", nota: "La sociedad empieza al celebrarse el matrimonio o, después, al pactarse en capitulaciones."}
+      - {norma: "CC", articulo: "1316", tipo: "conexa", nota: "Sin capitulaciones, o si son ineficaces, el régimen es el de gananciales."}
+      - {norma: "CC", articulo: "1346", tipo: "regula", nota: "Privativos: lo anterior al matrimonio, lo adquirido gratis o en sustitución de lo privativo, lo personal y los daños a la persona."}
+      - {norma: "CC", articulo: "1347", tipo: "regula", nota: "Gananciales: lo obtenido con el trabajo, los frutos de privativos y gananciales y lo adquirido onerosamente con fondos comunes."}
+      - {norma: "CC", articulo: "1348", tipo: "conexa", nota: "Los plazos cobrados de un crédito privativo pagadero en años no son gananciales."}
+      - {norma: "CC", articulo: "1349", tipo: "conexa", nota: "El usufructo o pensión de un cónyuge es privativo; los frutos devengados durante el matrimonio, gananciales."}
+      - {norma: "CC", articulo: "1351", tipo: "conexa", nota: "Las ganancias del juego y otras que eximan de restitución son gananciales."}
+      - {norma: "CC", articulo: "1352", tipo: "conexa", nota: "Las acciones suscritas por la titularidad de otras privativas son privativas; si se pagaron con fondos comunes, se reembolsa."}
+      - {norma: "CC", articulo: "1353", tipo: "conexa", nota: "Lo donado o dejado en testamento a ambos cónyuges sin designar partes es ganancial si lo aceptan ambos."}
+      - {norma: "CC", articulo: "1354", tipo: "regula", nota: "Bien pagado en parte con dinero ganancial y en parte privativo: pro indiviso, en proporción a las aportaciones."}
+      - {norma: "CC", articulo: "1355", tipo: "regula", nota: "Los cónyuges pueden atribuir de común acuerdo carácter ganancial a lo adquirido onerosamente, venga de donde venga el precio."}
+      - {norma: "CC", articulo: "1355", apartado: "párrafo 2.º", tipo: "regula", nota: "Adquisición conjunta sin atribución de cuotas: se presume la voluntad de que sea ganancial."}
+      - {norma: "CC", articulo: "1356", tipo: "regula", nota: "Compra a plazos durante la sociedad: el carácter lo determina el primer desembolso."}
+      - {norma: "CC", articulo: "1357", tipo: "regula", nota: "Lo comprado a plazos antes de la sociedad es privativo aunque se pague después con dinero ganancial."}
+      - {norma: "CC", articulo: "1357", apartado: "párrafo 2.º", tipo: "regula", nota: "Excepción: vivienda y ajuar familiares, a los que se aplica el art. 1354."}
+      - {norma: "CC", articulo: "1358", tipo: "regula", nota: "Debe reembolsarse el valor pagado con el caudal ajeno al carácter del bien, actualizado al tiempo de liquidar."}
+      - {norma: "CC", articulo: "1359", tipo: "regula", nota: "Edificaciones y mejoras siguen el carácter del bien al que afectan, sin perjuicio del reembolso."}
+      - {norma: "CC", articulo: "1359", apartado: "párrafo 2.º", tipo: "regula", nota: "Mejora de privativo con fondos comunes o trabajo de un cónyuge: la sociedad es acreedora del aumento de valor."}
+      - {norma: "CC", articulo: "1360", tipo: "conexa", nota: "Las mismas reglas se aplican a los incrementos patrimoniales incorporados a una empresa o establecimiento."}
+      - {norma: "CC", articulo: "1361", tipo: "regula", nota: "Se presumen gananciales los bienes existentes en el matrimonio mientras no se pruebe que son privativos."}
+      - {norma: "CC", articulo: "1324", tipo: "regula", nota: "Entre cónyuges basta la confesión del otro para probar la privatividad, pero no perjudica a legitimarios ni acreedores."}
+      - {norma: "CC", articulo: "1323", tipo: "conexa", nota: "Los cónyuges pueden transmitirse bienes y contratar entre sí."}
+      - {norma: "CC", articulo: "1381", tipo: "conexa", nota: "Los frutos de los privativos y las ganancias de los cónyuges forman parte del haber común."}
+    no_consta_en_norma:
+      - "Prueba de la privatividad del dinero invertido (rastreo de fondos) para destruir la presunción del art. 1361: jurisprudencial."
+      - "Calificación de indemnizaciones por despido, planes de pensiones y derechos de jubilación: jurisprudencial."
+      - "Cálculo de las cuotas en la vivienda familiar comprada antes del matrimonio y pagada después (arts. 1357 y 1354): jurisprudencial."
+    afines: ["Deudas y responsabilidad de la sociedad de gananciales", "Disolución y liquidación de la sociedad de gananciales", "Capitulaciones matrimoniales", "Vivienda familiar: disposición por el cónyuge titular", "Ley aplicable al régimen económico de extranjeros"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Deudas y responsabilidad de la sociedad de gananciales"
+    sinonimos: ["deudas gananciales", "deudas privativas", "cargas de la sociedad de gananciales", "responsabilidad de los bienes gananciales", "potestad doméstica", "deudas de un solo cónyuge", "embargo de bienes gananciales", "notificación del embargo al cónyuge", "sustitución del embargo por la cuota", "disolución por embargo", "deudas del negocio de un cónyuge", "deudas de juego", "precio aplazado de bien ganancial", "reintegro entre sociedad y cónyuge", "responsabilidad del cónyuge no deudor tras la liquidación"]
+    normas_base: ["CC", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "1362", tipo: "regula", nota: "Cargas de la sociedad: sostenimiento de la familia e hijos comunes, bienes comunes, administración ordinaria y negocio o profesión."}
+      - {norma: "CC", articulo: "1363", tipo: "conexa", nota: "También lo donado o prometido por ambos cónyuges de común acuerdo, salvo pacto de pago con privativos."}
+      - {norma: "CC", articulo: "1364", tipo: "regula", nota: "El cónyuge que pagó con privativos un gasto a cargo de la sociedad tiene derecho a reintegro."}
+      - {norma: "CC", articulo: "1365", tipo: "regula", nota: "Los gananciales responden directamente de las deudas de un cónyuge por potestad doméstica, gestión de gananciales o profesión."}
+      - {norma: "CC", articulo: "1366", tipo: "regula", nota: "Obligaciones extracontractuales de un cónyuge en beneficio de la sociedad o administrando bienes: a su cargo, salvo dolo o culpa grave."}
+      - {norma: "CC", articulo: "1367", tipo: "regula", nota: "Los gananciales responden siempre de lo contraído por ambos o por uno con consentimiento expreso del otro."}
+      - {norma: "CC", articulo: "1368", tipo: "conexa", nota: "Y de lo contraído por uno, en separación de hecho, para el sostenimiento y educación de los hijos a cargo de la sociedad."}
+      - {norma: "CC", articulo: "1369", tipo: "regula", nota: "De las deudas de un cónyuge que lo sean también de la sociedad responden solidariamente los bienes de esta."}
+      - {norma: "CC", articulo: "1370", tipo: "conexa", nota: "Del precio aplazado del bien ganancial comprado por uno sin consentimiento del otro responde siempre el bien adquirido."}
+      - {norma: "CC", articulo: "1371", tipo: "conexa", nota: "Lo perdido y pagado en el juego no disminuye la parte de gananciales si es moderado según los usos de la familia."}
+      - {norma: "CC", articulo: "1372", tipo: "conexa", nota: "De lo perdido y no pagado en juegos con acción para reclamar responden solo los privativos del deudor."}
+      - {norma: "CC", articulo: "1373", tipo: "regula", nota: "Deudas propias: responde el privativo; si no basta, embargo de gananciales, que el otro puede sustituir por la cuota del deudor."}
+      - {norma: "CC", articulo: "1373", apartado: "párrafo 2.º", tipo: "regula", nota: "Ejecutados bienes comunes, el deudor se entiende que los recibió a cuenta de su participación."}
+      - {norma: "CC", articulo: "1374", tipo: "regula", nota: "Disuelta así la sociedad, rige la separación de bienes salvo que el otro opte en tres meses por nueva sociedad de gananciales."}
+      - {norma: "CC", articulo: "1319", apartado: "párrafo 2.º", tipo: "regula", nota: "Deudas por necesidades ordinarias de la familia: solidariamente comunes y del deudor; subsidiariamente, los del otro cónyuge."}
+      - {norma: "CC", articulo: "1318", tipo: "conexa", nota: "Los bienes de los cónyuges están sujetos al levantamiento de las cargas del matrimonio."}
+      - {norma: "CC", articulo: "1385", apartado: "párrafo 2.º", tipo: "conexa", nota: "Cualquiera de los cónyuges puede defender los bienes y derechos comunes por vía de acción o de excepción."}
+      - {norma: "CC", articulo: "1390", tipo: "conexa", nota: "El cónyuge que con un acto propio obtiene lucro exclusivo o daña dolosamente a la sociedad le debe su importe."}
+      - {norma: "CC", articulo: "1399", tipo: "conexa", nota: "En la liquidación se pagan primero las deudas de la sociedad, empezando por las alimenticias."}
+      - {norma: "CC", articulo: "1401", tipo: "regula", nota: "Tras liquidar, los acreedores conservan su crédito contra el deudor; el no deudor responde con lo adjudicado si hubo inventario."}
+      - {norma: "CC", articulo: "1401", apartado: "párrafo 2.º", tipo: "conexa", nota: "El cónyuge que pagó más de lo que le era imputable puede repetir contra el otro."}
+      - {norma: "LEC", articulo: "541", apartado: "1", tipo: "regula", nota: "No se despacha ejecución frente a la comunidad de gananciales."}
+      - {norma: "LEC", articulo: "541", apartado: "2", tipo: "regula", nota: "Deuda de un cónyuge de la que responde la sociedad: embargo notificado al otro, que puede oponerse; el acreedor prueba la responsabilidad."}
+      - {norma: "LEC", articulo: "541", apartado: "3", tipo: "regula", nota: "Deuda propia con embargo de bienes comunes: notificación al no deudor, que puede pedir la disolución; se suspende la ejecución sobre ellos."}
+      - {norma: "LEC", articulo: "541", apartado: "4", tipo: "conexa", nota: "El cónyuge notificado puede usar los recursos y medios de impugnación del ejecutado en defensa de los gananciales."}
+    no_consta_en_norma:
+      - "Presunción de que la deuda contraída por un cónyuge en el ejercicio de su profesión es ganancial y su prueba: jurisprudencial."
+      - "Responsabilidad de los gananciales por avales o fianzas prestados por un solo cónyuge: jurisprudencial."
+    afines: ["Bienes privativos y gananciales", "Disolución y liquidación de la sociedad de gananciales", "Ejecución frente a herederos y frente al cónyuge", "Embargo e inembargabilidad", "Tercería de dominio"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"

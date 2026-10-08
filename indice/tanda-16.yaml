@@ -1,0 +1,439 @@
+# Índice de conceptos de «Consulta de normas» — tanda 16 (prioridad B: ejecución, bloque 8, voces 145 a 156)
+# Revisor: armero. Espejo: legalize-es@aca28304d, leído con `git show aca28304d:es/…` (no el árbol de trabajo, que hoy trae erratas).
+# Todo precepto citado se ha leído en el espejo en esta pasada. Vigencia: scripts/contraste_boe.py --solo "LEC,CC,LOPJ,CE,LAU,LPH"
+# --espejo-commit aca28304d (08-10-2026). Distintos citados: LEC 685 (solo en la voz 152; el apartado 5 citado es idéntico).
+# Ver tanda-16-notas.md.
+
+voces:
+  - voz: "Requerimiento de pago"
+    sinonimos: ["requerimiento de pago al ejecutado", "requerir de pago", "requerimiento notarial de pago", "acta notarial de requerimiento", "pago en el acto del requerimiento", "costas del pago en el requerimiento", "requerimiento en el domicilio del título", "ejecutado no hallado", "requerimiento por edictos", "ejecución sin requerimiento de pago", "requerimiento en la ejecución hipotecaria", "notificación del saldo deudor"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "580", tipo: "regula", nota: "Título judicial, arbitral, transacción o acuerdo de mediación: se embarga sin requerir antes de pago al ejecutado."}
+      - {norma: "LEC", articulo: "581", apartado: "1", tipo: "regula", nota: "Título no judicial: despachada la ejecución se requiere de pago (principal e intereses a la demanda); si no paga, se embarga."}
+      - {norma: "LEC", articulo: "581", apartado: "2", tipo: "regula", nota: "No hay requerimiento judicial si se aporta acta notarial de requerimiento hecho con al menos diez días de antelación."}
+      - {norma: "LEC", articulo: "582", apartado: "párrafo 1.º", tipo: "regula", nota: "Se requiere en el domicilio del título, en la sede electrónica si está obligado y, a petición, donde se le halle."}
+      - {norma: "LEC", articulo: "582", apartado: "párrafo 2.º", tipo: "regula", nota: "No hallado en el domicilio del título: cabe embargar ya, a petición, y se reintenta por cédula o por edictos."}
+      - {norma: "LEC", articulo: "583", apartado: "1", tipo: "regula", nota: "Si paga en el acto o antes del despacho, el LAJ entrega la suma al ejecutante y da justificante al ejecutado."}
+      - {norma: "LEC", articulo: "583", apartado: "2", tipo: "regula", nota: "Aunque pague en el acto, el deudor carga con las costas, salvo que no pudiera pagar antes por causa no imputable."}
+      - {norma: "LEC", articulo: "583", apartado: "3", tipo: "conexa", nota: "Satisfechos intereses y costas, el LAJ dicta decreto que da por terminada la ejecución."}
+      - {norma: "LEC", articulo: "551", apartado: "3.3.º", tipo: "conexa", nota: "El decreto del LAJ fija el contenido del requerimiento y si lo practica el auxilio judicial o el procurador."}
+      - {norma: "LEC", articulo: "554", apartado: "1", tipo: "conexa", nota: "Sin requerimiento, la localización de bienes se ejecuta de inmediato, sin oír al ejecutado."}
+      - {norma: "LEC", articulo: "554", apartado: "2", tipo: "conexa", nota: "Con requerimiento, también de inmediato si el ejecutante justifica que la demora frustraría la ejecución."}
+      - {norma: "LEC", articulo: "572", apartado: "2, párrafo 2.º", tipo: "conexa", nota: "Ejecución por saldo: solo se despacha si se notificó antes al deudor y al fiador la cantidad exigible."}
+      - {norma: "LEC", articulo: "573", apartado: "1.3.º", tipo: "conexa", nota: "Con la demanda por saldo va el documento que acredita esa notificación al deudor y al fiador."}
+      - {norma: "LEC", articulo: "585", tipo: "conexa", nota: "Consignando lo despachado se suspende el embargo; después, y antes de resolver la oposición, se alzan los trabados."}
+      - {norma: "LEC", articulo: "686", apartado: "1", tipo: "regula", nota: "Hipotecaria: se requiere al deudor, hipotecante no deudor o tercer poseedor en el domicilio vigente en el Registro."}
+      - {norma: "LEC", articulo: "686", apartado: "2", tipo: "regula", nota: "No se requiere si consta el requerimiento extrajudicial; el notarial se hace en el domicilio registral y con las cautelas fijadas."}
+      - {norma: "LEC", articulo: "686", apartado: "3", tipo: "conexa", nota: "Fallido en el domicilio registral y hechas las averiguaciones, se requiere por edictos (art. 164)."}
+      - {norma: "LEC", articulo: "687", apartado: "2", tipo: "conexa", nota: "Prenda o vehículo hipotecado: depósito si hubo requerimiento extrajudicial; si no, primero se requiere de pago."}
+      - {norma: "LEC", articulo: "164", tipo: "conexa", nota: "Comunicación edictal por el Tablón Edictal Judicial Único cuando no se halla al destinatario."}
+    no_consta_en_norma:
+      - "Cómputo de los diez días del acta notarial (naturales o hábiles): el 581.2 no lo precisa; sin criterio uniforme."
+      - "Requerimiento en domicilio distinto del título o del Registro: si causa nulidad o solo irregularidad, casuística (indefensión)."
+      - "Contenido mínimo del acta notarial (cantidad exacta, desglose): jurisprudencial."
+    afines: ["Despacho de la ejecución y plazo de espera", "Títulos ejecutivos", "Ejecución hipotecaria: especialidades", "Actos de comunicación: domicilio, emplazamiento y edictos", "Averiguación patrimonial", "Liquidación de intereses y tasación de costas en la ejecución"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Averiguación patrimonial"
+    sinonimos: ["manifestación de bienes", "relación de bienes del ejecutado", "investigación del patrimonio", "localización de bienes", "oficios a entidades y registros", "averiguación domiciliaria y patrimonial", "multas coercitivas al ejecutado", "deber de colaboración", "punto neutro judicial", "ejecutado sin bienes", "insolvencia del ejecutado", "bienes ocultos"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "589", apartado: "1", tipo: "regula", nota: "Salvo que el ejecutante señale bienes suficientes, el LAJ requiere de oficio al ejecutado que manifieste bienes, cargas y ocupantes."}
+      - {norma: "LEC", articulo: "589", apartado: "2", tipo: "regula", nota: "Con apercibimiento de sanción, al menos por desobediencia grave, si omite, oculta o falsea bienes o cargas."}
+      - {norma: "LEC", articulo: "589", apartado: "3", tipo: "regula", nota: "Sin bienes o insuficientes: decreto que advierte del plan de reestructuración y del deber de pedir concurso en dos meses."}
+      - {norma: "LEC", articulo: "589", apartado: "4", tipo: "regula", nota: "Multas coercitivas periódicas al ejecutado que no responde; se fijan según cuantía, resistencia y capacidad; revisión."}
+      - {norma: "LEC", articulo: "590", apartado: "párrafo 1.º", tipo: "regula", nota: "Si el ejecutante no puede designar bienes, el LAJ oficia a entidades, registros y personas que indique, con razones."}
+      - {norma: "LEC", articulo: "590", apartado: "párrafo 2.º", tipo: "regula", nota: "El LAJ no pide datos que el ejecutante pueda obtener por sí o por su procurador facultado."}
+      - {norma: "LEC", articulo: "591", apartado: "1", tipo: "regula", nota: "Todos deben colaborar y entregar datos acordados; solo frenan los derechos fundamentales o límites legales expresos."}
+      - {norma: "LEC", articulo: "591", apartado: "2", tipo: "regula", nota: "Multas coercitivas periódicas, en pieza separada y con audiencia, a quien no colabore."}
+      - {norma: "LEC", articulo: "591", apartado: "3", tipo: "conexa", nota: "Las sanciones a terceros se recurren por el régimen del título V del libro VII de la LOPJ."}
+      - {norma: "LEC", articulo: "545", apartado: "4", tipo: "conexa", nota: "Corresponde al LAJ concretar los bienes y ordenar la averiguación de los arts. 589 y 590."}
+      - {norma: "LEC", articulo: "549", apartado: "1.3.º", tipo: "conexa", nota: "La demanda ejecutiva expresa los bienes embargables conocidos y si se consideran suficientes."}
+      - {norma: "LEC", articulo: "549", apartado: "1.4.º", tipo: "conexa", nota: "La demanda pide, en su caso, las medidas de localización e investigación del art. 590."}
+      - {norma: "LEC", articulo: "551", apartado: "3.2.º", tipo: "conexa", nota: "El decreto del LAJ contiene las medidas de localización y averiguación de bienes que procedan."}
+      - {norma: "LEC", articulo: "593", apartado: "1", tipo: "conexa", nota: "La pertenencia al ejecutado se juzga por indicios y signos externos, sin más investigación."}
+      - {norma: "LEC", articulo: "661", apartado: "1", tipo: "conexa", nota: "Ocupantes del inmueble conocidos por la manifestación de bienes: se les notifica la ejecución."}
+      - {norma: "LEC", articulo: "657", apartado: "3", tipo: "conexa", nota: "El acreedor preferente que no informa del estado de su crédito puede ser apercibido con las multas de los arts. 589 y 591."}
+    no_consta_en_norma:
+      - "Consultas por el Punto Neutro Judicial (AEAT, TGSS, DGT, Catastro): práctica de la oficina judicial; la LEC no las nombra."
+      - "Remisión desfasada: el 591.2 manda aplicar los criterios del 589.3, que desde la Ley 16/2022 están en el 589.4."
+      - "Investigación de cuentas en el extranjero o de criptoactivos: sin regla propia en la LEC."
+    fuera_de_la_herramienta:
+      - "Código Penal, art. 258: relación de bienes incompleta o mendaz en un procedimiento de ejecución (frustración de la ejecución)."
+      - "Texto refundido de la Ley Concursal (RDLeg 1/2020): plan de reestructuración y deber de pedir concurso a que alude el 589.3."
+    afines: ["Embargo e inembargabilidad", "Orden de embargo, mejora y reducción", "Embargo de cuentas y saldos", "Despacho de la ejecución y plazo de espera", "Requerimiento de pago", "Cargas anteriores y ocupantes del inmueble subastado"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Orden de embargo, mejora y reducción"
+    sinonimos: ["orden de los embargos", "prelación de bienes embargables", "menor onerosidad", "pacto sobre el orden de embargo", "mejora de embargo", "reducción de embargo", "modificación del embargo", "suficiencia del embargo", "sobreembargo", "embargo de empresa", "reembargo", "embargo del sobrante"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "592", apartado: "1", tipo: "regula", nota: "Salvo pacto, el LAJ embarga atendiendo a la mayor facilidad de enajenación y a la menor onerosidad para el ejecutado."}
+      - {norma: "LEC", articulo: "592", apartado: "2", tipo: "regula", nota: "Si no es posible: dinero y cuentas, créditos a corto, joyas, rentas, frutos, muebles, inmuebles, sueldos y créditos a largo."}
+      - {norma: "LEC", articulo: "592", apartado: "3", tipo: "regula", nota: "Cabe embargar la empresa entera cuando sea preferible a embargar sus elementos por separado."}
+      - {norma: "LEC", articulo: "584", tipo: "regula", nota: "No se embargan bienes que excedan de lo despachado, salvo que solo existan bienes de valor superior y sean necesarios."}
+      - {norma: "LEC", articulo: "612", apartado: "1", tipo: "regula", nota: "Ejecutante: mejora o modificación si cambian las circunstancias. Ejecutado: reducción o modificación sin riesgo para la ejecución."}
+      - {norma: "LEC", articulo: "612", apartado: "2", tipo: "regula", nota: "Lo resuelve el LAJ por decreto, con recurso directo de revisión sin efectos suspensivos."}
+      - {norma: "LEC", articulo: "612", apartado: "3", tipo: "conexa", nota: "También cabe mejora cuando se amplía en la anotación la cantidad por intereses y costas (613.4)."}
+      - {norma: "LEC", articulo: "598", apartado: "3", tipo: "conexa", nota: "Admitida una tercería de dominio, el LAJ puede ordenar la mejora del embargo a instancia de parte."}
+      - {norma: "LEC", articulo: "578", apartado: "3", tipo: "conexa", nota: "La ampliación por nuevos vencimientos justifica la mejora del embargo y su constancia en la anotación."}
+      - {norma: "LEC", articulo: "613", apartado: "4", tipo: "conexa", nota: "El ejecutante puede pedir que la anotación refleje el aumento de intereses y costas que superen lo anotado."}
+      - {norma: "LEC", articulo: "587", apartado: "1", tipo: "conexa", nota: "El embargo existe desde el decreto o desde la reseña del bien en el acta, aunque falten garantía y publicidad."}
+      - {norma: "LEC", articulo: "585", tipo: "conexa", nota: "La consignación de lo despachado evita el embargo o alza los ya trabados antes de resolver la oposición."}
+      - {norma: "LEC", articulo: "610", apartado: "1", tipo: "conexa", nota: "Reembargo: el reembargante cobra del producto una vez satisfechos los embargantes anteriores."}
+      - {norma: "LEC", articulo: "610", apartado: "2", tipo: "conexa", nota: "Alzado el primer embargo, el reembargante ocupa su lugar; puede pedir la realización si no perjudica a los anteriores."}
+      - {norma: "LEC", articulo: "611", tipo: "conexa", nota: "Cabe embargar el sobrante de la realización en otra ejecución; en inmuebles, tras pagar a ejecutante y posteriores preferentes."}
+      - {norma: "LEC", articulo: "609", tipo: "conexa", nota: "El embargo de bienes inembargables es nulo de pleno derecho; se denuncia por recurso o por simple comparecencia."}
+    no_consta_en_norma:
+      - "Si el ejecutado puede imponer el orden del 592.2 frente al bien elegido por el ejecutante: el 592.1 deja criterio al LAJ; casuística."
+      - "Sobreembargo y responsabilidad del ejecutante: el 538.4 solo prevé daños por extender la ejecución a personas o bienes no autorizados."
+      - "Sustitución del bien embargado por aval bancario a petición del ejecutado: no tiene regla expresa (cabe vía 612.1); casuística."
+    afines: ["Embargo e inembargabilidad", "Embargo de sueldos y pensiones", "Embargo de cuentas y saldos", "Averiguación patrimonial", "Tercería de dominio", "Avalúo de los bienes embargados"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Embargo de cuentas y saldos"
+    sinonimos: ["embargo de cuenta bancaria", "embargo de saldos", "orden de retención", "cuenta nómina", "cuenta indistinta", "cotitular de la cuenta", "límite máximo del embargo", "embargo de depósitos bancarios", "entrega directa al ejecutante", "embargo de la pensión en cuenta", "saldos con vencimiento diferido", "retención por la entidad"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "588", apartado: "1", tipo: "conexa", nota: "Es nulo el embargo de bienes o derechos cuya existencia efectiva no conste."}
+      - {norma: "LEC", articulo: "588", apartado: "2", tipo: "regula", nota: "Depósitos y saldos son embargables si el LAJ fija una cantidad máxima; del exceso dispone libremente el ejecutado."}
+      - {norma: "LEC", articulo: "588", apartado: "3", tipo: "regula", nota: "Cuenta de varios titulares: solo la parte del deudor; se presumen partes iguales salvo titularidad material distinta."}
+      - {norma: "LEC", articulo: "588", apartado: "4", tipo: "regula", nota: "Cuenta donde se cobra sueldo o pensión: límites del 607 sobre lo ingresado por ese concepto en el mes o el anterior."}
+      - {norma: "LEC", articulo: "621", apartado: "1", tipo: "conexa", nota: "Lo embargado en dinero o divisas convertibles se ingresa en la Cuenta de Depósitos y Consignaciones."}
+      - {norma: "LEC", articulo: "621", apartado: "2", tipo: "regula", nota: "Orden de retención a la entidad, que la cumple al presentarse y da recibo con el saldo; puede diligenciarla el procurador."}
+      - {norma: "LEC", articulo: "621", apartado: "3", tipo: "conexa", nota: "Sueldos y pensiones: entrega directa del 607.7 o retención y transferencia a la Cuenta de Consignaciones."}
+      - {norma: "LEC", articulo: "592", apartado: "2.1.º", tipo: "conexa", nota: "En el orden legal de embargo, el dinero y las cuentas corrientes van en primer lugar."}
+      - {norma: "LEC", articulo: "634", apartado: "1.2.º", tipo: "regula", nota: "Los saldos de cuentas de inmediata disposición se entregan directamente al ejecutante por su valor nominal."}
+      - {norma: "LEC", articulo: "634", apartado: "2", tipo: "conexa", nota: "Las cantidades periódicas embargadas pueden entregarse con una sola resolución hasta el completo pago."}
+      - {norma: "LEC", articulo: "634", apartado: "3", tipo: "conexa", nota: "Saldos con vencimiento diferido: el LAJ adopta medidas de cobro y puede nombrar administrador."}
+      - {norma: "LEC", articulo: "607", apartado: "1", tipo: "conexa", nota: "Es inembargable el sueldo o pensión que no exceda del salario mínimo interprofesional."}
+      - {norma: "LEC", articulo: "607", apartado: "3", tipo: "conexa", nota: "Varias percepciones se acumulan; también las de los cónyuges salvo régimen de separación acreditado."}
+      - {norma: "LEC", articulo: "591", apartado: "1", tipo: "conexa", nota: "Las entidades están obligadas a colaborar y a entregar los datos acordados por el LAJ."}
+      - {norma: "LEC", articulo: "625", tipo: "conexa", nota: "El dinero embargado es efecto o caudal público desde que se deposita o se ordena su retención."}
+      - {norma: "LEC", articulo: "609", tipo: "conexa", nota: "Embargo de lo inembargable: nulo de pleno derecho; denunciable por recurso o comparecencia ante el LAJ."}
+    no_consta_en_norma:
+      - "Cotitular no deudor que prueba que los fondos son suyos: cauce (alegación al LAJ o tercería de dominio), casuística."
+      - "Ingresos en la cuenta nómina que no son salario (ayudas, devoluciones): si los protege el 588.4, casuística."
+      - "Embargo de saldos futuros o de ingresos posteriores a la orden de retención: sin regla expresa; criterio de cada oficina."
+    fuera_de_la_herramienta:
+      - "Leyes especiales que declaran inembargables ciertas prestaciones públicas (a ellas remite el art. 606.4.º LEC)."
+    afines: ["Embargo de sueldos y pensiones", "Embargo e inembargabilidad", "Orden de embargo, mejora y reducción", "Averiguación patrimonial", "Tercería de dominio"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Tercería de mejor derecho"
+    sinonimos: ["tercería de preferencia", "crédito preferente", "prelación de créditos", "graduación de créditos", "preferencia de cobro", "tercerista", "crédito en escritura pública", "crédito reconocido en sentencia firme", "preferencia de la comunidad de propietarios", "anotación preventiva de embargo y preferencia", "tres quintas partes de las costas", "concurrencia de acreedores"]
+    normas_base: ["LEC", "CC", "LPH"]
+    remisiones:
+      - {norma: "LEC", articulo: "614", apartado: "1", tipo: "regula", nota: "Quien afirme un crédito preferente al del ejecutante interpone demanda de tercería con principio de prueba del crédito."}
+      - {norma: "LEC", articulo: "614", apartado: "2", tipo: "regula", nota: "Sin ese principio de prueba no se admite; nunca segunda tercería fundada en títulos que ya se tenían."}
+      - {norma: "LEC", articulo: "615", apartado: "1", tipo: "regula", nota: "Cabe desde el embargo del bien, si la preferencia es especial, o desde el despacho de la ejecución, si es general."}
+      - {norma: "LEC", articulo: "615", apartado: "2", tipo: "regula", nota: "No se admite tras entregar al ejecutante lo obtenido o, si se le adjudicó el bien, tras adquirir su titularidad."}
+      - {norma: "LEC", articulo: "616", apartado: "1", tipo: "regula", nota: "La ejecución sigue hasta realizar los bienes; lo obtenido se consigna para costas del ejecutante y pago por orden de preferencia."}
+      - {norma: "LEC", articulo: "616", apartado: "2", tipo: "regula", nota: "Tercerista con título ejecutivo: interviene en la ejecución desde que se admite la demanda; sin título, solo si se estima."}
+      - {norma: "LEC", articulo: "617", apartado: "1", tipo: "regula", nota: "Se dirige siempre contra el ejecutante y se tramita como juicio verbal."}
+      - {norma: "LEC", articulo: "617", apartado: "2", tipo: "regula", nota: "El ejecutado puede intervenir y ha de ser demandado si el crédito del tercerista no consta en título ejecutivo."}
+      - {norma: "LEC", articulo: "618", tipo: "conexa", nota: "Si los demandados no contestan, se entiende que admiten los hechos de la demanda de tercería."}
+      - {norma: "LEC", articulo: "619", apartado: "1", tipo: "regula", nota: "Allanamiento del ejecutante: se paga antes al tercerista, pero cobrando el ejecutante 3/5 de sus costas hasta la demanda."}
+      - {norma: "LEC", articulo: "619", apartado: "2", tipo: "conexa", nota: "Desistimiento del ejecutante: la ejecución sigue para el tercerista con título; si no lo tiene, se archiva salvo acuerdo del ejecutado."}
+      - {norma: "LEC", articulo: "620", apartado: "1", tipo: "regula", nota: "La sentencia fija privilegio y orden de pago solo en esa ejecución, sin prejuzgar otras acciones; reglas propias de costas."}
+      - {norma: "LEC", articulo: "620", apartado: "2", tipo: "regula", nota: "Estimada, nada se entrega al tercerista hasta pagar al ejecutante 3/5 de las costas causadas hasta la sentencia."}
+      - {norma: "LEC", articulo: "613", apartado: "2", tipo: "regula", nota: "Hasta reintegrar al ejecutante, lo realizado solo se aplica a otro crédito si una sentencia de tercería lo declara preferente."}
+      - {norma: "CC", articulo: "1921", tipo: "regula", nota: "Los créditos se clasifican y pagan según este capítulo; en concurso rige la Ley Concursal."}
+      - {norma: "CC", articulo: "1922", tipo: "conexa", nota: "Preferencias sobre muebles concretos: precio o reparación, prenda, transporte, hospedaje, rentas de un año del arrendador."}
+      - {norma: "CC", articulo: "1923", tipo: "regula", nota: "Sobre inmuebles: impuestos del último año, seguro, hipotecas y refacciones inscritas, embargos anotados (solo frente a posteriores)."}
+      - {norma: "CC", articulo: "1924", tipo: "regula", nota: "Sobre los demás bienes: tributos locales, funerales, salarios del último año y créditos en escritura pública o sentencia firme."}
+      - {norma: "CC", articulo: "1925", tipo: "conexa", nota: "Ningún otro crédito goza de preferencia fuera de los enumerados en los artículos anteriores."}
+      - {norma: "CC", articulo: "1927", tipo: "regula", nota: "Concurrencia sobre inmuebles: primero 1923.1.º y 2.º; hipotecas y embargos anotados, por antigüedad registral."}
+      - {norma: "CC", articulo: "1929", tipo: "regula", nota: "Créditos sin preferencia especial: orden del 1924, los de fecha por su antigüedad y los comunes a prorrata."}
+      - {norma: "LPH", articulo: "9", apartado: "1.e), párrafo 2.º", tipo: "regula", nota: "Cuotas de la comunidad del año en curso y los tres anteriores: preferentes del 1923 CC, por delante de los n.º 3.º, 4.º y 5.º."}
+    no_consta_en_norma:
+      - "La anotación de embargo solo prefiere frente a créditos posteriores (CC 1923.4.º): qué fecha cuenta frente a una sentencia, jurisprudencial."
+      - "Fecha relevante del crédito en sentencia firme a efectos del 1924.3.º (sentencia o firmeza): jurisprudencial."
+      - "Tercería de mejor derecho de la comunidad de propietarios frente a la hipoteca: alcance de la preferencia del 9.1.e) LPH, jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Ley 58/2003, General Tributaria, art. 77: prelación de la Hacienda Pública para los créditos tributarios."
+      - "Estatuto de los Trabajadores (RDLeg 2/2015), art. 32: garantías y preferencia de los créditos salariales."
+      - "Texto refundido de la Ley Concursal (RDLeg 1/2020): clasificación de créditos en concurso (CC 1921, párrafo 2.º)."
+    afines: ["Tercería de dominio", "Deudas con la comunidad, preferencia y afección", "Embargo e inembargabilidad", "Orden de embargo, mejora y reducción", "Ejecución hipotecaria: especialidades"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Subasta: convocatoria, posturas y aprobación del remate"
+    sinonimos: ["subasta judicial", "subasta electrónica", "portal de subastas", "depósito para pujar", "consignación para licitar", "pujas", "reserva de postura", "aprobación del remate", "mejora de postura por el ejecutado", "cesión de remate", "quiebra de la subasta", "subasta desierta", "formación de lotes", "precio vil"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "636", apartado: "2", tipo: "conexa", nota: "A falta de convenio de realización, los bienes embargados se enajenan en subasta judicial."}
+      - {norma: "LEC", articulo: "643", apartado: "1", tipo: "regula", nota: "Lotes: los forma el LAJ tras dar cinco días a las partes; no se subasta si no cubrirá ni los gastos (643.2)."}
+      - {norma: "LEC", articulo: "644", apartado: "párrafo 1.º", tipo: "regula", nota: "Decreto de convocatoria: los plazos de pago y de mejora corren desde el cierre sin notificación; colaboración y rebaja del 2 %."}
+      - {norma: "LEC", articulo: "644", apartado: "párrafo 4.º", tipo: "regula", nota: "La subasta es siempre electrónica, en el Portal de Subastas, bajo la responsabilidad del LAJ."}
+      - {norma: "LEC", articulo: "645", apartado: "1", tipo: "regula", nota: "Firme el decreto, la convocatoria se anuncia en el BOE; cabe publicidad adicional a instancia de parte."}
+      - {norma: "LEC", articulo: "646", apartado: "2", tipo: "regula", nota: "Edicto en el Portal: condiciones, avalúo; el licitador acepta la titulación y las consecuencias de los porcentajes."}
+      - {norma: "LEC", articulo: "647", apartado: "1.3.º", tipo: "regula", nota: "Para pujar hay que consignar el 10 % del valor (mínimo 1.000 euros); el LAJ puede subirlo o bajarlo."}
+      - {norma: "LEC", articulo: "647", apartado: "2", tipo: "regula", nota: "El ejecutante puja sin depósito; no puede mejorar tras la subasta ni, si no hubo pujas, pedir la adjudicación."}
+      - {norma: "LEC", articulo: "647", apartado: "3", tipo: "regula", nota: "Ejecutante y acreedores posteriores pueden ceder el remate; la deuda se reduce por el importe total del remate."}
+      - {norma: "LEC", articulo: "648", apartado: "2.ª", tipo: "regula", nota: "Se abre al menos 24 horas después del anuncio en el BOE; la tasa la paga quien pidió la subasta."}
+      - {norma: "LEC", articulo: "648", apartado: "6.ª", tipo: "regula", nota: "Pujas secretas y telemáticas; vale la última de cada postor; a igual importe, la anterior; se declara la reserva."}
+      - {norma: "LEC", articulo: "649", apartado: "1", tipo: "regula", nota: "Dura 20 días naturales; no cierra en sábado, domingo, fiesta nacional, del 24-12 al 6-1 ni en agosto; el concurso la anula."}
+      - {norma: "LEC", articulo: "649", apartado: "2", tipo: "regula", nota: "Suspendida más de 15 días naturales, se cancela y se devuelven los depósitos; si menos, se reanuda."}
+      - {norma: "LEC", articulo: "650", apartado: "1", tipo: "regula", nota: "Muebles: postura del 50 % o más del valor, remate al día siguiente; el resto del precio se paga en diez días."}
+      - {norma: "LEC", articulo: "650", apartado: "3", tipo: "regula", nota: "Muebles por debajo del 50 %: diez días al ejecutado para presentar mejorante; si no, remate desde el 30 % o lo suficiente."}
+      - {norma: "LEC", articulo: "650", apartado: "3, párrafo 5.º", tipo: "regula", nota: "Postura inferior: decide el LAJ según conducta del deudor, otros bienes y sacrificio patrimonial; cabe revisión."}
+      - {norma: "LEC", articulo: "650", apartado: "5", tipo: "regula", nota: "Antes de aprobar el remate el ejecutado puede liberar sus bienes pagando principal, intereses y costas."}
+      - {norma: "LEC", articulo: "651", tipo: "regula", nota: "Subasta de muebles sin postores: el LAJ alza el embargo a instancia del ejecutado."}
+      - {norma: "LEC", articulo: "652", apartado: "1", tipo: "regula", nota: "Reserva de postura: si el rematante no paga, se aprueba a favor del siguiente que alcance el remate fallido con aquel depósito."}
+      - {norma: "LEC", articulo: "653", apartado: "1", tipo: "regula", nota: "Quiebra: el rematante que no paga pierde el depósito y hay nueva subasta, salvo que los depósitos cubran el crédito."}
+      - {norma: "LEC", articulo: "655 bis", tipo: "conexa", nota: "Precepto anulado por la STC 26/2025, de 29 de enero: no es aplicable."}
+      - {norma: "LEC", articulo: "666", apartado: "1", tipo: "regula", nota: "Inmuebles: valor de subasta = avalúo menos las cargas anteriores que resulten de la certificación registral."}
+      - {norma: "LEC", articulo: "669", apartado: "1", tipo: "regula", nota: "Inmuebles: depósito del 20 % del valor de subasta (mínimo 1.000 euros); el LAJ puede modificarlo."}
+      - {norma: "LEC", articulo: "669", apartado: "3", tipo: "conexa", nota: "Inspección del inmueble con consentimiento del poseedor; si colabora, rebaja de la deuda de hasta el 2 % del remate."}
+      - {norma: "LEC", articulo: "670", apartado: "1", tipo: "regula", nota: "Inmuebles: postura del 70 % o más, remate al día siguiente; el resto del precio se consigna en veinte días."}
+      - {norma: "LEC", articulo: "670", apartado: "3", tipo: "regula", nota: "Por debajo del 70 %: diez días al ejecutado para presentar mejorante del 60 % o lo suficiente para pagar al ejecutante."}
+      - {norma: "LEC", articulo: "670", apartado: "3, párrafo 4.º", tipo: "regula", nota: "Sin mejora: remate desde el 50 %, o desde el 40 % si cubre todo el crédito; si no, decide el LAJ."}
+      - {norma: "LEC", articulo: "670", apartado: "3, párrafo 6.º", tipo: "regula", nota: "Vivienda habitual: no menos del 70 %, o lo debido por todos los conceptos con un mínimo del 60 %."}
+      - {norma: "LEC", articulo: "671", apartado: "párrafo 2.º", tipo: "regula", nota: "Subasta desierta: el ejecutado puede presentar adquirente desde el 50 %, o desde el 40 % si cubre todo el crédito."}
+    no_consta_en_norma:
+      - "Precio vil y nulidad del remate fuera de los porcentajes legales: jurisprudencial (la ley deja el resto al juicio del LAJ)."
+      - "Si la rebaja del 2 % del 669.3 alcanza al poseedor tercero que no actúa a instancia del deudor: el texto lo excluye; casuística."
+      - "Subastas convocadas antes de la reforma de la LO 1/2025 (3-4-2025): régimen transitorio no comprobado en esta pasada."
+    afines: ["Adjudicación al acreedor y vivienda habitual", "Cargas anteriores y ocupantes del inmueble subastado", "Avalúo de los bienes embargados", "Suspensión de la ejecución", "Deuda remanente tras ejecutar la vivienda habitual", "Ejecución hipotecaria: especialidades"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Cargas anteriores y ocupantes del inmueble subastado"
+    sinonimos: ["cargas preferentes", "subrogación en cargas anteriores", "certificación de dominio y cargas", "cancelación de cargas posteriores", "minoración de cargas", "ocupantes del inmueble", "ocupante de mero hecho", "inquilino en la subasta", "situación posesoria", "posesión del adjudicatario", "lanzamiento del ocupante tras la subasta", "deudas de comunidad del inmueble subastado", "tercer poseedor"]
+    normas_base: ["LEC", "LAU", "LPH"]
+    remisiones:
+      - {norma: "LEC", articulo: "656", apartado: "1", tipo: "regula", nota: "El LAJ pide al Registro certificación de titularidad y de todas las cargas y derechos sobre el bien embargado."}
+      - {norma: "LEC", articulo: "656", apartado: "2", tipo: "conexa", nota: "Nota marginal de expedición; si pasan más de seis meses hasta la subasta, puede pedirse nota simple actualizada."}
+      - {norma: "LEC", articulo: "657", apartado: "1", tipo: "regula", nota: "El LAJ requiere a los acreedores preferentes y al ejecutado que informen si el crédito anterior subsiste y por cuánto."}
+      - {norma: "LEC", articulo: "657", apartado: "2", tipo: "regula", nota: "Con conformidad se expiden mandamientos (art. 144 LH); si hay disconformidad, vista en tres días y auto irrecurrible."}
+      - {norma: "LEC", articulo: "666", apartado: "1", tipo: "regula", nota: "El valor de subasta descuenta del avalúo las cargas anteriores al gravamen ejecutado."}
+      - {norma: "LEC", articulo: "666", apartado: "2", tipo: "regula", nota: "Si las cargas igualan o superan el valor del bien, el LAJ deja en suspenso la ejecución sobre él."}
+      - {norma: "LEC", articulo: "668", apartado: "2, párrafo 2.º", tipo: "regula", nota: "El edicto advierte de que las cargas anteriores subsisten y de que el licitador acepta subrogarse en ellas."}
+      - {norma: "LEC", articulo: "669", apartado: "2", tipo: "regula", nota: "Pujar supone aceptar la titulación (o su falta) y subrogarse en las cargas anteriores si se obtiene el remate."}
+      - {norma: "LEC", articulo: "670", apartado: "5", tipo: "regula", nota: "El adjudicatario acepta la subsistencia de las cargas anteriores y se subroga en su responsabilidad."}
+      - {norma: "LEC", articulo: "674", apartado: "párrafo 2.º", tipo: "regula", nota: "Se cancelan las inscripciones y anotaciones posteriores, incluso las practicadas tras la certificación de cargas."}
+      - {norma: "LEC", articulo: "672", apartado: "1", tipo: "conexa", nota: "El remanente se retiene para los titulares posteriores inscritos o anotados; lo que sobre, al ejecutado o tercer poseedor."}
+      - {norma: "LEC", articulo: "659", apartado: "3", tipo: "conexa", nota: "El titular posterior que paga antes del remate crédito, intereses y costas se subroga en el lugar del ejecutante."}
+      - {norma: "LEC", articulo: "662", apartado: "3", tipo: "conexa", nota: "El tercer poseedor puede liberar el bien antes del remate pagando dentro del límite de responsabilidad del bien."}
+      - {norma: "LEC", articulo: "661", apartado: "1", tipo: "regula", nota: "A los ocupantes conocidos se les notifica la ejecución para que en diez días presenten sus títulos; se publica la situación posesoria."}
+      - {norma: "LEC", articulo: "661", apartado: "2", tipo: "regula", nota: "Antes de la subasta el ejecutante puede pedir que se declare que el ocupante sin título no podrá permanecer; auto no recurrible."}
+      - {norma: "LEC", articulo: "675", apartado: "1", tipo: "regula", nota: "Si el inmueble no está ocupado, se pone en posesión al adquirente que lo pida."}
+      - {norma: "LEC", articulo: "675", apartado: "2", tipo: "regula", nota: "Ocupado: lanzamiento si ya se declaró al ocupante sin derecho; si no, el adquirente lo pide en el plazo de un año."}
+      - {norma: "LEC", articulo: "675", apartado: "3", tipo: "regula", nota: "Vista en diez días con los ocupantes; auto sin recurso; si no comparecen sin justa causa, se decreta el lanzamiento."}
+      - {norma: "LEC", articulo: "675", apartado: "4", tipo: "conexa", nota: "El auto fija día y hora del lanzamiento y deja a salvo los derechos de los interesados en el juicio que corresponda."}
+      - {norma: "LAU", articulo: "13", apartado: "1", tipo: "regula", nota: "Enajenación forzosa en los primeros 5 años (7 si persona jurídica): el inquilino de vivienda sigue hasta completarlos."}
+      - {norma: "LAU", articulo: "13", apartado: "1, párrafo 2.º", tipo: "conexa", nota: "Pactado más de 5 o 7 años: si la resolución llega pasado ese plazo, se extingue, salvo inscripción anterior al derecho ejecutado."}
+      - {norma: "LPH", articulo: "9", apartado: "1.e), párrafo 3.º", tipo: "regula", nota: "El adquirente responde con el piso de las cuotas impagadas del año de la adquisición y de los tres años naturales anteriores."}
+    no_consta_en_norma:
+      - "Contratos de arrendamiento anteriores a 2013 o a 2019 frente a la ejecución: régimen transitorio de cada reforma, casuística."
+      - "Arrendamiento simulado o en fraude para frustrar la subasta: casuística; se dilucida en el 661.2 o en el 675.3."
+      - "Si la deuda comunitaria del 9.1.e) LPH es carga anterior que minora el valor de subasta: jurisprudencial."
+    afines: ["Subasta: convocatoria, posturas y aprobación del remate", "Lanzamiento", "Enajenación de la finca arrendada y resolución del derecho del arrendador", "Deudas con la comunidad, preferencia y afección", "Ocupación ilegal de vivienda (desahucio exprés)", "Adjudicación al acreedor y vivienda habitual"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Deuda remanente tras ejecutar la vivienda habitual"
+    sinonimos: ["deuda pendiente tras la subasta", "remanente de la deuda hipotecaria", "liberación del deudor hipotecario", "regla del 65 y del 80 por ciento", "reducción por plusvalía", "certificación de deuda pendiente", "ejecución por la cantidad que falte", "ejecución contra avalistas", "imputación de pagos en la ejecución", "límite de costas en vivienda habitual", "dación en pago", "segunda ejecución tras la hipotecaria"]
+    normas_base: ["LEC", "CC"]
+    remisiones:
+      - {norma: "LEC", articulo: "579", apartado: "1", tipo: "regula", nota: "Si lo obtenido de los bienes hipotecados no cubre el crédito, se despacha ejecución ordinaria por lo que falte contra quien proceda."}
+      - {norma: "LEC", articulo: "579", apartado: "2.a)", tipo: "regula", nota: "Vivienda habitual: queda libre si paga el 65 % de lo pendiente en cinco años o el 80 % en diez, más interés legal."}
+      - {norma: "LEC", articulo: "579", apartado: "2.b)", tipo: "regula", nota: "Si el adjudicatario o su grupo vende la vivienda en diez años, la deuda se reduce en el 50 % de la plusvalía obtenida."}
+      - {norma: "LEC", articulo: "579", apartado: "2.b), párrafo 2.º", tipo: "conexa", nota: "Lo cobrado por encima del umbral liberatorio se pone a disposición del deudor; consta en el decreto y en el Registro."}
+      - {norma: "LEC", articulo: "654", apartado: "3", tipo: "regula", nota: "Si no alcanza, se imputa a intereses remuneratorios, principal, moratorios y costas, y se certifica la deuda pendiente."}
+      - {norma: "LEC", articulo: "685", apartado: "5", tipo: "regula", nota: "Contra avalistas por lo que falte, si se les notificó la demanda inicial; base sin intereses de demora de la ejecución."}
+      - {norma: "LEC", articulo: "575", apartado: "1 bis", tipo: "regula", nota: "En la ejecución de la vivienda habitual las costas exigibles al deudor no superan el 5 % de lo reclamado."}
+      - {norma: "LEC", articulo: "670", apartado: "3, párrafo 6.º", tipo: "conexa", nota: "Vivienda habitual: remate no inferior al 70 %, o a lo debido con mínimo del 60 %; se aplica la imputación del 654.3."}
+      - {norma: "LEC", articulo: "671", apartado: "párrafo 2.º", tipo: "conexa", nota: "Subasta desierta: la adjudicación por lo suficiente (mínimo 40 %) termina la ejecución y libera los demás bienes."}
+      - {norma: "LEC", articulo: "692", apartado: "1, párrafo 2.º", tipo: "conexa", nota: "Si el dueño es el deudor, lo que excede de la cobertura hipotecaria paga el resto de la deuda tras los acreedores posteriores."}
+      - {norma: "LEC", articulo: "693", apartado: "3", tipo: "conexa", nota: "Vivienda habitual: el deudor puede liberarla consignando lo vencido; costas sobre las cuotas atrasadas con el tope del 575.1 bis."}
+      - {norma: "LEC", articulo: "241", apartado: "1.7.º", tipo: "conexa", nota: "La tasa judicial de la ejecución de hipoteca de vivienda habitual no entra en las costas."}
+      - {norma: "LEC", articulo: "570", tipo: "conexa", nota: "La ejecución solo termina con la completa satisfacción del ejecutante, por decreto del LAJ."}
+      - {norma: "CC", articulo: "1911", tipo: "regula", nota: "El deudor responde del cumplimiento con todos sus bienes, presentes y futuros."}
+    no_consta_en_norma:
+      - "Dación en pago forzosa: no existe en la LEC; solo por pacto o por el Código de Buenas Prácticas."
+      - "Base del 65 % y del 80 % del 579.2.a) («cantidad total que entonces quedara pendiente»): qué conceptos incluye, casuística."
+      - "Adjudicación muy por debajo del valor de tasación y enriquecimiento injusto del acreedor: jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Real Decreto-ley 6/2012, de protección de deudores hipotecarios sin recursos: Código de Buenas Prácticas y dación en pago."
+      - "Texto refundido de la Ley Concursal (RDLeg 1/2020): exoneración del pasivo insatisfecho de la persona física."
+      - "Ley 1/2013, disposición transitoria 4.ª: régimen transitorio en las ejecuciones en curso (a la que remite la nota del art. 579)."
+    # VIGENCIA: LEC 685 distinto en el espejo (versión del RDL 29/2026, vigente desde el 08-10-2026). Solo cambia el 685.2; el 685.5 citado es idéntico en los dos textos.
+    afines: ["Adjudicación al acreedor y vivienda habitual", "Ejecución hipotecaria: especialidades", "Subasta: convocatoria, posturas y aprobación del remate", "Liquidación de intereses y tasación de costas en la ejecución", "Fianza"]
+    estado: "provisional"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Suspensión de la ejecución"
+    sinonimos: ["suspensión del proceso de ejecución", "paralización de la ejecución", "suspensión por acuerdo de las partes", "suspensión por MASC en la ejecución", "suspensión por concurso", "suspensión por prejudicialidad penal", "suspensión por recurso", "suspensión por revisión o rescisión", "caución para suspender", "oposición con efecto suspensivo", "sobreseimiento de la ejecución", "reanudación de la ejecución"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "565", apartado: "1", tipo: "regula", nota: "La ejecución solo se suspende cuando la ley lo ordena de modo expreso o lo acuerdan todas las partes personadas."}
+      - {norma: "LEC", articulo: "565", apartado: "1, párrafo 2.º", tipo: "regula", nota: "Si las partes acuden a mediación u otro medio adecuado de solución de controversias, la ejecución se suspende."}
+      - {norma: "LEC", articulo: "565", apartado: "1, párrafo 3.º", tipo: "conexa", nota: "Sin acuerdo, se alza a petición de parte; con acuerdo cumplido, archivo; cabe pedir su homologación."}
+      - {norma: "LEC", articulo: "565", apartado: "2", tipo: "regula", nota: "Suspendida, pueden adoptarse o mantenerse garantías de los embargos y se practican los ya acordados."}
+      - {norma: "LEC", articulo: "566", apartado: "1", tipo: "regula", nota: "Admitida revisión o rescisión de sentencia en rebeldía, cabe suspender a instancia de parte con caución y oído el Fiscal."}
+      - {norma: "LEC", articulo: "566", apartado: "3", tipo: "conexa", nota: "Se sobresee si se estima la revisión o si, rescindida la sentencia, se absuelve al demandado."}
+      - {norma: "LEC", articulo: "567", tipo: "regula", nota: "Los recursos no suspenden; el ejecutado que acredite daño de difícil reparación puede obtenerla prestando caución."}
+      - {norma: "LEC", articulo: "568", apartado: "1", tipo: "regula", nota: "No se despacha ejecución si consta el concurso o la comunicación de negociaciones con acreedores respecto de esos bienes."}
+      - {norma: "LEC", articulo: "568", apartado: "2", tipo: "regula", nota: "Declarado el concurso, el LAJ suspende la ejecución; la de bienes hipotecados o pignorados sigue la Ley Concursal."}
+      - {norma: "LEC", articulo: "568", apartado: "3", tipo: "conexa", nota: "Con varios ejecutados, la ejecución sigue frente a los que no estén en concurso."}
+      - {norma: "LEC", articulo: "569", apartado: "1", tipo: "regula", nota: "Denuncia o querella no suspenden por sí; sí la causa penal sobre hechos que harían falso o nulo el título."}
+      - {norma: "LEC", articulo: "569", apartado: "3", tipo: "regula", nota: "Aun así, sigue la ejecución si el ejecutante presta caución por lo que perciba y por los daños al ejecutado."}
+      - {norma: "LEC", articulo: "556", apartado: "2", tipo: "regula", nota: "La oposición a la ejecución de resoluciones procesales, laudos o acuerdos de mediación no suspende."}
+      - {norma: "LEC", articulo: "557", apartado: "2", tipo: "regula", nota: "La oposición a títulos no judiciales ni arbitrales suspende la ejecución por diligencia del LAJ."}
+      - {norma: "LEC", articulo: "558", apartado: "1", tipo: "regula", nota: "La oposición solo por pluspetición no suspende, salvo que el ejecutado consigne lo que reconoce deber."}
+      - {norma: "LEC", articulo: "561", apartado: "4", tipo: "conexa", nota: "La apelación contra el auto que desestima la oposición no suspende; si la estima, cabe mantener embargos con caución."}
+      - {norma: "LEC", articulo: "563", apartado: "2", tipo: "conexa", nota: "Recurrido un acto contrario al título judicial, se suspende esa concreta actividad si el recurrente presta caución."}
+      - {norma: "LEC", articulo: "585", tipo: "conexa", nota: "La consignación de lo despachado suspende el embargo."}
+      - {norma: "LEC", articulo: "598", apartado: "1", tipo: "conexa", nota: "La admisión de la tercería de dominio suspende la ejecución solo respecto del bien al que se refiere."}
+      - {norma: "LEC", articulo: "640", apartado: "2", tipo: "conexa", nota: "El convenio de realización aprobado suspende la ejecución respecto de los bienes a que se refiere."}
+      - {norma: "LEC", articulo: "666", apartado: "2", tipo: "conexa", nota: "Si las cargas anteriores igualan o superan el valor del inmueble, la ejecución sobre él queda en suspenso."}
+      - {norma: "LEC", articulo: "695", apartado: "2", tipo: "conexa", nota: "Hipotecaria: la oposición por las causas del 695.1 suspende la ejecución hasta la comparecencia."}
+      - {norma: "LEC", articulo: "697", tipo: "conexa", nota: "Hipotecaria: solo se suspende por prejudicialidad penal con causa criminal sobre falsedad del título o ilicitud del despacho."}
+      - {norma: "LEC", articulo: "228", apartado: "2", tipo: "conexa", nota: "El incidente excepcional de nulidad no suspende la ejecución salvo acuerdo expreso para que no pierda su finalidad."}
+    no_consta_en_norma:
+      - "Remisión desfasada: el 568.1 cita los arts. 5 bis y 57.3 de la Ley Concursal de 2003, sustituida por el TRLC de 2020."
+      - "Suspensión del lanzamiento de vivienda por vulnerabilidad en la ejecución de títulos no arrendaticios: casuística y normas temporales."
+      - "Suspensión por solicitud de justicia gratuita durante la ejecución: no la regula la LEC; ley especial."
+    fuera_de_la_herramienta:
+      - "Texto refundido de la Ley Concursal (RDLeg 1/2020): efectos del concurso y de la comunicación de negociaciones sobre las ejecuciones."
+    afines: ["Suspensión del proceso", "Cuestiones prejudiciales (penal, administrativa, civil)", "Oposición a la ejecución por motivos de fondo", "Tercería de dominio", "Impugnación de actos de ejecución contrarios a la ley", "Rescisión de la sentencia firme a instancia del rebelde", "Revisión de sentencias firmes"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Impugnación de actos de ejecución contrarios a la ley"
+    sinonimos: ["infracción de normas en la ejecución", "recurso contra actos de ejecución", "actos ejecutivos ilegales", "escrito denunciando la infracción", "ejecución contraria al título", "exceso en la ejecución", "nulidad en la ejecución", "reposición en la ejecución", "revisión contra decretos de ejecución", "hechos posteriores al título", "impugnación por terceros afectados", "embargo nulo"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "562", apartado: "1", tipo: "regula", nota: "Al margen de la oposición, toda persona del art. 538 puede denunciar la infracción de las normas de un acto ejecutivo concreto."}
+      - {norma: "LEC", articulo: "562", apartado: "1.1.º", tipo: "regula", nota: "Por recurso de reposición si la infracción consta o se comete en resolución del tribunal o del LAJ."}
+      - {norma: "LEC", articulo: "562", apartado: "1.2.º", tipo: "regula", nota: "Por apelación solo en los casos en que la ley la prevé expresamente."}
+      - {norma: "LEC", articulo: "562", apartado: "1.3.º", tipo: "regula", nota: "Sin resolución recurrible: escrito al tribunal que exprese con claridad qué actuación se pide para remediarla."}
+      - {norma: "LEC", articulo: "562", apartado: "2", tipo: "regula", nota: "Si la infracción entraña nulidad, se aplican los arts. 225 y ss.; si se alega ante el LAJ, decide el tribunal."}
+      - {norma: "LEC", articulo: "563", apartado: "1", tipo: "regula", nota: "Actos contrarios al título judicial: reposición y, desestimada, apelación; del LAJ, reposición, revisión y apelación."}
+      - {norma: "LEC", articulo: "563", apartado: "2", tipo: "regula", nota: "Quien recurre puede obtener la suspensión de la concreta actividad impugnada prestando caución."}
+      - {norma: "LEC", articulo: "564", tipo: "regula", nota: "Hechos posteriores relevantes que no son causa de oposición se hacen valer en el proceso que corresponda."}
+      - {norma: "LEC", articulo: "609", tipo: "conexa", nota: "El embargo de bienes inembargables es nulo; se denuncia por recurso o por comparecencia ante el LAJ."}
+      - {norma: "LEC", articulo: "538", apartado: "3", tipo: "conexa", nota: "Los terceros a cuyos bienes se extiende la ejecución pueden usar los medios de defensa del ejecutado."}
+      - {norma: "LEC", articulo: "538", apartado: "4", tipo: "conexa", nota: "El ejecutante que induce a extender la ejecución a personas o bienes no autorizados responde de los daños."}
+      - {norma: "LEC", articulo: "545", apartado: "7", tipo: "conexa", nota: "El tribunal resuelve por providencia cuando la ley lo dice; lo demás, el LAJ por diligencia de ordenación o decreto."}
+      - {norma: "LEC", articulo: "551", apartado: "5", tipo: "conexa", nota: "Contra el decreto del LAJ que concreta las medidas cabe revisión directa, sin efecto suspensivo."}
+      - {norma: "LEC", articulo: "451", apartado: "1", tipo: "conexa", nota: "Reposición ante el LAJ contra diligencias de ordenación y decretos no definitivos, salvo revisión directa."}
+      - {norma: "LEC", articulo: "451", apartado: "2", tipo: "conexa", nota: "Reposición ante el tribunal contra providencias y autos no definitivos."}
+      - {norma: "LEC", articulo: "452", apartado: "1", tipo: "conexa", nota: "La reposición se interpone en cinco días expresando la infracción cometida."}
+      - {norma: "LEC", articulo: "454 bis", apartado: "1", tipo: "conexa", nota: "Revisión contra el decreto que resuelve la reposición y directa contra los que ponen fin o se prevén; sin efecto suspensivo."}
+      - {norma: "LEC", articulo: "454 bis", apartado: "2", tipo: "conexa", nota: "La revisión se interpone en cinco días citando la infracción; el tribunal resuelve por auto."}
+      - {norma: "LEC", articulo: "225", tipo: "conexa", nota: "Nulidad de pleno derecho: falta de jurisdicción o competencia, indefensión, falta de abogado, resolver por forma indebida."}
+      - {norma: "LEC", articulo: "227", apartado: "2", tipo: "conexa", nota: "El tribunal puede declarar la nulidad de oficio o a instancia de parte, con audiencia, antes de la resolución final."}
+      - {norma: "LEC", articulo: "228", apartado: "1", tipo: "conexa", nota: "Incidente excepcional de nulidad: solo por vulneración de derechos fundamentales y sin recurso posible; veinte días."}
+    no_consta_en_norma:
+      - "Plazo del escrito del 562.1.3.º: la ley no lo fija; casuística (preclusión por actos propios)."
+      - "Línea entre oposición (556-559) e impugnación del 562: cauce y preclusión de los motivos, jurisprudencial."
+      - "Recurso contra el auto que resuelve el escrito del 562.1.3.º: la apelación solo cabe si la ley la prevé; criterio restrictivo."
+    afines: ["Oposición por defectos procesales", "Oposición a la ejecución por motivos de fondo", "Nulidad de actuaciones", "Recurso de reposición", "Recurso de revisión contra decretos del LAJ", "Suspensión de la ejecución"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Ejecución frente a herederos y frente al cónyuge"
+    sinonimos: ["sucesión en la ejecución", "ejecución contra los herederos del deudor", "muerte del ejecutado", "heredero ejecutado", "beneficio de inventario en la ejecución", "embargo de bienes gananciales", "cónyuge no deudor", "notificación del embargo al cónyuge", "deudas gananciales", "deudas privativas del cónyuge", "disolución de la sociedad de gananciales por embargo", "bien inscrito a nombre del causante"]
+    normas_base: ["LEC", "CC"]
+    remisiones:
+      - {norma: "LEC", articulo: "540", apartado: "1", tipo: "regula", nota: "La ejecución se despacha o continúa a favor o frente a quien acredite ser sucesor del ejecutante o del ejecutado."}
+      - {norma: "LEC", articulo: "540", apartado: "2", tipo: "regula", nota: "Con documentos fehacientes suficientes se despacha sin más trámite; si ya estaba despachada, se notifica la sucesión."}
+      - {norma: "LEC", articulo: "540", apartado: "3", tipo: "regula", nota: "Sin documentos fehacientes: audiencia de quince días y el tribunal decide solo a efectos de la ejecución."}
+      - {norma: "LEC", articulo: "658", tipo: "regula", nota: "Bien inscrito a nombre de otro: se alza el embargo, salvo que se ejecute al ejecutado como heredero del titular registral."}
+      - {norma: "LEC", articulo: "538", apartado: "2.2.º", tipo: "conexa", nota: "Cabe ejecutar a quien responde por ley o por fianza en documento público, aunque no figure como deudor."}
+      - {norma: "LEC", articulo: "6", apartado: "1.4.º", tipo: "conexa", nota: "Los patrimonios que carecen transitoriamente de titular (herencia yacente) pueden ser parte."}
+      - {norma: "LEC", articulo: "16", apartado: "1", tipo: "conexa", nota: "En el declarativo, los sucesores mortis causa ocupan la posición del litigante fallecido."}
+      - {norma: "CC", articulo: "1003", tipo: "regula", nota: "Aceptación pura y simple: el heredero responde de las cargas de la herencia también con sus bienes propios."}
+      - {norma: "CC", articulo: "1023", tipo: "regula", nota: "Beneficio de inventario: responde solo hasta donde alcancen los bienes heredados y no se confunden patrimonios."}
+      - {norma: "CC", articulo: "1084", tipo: "regula", nota: "Tras la partición: el heredero puro paga por entero; el beneficiario, hasta su porción; puede citar a los coherederos."}
+      - {norma: "CC", articulo: "1082", tipo: "conexa", nota: "Los acreedores reconocidos pueden oponerse a la partición hasta que se les pague o afiance."}
+      - {norma: "CC", articulo: "1257", tipo: "conexa", nota: "Los contratos obligan a las partes y a sus herederos, salvo derechos u obligaciones intransmisibles."}
+      - {norma: "LEC", articulo: "541", apartado: "1", tipo: "regula", nota: "No se despacha ejecución frente a la comunidad de gananciales."}
+      - {norma: "LEC", articulo: "541", apartado: "2", tipo: "regula", nota: "Deuda de la que responde la sociedad: se demanda al deudor; el otro cónyuge puede oponerse y el acreedor prueba la responsabilidad."}
+      - {norma: "LEC", articulo: "541", apartado: "3", tipo: "regula", nota: "Deuda propia sobre bienes comunes: se notifica al no deudor, que puede pedir la disolución; se suspende sobre los comunes."}
+      - {norma: "LEC", articulo: "541", apartado: "4", tipo: "regula", nota: "El cónyuge notificado puede recurrir e impugnar como el ejecutado en defensa de la comunidad."}
+      - {norma: "LEC", articulo: "607", apartado: "3", tipo: "conexa", nota: "Para embargar sueldos se acumulan los de ambos cónyuges, salvo separación de bienes acreditada."}
+      - {norma: "CC", articulo: "1319", tipo: "regula", nota: "Deudas de la potestad doméstica: responden solidariamente los comunes y los del cónyuge deudor; subsidiariamente, los del otro."}
+      - {norma: "CC", articulo: "1365", tipo: "regula", nota: "Los gananciales responden directamente de deudas de un cónyuge en potestad doméstica, gestión de gananciales, profesión o administración."}
+      - {norma: "CC", articulo: "1367", tipo: "regula", nota: "Los gananciales responden siempre de las deudas contraídas por ambos o por uno con consentimiento expreso del otro."}
+      - {norma: "CC", articulo: "1369", tipo: "conexa", nota: "De las deudas de un cónyuge que lo son también de la sociedad responden solidariamente los bienes de esta."}
+      - {norma: "CC", articulo: "1373", tipo: "regula", nota: "Deuda propia: embargo de gananciales notificado al otro cónyuge, que puede pedir sustituirlo por la cuota del deudor (disolución)."}
+      - {norma: "CC", articulo: "1401", tipo: "regula", nota: "Liquidada la sociedad, el acreedor conserva su crédito; el no deudor responde con lo adjudicado si hubo inventario."}
+      - {norma: "CC", articulo: "1440", tipo: "regula", nota: "Separación de bienes: cada cónyuge responde de sus deudas; las domésticas, según los arts. 1319 y 1438."}
+    no_consta_en_norma:
+      - "Ejecución contra herederos desconocidos o herencia yacente: designación de administrador y emplazamiento, casuística."
+      - "Si el cónyuge no deudor puede discutir la ganancialidad de una deuda declarada en sentencia en la que no fue parte: jurisprudencial."
+      - "Plazo y forma para que el heredero haga valer el beneficio de inventario en la ejecución: casuística."
+    fuera_de_la_herramienta:
+      - "Derecho civil valenciano: régimen económico matrimonial de la Ley 10/2007, declarada inconstitucional por la STC 82/2016 (matrimonios del periodo intermedio)."
+    afines: ["Responsabilidad del heredero por deudas y beneficio de inventario", "Deudas y responsabilidad de la sociedad de gananciales", "Sucesión procesal (muerte de la parte y transmisión del objeto litigioso)", "Herencia yacente y comunidades sin personalidad como parte", "Disolución y liquidación de la sociedad de gananciales", "Embargo e inembargabilidad"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Liquidación de intereses y tasación de costas en la ejecución"
+    sinonimos: ["liquidación de intereses", "costas de la ejecución", "tasación de costas en ejecución", "cantidad provisional para intereses y costas", "límite del 30 por ciento", "costas en vivienda habitual", "límite del 5 por ciento", "liquidación final de la deuda", "remanente y liquidación", "costas sin expresa imposición", "impugnación de la liquidación", "intereses durante la ejecución"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "539", apartado: "2", tipo: "regula", nota: "Costas de la ejecución: a cargo del ejecutado sin expresa imposición; el ejecutante las adelanta hasta su liquidación."}
+      - {norma: "LEC", articulo: "575", apartado: "1", tipo: "regula", nota: "Se despacha por principal e intereses vencidos más una cantidad provisional para intereses y costas, de hasta el 30 %."}
+      - {norma: "LEC", articulo: "575", apartado: "1, párrafo 2.º", tipo: "regula", nota: "Excepcionalmente, la cantidad provisional supera el 30 % si se justifica por duración previsible y tipo de interés."}
+      - {norma: "LEC", articulo: "575", apartado: "1 bis", tipo: "regula", nota: "Ejecución de la vivienda habitual: las costas exigibles al deudor no superan el 5 % de lo reclamado."}
+      - {norma: "LEC", articulo: "572", apartado: "1", tipo: "conexa", nota: "No hace falta que sean líquidos los intereses que se devenguen durante la ejecución ni sus costas."}
+      - {norma: "LEC", articulo: "576", apartado: "1", tipo: "conexa", nota: "Desde la sentencia de primera instancia, interés legal más dos puntos, salvo pacto o ley especial."}
+      - {norma: "LEC", articulo: "578", apartado: "2", tipo: "conexa", nota: "Ampliación automática por vencimientos: el ejecutante presenta liquidación final de principal e intereses."}
+      - {norma: "LEC", articulo: "583", apartado: "3", tipo: "conexa", nota: "Satisfechos intereses y costas, el LAJ dicta decreto de terminación."}
+      - {norma: "LEC", articulo: "586", tipo: "regula", nota: "Sin oposición, lo consignado se entrega al ejecutante sin perjuicio de la posterior liquidación de intereses y costas."}
+      - {norma: "LEC", articulo: "654", apartado: "1", tipo: "regula", nota: "El remate se entrega a cuenta; lo que exceda se retiene hasta liquidar lo debido y tasar las costas."}
+      - {norma: "LEC", articulo: "654", apartado: "2", tipo: "conexa", nota: "El remanente va al ejecutado una vez satisfecho el ejecutante y pagadas las costas."}
+      - {norma: "LEC", articulo: "650", apartado: "2", tipo: "conexa", nota: "Si el ejecutante puja por encima del principal, el LAJ liquida principal, intereses y costas antes de adjudicar."}
+      - {norma: "LEC", articulo: "634", apartado: "2", tipo: "conexa", nota: "Cubierto el principal y liquidados intereses y costas, las entregas periódicas pueden acordarse en una sola resolución."}
+      - {norma: "LEC", articulo: "242", apartado: "1", tipo: "regula", nota: "Firme la condena en costas, se exigen por apremio previa tasación si no se pagaron antes."}
+      - {norma: "LEC", articulo: "243", apartado: "1", tipo: "regula", nota: "La tasación la practica, en su caso, el LAJ encargado de la ejecución."}
+      - {norma: "LEC", articulo: "243", apartado: "2", tipo: "regula", nota: "Fuera las partidas inútiles o no detalladas; el LAJ reduce honorarios al límite del 394.3 si no hay temeridad; con IVA."}
+      - {norma: "LEC", articulo: "244", apartado: "1", tipo: "regula", nota: "De la tasación se da traslado a las partes por diez días."}
+      - {norma: "LEC", articulo: "245", apartado: "2", tipo: "regula", nota: "Se impugna por partidas indebidas o por honorarios excesivos de abogados, peritos o profesionales sin arancel."}
+      - {norma: "LEC", articulo: "246", apartado: "1", tipo: "conexa", nota: "Honorarios de abogado tachados de excesivos: se oye al letrado y, si no acepta, informa el Colegio."}
+      - {norma: "LEC", articulo: "241", apartado: "1.7.º", tipo: "conexa", nota: "La tasa judicial de la ejecución hipotecaria de vivienda habitual no se incluye en las costas."}
+      - {norma: "LEC", articulo: "645", apartado: "2", tipo: "conexa", nota: "El gasto de publicar la subasta en el BOE que adelantó el ejecutante entra en la tasación de costas."}
+      - {norma: "LEC", articulo: "628", apartado: "1", tipo: "conexa", nota: "El adelanto de gastos del depósito por el ejecutante se le reintegra en concepto de costas."}
+      - {norma: "LEC", articulo: "561", apartado: "1.1.ª, párrafo 2.º", tipo: "conexa", nota: "El auto que desestima del todo la oposición de fondo impone al ejecutado las costas de esta (art. 394)."}
+      - {norma: "LEC", articulo: "693", apartado: "3, párrafo 4.º", tipo: "conexa", nota: "Liberada la vivienda en la hipotecaria, las costas se calculan sobre las cuotas atrasadas con el tope del 575.1 bis."}
+    no_consta_en_norma:
+      - "Trámite de la liquidación de intereses: la LEC no lo regula; en la práctica se da traslado como en la tasación (242-246), por analogía."
+      - "Si el límite del tercio (394.3, vía 243.2) alcanza a las costas de la ejecución que impone el 539.2: jurisprudencial."
+      - "Interés aplicable durante la ejecución de título no judicial (pactado o del 576): jurisprudencial."
+    afines: ["Tasación de costas y su impugnación", "Intereses de la mora procesal", "Costas: vencimiento, temeridad y allanamiento", "Deuda remanente tras ejecutar la vivienda habitual", "Requerimiento de pago", "Mora del deudor e intereses moratorios"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"

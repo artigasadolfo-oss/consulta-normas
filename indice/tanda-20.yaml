@@ -1,0 +1,537 @@
+# Índice de conceptos de «Consulta de normas» — tanda 20 (prioridad B: voces 228 a 233 y 241 a 246, cierre del bloque 12 y bloque 13)
+# Revisor: armero. Espejo: legalize-es@aca28304d, leído con `git show aca28304d:es/…` (no el árbol de trabajo, que hoy trae erratas).
+# Todo precepto citado se ha leído en el espejo en esta pasada. Vigencia: contraste con la API de boe.es (08-10-2026).
+# Ver tanda-20-notas.md.
+
+voces:
+  - voz: "Compraventa: entrega, precio y riesgos"
+    sinonimos: ["compraventa", "contrato de compraventa", "perfección de la venta", "precio cierto", "entrega de la cosa vendida", "tradición", "escritura pública como entrega", "riesgo de la cosa vendida", "frutos de la cosa vendida", "venta por cabida", "venta a precio alzado", "exceso o defecto de cabida", "doble venta", "pago del precio", "suspensión del pago del precio", "resolución de la venta de inmuebles", "requerimiento resolutorio del 1504", "gastos de escritura", "promesa de venta"]
+    normas_base: ["CC"]
+    remisiones:
+      - {norma: "CC", articulo: "1445", tipo: "regula", nota: "El vendedor se obliga a entregar una cosa determinada y el comprador a pagar un precio cierto en dinero o signo que lo represente."}
+      - {norma: "CC", articulo: "1450", tipo: "regula", nota: "La venta se perfecciona y obliga con el acuerdo en cosa y precio, aunque ninguno se haya entregado."}
+      - {norma: "CC", articulo: "1447", tipo: "conexa", nota: "Precio cierto por referencia a otra cosa cierta o al arbitrio de persona determinada; si esta no lo fija, contrato ineficaz."}
+      - {norma: "CC", articulo: "1449", tipo: "regula", nota: "El señalamiento del precio nunca puede dejarse al arbitrio de uno de los contratantes."}
+      - {norma: "CC", articulo: "1451", tipo: "conexa", nota: "La promesa de vender o comprar con conformidad en cosa y precio permite reclamar el cumplimiento."}
+      - {norma: "CC", articulo: "1446", tipo: "conexa", nota: "Precio mixto: venta o permuta según la intención; si no consta, permuta si la cosa vale más que el dinero."}
+      - {norma: "CC", articulo: "1452", tipo: "regula", nota: "Daño o provecho de la cosa vendida tras la perfección: arts. 1096 y 1182."}
+      - {norma: "CC", articulo: "1452", apartado: "párrafo 3.º", tipo: "conexa", nota: "Fungibles vendidas por peso, número o medida: el riesgo no pasa al comprador hasta pesarlas, contarlas o medirlas."}
+      - {norma: "CC", articulo: "1096", apartado: "párrafo 3.º", tipo: "conexa", nota: "El vendedor moroso, o que vendió lo mismo a varios, carga con el caso fortuito hasta la entrega."}
+      - {norma: "CC", articulo: "1182", tipo: "conexa", nota: "La pérdida de la cosa determinada sin culpa y antes de la mora extingue la obligación de entregarla."}
+      - {norma: "CC", articulo: "1460", tipo: "conexa", nota: "Cosa perdida al tiempo de la venta: sin efecto si es total; si es parcial, desistir o pagar la parte existente."}
+      - {norma: "CC", articulo: "1461", tipo: "regula", nota: "El vendedor está obligado a la entrega y al saneamiento de la cosa vendida."}
+      - {norma: "CC", articulo: "1462", tipo: "regula", nota: "La cosa se entiende entregada cuando se pone en poder y posesión del comprador."}
+      - {norma: "CC", articulo: "1462", apartado: "párrafo 2.º", tipo: "regula", nota: "El otorgamiento de la escritura pública equivale a la entrega, salvo que de ella resulte lo contrario."}
+      - {norma: "CC", articulo: "1463", tipo: "conexa", nota: "Entrega de muebles: llaves del lugar donde se guardan o simple acuerdo si no pueden trasladarse o ya los tenía."}
+      - {norma: "CC", articulo: "1466", tipo: "regula", nota: "El vendedor no está obligado a entregar si no se le ha pagado el precio y no hay plazo para el pago."}
+      - {norma: "CC", articulo: "1467", tipo: "conexa", nota: "Ni aun con precio aplazado, si el comprador resulta insolvente y peligra el precio, salvo que afiance el pago."}
+      - {norma: "CC", articulo: "1468", tipo: "regula", nota: "Se entrega en el estado del día de la perfección; desde ese día los frutos son del comprador."}
+      - {norma: "CC", articulo: "1469", tipo: "regula", nota: "Venta por unidad de medida con menor cabida: rebaja proporcional, o rescisión si falta más de la décima parte."}
+      - {norma: "CC", articulo: "1470", tipo: "conexa", nota: "Mayor cabida: paga el exceso hasta la vigésima parte; si la supera, pagar el mayor valor o desistir."}
+      - {norma: "CC", articulo: "1471", tipo: "regula", nota: "Venta a precio alzado: no hay aumento ni rebaja del precio aunque la cabida sea mayor o menor."}
+      - {norma: "CC", articulo: "1472", tipo: "regula", nota: "Las acciones de los arts. 1469 a 1471 prescriben a los seis meses desde la entrega."}
+      - {norma: "CC", articulo: "1473", tipo: "regula", nota: "Doble venta de inmueble: prefiere quien antes inscribe; sin inscripción, el primer poseedor de buena fe; si no, el título más antiguo."}
+      - {norma: "CC", articulo: "1455", tipo: "regula", nota: "Salvo pacto, el otorgamiento de la escritura lo paga el vendedor; la primera copia y lo posterior, el comprador."}
+      - {norma: "CC", articulo: "1465", tipo: "conexa", nota: "Salvo pacto, los gastos de entrega son del vendedor y los de transporte, del comprador."}
+      - {norma: "CC", articulo: "1500", tipo: "regula", nota: "El precio se paga en el tiempo y lugar pactados; si no, en los de la entrega de la cosa."}
+      - {norma: "CC", articulo: "1501", tipo: "regula", nota: "Intereses entre entrega y pago: si se pactaron, si la cosa da frutos o rentas o si el comprador está en mora."}
+      - {norma: "CC", articulo: "1502", tipo: "regula", nota: "El comprador perturbado o con temor fundado de reivindicación puede suspender el pago, salvo fianza o pacto."}
+      - {norma: "CC", articulo: "1503", tipo: "conexa", nota: "Con motivo fundado para temer perder la cosa inmueble y el precio, el vendedor pide ya la resolución; si no, art. 1124."}
+      - {norma: "CC", articulo: "1504", tipo: "regula", nota: "Inmuebles: aun pactada la resolución automática, el comprador paga hasta ser requerido judicialmente o por notario."}
+      - {norma: "CC", articulo: "1505", tipo: "conexa", nota: "Muebles: resolución de pleno derecho si el comprador no se presenta a recibir u ofrecer el precio en el término."}
+      - {norma: "CC", articulo: "1124", tipo: "conexa", nota: "Facultad resolutoria implícita en las obligaciones recíprocas por incumplimiento de una parte."}
+      - {norma: "CC", articulo: "1506", tipo: "conexa", nota: "La venta se resuelve por las causas generales, las de este título y el retracto convencional o legal."}
+      - {norma: "CC", articulo: "1454", tipo: "conexa", nota: "Con arras o señal, cabe desistir perdiéndolas el comprador o devolviéndolas dobladas el vendedor."}
+      - {norma: "CC", articulo: "1459", tipo: "conexa", nota: "Prohibiciones de compra: tutores, mandatarios, albaceas, jueces y, sobre bienes litigiosos, abogados y procuradores."}
+    # VIGENCIA: CC 1459.1.º trae en el espejo la errata «tutoro» (boe.es: «tutor o»); contraste_boe.py no la ve porque compara sin espacios. Sin cambio de fondo.
+    no_consta_en_norma:
+      - "El requerimiento del 1504 no es intimación a pagar sino declaración de voluntad resolutoria: jurisprudencial."
+      - "Aplicación del 1504 al documento privado y a la compraventa con precio aplazado: jurisprudencial."
+      - "Incumplimiento esencial y entrega de cosa diversa (aliud pro alio) frente a vicios ocultos: jurisprudencial."
+      - "Riesgo en la venta: si se transmite con la perfección o con la entrega es discutido; doctrinal y jurisprudencial."
+    afines: ["Incumplimiento y facultad resolutoria (art. 1124)", "Arras y señal", "Saneamiento por vicios ocultos", "Saneamiento por evicción", "Forma del contrato y elevación a escritura pública", "Garantía de conformidad de los bienes", "Cantidades anticipadas en la compra sobre plano", "Retracto convencional"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Retracto legal de comuneros y colindantes"
+    sinonimos: ["retracto legal", "retracto de comuneros", "retracto de condueños", "retracto de colindantes", "retracto de coherederos", "subrogación en la compra", "plazo de nueve días del retracto", "consignación del precio en el retracto", "demanda de retracto", "venta de cuota indivisa a un extraño", "finca rústica de menos de una hectárea", "retracto en propiedad horizontal"]
+    normas_base: ["CC", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "1521", tipo: "regula", nota: "Retracto legal: subrogarse, con las mismas condiciones, en lugar de quien adquiere por compra o dación en pago."}
+      - {norma: "CC", articulo: "1522", tipo: "regula", nota: "El copropietario puede retraer si se enajena a un extraño la parte de todos los demás condueños o de alguno."}
+      - {norma: "CC", articulo: "1522", apartado: "párrafo 2.º", tipo: "regula", nota: "Si retraen varios copropietarios, solo a prorrata de su porción en la cosa común."}
+      - {norma: "CC", articulo: "1523", tipo: "regula", nota: "Retracto de colindantes: venta de finca rústica cuya cabida no exceda de una hectárea."}
+      - {norma: "CC", articulo: "1523", apartado: "párrafo 2.º", tipo: "regula", nota: "No cabe entre fincas separadas por arroyos, acequias, barrancos, caminos u otras servidumbres aparentes."}
+      - {norma: "CC", articulo: "1523", apartado: "párrafo 3.º", tipo: "conexa", nota: "Varios colindantes: prefiere el de finca de menor cabida; con igual cabida, el primero que lo solicite."}
+      - {norma: "CC", articulo: "1524", tipo: "regula", nota: "Plazo de nueve días desde la inscripción en el Registro o, en su defecto, desde que el retrayente conoció la venta."}
+      - {norma: "CC", articulo: "1524", apartado: "párrafo 2.º", tipo: "regula", nota: "El retracto de comuneros excluye el de colindantes."}
+      - {norma: "CC", articulo: "1525", tipo: "regula", nota: "Al retracto legal se aplican los arts. 1511 y 1518."}
+      - {norma: "CC", articulo: "1518", tipo: "regula", nota: "El retrayente reembolsa el precio, los gastos del contrato y pagos legítimos, y los gastos necesarios y útiles."}
+      - {norma: "CC", articulo: "1511", tipo: "conexa", nota: "Aplicable por el 1525: quien retrae sustituye al comprador en todos sus derechos y acciones."}
+      - {norma: "CC", articulo: "1067", tipo: "regula", nota: "Venta a un extraño del derecho hereditario antes de partir: los coherederos se subrogan en un mes desde que lo saben."}
+      - {norma: "CC", articulo: "396", apartado: "párrafo 3.º", tipo: "regula", nota: "En propiedad horizontal, los dueños de los demás pisos o locales no tienen, por ese solo título, tanteo ni retracto."}
+      - {norma: "CC", articulo: "1506", tipo: "conexa", nota: "La venta se resuelve también por el retracto convencional o por el legal."}
+      - {norma: "LEC", articulo: "249", apartado: "1.7.º", tipo: "regula", nota: "La acción de retracto de cualquier tipo se tramita por el juicio ordinario, sea cual sea la cuantía."}
+      - {norma: "LEC", articulo: "266", apartado: "2.º", tipo: "regula", nota: "Con la demanda, principio de prueba del título y, si la ley o el contrato la exigen, consignación del precio o caución."}
+    # VIGENCIA: CC 396 difiere entre el espejo y boe.es solo por una errata del espejo en el párrafo 1.º («los elemento de cierre»); el párrafo 3.º citado es idéntico en ambos textos.
+    no_consta_en_norma:
+      - "Caducidad del plazo de nueve días y exigencia de conocimiento completo de la venta (precio y condiciones): jurisprudencial."
+      - "Carácter rústico de la finca del 1523 según su destino y no su clasificación urbanística: jurisprudencial."
+      - "Si la consignación del precio es requisito de admisión o basta la caución del 266 LEC: casuística."
+      - "Retracto de comuneros en ventas de la cuota en subasta judicial o de la totalidad de la cosa: jurisprudencial."
+    afines: ["Copropiedad y acción de división de cosa común", "Derechos de tanteo y retracto del arrendatario", "Retracto convencional", "Cesión de créditos y retracto de crédito litigioso", "Partición de la herencia y su impugnación", "Caducidad de la acción (como excepción)", "Compraventa: entrega, precio y riesgos"]
+    estado: "provisional"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Préstamo e intereses"
+    sinonimos: ["préstamo", "mutuo", "préstamo de dinero", "préstamo entre particulares", "comodato", "intereses remuneratorios", "intereses moratorios", "pacto de intereses", "interés legal del dinero", "anatocismo", "intereses de los intereses", "préstamo usurario", "usura", "devolución del préstamo", "préstamo sin plazo", "interés de demora en préstamo hipotecario"]
+    normas_base: ["CC", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "1740", tipo: "regula", nota: "Préstamo: comodato si es cosa no fungible para usarla y devolverla; simple préstamo si es dinero o fungible."}
+      - {norma: "CC", articulo: "1740", apartado: "párrafo 3.º", tipo: "regula", nota: "El simple préstamo puede ser gratuito o con pacto de pagar interés."}
+      - {norma: "CC", articulo: "1753", tipo: "regula", nota: "El prestatario adquiere la propiedad del dinero o fungible y devuelve otro tanto de la misma especie y calidad."}
+      - {norma: "CC", articulo: "1754", tipo: "regula", nota: "La deuda de dinero prestado se rige por el art. 1170; si es fungible, cantidad igual aunque cambie su precio."}
+      - {norma: "CC", articulo: "1755", tipo: "regula", nota: "No se deben intereses sino cuando expresamente se hubiesen pactado."}
+      - {norma: "CC", articulo: "1756", tipo: "regula", nota: "El prestatario que pagó intereses no pactados no puede reclamarlos ni imputarlos al capital."}
+      - {norma: "CC", articulo: "1108", tipo: "regula", nota: "Mora en deuda de dinero: salvo pacto, se indemniza con los intereses convenidos y, a falta de ellos, el interés legal."}
+      - {norma: "CC", articulo: "1109", tipo: "regula", nota: "Los intereses vencidos devengan el interés legal desde que se reclaman judicialmente."}
+      - {norma: "CC", articulo: "1109", apartado: "párrafo 2.º", tipo: "conexa", nota: "En los negocios comerciales se está a lo que dispone el Código de Comercio."}
+      - {norma: "CC", articulo: "1100", tipo: "conexa", nota: "Mora desde la reclamación judicial o extrajudicial, salvo que la ley o la obligación la excusen."}
+      - {norma: "CC", articulo: "1110", tipo: "conexa", nota: "El recibo del capital sin reserva extingue la obligación del deudor en cuanto a los intereses."}
+      - {norma: "CC", articulo: "1173", tipo: "conexa", nota: "Si la deuda produce interés, no se imputa a capital mientras no estén cubiertos los intereses."}
+      - {norma: "CC", articulo: "1128", tipo: "conexa", nota: "Si no se fijó plazo de devolución y se quiso conceder, o quedó a voluntad del deudor, lo fijan los tribunales."}
+      - {norma: "CC", articulo: "1127", tipo: "conexa", nota: "El plazo se presume en beneficio de acreedor y deudor, salvo que resulte puesto a favor de uno."}
+      - {norma: "CC", articulo: "1966", apartado: "3.ª", tipo: "conexa", nota: "Prescriben a los cinco años los pagos que deben hacerse por años o en plazos más breves."}
+      - {norma: "CC", articulo: "1964", apartado: "2", tipo: "conexa", nota: "La acción personal sin plazo especial prescribe a los cinco años desde que puede exigirse el cumplimiento."}
+      - {norma: "CC", articulo: "1741", tipo: "conexa", nota: "El comodatario adquiere el uso, no los frutos; si paga algún emolumento, ya no es comodato."}
+      - {norma: "CC", articulo: "1749", tipo: "conexa", nota: "El comodante reclama la cosa al acabar el uso pactado, o antes si tiene urgente necesidad de ella."}
+      - {norma: "CC", articulo: "1750", tipo: "conexa", nota: "Sin duración ni uso determinados, el comodante la reclama a su voluntad; en la duda, prueba el comodatario."}
+      - {norma: "LEC", articulo: "572", apartado: "2", tipo: "conexa", nota: "Ejecución por el saldo de operaciones en escritura o póliza si se pactó y se notificó la liquidación al deudor y al fiador."}
+    no_consta_en_norma:
+      - "Carácter real del préstamo (se perfecciona con la entrega del dinero): doctrinal y jurisprudencial."
+      - "Interés notablemente superior al normal del dinero (tarjetas revolving y similares): jurisprudencial sobre la Ley de Usura."
+      - "Abusividad y transparencia de los intereses remuneratorios y moratorios con consumidores: jurisprudencial (TJUE y TS)."
+      - "Prueba de la entrega del dinero y del préstamo entre familiares frente a la donación: casuística."
+    fuera_de_la_herramienta:
+      - "Ley de 23 de julio de 1908 (usura), arts. 1 y 3: nulidad del préstamo usurario; el prestatario solo devuelve la suma recibida."
+      - "Ley 5/2019, art. 25: en préstamo hipotecario residencial de persona física, demora = remuneratorio más tres puntos; sin pacto en contrario."
+    afines: ["Mora del deudor e intereses moratorios", "Intereses de la mora procesal", "Obligaciones condicionales, a plazo y vencimiento anticipado", "Cláusulas abusivas: concepto, nulidad e integración", "Pago: prueba, imputación y pago por tercero", "Desahucio por precario", "Fianza", "Ejecución hipotecaria: especialidades"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Fianza"
+    sinonimos: ["fianza", "fiador", "aval", "avalista", "afianzamiento", "fianza solidaria", "fiador solidario", "beneficio de excusión", "beneficio de división", "cofiadores", "subfiador", "reembolso del fiador", "subrogación del fiador", "prórroga concedida sin consentimiento del fiador", "extinción de la fianza", "fiador en el desahucio", "ejecución contra el fiador"]
+    normas_base: ["CC", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "1822", tipo: "regula", nota: "Por la fianza uno se obliga a pagar o cumplir por un tercero si este no lo hace."}
+      - {norma: "CC", articulo: "1822", apartado: "párrafo 2.º", tipo: "regula", nota: "Si el fiador se obliga solidariamente con el deudor, rigen las normas de las obligaciones solidarias."}
+      - {norma: "CC", articulo: "1823", tipo: "conexa", nota: "Fianza convencional, legal o judicial, gratuita u onerosa; cabe aun ignorándolo o contradiciéndolo el deudor."}
+      - {norma: "CC", articulo: "1824", tipo: "regula", nota: "No hay fianza sin obligación válida, salvo la anulable por excepción puramente personal del obligado."}
+      - {norma: "CC", articulo: "1825", tipo: "regula", nota: "Cabe afianzar deudas futuras, pero no se reclama al fiador hasta que la deuda sea líquida."}
+      - {norma: "CC", articulo: "1826", tipo: "regula", nota: "El fiador puede obligarse a menos, no a más que el deudor; si se obligó a más, se reduce."}
+      - {norma: "CC", articulo: "1827", tipo: "regula", nota: "La fianza no se presume: debe ser expresa y no se extiende a más de lo contenido en ella."}
+      - {norma: "CC", articulo: "1827", apartado: "párrafo 2.º", tipo: "regula", nota: "La indefinida cubre accesorios y costas, pero estas solo desde que se requirió de pago al fiador."}
+      - {norma: "CC", articulo: "1828", tipo: "conexa", nota: "El fiador debe tener capacidad y bienes suficientes; queda sometido al juez del lugar de cumplimiento."}
+      - {norma: "CC", articulo: "1829", tipo: "conexa", nota: "Si el fiador cae en insolvencia, el acreedor puede pedir otro, salvo que eligiera al fiador concreto."}
+      - {norma: "CC", articulo: "1830", tipo: "regula", nota: "El fiador no paga sin que antes se haga excusión de todos los bienes del deudor."}
+      - {norma: "CC", articulo: "1831", apartado: "1.º", tipo: "regula", nota: "No hay excusión si el fiador renunció expresamente a ella."}
+      - {norma: "CC", articulo: "1831", apartado: "2.º", tipo: "regula", nota: "Ni si se obligó solidariamente con el deudor."}
+      - {norma: "CC", articulo: "1831", apartado: "3.º", tipo: "conexa", nota: "Ni en caso de quiebra o concurso del deudor."}
+      - {norma: "CC", articulo: "1832", tipo: "regula", nota: "La excusión se opone al ser requerido de pago, señalando bienes del deudor realizables en España y suficientes."}
+      - {norma: "CC", articulo: "1833", tipo: "conexa", nota: "El acreedor negligente en la excusión de los bienes señalados responde de la insolvencia que de ello resulte."}
+      - {norma: "CC", articulo: "1834", tipo: "regula", nota: "Puede demandarse a la vez a deudor y fiador; el beneficio de excusión queda a salvo aunque se condene a ambos."}
+      - {norma: "CC", articulo: "1835", tipo: "conexa", nota: "La transacción del fiador con el acreedor no afecta al deudor, ni la del deudor al fiador contra su voluntad."}
+      - {norma: "CC", articulo: "1837", tipo: "regula", nota: "Varios fiadores: la deuda se divide y a cada uno solo se le reclama su parte, salvo solidaridad pactada."}
+      - {norma: "CC", articulo: "1838", tipo: "regula", nota: "El fiador que paga es indemnizado: deuda, intereses legales desde que avisa del pago, gastos y daños."}
+      - {norma: "CC", articulo: "1839", tipo: "regula", nota: "El fiador que paga se subroga en los derechos del acreedor; si transigió, solo pide lo realmente pagado."}
+      - {norma: "CC", articulo: "1840", tipo: "conexa", nota: "Si paga sin avisar al deudor, este le opone las excepciones que tenía frente al acreedor."}
+      - {norma: "CC", articulo: "1841", tipo: "conexa", nota: "Si paga antes del vencimiento, no reclama al deudor hasta que venza el plazo."}
+      - {norma: "CC", articulo: "1843", tipo: "regula", nota: "Antes de pagar, el fiador demandado o ante insolvencia o vencimiento puede pedir relevación o garantía al deudor."}
+      - {norma: "CC", articulo: "1844", tipo: "regula", nota: "El cofiador que paga reclama a los otros su parte, si pagó por demanda judicial o en concurso del deudor."}
+      - {norma: "CC", articulo: "1847", tipo: "regula", nota: "La obligación del fiador se extingue con la del deudor y por las mismas causas que las demás obligaciones."}
+      - {norma: "CC", articulo: "1849", tipo: "conexa", nota: "Si el acreedor acepta en pago un inmueble u otros efectos, queda libre el fiador aunque luego los pierda por evicción."}
+      - {norma: "CC", articulo: "1851", tipo: "regula", nota: "La prórroga concedida al deudor sin consentimiento del fiador extingue la fianza."}
+      - {norma: "CC", articulo: "1852", tipo: "regula", nota: "Los fiadores, aun solidarios, quedan libres si por hecho del acreedor no pueden subrogarse en sus derechos."}
+      - {norma: "CC", articulo: "1853", tipo: "regula", nota: "El fiador opone las excepciones inherentes a la deuda, no las puramente personales del deudor."}
+      - {norma: "CC", articulo: "1856", tipo: "conexa", nota: "El fiador judicial no puede pedir la excusión de los bienes del deudor principal."}
+      - {norma: "CC", articulo: "1144", tipo: "conexa", nota: "El acreedor puede dirigirse contra cualquiera de los deudores solidarios o contra todos a la vez."}
+      - {norma: "LEC", articulo: "538", apartado: "2.2.º", tipo: "regula", nota: "Cabe despachar ejecución contra quien responde por afianzamiento acreditado en documento público."}
+      - {norma: "LEC", articulo: "437", apartado: "4.3.ª", tipo: "regula", nota: "En el desahucio pueden acumularse las acciones contra el fiador o avalista solidario previo requerimiento de pago."}
+      - {norma: "LEC", articulo: "447", apartado: "2, párrafo 2.º", tipo: "conexa", nota: "Lo resuelto sobre rentas y sobre el fiador acumulados al desahucio tiene efecto de cosa juzgada."}
+      - {norma: "LEC", articulo: "572", apartado: "2, párrafo 2.º", tipo: "conexa", nota: "Ejecución por saldo: hay que acreditar la notificación previa de la cantidad exigible al ejecutado y al fiador."}
+    no_consta_en_norma:
+      - "Aval a primer requerimiento (garantía autónoma): no regulado en el CC; jurisprudencial."
+      - "Fianza general u ómnibus por deudas futuras indeterminadas: validez y límites jurisprudenciales."
+      - "Distinción entre prórroga extintiva (1851) y mera tolerancia del acreedor: jurisprudencial."
+      - "Fianza del arrendamiento firmada por tiempo del contrato: si cubre las prórrogas legales; casuística."
+    afines: ["Solidaridad y mancomunidad", "Fianza y garantías adicionales", "Desahucio por falta de pago", "Títulos ejecutivos", "Préstamo e intereses", "Pago: prueba, imputación y pago por tercero", "Acumulación de acciones"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Mandato y rendición de cuentas"
+    sinonimos: ["mandato", "mandatario", "mandante", "poder", "apoderado", "representación voluntaria", "mandato general", "mandato especial", "mandato expreso para actos de dominio", "exceso en el mandato", "ratificación", "rendición de cuentas", "acción de rendición de cuentas", "revocación del poder", "renuncia del mandatario", "mandato en nombre propio", "poder preventivo", "retribución del mandatario", "sustitución del mandatario"]
+    normas_base: ["CC"]
+    remisiones:
+      - {norma: "CC", articulo: "1709", tipo: "regula", nota: "Por el mandato una persona se obliga a prestar un servicio o hacer algo por cuenta o encargo de otra."}
+      - {norma: "CC", articulo: "1710", tipo: "regula", nota: "Mandato expreso o tácito; el expreso, en documento público, privado o de palabra; aceptación también tácita."}
+      - {norma: "CC", articulo: "1711", tipo: "regula", nota: "Salvo pacto se presume gratuito; retribuido si el mandatario se dedica a servicios de esa especie."}
+      - {norma: "CC", articulo: "1712", tipo: "conexa", nota: "El mandato general comprende todos los negocios del mandante; el especial, uno o más determinados."}
+      - {norma: "CC", articulo: "1713", tipo: "regula", nota: "El mandato en términos generales solo comprende actos de administración."}
+      - {norma: "CC", articulo: "1713", apartado: "párrafo 2.º", tipo: "regula", nota: "Para transigir, enajenar, hipotecar u otro acto de riguroso dominio se necesita mandato expreso."}
+      - {norma: "CC", articulo: "1713", apartado: "párrafo 3.º", tipo: "conexa", nota: "La facultad de transigir no autoriza a someter el asunto a árbitros."}
+      - {norma: "CC", articulo: "1714", tipo: "regula", nota: "El mandatario no puede traspasar los límites del mandato."}
+      - {norma: "CC", articulo: "1715", tipo: "conexa", nota: "No hay exceso si se cumple de modo más ventajoso para el mandante que el señalado."}
+      - {norma: "CC", articulo: "1717", tipo: "regula", nota: "Si el mandatario obra en nombre propio, queda obligado directamente con el tercero, salvo cosas propias del mandante."}
+      - {norma: "CC", articulo: "1718", tipo: "regula", nota: "Aceptado, debe cumplirlo y responde de los daños por no ejecutarlo; acaba lo urgente aunque muera el mandante."}
+      - {norma: "CC", articulo: "1719", tipo: "regula", nota: "Se ajusta a las instrucciones del mandante; a falta de ellas, actúa como un buen padre de familia."}
+      - {norma: "CC", articulo: "1720", tipo: "regula", nota: "El mandatario debe dar cuenta de sus operaciones y abonar al mandante todo lo recibido por el mandato."}
+      - {norma: "CC", articulo: "1724", tipo: "regula", nota: "Debe intereses de lo aplicado a usos propios desde ese día, y de lo que deba al acabar, desde la mora."}
+      - {norma: "CC", articulo: "1726", tipo: "regula", nota: "Responde del dolo y de la culpa, apreciada con más o menos rigor según el mandato sea o no retribuido."}
+      - {norma: "CC", articulo: "1721", tipo: "regula", nota: "Puede nombrar sustituto si no se le prohibió; responde de él si no tenía facultad o eligió a un incapaz o insolvente."}
+      - {norma: "CC", articulo: "1722", tipo: "conexa", nota: "En esos casos el mandante puede dirigirse también contra el sustituto."}
+      - {norma: "CC", articulo: "1723", tipo: "conexa", nota: "Varios mandatarios no responden solidariamente si no se expresó así."}
+      - {norma: "CC", articulo: "1725", tipo: "regula", nota: "El mandatario no responde ante el tercero salvo que se obligue o se exceda sin darle conocimiento de sus poderes."}
+      - {norma: "CC", articulo: "1727", tipo: "regula", nota: "El mandante cumple lo contraído dentro del mandato; en el exceso, solo si lo ratifica expresa o tácitamente."}
+      - {norma: "CC", articulo: "1728", tipo: "regula", nota: "El mandante anticipa o reembolsa, con intereses, lo necesario para ejecutar el mandato, salvo culpa del mandatario."}
+      - {norma: "CC", articulo: "1729", tipo: "conexa", nota: "Y le indemniza los daños que le cause el cumplimiento del mandato sin culpa suya."}
+      - {norma: "CC", articulo: "1730", tipo: "conexa", nota: "El mandatario puede retener en prenda las cosas objeto del mandato hasta ser reembolsado e indemnizado."}
+      - {norma: "CC", articulo: "1731", tipo: "conexa", nota: "Varios mandantes para un negocio común quedan obligados solidariamente con el mandatario."}
+      - {norma: "CC", articulo: "1732", tipo: "regula", nota: "Se acaba por revocación, renuncia, muerte o concurso de cualquiera y por ciertas medidas de apoyo."}
+      - {norma: "CC", articulo: "1733", tipo: "regula", nota: "El mandante revoca a su voluntad y puede exigir la devolución del documento del mandato."}
+      - {norma: "CC", articulo: "1734", tipo: "conexa", nota: "La revocación del mandato para contratar con personas determinadas no les perjudica si no se les comunicó."}
+      - {norma: "CC", articulo: "1735", tipo: "conexa", nota: "Nombrar nuevo mandatario para el mismo negocio revoca el anterior desde que se le hace saber."}
+      - {norma: "CC", articulo: "1736", tipo: "regula", nota: "El mandatario renuncia comunicándolo; indemniza los perjuicios salvo grave detrimento suyo en continuar."}
+      - {norma: "CC", articulo: "1737", tipo: "conexa", nota: "Aun con justa causa, sigue gestionando hasta que el mandante pueda proveer."}
+      - {norma: "CC", articulo: "1738", tipo: "regula", nota: "Lo hecho ignorando la muerte del mandante u otra causa de cese vale frente a terceros de buena fe."}
+      - {norma: "CC", articulo: "1739", tipo: "conexa", nota: "Muerto el mandatario, sus herederos avisan al mandante y proveen entretanto en su interés."}
+      - {norma: "CC", articulo: "1259", apartado: "párrafo 2.º", tipo: "conexa", nota: "El contrato en nombre de otro sin poder es nulo salvo ratificación antes de que lo revoque la otra parte."}
+      - {norma: "CC", articulo: "1892", tipo: "conexa", nota: "La ratificación de la gestión por el dueño del negocio produce los efectos del mandato expreso."}
+      - {norma: "CC", articulo: "1280", apartado: "5.º", tipo: "conexa", nota: "Constarán en documento público los poderes para pleitos, para administrar bienes y los relativos a escrituras."}
+      - {norma: "CC", articulo: "1459", apartado: "2.º", tipo: "conexa", nota: "El mandatario no puede comprar los bienes de cuya administración o enajenación está encargado."}
+      - {norma: "CC", articulo: "256", tipo: "conexa", nota: "Poder con cláusula de subsistencia para el caso de que el poderdante precise apoyo en el futuro."}
+      - {norma: "CC", articulo: "257", tipo: "conexa", nota: "Poder otorgado solo para cuando el poderdante precise apoyo; la necesidad se acredita según sus previsiones."}
+      - {norma: "CC", articulo: "260", tipo: "conexa", nota: "Los poderes preventivos se otorgan en escritura pública y el notario los comunica al Registro Civil."}
+      - {norma: "CC", articulo: "1964", apartado: "2", tipo: "conexa", nota: "La acción personal sin plazo especial prescribe a los cinco años desde que puede exigirse el cumplimiento."}
+    # VIGENCIA: CC 1459 (citado su 2.º, idéntico en ambos textos): el 1.º trae en el espejo la errata «tutoro»; contraste_boe.py no la ve. Sin cambio de fondo.
+    no_consta_en_norma:
+      - "Distinción entre mandato y poder de representación, y mandato sin representación: doctrinal y jurisprudencial."
+      - "Día inicial de la prescripción de la acción de rendición de cuentas (fin del mandato): jurisprudencial."
+      - "Mediación o corretaje inmobiliario y derecho a la comisión de la agencia: contrato atípico; jurisprudencial."
+      - "Autocontratación y conflicto de intereses del apoderado: jurisprudencial (y doctrina de la DGSJFP)."
+    afines: ["Gestión de negocios ajenos", "Requisitos del contrato y autonomía de la voluntad", "Postulación (abogado y procurador)", "Cuenta del procurador y jura de cuentas del abogado", "Liquidación de daños, frutos y rendición de cuentas", "Medidas judiciales de apoyo a personas con discapacidad", "Albacea y contador-partidor"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Donación y su revocación"
+    sinonimos: ["donación", "donante", "donatario", "aceptación de la donación", "donación de inmueble", "donación de dinero", "donación remuneratoria", "donación onerosa", "donación con carga", "donación mortis causa", "revocación de la donación", "ingratitud del donatario", "negativa de alimentos al donante", "incumplimiento de cargas", "superveniencia de hijos", "reserva de lo necesario para vivir", "donación inoficiosa", "reversión"]
+    normas_base: ["CC"]
+    remisiones:
+      - {norma: "CC", articulo: "618", tipo: "regula", nota: "Donación: acto de liberalidad por el que alguien dispone gratuitamente de una cosa a favor de otro que la acepta."}
+      - {norma: "CC", articulo: "619", tipo: "conexa", nota: "Es donación la remuneratoria por méritos o servicios no exigibles y la que impone un gravamen inferior a lo donado."}
+      - {norma: "CC", articulo: "620", tipo: "regula", nota: "La donación para después de la muerte se rige por las reglas de la sucesión testamentaria."}
+      - {norma: "CC", articulo: "621", tipo: "conexa", nota: "La donación entre vivos se rige, en lo no previsto, por las reglas generales de contratos y obligaciones."}
+      - {norma: "CC", articulo: "622", tipo: "conexa", nota: "La onerosa, por las reglas de los contratos; la remuneratoria, por las de donación en lo que exceda del gravamen."}
+      - {norma: "CC", articulo: "623", tipo: "regula", nota: "Se perfecciona desde que el donante conoce la aceptación del donatario."}
+      - {norma: "CC", articulo: "629", tipo: "conexa", nota: "No obliga al donante ni produce efecto sino desde la aceptación."}
+      - {norma: "CC", articulo: "630", tipo: "conexa", nota: "El donatario acepta, so pena de nulidad, por sí o con poder especial o general y bastante."}
+      - {norma: "CC", articulo: "628", tipo: "conexa", nota: "Son nulas las donaciones a personas inhábiles, aunque se simulen bajo otro contrato o por persona interpuesta."}
+      - {norma: "CC", articulo: "632", tipo: "regula", nota: "Donación de mueble: verbal con entrega simultánea; si no, por escrito y con aceptación escrita."}
+      - {norma: "CC", articulo: "633", tipo: "regula", nota: "La de inmueble solo vale en escritura pública que exprese los bienes y el valor de las cargas."}
+      - {norma: "CC", articulo: "633", apartado: "párrafo 2.º", tipo: "regula", nota: "La aceptación, en la misma escritura o en otra, pero en vida del donante."}
+      - {norma: "CC", articulo: "633", apartado: "párrafo 3.º", tipo: "conexa", nota: "Aceptada en escritura separada, se notifica en forma auténtica al donante y se anota en ambas."}
+      - {norma: "CC", articulo: "634", tipo: "regula", nota: "Cabe donar todos los bienes presentes si el donante se reserva lo necesario para vivir según sus circunstancias."}
+      - {norma: "CC", articulo: "635", tipo: "conexa", nota: "No pueden donarse bienes futuros: aquellos de que el donante no puede disponer al donar."}
+      - {norma: "CC", articulo: "636", tipo: "regula", nota: "Nadie da ni recibe por donación más de lo que puede por testamento; el exceso es inoficioso."}
+      - {norma: "CC", articulo: "638", tipo: "conexa", nota: "El donante no responde de la evicción salvo en la onerosa, hasta el gravamen; el donatario se subroga en sus acciones."}
+      - {norma: "CC", articulo: "639", tipo: "conexa", nota: "El donante puede reservarse disponer de algunos bienes; si muere sin usarla, son del donatario."}
+      - {norma: "CC", articulo: "641", tipo: "conexa", nota: "Cabe pactar la reversión a favor del donante en cualquier caso; a favor de terceros, solo como en las sustituciones."}
+      - {norma: "CC", articulo: "643", tipo: "regula", nota: "Sin pacto, el donatario solo responde de las deudas del donante si la donación fue en fraude de acreedores."}
+      - {norma: "CC", articulo: "643", apartado: "párrafo 2.º", tipo: "regula", nota: "Se presume en fraude si el donante no se reservó bienes bastantes para pagar las deudas anteriores."}
+      - {norma: "CC", articulo: "1297", tipo: "conexa", nota: "Se presumen en fraude de acreedores las enajenaciones a título gratuito."}
+      - {norma: "CC", articulo: "644", tipo: "regula", nota: "Quien dona sin hijos ni descendientes puede revocar si luego los tiene o vive el hijo que creía muerto."}
+      - {norma: "CC", articulo: "645", tipo: "conexa", nota: "Revocada por superveniencia de hijos, se restituyen los bienes o su valor si se vendieron."}
+      - {norma: "CC", articulo: "646", tipo: "regula", nota: "Esa acción prescribe a los cinco años desde la noticia del nacimiento o de la existencia del hijo; irrenunciable."}
+      - {norma: "CC", articulo: "647", tipo: "regula", nota: "Se revoca a instancia del donante si el donatario incumple alguna de las condiciones impuestas."}
+      - {norma: "CC", articulo: "647", apartado: "párrafo 2.º", tipo: "conexa", nota: "Los bienes vuelven y caen las enajenaciones e hipotecas del donatario, salvo terceros protegidos por la Ley Hipotecaria."}
+      - {norma: "CC", articulo: "648", tipo: "regula", nota: "Revocación por ingratitud a instancia del donante en los casos tasados del artículo."}
+      - {norma: "CC", articulo: "648", apartado: "1.º", tipo: "regula", nota: "Si el donatario comete algún delito contra la persona, el honor o los bienes del donante."}
+      - {norma: "CC", articulo: "648", apartado: "2.º", tipo: "conexa", nota: "Si le imputa delitos perseguibles de oficio, aunque los pruebe, salvo cometidos contra él o los suyos."}
+      - {norma: "CC", articulo: "648", apartado: "3.º", tipo: "regula", nota: "Si le niega indebidamente los alimentos."}
+      - {norma: "CC", articulo: "649", tipo: "regula", nota: "Revocada por ingratitud, subsisten las enajenaciones e hipotecas anteriores a la anotación de la demanda."}
+      - {norma: "CC", articulo: "650", tipo: "conexa", nota: "El donante exige al donatario el valor de lo enajenado que no puede reclamar a terceros, al tiempo de donar."}
+      - {norma: "CC", articulo: "651", tipo: "regula", nota: "Frutos: desde la demanda si se revoca por hijos o ingratitud o se reduce; desde el incumplimiento, si por cargas."}
+      - {norma: "CC", articulo: "652", tipo: "regula", nota: "La acción por ingratitud es irrenunciable de antemano y prescribe al año desde que el donante pudo ejercitarla."}
+      - {norma: "CC", articulo: "653", tipo: "regula", nota: "No pasa a los herederos del donante que pudo ejercitarla, ni va contra los del donatario salvo demanda ya puesta."}
+      - {norma: "CC", articulo: "654", tipo: "conexa", nota: "Las inoficiosas se reducen al morir el donante, pero surten efecto en vida y el donatario hace suyos los frutos."}
+      - {norma: "CC", articulo: "655", tipo: "conexa", nota: "Solo piden la reducción los legitimarios y partícipes en alícuota; no pueden renunciar en vida del donante."}
+      - {norma: "CC", articulo: "819", tipo: "conexa", nota: "Donaciones a hijos no mejoras: a su legítima; a extraños: a la parte libre; el exceso se reduce."}
+      - {norma: "CC", articulo: "1035", tipo: "conexa", nota: "El legitimario colaciona lo recibido del causante en vida por donación u otro título lucrativo."}
+    no_consta_en_norma:
+      - "Naturaleza y plazo de la revocación por incumplimiento de cargas (647): jurisprudencial."
+      - "El maltrato de obra o psicológico al donante como causa de ingratitud: jurisprudencial."
+      - "Validez de la donación de inmueble encubierta bajo compraventa en escritura: jurisprudencial (Sala Primera)."
+      - "Prueba del animus donandi en transferencias de dinero entre familiares: casuística."
+    afines: ["Reducción de donaciones inoficiosas", "Colación", "Forma del contrato y elevación a escritura pública", "Simulación y causa del contrato", "Acción subrogatoria y rescisión por fraude de acreedores", "Legítimas: cuantía y cálculo", "Alimentos entre parientes"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Liquidación del estado posesorio: frutos, gastos y mejoras"
+    sinonimos: ["liquidación del estado posesorio", "frutos percibidos", "frutos pendientes", "frutos que pudo percibir", "gastos necesarios", "gastos útiles", "gastos de lujo o recreo", "mejoras", "derecho de retención", "poseedor de buena fe", "poseedor de mala fe", "restitución de la cosa con sus frutos", "abono de mejoras", "deterioro de la cosa poseída", "mejoras del arrendatario", "mejoras del usufructuario", "edificación en suelo ajeno"]
+    normas_base: ["CC"]
+    remisiones:
+      - {norma: "CC", articulo: "451", tipo: "regula", nota: "El poseedor de buena fe hace suyos los frutos percibidos mientras no se interrumpa legalmente la posesión."}
+      - {norma: "CC", articulo: "451", apartado: "párrafo 2.º", tipo: "regula", nota: "Los frutos naturales e industriales se entienden percibidos desde que se alzan o separan."}
+      - {norma: "CC", articulo: "451", apartado: "párrafo 3.º", tipo: "regula", nota: "Los frutos civiles se producen por días y pertenecen al poseedor de buena fe en esa proporción."}
+      - {norma: "CC", articulo: "452", tipo: "regula", nota: "Frutos pendientes al cesar la buena fe: gastos de producción y parte del producto líquido proporcional al tiempo."}
+      - {norma: "CC", articulo: "453", tipo: "regula", nota: "Los gastos necesarios se abonan a todo poseedor; solo el de buena fe retiene la cosa hasta cobrarlos."}
+      - {norma: "CC", articulo: "453", apartado: "párrafo 2.º", tipo: "regula", nota: "Los útiles, solo al de buena fe y con retención; el vencedor elige pagar el gasto o el aumento de valor."}
+      - {norma: "CC", articulo: "454", tipo: "regula", nota: "Los de puro lujo o recreo no se abonan; el de buena fe se lleva los adornos si no hay deterioro y no se le pagan."}
+      - {norma: "CC", articulo: "455", tipo: "regula", nota: "El de mala fe abona los frutos percibidos y los que pudo percibir el legítimo; solo cobra los gastos necesarios."}
+      - {norma: "CC", articulo: "456", tipo: "regula", nota: "Las mejoras debidas a la naturaleza o al tiempo ceden siempre a favor de quien vence en la posesión."}
+      - {norma: "CC", articulo: "457", tipo: "regula", nota: "El de buena fe solo responde del deterioro o pérdida con dolo; el de mala fe, siempre, y aun por fuerza mayor si retrasó la entrega."}
+      - {norma: "CC", articulo: "458", tipo: "regula", nota: "Quien obtiene la posesión no abona las mejoras que ya no existan al adquirir la cosa."}
+      - {norma: "CC", articulo: "433", tipo: "conexa", nota: "Es poseedor de buena fe quien ignora que su título o modo de adquirir tiene un vicio que lo invalida."}
+      - {norma: "CC", articulo: "434", tipo: "conexa", nota: "La buena fe se presume siempre; quien afirma la mala fe debe probarla."}
+      - {norma: "CC", articulo: "435", tipo: "conexa", nota: "La buena fe se pierde desde que hay actos que acreditan que el poseedor sabe que posee indebidamente."}
+      - {norma: "CC", articulo: "361", tipo: "conexa", nota: "Obra, siembra o plantación de buena fe en suelo ajeno: el dueño la hace suya indemnizando según los arts. 453 y 454."}
+      - {norma: "CC", articulo: "362", tipo: "conexa", nota: "Quien edifica, planta o siembra de mala fe en terreno ajeno lo pierde sin indemnización."}
+      - {norma: "CC", articulo: "487", tipo: "conexa", nota: "El usufructuario hace mejoras útiles o de recreo sin derecho a indemnización; puede retirarlas sin detrimento."}
+      - {norma: "CC", articulo: "488", tipo: "conexa", nota: "El usufructuario puede compensar los desperfectos de los bienes con sus mejoras."}
+      - {norma: "CC", articulo: "1573", tipo: "conexa", nota: "El arrendatario tiene, en mejoras útiles y voluntarias, el mismo derecho que el usufructuario."}
+      - {norma: "CC", articulo: "1898", tipo: "conexa", nota: "Mejoras y gastos de quien recibió un pago indebido: reglas de la posesión."}
+      - {norma: "CC", articulo: "1303", tipo: "conexa", nota: "Declarada la nulidad, restitución recíproca de las cosas con sus frutos y del precio con sus intereses."}
+      - {norma: "CC", articulo: "651", tipo: "conexa", nota: "Frutos en la revocación o reducción de donaciones: desde la demanda o desde el incumplimiento de la carga."}
+    no_consta_en_norma:
+      - "Momento en que cesa la buena fe a efectos de frutos (emplazamiento, contestación o sentencia): jurisprudencial."
+      - "Calificación de reformas de vivienda como gasto necesario, útil o de lujo: casuística."
+      - "Liquidación en el precario y en el arrendamiento de vivienda (reglas de la LAU sobre obras): casuística."
+    afines: ["Acción reivindicatoria y declarativa de dominio", "Posesión: clases, adquisición y efectos", "Accesión y construcción en suelo ajeno", "Enriquecimiento injusto y cobro de lo indebido", "Liquidación de daños, frutos y rendición de cuentas", "Desahucio por precario", "Usufructo"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Inmisiones y relaciones de vecindad"
+    sinonimos: ["inmisiones", "relaciones de vecindad", "ruidos del vecino", "humos", "olores", "vibraciones", "molestias vecinales", "actividades molestas", "acción negatoria", "acción de cesación", "ramas y raíces del árbol vecino", "aguas pluviales del tejado", "distancias para construcciones peligrosas", "abuso de derecho entre vecinos", "daños continuados", "uso normal de la finca"]
+    normas_base: ["CC", "LPH", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "590", tipo: "regula", nota: "Pozos, cloacas, hornos, chimeneas o instalaciones peligrosas cerca de pared ajena: distancias y obras de resguardo reglamentarias."}
+      - {norma: "CC", articulo: "590", apartado: "párrafo 2.º", tipo: "regula", nota: "Sin reglamento, las precauciones necesarias, previo dictamen pericial, para evitar daños a los vecinos."}
+      - {norma: "CC", articulo: "1908", apartado: "2.º", tipo: "regula", nota: "El propietario responde de los humos excesivos, nocivos a las personas o a las propiedades."}
+      - {norma: "CC", articulo: "1908", apartado: "4.º", tipo: "regula", nota: "Y de las emanaciones de cloacas o depósitos de materias infectantes construidos sin precauciones."}
+      - {norma: "CC", articulo: "1908", apartado: "1.º", tipo: "conexa", nota: "Y de la explosión de máquinas mal cuidadas o de sustancias explosivas mal colocadas."}
+      - {norma: "CC", articulo: "7", apartado: "2", tipo: "regula", nota: "La ley no ampara el abuso del derecho: indemnización y medidas judiciales que impidan que persista."}
+      - {norma: "CC", articulo: "1902", tipo: "regula", nota: "Quien por acción u omisión causa daño a otro con culpa o negligencia está obligado a repararlo."}
+      - {norma: "CC", articulo: "592", tipo: "regula", nota: "Ramas que invaden la finca vecina: se pide que se corten; raíces: el dueño del suelo las corta por sí mismo."}
+      - {norma: "CC", articulo: "591", tipo: "conexa", nota: "Árboles a la distancia de ordenanzas o costumbre; si no, dos metros los altos y medio metro los bajos; cabe pedir arrancarlos."}
+      - {norma: "CC", articulo: "586", tipo: "regula", nota: "Los tejados se construyen para que el agua pluvial no caiga sobre el suelo del vecino ni le perjudique."}
+      - {norma: "CC", articulo: "552", tipo: "conexa", nota: "El predio inferior recibe las aguas que bajan naturalmente del superior; ninguno puede hacer obras que alteren esa carga."}
+      - {norma: "CC", articulo: "569", tipo: "conexa", nota: "Si es indispensable para obras, el vecino consiente el paso de materiales o andamios, con indemnización."}
+      - {norma: "CC", articulo: "389", tipo: "conexa", nota: "Construcción que amenaza ruina: el propietario la derriba o la repara; si no, la Autoridad a su costa."}
+      - {norma: "CC", articulo: "390", tipo: "conexa", nota: "Árbol que amenaza caer sobre finca ajena o vía: el dueño lo arranca; si no, la Autoridad a su costa."}
+      - {norma: "CC", articulo: "1910", tipo: "conexa", nota: "El cabeza de familia responde de las cosas que se arrojen o caigan de la casa que habita."}
+      - {norma: "CC", articulo: "1968", apartado: "2.º", tipo: "conexa", nota: "La acción por culpa extracontractual prescribe al año desde que lo supo el agraviado."}
+      - {norma: "LPH", articulo: "7", apartado: "2", tipo: "regula", nota: "En el edificio, prohibidas las actividades dañosas, molestas, insalubres, nocivas, peligrosas o ilícitas; acción de cesación."}
+      - {norma: "LEC", articulo: "250", apartado: "1.6.º", tipo: "conexa", nota: "Juicio verbal sumario para demoler obra, edificio, árbol u objeto en ruina que amenace dañar al demandante."}
+      - {norma: "LEC", articulo: "250", apartado: "1.5.º", tipo: "conexa", nota: "Juicio verbal sumario para suspender una obra nueva."}
+    no_consta_en_norma:
+      - "Inmisiones inmateriales (ruido, olores, vibraciones) y límite de la tolerancia normal: sin regla general en el CC; jurisprudencial."
+      - "Acción negatoria de inmisiones como acción de cesación del propietario: construcción jurisprudencial."
+      - "Ruido grave como lesión de la intimidad domiciliaria y la integridad (arts. 15 y 18 CE): jurisprudencial (TC y TEDH)."
+      - "Daños continuados: la prescripción no corre hasta que cesa el resultado lesivo; jurisprudencial."
+    afines: ["Actividades prohibidas (acción de cesación)", "Daños causados por animales, edificios y cosas", "Abuso de derecho y buena fe", "Luces, vistas y distancias", "Responsabilidad extracontractual", "Daños entre comunidad y propietarios (filtraciones)", "Obra nueva y obra ruinosa", "Medianería"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Posesión: clases, adquisición y efectos"
+    sinonimos: ["posesión", "posesión natural", "posesión civil", "posesión en concepto de dueño", "mero tenedor", "poseedor de buena fe", "poseedor de mala fe", "presunción de buena fe", "adquisición de la posesión", "pérdida de la posesión", "actos meramente tolerados", "posesión violenta o clandestina", "concurso de poseedores", "presunción de justo título", "posesión equivale al título", "protección posesoria", "interdictos", "posesión civilísima del heredero"]
+    normas_base: ["CC", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "430", tipo: "regula", nota: "Posesión natural es la tenencia o disfrute; civil, esa misma tenencia con intención de tener la cosa como suya."}
+      - {norma: "CC", articulo: "431", tipo: "conexa", nota: "Se posee por uno mismo o por otro en su nombre."}
+      - {norma: "CC", articulo: "432", tipo: "regula", nota: "Se posee en concepto de dueño o de tenedor para conservar o disfrutar lo que pertenece a otro."}
+      - {norma: "CC", articulo: "433", tipo: "regula", nota: "De buena fe quien ignora el vicio de su título o modo de adquirir; de mala fe, quien lo conoce."}
+      - {norma: "CC", articulo: "434", tipo: "regula", nota: "La buena fe se presume siempre; quien afirma la mala fe debe probarla."}
+      - {norma: "CC", articulo: "435", tipo: "regula", nota: "La buena fe se pierde desde que hay actos que acreditan que el poseedor sabe que posee indebidamente."}
+      - {norma: "CC", articulo: "436", tipo: "regula", nota: "Se presume que se sigue poseyendo en el mismo concepto en que se adquirió, salvo prueba en contrario."}
+      - {norma: "CC", articulo: "437", tipo: "conexa", nota: "Solo se poseen las cosas y derechos susceptibles de apropiación; los animales, con los límites legales."}
+      - {norma: "CC", articulo: "438", tipo: "regula", nota: "Se adquiere por ocupación material, por sujeción a nuestra voluntad o por los actos y formalidades legales."}
+      - {norma: "CC", articulo: "439", tipo: "conexa", nota: "Se adquiere por uno mismo, por representante, por mandatario o por tercero sin mandato si luego se ratifica."}
+      - {norma: "CC", articulo: "440", tipo: "regula", nota: "La posesión de los bienes hereditarios pasa al heredero sin interrupción desde la muerte, si acepta."}
+      - {norma: "CC", articulo: "441", tipo: "regula", nota: "Nunca se adquiere violentamente frente a poseedor que se oponga; quien se cree con derecho acude a la Autoridad."}
+      - {norma: "CC", articulo: "442", tipo: "conexa", nota: "El heredero no sufre los vicios de la posesión del causante si no los conocía."}
+      - {norma: "CC", articulo: "444", tipo: "regula", nota: "Los actos meramente tolerados, clandestinos o violentos no afectan a la posesión."}
+      - {norma: "CC", articulo: "445", tipo: "regula", nota: "Contienda sobre el hecho de la posesión: el actual; luego el más antiguo; luego quien tenga título; si no, depósito."}
+      - {norma: "CC", articulo: "446", tipo: "regula", nota: "Todo poseedor tiene derecho a ser respetado y, si es inquietado, amparado o restituido por las vías procesales."}
+      - {norma: "CC", articulo: "447", tipo: "regula", nota: "Solo la posesión en concepto de dueño sirve de título para adquirir el dominio."}
+      - {norma: "CC", articulo: "448", tipo: "regula", nota: "El poseedor en concepto de dueño se presume con justo título y no puede obligársele a exhibirlo."}
+      - {norma: "CC", articulo: "449", tipo: "conexa", nota: "La posesión de un inmueble supone la de los muebles que hay dentro, salvo prueba en contrario."}
+      - {norma: "CC", articulo: "450", tipo: "conexa", nota: "En la cosa común, cada partícipe ha poseído en exclusiva lo que le toque en la división."}
+      - {norma: "CC", articulo: "459", tipo: "conexa", nota: "El poseedor actual que lo fue antes se presume poseedor en el tiempo intermedio."}
+      - {norma: "CC", articulo: "460", tipo: "regula", nota: "Se pierde por abandono, cesión, destrucción o pérdida de la cosa, o por la posesión de otro."}
+      - {norma: "CC", articulo: "460", apartado: "4", tipo: "regula", nota: "La posesión de otro la hace perder, aun contra la voluntad del antiguo poseedor, si ha durado más de un año."}
+      - {norma: "CC", articulo: "461", tipo: "conexa", nota: "El mueble no se pierde mientras está bajo el poder del poseedor, aunque ignore accidentalmente dónde está."}
+      - {norma: "CC", articulo: "462", tipo: "conexa", nota: "Inmuebles y derechos reales: pérdida o transmisión de la posesión frente a tercero, según la Ley Hipotecaria."}
+      - {norma: "CC", articulo: "463", tipo: "conexa", nota: "Los actos posesorios del mero tenedor no obligan ni perjudican al dueño salvo facultades expresas o ratificación."}
+      - {norma: "CC", articulo: "464", tipo: "regula", nota: "La posesión de buena fe de bienes muebles equivale al título; el privado ilegalmente puede reivindicarlos."}
+      - {norma: "CC", articulo: "464", apartado: "párrafo 2.º", tipo: "conexa", nota: "Si el poseedor de buena fe la compró en venta pública, el dueño reembolsa el precio para recuperarla."}
+      - {norma: "CC", articulo: "466", tipo: "conexa", nota: "Quien recupera conforme a derecho la posesión perdida se entiende que la disfrutó sin interrupción."}
+      - {norma: "CC", articulo: "1968", apartado: "1.º", tipo: "conexa", nota: "Prescribe al año la acción para recobrar o retener la posesión."}
+      - {norma: "LEC", articulo: "250", apartado: "1.4.º", tipo: "regula", nota: "Juicio verbal para la tutela sumaria de la tenencia o la posesión de quien ha sido despojado o perturbado."}
+      - {norma: "LEC", articulo: "439", apartado: "1", tipo: "regula", nota: "No se admite la demanda para retener o recobrar la posesión pasado un año desde la perturbación o el despojo."}
+      - {norma: "LEC", articulo: "447", apartado: "2", tipo: "conexa", nota: "La sentencia de tutela sumaria de la posesión no produce efecto de cosa juzgada."}
+    no_consta_en_norma:
+      - "Posesión mediata e inmediata y servidor de la posesión: doctrinal."
+      - "Precario como posesión tolerada sin título ni renta: jurisprudencial."
+      - "Si basta la ocupación sin título para la tutela sumaria frente al propietario (ius possessionis): jurisprudencial."
+    afines: ["Tutela sumaria de la posesión", "Usucapión", "Liquidación del estado posesorio: frutos, gastos y mejoras", "Desahucio por precario", "Ocupación ilegal de vivienda (desahucio exprés)", "Acción reivindicatoria y declarativa de dominio"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Usucapión"
+    sinonimos: ["usucapión", "prescripción adquisitiva", "usucapión ordinaria", "usucapión extraordinaria", "diez años entre presentes", "veinte años entre ausentes", "treinta años sin título", "posesión en concepto de dueño", "posesión pública, pacífica e ininterrumpida", "justo título", "buena fe del usucapiente", "interrupción natural de la posesión", "interrupción civil", "accesión de posesiones", "usucapión de muebles", "usucapión contra el titular registral", "renuncia a la prescripción ganada"]
+    normas_base: ["CC"]
+    remisiones:
+      - {norma: "CC", articulo: "1930", tipo: "regula", nota: "Por la prescripción se adquieren, en la forma y con las condiciones legales, el dominio y demás derechos reales."}
+      - {norma: "CC", articulo: "1940", tipo: "regula", nota: "La prescripción ordinaria exige poseer con buena fe y justo título durante el tiempo legal."}
+      - {norma: "CC", articulo: "1941", tipo: "regula", nota: "La posesión ha de ser en concepto de dueño, pública, pacífica y no interrumpida."}
+      - {norma: "CC", articulo: "447", tipo: "regula", nota: "Solo la posesión en concepto de dueño sirve de título para adquirir el dominio."}
+      - {norma: "CC", articulo: "1942", tipo: "regula", nota: "No aprovechan los actos posesorios hechos con licencia o por mera tolerancia del dueño."}
+      - {norma: "CC", articulo: "1957", tipo: "regula", nota: "Inmuebles: diez años entre presentes y veinte entre ausentes, con buena fe y justo título."}
+      - {norma: "CC", articulo: "1958", tipo: "conexa", nota: "Ausente es quien reside en el extranjero; cada dos años de ausencia cuentan como uno de presencia."}
+      - {norma: "CC", articulo: "1959", tipo: "regula", nota: "Inmuebles: treinta años de posesión no interrumpida, sin título ni buena fe, salvo el art. 539."}
+      - {norma: "CC", articulo: "1955", tipo: "regula", nota: "Muebles: tres años de posesión no interrumpida con buena fe."}
+      - {norma: "CC", articulo: "1955", apartado: "párrafo 2.º", tipo: "regula", nota: "Muebles: seis años de posesión no interrumpida, sin otra condición."}
+      - {norma: "CC", articulo: "1956", tipo: "conexa", nota: "Los autores, cómplices o encubridores del hurto o robo no usucapen salvo prescritos el delito, la pena y la acción civil."}
+      - {norma: "CC", articulo: "464", tipo: "conexa", nota: "La posesión de buena fe de muebles equivale al título; el privado ilegalmente puede reivindicar."}
+      - {norma: "CC", articulo: "1950", tipo: "regula", nota: "Buena fe: creer que quien entregó la cosa era su dueño y podía transmitir el dominio."}
+      - {norma: "CC", articulo: "1951", tipo: "conexa", nota: "La buena fe de la usucapión se rige por los arts. 433 a 436."}
+      - {norma: "CC", articulo: "1952", tipo: "regula", nota: "Justo título es el que legalmente basta para transferir el dominio o derecho real de que se trate."}
+      - {norma: "CC", articulo: "1953", tipo: "regula", nota: "El título ha de ser verdadero y válido."}
+      - {norma: "CC", articulo: "1954", tipo: "regula", nota: "El justo título debe probarse; no se presume nunca."}
+      - {norma: "CC", articulo: "448", tipo: "conexa", nota: "El poseedor en concepto de dueño se presume con justo título y no puede obligársele a exhibirlo."}
+      - {norma: "CC", articulo: "1943", tipo: "regula", nota: "La posesión se interrumpe, a efectos de usucapión, natural o civilmente."}
+      - {norma: "CC", articulo: "1944", tipo: "regula", nota: "Interrupción natural: cesar en la posesión por cualquier causa durante más de un año."}
+      - {norma: "CC", articulo: "1945", tipo: "regula", nota: "Interrupción civil: citación judicial al poseedor, aunque la ordene un juez incompetente."}
+      - {norma: "CC", articulo: "1946", tipo: "regula", nota: "No interrumpe la citación nula, la seguida de desistimiento o caducidad de la instancia ni la absolutoria."}
+      - {norma: "CC", articulo: "1947", tipo: "conexa", nota: "Interrumpe el acto de conciliación si en dos meses se presenta la demanda sobre posesión o dominio."}
+      - {norma: "CC", articulo: "1948", tipo: "regula", nota: "Interrumpe cualquier reconocimiento expreso o tácito del derecho del dueño por el poseedor."}
+      - {norma: "CC", articulo: "1949", tipo: "regula", nota: "Contra título inscrito no hay usucapión ordinaria frente a tercero sino por otro título inscrito, desde su inscripción."}
+      - {norma: "CC", articulo: "1960", apartado: "1.ª", tipo: "regula", nota: "El poseedor actual puede sumar al suyo el tiempo de posesión de su causante."}
+      - {norma: "CC", articulo: "1960", apartado: "2.ª", tipo: "conexa", nota: "El poseedor actual que lo fue antes se presume poseedor en el tiempo intermedio."}
+      - {norma: "CC", articulo: "1960", apartado: "3.ª", tipo: "regula", nota: "El día inicial se cuenta entero; el último debe cumplirse en su totalidad."}
+      - {norma: "CC", articulo: "1933", tipo: "conexa", nota: "La prescripción ganada por un copropietario o comunero aprovecha a los demás."}
+      - {norma: "CC", articulo: "1935", tipo: "conexa", nota: "Puede renunciarse la prescripción ganada, también tácitamente, pero no el derecho a prescribir en adelante."}
+      - {norma: "CC", articulo: "1936", tipo: "conexa", nota: "Son susceptibles de prescripción todas las cosas que están en el comercio."}
+      - {norma: "CC", articulo: "1937", tipo: "conexa", nota: "Los acreedores y demás interesados pueden hacer valer la prescripción pese a la renuncia del propietario."}
+      - {norma: "CC", articulo: "460", apartado: "4", tipo: "conexa", nota: "La posesión de otro durante más de un año hace perder la posesión al antiguo poseedor."}
+      - {norma: "CC", articulo: "537", tipo: "conexa", nota: "Las servidumbres continuas y aparentes se adquieren por título o por prescripción de veinte años."}
+      - {norma: "CC", articulo: "539", tipo: "conexa", nota: "Las continuas no aparentes y las discontinuas solo se adquieren por título."}
+    no_consta_en_norma:
+      - "Tensión entre la presunción de justo título del 448 y la exigencia de probarlo del 1954: jurisprudencial."
+      - "Usucapión de la propiedad por el comunero frente a los demás (interversión del concepto posesorio): jurisprudencial."
+      - "Si la solicitud de MASC del art. 7 LO 1/2025 interrumpe también la usucapión: no consta; el precepto habla de acciones."
+      - "Usucapión entre familiares y actos de mera tolerancia: casuística."
+    fuera_de_la_herramienta:
+      - "Ley Hipotecaria, art. 35: para el titular inscrito, la inscripción es justo título y se presume la posesión apta para usucapir."
+      - "Ley Hipotecaria, art. 36: frente al tercero inscrito del art. 34 solo prevalece la usucapión en los supuestos y plazos de ese artículo."
+    afines: ["Posesión: clases, adquisición y efectos", "Acción reivindicatoria y declarativa de dominio", "Prescripción (como excepción)", "Interrupción de la prescripción", "Servidumbres: constitución, extinción y acciones", "Copropiedad y acción de división de cosa común", "Cómputo civil de plazos"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Servidumbres: constitución, extinción y acciones"
+    sinonimos: ["servidumbre", "predio dominante", "predio sirviente", "servidumbre continua", "servidumbre discontinua", "servidumbre aparente", "servidumbre no aparente", "servidumbre positiva", "servidumbre negativa", "servidumbre voluntaria", "servidumbre legal", "signo aparente", "destino del padre de familia", "extinción por no uso", "acción confesoria", "acción negatoria", "obras en el predio sirviente", "cambio de lugar de la servidumbre", "servidumbre personal"]
+    normas_base: ["CC", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "530", tipo: "regula", nota: "Servidumbre: gravamen sobre un inmueble en beneficio de otro de distinto dueño (dominante y sirviente)."}
+      - {norma: "CC", articulo: "531", tipo: "conexa", nota: "También caben en provecho de personas o de una comunidad a quienes no pertenezca la finca gravada."}
+      - {norma: "CC", articulo: "532", tipo: "regula", nota: "Continuas o discontinuas, según dependan o no de actos del hombre; aparentes o no, según haya signos exteriores."}
+      - {norma: "CC", articulo: "533", tipo: "conexa", nota: "Positivas (dejar hacer o hacer) y negativas (prohíben al sirviente algo que le sería lícito)."}
+      - {norma: "CC", articulo: "534", tipo: "regula", nota: "Son inseparables de la finca a la que activa o pasivamente pertenecen."}
+      - {norma: "CC", articulo: "535", tipo: "conexa", nota: "Son indivisibles: dividido el sirviente o el dominante, la servidumbre se mantiene sin agravarse."}
+      - {norma: "CC", articulo: "536", tipo: "regula", nota: "Se establecen por la ley (legales) o por voluntad de los propietarios (voluntarias)."}
+      - {norma: "CC", articulo: "537", tipo: "regula", nota: "Las continuas y aparentes se adquieren por título o por prescripción de veinte años."}
+      - {norma: "CC", articulo: "538", tipo: "conexa", nota: "Cómputo: en las positivas, desde que se empezó a ejercer; en las negativas, desde la prohibición formal al sirviente."}
+      - {norma: "CC", articulo: "539", tipo: "regula", nota: "Las continuas no aparentes y las discontinuas, aparentes o no, solo se adquieren por título."}
+      - {norma: "CC", articulo: "540", tipo: "regula", nota: "La falta de título solo se suple con escritura de reconocimiento del dueño del sirviente o sentencia firme."}
+      - {norma: "CC", articulo: "541", tipo: "regula", nota: "El signo aparente puesto por el dueño de ambas fincas vale como título al enajenar una, salvo exclusión o retirada del signo."}
+      - {norma: "CC", articulo: "542", tipo: "regula", nota: "Al establecer una servidumbre se conceden todos los derechos necesarios para su uso."}
+      - {norma: "CC", articulo: "543", tipo: "regula", nota: "El dominante hace a su costa las obras necesarias en el sirviente, sin agravarla y con la menor incomodidad."}
+      - {norma: "CC", articulo: "544", tipo: "conexa", nota: "Varios dominantes pagan las obras según su beneficio; el que no quiera, renuncia; el sirviente que la usa, contribuye."}
+      - {norma: "CC", articulo: "545", tipo: "regula", nota: "El dueño del sirviente no puede menoscabar el uso de la servidumbre."}
+      - {norma: "CC", articulo: "545", apartado: "párrafo 2.º", tipo: "regula", nota: "Si resulta muy incómoda, puede cambiarla a su costa a otro lugar o forma igual de cómodos y sin perjuicio."}
+      - {norma: "CC", articulo: "546", tipo: "regula", nota: "Extinción: confusión, no uso, imposibilidad de uso, término o condición, renuncia y redención."}
+      - {norma: "CC", articulo: "546", apartado: "2.º", tipo: "regula", nota: "No uso durante veinte años: desde que dejó de usarse (discontinuas) o desde el acto contrario (continuas)."}
+      - {norma: "CC", articulo: "547", tipo: "conexa", nota: "La forma de prestar la servidumbre puede prescribirse como la servidumbre misma."}
+      - {norma: "CC", articulo: "548", tipo: "conexa", nota: "Si el dominante es de varios, el uso de uno impide la prescripción respecto de los demás."}
+      - {norma: "CC", articulo: "551", tipo: "conexa", nota: "Las legales de interés particular se rigen por este título y por las ordenanzas de policía urbana o rural."}
+      - {norma: "CC", articulo: "594", tipo: "regula", nota: "El propietario puede establecer en su finca las servidumbres que quiera, sin contravenir las leyes ni el orden público."}
+      - {norma: "CC", articulo: "597", tipo: "regula", nota: "Sobre fundo indiviso se requiere el consentimiento de todos; la concesión de uno le obliga a no impedirla."}
+      - {norma: "CC", articulo: "598", tipo: "regula", nota: "El título, o la posesión si se adquirió por prescripción, fija los derechos del dominante y las cargas del sirviente."}
+      - {norma: "CC", articulo: "595", tipo: "conexa", nota: "El nudo propietario puede imponer, sin el usufructuario, servidumbres que no perjudiquen el usufructo."}
+      - {norma: "CC", articulo: "599", tipo: "conexa", nota: "El sirviente obligado a costear las obras se libera abandonando su predio al dueño del dominante."}
+      - {norma: "LEC", articulo: "251", apartado: "5.ª", tipo: "conexa", nota: "Cuantía en demandas sobre servidumbre: precio de constitución si consta y no tiene más de cinco años."}
+      - {norma: "LEC", articulo: "250", apartado: "1.7.º", tipo: "conexa", nota: "Juicio verbal para la efectividad de derechos reales inscritos frente a quien perturbe su ejercicio sin título inscrito."}
+    no_consta_en_norma:
+      - "Acciones confesoria y negatoria de servidumbre: no reguladas en el CC; construcción jurisprudencial."
+      - "Alcance del signo aparente del 541 (destino del padre de familia) y su prueba: jurisprudencial."
+      - "Interpretación restrictiva de las servidumbres y presunción de libertad del predio: jurisprudencial."
+    afines: ["Servidumbre de paso", "Luces, vistas y distancias", "Medianería", "Servidumbres y acceso para obras e instalaciones comunes", "Usucapión", "Tutela de derechos reales inscritos", "Inmisiones y relaciones de vecindad"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Servidumbre de paso"
+    sinonimos: ["servidumbre de paso", "finca enclavada", "salida a camino público", "paso forzoso", "derecho de paso", "camino de acceso", "anchura del paso", "indemnización por la servidumbre de paso", "paso sin indemnización tras venta o partición", "extinción del paso por dejar de ser necesario", "paso de materiales y andamios", "servidumbre discontinua", "usucapión del paso", "cañada, cordel y vereda"]
+    normas_base: ["CC", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "564", tipo: "regula", nota: "El dueño de finca enclavada sin salida a camino público puede exigir paso por las vecinas, previa indemnización."}
+      - {norma: "CC", articulo: "564", apartado: "párrafo 2.º", tipo: "regula", nota: "Con vía permanente, se indemniza el valor del terreno ocupado y los perjuicios al sirviente."}
+      - {norma: "CC", articulo: "564", apartado: "párrafo 3.º", tipo: "regula", nota: "Si solo es paso para cultivo y cosechas sin vía permanente, se indemniza el perjuicio que cause."}
+      - {norma: "CC", articulo: "565", tipo: "regula", nota: "Por el punto menos perjudicial para el sirviente y, en lo posible, por la menor distancia al camino."}
+      - {norma: "CC", articulo: "566", tipo: "regula", nota: "La anchura es la que basta a las necesidades del predio dominante."}
+      - {norma: "CC", articulo: "567", tipo: "regula", nota: "Finca enclavada tras venta, permuta o partición: el vendedor, permutante o copartícipe da paso sin indemnización."}
+      - {norma: "CC", articulo: "568", tipo: "regula", nota: "Si deja de ser necesario al unirse a finca con salida, el sirviente pide la extinción devolviendo la indemnización."}
+      - {norma: "CC", articulo: "568", apartado: "párrafo 2.º", tipo: "regula", nota: "Lo mismo si se abre un nuevo camino que dé acceso a la finca enclavada."}
+      - {norma: "CC", articulo: "569", tipo: "regula", nota: "Si es indispensable para obras, el vecino consiente el paso de materiales o andamios, con indemnización."}
+      - {norma: "CC", articulo: "570", tipo: "conexa", nota: "Paso de ganados (cañada, cordel, vereda): ordenanzas y costumbre; anchuras máximas legales."}
+      - {norma: "CC", articulo: "532", apartado: "párrafo 3.º", tipo: "conexa", nota: "Discontinuas son las que se usan a intervalos y dependen de actos del hombre."}
+      - {norma: "CC", articulo: "539", tipo: "regula", nota: "Las servidumbres discontinuas, aparentes o no, solo se adquieren por título."}
+      - {norma: "CC", articulo: "540", tipo: "regula", nota: "La falta de título solo se suple con escritura de reconocimiento del dueño del sirviente o sentencia firme."}
+      - {norma: "CC", articulo: "1959", tipo: "conexa", nota: "La usucapión de treinta años no alcanza a las servidumbres del art. 539."}
+      - {norma: "CC", articulo: "541", tipo: "conexa", nota: "El signo aparente puesto por el dueño de ambas fincas vale como título al enajenar una, salvo exclusión."}
+      - {norma: "CC", articulo: "546", apartado: "2.º", tipo: "regula", nota: "Se extingue por no uso durante veinte años, contados en las discontinuas desde que dejó de usarse."}
+      - {norma: "CC", articulo: "543", tipo: "conexa", nota: "El dominante hace a su costa las obras necesarias en el sirviente, sin agravar la servidumbre."}
+      - {norma: "CC", articulo: "545", apartado: "párrafo 2.º", tipo: "conexa", nota: "El sirviente puede trasladar a su costa el paso muy incómodo a otro lugar igual de cómodo y sin perjuicio."}
+      - {norma: "CC", articulo: "535", tipo: "conexa", nota: "Si se divide el sirviente o el dominante, la servidumbre se mantiene sin agravarse."}
+      - {norma: "CC", articulo: "594", tipo: "conexa", nota: "El propietario puede constituir voluntariamente las servidumbres que quiera en su finca."}
+      - {norma: "LEC", articulo: "251", apartado: "5.ª", tipo: "conexa", nota: "Cuantía en demandas sobre servidumbre: precio de constitución si consta y no tiene más de cinco años."}
+    no_consta_en_norma:
+      - "Enclavamiento relativo (salida insuficiente o desproporcionadamente costosa): jurisprudencial."
+      - "Calificación del paso como discontinuo aunque haya camino o puerta permanentes (y, por el 539, no usucapible): jurisprudencial."
+      - "Paso de vehículos y anchura según el uso actual del dominante: casuística."
+      - "Tutela sumaria del uso del paso sin título frente al dueño del sirviente: jurisprudencial."
+    afines: ["Servidumbres: constitución, extinción y acciones", "Usucapión", "Servidumbres y acceso para obras e instalaciones comunes", "Tutela sumaria de la posesión", "Deslinde y amojonamiento", "Inmisiones y relaciones de vecindad"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"

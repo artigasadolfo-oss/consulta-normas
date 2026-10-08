@@ -1,0 +1,482 @@
+# Índice de conceptos de «Consulta de normas» — tanda 18 (prioridad B: voces 183 y 186 a 196)
+# Revisor: armero. Espejo: legalize-es@aca28304d, leído con `git show aca28304d:es/…` (no el árbol de trabajo, que hoy trae erratas).
+# Todo precepto citado se ha leído en el espejo en esta pasada. Vigencia: contraste con la API de boe.es (08-10-2026).
+# Ver tanda-18-notas.md.
+
+voces:
+  - voz: "Revisión de sentencias firmes"
+    sinonimos: ["demanda de revisión", "recurso de revisión civil", "revisión por documentos recobrados", "maquinación fraudulenta", "sentencia ganada con cohecho o violencia", "falso testimonio de testigos o peritos", "documento declarado falso", "revisión por sentencia del TEDH", "plazo de cinco años", "plazo de tres meses desde el descubrimiento", "depósito de 300 euros", "rescisión de la sentencia por revisión"]
+    normas_base: ["LEC", "LOPJ"]
+    remisiones:
+      - {norma: "LEC", articulo: "509", tipo: "regula", nota: "Se pide a la Sala de lo Civil del TS o a la Civil y Penal del TSJ, según la LOPJ."}
+      - {norma: "LEC", articulo: "510", apartado: "1.1.º", tipo: "regula", nota: "Documentos decisivos recobrados después, retenidos por fuerza mayor o por la parte favorecida."}
+      - {norma: "LEC", articulo: "510", apartado: "1.2.º", tipo: "regula", nota: "Sentencia basada en documentos declarados falsos en un proceso penal, antes ignorado por una parte o después."}
+      - {norma: "LEC", articulo: "510", apartado: "1.3.º", tipo: "regula", nota: "Testigos o peritos condenados por falso testimonio en las declaraciones que fundaron la sentencia."}
+      - {norma: "LEC", articulo: "510", apartado: "1.4.º", tipo: "regula", nota: "Sentencia ganada injustamente por cohecho, violencia o maquinación fraudulenta."}
+      - {norma: "LEC", articulo: "510", apartado: "2", tipo: "regula", nota: "Resolución firme que el TEDH declara contraria al Convenio, con efectos persistentes; respeta a terceros de buena fe."}
+      - {norma: "LEC", articulo: "511", tipo: "regula", nota: "Legitimada la parte perjudicada; en la revisión por sentencia del TEDH, solo quien demandó ante él."}
+      - {norma: "LEC", articulo: "512", apartado: "1", tipo: "regula", nota: "Tope de cinco años desde la publicación de la sentencia; por sentencia del TEDH, un año desde su firmeza."}
+      - {norma: "LEC", articulo: "512", apartado: "2", tipo: "regula", nota: "Dentro de los cinco años, tres meses desde que se descubre el documento, el cohecho, la violencia, el fraude o la falsedad."}
+      - {norma: "LEC", articulo: "513", apartado: "1", tipo: "regula", nota: "Con la demanda se acredita un depósito de 300 euros, que se devuelve si se estima la revisión."}
+      - {norma: "LEC", articulo: "513", apartado: "2", tipo: "regula", nota: "Sin depósito o insuficiente y no subsanado en el plazo del LAJ (cinco días como máximo): se repele de plano."}
+      - {norma: "LEC", articulo: "514", apartado: "1", tipo: "regula", nota: "Admitida, se reclaman las actuaciones y se emplaza a los litigantes o sus causahabientes para contestar en veinte días."}
+      - {norma: "LEC", articulo: "514", apartado: "2", tipo: "regula", nota: "Contestada o pasado el plazo, vista por los trámites del juicio verbal (arts. 440 y ss.)."}
+      - {norma: "LEC", articulo: "514", apartado: "3", tipo: "regula", nota: "El Ministerio Fiscal informa siempre antes de la sentencia."}
+      - {norma: "LEC", articulo: "514", apartado: "4", tipo: "conexa", nota: "Prejudicialidad penal surgida en la revisión: art. 40, y deja de correr el tope de cinco años del 512.1."}
+      - {norma: "LEC", articulo: "515", tipo: "regula", nota: "La demanda de revisión no suspende la ejecución de la sentencia, salvo lo previsto en el art. 566."}
+      - {norma: "LEC", articulo: "516", apartado: "1", tipo: "regula", nota: "Estimada, se rescinde la sentencia y se devuelven los autos; en el nuevo juicio no se discute lo declarado en la revisión."}
+      - {norma: "LEC", articulo: "516", apartado: "2", tipo: "regula", nota: "Desestimada, costas al demandante y pérdida del depósito."}
+      - {norma: "LEC", articulo: "516", apartado: "3", tipo: "regula", nota: "Contra la sentencia que resuelve la revisión no cabe recurso alguno."}
+      - {norma: "LEC", articulo: "566", apartado: "1", tipo: "conexa", nota: "Admitida la revisión, cabe suspender la ejecución a instancia de parte, con caución por lo litigado y los daños; oído el Fiscal."}
+      - {norma: "LEC", articulo: "566", apartado: "3", tipo: "conexa", nota: "Estimada la revisión, el LAJ sobresee la ejecución."}
+      - {norma: "LEC", articulo: "207", apartado: "2", tipo: "conexa", nota: "Firme es la resolución contra la que no cabe recurso, por no preverlo la ley o por pasar el plazo sin recurrir."}
+      - {norma: "LEC", articulo: "40", apartado: "4", tipo: "conexa", nota: "Causa penal por falsedad de un documento decisivo: suspensión del civil sin esperar a que quede pendiente de sentencia."}
+      - {norma: "LOPJ", articulo: "56", apartado: "1.º", tipo: "conexa", nota: "La Sala de lo Civil del TS conoce de los recursos de casación, revisión y otros extraordinarios civiles."}
+      - {norma: "LOPJ", articulo: "73", apartado: "1.b)", tipo: "conexa", nota: "La Sala de lo Civil y Penal del TSJ conoce de la revisión en Derecho civil propio si lo prevé el Estatuto."}
+      - {norma: "LOPJ", articulo: "da 15", apartado: "3.e)", tipo: "conexa", nota: "Fija 50 euros para la revisión, pero el apartado 14 de la misma disposición excluye la revisión civil."}
+      - {norma: "LOPJ", articulo: "da 15", apartado: "14", tipo: "regula", nota: "Este depósito no se aplica a la revisión en el orden civil, que sigue regulada por la LEC (300 euros, art. 513)."}
+    no_consta_en_norma:
+      - "Carácter tasado y de interpretación restrictiva de los motivos del 510: jurisprudencial."
+      - "Qué es «documento decisivo» y «maquinación fraudulenta» (p. ej., emplazamiento edictal malicioso): jurisprudencial."
+      - "Revisión de autos o decretos firmes y de sentencias sin cosa juzgada material: la LEC no lo resuelve aquí; casuística."
+    afines: ["Rescisión de la sentencia firme a instancia del rebelde", "Cosa juzgada", "Nulidad de actuaciones", "Cuestiones prejudiciales (penal, administrativa, civil)", "Suspensión de la ejecución", "Depósito para recurrir", "Recurso de casación"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Separación y divorcio contenciosos"
+    sinonimos: ["divorcio contencioso", "separación contenciosa", "divorcio a petición de uno de los cónyuges", "divorcio sin causa", "plazo de tres meses de matrimonio", "demanda de divorcio", "reconvención en el divorcio", "medidas definitivas", "proceso matrimonial", "efectos de la sentencia de divorcio", "reconciliación", "divorcio y violencia sobre la mujer"]
+    normas_base: ["CC", "LEC", "LO 1/2025", "LOPJ"]
+    remisiones:
+      - {norma: "CC", articulo: "81", apartado: "2.º", tipo: "regula", nota: "Separación a petición de uno: tres meses de matrimonio, salvo riesgo acreditado para el demandante o los hijos."}
+      - {norma: "CC", articulo: "86", tipo: "regula", nota: "Divorcio judicial a petición de uno, de ambos o de uno con consentimiento del otro, con los requisitos del art. 81."}
+      - {norma: "CC", articulo: "85", tipo: "conexa", nota: "El matrimonio se disuelve por muerte, declaración de fallecimiento o divorcio."}
+      - {norma: "CC", articulo: "88", tipo: "conexa", nota: "La acción de divorcio se extingue por muerte o reconciliación, que ha de ser expresa si es posterior a la demanda."}
+      - {norma: "CC", articulo: "84", tipo: "conexa", nota: "La reconciliación pone fin al proceso de separación; ambos la comunican al juez, que decide sobre las medidas de los hijos."}
+      - {norma: "CC", articulo: "83", tipo: "regula", nota: "Separación: efectos desde la firmeza; frente a terceros de buena fe, desde la inscripción en el Registro Civil."}
+      - {norma: "CC", articulo: "89", tipo: "regula", nota: "Divorcio: efectos desde la firmeza; a terceros de buena fe no les perjudica hasta la inscripción."}
+      - {norma: "CC", articulo: "91", tipo: "regula", nota: "Sin acuerdo aprobado, la sentencia fija las medidas sobre hijos, vivienda, animales, cargas, régimen económico y garantías."}
+      - {norma: "CC", articulo: "95", tipo: "conexa", nota: "La sentencia firme disuelve el régimen económico y aprueba su liquidación si hay mutuo acuerdo."}
+      - {norma: "CC", articulo: "107", apartado: "2", tipo: "conexa", nota: "Con elemento extranjero, separación y divorcio se rigen por las normas de DIPr de la UE o españolas."}
+      - {norma: "LEC", articulo: "769", apartado: "1", tipo: "regula", nota: "Competente el juzgado del domicilio conyugal; si viven en partidos distintos, último domicilio o residencia del demandado."}
+      - {norma: "LEC", articulo: "769", apartado: "4", tipo: "regula", nota: "El tribunal examina de oficio su competencia; son nulos los pactos en contrario."}
+      - {norma: "LEC", articulo: "770", tipo: "regula", nota: "Se tramita por el juicio verbal con las reglas especiales de este artículo."}
+      - {norma: "LEC", articulo: "770", apartado: "1.ª", tipo: "regula", nota: "Certificaciones de matrimonio y nacimientos; si hay medidas patrimoniales, ambas partes aportan su documentación económica."}
+      - {norma: "LEC", articulo: "770", apartado: "2.ª", tipo: "regula", nota: "Reconvención con la contestación, solo en los casos tasados; el actor la contesta en diez días."}
+      - {norma: "LEC", articulo: "770", apartado: "3.ª", tipo: "regula", nota: "Comparecencia personal y con abogado; la ausencia injustificada puede dar por admitidos hechos sobre medidas patrimoniales."}
+      - {norma: "LEC", articulo: "770", apartado: "4.ª", tipo: "regula", nota: "Prueba pendiente en treinta días como máximo; prueba de oficio; los hijos de doce años o más son oídos siempre."}
+      - {norma: "LEC", articulo: "770", apartado: "5.ª", tipo: "conexa", nota: "En cualquier momento puede seguirse por el trámite de mutuo acuerdo del art. 777."}
+      - {norma: "LEC", articulo: "770", apartado: "7.ª", tipo: "conexa", nota: "Suspensión de común acuerdo para mediación (art. 19.4)."}
+      - {norma: "LEC", articulo: "753", apartado: "1", tipo: "regula", nota: "Juicio verbal con contestación escrita en veinte días; traslado al Fiscal cuando proceda."}
+      - {norma: "LEC", articulo: "753", apartado: "1, párrafo 2.º", tipo: "conexa", nota: "Consulta de registros para verificar si es competente el juzgado de violencia sobre la mujer (art. 49 bis)."}
+      - {norma: "LEC", articulo: "751", apartado: "1", tipo: "regula", nota: "No surten efecto la renuncia, el allanamiento ni la transacción."}
+      - {norma: "LEC", articulo: "751", apartado: "2.4.º", tipo: "regula", nota: "En separación y divorcio el desistimiento no requiere la conformidad del Fiscal."}
+      - {norma: "LEC", articulo: "751", apartado: "3", tipo: "conexa", nota: "Sobre materias de libre disposición caben renuncia, allanamiento, transacción y desistimiento."}
+      - {norma: "LEC", articulo: "752", apartado: "1", tipo: "regula", nota: "Se decide por los hechos probados, sea cual sea el momento de su alegación; prueba de oficio."}
+      - {norma: "LEC", articulo: "752", apartado: "2", tipo: "regula", nota: "La conformidad o el silencio no vinculan; no rige la fuerza probatoria legal del interrogatorio ni de los documentos."}
+      - {norma: "LEC", articulo: "752", apartado: "4", tipo: "conexa", nota: "Esas especialidades no se aplican a las pretensiones sobre materias de libre disposición."}
+      - {norma: "LEC", articulo: "749", apartado: "2", tipo: "conexa", nota: "Intervención preceptiva del Fiscal si algún interesado es menor, persona con discapacidad o ausente."}
+      - {norma: "LEC", articulo: "774", apartado: "4", tipo: "regula", nota: "Sin acuerdo o no aprobado, la sentencia fija las medidas que sustituyen a las provisionales."}
+      - {norma: "LEC", articulo: "774", apartado: "5", tipo: "regula", nota: "Los recursos no suspenden las medidas; si solo se recurren estas, el LAJ declara firme el divorcio o la separación."}
+      - {norma: "LEC", articulo: "755", tipo: "conexa", nota: "La sentencia se comunica de oficio al Registro Civil; a petición de parte, a otros Registros."}
+      - {norma: "LEC", articulo: "49 bis", apartado: "1", tipo: "conexa", nota: "Iniciado proceso penal u orden de protección por violencia de género, el juez civil se inhibe salvo vista ya iniciada."}
+      - {norma: "LOPJ", articulo: "89", apartado: "7", tipo: "conexa", nota: "Competencia civil exclusiva de la Sección de Violencia sobre la Mujer si concurren los cuatro requisitos."}
+      - {norma: "LOPJ", articulo: "89", apartado: "9", tipo: "regula", nota: "En esos casos está vedado acudir a los medios adecuados de solución de controversias."}
+      - {norma: "LO 1/2025", articulo: "5", apartado: "2", tipo: "regula", nota: "MASC previo en los procesos del libro IV LEC; la separación y el divorcio no están entre las excepciones."}
+    no_consta_en_norma:
+      - "Fecha de efectos de las pensiones fijadas en la sentencia (demanda o sentencia): jurisprudencial."
+      - "Alcance de la ficta admissio del 770.3.ª: limitada por la ley a medidas patrimoniales; aplicación casuística."
+      - "Cómo se acredita el MASC en familia cuando el otro cónyuge no responde: casuística."
+    fuera_de_la_herramienta:
+      - "Reglamentos (UE) 2019/1111 (competencia) y 1259/2010 (ley aplicable): divorcio con elemento extranjero (art. 107.2 CC)."
+    afines: ["Divorcio de mutuo acuerdo y convenio regulador", "Medidas provisionales en familia", "Guarda y custodia y régimen de visitas", "Pensión de alimentos a los hijos", "Pensión compensatoria", "Uso de la vivienda familiar", "Requisito de procedibilidad (MASC)"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Divorcio de mutuo acuerdo y convenio regulador"
+    sinonimos: ["divorcio de mutuo acuerdo", "separación de mutuo acuerdo", "divorcio consensual", "divorcio ante notario", "divorcio ante el letrado de la Administración de Justicia", "convenio regulador", "ratificación del convenio", "contenido mínimo del convenio", "aprobación del convenio", "convenio dañoso para los hijos", "una sola defensa y representación", "modificación del convenio"]
+    normas_base: ["CC", "LEC", "LO 1/2025"]
+    remisiones:
+      - {norma: "CC", articulo: "81", apartado: "1.º", tipo: "regula", nota: "Con hijos menores o con apoyos atribuidos a los padres, separación judicial pasados tres meses, con propuesta de convenio."}
+      - {norma: "CC", articulo: "86", tipo: "regula", nota: "Divorcio judicial de ambos o de uno con consentimiento del otro, con los requisitos del art. 81."}
+      - {norma: "CC", articulo: "82", apartado: "1", tipo: "regula", nota: "Sin esos hijos, separación por convenio ante el LAJ o en escritura notarial, pasados tres meses de matrimonio."}
+      - {norma: "CC", articulo: "82", apartado: "1, párrafo 2.º", tipo: "regula", nota: "Intervención personal y con abogado; consienten los hijos mayores o emancipados sin ingresos que convivan."}
+      - {norma: "CC", articulo: "82", apartado: "2", tipo: "regula", nota: "No cabe ante LAJ o notario si hay hijos menores no emancipados o mayores con apoyos atribuidos a los padres."}
+      - {norma: "CC", articulo: "87", tipo: "regula", nota: "Divorcio por convenio ante el LAJ o notario con los requisitos del art. 82; no ante cónsules."}
+      - {norma: "CC", articulo: "89", tipo: "conexa", nota: "Efectos desde la firmeza de la sentencia o decreto o desde el consentimiento en la escritura."}
+      - {norma: "CC", articulo: "90", apartado: "1", tipo: "regula", nota: "Contenido mínimo: hijos, abuelos, animales, vivienda, cargas y alimentos, liquidación y pensión del art. 97."}
+      - {norma: "CC", articulo: "90", apartado: "2", tipo: "regula", nota: "El juez aprueba salvo acuerdos dañosos para los hijos o gravemente perjudiciales para un cónyuge; denegación motivada."}
+      - {norma: "CC", articulo: "90", apartado: "2, párrafo 4.º", tipo: "regula", nota: "Si el LAJ o el notario aprecian perjuicio, lo advierten y cierran el expediente: solo queda la vía judicial."}
+      - {norma: "CC", articulo: "90", apartado: "2, párrafo 5.º", tipo: "regula", nota: "Desde la aprobación o la escritura, los acuerdos se ejecutan por la vía de apremio."}
+      - {norma: "CC", articulo: "90", apartado: "3", tipo: "conexa", nota: "Modificación judicial o por nuevo convenio; los formalizados ante LAJ o notario, por nuevo acuerdo."}
+      - {norma: "CC", articulo: "90", apartado: "4", tipo: "conexa", nota: "El juez o las partes pueden establecer garantías reales o personales del convenio."}
+      - {norma: "LEC", articulo: "777", apartado: "1", tipo: "regula", nota: "Separación o divorcio de común acuerdo o de uno con consentimiento del otro: procedimiento de este artículo."}
+      - {norma: "LEC", articulo: "777", apartado: "2", tipo: "regula", nota: "Con certificaciones, propuesta de convenio y documentos, incluido el acuerdo de mediación; prueba propuesta en el escrito."}
+      - {norma: "LEC", articulo: "777", apartado: "3", tipo: "regula", nota: "Ratificación por separado en tres días; sin ella, archivo, recurrible en revisión, y queda la vía del 770."}
+      - {norma: "LEC", articulo: "777", apartado: "4", tipo: "conexa", nota: "Diez días para completar documentación y practicar prueba."}
+      - {norma: "LEC", articulo: "777", apartado: "5", tipo: "regula", nota: "Con hijos menores o con apoyos, informe del Fiscal sobre el convenio y audiencia de los hijos si se estima necesaria."}
+      - {norma: "LEC", articulo: "777", apartado: "6", tipo: "regula", nota: "Sentencia que concede o deniega y se pronuncia sobre el convenio."}
+      - {norma: "LEC", articulo: "777", apartado: "7", tipo: "regula", nota: "Si no aprueba el convenio, diez días para proponer otro sobre lo no aprobado; auto en tres días."}
+      - {norma: "LEC", articulo: "777", apartado: "8", tipo: "regula", nota: "Apelables la denegación y el auto que se aparta del convenio; si se aprueba entero, solo recurre el Fiscal por los hijos."}
+      - {norma: "LEC", articulo: "777", apartado: "9", tipo: "conexa", nota: "Modificación de común acuerdo por este artículo; si no, por el art. 775."}
+      - {norma: "LEC", articulo: "777", apartado: "10", tipo: "regula", nota: "Sin hijos menores ni con apoyos, decreto del LAJ tras la ratificación; si ve perjuicio, cierra; decreto irrecurrible."}
+      - {norma: "LEC", articulo: "769", apartado: "2", tipo: "regula", nota: "Competente el juzgado del último domicilio común o del domicilio de cualquiera de los solicitantes."}
+      - {norma: "LEC", articulo: "750", apartado: "2", tipo: "regula", nota: "Cabe una sola defensa y representación; si no se aprueba algún pacto o se pide ejecución, cada uno nombra la suya."}
+      - {norma: "LEC", articulo: "770", apartado: "5.ª", tipo: "conexa", nota: "Un proceso contencioso puede reconducirse al trámite del art. 777."}
+      - {norma: "LO 1/2025", articulo: "5", apartado: "2", tipo: "conexa", nota: "El MASC se exige en los procesos del libro IV LEC; el de mutuo acuerdo no figura entre las excepciones."}
+    no_consta_en_norma:
+      - "Si el procedimiento de mutuo acuerdo exige acreditar un MASC previo: la LO 1/2025 no lo aclara; criterio de cada juzgado."
+      - "Eficacia de los pactos entre cónyuges no aprobados judicialmente: jurisprudencial."
+      - "Alcance del control del notario o del LAJ sobre el convenio («gravemente perjudicial»): casuística."
+    afines: ["Separación y divorcio contenciosos", "Modificación de medidas definitivas", "Ejecución de medidas de familia", "Pensión compensatoria", "Uso de la vivienda familiar", "Liquidación del régimen económico matrimonial (procedimiento)", "Requisito de procedibilidad (MASC)"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Medidas provisionales en familia"
+    sinonimos: ["medidas provisionalísimas", "medidas previas a la demanda de divorcio", "medidas coetáneas", "medidas provisionales coetáneas", "comparecencia de medidas provisionales", "efectos de la admisión de la demanda", "litis expensas", "contribución a las cargas del matrimonio", "uso provisional de la vivienda", "custodia provisional", "riesgo de sustracción del menor", "plazo de treinta días para demandar"]
+    normas_base: ["CC", "LEC", "LO 1/2025"]
+    remisiones:
+      - {norma: "CC", articulo: "102", tipo: "regula", nota: "Admitida la demanda, por ley: vida separada, revocación de poderes y fin de la potestad doméstica sobre privativos."}
+      - {norma: "CC", articulo: "103", apartado: "1.ª", tipo: "regula", nota: "Sin acuerdo aprobado, el juez decide con quién quedan los hijos, el régimen de comunicación y medidas contra la sustracción."}
+      - {norma: "CC", articulo: "103", apartado: "2.ª", tipo: "regula", nota: "Uso de la vivienda según el interés familiar más necesitado de protección; inventario del ajuar."}
+      - {norma: "CC", articulo: "103", apartado: "3.ª", tipo: "regula", nota: "Contribución a las cargas, incluidas las litis expensas, con bases de actualización y garantías."}
+      - {norma: "CC", articulo: "103", apartado: "4.ª", tipo: "regula", nota: "Entrega de bienes gananciales o comunes, reglas de administración y rendición de cuentas."}
+      - {norma: "CC", articulo: "104", tipo: "regula", nota: "Medidas antes de la demanda: solo subsisten si se demanda en los treinta días siguientes a su adopción."}
+      - {norma: "CC", articulo: "105", tipo: "conexa", nota: "No incumple el deber de convivencia quien sale del domicilio con causa razonable y demanda en treinta días."}
+      - {norma: "CC", articulo: "106", tipo: "regula", nota: "Terminan al sustituirse por las de la sentencia o al acabar el proceso; la revocación de poderes es definitiva."}
+      - {norma: "LEC", articulo: "771", apartado: "1", tipo: "regula", nota: "Previas a la demanda, ante el tribunal del propio domicilio; la solicitud no requiere abogado ni procurador."}
+      - {norma: "LEC", articulo: "771", apartado: "2", tipo: "regula", nota: "Comparecencia en diez días con intento de acuerdo; el demandado acude con abogado y procurador."}
+      - {norma: "LEC", articulo: "771", apartado: "2, párrafo 2.º", tipo: "regula", nota: "Por urgencia, el tribunal puede acordar de inmediato efectos del art. 102 CC, custodia y vivienda, sin recurso."}
+      - {norma: "LEC", articulo: "771", apartado: "3", tipo: "regula", nota: "Sin acuerdo o no aprobado, alegaciones y prueba; la pendiente se practica en diez días."}
+      - {norma: "LEC", articulo: "771", apartado: "3, párrafo 2.º", tipo: "regula", nota: "La ausencia injustificada puede dar por admitidos los hechos del otro sobre medidas patrimoniales."}
+      - {norma: "LEC", articulo: "771", apartado: "4", tipo: "regula", nota: "Auto en tres días, sin recurso."}
+      - {norma: "LEC", articulo: "771", apartado: "5", tipo: "regula", nota: "Solo subsisten si se presenta la demanda en los treinta días siguientes a su adopción."}
+      - {norma: "LEC", articulo: "772", apartado: "1", tipo: "regula", nota: "Admitida la demanda, las actuaciones de las medidas previas se unen a los autos."}
+      - {norma: "LEC", articulo: "772", apartado: "2", tipo: "regula", nota: "Solo si procede completarlas o modificarlas hay nueva comparecencia; auto sin recurso."}
+      - {norma: "LEC", articulo: "773", apartado: "1", tipo: "regula", nota: "Coetáneas: se piden en la demanda o se somete un acuerdo, que no vincula para las definitivas."}
+      - {norma: "LEC", articulo: "773", apartado: "2", tipo: "regula", nota: "Admitida la demanda, el tribunal resuelve y, en todo caso, cumple el art. 103 CC."}
+      - {norma: "LEC", articulo: "773", apartado: "3", tipo: "regula", nota: "Comparecencia previa conforme al art. 771; auto sin recurso."}
+      - {norma: "LEC", articulo: "773", apartado: "4", tipo: "regula", nota: "El demandado las pide en la contestación; se resuelven en la vista si se señala en diez días."}
+      - {norma: "LEC", articulo: "773", apartado: "5", tipo: "regula", nota: "Quedan sin efecto al sustituirlas la sentencia o al terminar el proceso de otro modo."}
+      - {norma: "LEC", articulo: "770", apartado: "6.ª", tipo: "conexa", nota: "En los procesos solo de guarda o alimentos de hijos, las cautelares siguen estos mismos trámites."}
+      - {norma: "LEC", articulo: "775", apartado: "3", tipo: "conexa", nota: "En la modificación de medidas cabe pedir la modificación provisional por el art. 773."}
+      - {norma: "LEC", articulo: "753", apartado: "2", tipo: "conexa", nota: "En la comparecencia del 771, tras la prueba, conclusiones orales."}
+      - {norma: "LO 1/2025", articulo: "5", apartado: "3", tipo: "conexa", nota: "No hace falta MASC para pedir medidas cautelares antes de la demanda."}
+      - {norma: "LO 1/2025", articulo: "5", apartado: "2.b)", tipo: "conexa", nota: "Las medidas del art. 158 CC no exigen actividad negociadora previa."}
+    no_consta_en_norma:
+      - "Si las medidas del 771 LEC son «cautelares previas» a efectos del 5.3 LO 1/2025: la ley no lo dice; casuística."
+      - "Cómputo de los treinta días del 771.5 LEC y del 104 CC: jurisprudencial."
+      - "Efectos desde la demanda o desde el auto de las pensiones provisionales: jurisprudencial."
+    afines: ["Separación y divorcio contenciosos", "Modificación de medidas definitivas", "Uso de la vivienda familiar", "Pensión de alimentos a los hijos", "Guarda y custodia y régimen de visitas", "Medidas cautelares: presupuestos"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Modificación de medidas definitivas"
+    sinonimos: ["modificación de medidas", "demanda de modificación de medidas", "cambio sustancial de circunstancias", "alteración sustancial", "modificación del convenio regulador", "reducción de la pensión de alimentos", "modificación de la custodia", "modificación de la pensión compensatoria", "extinción de la pensión", "modificación provisional de medidas", "modificación de mutuo acuerdo"]
+    normas_base: ["LEC", "CC", "LO 1/2025", "LOPJ"]
+    remisiones:
+      - {norma: "LEC", articulo: "775", apartado: "1", tipo: "regula", nota: "Pueden pedirla los cónyuges y, con hijos menores o con apoyos, el Fiscal, si han variado sustancialmente las circunstancias."}
+      - {norma: "LEC", articulo: "775", apartado: "2", tipo: "regula", nota: "Se tramita por el art. 770; de común acuerdo o con consentimiento y propuesta de convenio, por el 777."}
+      - {norma: "LEC", articulo: "775", apartado: "3", tipo: "regula", nota: "En la demanda o la contestación cabe pedir la modificación provisional, que se tramita por el art. 773."}
+      - {norma: "LEC", articulo: "777", apartado: "9", tipo: "regula", nota: "Medidas de un mutuo acuerdo: se modifican por el 777 si hay acuerdo y nuevo convenio; si no, por el 775."}
+      - {norma: "LEC", articulo: "770", tipo: "conexa", nota: "Trámite del juicio verbal con las reglas especiales de los procesos matrimoniales."}
+      - {norma: "LEC", articulo: "776", apartado: "3.ª", tipo: "conexa", nota: "El incumplimiento reiterado del régimen de visitas puede llevar a modificar la guarda y las visitas."}
+      - {norma: "CC", articulo: "90", apartado: "3", tipo: "regula", nota: "Modificables judicialmente o por nuevo convenio aprobado si lo aconsejan necesidades de los hijos o cambio de circunstancias."}
+      - {norma: "CC", articulo: "90", apartado: "3, párrafo 3.º", tipo: "regula", nota: "Las medidas convenidas ante el LAJ o en escritura pública se modifican por nuevo acuerdo con los mismos requisitos."}
+      - {norma: "CC", articulo: "91", tipo: "regula", nota: "Las medidas de la sentencia pueden modificarse cuando se alteren sustancialmente las circunstancias."}
+      - {norma: "CC", articulo: "93", tipo: "conexa", nota: "Los alimentos se acomodan a las circunstancias económicas y necesidades de los hijos en cada momento."}
+      - {norma: "CC", articulo: "100", tipo: "regula", nota: "La pensión compensatoria judicial solo se modifica por alteraciones en la fortuna de uno u otro cónyuge."}
+      - {norma: "CC", articulo: "101", tipo: "conexa", nota: "Extinción de la pensión compensatoria: cese de la causa, nuevo matrimonio o convivencia marital del acreedor."}
+      - {norma: "LO 1/2025", articulo: "5", apartado: "2", tipo: "conexa", nota: "La modificación de medidas es proceso del libro IV LEC y no figura entre las excepciones al MASC previo."}
+      - {norma: "LOPJ", articulo: "89", apartado: "6.c)", tipo: "conexa", nota: "La Sección de Violencia sobre la Mujer conoce de la modificación si concurren los requisitos del art. 89.7."}
+    no_consta_en_norma:
+      - "Qué cambio es «sustancial» (permanente, imprevisible, no buscado voluntariamente): jurisprudencial."
+      - "Fecha de efectos de la modificación (demanda o sentencia): jurisprudencial."
+      - "Si el 775.1 («el tribunal que acordó las medidas») cede ante el 769 cuando cambian los domicilios: casuística."
+    afines: ["Separación y divorcio contenciosos", "Divorcio de mutuo acuerdo y convenio regulador", "Pensión de alimentos a los hijos", "Pensión compensatoria", "Guarda y custodia y régimen de visitas", "Medidas provisionales en familia"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Pensión de alimentos a los hijos"
+    sinonimos: ["alimentos de los hijos", "pensión alimenticia", "contribución a los alimentos", "alimentos de hijos mayores de edad", "hijos mayores que conviven sin ingresos", "proporcionalidad de los alimentos", "alimentos desde la demanda", "pensiones atrasadas", "extinción de la pensión de alimentos", "embargo por alimentos", "gastos extraordinarios", "mínimo vital"]
+    normas_base: ["CC", "LEC", "LO 1/2025"]
+    remisiones:
+      - {norma: "CC", articulo: "110", tipo: "regula", nota: "Aunque no tengan la patria potestad, ambos progenitores deben velar por los hijos menores y prestarles alimentos."}
+      - {norma: "CC", articulo: "154", apartado: "1.º", tipo: "conexa", nota: "La patria potestad comprende alimentar, educar y procurar formación integral a los hijos."}
+      - {norma: "CC", articulo: "92", apartado: "1", tipo: "conexa", nota: "La separación, la nulidad y el divorcio no eximen a los padres de sus obligaciones con los hijos."}
+      - {norma: "CC", articulo: "93", tipo: "regula", nota: "El juez fija la contribución de cada progenitor y medidas que aseguren su efectividad y su acomodación."}
+      - {norma: "CC", articulo: "93", apartado: "párrafo 2.º", tipo: "regula", nota: "Hijos mayores o emancipados sin ingresos que convivan: alimentos de los arts. 142 y ss. en la misma resolución."}
+      - {norma: "CC", articulo: "90", apartado: "1.d)", tipo: "conexa", nota: "El convenio regula la contribución a cargas y alimentos, sus bases de actualización y garantías."}
+      - {norma: "CC", articulo: "103", apartado: "3.ª", tipo: "conexa", nota: "Medida provisional: contribución a las cargas del matrimonio, con bases de actualización y garantías."}
+      - {norma: "CC", articulo: "142", tipo: "regula", nota: "Sustento, habitación, vestido, asistencia médica y educación, también tras la mayoría si la formación no acabó sin culpa."}
+      - {norma: "CC", articulo: "146", tipo: "regula", nota: "Cuantía proporcionada al caudal de quien los da y a las necesidades de quien los recibe."}
+      - {norma: "CC", articulo: "147", tipo: "regula", nota: "Se reducen o aumentan según cambien las necesidades del alimentista y la fortuna del obligado."}
+      - {norma: "CC", articulo: "148", tipo: "regula", nota: "Exigibles desde que se necesitan, pero solo se abonan desde la demanda; pago por meses anticipados."}
+      - {norma: "CC", articulo: "148", apartado: "párrafo 3.º", tipo: "conexa", nota: "Medidas cautelares urgentes para asegurar los anticipos de terceros y las necesidades futuras."}
+      - {norma: "CC", articulo: "151", tipo: "regula", nota: "Irrenunciables, intransmisibles y no compensables; las pensiones atrasadas sí se compensan, renuncian o transmiten."}
+      - {norma: "CC", articulo: "152", tipo: "regula", nota: "Cesan por muerte, ruina del obligado, posibilidad de trabajar del alimentista, causa de desheredación o mala conducta."}
+      - {norma: "CC", articulo: "158", apartado: "1.º", tipo: "conexa", nota: "El juez, de oficio o a instancia del hijo, pariente o Fiscal, asegura la prestación de alimentos incumplida."}
+      - {norma: "CC", articulo: "1966", apartado: "1.ª", tipo: "conexa", nota: "Prescribe a los cinco años la acción para exigir el pago de pensiones alimenticias."}
+      - {norma: "LEC", articulo: "748", apartado: "4.º", tipo: "conexa", nota: "Los procesos solo sobre alimentos de hijos menores entre progenitores siguen las reglas especiales de familia."}
+      - {norma: "LEC", articulo: "769", apartado: "3", tipo: "regula", nota: "Procesos solo de guarda o alimentos: juzgado del último domicilio común; si no, domicilio del demandado o residencia del menor."}
+      - {norma: "LEC", articulo: "770", apartado: "6.ª", tipo: "conexa", nota: "En esos procesos, las cautelares siguen los trámites de las medidas de nulidad, separación o divorcio."}
+      - {norma: "LEC", articulo: "776", apartado: "1.ª", tipo: "conexa", nota: "Multas coercitivas al progenitor que incumple de forma reiterada sus pagos."}
+      - {norma: "LEC", articulo: "776", apartado: "4.ª", tipo: "conexa", nota: "Gasto extraordinario no previsto: declaración previa al despacho de la ejecución, con vista si hay oposición."}
+      - {norma: "LEC", articulo: "608", tipo: "regula", nota: "Por alimentos legales no rigen los límites de inembargabilidad del 607: el tribunal fija la cantidad embargable."}
+      - {norma: "LO 1/2025", articulo: "5", apartado: "2.b)", tipo: "conexa", nota: "Las medidas del art. 158 CC no exigen MASC; el proceso de alimentos no figura entre las excepciones."}
+    no_consta_en_norma:
+      - "Mínimo vital: pensión mínima aun con recursos escasos del obligado: jurisprudencial."
+      - "Deslinde entre gastos ordinarios y extraordinarios (médicos, extraescolares, universidad): jurisprudencial."
+      - "Hijos mayores: límite temporal y extinción por falta de aprovechamiento o ruptura de la relación: jurisprudencial."
+      - "Efectos de la reducción o extinción (no se devuelven las pensiones ya percibidas): jurisprudencial."
+    afines: ["Alimentos entre parientes", "Separación y divorcio contenciosos", "Medidas provisionales en familia", "Modificación de medidas definitivas", "Ejecución de medidas de familia", "Embargo de sueldos y pensiones"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Pensión compensatoria"
+    sinonimos: ["compensación por desequilibrio", "desequilibrio económico", "pensión compensatoria temporal", "pensión compensatoria indefinida", "prestación única", "sustitución de la pensión compensatoria", "extinción por convivencia marital", "extinción por nuevo matrimonio", "muerte del deudor de la pensión", "modificación de la pensión compensatoria", "indemnización al cónyuge de buena fe", "embargo por pensión compensatoria"]
+    normas_base: ["CC", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "97", tipo: "regula", nota: "Desequilibrio que empeora la situación anterior: pensión temporal, indefinida o prestación única."}
+      - {norma: "CC", articulo: "97", apartado: "párrafo 2.º", tipo: "regula", nota: "Sin acuerdo, el juez fija el importe: edad, salud, empleo, dedicación a la familia, duración y medios, entre otras."}
+      - {norma: "CC", articulo: "97", apartado: "párrafo 3.º", tipo: "regula", nota: "Se fijan periodicidad, forma de pago, bases de actualización, duración o cese y garantías."}
+      - {norma: "CC", articulo: "90", apartado: "1.f)", tipo: "regula", nota: "El convenio regulador incluye, en su caso, la pensión del art. 97."}
+      - {norma: "CC", articulo: "99", tipo: "regula", nota: "Puede sustituirse por renta vitalicia, usufructo de bienes o entrega de un capital en bienes o en dinero."}
+      - {norma: "CC", articulo: "100", tipo: "regula", nota: "La judicial solo se modifica por alteraciones en la fortuna; la del convenio ante LAJ o notario, por nuevo convenio."}
+      - {norma: "CC", articulo: "101", tipo: "regula", nota: "Se extingue por cese de la causa, nuevo matrimonio o convivencia marital del acreedor."}
+      - {norma: "CC", articulo: "101", apartado: "párrafo 2.º", tipo: "regula", nota: "No se extingue por la muerte del deudor; sus herederos pueden pedir reducirla o suprimirla."}
+      - {norma: "CC", articulo: "98", tipo: "conexa", nota: "En la nulidad, el cónyuge de buena fe tiene derecho a indemnización si hubo convivencia."}
+      - {norma: "CC", articulo: "1966", apartado: "3.ª", tipo: "conexa", nota: "Prescriben a los cinco años las acciones por pagos que deben hacerse por años o en plazos más breves."}
+      - {norma: "LEC", articulo: "774", apartado: "1", tipo: "conexa", nota: "En la vista, los cónyuges pueden someter al tribunal sus acuerdos sobre las consecuencias del divorcio."}
+      - {norma: "LEC", articulo: "751", apartado: "3", tipo: "conexa", nota: "Sobre materias de libre disposición caben renuncia, allanamiento, transacción y desistimiento."}
+      - {norma: "LEC", articulo: "752", apartado: "4", tipo: "conexa", nota: "Las especialidades probatorias de familia no rigen para las materias de libre disposición."}
+      - {norma: "LEC", articulo: "775", apartado: "1", tipo: "conexa", nota: "Modificación por variación sustancial de las circunstancias, por el trámite del art. 770 o del 777."}
+      - {norma: "LEC", articulo: "776", apartado: "1.ª", tipo: "conexa", nota: "Multas coercitivas al cónyuge que incumple de forma reiterada sus pagos."}
+      - {norma: "LEC", articulo: "608", tipo: "regula", nota: "Sin los límites del 607 si el ejecutante acredita necesidad económica, ponderadas ambas situaciones."}
+    no_consta_en_norma:
+      - "Disponibilidad: no se fija de oficio y cabe renunciarla: jurisprudencial."
+      - "Temporalidad y juicio prospectivo sobre la superación del desequilibrio: jurisprudencial."
+      - "Si la «convivencia marital» del 101 exige estabilidad o basta una relación sentimental: jurisprudencial."
+      - "Compensación entre miembros de una pareja de hecho: no prevista en el CC; jurisprudencial."
+    afines: ["Separación y divorcio contenciosos", "Divorcio de mutuo acuerdo y convenio regulador", "Modificación de medidas definitivas", "Ejecución de medidas de familia", "Separación de bienes y compensación por trabajo doméstico", "Pensión de alimentos a los hijos"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Guarda y custodia y régimen de visitas"
+    sinonimos: ["custodia compartida", "custodia exclusiva", "guarda conjunta", "régimen de visitas", "régimen de estancia y comunicación", "interés superior del menor", "audiencia del menor", "exploración del menor", "suspensión de visitas", "visitas y violencia de género", "visitas de los abuelos", "cambio de residencia del menor", "patria potestad tras la separación"]
+    normas_base: ["CC", "LEC", "LO 1/2025", "LOPJ"]
+    remisiones:
+      - {norma: "CC", articulo: "92", apartado: "2", tipo: "regula", nota: "Al decidir sobre custodia y educación, el juez vela por el derecho del menor a ser oído y motiva en su interés superior."}
+      - {norma: "CC", articulo: "92", apartado: "5", tipo: "regula", nota: "Custodia compartida cuando la piden ambos en el convenio o llegan a ese acuerdo en el proceso."}
+      - {norma: "CC", articulo: "92", apartado: "6", tipo: "regula", nota: "Antes de decidir: informe del Fiscal, audiencia de los menores si se estima necesaria y valoración de la relación familiar."}
+      - {norma: "CC", articulo: "92", apartado: "7", tipo: "regula", nota: "No cabe la guarda conjunta con proceso penal por atentar contra el otro o los hijos, o con indicios fundados de violencia."}
+      - {norma: "CC", articulo: "92", apartado: "8", tipo: "regula", nota: "Excepcionalmente, compartida a instancia de una parte, con informe del Fiscal, si solo así se protege al menor."}
+      - {norma: "CC", articulo: "92", apartado: "9", tipo: "conexa", nota: "El juez puede recabar dictamen de especialistas sobre la idoneidad del régimen de custodia."}
+      - {norma: "CC", articulo: "92", apartado: "10", tipo: "regula", nota: "Cautelas para el cumplimiento de los regímenes, procurando no separar a los hermanos."}
+      - {norma: "CC", articulo: "92", apartado: "3", tipo: "conexa", nota: "La sentencia acuerda la privación de la patria potestad si en el proceso se revela causa."}
+      - {norma: "CC", articulo: "94", tipo: "regula", nota: "El juez fija tiempo, modo y lugar del derecho de visita, comunicación y estancia del progenitor no custodio."}
+      - {norma: "CC", articulo: "94", apartado: "párrafo 3.º", tipo: "regula", nota: "Puede limitarse o suspenderse por circunstancias relevantes o incumplimiento grave o reiterado."}
+      - {norma: "CC", articulo: "94", apartado: "párrafo 4.º", tipo: "regula", nota: "Sin visitas con proceso penal por atentar contra el otro o los hijos o indicios de violencia, salvo resolución motivada."}
+      - {norma: "CC", articulo: "94", apartado: "párrafo 5.º", tipo: "regula", nota: "Nunca visitas al progenitor en prisión, provisional o firme, por esos delitos."}
+      - {norma: "CC", articulo: "94", apartado: "párrafo 6.º", tipo: "conexa", nota: "Puede reconocerse el derecho de comunicación y visita de hermanos, abuelos, parientes y allegados."}
+      - {norma: "CC", articulo: "103", apartado: "1.ª", tipo: "conexa", nota: "Medida provisional: con quién quedan los hijos, régimen de comunicación y medidas contra la sustracción."}
+      - {norma: "CC", articulo: "154", apartado: "3.º", tipo: "conexa", nota: "El cambio de residencia habitual del menor exige el consentimiento de ambos o autorización judicial."}
+      - {norma: "CC", articulo: "156", apartado: "párrafo 5.º", tipo: "regula", nota: "Separados, ejerce la patria potestad el conviviente; el juez puede atribuirla conjunta o repartir funciones."}
+      - {norma: "CC", articulo: "158", apartado: "3.º", tipo: "conexa", nota: "Medidas contra la sustracción: prohibición de salida, de pasaporte y de cambio de domicilio sin autorización."}
+      - {norma: "CC", articulo: "159", tipo: "regula", nota: "Sin acuerdo, el juez decide con quién quedan los hijos; oye a los que tengan juicio y siempre a los mayores de doce."}
+      - {norma: "CC", articulo: "160", apartado: "1", tipo: "regula", nota: "El menor tiene derecho a relacionarse con sus progenitores aunque no ejerzan la patria potestad."}
+      - {norma: "CC", articulo: "160", apartado: "2", tipo: "conexa", nota: "No pueden impedirse sin justa causa las relaciones con hermanos, abuelos y allegados."}
+      - {norma: "CC", articulo: "170", tipo: "conexa", nota: "Privación total o parcial de la patria potestad por incumplimiento de deberes o en causa criminal o matrimonial."}
+      - {norma: "LEC", articulo: "769", apartado: "3", tipo: "regula", nota: "Procesos solo de guarda: juzgado del último domicilio común; si no, domicilio del demandado o residencia del menor."}
+      - {norma: "LEC", articulo: "770", apartado: "4.ª", tipo: "regula", nota: "Los hijos pueden ser oídos antes de los doce años y lo son siempre desde esa edad, en condiciones idóneas."}
+      - {norma: "LEC", articulo: "776", apartado: "3.ª", tipo: "regula", nota: "El incumplimiento reiterado de las visitas puede llevar a modificar la guarda, si lo aconseja el interés del menor."}
+      - {norma: "LEC", articulo: "748", apartado: "4.º", tipo: "conexa", nota: "Los procesos solo sobre guarda y custodia de hijos menores siguen las reglas especiales de familia."}
+      - {norma: "LO 1/2025", articulo: "5", apartado: "2.b)", tipo: "conexa", nota: "Las medidas del art. 158 CC no exigen MASC previo; el proceso de guarda y custodia sí."}
+      - {norma: "LOPJ", articulo: "89", apartado: "6.b)", tipo: "conexa", nota: "La Sección de Violencia sobre la Mujer conoce de la guarda y custodia si concurren los requisitos del art. 89.7."}
+    no_consta_en_norma:
+      - "Criterios de la custodia compartida y su carácter normal y deseable: jurisprudencial (Sala Primera)."
+      - "Uso de la vivienda con custodia compartida: el art. 96 CC no lo regula; jurisprudencial."
+      - "Puntos de encuentro familiar y visitas supervisadas: regulación autonómica; casuística."
+    afines: ["Separación y divorcio contenciosos", "Medidas provisionales en familia", "Modificación de medidas definitivas", "Ejecución de medidas de familia", "Uso de la vivienda familiar", "Pensión de alimentos a los hijos"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Ejecución de medidas de familia"
+    sinonimos: ["ejecución de sentencia de divorcio", "ejecución del convenio regulador", "impago de pensiones", "reclamación de pensiones atrasadas", "multas coercitivas en familia", "incumplimiento del régimen de visitas", "gastos extraordinarios", "declaración de gasto extraordinario", "embargo por alimentos", "oposición a la ejecución de medidas", "ejecución de obligaciones personalísimas", "vía de apremio del convenio"]
+    normas_base: ["LEC", "CC"]
+    remisiones:
+      - {norma: "LEC", articulo: "776", tipo: "regula", nota: "Las medidas se ejecutan por el libro III LEC con las especialidades de este artículo."}
+      - {norma: "LEC", articulo: "776", apartado: "1.ª", tipo: "regula", nota: "Impago reiterado: multas coercitivas del LAJ (art. 711), además de ejecutar lo debido sobre el patrimonio."}
+      - {norma: "LEC", articulo: "776", apartado: "2.ª", tipo: "regula", nota: "Obligaciones personalísimas: no hay sustitución automática por dinero y las multas pueden durar más de un año."}
+      - {norma: "LEC", articulo: "776", apartado: "3.ª", tipo: "regula", nota: "El incumplimiento reiterado de las visitas, por cualquiera de los progenitores, puede llevar a modificar la guarda."}
+      - {norma: "LEC", articulo: "776", apartado: "4.ª", tipo: "regula", nota: "Gasto extraordinario no previsto: declaración previa; si hay oposición en cinco días, vista del verbal y auto."}
+      - {norma: "LEC", articulo: "774", apartado: "5", tipo: "regula", nota: "Los recursos contra la sentencia no suspenden la eficacia de las medidas acordadas."}
+      - {norma: "CC", articulo: "90", apartado: "2, párrafo 5.º", tipo: "regula", nota: "Desde la aprobación del convenio o el otorgamiento de la escritura, los acuerdos se ejecutan por vía de apremio."}
+      - {norma: "LEC", articulo: "545", apartado: "1", tipo: "regula", nota: "Competente el tribunal de primera instancia o el que aprobó u homologó el acuerdo."}
+      - {norma: "LEC", articulo: "517", apartado: "2.3.º", tipo: "conexa", nota: "Título ejecutivo: la resolución que aprueba u homologa acuerdos logrados en el proceso."}
+      - {norma: "LEC", articulo: "517", apartado: "2.9.º", tipo: "conexa", nota: "También las demás resoluciones y documentos a los que una ley atribuye ejecución (decreto o escritura del convenio)."}
+      - {norma: "LEC", articulo: "548", tipo: "conexa", nota: "No se despacha ejecución en los veinte días siguientes a la firmeza o a la notificación de la aprobación del convenio."}
+      - {norma: "LEC", articulo: "556", apartado: "1", tipo: "regula", nota: "Oposición en diez días: pago o cumplimiento documentado, caducidad o pactos en documento público."}
+      - {norma: "LEC", articulo: "518", tipo: "conexa", nota: "La acción ejecutiva fundada en sentencia o resolución caduca a los cinco años de su firmeza."}
+      - {norma: "CC", articulo: "1966", apartado: "1.ª", tipo: "conexa", nota: "Prescribe a los cinco años la acción para exigir el pago de pensiones alimenticias."}
+      - {norma: "LEC", articulo: "608", tipo: "regula", nota: "Por alimentos no rigen los límites del 607; por pensión compensatoria, si se acredita necesidad."}
+      - {norma: "LEC", articulo: "711", apartado: "1", tipo: "conexa", nota: "Cuantía de las multas coercitivas: mensual hasta el 20 % y única hasta el 50 % del valor."}
+      - {norma: "LEC", articulo: "709", apartado: "3", tipo: "conexa", nota: "Regla general de multas trimestrales durante un año y luego equivalente; el 776.2.ª la excepciona."}
+      - {norma: "LEC", articulo: "750", apartado: "2, párrafo 2.º", tipo: "conexa", nota: "Si hubo defensa única y uno pide la ejecución del acuerdo, se requiere al otro para que nombre abogado y procurador."}
+      - {norma: "CC", articulo: "94", apartado: "párrafo 3.º", tipo: "conexa", nota: "El incumplimiento grave o reiterado permite limitar o suspender las visitas."}
+      - {norma: "CC", articulo: "158", apartado: "1.º", tipo: "conexa", nota: "Medidas para asegurar los alimentos y proveer a las necesidades futuras del hijo."}
+    no_consta_en_norma:
+      - "Qué es gasto extraordinario y si exige consentimiento previo del otro progenitor: jurisprudencial."
+      - "Pagos directos del obligado alegados como pago de la pensión (151 CC): jurisprudencial."
+      - "Cuándo hay «reiteración» a efectos del 776.1.ª y 3.ª: casuística."
+    fuera_de_la_herramienta:
+      - "Código Penal, art. 227: impago de prestaciones a cónyuge o hijos fijadas en convenio judicialmente aprobado o resolución judicial."
+    afines: ["Despacho de la ejecución y plazo de espera", "Oposición a la ejecución por motivos de fondo", "Embargo de sueldos y pensiones", "Ejecución de obligaciones de hacer y no hacer", "Pensión de alimentos a los hijos", "Guarda y custodia y régimen de visitas", "Caducidad de la acción ejecutiva"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Liquidación del régimen económico matrimonial (procedimiento)"
+    sinonimos: ["liquidación de gananciales", "liquidación de la sociedad de gananciales", "formación de inventario", "inventario de la comunidad matrimonial", "activo y pasivo de la sociedad", "créditos entre cónyuges y la sociedad", "reintegros e indemnizaciones", "contador partidor en la liquidación", "lotes y adjudicaciones", "liquidación del régimen de participación", "disolución de la sociedad de gananciales", "separación de hecho y gananciales"]
+    normas_base: ["LEC", "CC", "LO 1/2025", "LOPJ"]
+    remisiones:
+      - {norma: "LEC", articulo: "806", tipo: "regula", nota: "Procedimiento para liquidar, sin acuerdo de los cónyuges, cualquier régimen con masa común de bienes."}
+      - {norma: "LEC", articulo: "807", tipo: "regula", nota: "Competente el juzgado del proceso de nulidad, separación o divorcio, o el que conoció de la disolución."}
+      - {norma: "LEC", articulo: "808", apartado: "1", tipo: "regula", nota: "Admitida la demanda matrimonial o iniciado el proceso de disolución, cualquier cónyuge o heredero pide el inventario."}
+      - {norma: "LEC", articulo: "808", apartado: "2", tipo: "regula", nota: "Con propuesta de inventario por partidas separadas y documentos que las justifiquen."}
+      - {norma: "LEC", articulo: "809", apartado: "1", tipo: "regula", nota: "Comparecencia ante el LAJ en diez días; quien no acude sin causa queda conforme con la propuesta del otro."}
+      - {norma: "LEC", articulo: "809", apartado: "1, párrafo 4.º", tipo: "regula", nota: "El tribunal resuelve ese día o el siguiente sobre administración y disposición de los bienes inventariados."}
+      - {norma: "LEC", articulo: "809", apartado: "2", tipo: "regula", nota: "Si hay controversia sobre partidas o importes, vista del verbal; la sentencia aprueba el inventario."}
+      - {norma: "LEC", articulo: "810", apartado: "1", tipo: "regula", nota: "Concluido el inventario y firme la disolución, cualquier cónyuge o sus herederos piden la liquidación."}
+      - {norma: "LEC", articulo: "810", apartado: "2", tipo: "regula", nota: "Propuesta con indemnizaciones, reintegros y división del remanente, con las preferencias de la ley civil."}
+      - {norma: "LEC", articulo: "810", apartado: "3", tipo: "regula", nota: "Comparecencia en diez días para acordar o, si no, designar contador y peritos."}
+      - {norma: "LEC", articulo: "810", apartado: "4", tipo: "regula", nota: "La incomparecencia injustificada equivale a conformidad; lo acordado se ejecuta por el art. 788."}
+      - {norma: "LEC", articulo: "810", apartado: "5", tipo: "regula", nota: "Sin acuerdo, contador y peritos por el art. 784 y trámites de los arts. 785 y ss."}
+      - {norma: "LEC", articulo: "811", apartado: "1", tipo: "conexa", nota: "Régimen de participación: no cabe pedir la liquidación hasta que sea firme la disolución."}
+      - {norma: "LEC", articulo: "811", apartado: "5", tipo: "conexa", nota: "Participación sin acuerdo: vista del verbal y sentencia que fija patrimonios y la cantidad a pagar."}
+      - {norma: "LEC", articulo: "784", apartado: "3", tipo: "conexa", nota: "Sin acuerdo sobre el contador, se designa por sorteo entre abogados con despacho en el lugar."}
+      - {norma: "LEC", articulo: "787", apartado: "1", tipo: "conexa", nota: "Oposición a las operaciones divisorias en diez días, por escrito y motivada."}
+      - {norma: "LEC", articulo: "787", apartado: "5", tipo: "conexa", nota: "Sin conformidad, juicio verbal; la sentencia no produce cosa juzgada sobre los bienes adjudicados."}
+      - {norma: "CC", articulo: "1392", tipo: "regula", nota: "La sociedad concluye de pleno derecho por disolución o nulidad del matrimonio, separación o pacto de otro régimen."}
+      - {norma: "CC", articulo: "1393", tipo: "conexa", nota: "Disolución judicial a petición de uno: apoyos con representación plena patrimonial, fraude, separación de hecho de más de un año…"}
+      - {norma: "CC", articulo: "95", tipo: "regula", nota: "Sentencia o decreto firmes o escritura del convenio disuelven el régimen y aprueban la liquidación si hay acuerdo."}
+      - {norma: "CC", articulo: "1396", tipo: "regula", nota: "Disuelta la sociedad, la liquidación empieza por el inventario del activo y del pasivo."}
+      - {norma: "CC", articulo: "1397", tipo: "regula", nota: "Activo: gananciales existentes, valor de lo enajenado en fraude y créditos de la sociedad contra un cónyuge."}
+      - {norma: "CC", articulo: "1398", tipo: "regula", nota: "Pasivo: deudas de la sociedad y créditos de los cónyuges contra ella, en importe actualizado."}
+      - {norma: "CC", articulo: "1403", tipo: "conexa", nota: "Pagadas las deudas, se abonan las indemnizaciones y reintegros de cada cónyuge, con compensaciones."}
+      - {norma: "CC", articulo: "1404", tipo: "regula", nota: "El remanente se divide por mitad entre los cónyuges o sus herederos."}
+      - {norma: "CC", articulo: "1406", tipo: "conexa", nota: "Adjudicación preferente de bienes de uso personal, explotación, local profesional y, por muerte, vivienda."}
+      - {norma: "CC", articulo: "1410", tipo: "regula", nota: "En lo no previsto, rigen las normas de la partición y liquidación de la herencia."}
+      - {norma: "LO 1/2025", articulo: "5", apartado: "2", tipo: "conexa", nota: "Es proceso del libro IV LEC y no figura entre las excepciones al MASC previo."}
+      - {norma: "LOPJ", articulo: "89", apartado: "6.a)", tipo: "conexa", nota: "La Sección de Violencia sobre la Mujer conoce del régimen económico si concurren los requisitos del art. 89.7."}
+    no_consta_en_norma:
+      - "Fecha de disolución cuando hubo una separación de hecho prolongada (bienes adquiridos después): jurisprudencial."
+      - "Cuotas del préstamo hipotecario pagadas por uno tras la disolución: crédito contra el otro, jurisprudencial."
+      - "Si la sentencia del 809.2 hace cosa juzgada sobre el carácter privativo o ganancial de un bien: jurisprudencial."
+    afines: ["Separación y divorcio contenciosos", "Divorcio de mutuo acuerdo y convenio regulador", "Disolución y liquidación de la sociedad de gananciales", "Bienes privativos y gananciales", "División judicial de la herencia", "Partición de la herencia y su impugnación"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Medidas judiciales de apoyo a personas con discapacidad"
+    sinonimos: ["curatela", "curatela representativa", "curatela asistencial", "defensor judicial", "guarda de hecho", "provisión de apoyos", "antigua incapacitación", "modificación de la capacidad", "revisión de las medidas de apoyo", "medidas voluntarias de apoyo", "poderes preventivos", "internamiento involuntario", "autorización judicial al curador"]
+    normas_base: ["CC", "LEC", "LO 1/2025"]
+    remisiones:
+      - {norma: "CC", articulo: "249", tipo: "regula", nota: "Las medidas legales o judiciales solo proceden en defecto o insuficiencia de la voluntad; necesidad y proporcionalidad."}
+      - {norma: "CC", articulo: "249", apartado: "párrafo 3.º", tipo: "regula", nota: "Funciones representativas solo excepcionalmente, si no es posible conocer la voluntad pese a un esfuerzo considerable."}
+      - {norma: "CC", articulo: "249", apartado: "párrafo 4.º", tipo: "conexa", nota: "El juez puede dictar salvaguardas para que el apoyo atienda a la voluntad, deseos y preferencias."}
+      - {norma: "CC", articulo: "250", tipo: "regula", nota: "Medidas de apoyo: voluntarias, guarda de hecho, curatela y defensor judicial."}
+      - {norma: "CC", articulo: "250", apartado: "párrafo 5.º", tipo: "regula", nota: "Curatela: apoyo continuado, con la extensión que fije la resolución judicial."}
+      - {norma: "CC", articulo: "250", apartado: "párrafo 6.º", tipo: "regula", nota: "Defensor judicial: apoyo ocasional, aunque sea recurrente."}
+      - {norma: "CC", articulo: "250", apartado: "párrafo 8.º", tipo: "conexa", nota: "No puede prestar apoyo quien da por contrato servicios asistenciales o residenciales a la persona."}
+      - {norma: "CC", articulo: "255", apartado: "párrafo 5.º", tipo: "regula", nota: "Solo a falta o por insuficiencia de las medidas voluntarias y de una guarda de hecho suficiente cabe la vía judicial."}
+      - {norma: "CC", articulo: "268", tipo: "regula", nota: "Medidas proporcionadas, con máxima autonomía y atención a la voluntad, deseos y preferencias."}
+      - {norma: "CC", articulo: "268", apartado: "párrafo 2.º", tipo: "regula", nota: "Revisión periódica en tres años como máximo; excepcionalmente y motivado, hasta seis."}
+      - {norma: "CC", articulo: "269", tipo: "regula", nota: "Curatela por resolución motivada si no hay otro apoyo suficiente; fija los actos que requieren asistencia."}
+      - {norma: "CC", articulo: "269", apartado: "párrafo 3.º", tipo: "regula", nota: "Representación solo en casos excepcionales y para actos concretos fijados en resolución motivada."}
+      - {norma: "CC", articulo: "269", apartado: "párrafo 5.º", tipo: "regula", nota: "La resolución nunca puede consistir en la mera privación de derechos."}
+      - {norma: "CC", articulo: "270", tipo: "conexa", nota: "Medidas de control del curador para evitar abusos, conflictos de intereses e influencia indebida."}
+      - {norma: "CC", articulo: "276", tipo: "conexa", nota: "Se nombra curador a quien propuso la persona; en su defecto, orden legal alterable oída la persona."}
+      - {norma: "CC", articulo: "287", tipo: "conexa", nota: "El curador representativo necesita autorización judicial para los actos que fije la resolución y los que enumera."}
+      - {norma: "LEC", articulo: "756", apartado: "1", tipo: "regula", nota: "El proceso contencioso procede si hubo oposición en el expediente de jurisdicción voluntaria o no pudo resolverse."}
+      - {norma: "LEC", articulo: "756", apartado: "2", tipo: "regula", nota: "Competente el juez del expediente previo, salvo cambio de residencia de la persona, que lleva al de su residencia."}
+      - {norma: "LEC", articulo: "757", apartado: "1", tipo: "regula", nota: "Legitimados: la propia persona, su cónyuge o pareja de hecho, descendientes, ascendientes y hermanos."}
+      - {norma: "LEC", articulo: "757", apartado: "2", tipo: "regula", nota: "El Fiscal debe promoverlo si no lo hacen aquellos, salvo que existan otras vías de apoyo."}
+      - {norma: "LEC", articulo: "758", apartado: "2", tipo: "regula", nota: "Si la persona no comparece con defensa propia, el LAJ le nombra defensor judicial, con veinte días para contestar."}
+      - {norma: "LEC", articulo: "759", apartado: "1", tipo: "regula", nota: "Pruebas preceptivas: entrevista con la persona, audiencia de parientes y dictamen pericial acordado por el tribunal."}
+      - {norma: "LEC", articulo: "759", apartado: "4", tipo: "conexa", nota: "Si se apela, las pruebas preceptivas se repiten de oficio en segunda instancia."}
+      - {norma: "LEC", articulo: "761", tipo: "regula", nota: "Revisión por jurisdicción voluntaria; si hay oposición o no se resuelve, proceso contencioso."}
+      - {norma: "LEC", articulo: "762", apartado: "1", tipo: "regula", nota: "El tribunal adopta de oficio las medidas de protección necesarias y avisa al Fiscal."}
+      - {norma: "LEC", articulo: "749", apartado: "1", tipo: "regula", nota: "El Ministerio Fiscal es siempre parte y vela por la voluntad, deseos y preferencias de la persona."}
+      - {norma: "LEC", articulo: "751", apartado: "1", tipo: "conexa", nota: "No surten efecto la renuncia, el allanamiento ni la transacción."}
+      - {norma: "LEC", articulo: "753", apartado: "3", tipo: "conexa", nota: "Tramitación preferente si hay apoyo con funciones representativas."}
+      - {norma: "LEC", articulo: "755", apartado: "párrafo 2.º", tipo: "conexa", nota: "Las medidas de apoyo solo se comunican a otros Registros a petición de la persona apoyada."}
+      - {norma: "LEC", articulo: "763", apartado: "1", tipo: "conexa", nota: "Internamiento involuntario: autorización judicial previa o, por urgencia, ratificación en 72 horas."}
+      - {norma: "LO 1/2025", articulo: "5", apartado: "2.c)", tipo: "regula", nota: "La adopción de medidas judiciales de apoyo no exige MASC previo."}
+    no_consta_en_norma:
+      - "Cuándo la guarda de hecho es apoyo suficiente que excluye la curatela: jurisprudencial."
+      - "Curatela representativa contra la voluntad expresa de la persona: jurisprudencial."
+      - "El 763.1, párrafo 3.º, remite al 757.3, que hoy regula otra cosa (traslado al curador propuesto): ajuste interpretativo."
+    fuera_de_la_herramienta:
+      - "Ley 15/2015, de Jurisdicción Voluntaria, arts. 42 bis a) a 42 bis c): expediente de provisión de apoyos, vía previa al proceso."
+    afines: ["Falta de capacidad para ser parte / procesal", "Separación y divorcio contenciosos", "Alimentos entre parientes", "Nulidad y anulabilidad del contrato", "Aceptación y repudiación de la herencia"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Juicio cambiario"
+    sinonimos: ["letra de cambio", "pagaré", "cheque", "demanda cambiaria", "título cambiario", "oposición cambiaria", "excepciones cambiarias", "embargo preventivo cambiario", "negación de la firma", "falta absoluta de representación", "requerimiento de pago cambiario", "pagaré en blanco"]
+    normas_base: ["LEC", "LO 1/2025"]
+    remisiones:
+      - {norma: "LEC", articulo: "819", tipo: "regula", nota: "Solo procede con letra de cambio, cheque o pagaré que reúnan los requisitos de la Ley Cambiaria y del Cheque."}
+      - {norma: "LEC", articulo: "820", tipo: "regula", nota: "Competente el juzgado del domicilio del demandado; si son varios deudores del mismo título, el de cualquiera."}
+      - {norma: "LEC", articulo: "820", apartado: "párrafo 3.º", tipo: "regula", nota: "No rigen las normas sobre sumisión expresa o tácita."}
+      - {norma: "LEC", articulo: "821", apartado: "1", tipo: "regula", nota: "Se inicia por demanda sucinta a la que se acompaña el título cambiario."}
+      - {norma: "LEC", articulo: "821", apartado: "2", tipo: "regula", nota: "El tribunal examina por auto la corrección formal del título y, si es conforme, adopta sin más trámites las medidas."}
+      - {norma: "LEC", articulo: "821", apartado: "2.1.ª", tipo: "regula", nota: "Requerimiento al deudor para que pague en diez días."}
+      - {norma: "LEC", articulo: "821", apartado: "2.2.ª", tipo: "regula", nota: "Embargo preventivo inmediato por el importe del título más intereses de demora, gastos y costas."}
+      - {norma: "LEC", articulo: "821", apartado: "3", tipo: "regula", nota: "Contra el auto que deniega las medidas, los recursos del art. 552.2."}
+      - {norma: "LEC", articulo: "552", apartado: "2", tipo: "conexa", nota: "Apelación directa del auto denegatorio, solo con el acreedor; a su elección, reposición previa."}
+      - {norma: "LEC", articulo: "822", tipo: "regula", nota: "Si el deudor paga tras el requerimiento, se procede como en el art. 583, con las costas a su cargo."}
+      - {norma: "LEC", articulo: "583", apartado: "1", tipo: "conexa", nota: "El LAJ pone la suma a disposición del acreedor y da justificante del pago al deudor."}
+      - {norma: "LEC", articulo: "823", apartado: "1", tipo: "regula", nota: "Si en cinco días niega categóricamente su firma o alega falta absoluta de representación, cabe alzar el embargo con caución."}
+      - {norma: "LEC", articulo: "823", apartado: "2", tipo: "regula", nota: "No se alza con firmas intervenidas o legitimadas, sin negativa en el protesto o requerimiento, o con firma reconocida."}
+      - {norma: "LEC", articulo: "824", apartado: "1", tipo: "regula", nota: "Demanda de oposición en los diez días siguientes al requerimiento de pago."}
+      - {norma: "LEC", articulo: "824", apartado: "2", tipo: "regula", nota: "La oposición es una demanda y admite todas las causas del art. 67 de la Ley Cambiaria y del Cheque."}
+      - {norma: "LEC", articulo: "825", tipo: "regula", nota: "Sin oposición en plazo, se despacha ejecución por lo reclamado y se traba el embargo si no se pudo o se alzó."}
+      - {norma: "LEC", articulo: "826", tipo: "regula", nota: "Traslado al acreedor para impugnar en diez días; vista por el verbal si se pide y el tribunal la considera procedente."}
+      - {norma: "LEC", articulo: "826", apartado: "párrafo 3.º", tipo: "regula", nota: "Si el deudor no comparece a la vista, se le tiene por desistido; si no comparece el acreedor, se resuelve sin oírle."}
+      - {norma: "LEC", articulo: "827", apartado: "1", tipo: "regula", nota: "Sentencia en diez días; si desestima la oposición y se recurre, es ejecutable provisionalmente."}
+      - {norma: "LEC", articulo: "827", apartado: "2", tipo: "conexa", nota: "Si estima la oposición y se recurre, los embargos preventivos siguen el art. 744."}
+      - {norma: "LEC", articulo: "827", apartado: "3", tipo: "regula", nota: "Cosa juzgada solo sobre lo que pudo alegarse y discutirse; lo demás, en el juicio correspondiente."}
+      - {norma: "LEC", articulo: "744", apartado: "1", tipo: "conexa", nota: "Absuelto el demandado, se alzan las medidas salvo que el recurrente pida mantenerlas al recurrir."}
+      - {norma: "LO 1/2025", articulo: "5", apartado: "2.h)", tipo: "regula", nota: "El juicio cambiario no exige actividad negociadora previa como requisito de procedibilidad."}
+    no_consta_en_norma:
+      - "Control de oficio de abusividad en el cambiario con pagaré firmado por consumidor: jurisprudencial (TJUE y TS)."
+      - "Pagaré en blanco completado en contra de lo pactado: casuística."
+      - "Cuándo el tribunal puede negar la vista pedida (826): la ley no da criterio; casuística."
+    fuera_de_la_herramienta:
+      - "Ley 19/1985, Cambiaria y del Cheque: requisitos de los títulos y, en su art. 67, excepciones oponibles por el deudor."
+    afines: ["Juicio monitorio y oposición", "Embargo preventivo", "Títulos ejecutivos", "Competencia territorial y fueros imperativos", "Sumisión expresa y tácita", "Control de oficio de cláusulas abusivas en el proceso", "Requisito de procedibilidad (MASC)"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"

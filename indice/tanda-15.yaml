@@ -1,0 +1,406 @@
+# Índice de conceptos de «Consulta de normas» — tanda 15 (prioridad B: resto de la LAU y propiedad horizontal)
+# Revisor: armero. Espejo: legalize-es@aca28304d, leído con `git show aca28304d:es/…` (no el árbol de trabajo, que hoy trae erratas).
+# Todo precepto citado se ha leído en el espejo en esta pasada. Vigencia: scripts/contraste_boe.py --solo "LEC,LAU,LPH,CC"
+# --espejo-commit aca28304d (08-10-2026, 12:56). Distintos citados: LAU 2, 3, 4, 5, 7, 10, 25 y 27 (RDL 29/2026); LPH 10 (versión futura
+# 23-10-2026, ya en el espejo; apartados citados idénticos); CC 396 (errata del espejo). Notas LAU según la API vigente.
+# Voces 103 a 110 y 126 a 129 de la lista maestra: 12 voces (prioridad B), 189 remisiones, 85 artículos distintos;
+# 4 vigentes y 8 provisionales. Ver tanda-15-notas.md.
+
+voces:
+  - voz: "Subrogación"
+    sinonimos: ["subrogación arrendaticia", "muerte del arrendatario", "fallecimiento del inquilino", "subrogación mortis causa", "cónyuge del arrendatario", "pareja de hecho del inquilino", "hijos convivientes", "orden de prelación", "notificación de la subrogación", "continuación del arrendamiento", "renuncia a la subrogación", "subrogación en el local"]
+    normas_base: ["LAU"]
+    remisiones:
+      - {norma: "LAU", articulo: "16", apartado: "1", tipo: "regula", nota: "Muerte del arrendatario: se subrogan cónyuge o pareja convivientes, hijos, padres, hermanos o parientes discapacitados; si no, se extingue."}
+      - {norma: "LAU", articulo: "16", apartado: "2", tipo: "regula", nota: "Varios con derecho y sin acuerdo unánime: orden del apartado 1, salvo padres septuagenarios antes que descendientes; desempates."}
+      - {norma: "LAU", articulo: "16", apartado: "3", tipo: "regula", nota: "Se extingue si en tres meses el arrendador no recibe por escrito la defunción, con certificado, y la identidad del subrogado."}
+      - {norma: "LAU", articulo: "16", apartado: "3, párrafo 2.º", tipo: "conexa", nota: "Varias notificaciones en plazo: el arrendador puede tratarlos como deudores solidarios mientras mantengan su pretensión."}
+      - {norma: "LAU", articulo: "16", apartado: "4", tipo: "regula", nota: "Duración inicial de más de 5 o 7 años: cabe pactar que no haya subrogación tras ese plazo; nunca si hay vulnerables."}
+      - {norma: "LAU", articulo: "12", apartado: "1", tipo: "regula", nota: "Si el arrendatario no renueva o desiste sin consentimiento del cónyuge conviviente, el arrendamiento puede seguir con este."}
+      - {norma: "LAU", articulo: "12", apartado: "2", tipo: "conexa", nota: "El arrendador puede requerir al cónyuge: si no contesta en quince días, el contrato se extingue."}
+      - {norma: "LAU", articulo: "12", apartado: "3", tipo: "regula", nota: "Abandono sin desistir: sigue el cónyuge conviviente si notifica por escrito, en un mes, su voluntad de ser arrendatario."}
+      - {norma: "LAU", articulo: "12", apartado: "4", tipo: "conexa", nota: "Igual para la pareja estable con dos años de convivencia, o con descendencia común sin plazo."}
+      - {norma: "LAU", articulo: "15", apartado: "1", tipo: "conexa", nota: "Cónyuge al que se atribuye el uso de la vivienda arrendada de forma permanente o más allá del contrato: pasa a ser titular."}
+      - {norma: "LAU", articulo: "33", tipo: "regula", nota: "Local con actividad: se subroga el heredero o legatario que continúe la actividad; notificación escrita en dos meses."}
+      - {norma: "LAU", articulo: "8", apartado: "1", tipo: "conexa", nota: "En la cesión consentida por escrito, el cesionario se subroga en la posición del cedente frente al arrendador."}
+      - {norma: "LAU", articulo: "6", tipo: "conexa", nota: "Nulas las estipulaciones que modifiquen en perjuicio del arrendatario las normas del título II, salvo autorización legal."}
+      - {norma: "LAU", articulo: "dt 2", apartado: "4", tipo: "conexa", nota: "Renta antigua (antes de 9-5-1985): solo cónyuge; en su defecto, hijos con 2 años de convivencia o ascendientes a cargo con 3."}
+      - {norma: "LAU", articulo: "dt 2", apartado: "9", tipo: "conexa", nota: "En esa subrogación prueba la convivencia quien se subroga; rigen el procedimiento y la prelación del art. 16."}
+      - {norma: "LAU", articulo: "dt 3", apartado: "3", tipo: "conexa", nota: "Local de renta antigua con arrendatario persona física: se extingue por jubilación o muerte, salvo subrogación del cónyuge."}
+    no_consta_en_norma:
+      - "Si el subrogado continúa el mismo contrato y por el plazo que restaba: el art. 16 no lo dice expresamente; criterio jurisprudencial."
+      - "Notificación tardía o incompleta con conocimiento efectivo del arrendador: si impide la extinción del 16.3, jurisprudencial."
+      - "Si la subrogación del art. 16 alcanza al arrendamiento de vivienda temporal o por habitaciones: el texto no distingue; sin criterio."
+      - "Convivencia habitual de dos años y su prueba (empadronamiento, recibos): casuística."
+    fuera_de_la_herramienta:
+      - "Texto refundido de la LAU de 1964 (Decreto 4104/1964), arts. 58 y 60: subrogaciones y traspasos a que remiten las dt 2.ª y 3.ª."
+    afines: ["Separación o divorcio del arrendatario", "Cesión y subarriendo (también del local)", "Arrendamientos de renta antigua (anteriores a 1995)", "Duración y prórroga del arrendamiento de vivienda", "Desistimiento del arrendatario", "Sucesión procesal (muerte de la parte y transmisión del objeto litigioso)"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Cesión y subarriendo (también del local)"
+    sinonimos: ["cesión del contrato", "subarriendo", "subarriendo parcial", "subarriendo de habitaciones", "consentimiento escrito del arrendador", "subarriendo inconsentido", "cesión inconsentida", "traspaso del local", "elevación de renta por subarriendo", "fusión de la sociedad arrendataria", "subarrendatario", "precio del subarriendo"]
+    normas_base: ["LAU", "CC"]
+    remisiones:
+      - {norma: "LAU", articulo: "8", apartado: "1", tipo: "regula", nota: "Vivienda: no se cede sin consentimiento escrito del arrendador; el cesionario se subroga en la posición del cedente."}
+      - {norma: "LAU", articulo: "8", apartado: "2", tipo: "regula", nota: "La vivienda solo se subarrienda de forma parcial y con consentimiento previo y escrito del arrendador."}
+      - {norma: "LAU", articulo: "8", apartado: "2, párrafo 2.º", tipo: "regula", nota: "Si el subarrendatario la destina a su vivienda (2.1), rige el título II; si no, lo pactado."}
+      - {norma: "LAU", articulo: "8", apartado: "2, párrafo 3.º", tipo: "regula", nota: "El derecho del subarrendatario se extingue, en todo caso, con el del arrendatario que subarrendó."}
+      - {norma: "LAU", articulo: "8", apartado: "2, párrafo 4.º", tipo: "regula", nota: "El precio del subarriendo nunca puede exceder del que corresponda al arrendamiento."}
+      - {norma: "LAU", articulo: "2", apartado: "1", tipo: "conexa", nota: "Desde 08-10-2026, es vivienda habitual también el arrendamiento parcial de una habitación o estancia."}
+      - {norma: "LAU", articulo: "27", apartado: "2.c)", tipo: "regula", nota: "El subarriendo o la cesión inconsentidos permiten al arrendador resolver de pleno derecho."}
+      - {norma: "LAU", articulo: "6", tipo: "conexa", nota: "Nulas las estipulaciones que modifiquen en perjuicio del arrendatario o subarrendatario las normas del título II."}
+      - {norma: "LAU", articulo: "32", apartado: "1", tipo: "regula", nota: "Local con actividad empresarial o profesional: cabe subarrendar o ceder sin consentimiento del arrendador."}
+      - {norma: "LAU", articulo: "32", apartado: "2", tipo: "regula", nota: "El arrendador puede elevar la renta un 10 % por subarriendo parcial y un 20 % por cesión o subarriendo total."}
+      - {norma: "LAU", articulo: "32", apartado: "3", tipo: "regula", nota: "Fusión, transformación o escisión de la sociedad arrendataria: no es cesión, pero da derecho a la elevación de renta."}
+      - {norma: "LAU", articulo: "32", apartado: "4", tipo: "regula", nota: "Cesión y subarriendo del local se notifican de forma fehaciente al arrendador en el plazo de un mes."}
+      - {norma: "LAU", articulo: "35", tipo: "regula", nota: "Local: resolución de pleno derecho por cesión o subarriendo que incumpla el art. 32 y por las causas a), b), d) y e) del 27.2."}
+      - {norma: "LAU", articulo: "4", apartado: "3", tipo: "conexa", nota: "Uso distinto: rige primero lo pactado, después el título III y el CC; el pacto puede apartarse del art. 32."}
+      - {norma: "CC", articulo: "1550", tipo: "conexa", nota: "Arrendamiento fuera de la LAU: se puede subarrendar salvo prohibición expresa; el arrendatario sigue respondiendo."}
+      - {norma: "CC", articulo: "1551", tipo: "conexa", nota: "El subarrendatario queda obligado ante el arrendador por el uso y la conservación de la cosa en la forma pactada."}
+      - {norma: "CC", articulo: "1552", tipo: "conexa", nota: "Responde ante el arrendador del precio del subarriendo que deba al ser requerido; los pagos adelantados no cuentan."}
+    no_consta_en_norma:
+      - "Consentimiento tácito del arrendador (cobra la renta sabiendo del subarriendo o la cesión): jurisprudencial."
+      - "Cambio de socios o de control de la sociedad arrendataria: si es cesión encubierta, jurisprudencial (el 32.3 solo trata fusión y escisión)."
+      - "Subarriendo de habitación tras el nuevo 2.1: si el subarrendatario queda protegido como arrendatario de vivienda habitual, sin criterio."
+      - "Subarriendo encubierto (alquiler de habitaciones o turístico por el inquilino) y su prueba: casuística."
+    # VIGENCIA: LAU 2, 4 y 27 distintos en el espejo (RDL 29/2026, sin convalidar). 4.3 y 27.2.c) idénticos; 2.1 cambia (habitación). Notas según la API vigente.
+    afines: ["Subrogación", "Resolución del contrato por incumplimiento", "Desahucio por precario", "Arrendamiento de temporada y para uso distinto de vivienda", "Arrendamiento de cosas en el Código Civil (régimen supletorio)", "Ámbito de la LAU y arrendamientos excluidos"]
+    estado: "provisional"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Enajenación de la finca arrendada y resolución del derecho del arrendador"
+    sinonimos: ["venta de la vivienda alquilada", "venta con inquilino", "compraventa de finca arrendada", "venta quita renta", "subrogación del comprador", "tercero hipotecario", "artículo 34 de la Ley Hipotecaria", "resolución del derecho del arrendador", "ejecución hipotecaria con inquilino", "arrendamiento otorgado por usufructuario", "arrendador aparente", "inquilino en la subasta"]
+    normas_base: ["LAU", "CC", "LEC"]
+    remisiones:
+      - {norma: "LAU", articulo: "14", tipo: "regula", nota: "El adquirente de vivienda arrendada se subroga los primeros 5 años (7 si el arrendador era persona jurídica), aun siendo tercero del 34 LH."}
+      - {norma: "LAU", articulo: "14", apartado: "párrafo 2.º", tipo: "regula", nota: "Duración pactada mayor: subrogación total salvo 34 LH; entonces solo hasta 5 o 7 años y el vendedor indemniza por año restante."}
+      - {norma: "LAU", articulo: "14", apartado: "párrafo 3.º", tipo: "regula", nota: "Pacto de que la venta extingue el arrendamiento: el adquirente solo lo soporta hasta cumplir 5 o 7 años."}
+      - {norma: "LAU", articulo: "13", apartado: "1", tipo: "regula", nota: "Retracto convencional, fideicomiso, ejecución hipotecaria o judicial u opción: el arrendatario sigue hasta 5 o 7 años."}
+      - {norma: "LAU", articulo: "13", apartado: "1, párrafo 2.º", tipo: "regula", nota: "Pasados 5 o 7 años, esas causas extinguen el arrendamiento, salvo que se inscribiera antes que el derecho que resuelve."}
+      - {norma: "LAU", articulo: "13", apartado: "2", tipo: "regula", nota: "Los arrendamientos de usufructuario, superficiario o titular análogo se extinguen al acabar el derecho del arrendador."}
+      - {norma: "LAU", articulo: "13", apartado: "3", tipo: "regula", nota: "Arrendamiento de buena fe con quien parecía dueño (Registro o apariencia imputable al verdadero dueño): dura 5 o 7 años."}
+      - {norma: "LAU", articulo: "29", tipo: "regula", nota: "Uso distinto: el adquirente se subroga en los derechos y obligaciones del arrendador, salvo que sea tercero del art. 34 LH."}
+      - {norma: "CC", articulo: "1549", tipo: "conexa", nota: "Frente a terceros no surten efecto los arrendamientos de inmuebles no inscritos en el Registro de la Propiedad."}
+      - {norma: "CC", articulo: "1571", tipo: "conexa", nota: "Régimen del CC: el comprador puede terminar el arriendo vigente salvo pacto y la LH; desplazado por los arts. 14 y 29 LAU."}
+      - {norma: "CC", articulo: "1572", tipo: "conexa", nota: "El comprador con pacto de retro no puede desahuciar al arrendatario hasta que acabe el plazo del retracto."}
+      - {norma: "LEC", articulo: "661", apartado: "1", tipo: "conexa", nota: "Ejecución sobre inmueble ocupado: se notifica a los ocupantes, que tienen diez días para presentar sus títulos."}
+      - {norma: "LEC", articulo: "661", apartado: "2", tipo: "conexa", nota: "El ejecutante puede pedir, antes de la subasta, que se declare que el ocupante no tiene derecho a permanecer."}
+    no_consta_en_norma:
+      - "Arrendamiento posterior a la hipoteca y adjudicación en subasta: si subsisten los 5 o 7 años del 13.1, jurisprudencia y DGSJFP."
+      - "Requisitos del tercero del art. 34 LH (buena fe, onerosidad, inscripción) frente al arrendatario: Ley Hipotecaria y jurisprudencia."
+      - "Cómputo de los 5 o 7 años cuando el contrato ya estaba en prórroga al vender: el art. 14 no lo precisa; casuística."
+    fuera_de_la_herramienta:
+      - "Ley Hipotecaria, art. 34 (tercero hipotecario), al que remiten los arts. 14 y 29 LAU; inscripción de arrendamientos."
+    afines: ["Derechos de tanteo y retracto del arrendatario", "Formalización e inscripción del arrendamiento", "Duración y prórroga del arrendamiento de vivienda", "Cargas anteriores y ocupantes del inmueble subastado", "Subrogación", "Retracto convencional"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Derechos de tanteo y retracto del arrendatario"
+    sinonimos: ["tanteo del inquilino", "retracto del inquilino", "derecho de adquisición preferente", "notificación de la venta al inquilino", "venta conjunta del edificio", "venta en bloque", "precio imputado a la vivienda", "renuncia al tanteo y retracto", "caducidad del retracto", "consignación del precio", "demanda de retracto", "treinta días naturales"]
+    normas_base: ["LAU", "CC", "LEC"]
+    remisiones:
+      - {norma: "LAU", articulo: "25", apartado: "1", tipo: "regula", nota: "Venta de la vivienda arrendada: el arrendatario tiene derecho de adquisición preferente."}
+      - {norma: "LAU", articulo: "25", apartado: "2", tipo: "regula", nota: "Tanteo en 30 días naturales desde la notificación fehaciente de precio y condiciones; en venta conjunta, precio imputado y criterios."}
+      - {norma: "LAU", articulo: "25", apartado: "2, párrafo 2.º", tipo: "regula", nota: "Los efectos de esa notificación caducan a los 180 días naturales."}
+      - {norma: "LAU", articulo: "25", apartado: "3", tipo: "regula", nota: "Retracto si no se notificó, faltó un requisito (precio imputado incluido) o se vendió más barato; 30 días desde copia de la escritura."}
+      - {norma: "LAU", articulo: "25", apartado: "4", tipo: "regula", nota: "Prefiere a cualquier derecho similar, salvo el retracto del condueño o el convencional inscrito antes del arrendamiento."}
+      - {norma: "LAU", articulo: "25", apartado: "5", tipo: "conexa", nota: "Para inscribir la venta hay que justificar las notificaciones; en venta conjunta, precio imputado en escritura."}
+      - {norma: "LAU", articulo: "25", apartado: "6", tipo: "conexa", nota: "Si se venden también los accesorios arrendados por el mismo arrendador, no cabe ejercerlo solo sobre la vivienda."}
+      - {norma: "LAU", articulo: "25", apartado: "7", tipo: "regula", nota: "Desde 08-10-2026 no decae por venderse junto con otros inmuebles o activos, si la vivienda es jurídicamente individualizable."}
+      - {norma: "LAU", articulo: "25", apartado: "7, párrafo 2.º", tipo: "regula", nota: "Precio imputable: reparto proporcional por valor catastral de referencia o tasación; ineficaz el reparto que obstaculice."}
+      - {norma: "LAU", articulo: "25", apartado: "7, párrafo 3.º", tipo: "conexa", nota: "En venta conjunta, la legislación de vivienda puede dar tanteo y retracto a la Administración, subsidiario del arrendatario."}
+      - {norma: "LAU", articulo: "25", apartado: "7, párrafo 4.º", tipo: "conexa", nota: "Si en el inmueble solo hay una vivienda, el arrendatario tiene los derechos de tanteo y retracto del artículo."}
+      - {norma: "LAU", articulo: "25", apartado: "8", tipo: "regula", nota: "Desde 08-10-2026 no puede pactarse la renuncia del arrendatario al derecho de adquisición preferente."}
+      - {norma: "LAU", articulo: "31", tipo: "regula", nota: "El art. 25 se aplica también a los arrendamientos para uso distinto del de vivienda."}
+      - {norma: "LAU", articulo: "4", apartado: "3", tipo: "conexa", nota: "Uso distinto: rige primero lo pactado, después el título III (donde está el art. 31) y el CC."}
+      - {norma: "CC", articulo: "1518", tipo: "conexa", nota: "Retraer exige reembolsar el precio, los gastos del contrato y los gastos necesarios y útiles hechos en la cosa."}
+      - {norma: "CC", articulo: "1521", tipo: "conexa", nota: "Retracto legal: subrogarse, con las mismas condiciones, en lugar de quien adquiere por compra o dación en pago."}
+      - {norma: "CC", articulo: "1522", tipo: "conexa", nota: "Retracto del copropietario si se vende a un extraño la parte de otro condueño; prevalece sobre el del arrendatario."}
+      - {norma: "CC", articulo: "1524", tipo: "conexa", nota: "Plazo general del retracto legal: nueve días; para el arrendatario rige el especial de 30 días naturales del 25.3 LAU."}
+      - {norma: "LEC", articulo: "266", apartado: "2.º", tipo: "regula", nota: "Demanda de retracto: principio de prueba del título y, si la ley o el contrato lo exigen, consignación del precio o caución."}
+      - {norma: "LEC", articulo: "403", apartado: "2", tipo: "conexa", nota: "Se inadmite la demanda sin los documentos exigidos o sin las consignaciones que la ley requiere en casos especiales."}
+    no_consta_en_norma:
+      - "Renuncia pactada antes del 08-10-2026, hoy prohibida por el 25.8: el RDL 29/2026 no trae transitoria para ella; sin criterio."
+      - "Local: si la prohibición de renunciar (25.8) le alcanza, pese a que el título III cede ante el pacto (4.3): sin criterio judicial."
+      - "Si el retracto del arrendatario exige consignar el precio (266.2.º: «cuando se exija por ley o por contrato»): jurisprudencial."
+      - "Transmisiones que no son compraventa (dación en pago, aportación a sociedad, permuta): alcance del art. 25, jurisprudencial."
+    fuera_de_la_herramienta:
+      - "RDL 29/2026 (sin convalidar): da la redacción vigente del art. 25 LAU; si se deroga, vuelve el texto anterior (renuncia pactable)."
+      - "Legislación estatal y autonómica de vivienda: tanteo y retracto de la Administración en ventas conjuntas (art. 25.7 LAU)."
+    # VIGENCIA: LAU 4 y 25 distintos en el espejo (RDL 29/2026); el espejo trae el 25 antiguo (renuncia pactable, sin reglas de venta conjunta). Notas según la API vigente. LAU 31 idéntico.
+    afines: ["Enajenación de la finca arrendada y resolución del derecho del arrendador", "Retracto legal de comuneros y colindantes", "Retracto convencional", "Formalización e inscripción del arrendamiento", "Compraventa: entrega, precio y riesgos", "Ofrecimiento de pago y consignación"]
+    estado: "provisional"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Separación o divorcio del arrendatario"
+    sinonimos: ["divorcio del inquilino", "separación del arrendatario", "nulidad matrimonial y alquiler", "atribución del uso de la vivienda arrendada", "cónyuge no arrendatario", "cambio de titular del contrato", "comunicación al arrendador en dos meses", "vivienda familiar alquilada", "abandono de la vivienda por el arrendatario", "desistimiento sin consentimiento del cónyuge", "pareja de hecho y alquiler", "hijos dependientes en la vivienda"]
+    normas_base: ["LAU", "CC", "LEC"]
+    remisiones:
+      - {norma: "LAU", articulo: "15", apartado: "1", tipo: "regula", nota: "Si se atribuye el uso al cónyuge no arrendatario, sigue en la vivienda; si es permanente o excede del contrato, pasa a ser titular."}
+      - {norma: "LAU", articulo: "15", apartado: "2", tipo: "regula", nota: "Lo comunica al arrendador en dos meses desde la notificación de la resolución judicial, con copia de lo que afecte al uso."}
+      - {norma: "LAU", articulo: "7", apartado: "1", tipo: "regula", nota: "No pierde la condición de vivienda aunque el arrendatario no viva en ella si habitan su cónyuge no separado o hijos dependientes."}
+      - {norma: "LAU", articulo: "12", apartado: "1", tipo: "regula", nota: "Si el arrendatario no renueva o desiste sin consentimiento del cónyuge conviviente, el arrendamiento puede seguir con este."}
+      - {norma: "LAU", articulo: "12", apartado: "2", tipo: "conexa", nota: "El arrendador puede requerir al cónyuge: si no contesta en quince días, el contrato se extingue."}
+      - {norma: "LAU", articulo: "12", apartado: "3", tipo: "regula", nota: "Abandono sin desistir: sigue el cónyuge conviviente si notifica por escrito, en un mes, su voluntad de ser arrendatario."}
+      - {norma: "LAU", articulo: "12", apartado: "4", tipo: "conexa", nota: "Igual para la pareja estable con dos años de convivencia, o con descendencia común sin plazo."}
+      - {norma: "LAU", articulo: "16", apartado: "1.a)", tipo: "conexa", nota: "Si muere el arrendatario, el primero en subrogarse es el cónyuge que conviviera con él al fallecer."}
+      - {norma: "CC", articulo: "96", apartado: "1", tipo: "regula", nota: "Sin acuerdo aprobado, el uso de la vivienda familiar es de los hijos menores y del cónyuge en cuya compañía queden."}
+      - {norma: "CC", articulo: "96", apartado: "2", tipo: "conexa", nota: "Sin hijos, puede atribuirse al cónyuge no titular por un tiempo prudencial si su interés es el más necesitado de protección."}
+      - {norma: "CC", articulo: "96", apartado: "3", tipo: "conexa", nota: "Atribuido el uso, disponer de la vivienda exige el consentimiento de ambos cónyuges o autorización judicial."}
+      - {norma: "CC", articulo: "1320", tipo: "conexa", nota: "Constante matrimonio, disponer de derechos sobre la vivienda habitual exige el consentimiento de ambos o autorización judicial."}
+      - {norma: "CC", articulo: "90", apartado: "1.c)", tipo: "conexa", nota: "El convenio regulador debe contener la atribución del uso de la vivienda y del ajuar familiar."}
+      - {norma: "LEC", articulo: "774", apartado: "4", tipo: "conexa", nota: "Sin acuerdo, la sentencia de nulidad, separación o divorcio fija las medidas sobre la vivienda familiar."}
+    no_consta_en_norma:
+      - "Si el arrendador queda vinculado por la atribución judicial del uso sin haber sido parte en el proceso de familia: jurisprudencial."
+      - "Si el desistimiento o la no renovación del arrendatario es «disponer» de la vivienda (arts. 96.3 y 1320 CC): jurisprudencial."
+      - "Consecuencia de no comunicar en los dos meses del 15.2: el texto no la fija; casuística."
+      - "Parejas de hecho que se separan: el art. 15 solo prevé el matrimonio; aplicación analógica, jurisprudencial."
+    # VIGENCIA: LAU 7 distinto en el espejo (RDL 29/2026): «vivienda permanente» pasa a «vivienda habitual» y se añade la vivienda temporal. Resto idéntico.
+    afines: ["Uso de la vivienda familiar", "Subrogación", "Desistimiento del arrendatario", "Separación y divorcio contenciosos", "Divorcio de mutuo acuerdo y convenio regulador", "Vivienda familiar: disposición por el cónyuge titular"]
+    estado: "provisional"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Indemnización por clientela en el arrendamiento de local"
+    sinonimos: ["indemnización por clientela", "indemnización al arrendatario de local", "pérdida de clientela", "fin del contrato de local", "voluntad de renovar", "renta de mercado", "actividad comercial de venta al público", "actividad afín", "dieciocho mensualidades", "traslado del negocio", "árbitro de la renta", "renuncia a la indemnización"]
+    normas_base: ["LAU"]
+    remisiones:
+      - {norma: "LAU", articulo: "34", tipo: "regula", nota: "Fin del plazo pactado de local con 5 años de venta al público: indemnización si pidió renovar 5 años más a renta de mercado."}
+      - {norma: "LAU", articulo: "34", apartado: "1", tipo: "regula", nota: "Si reabre la misma actividad en el municipio en seis meses: gastos de traslado y clientela perdida en los seis primeros meses."}
+      - {norma: "LAU", articulo: "34", apartado: "2", tipo: "regula", nota: "Si cambia de actividad o cesa y otro ejerce en el local la misma o afín en seis meses: una mensualidad por año, máximo 18."}
+      - {norma: "LAU", articulo: "34", apartado: "2, párrafo 2.º", tipo: "conexa", nota: "Son afines las actividades aptas para beneficiarse, aunque sea en parte, de la clientela captada por el arrendatario."}
+      - {norma: "LAU", articulo: "34", apartado: "2, párrafo 3.º", tipo: "conexa", nota: "Sin acuerdo sobre la cuantía, la fija el árbitro designado por las partes."}
+      - {norma: "LAU", articulo: "4", apartado: "3", tipo: "regula", nota: "Uso distinto: rige primero lo pactado, después el título III y el CC; el art. 34 cede ante el pacto."}
+      - {norma: "LAU", articulo: "4", apartado: "4", tipo: "regula", nota: "La exclusión de un precepto de la LAU, cuando es posible, ha de hacerse de forma expresa y precepto a precepto."}
+      - {norma: "LAU", articulo: "3", apartado: "1", tipo: "conexa", nota: "Es uso distinto el arrendamiento de edificación cuyo destino primordial no es satisfacer la necesidad de vivienda."}
+    no_consta_en_norma:
+      - "Qué es «actividad comercial de venta al público» (hostelería, servicios, oficinas abiertas): jurisprudencial."
+      - "Árbitro «designado por las partes» sin convenio arbitral previo: si cabe acudir al juez para fijar renta o cuantía, jurisprudencial."
+      - "Extinción por causa distinta del término convencional (desistimiento, resolución): el art. 34 no la prevé; casuística."
+      - "Compensación de la clientela fuera del art. 34 (enriquecimiento injusto): jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Ley 60/2003, de Arbitraje: designación y actuación del árbitro al que remite el art. 34 LAU."
+    # VIGENCIA: LAU 3 y 4 distintos en el espejo (RDL 29/2026); 3.1, 4.3 y 4.4 idénticos al texto vigente. LAU 34 idéntico.
+    afines: ["Arrendamiento de temporada y para uso distinto de vivienda", "Desahucio por expiración del plazo", "Tácita reconducción", "Cesión y subarriendo (también del local)", "Enriquecimiento injusto y cobro de lo indebido", "Arrendamiento de cosas en el Código Civil (régimen supletorio)"]
+    estado: "provisional"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Arrendamiento de cosas en el Código Civil (régimen supletorio)"
+    sinonimos: ["arrendamiento de cosas", "arrendamiento en el Código Civil", "régimen supletorio de la LAU", "arrendamiento excluido de la LAU", "alquiler de plaza de garaje", "alquiler de trastero", "arrendamiento de muebles", "obligaciones del arrendador", "obligaciones del arrendatario", "devolución de la cosa arrendada", "deterioro de la cosa arrendada", "causas de desahucio del Código Civil"]
+    normas_base: ["CC", "LAU"]
+    remisiones:
+      - {norma: "CC", articulo: "1543", tipo: "regula", nota: "Arrendamiento de cosas: una parte se obliga a dar a la otra el goce o uso de una cosa por tiempo determinado y precio cierto."}
+      - {norma: "CC", articulo: "1545", tipo: "conexa", nota: "Los bienes fungibles que se consumen con el uso no pueden ser objeto del contrato."}
+      - {norma: "CC", articulo: "1547", tipo: "conexa", nota: "Arrendamiento verbal ya iniciado sin prueba del precio: se devuelve la cosa y se paga el precio que se regule por el tiempo."}
+      - {norma: "CC", articulo: "1548", tipo: "conexa", nota: "Progenitores, tutores y administradores sin poder especial no pueden arrendar por más de seis años."}
+      - {norma: "CC", articulo: "1554", tipo: "regula", nota: "El arrendador debe entregar la cosa, hacer las reparaciones necesarias y mantener al arrendatario en el goce pacífico."}
+      - {norma: "CC", articulo: "1555", tipo: "regula", nota: "El arrendatario debe pagar el precio, usar la cosa con diligencia para el uso pactado y pagar la escritura."}
+      - {norma: "CC", articulo: "1556", tipo: "regula", nota: "Incumplimiento de esas obligaciones: rescisión con indemnización, o solo indemnización manteniendo el contrato."}
+      - {norma: "CC", articulo: "1558", tipo: "conexa", nota: "Reparación urgente: el arrendatario la tolera; si dura más de cuarenta días, rebaja proporcional del precio."}
+      - {norma: "CC", articulo: "1559", tipo: "conexa", nota: "El arrendatario avisa cuanto antes de usurpaciones y reparaciones necesarias; responde si por su negligencia hay daños."}
+      - {norma: "CC", articulo: "1560", tipo: "conexa", nota: "De la perturbación de mero hecho de un tercero no responde el arrendador; el arrendatario tiene acción directa."}
+      - {norma: "CC", articulo: "1561", tipo: "regula", nota: "Al concluir, se devuelve la finca como se recibió, salvo lo perecido o menoscabado por el tiempo o causa inevitable."}
+      - {norma: "CC", articulo: "1562", tipo: "conexa", nota: "Sin constancia del estado de la finca al arrendarla, se presume recibida en buen estado, salvo prueba en contrario."}
+      - {norma: "CC", articulo: "1563", tipo: "regula", nota: "El arrendatario responde del deterioro o pérdida de la cosa, salvo que pruebe que fue sin culpa suya."}
+      - {norma: "CC", articulo: "1564", tipo: "conexa", nota: "También responde del deterioro causado por las personas de su casa."}
+      - {norma: "CC", articulo: "1565", tipo: "regula", nota: "El arrendamiento por tiempo determinado concluye el día prefijado sin necesidad de requerimiento."}
+      - {norma: "CC", articulo: "1568", tipo: "conexa", nota: "Pérdida de la cosa: arts. 1182 y 1183; incumplimiento de lo pactado: arts. 1101 y 1124."}
+      - {norma: "CC", articulo: "1569", tipo: "regula", nota: "Causas de desahucio: expiración del término, falta de pago, infracción de condiciones y uso no pactado o negligente."}
+      - {norma: "CC", articulo: "1574", tipo: "conexa", nota: "Sin pacto sobre lugar y tiempo del pago: lugar del art. 1171 y tiempo según la costumbre de la tierra."}
+      - {norma: "CC", articulo: "1580", tipo: "conexa", nota: "Reparaciones de predios urbanos a cargo del propietario: las que diga la costumbre; en la duda, son suyas."}
+      - {norma: "CC", articulo: "1581", tipo: "regula", nota: "Sin plazo fijado: por años, meses o días según la renta sea anual, mensual o diaria; cesa sin requerimiento."}
+      - {norma: "CC", articulo: "1582", tipo: "conexa", nota: "Muebles arrendados con la casa o el local: su arrendamiento dura lo que el de la finca."}
+      - {norma: "LAU", articulo: "4", apartado: "2", tipo: "regula", nota: "Vivienda: pactos dentro del título II LAU y, supletoriamente, el Código Civil."}
+      - {norma: "LAU", articulo: "4", apartado: "3", tipo: "regula", nota: "Uso distinto: lo pactado, en su defecto el título III LAU y, supletoriamente, el Código Civil."}
+      - {norma: "LAU", articulo: "5", tipo: "regula", nota: "Excluidos de la LAU: porteros, militares, rústicos, universitarias, cesión turística de hasta 31 días y programas sociales."}
+    no_consta_en_norma:
+      - "Qué normas del CC suplen al título II LAU y cuáles quedan desplazadas por su carácter imperativo (art. 6): casuística."
+      - "Plaza de garaje o trastero arrendados sin la vivienda: si es uso distinto (LAU) o arrendamiento de cosa del CC, jurisprudencial."
+      - "Arrendamiento de vivienda para ocio que no encaja en la vivienda temporal (art. 2.3) ni en la turística: régimen aplicable, sin criterio."
+    fuera_de_la_herramienta:
+      - "Legislación de arrendamientos rústicos, a la que remite el art. 5.c) LAU."
+      - "Normativa turística valenciana: régimen de la cesión turística excluida por el art. 5.e) LAU."
+    # VIGENCIA: LAU 4 y 5 distintos en el espejo (RDL 29/2026): 4.2 remite ahora al art. 2; 5.e) limita a 31 días y añade la f). Notas según la API vigente.
+    afines: ["Ámbito de la LAU y arrendamientos excluidos", "Tácita reconducción", "Vivienda de uso turístico: exclusión de la LAU", "Resolución del contrato por incumplimiento", "Obras y conservación", "Desahucio por expiración del plazo"]
+    estado: "provisional"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Tácita reconducción"
+    sinonimos: ["tácita reconducción", "reconducción tácita", "prórroga tácita", "quince días con aquiescencia", "nuevo contrato tácito", "requerimiento para impedir la reconducción", "renovación tácita del local", "fin del plazo del local", "permanencia del arrendatario", "plazo del nuevo arriendo", "fianza de tercero tras la reconducción", "prórroga anual tácita LAU"]
+    normas_base: ["CC", "LAU", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "1566", tipo: "regula", nota: "Si el arrendatario sigue quince días disfrutando la cosa con aquiescencia del arrendador, hay tácita reconducción, salvo requerimiento."}
+      - {norma: "CC", articulo: "1581", tipo: "regula", nota: "Duración: por años, meses o días según la renta sea anual, mensual o diaria; cesa sin requerimiento al cumplirse."}
+      - {norma: "CC", articulo: "1577", tipo: "conexa", nota: "Predio rústico sin plazo: el tiempo necesario para recoger los frutos de un año o de una vez."}
+      - {norma: "CC", articulo: "1567", tipo: "regula", nota: "En la tácita reconducción cesan las garantías prestadas por un tercero para el contrato principal."}
+      - {norma: "CC", articulo: "1565", tipo: "conexa", nota: "El arrendamiento por tiempo determinado concluye el día prefijado sin necesidad de requerimiento."}
+      - {norma: "CC", articulo: "1569", apartado: "1.ª", tipo: "conexa", nota: "Causa de desahucio: expiración del término convencional o del fijado por los arts. 1577 y 1581."}
+      - {norma: "CC", articulo: "1570", tipo: "conexa", nota: "Fuera de las causas del 1569, el arrendatario puede aprovechar los plazos de los arts. 1577 y 1581."}
+      - {norma: "LAU", articulo: "4", apartado: "3", tipo: "regula", nota: "Uso distinto: lo pactado, el título III y, supletoriamente, el CC: el art. 1566 se aplica al local."}
+      - {norma: "LAU", articulo: "10", apartado: "1", tipo: "regula", nota: "Vivienda habitual: cumplidos 5 o 7 años sin preaviso (4 meses arrendador, 2 arrendatario), prórroga anual hasta 3 años más."}
+      - {norma: "LAU", articulo: "10", apartado: "4", tipo: "conexa", nota: "Al contrato prorrogado le sigue aplicando el régimen legal y convencional al que estaba sometido."}
+      - {norma: "LEC", articulo: "250", apartado: "1.1.º", tipo: "conexa", nota: "La recuperación de la finca por expiración del plazo contractual o legal se tramita por el juicio verbal."}
+    no_consta_en_norma:
+      - "Qué es «aquiescencia» y qué basta como requerimiento que impide la reconducción (burofax, demanda): jurisprudencial."
+      - "Plazo del contrato reconducido si la renta se pacta anual pero se paga por meses: jurisprudencial."
+      - "Que el contrato reconducido conserva las condiciones del anterior salvo el plazo: doctrina jurisprudencial."
+      - "Si, agotadas las prórrogas del art. 10 LAU, cabe la tácita reconducción del CC en vivienda: jurisprudencial (el 4.2 remite al CC)."
+    fuera_de_la_herramienta:
+      - "RDL 28/2026 (vigor 15-11-2026, sin convalidar): nueva redacción del art. 10 LAU; la voz habrá de recurarse entonces."
+    # VIGENCIA: LAU 4 y 10 distintos en el espejo (RDL 29/2026: el 10.1 dice ahora «de vivienda habitual»); el art. 10 cambia otra vez el 15-11-2026 (RDL 28/2026).
+    afines: ["Desahucio por expiración del plazo", "Duración y prórroga del arrendamiento de vivienda", "Arrendamiento de cosas en el Código Civil (régimen supletorio)", "Arrendamiento de temporada y para uso distinto de vivienda", "Indemnización por clientela en el arrendamiento de local", "Fianza"]
+    estado: "provisional"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Título constitutivo, estatutos y cuota de participación"
+    sinonimos: ["título constitutivo", "división horizontal", "estatutos de la comunidad", "cuota de participación", "coeficiente", "modificación del título", "modificación de estatutos", "unanimidad", "normas de régimen interior", "reglamento de régimen interior", "anejos", "estatutos no inscritos"]
+    normas_base: ["LPH", "CC"]
+    remisiones:
+      - {norma: "LPH", articulo: "5", tipo: "regula", nota: "El título describe el inmueble y cada piso o local, numerado, con extensión, linderos, planta y anejos (garaje, trastero)."}
+      - {norma: "LPH", articulo: "5", apartado: "párrafo 2.º", tipo: "regula", nota: "Cuota: la fija el propietario único, todos los propietarios, laudo o sentencia; por superficie útil, emplazamiento, situación y uso."}
+      - {norma: "LPH", articulo: "5", apartado: "párrafo 3.º", tipo: "regula", nota: "El título puede contener estatutos sobre uso, gastos, gobierno o seguros; sin inscribir no perjudican a terceros."}
+      - {norma: "LPH", articulo: "5", apartado: "párrafo 4.º", tipo: "regula", nota: "Modificar el título exige los mismos requisitos que constituirlo, salvo lo dispuesto sobre validez de acuerdos."}
+      - {norma: "LPH", articulo: "3", apartado: "b), párrafo 2.º", tipo: "regula", nota: "Cuota en centésimas del valor del inmueble: mide cargas y beneficios; solo varía conforme a los arts. 10 y 17."}
+      - {norma: "LPH", articulo: "3", apartado: "a)", tipo: "conexa", nota: "Cada piso comprende su espacio delimitado, sus instalaciones privativas y los anejos señalados en el título, aunque estén fuera."}
+      - {norma: "LPH", articulo: "6", tipo: "regula", nota: "Normas de régimen interior para la convivencia y el uso de servicios comunes, dentro de la ley y los estatutos; obligan a todos."}
+      - {norma: "LPH", articulo: "14", apartado: "d)", tipo: "regula", nota: "La junta aprueba o reforma los estatutos y determina las normas de régimen interior."}
+      - {norma: "LPH", articulo: "17", apartado: "6", tipo: "regula", nota: "Acuerdos que aprueben o modifiquen reglas del título o de los estatutos no regulados en el art. 17: unanimidad."}
+      - {norma: "LPH", articulo: "17", apartado: "8", tipo: "regula", nota: "Los ausentes citados que no discrepan en 30 días naturales tras la notificación cuentan como votos favorables."}
+      - {norma: "LPH", articulo: "17", apartado: "4, párrafo 3.º", tipo: "conexa", nota: "Tres quintos para dividir, agregar o segregar pisos o locales, construir nuevas plantas o alterar la estructura."}
+      - {norma: "LPH", articulo: "10", apartado: "3.b), párrafo 2.º", tipo: "regula", nota: "En esas obras, las nuevas cuotas las fija la junta por la misma mayoría, con consentimiento de los afectados e indemnización."}
+      - {norma: "LPH", articulo: "17", apartado: "12", tipo: "conexa", nota: "Tres quintos para cuotas especiales o un aumento de hasta el 20 % en los gastos de la vivienda de uso turístico."}
+      - {norma: "LPH", articulo: "9", apartado: "1.e)", tipo: "conexa", nota: "Cada propietario contribuye a los gastos generales según la cuota del título o lo especialmente establecido."}
+      - {norma: "LPH", articulo: "18", apartado: "2", tipo: "conexa", nota: "Para impugnar acuerdos sobre establecimiento o alteración de cuotas no hace falta estar al corriente de pago."}
+      - {norma: "LPH", articulo: "2", apartado: "b)", tipo: "conexa", nota: "La LPH se aplica también a comunidades que cumplen el art. 396 CC sin haber otorgado título constitutivo."}
+      - {norma: "LPH", articulo: "dt 1", tipo: "conexa", nota: "La LPH rige todas las comunidades; sus estatutos no pueden aplicarse en contradicción con ella."}
+      - {norma: "CC", articulo: "396", apartado: "párrafo 4.º", tipo: "conexa", nota: "La propiedad horizontal se rige por sus disposiciones especiales y, en lo que permitan, por la voluntad de los interesados."}
+    no_consta_en_norma:
+      - "Cláusulas estatutarias que eximen a locales o bajos de ciertos gastos: validez y alcance, jurisprudencial."
+      - "Prohibiciones de uso en estatutos no inscritos frente al adquirente que las conocía: jurisprudencial."
+      - "Revisión judicial de una cuota mal fijada (art. 5, «resolución judicial»): legitimación y cauce, jurisprudencial."
+      - "Si limitar usos o actividades en los estatutos exige unanimidad (17.6) fuera del supuesto turístico del 17.12: jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Ley y Reglamento Hipotecarios: inscripción del título constitutivo y de los estatutos (art. 5 LPH)."
+    # VIGENCIA: LPH 10 con versión futura 23-10-2026 (Ley 4/2026), ya en el espejo; el 10.3.b) citado es idéntico en ambos textos. CC 396: errata del espejo, sin cambio de fondo.
+    afines: ["Mayorías y cómputo de votos", "Gastos comunes, cuota y fondo de reserva", "Impugnación de acuerdos (plazo del art. 18)", "Limitación de las viviendas de uso turístico en la comunidad", "Complejos inmobiliarios privados y urbanizaciones", "Obras en elementos privativos"]
+    estado: "provisional"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Administrador y secretario"
+    sinonimos: ["administrador de fincas", "secretario de la comunidad", "secretario-administrador", "nombramiento del administrador", "cese del administrador", "funciones del administrador", "certificado de deudas", "libro de actas", "custodia de la documentación", "reparaciones urgentes", "administrador profesional", "órganos de gobierno"]
+    normas_base: ["LPH", "CC"]
+    remisiones:
+      - {norma: "LPH", articulo: "13", apartado: "1", tipo: "regula", nota: "Órganos de gobierno: junta, presidente y vicepresidentes, secretario y administrador; caben otros sin restarles funciones."}
+      - {norma: "LPH", articulo: "13", apartado: "5", tipo: "regula", nota: "Secretario y administrador: los ejerce el presidente, salvo que los estatutos o la junta por mayoría los separen."}
+      - {norma: "LPH", articulo: "13", apartado: "6", tipo: "regula", nota: "Cargos acumulables; administrador: un propietario, persona física con cualificación legalmente reconocida o persona jurídica."}
+      - {norma: "LPH", articulo: "13", apartado: "7", tipo: "regula", nota: "Nombramiento por un año salvo estatutos; la junta extraordinaria puede removerlos antes de que acabe el mandato."}
+      - {norma: "LPH", articulo: "13", apartado: "8", tipo: "conexa", nota: "Hasta cuatro propietarios: pueden acogerse a la administración del art. 398 CC si los estatutos lo dicen."}
+      - {norma: "CC", articulo: "398", tipo: "conexa", nota: "Comunidad de bienes: acuerdos por mayoría de intereses; sin mayoría o si perjudica gravemente, el juez provee, incluso administrador."}
+      - {norma: "LPH", articulo: "14", apartado: "a)", tipo: "regula", nota: "La junta nombra y remueve los cargos y resuelve las reclamaciones de los propietarios contra su actuación."}
+      - {norma: "LPH", articulo: "20", apartado: "1.a)", tipo: "regula", nota: "El administrador vela por el buen régimen de la casa y hace las advertencias y apercibimientos a los titulares."}
+      - {norma: "LPH", articulo: "20", apartado: "1.b)", tipo: "regula", nota: "Prepara y somete a la junta el plan de gastos previsibles y propone cómo cubrirlos."}
+      - {norma: "LPH", articulo: "20", apartado: "1.c)", tipo: "regula", nota: "Atiende a la conservación y dispone las reparaciones urgentes, dando cuenta inmediata al presidente o a los propietarios."}
+      - {norma: "LPH", articulo: "20", apartado: "1.d)", tipo: "regula", nota: "Ejecuta los acuerdos sobre obras y efectúa pagos y cobros."}
+      - {norma: "LPH", articulo: "20", apartado: "1.e)", tipo: "regula", nota: "Actúa, en su caso, como secretario y custodia la documentación de la comunidad a disposición de los titulares."}
+      - {norma: "LPH", articulo: "20", apartado: "1.f)", tipo: "conexa", nota: "Además, las atribuciones que le confiera la junta."}
+      - {norma: "LPH", articulo: "19", apartado: "3", tipo: "regula", nota: "El acta se cierra con las firmas de presidente y secretario al terminar o en diez días naturales; desde ahí, acuerdos ejecutivos."}
+      - {norma: "LPH", articulo: "19", apartado: "4", tipo: "regula", nota: "El secretario custodia los libros de actas y guarda cinco años convocatorias, comunicaciones y apoderamientos."}
+      - {norma: "LPH", articulo: "9", apartado: "1.e), párrafo 3.º", tipo: "regula", nota: "Certificado de deudas para vender: lo emite el secretario con visto bueno del presidente en siete días; responden por culpa."}
+      - {norma: "LPH", articulo: "9", apartado: "1.h), párrafo 2.º", tipo: "conexa", nota: "Notificación imposible: en el tablón, con diligencia firmada por el secretario y visto bueno del presidente; efectos a tres días."}
+      - {norma: "LPH", articulo: "9", apartado: "1.i)", tipo: "conexa", nota: "El propietario comunica al secretario el cambio de titularidad; si no, responde solidariamente de las deudas posteriores."}
+      - {norma: "LPH", articulo: "17", apartado: "8", tipo: "conexa", nota: "El ausente que discrepa lo comunica a quien ejerza de secretario en 30 días naturales."}
+      - {norma: "LPH", articulo: "21", apartado: "2", tipo: "regula", nota: "Si lo acuerda la junta, el secretario-administrador profesional puede reclamar la deuda por el monitorio."}
+      - {norma: "LPH", articulo: "21", apartado: "3", tipo: "regula", nota: "Monitorio: certificado del secretario con visto bueno del presidente, salvo profesional cualificado que no intervenga en la reclamación."}
+    no_consta_en_norma:
+      - "Naturaleza del vínculo con el administrador profesional (mandato o arrendamiento de servicios) y su responsabilidad: jurisprudencial."
+      - "Qué es «cualificación profesional suficiente y legalmente reconocida» (13.6) y si exige colegiación: debate jurisprudencial."
+      - "Entrega de la documentación y rendición de cuentas por el administrador cesado: acción y cauce, casuística."
+      - "Validez del acta o del certificado firmados por quien no fue nombrado expresamente secretario: casuística."
+    fuera_de_la_herramienta:
+      - "Normativa colegial de los administradores de fincas: requisitos profesionales a que alude el art. 13.6 LPH."
+    afines: ["Legitimación del presidente", "Actas y notificación de acuerdos", "Monitorio de propiedad horizontal", "Mandato y rendición de cuentas", "Junta de propietarios: convocatoria y orden del día", "Deudas con la comunidad, preferencia y afección"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Complejos inmobiliarios privados y urbanizaciones"
+    sinonimos: ["complejo inmobiliario privado", "urbanización privada", "agrupación de comunidades", "comunidad agrupada", "subcomunidad", "zonas comunes de la urbanización", "viales privados", "piscina comunitaria", "entidad urbanística de conservación", "junta de presidentes", "urbanización sin estatutos", "gastos de urbanización"]
+    normas_base: ["LPH"]
+    remisiones:
+      - {norma: "LPH", articulo: "24", apartado: "1", tipo: "regula", nota: "Complejo: dos o más edificaciones o parcelas independientes con copropiedad indivisible e inherente sobre viales o servicios."}
+      - {norma: "LPH", articulo: "24", apartado: "2.a)", tipo: "regula", nota: "Puede constituirse en una sola comunidad de propietarios, sometida íntegramente a la LPH."}
+      - {norma: "LPH", articulo: "24", apartado: "2.b)", tipo: "regula", nota: "O en agrupación de comunidades: título del propietario único o de los presidentes autorizados; cuota de cada comunidad."}
+      - {norma: "LPH", articulo: "24", apartado: "3", tipo: "regula", nota: "La agrupación tiene la misma situación jurídica que una comunidad de propietarios, con las especialidades que siguen."}
+      - {norma: "LPH", articulo: "24", apartado: "3.a)", tipo: "regula", nota: "Su junta la forman, salvo acuerdo en contrario, los presidentes de las comunidades integradas, que las representan."}
+      - {norma: "LPH", articulo: "24", apartado: "3.b)", tipo: "regula", nota: "Las mayorías cualificadas exigen obtener antes esa mayoría en cada junta de las comunidades integradas."}
+      - {norma: "LPH", articulo: "24", apartado: "3.c)", tipo: "conexa", nota: "Salvo acuerdo de la junta, la comunidad agrupada no está obligada a tener fondo de reserva."}
+      - {norma: "LPH", articulo: "24", apartado: "3.c), párrafo 2.º", tipo: "regula", nota: "Sus órganos solo deciden sobre los elementos comunes del complejo y no pueden menoscabar a las comunidades integradas."}
+      - {norma: "LPH", articulo: "24", apartado: "4", tipo: "regula", nota: "Complejo sin ninguna de esas formas: rigen sus pactos y, supletoriamente, la LPH con las mismas especialidades."}
+      - {norma: "LPH", articulo: "2", apartado: "c)", tipo: "regula", nota: "La LPH se aplica a los complejos inmobiliarios privados en los términos que ella misma establece."}
+      - {norma: "LPH", articulo: "2", apartado: "d)", tipo: "regula", nota: "Y a las subcomunidades: propietarios que disfrutan en exclusiva elementos o servicios con unidad funcional o económica."}
+      - {norma: "LPH", articulo: "2", apartado: "e)", tipo: "conexa", nota: "Y a las entidades urbanísticas de conservación cuando sus estatutos lo dispongan."}
+      - {norma: "LPH", articulo: "5", apartado: "párrafo 2.º", tipo: "conexa", nota: "Las cuotas se fijan por el propietario único, acuerdo de todos, laudo o resolución judicial (cauce del 24.2.a)."}
+      - {norma: "LPH", articulo: "13", apartado: "3", tipo: "conexa", nota: "El presidente representa a la comunidad en juicio y fuera de él en todos los asuntos que la afecten."}
+    no_consta_en_norma:
+      - "Urbanización sin título ni estatutos: si es complejo del 24.4 o mera comunidad de bienes del CC, jurisprudencial."
+      - "Si debe pagar gastos de la urbanización quien no se integró voluntariamente en ella: jurisprudencial (uso de servicios, pertenencia)."
+      - "Cómputo de votos en la junta de la agrupación (por presidentes o por cuotas): el 24.3.a) admite pacto; casuística."
+      - "Legitimación de cada comunidad integrada frente a la agrupación para impugnar sus acuerdos: jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Texto refundido de la Ley de Suelo y Rehabilitación Urbana (RDLeg. 7/2015), art. 26.6: autorización del complejo inmobiliario."
+      - "Normativa urbanística valenciana: constitución y régimen de las entidades urbanísticas de conservación (art. 2.e) LPH)."
+    afines: ["Título constitutivo, estatutos y cuota de participación", "Mayorías y cómputo de votos", "Legitimación del presidente", "Gastos comunes, cuota y fondo de reserva", "Administrador y secretario", "Copropiedad y acción de división de cosa común"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Servidumbres y acceso para obras e instalaciones comunes"
+    sinonimos: ["servidumbre en la propiedad horizontal", "acceso al piso para obras", "entrada en la vivienda para reparar", "paso de conducciones", "bajantes por un piso", "ocupación de elementos comunes por obras", "andamios", "paso de materiales por predio ajeno", "infraestructuras de telecomunicación", "punto de recarga", "instalación de renovables", "indemnización al propietario afectado"]
+    normas_base: ["LPH", "CC"]
+    remisiones:
+      - {norma: "LPH", articulo: "9", apartado: "1.c)", tipo: "regula", nota: "Consentir en el piso las reparaciones y las servidumbres imprescindibles para obras o servicios comunes, con resarcimiento de daños."}
+      - {norma: "LPH", articulo: "9", apartado: "1.d)", tipo: "regula", nota: "Permitir la entrada en el piso o local para esas reparaciones, servidumbres y conservación."}
+      - {norma: "LPH", articulo: "9", apartado: "1.a)", tipo: "conexa", nota: "Respetar las instalaciones generales y elementos comunes, estén o no dentro del piso o local."}
+      - {norma: "LPH", articulo: "10", apartado: "1.c)", tipo: "regula", nota: "Es obligatoria, sin acuerdo previo, la ocupación de elementos comunes mientras duran las obras necesarias o de accesibilidad."}
+      - {norma: "LPH", articulo: "10", apartado: "3.b), párrafo 2.º", tipo: "conexa", nota: "Alteraciones de estructura o cosas comunes: consentimiento de los afectados e indemnización que fija la junta con ellos."}
+      - {norma: "LPH", articulo: "17", apartado: "1", tipo: "regula", nota: "Telecomunicaciones, renovables (aerotermia, geotermia) y nuevos suministros: un tercio; no paga quien no votó a favor."}
+      - {norma: "LPH", articulo: "17", apartado: "1, párrafo 3.º", tipo: "conexa", nota: "La nueva infraestructura instalada tiene la consideración de elemento común."}
+      - {norma: "LPH", articulo: "17", apartado: "4, párrafo 4.º", tipo: "regula", nota: "Innovación que deja inservible parte del edificio para un propietario: exige su consentimiento expreso."}
+      - {norma: "LPH", articulo: "17", apartado: "5", tipo: "regula", nota: "Punto de recarga en plaza individual del garaje: solo comunicación previa; coste y consumo, del interesado."}
+      - {norma: "LPH", articulo: "7", apartado: "1, párrafo 2.º", tipo: "conexa", nota: "El propietario no puede alterar el resto del inmueble; si ve una reparación urgente, la comunica al administrador."}
+      - {norma: "LPH", articulo: "3", apartado: "a)", tipo: "conexa", nota: "Son privativas las instalaciones dentro del piso que sirven exclusivamente a su propietario."}
+      - {norma: "CC", articulo: "396", tipo: "regula", nota: "Son comunes las instalaciones hasta la entrada al espacio privativo y las servidumbres; no se dividen ni enajenan aparte."}
+      - {norma: "CC", articulo: "569", tipo: "regula", nota: "Si es indispensable pasar materiales o poner andamios en predio ajeno para construir o reparar, el dueño lo consiente con indemnización."}
+    no_consta_en_norma:
+      - "Qué servidumbre es «imprescindible» (9.1.c) y cómo se cuantifica el resarcimiento: casuística."
+      - "Si la comunidad puede ocupar parte de un elemento privativo (ascensor, conductos) sin consentimiento del dueño: jurisprudencial."
+      - "Si el art. 569 CC rige entre propietarios de la misma comunidad o solo entre fincas distintas: jurisprudencial."
+      - "Negativa del propietario a permitir la entrada: hace falta resolución judicial; cauce procesal, casuística."
+    fuera_de_la_herramienta:
+      - "Real Decreto-ley 1/1998, sobre infraestructuras comunes de telecomunicación, al que remite el art. 17.1 LPH."
+    # VIGENCIA: LPH 10 con versión futura 23-10-2026 (Ley 4/2026), ya en el espejo; los apartados citados, 1.c) y 3.b), son idénticos en ambos textos. CC 396: errata del espejo, sin cambio de fondo.
+    afines: ["Obras en elementos comunes y accesibilidad", "Obras en elementos privativos", "Daños entre comunidad y propietarios (filtraciones)", "Servidumbres: constitución, extinción y acciones", "Servidumbre de paso", "Mayorías y cómputo de votos"]
+    estado: "provisional"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"

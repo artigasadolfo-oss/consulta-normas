@@ -1,0 +1,414 @@
+# Índice de conceptos de «Consulta de normas» — tanda 13 (prioridad B: partes, actuaciones y alegaciones)
+# Revisor: armero. Espejo: legalize-es@aca28304d, leído con `git show aca28304d:es/…` (no el árbol de trabajo, que hoy trae erratas).
+# Todo precepto citado se ha leído en el espejo en esta pasada. Vigencia: scripts/contraste_boe.py --solo "LEC,LOPJ,CE,LO 1/2025,CC,
+# TRLGDCU" --espejo-commit aca28304d (08-10-2026, 12:30). Distintos: LEC 22 y 685, CC 396; ninguno citado; ninguna versión futura.
+# Voces 17, 18, 19, 28, 29, 30, 31, 32, 33, 34, 54 y 55 de la lista maestra (12 voces, prioridad B). Ver tanda-13-notas.md.
+
+voces:
+  - voz: "Sucesión procesal (muerte de la parte y transmisión del objeto litigioso)"
+    sinonimos: ["sucesión procesal", "muerte de la parte", "fallecimiento del demandado", "fallecimiento del demandante", "herederos del litigante", "transmisión del objeto litigioso", "cesión del crédito litigioso", "adquirente pendiente el pleito", "cambio de parte", "fondo cesionario", "sucesión en la ejecución", "intervención provocada"]
+    normas_base: ["LEC", "CC"]
+    remisiones:
+      - {norma: "LEC", articulo: "16", apartado: "1", tipo: "regula", nota: "Transmitido mortis causa el objeto del juicio, el sucesor ocupa la posición del causante; el LAJ suspende y lo tiene por personado."}
+      - {norma: "LEC", articulo: "16", apartado: "2", tipo: "regula", nota: "Si consta la defunción y el sucesor no se persona en cinco días, las demás partes piden que se le emplace para comparecer en diez."}
+      - {norma: "LEC", articulo: "16", apartado: "3, párrafo 1.º", tipo: "regula", nota: "Demandado fallecido con sucesores desconocidos, ilocalizables o que no comparecen: el proceso sigue en rebeldía."}
+      - {norma: "LEC", articulo: "16", apartado: "3, párrafo 2.º", tipo: "regula", nota: "Demandante sin sucesores personados: desistimiento y archivo; si no quieren comparecer, se entiende renunciada la acción."}
+      - {norma: "LEC", articulo: "17", apartado: "1", tipo: "regula", nota: "Pendiente el juicio, el adquirente del objeto litigioso pide ocupar el lugar del transmitente; diez días a la otra parte."}
+      - {norma: "LEC", articulo: "17", apartado: "2", tipo: "regula", nota: "Se deniega si hay defensas solo frente al transmitente, reconvención o se dificulta la defensa: sigue el transmitente."}
+      - {norma: "LEC", articulo: "17", apartado: "3", tipo: "conexa", nota: "Bienes litigiosos enajenados en concurso: Ley Concursal; al adquirente se le oponen las excepciones frente al concursado."}
+      - {norma: "LEC", articulo: "18", tipo: "regula", nota: "Si el demandado pide que el tercero llamado ocupe su lugar: cinco días a las demás partes y auto sobre la sucesión."}
+      - {norma: "LEC", articulo: "14", apartado: "2", tipo: "conexa", nota: "El demandado llama al tercero en el plazo de contestar; comparecido, puede pedir que le suceda (regla 4.ª)."}
+      - {norma: "LEC", articulo: "20", apartado: "3", tipo: "conexa", nota: "Si el demandado se opone al archivo por falta de sucesores del actor, resuelve el juez (a ello remite el 16.3)."}
+      - {norma: "LEC", articulo: "30", apartado: "1.3.º", tipo: "conexa", nota: "El poder del procurador cesa por muerte del poderdante: lo comunica y, sin nuevo poder de los herederos, art. 16."}
+      - {norma: "LEC", articulo: "222", apartado: "3", tipo: "conexa", nota: "La cosa juzgada alcanza a las partes y a sus herederos y causahabientes."}
+      - {norma: "LEC", articulo: "540", apartado: "1", tipo: "conexa", nota: "La ejecución se despacha o sigue a favor o frente a quien acredite ser sucesor de quien figura en el título."}
+      - {norma: "LEC", articulo: "6", apartado: "1.4.º", tipo: "conexa", nota: "La herencia yacente, patrimonio transitoriamente sin titular, puede ser parte."}
+      - {norma: "CC", articulo: "661", tipo: "conexa", nota: "Los herederos suceden al difunto, por el solo hecho de su muerte, en todos sus derechos y obligaciones."}
+      - {norma: "CC", articulo: "1535", tipo: "conexa", nota: "Crédito litigioso (desde la contestación) vendido: el deudor lo extingue pagando al cesionario el precio, costas e intereses."}
+    no_consta_en_norma:
+      - "Adquirente que no pide la sucesión del 17: si la sentencia le vincula como causahabiente (222.3) es criterio jurisprudencial."
+      - "Cesión de carteras de créditos a fondos: suficiencia del documento para acreditar que el crédito concreto se cedió: casuística jurisprudencial."
+      - "Plazo de nueve días del 1535 CC y si el retracto de crédito litigioso cabe en la sucesión del 17 LEC: jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Texto refundido de la Ley Concursal (RDLeg 1/2020): enajenación de bienes y derechos litigiosos del concursado, a la que remite el 17.3."
+    afines: ["Herencia yacente y comunidades sin personalidad como parte", "Intervención de terceros", "Suspensión del proceso", "Rebeldía del demandado", "Cesión de créditos y retracto de crédito litigioso", "Ejecución frente a herederos y frente al cónyuge", "Desistimiento"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Abstención y recusación de jueces y magistrados"
+    sinonimos: ["recusación", "abstención", "recusar al juez", "imparcialidad del juez", "causas de recusación", "amistad íntima o enemistad manifiesta", "interés en el pleito", "parentesco con el abogado", "incidente de recusación", "cambio de juez tras el señalamiento", "recusación verbal", "juez predeterminado"]
+    normas_base: ["LOPJ", "LEC", "LO 1/2025"]
+    remisiones:
+      - {norma: "LOPJ", articulo: "217", tipo: "regula", nota: "El juez en quien concurra causa legal se abstiene sin esperar a que se le recuse."}
+      - {norma: "LOPJ", articulo: "219", tipo: "regula", nota: "Dieciséis causas tasadas: parentesco, amistad íntima o enemistad, interés, pleito pendiente, previa intervención, etc."}
+      - {norma: "LOPJ", articulo: "219", apartado: "2.ª", tipo: "conexa", nota: "Con el letrado o el procurador solo es causa el matrimonio o el parentesco hasta el segundo grado."}
+      - {norma: "LOPJ", articulo: "218", apartado: "1.º", tipo: "conexa", nota: "En lo civil recusan las partes; el fiscal, solo si puede o debe intervenir por la naturaleza de los derechos."}
+      - {norma: "LOPJ", articulo: "221", apartado: "1", tipo: "regula", nota: "La abstención se comunica por escrito razonado al órgano de los recursos, que resuelve en diez días; suspende el proceso."}
+      - {norma: "LOPJ", articulo: "223", apartado: "1", tipo: "regula", nota: "Recusar en cuanto se conozca la causa: diez días desde la resolución que identifica al juez, si ya se conocía; si no, inadmisión."}
+      - {norma: "LOPJ", articulo: "223", apartado: "2", tipo: "regula", nota: "Por escrito con causa legal, motivos y principio de prueba; firmado por abogado y procurador, con poder especial."}
+      - {norma: "LOPJ", articulo: "223", apartado: "3", tipo: "conexa", nota: "Traslado a las demás partes por tres días para adherirse u oponerse; luego el recusado dice si admite la causa."}
+      - {norma: "LOPJ", articulo: "224", apartado: "1.5.º", tipo: "conexa", nota: "Juez de un Tribunal de Instancia: instruye un magistrado del órgano colegiado que conoce de sus recursos."}
+      - {norma: "LOPJ", articulo: "225", apartado: "3", tipo: "conexa", nota: "Si el recusado no acepta la causa: prueba en diez días, informe fiscal en tres y decisión en cinco, sin recurso."}
+      - {norma: "LOPJ", articulo: "225", apartado: "4", tipo: "regula", nota: "La recusación suspende el pleito hasta que se decide el incidente (salvo en lo penal)."}
+      - {norma: "LOPJ", articulo: "227", apartado: "8.º", tipo: "regula", nota: "Recusado juez de un Tribunal de Instancia: decide la Sección de la Audiencia Provincial que conoce de sus recursos."}
+      - {norma: "LOPJ", articulo: "228", apartado: "1", tipo: "regula", nota: "Desestimada: costas al recusante salvo circunstancias excepcionales; con mala fe declarada, multa de 180 a 6.000 euros."}
+      - {norma: "LOPJ", articulo: "228", apartado: "3", tipo: "regula", nota: "Sin recurso; la causa se hace valer como nulidad al recurrir la resolución que decide el pleito."}
+      - {norma: "LEC", articulo: "99", apartado: "2", tipo: "regula", nota: "En el proceso civil solo proceden la abstención y la recusación por las causas de la LOPJ."}
+      - {norma: "LEC", articulo: "101", tipo: "conexa", nota: "En lo civil recusan solo las partes y el fiscal cuando puede o debe intervenir."}
+      - {norma: "LEC", articulo: "102", apartado: "2", tipo: "conexa", nota: "La abstención suspende el proceso hasta que se resuelva; la acuerda el LAJ."}
+      - {norma: "LEC", articulo: "107", apartado: "1", tipo: "regula", nota: "Mismo plazo y preclusión que la LOPJ: diez días desde que se conoce al juez, o inadmisión."}
+      - {norma: "LEC", articulo: "109", apartado: "4", tipo: "conexa", nota: "La recusación suspende el curso del pleito hasta que se decida el incidente."}
+      - {norma: "LEC", articulo: "110", apartado: "6.º", tipo: "conexa", nota: "Juez de Primera Instancia: decide la Sección de la AP de sus recursos (hoy Sección del Tribunal de Instancia, LO 1/2025)."}
+      - {norma: "LEC", articulo: "111", apartado: "1", tipo: "regula", nota: "Verbal: si el juez no acepta la causa en el acto, comparecencia ante el instructor en cinco días y providencia en el acto."}
+      - {norma: "LEC", articulo: "112", apartado: "1", tipo: "conexa", nota: "Desestimada: costas al recusante y, con mala fe declarada, multa de 180 a 6.000 euros."}
+      - {norma: "LEC", articulo: "113", tipo: "regula", nota: "Sin recurso contra la decisión; cabe alegar la nulidad al recurrir la resolución de fondo."}
+      - {norma: "LEC", articulo: "190", apartado: "1", tipo: "regula", nota: "Cambio de juez tras el señalamiento: se comunica antes de la vista y cabe recusarlo en el acto, incluso verbalmente."}
+      - {norma: "LEC", articulo: "190", apartado: "2", tipo: "regula", nota: "La recusación verbal suspende la vista; se formaliza por escrito en tres días o multa de 150 a 600 euros y costas."}
+      - {norma: "LEC", articulo: "191", tipo: "regula", nota: "Celebrada la vista con juez nuevo: tres días para recusar, solo por causa que no pudo conocerse antes de la vista."}
+      - {norma: "LEC", articulo: "192", tipo: "conexa", nota: "Si prospera esa recusación, la vista queda sin efecto y se repite ante juez hábil."}
+      - {norma: "LO 1/2025", articulo: "da 1", tipo: "conexa", nota: "Las menciones legales a «Juzgados de Primera Instancia» se entienden hechas a las Secciones de los Tribunales de Instancia."}
+    no_consta_en_norma:
+      - "Amistad o enemistad del juez con el abogado (no con la parte): no figura en el 219; su encaje en otras causas es jurisprudencial."
+      - "Apariencia de imparcialidad e interpretación restrictiva de las causas: doctrina del TC y del TEDH."
+      - "Inadmisión liminar por el propio tribunal de la recusación abusiva o en fraude procesal: doctrina del TC."
+    fuera_de_la_herramienta:
+      - "Estatuto Orgánico del Ministerio Fiscal (Ley 50/1981): abstención de los fiscales, a la que remite el art. 106 LEC."
+    afines: ["Recusación y tacha de peritos", "Suspensión del proceso", "Nulidad de actuaciones", "Tutela judicial efectiva e indefensión", "Suspensión de la vista y nuevo señalamiento", "Competencia funcional"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Recusación y tacha de peritos"
+    sinonimos: ["recusación del perito", "tacha del perito", "perito judicial", "perito de parte", "perito por sorteo", "imparcialidad del perito", "perito dependiente de la parte", "abstención del perito", "tachar al perito", "juramento del perito", "perito insaculado", "valoración del dictamen"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "124", apartado: "1", tipo: "regula", nota: "Solo se recusa a los peritos designados por el tribunal mediante sorteo, titulares o suplentes."}
+      - {norma: "LEC", articulo: "124", apartado: "2", tipo: "regula", nota: "Los peritos de parte no se recusan: solo cabe tacharlos por las causas y en la forma de los arts. 343 y 344."}
+      - {norma: "LEC", articulo: "124", apartado: "3", tipo: "regula", nota: "Además de las de la LOPJ: dictamen previo contrario al recusante, servicios a la contraria o participación en la parte."}
+      - {norma: "LEC", articulo: "125", apartado: "1", tipo: "conexa", nota: "Escrito firmado por abogado y procurador con la causa concreta y los medios de probarla, con copias."}
+      - {norma: "LEC", articulo: "125", apartado: "2", tipo: "regula", nota: "Causa anterior al nombramiento: dos días desde su notificación; posterior: antes del juicio o vista o al empezar."}
+      - {norma: "LEC", articulo: "125", apartado: "3", tipo: "conexa", nota: "Tras el juicio no se recusa; la causa conocida después se pone de manifiesto antes de sentencia o en segunda instancia."}
+      - {norma: "LEC", articulo: "126", tipo: "conexa", nota: "Si el perito reconoce la causa y el LAJ lo estima fundado, queda recusado y lo sustituye el suplente."}
+      - {norma: "LEC", articulo: "127", apartado: "1", tipo: "conexa", nota: "Si la niega, comparecencia ante el tribunal con las pruebas; si no comparece el recusante, se le tiene por desistido."}
+      - {norma: "LEC", articulo: "127", apartado: "3", tipo: "regula", nota: "Se admiten las pruebas pertinentes y útiles y se resuelve por auto; estimada, entra el suplente."}
+      - {norma: "LEC", articulo: "127", apartado: "4", tipo: "regula", nota: "Sin recurso, sin perjuicio de plantear la cuestión en la instancia superior."}
+      - {norma: "LEC", articulo: "128", tipo: "conexa", nota: "Costas: el mismo régimen que la recusación de jueces y magistrados."}
+      - {norma: "LEC", articulo: "105", apartado: "2", tipo: "conexa", nota: "El perito con causa de abstención no acepta el cargo; si la causa es posterior, decide quien lo designó, oídas las partes."}
+      - {norma: "LEC", articulo: "343", apartado: "1", tipo: "regula", nota: "Tacha del perito no recusable: parentesco, interés, dependencia, amistad o enemistad, o lo que le haga desmerecer."}
+      - {norma: "LEC", articulo: "343", apartado: "2", tipo: "regula", nota: "Nunca después del juicio o vista; en el ordinario, la del perito de demanda o contestación, en la audiencia previa."}
+      - {norma: "LEC", articulo: "344", apartado: "1", tipo: "conexa", nota: "La otra parte puede negar la tacha con documentos; el perito puede pedir que se declare infundada."}
+      - {norma: "LEC", articulo: "344", apartado: "2", tipo: "regula", nota: "La tacha se pondera al valorar la prueba; la temeraria o desleal se sanciona con multa de 60 a 600 euros."}
+      - {norma: "LEC", articulo: "347", apartado: "1.6.º", tipo: "conexa", nota: "En el juicio o la vista se puede pedir al perito la formulación de las tachas que le afecten."}
+      - {norma: "LEC", articulo: "335", apartado: "2", tipo: "conexa", nota: "Todo perito jura o promete actuar con la mayor objetividad y conocer las sanciones penales."}
+      - {norma: "LEC", articulo: "339", apartado: "4", tipo: "conexa", nota: "Si las partes acuerdan la persona o entidad, el tribunal la designa; si no, por el procedimiento del art. 341."}
+      - {norma: "LEC", articulo: "348", tipo: "conexa", nota: "Los dictámenes se valoran según las reglas de la sana crítica."}
+    no_consta_en_norma:
+      - "Perito designado por el tribunal a propuesta conjunta de las partes (339.4), no por sorteo: si es recusable es criterio jurisprudencial."
+      - "El perito de parte empleado o socio de quien lo aporta no queda excluido: su dictamen se valora con cautela: jurisprudencial."
+    afines: ["Dictamen pericial de parte y judicial", "Abstención y recusación de jueces y magistrados", "Testigos y tachas", "Audiencia previa: contenido y orden", "Recurso de apelación (plazo, interposición, prueba en segunda instancia)"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Buena fe procesal, abuso del servicio de justicia y multas"
+    sinonimos: ["buena fe procesal", "mala fe procesal", "abuso del servicio público de justicia", "abuso procesal", "fraude procesal", "multa procesal", "temeridad", "litigante temerario", "táctica dilatoria", "artículo 247 LEC", "sanción al abogado", "recurso de audiencia en justicia"]
+    normas_base: ["LEC", "LOPJ", "LO 1/2025"]
+    remisiones:
+      - {norma: "LEC", articulo: "247", apartado: "1", tipo: "regula", nota: "Todos los intervinientes en cualquier proceso deben ajustar sus actuaciones a las reglas de la buena fe."}
+      - {norma: "LEC", articulo: "247", apartado: "2", tipo: "regula", nota: "Se rechazan fundadamente las peticiones e incidentes con manifiesto abuso de derecho o fraude de ley o procesal."}
+      - {norma: "LEC", articulo: "247", apartado: "3, párrafo 1.º", tipo: "regula", nota: "Mala fe o abuso del servicio público de Justicia: multa de 180 a 6.000 euros, en pieza separada, hasta un tercio de la cuantía."}
+      - {norma: "LEC", articulo: "247", apartado: "3, párrafo 2.º", tipo: "regula", nota: "La cuantía atiende al hecho, a los perjuicios causados, a la capacidad económica del infractor y a la reiteración."}
+      - {norma: "LEC", articulo: "247", apartado: "4", tipo: "regula", nota: "Si la conducta es imputable al profesional, traslado a su colegio; con justicia gratuita, también a la Comisión."}
+      - {norma: "LEC", articulo: "247", apartado: "5", tipo: "regula", nota: "La multa se recurre por el régimen del título V del libro VII de la LOPJ."}
+      - {norma: "LOPJ", articulo: "11", apartado: "1", tipo: "regula", nota: "En todo tipo de procedimiento se respetan las reglas de la buena fe."}
+      - {norma: "LOPJ", articulo: "11", apartado: "2", tipo: "regula", nota: "Se rechazan fundadamente peticiones, incidentes y excepciones con manifiesto abuso de derecho o fraude de ley o procesal."}
+      - {norma: "LOPJ", articulo: "553", tipo: "conexa", nota: "Corrección de abogados y procuradores: falta de respeto, desobediencia reiterada, incomparecencia o renuncia en los 7 días previos."}
+      - {norma: "LOPJ", articulo: "554", apartado: "1", tipo: "conexa", nota: "Correcciones posibles: apercibimiento y multa; siempre con audiencia del interesado (554.2)."}
+      - {norma: "LOPJ", articulo: "556", tipo: "regula", nota: "Recurso de audiencia en justicia en cinco días y, después o en su lugar, alzada ante la Sala de Gobierno en cinco días."}
+      - {norma: "LO 1/2025", articulo: "7", apartado: "4", tipo: "regula", nota: "Tras un MASC sin acuerdo, se pondera la colaboración y el abuso del servicio al decidir costas, tasación y multas."}
+      - {norma: "LEC", articulo: "394", apartado: "4", tipo: "conexa", nota: "Si el requerido rehusó la negociación previa, el requirente queda exento de costas salvo abuso del servicio público."}
+      - {norma: "LEC", articulo: "395", apartado: "1", tipo: "conexa", nota: "Allanamiento antes de contestar: costas si hubo mala fe (requerimiento previo o rechazo del MASC) o abuso del servicio."}
+      - {norma: "LEC", articulo: "32", apartado: "5", tipo: "conexa", nota: "Sin intervención preceptiva, abogado y procurador quedan fuera de las costas salvo temeridad o abuso del servicio."}
+      - {norma: "LEC", articulo: "246", apartado: "4", tipo: "conexa", nota: "Impugnación de la tasación totalmente desestimada: costas del incidente al impugnante que obró con abuso del servicio."}
+      - {norma: "LEC", articulo: "286", apartado: "4", tipo: "conexa", nota: "Hecho «de nueva noticia» alegado con ánimo dilatorio o mala fe: multa de 120 a 600 euros."}
+      - {norma: "LEC", articulo: "344", apartado: "2", tipo: "conexa", nota: "Tacha de perito temeraria o desleal: multa de 60 a 600 euros."}
+      - {norma: "LEC", articulo: "190", apartado: "2", tipo: "conexa", nota: "Recusación verbal no formalizada en tres días: multa de 150 a 600 euros y costas de la suspensión."}
+      - {norma: "LEC", articulo: "112", apartado: "1", tipo: "conexa", nota: "Recusación con mala fe declarada: multa de 180 a 6.000 euros."}
+    no_consta_en_norma:
+      - "«Abuso del servicio público de Justicia»: el articulado no lo define (solo el preámbulo de la LO 1/2025); su contorno será jurisprudencial."
+      - "Deslinde entre temeridad (costas), mala fe procesal (multa) y abuso del servicio: elaboración jurisprudencial."
+      - "Si la multa del 247.3 puede imponerse directamente al abogado y no a la parte: criterio jurisprudencial (el 247.4 prevé traslado al colegio)."
+    afines: ["Costas: vencimiento, temeridad y allanamiento", "Costas y MASC", "Policía de estrados: llamada al orden y sanciones", "Abuso de derecho y buena fe", "Requisito de procedibilidad (MASC)", "Tasación de costas y su impugnación"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Actuaciones telemáticas y comparecencia por videoconferencia"
+    sinonimos: ["videoconferencia", "vista telemática", "juicio telemático", "presencia telemática", "comparecer a distancia", "declarar por videoconferencia", "testigo por videoconferencia", "perito por videoconferencia", "punto de acceso seguro", "LexNET", "presentación telemática de escritos", "notificación electrónica"]
+    normas_base: ["LEC", "LOPJ", "LO 1/2025"]
+    remisiones:
+      - {norma: "LEC", articulo: "129 bis", apartado: "1", tipo: "regula", nota: "Constituido el tribunal en su sede, juicios, vistas y comparecencias se hacen preferentemente con presencia telemática, si hay medios."}
+      - {norma: "LEC", articulo: "129 bis", apartado: "2", tipo: "regula", nota: "Quien declara (parte, testigo, perito) y la defensa de la parte comparecen físicamente, salvo las excepciones del propio apartado."}
+      - {norma: "LEC", articulo: "129 bis", apartado: "2.b)", tipo: "regula", nota: "Excepción: quien reside en otro municipio puede intervenir, a petición suya, desde un lugar seguro del suyo."}
+      - {norma: "LEC", articulo: "129 bis", apartado: "3", tipo: "conexa", nota: "El juez puede exigir, por resolución motivada, la presencia física de quien reside fuera o de la autoridad."}
+      - {norma: "LEC", articulo: "129 bis", apartado: "5", tipo: "conexa", nota: "Deben garantizarse la asistencia letrada efectiva, la interpretación y traducción y el acceso al expediente."}
+      - {norma: "LEC", articulo: "129", apartado: "2", tipo: "regula", nota: "Actuaciones fuera del partido judicial: por videoconferencia si es posible; si no, por auxilio judicial."}
+      - {norma: "LEC", articulo: "129", apartado: "4", tipo: "conexa", nota: "Cualquier actuación puede hacerse por videoconferencia en los términos del art. 229 LOPJ."}
+      - {norma: "LEC", articulo: "137 bis", apartado: "1", tipo: "conexa", nota: "La actuación por videoconferencia se documenta según el art. 147 y el tribunal garantiza su publicidad."}
+      - {norma: "LEC", articulo: "137 bis", apartado: "2", tipo: "regula", nota: "Se interviene desde la oficina judicial del partido del domicilio o trabajo, o desde el juzgado de paz si tiene medios."}
+      - {norma: "LEC", articulo: "137 bis", apartado: "3", tipo: "regula", nota: "El juez puede admitir cualquier lugar si se asegura la identidad; menores y personas con discapacidad, solo desde oficina judicial."}
+      - {norma: "LEC", articulo: "137 bis", apartado: "4", tipo: "regula", nota: "La videoconferencia se pide con antelación suficiente y, en todo caso, diez días antes del señalamiento."}
+      - {norma: "LEC", articulo: "169", apartado: "4", tipo: "regula", nota: "Parte, testigo o perito domiciliado fuera de la circunscripción declara por videoconferencia; auxilio judicial, excepcional."}
+      - {norma: "LEC", articulo: "346", apartado: "párrafo 2.º", tipo: "conexa", nota: "El perito judicial que reside fuera de la demarcación declara preferentemente por videoconferencia."}
+      - {norma: "LEC", articulo: "135", apartado: "1", tipo: "regula", nota: "Escritos telemáticos todos los días a toda hora; si se presentan en día u hora inhábil, cuentan desde el primer hábil siguiente."}
+      - {norma: "LEC", articulo: "135", apartado: "2", tipo: "regula", nota: "Caída no planificada del sistema: se presenta en la oficina judicial el primer día hábil siguiente con el justificante."}
+      - {norma: "LEC", articulo: "162", apartado: "2", tipo: "regula", nota: "Notificación electrónica no abierta en tres días: se tiene por hecha y el plazo corre desde el día hábil siguiente al tercero."}
+      - {norma: "LEC", articulo: "162", apartado: "2, párrafo 4.º", tipo: "conexa", nota: "No se notifica electrónicamente a profesionales en agosto ni del 24 de diciembre al 6 de enero, salvo días hábiles."}
+      - {norma: "LEC", articulo: "273", apartado: "1", tipo: "regula", nota: "Todos los profesionales de la justicia están obligados a presentar escritos y documentos por los sistemas telemáticos."}
+      - {norma: "LEC", articulo: "273", apartado: "3", tipo: "conexa", nota: "También personas jurídicas, entes sin personalidad, colegiados en su actividad, notarios y registradores."}
+      - {norma: "LEC", articulo: "273", apartado: "5", tipo: "regula", nota: "Incumplido el deber, cinco días para subsanar; si no, el escrito se tiene por no presentado."}
+      - {norma: "LOPJ", articulo: "229", apartado: "3", tipo: "regula", nota: "Videoconferencia con imagen y sonido bidireccionales y simultáneos, con contradicción y salvaguarda del derecho de defensa."}
+      - {norma: "LOPJ", articulo: "230", apartado: "1", tipo: "conexa", nota: "Juzgados y tribunales están obligados a usar los medios técnicos y telemáticos puestos a su disposición."}
+      - {norma: "LO 1/2025", articulo: "8", apartado: "1", tipo: "conexa", nota: "Las partes pueden pactar que la negociación del MASC sea telemática o por videoconferencia, con identidad garantizada."}
+      - {norma: "LO 1/2025", articulo: "8", apartado: "2", tipo: "conexa", nota: "Reclamaciones de cantidad de hasta 600 euros: el MASC se desarrolla preferentemente por medios telemáticos."}
+    no_consta_en_norma:
+      - "Cómo casan la presencia telemática preferente (129 bis.1) y la intervención desde la oficina judicial (137 bis.2): práctica de cada tribunal."
+      - "Fallo de la conexión durante la vista: suspensión o repetición del acto según haya indefensión: jurisprudencial."
+      - "Garantías de que el declarante a distancia no está asistido ni consulta notas: remisión reglamentaria (137 bis.3); casuística."
+    fuera_de_la_herramienta:
+      - "Real Decreto-ley 6/2023, de 19 de diciembre: eficiencia digital de la justicia (punto de acceso seguro, lugar seguro, expediente electrónico)."
+    afines: ["Plazos procesales: cómputo, días inhábiles y día de gracia", "Actos de comunicación: domicilio, emplazamiento y edictos", "Grabación y documentación de las vistas", "Suspensión de la vista y nuevo señalamiento", "Vista del juicio verbal: desarrollo e incomparecencias", "Publicidad de las actuaciones y vista a puerta cerrada"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Grabación y documentación de las vistas"
+    sinonimos: ["grabación de la vista", "grabación del juicio", "soporte audiovisual", "acta del juicio", "acta sucinta", "acta de la vista", "copia de la grabación", "transcripción de la vista", "fe pública judicial", "firma electrónica del LAJ", "grabación defectuosa", "vista sin letrado de la Administración de Justicia"]
+    normas_base: ["LEC", "LOPJ"]
+    remisiones:
+      - {norma: "LEC", articulo: "147", apartado: "párrafo 1.º", tipo: "regula", nota: "Las actuaciones orales en vistas, audiencias y comparecencias se graban en soporte apto para imagen y sonido."}
+      - {norma: "LEC", articulo: "147", apartado: "párrafo 2.º", tipo: "regula", nota: "Con firma electrónica, el LAJ no está en sala salvo petición de parte dos días antes o causa excepcional; acta sucinta."}
+      - {norma: "LEC", articulo: "147", apartado: "párrafo 3.º", tipo: "regula", nota: "Las vistas grabadas en soporte digital no se transcriben, salvo que una ley lo prevea."}
+      - {norma: "LEC", articulo: "147", apartado: "párrafo 6.º", tipo: "regula", nota: "Las partes pueden pedir, a su costa, copia o acceso electrónico a las grabaciones originales."}
+      - {norma: "LEC", articulo: "146", apartado: "1", tipo: "regula", nota: "Lo que no es escrito se documenta en actas y diligencias; la grabación debe ser auténtica, íntegra e inalterable."}
+      - {norma: "LEC", articulo: "146", apartado: "2, párrafo 2.º", tipo: "regula", nota: "Con firma electrónica del LAJ, la grabación es el acta; los intervinientes dicen su nombre para que conste."}
+      - {norma: "LEC", articulo: "146", apartado: "2, párrafo 3.º", tipo: "regula", nota: "Sin esas garantías, acta del LAJ: datos del acto, peticiones, pruebas admitidas, resoluciones e incidencias."}
+      - {norma: "LEC", articulo: "146", apartado: "2, párrafo 4.º", tipo: "conexa", nota: "El acta se extiende por medios informáticos; solo es manuscrita si la sala carece de ellos."}
+      - {norma: "LEC", articulo: "187", apartado: "1", tipo: "regula", nota: "La vista se graba en imagen y sonido o, si no es posible, solo en sonido; copia a costa de la parte."}
+      - {norma: "LEC", articulo: "187", apartado: "2", tipo: "regula", nota: "Si no pueden usarse los medios de registro, la vista se documenta en acta del LAJ."}
+      - {norma: "LEC", articulo: "145", apartado: "1.2.º", tipo: "conexa", nota: "El LAJ deja constancia fehaciente de los actos procesales mediante actas y diligencias, cualquiera que sea el soporte."}
+      - {norma: "LEC", articulo: "137 bis", apartado: "1", tipo: "conexa", nota: "Las actuaciones por videoconferencia se documentan igual, conforme al art. 147."}
+      - {norma: "LEC", articulo: "225", apartado: "5.º", tipo: "conexa", nota: "Son nulas de pleno derecho las vistas celebradas sin la preceptiva intervención del LAJ."}
+      - {norma: "LEC", articulo: "225", apartado: "3.º", tipo: "conexa", nota: "Nulidad si se prescinde de normas esenciales del procedimiento y pudo producirse indefensión."}
+      - {norma: "LOPJ", articulo: "230", apartado: "3", tipo: "regula", nota: "Las vistas grabadas y documentadas en soporte digital no pueden transcribirse, salvo previsión legal."}
+      - {norma: "LOPJ", articulo: "230", apartado: "2", tipo: "conexa", nota: "Los documentos electrónicos valen como originales si se garantizan su autenticidad e integridad."}
+    no_consta_en_norma:
+      - "Grabación defectuosa, inaudible o perdida: nulidad y repetición de la vista solo si causa indefensión real: jurisprudencial."
+      - "Grabación de la vista con medios propios de las partes: la LEC no la regula; queda a quien preside, con la policía de estrados."
+      - "Discrepancia entre el acta sucinta y la grabación: prevalencia de la grabación como acta (146.2): criterio jurisprudencial."
+    afines: ["Publicidad de las actuaciones y vista a puerta cerrada", "Actuaciones telemáticas y comparecencia por videoconferencia", "Nulidad de actuaciones", "Vista del juicio verbal: desarrollo e incomparecencias", "Juicio ordinario: práctica de la prueba y conclusiones", "Policía de estrados: llamada al orden y sanciones"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Caducidad de la instancia"
+    sinonimos: ["caducidad de la instancia", "perención", "abandono del pleito", "pleito paralizado", "dos años sin actividad", "un año en segunda instancia", "caducidad del recurso", "archivo provisional", "inactividad procesal", "reactivar el procedimiento", "interrupción de la prescripción y caducidad de la instancia"]
+    normas_base: ["LEC", "CC"]
+    remisiones:
+      - {norma: "LEC", articulo: "237", apartado: "1", tipo: "regula", nota: "Instancia abandonada sin actividad procesal en dos años (primera instancia) o uno (segunda o casación), desde la última notificación."}
+      - {norma: "LEC", articulo: "237", apartado: "2", tipo: "regula", nota: "Contra el decreto que declara la caducidad solo cabe recurso de revisión."}
+      - {norma: "LEC", articulo: "236", tipo: "regula", nota: "La mera falta de impulso de las partes no causa por sí la caducidad de la instancia o del recurso."}
+      - {norma: "LEC", articulo: "238", tipo: "regula", nota: "No caduca si la paralización se debe a fuerza mayor o a causa contraria o no imputable a la voluntad de las partes."}
+      - {norma: "LEC", articulo: "239", tipo: "regula", nota: "No hay caducidad en la ejecución forzosa: se puede proseguir hasta cumplir lo juzgado."}
+      - {norma: "LEC", articulo: "240", apartado: "1", tipo: "regula", nota: "En segunda instancia o casación: se tiene por desistido el recurso y por firme la resolución recurrida."}
+      - {norma: "LEC", articulo: "240", apartado: "2", tipo: "regula", nota: "En primera instancia equivale a desistimiento: cabe nueva demanda, salvo que haya caducado la acción."}
+      - {norma: "LEC", articulo: "240", apartado: "3", tipo: "regula", nota: "Sin costas: cada parte paga las suyas y las comunes por mitad."}
+      - {norma: "LEC", articulo: "179", apartado: "1", tipo: "conexa", nota: "Salvo otra previsión legal, el LAJ da de oficio al proceso el curso que corresponda."}
+      - {norma: "LEC", articulo: "179", apartado: "2", tipo: "conexa", nota: "Acabada la suspensión pactada sin que nadie pida reanudar en cinco días, archivo provisional hasta que se pida o caduque la instancia."}
+      - {norma: "LEC", articulo: "19", apartado: "4", tipo: "conexa", nota: "Las partes pueden pedir la suspensión del proceso por un máximo de sesenta días."}
+      - {norma: "CC", articulo: "1946", apartado: "2.º", tipo: "conexa", nota: "Usucapión: la citación no interrumpe si el actor deja caducar la instancia; si rige en la extintiva, jurisprudencial."}
+    no_consta_en_norma:
+      - "Qué actuación de parte o de la oficina basta para cortar el plazo del 237: casuística jurisprudencial."
+      - "Pleito parado en espera de una resolución del tribunal: no imputable a las partes (238), según la jurisprudencia."
+      - "Si el 1946.2.º CC se aplica a la prescripción extintiva de acciones o solo a la usucapión, donde está ubicado: jurisprudencial."
+    afines: ["Desistimiento", "Suspensión del proceso", "Caducidad de la acción (como excepción)", "Interrupción de la prescripción", "Caducidad de la acción ejecutiva", "Recurso de revisión contra decretos del LAJ"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Diligencias preliminares"
+    sinonimos: ["diligencias preliminares", "preparar el juicio", "exhibición de documentos antes de la demanda", "exhibición del testamento", "exhibición de la póliza de seguro", "historia clínica", "cuentas de la comunidad", "averiguar la legitimación", "caución de las diligencias preliminares", "negativa a exhibir", "entrada y registro", "identificar al demandado"]
+    normas_base: ["LEC", "LO 1/2025"]
+    remisiones:
+      - {norma: "LEC", articulo: "256", apartado: "1", tipo: "regula", nota: "Todo juicio puede prepararse con las diligencias tasadas en la lista del apartado (1.º a 11.º)."}
+      - {norma: "LEC", articulo: "256", apartado: "1.1.º", tipo: "regula", nota: "Que el futuro demandado declare o exhiba documentos sobre su capacidad, representación o legitimación."}
+      - {norma: "LEC", articulo: "256", apartado: "1.2.º", tipo: "conexa", nota: "Que el futuro demandado exhiba la cosa a la que se refiera el juicio."}
+      - {norma: "LEC", articulo: "256", apartado: "1.3.º", tipo: "conexa", nota: "Que quien lo tenga exhiba el testamento a quien se considera heredero o legatario."}
+      - {norma: "LEC", articulo: "256", apartado: "1.4.º", tipo: "conexa", nota: "Que se exhiban al socio o comunero los documentos y cuentas de la sociedad o comunidad."}
+      - {norma: "LEC", articulo: "256", apartado: "1.5.º", tipo: "conexa", nota: "Que se exhiba el contrato de seguro de responsabilidad civil al que se considera perjudicado."}
+      - {norma: "LEC", articulo: "256", apartado: "1.5.º bis", tipo: "conexa", nota: "Que el centro o profesional sanitario entregue la historia clínica, en las condiciones de la ley."}
+      - {norma: "LEC", articulo: "256", apartado: "2", tipo: "regula", nota: "La solicitud expresa sus fundamentos con referencia circunstanciada al juicio que se quiere preparar."}
+      - {norma: "LEC", articulo: "256", apartado: "3", tipo: "regula", nota: "Gastos a cargo del solicitante, que ofrece caución; la pierde si no demanda en un mes sin justificación suficiente."}
+      - {norma: "LEC", articulo: "257", apartado: "1", tipo: "regula", nota: "Competente: el juez de primera instancia del domicilio de quien deba declarar o exhibir (salvo 6.º a 9.º)."}
+      - {norma: "LEC", articulo: "257", apartado: "2", tipo: "conexa", nota: "No cabe declinatoria; el juez revisa de oficio su competencia e indica al que debe acudirse."}
+      - {norma: "LEC", articulo: "258", apartado: "1", tipo: "regula", nota: "Se acuerdan si son adecuadas a su fin y hay justa causa e interés legítimo; se resuelve en cinco días."}
+      - {norma: "LEC", articulo: "258", apartado: "2", tipo: "regula", nota: "El auto que las acuerda no es recurrible; el que las deniega, sí, en apelación."}
+      - {norma: "LEC", articulo: "258", apartado: "3", tipo: "conexa", nota: "Sin caución en tres días desde el auto, archivo definitivo por decreto."}
+      - {norma: "LEC", articulo: "259", apartado: "1", tipo: "conexa", nota: "El requerido debe practicar la diligencia en los diez días siguientes a la citación."}
+      - {norma: "LEC", articulo: "260", apartado: "1", tipo: "regula", nota: "Oposición del requerido en cinco días; impugnación en otros cinco y, si se pide, vista por los trámites del verbal."}
+      - {norma: "LEC", articulo: "260", apartado: "3", tipo: "conexa", nota: "Oposición injustificada: costas al requerido, por auto sin recurso; si es justificada, auto apelable (260.4)."}
+      - {norma: "LEC", articulo: "261", tipo: "regula", nota: "Si no atiende ni se opone: hechos admitidos, entrada y registro o cuentas del solicitante tenidas por ciertas."}
+      - {norma: "LEC", articulo: "262", apartado: "1", tipo: "conexa", nota: "Practicadas o denegadas las diligencias, auto en cinco días sobre la aplicación de la caución; apelable sin efecto suspensivo."}
+      - {norma: "LO 1/2025", articulo: "da 1", tipo: "conexa", nota: "Las referencias al «Juzgado de Primera Instancia» se entienden hechas a la Sección civil del Tribunal de Instancia."}
+    no_consta_en_norma:
+      - "Si la lista del 256.1 es cerrada o admite diligencias análogas a las previstas: criterio jurisprudencial."
+      - "Diligencias para identificar al demandado (titular de un vehículo, de una línea o de una cuenta): solo si encajan en el 256.1; casuística."
+      - "Si la solicitud de diligencias preliminares interrumpe la prescripción de la acción que se prepara: jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Ley 41/2002, básica reguladora de la autonomía del paciente: acceso a la historia clínica (el 256.1.5.º bis remite a «la ley»)."
+    afines: ["Exhibición de documentos entre partes y por terceros", "Prueba anticipada y aseguramiento de la prueba", "Falta de legitimación", "Caución", "Competencia territorial y fueros imperativos", "Interrupción de la prescripción"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Cuestiones incidentales"
+    sinonimos: ["cuestión incidental", "incidente", "incidente de previo pronunciamiento", "incidente de especial pronunciamiento", "presupuesto procesal sobrevenido", "óbice procesal", "suspensión por incidente", "comparecencia del incidente", "repeler el incidente", "incidente dilatorio"]
+    normas_base: ["LEC", "LOPJ"]
+    remisiones:
+      - {norma: "LEC", articulo: "387", tipo: "regula", nota: "Incidentales: distintas del objeto principal pero en relación inmediata con él, o sobre presupuestos y requisitos procesales."}
+      - {norma: "LEC", articulo: "388", tipo: "regula", nota: "Se tramitan por este capítulo las que no tengan en la LEC otra tramitación propia."}
+      - {norma: "LEC", articulo: "389", tipo: "regula", nota: "De especial pronunciamiento: se deciden por separado en la sentencia, antes del fondo, y no suspenden el proceso."}
+      - {norma: "LEC", articulo: "390", tipo: "regula", nota: "De previo pronunciamiento: si son un obstáculo para seguir, se suspende el curso de las actuaciones hasta resolverlas."}
+      - {norma: "LEC", articulo: "391", tipo: "regula", nota: "Son de previo: capacidad o representación sobrevenidas tras la audiencia previa, óbices sobrevenidos u otra incidencia decisiva."}
+      - {norma: "LEC", articulo: "392", apartado: "1", tipo: "regula", nota: "Se plantean por escrito, con documentos y prueba, indicando si debe suspenderse el curso de las actuaciones."}
+      - {norma: "LEC", articulo: "392", apartado: "2", tipo: "regula", nota: "El tribunal repele por auto la cuestión que no encaje en ninguno de los casos legales."}
+      - {norma: "LEC", articulo: "393", apartado: "1", tipo: "regula", nota: "No se admiten una vez iniciado el juicio en el ordinario, ni admitida la prueba en el verbal."}
+      - {norma: "LEC", articulo: "393", apartado: "2", tipo: "regula", nota: "La providencia de admisión decide si es de previo o de especial pronunciamiento y, en el primer caso, suspende."}
+      - {norma: "LEC", articulo: "393", apartado: "3", tipo: "regula", nota: "Traslado de cinco días a las demás partes y comparecencia por los trámites de la vista del verbal."}
+      - {norma: "LEC", articulo: "393", apartado: "4", tipo: "regula", nota: "Las de previo pronunciamiento se resuelven por auto en diez días; las de especial, en la sentencia."}
+      - {norma: "LEC", articulo: "393", apartado: "5", tipo: "regula", nota: "Auto que pone fin al proceso: apelable; si ordena seguir, sin recurso, pero se impugna al apelar la sentencia."}
+      - {norma: "LEC", articulo: "206", apartado: "1.2.ª", tipo: "conexa", nota: "Las resoluciones sobre presupuestos procesales y cuestiones incidentales revisten forma de auto."}
+      - {norma: "LOPJ", articulo: "245", apartado: "1.b)", tipo: "conexa", nota: "Son autos los que deciden cuestiones incidentales, presupuestos procesales o nulidad del procedimiento."}
+    no_consta_en_norma:
+      - "Costas de las cuestiones incidentales: el capítulo no trae regla propia; su imposición por analogía con el 394 es jurisprudencial."
+      - "Nulidad de actuaciones planteada como incidente del 387 o por la vía de los arts. 227 y 228: criterio jurisprudencial."
+    afines: ["Suspensión del proceso", "Nulidad de actuaciones", "Cuestiones prejudiciales (penal, administrativa, civil)", "Audiencia previa: contenido y orden", "Resoluciones procesales: clases y firmeza", "Buena fe procesal, abuso del servicio de justicia y multas"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Resoluciones procesales: clases y firmeza"
+    sinonimos: ["providencia", "auto", "sentencia", "decreto", "diligencia de ordenación", "resolución firme", "firmeza", "cosa juzgada formal", "resolución definitiva", "sentencia oral", "pie de recurso", "invariabilidad de las resoluciones"]
+    normas_base: ["LEC", "LOPJ"]
+    remisiones:
+      - {norma: "LEC", articulo: "206", apartado: "1", tipo: "regula", nota: "Resoluciones del juez: providencias, autos y sentencias; si la ley no dice cuál, rigen las reglas del apartado."}
+      - {norma: "LEC", articulo: "206", apartado: "1.1.ª", tipo: "regula", nota: "Providencia: cuestiones procesales que requieren decisión judicial, si la ley no exige auto."}
+      - {norma: "LEC", articulo: "206", apartado: "1.2.ª", tipo: "regula", nota: "Auto: recursos contra providencias o decretos, admisión de demanda o prueba, cautelares, nulidad, incidentes y fin anticipado."}
+      - {norma: "LEC", articulo: "206", apartado: "1.3.ª", tipo: "regula", nota: "Sentencia: pone fin al proceso en primera o segunda instancia tras su tramitación ordinaria; también casación y revisión."}
+      - {norma: "LEC", articulo: "206", apartado: "2", tipo: "regula", nota: "Del LAJ: diligencias (de ordenación, constancia, comunicación o ejecución) y decretos (admisión de demanda o motivación)."}
+      - {norma: "LEC", articulo: "207", apartado: "1", tipo: "regula", nota: "Definitivas: las que ponen fin a la primera instancia y las que deciden los recursos contra ellas."}
+      - {norma: "LEC", articulo: "207", apartado: "2", tipo: "regula", nota: "Firmes: contra las que no cabe recurso, por no preverlo la ley o por haber pasado el plazo sin recurrir."}
+      - {norma: "LEC", articulo: "207", apartado: "3", tipo: "regula", nota: "Las firmes pasan en autoridad de cosa juzgada y el tribunal del proceso ha de estar a lo que dispongan."}
+      - {norma: "LEC", articulo: "207", apartado: "4", tipo: "conexa", nota: "Vencido el plazo para recurrir sin impugnar, la resolución queda firme y vincula al tribunal del proceso."}
+      - {norma: "LEC", articulo: "208", apartado: "2", tipo: "regula", nota: "Decretos y autos siempre motivados, con antecedentes de hecho y fundamentos de derecho numerados."}
+      - {norma: "LEC", articulo: "208", apartado: "4", tipo: "regula", nota: "Toda resolución indica si es firme y, si no, el recurso, el órgano y el plazo para interponerlo."}
+      - {norma: "LEC", articulo: "209", tipo: "conexa", nota: "Sentencia escrita: encabezamiento, antecedentes, fundamentos y fallo numerado con costas y cantidad líquida."}
+      - {norma: "LEC", articulo: "210", apartado: "1", tipo: "regula", nota: "Las resoluciones que deban dictarse en una vista, salvo sentencia, se pronuncian oralmente en el acto con motivación sucinta."}
+      - {norma: "LEC", articulo: "210", apartado: "3", tipo: "regula", nota: "En el verbal con abogado cabe sentencia oral al terminar la vista, con su posterior redacción."}
+      - {norma: "LEC", articulo: "210", apartado: "4", tipo: "regula", nota: "Sentencia oral: cinco días desde la vista para anunciar interés en recurrir; la apelación corre desde la notificación escrita."}
+      - {norma: "LEC", articulo: "214", apartado: "1", tipo: "conexa", nota: "Firmada la resolución no se puede variar, pero sí aclarar conceptos oscuros y rectificar errores materiales."}
+      - {norma: "LEC", articulo: "215", apartado: "5", tipo: "conexa", nota: "Pedida aclaración o complemento, se interrumpe el plazo para recurrir la resolución principal."}
+      - {norma: "LEC", articulo: "451", tipo: "conexa", nota: "Reposición contra diligencias de ordenación y decretos no definitivos (ante el LAJ) y contra providencias y autos no definitivos."}
+      - {norma: "LEC", articulo: "454 bis", apartado: "1", tipo: "conexa", nota: "Revisión contra el decreto que resuelve la reposición y, directa, contra el decreto que pone fin al procedimiento."}
+      - {norma: "LEC", articulo: "455", apartado: "1", tipo: "conexa", nota: "Son apelables las sentencias y autos definitivos, salvo las sentencias de verbales por cuantía de hasta 3.000 euros."}
+      - {norma: "LOPJ", articulo: "245", apartado: "1", tipo: "regula", nota: "Providencias (ordenación material), autos (recursos, incidentes, presupuestos, nulidad) y sentencias (deciden el pleito)."}
+      - {norma: "LOPJ", articulo: "245", apartado: "3", tipo: "regula", nota: "Son firmes las sentencias contra las que no cabe recurso, salvo el de revisión u otros extraordinarios."}
+      - {norma: "LOPJ", articulo: "245", apartado: "4", tipo: "conexa", nota: "Ejecutoria: documento público y solemne en que se consigna una sentencia firme."}
+      - {norma: "LOPJ", articulo: "248", apartado: "6", tipo: "regula", nota: "Toda resolución expresa si es firme y, si no, recurso, órgano, plazo y, en su caso, depósito para recurrir."}
+      - {norma: "LOPJ", articulo: "456", apartado: "3", tipo: "conexa", nota: "Decreto del LAJ: admite la demanda, pone fin a procedimientos de su competencia o razona la decisión; siempre motivado."}
+    no_consta_en_norma:
+      - "Error en el pie de recurso de la resolución: no perjudica a la parte que lo sigue de buena fe: doctrina del TC."
+      - "Resolución dictada con forma distinta de la legal (providencia en lugar de auto): su régimen de recursos es jurisprudencial."
+      - "Fecha de firmeza en la práctica (diligencia que la declara) frente a la firmeza ope legis del 207.2: jurisprudencial."
+    afines: ["Aclaración, corrección y complemento de resoluciones", "Congruencia y motivación de la sentencia", "Cosa juzgada", "Recurso de reposición", "Recurso de revisión contra decretos del LAJ", "Recurso de apelación (plazo, interposición, prueba en segunda instancia)"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Ampliación de la demanda y prohibición de cambio de demanda"
+    sinonimos: ["ampliación de la demanda", "ampliación subjetiva", "ampliación objetiva", "nuevos demandados", "cambio de demanda", "mutatio libelli", "alteración del objeto del proceso", "alegaciones complementarias", "petición accesoria o complementaria", "hechos nuevos", "escrito de ampliación de hechos", "rentas vencidas durante el pleito"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "401", apartado: "1", tipo: "regula", nota: "No se permite la acumulación de acciones después de contestada la demanda."}
+      - {norma: "LEC", articulo: "401", apartado: "2", tipo: "regula", nota: "Antes de la contestación cabe ampliar a nuevas acciones o nuevos demandados; el plazo de contestar vuelve a contarse."}
+      - {norma: "LEC", articulo: "412", apartado: "1", tipo: "regula", nota: "Fijado el objeto en demanda, contestación y reconvención, las partes no pueden alterarlo después."}
+      - {norma: "LEC", articulo: "412", apartado: "2", tipo: "regula", nota: "Sin perjuicio de las alegaciones complementarias que permite la ley."}
+      - {norma: "LEC", articulo: "426", apartado: "1", tipo: "regula", nota: "En la audiencia previa: alegaciones complementarias frente a lo contrario, sin alterar sustancialmente pretensiones ni fundamentos."}
+      - {norma: "LEC", articulo: "426", apartado: "2", tipo: "regula", nota: "Cabe aclarar alegaciones y rectificar extremos secundarios de las pretensiones, sin alterarlas."}
+      - {norma: "LEC", articulo: "426", apartado: "3", tipo: "regula", nota: "Petición accesoria o complementaria: si la contraria se opone, solo se admite si no merma su defensa en igualdad."}
+      - {norma: "LEC", articulo: "426", apartado: "4", tipo: "regula", nota: "Hechos posteriores a demanda o contestación, o de nueva noticia, se alegan en la audiencia (con el control del 286.4)."}
+      - {norma: "LEC", articulo: "426", apartado: "5", tipo: "conexa", nota: "En la audiencia se aportan los documentos y dictámenes que justifiquen esas alegaciones, adiciones o hechos nuevos."}
+      - {norma: "LEC", articulo: "286", apartado: "1", tipo: "regula", nota: "Precluidas las alegaciones y antes del plazo para sentencia: escrito de ampliación de hechos, salvo que quepa en el juicio."}
+      - {norma: "LEC", articulo: "286", apartado: "4", tipo: "conexa", nota: "Se rechaza el hecho no acreditado como posterior o que pudo alegarse antes; con mala fe, multa de 120 a 600 euros."}
+      - {norma: "LEC", articulo: "400", apartado: "1", tipo: "regula", nota: "Los hechos y títulos conocidos o invocables al demandar han de aducirse en la demanda: no cabe reservarlos."}
+      - {norma: "LEC", articulo: "400", apartado: "2", tipo: "conexa", nota: "A efectos de litispendencia y cosa juzgada, cuenta lo que pudo alegarse en el pleito anterior."}
+      - {norma: "LEC", articulo: "420", apartado: "1", tipo: "conexa", nota: "Falta de litisconsorcio alegada: el actor puede dirigir la demanda en la audiencia contra los litisconsortes."}
+      - {norma: "LEC", articulo: "413", apartado: "1", tipo: "conexa", nota: "Las innovaciones posteriores al inicio del juicio no se tienen en cuenta, salvo que priven de interés legítimo a la pretensión."}
+      - {norma: "LEC", articulo: "411", tipo: "conexa", nota: "Los cambios de domicilio, de la cosa litigiosa o del objeto no alteran la jurisdicción ni la competencia iniciales."}
+      - {norma: "LEC", articulo: "220", apartado: "1", tipo: "conexa", nota: "Intereses o prestaciones periódicas: la sentencia puede condenar también a las que venzan después."}
+      - {norma: "LEC", articulo: "220", apartado: "2", tipo: "conexa", nota: "Desahucio con reclamación de rentas: si se pidió en la demanda, condena a las que venzan hasta la entrega de la posesión."}
+      - {norma: "LEC", articulo: "218", apartado: "1", tipo: "conexa", nota: "La sentencia es congruente con las pretensiones deducidas oportunamente, sin apartarse de la causa de pedir."}
+      - {norma: "LEC", articulo: "73", apartado: "1", tipo: "conexa", nota: "Requisitos para acumular acciones: competencia, mismo tipo de juicio y que la ley no lo prohíba."}
+      - {norma: "LEC", articulo: "443", apartado: "3", tipo: "conexa", nota: "En la vista del verbal, sin acuerdo, las partes hacen aclaraciones y fijan los hechos controvertidos."}
+    no_consta_en_norma:
+      - "Frontera entre alegación complementaria o rectificación secundaria (426) y cambio sustancial de la demanda: casuística jurisprudencial."
+      - "Reducción de la cuantía pedida o de las pretensiones en la audiencia: se admite como desistimiento parcial según la jurisprudencia."
+      - "Cantidades vencidas durante el pleito fuera de los casos del 220: si se incluyen sin ampliar es criterio jurisprudencial."
+    vigilar:
+      - {norma: "LEC", articulo: "22"}
+    # VIGENCIA: el 413.2 remite al art. 22 (carencia sobrevenida), que el RDL 29/2026 reforma y el espejo aún no recoge. No se cita.
+    afines: ["Acumulación de acciones", "Preclusión de alegaciones y hechos nuevos", "Audiencia previa: contenido y orden", "Congruencia y motivación de la sentencia", "Litisconsorcio pasivo necesario", "Carencia sobrevenida de objeto / satisfacción extraprocesal"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Admisión de hechos y silencio en la contestación"
+    sinonimos: ["admisión de hechos", "admisión tácita", "silencio del demandado", "respuestas evasivas", "hechos conformes", "hechos no controvertidos", "negación genérica", "ficta admissio", "conformidad sobre los hechos", "documento no impugnado", "rebeldía no es allanamiento", "fijación de hechos controvertidos"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "405", apartado: "2", tipo: "regula", nota: "La contestación debe admitir o negar los hechos; el silencio o las evasivas pueden tenerse por admisión tácita de los perjudiciales."}
+      - {norma: "LEC", articulo: "399", apartado: "3", tipo: "conexa", nota: "Los hechos de la demanda se narran ordenada y claramente para facilitar su admisión o negación."}
+      - {norma: "LEC", articulo: "438", apartado: "1", tipo: "conexa", nota: "En el verbal también se contesta por escrito, en diez días, conforme a lo dispuesto para el ordinario."}
+      - {norma: "LEC", articulo: "281", apartado: "3", tipo: "regula", nota: "Los hechos sobre los que hay plena conformidad están exentos de prueba, salvo materia indisponible."}
+      - {norma: "LEC", articulo: "281", apartado: "4", tipo: "conexa", nota: "Tampoco se prueban los hechos de notoriedad absoluta y general."}
+      - {norma: "LEC", articulo: "428", apartado: "1", tipo: "regula", nota: "En la audiencia previa se fijan, con el tribunal, los hechos conformes y los controvertidos."}
+      - {norma: "LEC", articulo: "428", apartado: "3", tipo: "regula", nota: "Si hay conformidad en todos los hechos y solo se discute el derecho, sentencia en veinte días sin juicio."}
+      - {norma: "LEC", articulo: "426", apartado: "6", tipo: "regula", nota: "Si la parte no aclara lo que el tribunal le pide, se le advierte de que puede tenérsela por conforme con lo contrario."}
+      - {norma: "LEC", articulo: "443", apartado: "3", tipo: "regula", nota: "En la vista del verbal se fijan los hechos sobre los que hay contradicción."}
+      - {norma: "LEC", articulo: "427", apartado: "1", tipo: "regula", nota: "En la audiencia, cada parte admite, impugna o reconoce los documentos de contrario o propone prueba de su autenticidad."}
+      - {norma: "LEC", articulo: "326", apartado: "1", tipo: "regula", nota: "El documento privado no impugnado por quien le perjudica hace prueba plena."}
+      - {norma: "LEC", articulo: "496", apartado: "2", tipo: "regula", nota: "La rebeldía no es allanamiento ni admisión de hechos, salvo que la ley disponga otra cosa."}
+      - {norma: "LEC", articulo: "304", tipo: "conexa", nota: "Incomparecencia al interrogatorio: pueden tenerse por reconocidos los hechos personales y perjudiciales, con multa."}
+      - {norma: "LEC", articulo: "307", apartado: "1", tipo: "conexa", nota: "Negativa a declarar o respuestas evasivas: apercibimiento de tener por ciertos los hechos personales perjudiciales."}
+      - {norma: "LEC", articulo: "261", apartado: "1.ª", tipo: "conexa", nota: "Desatender la diligencia preliminar de declaración permite tener los hechos por admitidos en el juicio posterior."}
+    no_consta_en_norma:
+      - "El 405.2 es facultativo («podrá»): el silencio no equivale sin más a admisión; su apreciación es jurisprudencial."
+      - "Eficacia de la negación genérica («se niegan todos los hechos salvo los reconocidos»): casuística jurisprudencial."
+      - "Hechos admitidos en la instancia: vinculan al tribunal y a la parte en apelación, según la jurisprudencia."
+    afines: ["Rebeldía del demandado", "Hechos controvertidos y fijación del objeto", "Presunciones y hechos exentos de prueba", "Interrogatorio de parte y ficta confessio", "Documentos: aportación e impugnación", "Allanamiento", "Contestación escrita en el verbal y petición de vista"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"

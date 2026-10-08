@@ -1,0 +1,425 @@
+# Índice de conceptos de «Consulta de normas» — tanda 17 (prioridad B: voces 157, 158, 163 a 167 y 178 a 182)
+# Revisor: armero. Espejo: legalize-es@aca28304d, leído con `git show aca28304d:es/…` (no el árbol de trabajo, que hoy trae erratas).
+# Todo precepto citado se ha leído en el espejo en esta pasada. Vigencia: contraste con la API de boe.es (08-10-2026).
+# Ver tanda-17-notas.md.
+
+voces:
+  - voz: "Ejecución por entrega de cosas"
+    sinonimos: ["ejecución no dineraria", "entrega de cosa mueble determinada", "entrega de cosas genéricas", "entrega de bien inmueble", "puesta en posesión del ejecutante", "condena a entregar", "embargo de garantía", "ocupantes del inmueble que debe entregarse", "cosas no separables en el lanzamiento", "desperfectos en el lanzamiento", "equivalente pecuniario", "cosa no hallada"]
+    normas_base: ["LEC", "CC"]
+    remisiones:
+      - {norma: "LEC", articulo: "699", tipo: "regula", nota: "El auto que despacha requiere al ejecutado para que cumpla en sus propios términos y en el plazo que fije, con apercibimientos."}
+      - {norma: "LEC", articulo: "700", apartado: "párrafo 2.º", tipo: "regula", nota: "Si no cabe cumplimiento inmediato, embargo a petición del ejecutante para indemnizaciones sustitutorias y costas."}
+      - {norma: "LEC", articulo: "700", apartado: "párrafo 3.º", tipo: "conexa", nota: "El embargo se alza si el ejecutado presta la caución que fije el LAJ (formas del 529.3)."}
+      - {norma: "LEC", articulo: "701", apartado: "1", tipo: "regula", nota: "Cosa mueble determinada: el LAJ pone al ejecutante en posesión con apremios; lugares cerrados, con autorización judicial."}
+      - {norma: "LEC", articulo: "701", apartado: "2", tipo: "conexa", nota: "Si no se halla la cosa, el LAJ interroga al ejecutado o a terceros con apercibimiento de desobediencia."}
+      - {norma: "LEC", articulo: "701", apartado: "3", tipo: "regula", nota: "Si no aparece, el tribunal la sustituye a instancia del ejecutante por una justa compensación pecuniaria (712 y ss.)."}
+      - {norma: "LEC", articulo: "702", apartado: "1", tipo: "regula", nota: "Cosas genéricas: puesta en posesión o facultad de adquirirlas a costa del ejecutado, con embargo para pagarlas."}
+      - {norma: "LEC", articulo: "702", apartado: "2", tipo: "regula", nota: "Si la adquisición tardía ya no satisface al ejecutante, se fija el equivalente pecuniario con daños y perjuicios."}
+      - {norma: "LEC", articulo: "703", apartado: "1", tipo: "regula", nota: "Inmueble: el LAJ ordena de inmediato lo que proceda según la condena y adecúa el Registro al título."}
+      - {norma: "LEC", articulo: "703", apartado: "1, párrafo 2.º", tipo: "regula", nota: "Cosas ajenas al título que haya en el inmueble: requerimiento para retirarlas; si no, se tienen por abandonadas."}
+      - {norma: "LEC", articulo: "703", apartado: "2", tipo: "conexa", nota: "Plantaciones o instalaciones no separables reclamadas en el lanzamiento: se decide su abono si se insta en cinco días."}
+      - {norma: "LEC", articulo: "703", apartado: "3", tipo: "conexa", nota: "Desperfectos del ejecutado u ocupantes: retención y depósito de sus bienes; daños liquidados por los arts. 712 y ss."}
+      - {norma: "LEC", articulo: "704", apartado: "1", tipo: "regula", nota: "Vivienda habitual del ejecutado: un mes para desalojar, prorrogable otro con motivo fundado; día y hora del lanzamiento."}
+      - {norma: "LEC", articulo: "704", apartado: "2", tipo: "regula", nota: "Terceros ocupantes: se les notifica para que presenten títulos en diez días; lanzamiento de los de mero hecho por el 675."}
+      - {norma: "LEC", articulo: "675", apartado: "3", tipo: "conexa", nota: "Vista con los ocupantes en diez días; auto sin recurso; si no comparecen sin justa causa, se decreta el lanzamiento."}
+      - {norma: "LEC", articulo: "548", tipo: "conexa", nota: "Resoluciones procesales o arbitrales: no se despacha ejecución en los veinte días siguientes a la firmeza."}
+      - {norma: "LEC", articulo: "712", tipo: "conexa", nota: "Procedimiento para fijar el equivalente pecuniario de una prestación no dineraria o los daños y perjuicios."}
+      - {norma: "LEC", articulo: "717", tipo: "conexa", nota: "Equivalente pecuniario: estimación razonada, traslado de diez días y trámite de los arts. 714 a 716."}
+      - {norma: "CC", articulo: "1096", tipo: "regula", nota: "Cosa determinada: el acreedor puede compeler a la entrega; genérica: cumplimiento a costa del deudor; riesgo en mora."}
+    no_consta_en_norma:
+      - "Plazo del requerimiento del 699: lo fija el tribunal según el caso; la ley no da mínimo ni máximo."
+      - "Destino y gastos de las cosas abandonadas del 703.1, párrafo 2.º: casuística."
+      - "Momento de valoración del equivalente pecuniario (incumplimiento o liquidación): jurisprudencial."
+    afines: ["Lanzamiento", "Ejecución de obligaciones de hacer y no hacer", "Liquidación de daños, frutos y rendición de cuentas", "Cargas anteriores y ocupantes del inmueble subastado", "Despacho de la ejecución y plazo de espera", "Títulos ejecutivos"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Ejecución de obligaciones de hacer y no hacer"
+    sinonimos: ["condena de hacer", "condena de no hacer", "hacer personalísimo", "hacer no personalísimo", "ejecución a costa del deudor", "realización por tercero", "multas coercitivas", "deshacer lo mal hecho", "condena a emitir una declaración de voluntad", "elevación a escritura pública por el juez", "quebrantamiento de la condena de no hacer", "publicación de la sentencia"]
+    normas_base: ["LEC", "CC"]
+    remisiones:
+      - {norma: "LEC", articulo: "699", tipo: "regula", nota: "El auto que despacha requiere al ejecutado para que cumpla en sus propios términos y en el plazo que fije, con apercibimientos."}
+      - {norma: "LEC", articulo: "700", apartado: "párrafo 2.º", tipo: "conexa", nota: "A petición del ejecutante, embargo para asegurar indemnizaciones sustitutorias y costas; revisión sin efecto suspensivo."}
+      - {norma: "LEC", articulo: "705", tipo: "regula", nota: "Hacer: requerimiento con plazo según su naturaleza; el procurador del ejecutante puede practicarlo a su costa."}
+      - {norma: "LEC", articulo: "706", apartado: "1", tipo: "regula", nota: "Hacer no personalísimo incumplido: el ejecutante elige encargarlo a un tercero a costa del ejecutado o el resarcimiento."}
+      - {norma: "LEC", articulo: "706", apartado: "1, párrafo 2.º", tipo: "regula", nota: "Si el título regula el incumplimiento, se está a él, sin opción del ejecutante."}
+      - {norma: "LEC", articulo: "706", apartado: "2", tipo: "regula", nota: "Por tercero: un perito fija el coste; si el ejecutado no lo deposita ni afianza, embargo y realización inmediatos."}
+      - {norma: "LEC", articulo: "707", tipo: "conexa", nota: "Condena a publicar la sentencia: se requiere al ejecutado para que contrate los anuncios a su costa."}
+      - {norma: "LEC", articulo: "708", apartado: "1", tipo: "regula", nota: "Declaración de voluntad: pasados los 20 días del 548, auto que la tiene por emitida si constan los elementos esenciales."}
+      - {norma: "LEC", articulo: "708", apartado: "2", tipo: "regula", nota: "Los elementos no esenciales los fija el tribunal según el uso; si faltan esenciales, solo daños y perjuicios."}
+      - {norma: "LEC", articulo: "709", apartado: "1", tipo: "regula", nota: "Personalísimo: el ejecutante opta por equivalente pecuniario o multas mensuales; si no lo es, se sigue el art. 706."}
+      - {norma: "LEC", articulo: "709", apartado: "2", tipo: "conexa", nota: "Si se sigue por el equivalente pecuniario, se impone además una multa única (art. 711)."}
+      - {norma: "LEC", articulo: "709", apartado: "3", tipo: "regula", nota: "Multas mensuales: requerimientos trimestrales durante un año; después, equivalente u otras medidas idóneas."}
+      - {norma: "LEC", articulo: "709", apartado: "4", tipo: "conexa", nota: "Si el título prevé el incumplimiento, se está a lo que disponga."}
+      - {norma: "LEC", articulo: "710", apartado: "1", tipo: "regula", nota: "No hacer quebrantado: requerimiento para deshacer, indemnizar y no reiterar, bajo desobediencia; multas mensuales."}
+      - {norma: "LEC", articulo: "710", apartado: "2", tipo: "regula", nota: "Si no cabe reiterar ni deshacer lo hecho, la ejecución sigue para resarcir daños y perjuicios."}
+      - {norma: "LEC", articulo: "711", apartado: "1", tipo: "regula", nota: "Cuantía de las multas: precio del título o coste de mercado; mensual hasta el 20 % y única hasta el 50 %."}
+      - {norma: "LEC", articulo: "711", apartado: "2", tipo: "conexa", nota: "Cesación en defensa de consumidores: multa de 600 a 60.000 euros por día de retraso, ingresada en el Tesoro."}
+      - {norma: "LEC", articulo: "713", apartado: "1", tipo: "conexa", nota: "Liquidación de daños: relación detallada y valorada, con dictámenes y documentos."}
+      - {norma: "LEC", articulo: "714", apartado: "2", tipo: "conexa", nota: "Si el deudor calla diez días o niega en genérico, se le tiene por conforme con los hechos alegados."}
+      - {norma: "LEC", articulo: "715", tipo: "conexa", nota: "Oposición motivada: trámite del juicio verbal; cabe perito designado por el tribunal."}
+      - {norma: "LEC", articulo: "716", tipo: "conexa", nota: "Auto que fija la cantidad en cinco días tras la vista; apelable sin efecto suspensivo; costas del 394."}
+      - {norma: "CC", articulo: "1098", tipo: "regula", nota: "Si el obligado a hacer no lo hace, se ejecuta a su costa; si lo hace mal, puede ordenarse deshacerlo."}
+      - {norma: "CC", articulo: "1099", tipo: "regula", nota: "Lo mismo si la obligación es de no hacer y el deudor ejecuta lo prohibido."}
+      - {norma: "CC", articulo: "1101", tipo: "conexa", nota: "Indemnización de daños por dolo, negligencia o morosidad en el cumplimiento."}
+    no_consta_en_norma:
+      - "Línea entre hacer personalísimo y no personalísimo: la decide el tribunal por auto (709.1); casuística."
+      - "Destino de las multas coercitivas de los arts. 709 y 710: la ley solo lo fija para la cesación de consumo (711.2)."
+      - "Compatibilidad de las multas coercitivas con la indemnización de daños: jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Código Penal, art. 556: desobediencia grave a la autoridad, con la que se apercibe en los arts. 701.2 y 710.1 LEC."
+    afines: ["Ejecución por entrega de cosas", "Liquidación de daños, frutos y rendición de cuentas", "Despacho de la ejecución y plazo de espera", "Forma del contrato y elevación a escritura pública", "Daños y perjuicios por incumplimiento contractual", "Acciones colectivas y de cesación de consumo"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Embargo preventivo"
+    sinonimos: ["embargo cautelar", "aseguramiento de una condena dineraria", "traba preventiva de bienes", "embargo preventivo en el juicio cambiario", "embargo preventivo en la venta a plazos", "anotación del embargo preventivo", "tercería en el embargo preventivo", "alzamiento del embargo preventivo", "mantenimiento del embargo tras la sentencia", "manifestación de bienes", "riesgo de insolvencia"]
+    normas_base: ["LEC", "CC"]
+    remisiones:
+      - {norma: "LEC", articulo: "727", apartado: "1.ª", tipo: "regula", nota: "Embargo preventivo para asegurar condenas a entregar dinero, frutos, rentas o cosas fungibles valorables."}
+      - {norma: "LEC", articulo: "727", apartado: "1.ª, párrafo 2.º", tipo: "regula", nota: "Fuera de esos casos, cabe si es idóneo y no sustituible por otra medida igual de eficaz y menos onerosa."}
+      - {norma: "LEC", articulo: "726", apartado: "1", tipo: "conexa", nota: "Solo cabe la medida conducente a la efectividad de la tutela y no sustituible por otra menos gravosa."}
+      - {norma: "LEC", articulo: "728", apartado: "1", tipo: "regula", nota: "Peligro por la mora procesal: justificar que sin la medida se impediría o dificultaría la tutela."}
+      - {norma: "LEC", articulo: "728", apartado: "2", tipo: "regula", nota: "Apariencia de buen derecho: datos y documentos para un juicio provisional e indiciario favorable."}
+      - {norma: "LEC", articulo: "728", apartado: "3", tipo: "regula", nota: "Salvo norma en contra, el solicitante presta caución por los daños que la medida pueda causar al demandado."}
+      - {norma: "LEC", articulo: "738", apartado: "2", tipo: "regula", nota: "Se traba por los arts. 584 y ss., sin manifestación de bienes del 589; mejora y reducción las decide el tribunal."}
+      - {norma: "LEC", articulo: "729", tipo: "regula", nota: "Cabe tercería de dominio; la de mejor derecho, solo si el tercerista reclama dinero al deudor en otro proceso."}
+      - {norma: "LEC", articulo: "729", apartado: "párrafo 2.º", tipo: "conexa", nota: "Conoce de esas tercerías el tribunal que acordó el embargo preventivo."}
+      - {norma: "LEC", articulo: "731", apartado: "1", tipo: "regula", nota: "Con sentencia de condena, se mantiene hasta pasar el plazo del 548; si no se pide la ejecución, se alza."}
+      - {norma: "LEC", articulo: "731", apartado: "1, párrafo 2.º", tipo: "conexa", nota: "Se alza si el proceso queda en suspenso más de seis meses por causa imputable al solicitante."}
+      - {norma: "LEC", articulo: "731", apartado: "2", tipo: "conexa", nota: "Despachada la ejecución provisional, se alzan las medidas cautelares que guarden relación con ella."}
+      - {norma: "LEC", articulo: "629", apartado: "1", tipo: "conexa", nota: "Bienes inscribibles: mandamiento de anotación preventiva de embargo; puede diligenciarlo el procurador."}
+      - {norma: "LEC", articulo: "584", tipo: "conexa", nota: "No se embargan bienes cuyo valor exceda de lo asegurado, salvo que solo existan bienes de valor superior y sean necesarios."}
+      - {norma: "LEC", articulo: "744", apartado: "1", tipo: "conexa", nota: "Absuelto el demandado en primera o segunda instancia, se alzan las medidas salvo que el recurrente pida mantenerlas."}
+      - {norma: "LEC", articulo: "745", tipo: "conexa", nota: "Sentencia absolutoria firme, renuncia o desistimiento: alzamiento de oficio y daños y perjuicios por el 742."}
+      - {norma: "LEC", articulo: "441", apartado: "4", tipo: "conexa", nota: "Venta a plazos inscrita (250.1.10.º): embargo preventivo inmediato, sin caución ni oposición del demandado."}
+      - {norma: "LEC", articulo: "821", apartado: "2.2.ª", tipo: "regula", nota: "Juicio cambiario: embargo preventivo inmediato por el importe del título más intereses, gastos y costas."}
+      - {norma: "LEC", articulo: "823", apartado: "1", tipo: "conexa", nota: "Cambiario: puede alzarse si en cinco días el deudor niega categóricamente su firma o la representación."}
+      - {norma: "CC", articulo: "1923", apartado: "4.º", tipo: "conexa", nota: "El crédito preventivamente anotado por embargo prefiere sobre el bien, pero solo frente a créditos posteriores."}
+    no_consta_en_norma:
+      - "Si rige en el embargo preventivo el orden de embargo del 592: la remisión del 738.2 es genérica; casuística."
+      - "Conversión del embargo preventivo en ejecutivo al despachar la ejecución: sin regla expresa; criterio de cada oficina."
+      - "Prueba del peligro de insolvencia que se exige para embargar dinero: jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Reglamento (UE) 655/2014: orden europea de retención de cuentas, con medidas de aplicación en la disposición final 27.ª LEC."
+    afines: ["Medidas cautelares: presupuestos", "Caución", "Medidas cautelares sin audiencia y oposición", "Orden de embargo, mejora y reducción", "Tercería de dominio", "Tercería de mejor derecho", "Juicio cambiario"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Anotación preventiva de demanda"
+    sinonimos: ["anotación de demanda", "anotación preventiva en el Registro de la Propiedad", "publicidad registral del pleito", "anotación de inicio de MASC", "anotación de inicio de negociación", "otras anotaciones registrales", "anotación preventiva de sentencia no firme", "cancelación de la anotación", "caducidad de la anotación", "tercero adquirente y litigio pendiente", "prohibición de disponer cautelar"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "727", apartado: "5.ª", tipo: "regula", nota: "Anotación de demanda o de inicio de MASC, arbitraje o litigio extranjero sobre bienes o derechos inscribibles."}
+      - {norma: "LEC", articulo: "727", apartado: "6.ª", tipo: "regula", nota: "Otras anotaciones registrales, cuando la publicidad registral sea útil para el buen fin de la ejecución."}
+      - {norma: "LEC", articulo: "727", apartado: "11.ª", tipo: "conexa", nota: "Otras medidas que prevean las leyes o que sean necesarias para asegurar la efectividad de la tutela."}
+      - {norma: "LEC", articulo: "738", apartado: "2, párrafo 3.º", tipo: "regula", nota: "Acordada la anotación preventiva, se practica conforme a las normas del Registro correspondiente."}
+      - {norma: "LEC", articulo: "730", apartado: "2, párrafo 3.º", tipo: "regula", nota: "Si se anotó el inicio del medio extrajudicial, la anotación de demanda surte efectos desde aquella fecha."}
+      - {norma: "LEC", articulo: "728", apartado: "1", tipo: "regula", nota: "Presupuesto de peligro por la mora procesal: la medida debe evitar que se frustre la tutela."}
+      - {norma: "LEC", articulo: "728", apartado: "2", tipo: "regula", nota: "Apariencia de buen derecho con datos y documentos; si faltan, prueba propuesta en el mismo escrito."}
+      - {norma: "LEC", articulo: "728", apartado: "3", tipo: "regula", nota: "El solicitante presta caución, que el tribunal fija según la pretensión y el fundamento de la solicitud."}
+      - {norma: "LEC", articulo: "737", tipo: "conexa", nota: "La caución se presta antes de cualquier acto de cumplimiento; su idoneidad se decide por providencia."}
+      - {norma: "LEC", articulo: "722", tipo: "conexa", nota: "Pueden pedir la medida las partes de un convenio o proceso arbitral o de un proceso extranjero."}
+      - {norma: "LEC", articulo: "524", apartado: "4", tipo: "regula", nota: "Sentencia no firme o en plazo de rescisión por rebeldía: solo anotación preventiva de lo inscribible o cancelable."}
+      - {norma: "LEC", articulo: "731", apartado: "1", tipo: "conexa", nota: "Terminado el proceso sin condena, la medida no se mantiene; con condena, hasta pasar el plazo del 548."}
+      - {norma: "LEC", articulo: "744", apartado: "1", tipo: "conexa", nota: "Absuelto el demandado, se alza la medida salvo que el recurrente pida su mantenimiento al recurrir."}
+      - {norma: "LEC", articulo: "745", tipo: "conexa", nota: "Sentencia absolutoria firme, renuncia o desistimiento: alzamiento de oficio de las medidas."}
+      - {norma: "LEC", articulo: "629", apartado: "2", tipo: "conexa", nota: "Bien no inmatriculado o inscrito a nombre de otro: anotación de suspensión según la legislación hipotecaria."}
+    no_consta_en_norma:
+      - "Qué acciones permiten anotar (reales o con trascendencia real): criterio registral y jurisprudencial."
+      - "Efectos frente a terceros adquirentes y fe pública registral: Ley Hipotecaria (fuera de la herramienta) y jurisprudencia."
+      - "Cuantía de la caución en la anotación de demanda: la fija el tribunal (728.3); casuística."
+    fuera_de_la_herramienta:
+      - "Ley Hipotecaria, art. 42.1.º: anotación preventiva de quien demanda la propiedad o un derecho real sobre inmuebles."
+      - "Ley Hipotecaria, art. 71: lo anotado puede enajenarse o gravarse sin perjuicio del derecho del anotante."
+      - "Ley Hipotecaria, art. 86: las anotaciones preventivas caducan a los cuatro años, prorrogables otros cuatro."
+    afines: ["Medidas cautelares: presupuestos", "Caución", "Medidas cautelares antes de la demanda", "Acción reivindicatoria y declarativa de dominio", "Tutela de derechos reales inscritos", "Requisito de procedibilidad (MASC)"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Caución"
+    sinonimos: ["caución del solicitante de la medida cautelar", "fianza judicial", "aval bancario a primer requerimiento", "caución sustitutoria", "contracautela", "consignación en dinero", "garantía de daños y perjuicios", "caución para suspender la ejecución", "caución en diligencias preliminares", "caución en la obra nueva", "dispensa de caución", "idoneidad y suficiencia de la caución"]
+    normas_base: ["LEC", "CC"]
+    remisiones:
+      - {norma: "LEC", articulo: "728", apartado: "3", tipo: "regula", nota: "Salvo norma en contra, el solicitante de la medida presta caución suficiente por los daños que cause al demandado."}
+      - {norma: "LEC", articulo: "728", apartado: "3, párrafo 2.º", tipo: "regula", nota: "Se fija según la naturaleza de la pretensión y el fundamento apreciado en la solicitud."}
+      - {norma: "LEC", articulo: "728", apartado: "3, párrafo 3.º", tipo: "regula", nota: "Puede prestarse en cualquiera de las formas del párrafo segundo del art. 529.3."}
+      - {norma: "LEC", articulo: "728", apartado: "3, párrafo 4.º", tipo: "regula", nota: "Acción de cesación en defensa de consumidores: el tribunal puede dispensar de la caución."}
+      - {norma: "LEC", articulo: "529", apartado: "3, párrafo 2.º", tipo: "regula", nota: "Formas: dinero, aval solidario indefinido a primer requerimiento de banco o SGR, u otro medio de disponibilidad inmediata."}
+      - {norma: "LEC", articulo: "64", apartado: "2, párrafo 2.º", tipo: "conexa", nota: "Mismas formas en la declinatoria; a este precepto remiten las diligencias preliminares y la obra nueva."}
+      - {norma: "LEC", articulo: "732", apartado: "3", tipo: "regula", nota: "La solicitud ofrece la caución, especifica su tipo y justifica el importe propuesto."}
+      - {norma: "LEC", articulo: "735", apartado: "2", tipo: "conexa", nota: "El auto que acuerda la medida fija la forma, cuantía y tiempo de prestar la caución."}
+      - {norma: "LEC", articulo: "737", tipo: "regula", nota: "La caución es previa a cualquier acto de cumplimiento; su idoneidad y suficiencia se deciden por providencia."}
+      - {norma: "LEC", articulo: "734", apartado: "2, párrafo 2.º", tipo: "conexa", nota: "En la vista se alega sobre tipo y cuantía de la caución y puede pedirse caución sustitutoria."}
+      - {norma: "LEC", articulo: "746", apartado: "1", tipo: "regula", nota: "El afectado puede pedir que se acepte, en lugar de la medida, caución suficiente para asegurar la condena."}
+      - {norma: "LEC", articulo: "746", apartado: "2", tipo: "regula", nota: "Se pondera el fundamento de la medida, la apariencia de derecho del demandado y el perjuicio desproporcionado."}
+      - {norma: "LEC", articulo: "747", apartado: "1", tipo: "regula", nota: "Se pide en la vista, en la oposición o por escrito motivado; traslado de cinco días, vista y auto."}
+      - {norma: "LEC", articulo: "747", apartado: "2", tipo: "regula", nota: "Contra el auto que acepta o rechaza la caución sustitutoria no cabe recurso."}
+      - {norma: "LEC", articulo: "747", apartado: "3", tipo: "conexa", nota: "La caución sustitutoria admite las formas del párrafo segundo del art. 529.3."}
+      - {norma: "LEC", articulo: "721", apartado: "3", tipo: "conexa", nota: "Proceso de consumo suspendido por prejudicialidad (art. 43): medidas de oficio sin caución."}
+      - {norma: "LEC", articulo: "441", apartado: "4", tipo: "conexa", nota: "Venta a plazos o leasing inscritos: depósito o embargo sin caución del demandante ni sustitución por caución."}
+      - {norma: "LEC", articulo: "256", apartado: "3", tipo: "conexa", nota: "Diligencias preliminares: caución por gastos y daños; se pierde si no se demanda en un mes sin justificación."}
+      - {norma: "LEC", articulo: "441", apartado: "2", tipo: "conexa", nota: "Obra nueva: el dueño puede ofrecer caución para continuarla."}
+      - {norma: "LEC", articulo: "567", tipo: "conexa", nota: "En la ejecución, el recurso suspende la actuación recurrida si hay daño de difícil reparación y se presta caución."}
+      - {norma: "LEC", articulo: "700", apartado: "párrafo 3.º", tipo: "conexa", nota: "Ejecución no dineraria: el embargo de garantía se alza si el ejecutado presta caución."}
+      - {norma: "LEC", articulo: "742", tipo: "conexa", nota: "Revocada la medida, el demandado liquida sus daños por los arts. 712 y ss. y se exigen al solicitante."}
+      - {norma: "CC", articulo: "1855", tipo: "conexa", nota: "Quien deba dar fianza legal o judicial y no la halle puede ofrecer prenda o hipoteca bastante."}
+      - {norma: "CC", articulo: "1856", tipo: "conexa", nota: "El fiador judicial no puede pedir la excusión de los bienes del deudor principal."}
+    no_consta_en_norma:
+      - "Cuantía de la caución: no hay porcentaje legal; la fija el tribunal caso por caso."
+      - "Caución de quien carece de medios o litiga con justicia gratuita: sin regla en la LEC; casuística."
+      - "Si la caución del solicitante limita su responsabilidad por daños (742): jurisprudencial."
+    afines: ["Medidas cautelares: presupuestos", "Embargo preventivo", "Modificación, alzamiento y caución sustitutoria", "Ejecución provisional y su oposición", "Suspensión de la ejecución", "Diligencias preliminares", "Fianza"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Medidas cautelares sin audiencia y oposición"
+    sinonimos: ["medidas inaudita parte", "medidas sin oír al demandado", "inaudita altera parte", "urgencia de la medida cautelar", "oposición a la medida cautelar", "plazo de oposición de veinte días", "vista de oposición", "costas de la oposición", "daños por medida revocada", "irrecurribilidad del auto sin audiencia", "vista de medidas cautelares", "apelación del auto de medidas"]
+    normas_base: ["LEC", "CE"]
+    remisiones:
+      - {norma: "LEC", articulo: "733", apartado: "1", tipo: "regula", nota: "Regla general: el tribunal resuelve sobre las medidas oyendo antes al demandado."}
+      - {norma: "LEC", articulo: "733", apartado: "2", tipo: "regula", nota: "Sin audiencia si se pide y acredita urgencia o riesgo para la medida; auto en cinco días que razona ambos extremos."}
+      - {norma: "LEC", articulo: "733", apartado: "2, párrafo 2.º", tipo: "regula", nota: "Contra ese auto no cabe recurso; se notifica sin dilación o tras ejecutar la medida."}
+      - {norma: "LEC", articulo: "734", apartado: "1", tipo: "conexa", nota: "Con audiencia: vista en los diez días siguientes, sin seguir el orden de asuntos si urge."}
+      - {norma: "LEC", articulo: "734", apartado: "2", tipo: "conexa", nota: "En la vista se alega y prueba sobre los presupuestos; cabe reconocimiento judicial en cinco días."}
+      - {norma: "LEC", articulo: "734", apartado: "3", tipo: "conexa", nota: "Lo resuelto sobre la vista y la prueba no se recurre; se alega, con protesta, al recurrir el auto final."}
+      - {norma: "LEC", articulo: "735", apartado: "2, párrafo 2.º", tipo: "conexa", nota: "El auto que acuerda medidas con audiencia es apelable sin efectos suspensivos."}
+      - {norma: "LEC", articulo: "736", apartado: "1", tipo: "conexa", nota: "El auto denegatorio solo es apelable, con tramitación preferente; costas según el art. 394."}
+      - {norma: "LEC", articulo: "738", apartado: "1", tipo: "conexa", nota: "Acordada la medida y prestada la caución, se cumple de inmediato y de oficio."}
+      - {norma: "LEC", articulo: "739", tipo: "regula", nota: "Medida adoptada sin audiencia: oposición en veinte días desde la notificación del auto."}
+      - {norma: "LEC", articulo: "740", tipo: "regula", nota: "Se puede alegar sin limitación todo hecho o razón contra la procedencia, requisitos, alcance o tipo de la medida."}
+      - {norma: "LEC", articulo: "740", apartado: "párrafo 2.º", tipo: "regula", nota: "El opositor puede ofrecer caución sustitutoria."}
+      - {norma: "LEC", articulo: "741", apartado: "1", tipo: "regula", nota: "Traslado de la oposición al solicitante y vista conforme al art. 734."}
+      - {norma: "LEC", articulo: "741", apartado: "2", tipo: "regula", nota: "Auto en cinco días; si mantiene las medidas, costas de la oposición al opositor."}
+      - {norma: "LEC", articulo: "741", apartado: "2, párrafo 3.º", tipo: "regula", nota: "Si alza las medidas, costas al actor y condena a pagar los daños y perjuicios causados."}
+      - {norma: "LEC", articulo: "741", apartado: "3", tipo: "regula", nota: "El auto sobre la oposición es apelable sin efecto suspensivo."}
+      - {norma: "LEC", articulo: "742", tipo: "regula", nota: "Firme la estimación de la oposición, se liquidan los daños por los arts. 712 y ss. y se exigen al solicitante."}
+      - {norma: "LEC", articulo: "732", apartado: "2, párrafo 2.º", tipo: "conexa", nota: "Actividades ilícitas: cabe pedir informes o investigaciones urgentes sin dar traslado de la solicitud."}
+      - {norma: "LEC", articulo: "721", apartado: "1", tipo: "conexa", nota: "Las medidas se solicitan bajo la responsabilidad del solicitante."}
+      - {norma: "LEC", articulo: "441", apartado: "4", tipo: "conexa", nota: "Venta a plazos o leasing inscritos: medidas sin oposición del demandado."}
+      - {norma: "CE", articulo: "24", apartado: "1", tipo: "conexa", nota: "Tutela judicial efectiva sin indefensión: límite de la adopción de medidas sin oír al afectado."}
+    no_consta_en_norma:
+      - "Grado de acreditación de la urgencia o del riesgo del 733.2: jurisprudencial."
+      - "Responsabilidad por la medida revocada (741.2 y 742): si es objetiva o requiere culpa, jurisprudencial."
+      - "Medida sin audiencia antes de la demanda: coordinación del plazo de oposición con el de demandar, casuística."
+    afines: ["Medidas cautelares: presupuestos", "Caución", "Medidas cautelares antes de la demanda", "Modificación, alzamiento y caución sustitutoria", "Embargo preventivo", "Tutela judicial efectiva e indefensión"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Medidas cautelares antes de la demanda"
+    sinonimos: ["medidas cautelares previas a la demanda", "medidas cautelares urgentes", "medidas ante causam", "plazo de veinte días para demandar", "medidas que quedan sin efecto", "medidas en prevención", "medidas durante el MASC", "medidas antes del arbitraje", "competencia para medidas previas", "alzamiento por no presentar la demanda", "medidas cautelares y negociación previa"]
+    normas_base: ["LEC", "LO 1/2025"]
+    remisiones:
+      - {norma: "LEC", articulo: "730", apartado: "1", tipo: "conexa", nota: "De ordinario, las medidas se solicitan junto con la demanda principal."}
+      - {norma: "LEC", articulo: "730", apartado: "2", tipo: "regula", nota: "Antes de la demanda solo si se alegan y acreditan razones de urgencia o necesidad."}
+      - {norma: "LEC", articulo: "730", apartado: "2, párrafo 2.º", tipo: "regula", nota: "Sin demanda ante el mismo tribunal en 20 días: alzamiento de oficio, costas y responsabilidad por daños."}
+      - {norma: "LEC", articulo: "730", apartado: "2, párrafo 3.º", tipo: "regula", nota: "Medidas antes o durante un MASC: el acuerdo se comunica y decide sobre alzamiento o mantenimiento."}
+      - {norma: "LEC", articulo: "730", apartado: "2, párrafo 4.º", tipo: "regula", nota: "Sin acuerdo, alzamiento a petición en 20 días desde el fin de la negociación o la propuesta sin respuesta."}
+      - {norma: "LEC", articulo: "730", apartado: "3", tipo: "regula", nota: "Arbitraje: no rige el plazo de 20 días; basta con poner en marcha el procedimiento arbitral."}
+      - {norma: "LEC", articulo: "730", apartado: "4", tipo: "conexa", nota: "Tras la demanda o pendiente recurso, solo por hechos y circunstancias que lo justifiquen entonces."}
+      - {norma: "LEC", articulo: "723", apartado: "1", tipo: "regula", nota: "Competente: el que conoce en primera instancia o, sin proceso, el competente para la demanda principal."}
+      - {norma: "LEC", articulo: "725", apartado: "1", tipo: "regula", nota: "Antes de la demanda no cabe declinatoria territorial; el tribunal examina de oficio jurisdicción y competencia."}
+      - {norma: "LEC", articulo: "725", apartado: "2", tipo: "regula", nota: "Si se cree territorialmente incompetente, puede acordar en prevención las medidas más urgentes y remitir."}
+      - {norma: "LEC", articulo: "724", tipo: "conexa", nota: "Arbitraje o proceso extranjero: tribunal del lugar de ejecución del laudo o donde la medida deba surtir efecto."}
+      - {norma: "LEC", articulo: "722", tipo: "conexa", nota: "Pueden pedirlas las partes de un convenio arbitral o de un proceso extranjero."}
+      - {norma: "LEC", articulo: "727", apartado: "5.ª", tipo: "conexa", nota: "Cabe anotar preventivamente el inicio de un medio de solución de controversias sobre bienes inscribibles."}
+      - {norma: "LEC", articulo: "733", apartado: "2", tipo: "conexa", nota: "Con urgencia acreditada, la medida puede acordarse sin oír al futuro demandado."}
+      - {norma: "LO 1/2025", articulo: "5", apartado: "3", tipo: "regula", nota: "No hace falta acudir antes a un MASC para pedir medidas cautelares previas a la demanda."}
+      - {norma: "LO 1/2025", articulo: "7", apartado: "3, párrafo 2.º", tipo: "regula", nota: "Medidas acordadas durante la negociación: demanda ante el mismo tribunal en 20 días desde el fin sin acuerdo."}
+      - {norma: "LO 1/2025", articulo: "7", apartado: "3, párrafo 3.º", tipo: "regula", nota: "Medidas acordadas antes de negociar: el plazo de 20 días se suspende y se reanuda como en el art. 7.1."}
+      - {norma: "LO 1/2025", articulo: "7", apartado: "1", tipo: "conexa", nota: "La solicitud de negociación interrumpe la prescripción o suspende la caducidad desde el intento de comunicación."}
+    no_consta_en_norma:
+      - "Cómputo de los 20 días del 730.2 (días hábiles procesales o plazo sustantivo): jurisprudencial."
+      - "El 730.2, párrafo 4.º, LEC y el 7.3 LO 1/2025 regulan el mismo supuesto sin armonizarse: casuística."
+      - "Acreditación de las razones de urgencia o necesidad: jurisprudencial."
+    afines: ["Medidas cautelares: presupuestos", "Medidas cautelares sin audiencia y oposición", "Requisito de procedibilidad (MASC)", "Competencia territorial y fueros imperativos", "Declinatoria", "Anotación preventiva de demanda", "Diligencias preliminares"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Costas en los recursos"
+    sinonimos: ["costas de la apelación", "costas de la casación", "costas del recurso desestimado", "costas del recurso estimado", "costas de la segunda instancia", "condena en costas en apelación", "apelación sobre costas", "costas del recurso de reposición", "pérdida del depósito para recurrir", "devolución del depósito", "costas de la impugnación del apelado", "serias dudas en apelación"]
+    normas_base: ["LEC", "LOPJ"]
+    remisiones:
+      - {norma: "LEC", articulo: "398", apartado: "1", tipo: "regula", nota: "En apelación, a las costas del recurso se aplica el art. 394; no hay regla especial para la estimación del recurso."}
+      - {norma: "LEC", articulo: "398", apartado: "2", tipo: "regula", nota: "Casación desestimada del todo: costas al recurrente, salvo circunstancias especiales."}
+      - {norma: "LEC", articulo: "398", apartado: "3", tipo: "regula", nota: "Casación estimada total o parcialmente: no se imponen costas a ninguna parte."}
+      - {norma: "LEC", articulo: "397", tipo: "regula", nota: "La apelación que impugna la condena o no condena en costas de la instancia se resuelve con el art. 394."}
+      - {norma: "LEC", articulo: "394", apartado: "1", tipo: "conexa", nota: "Vencimiento: costas a quien ve rechazadas todas sus pretensiones, salvo serias dudas de hecho o de derecho."}
+      - {norma: "LEC", articulo: "394", apartado: "2", tipo: "conexa", nota: "Estimación parcial: cada parte las suyas y las comunes por mitad, salvo temeridad."}
+      - {norma: "LEC", articulo: "394", apartado: "3", tipo: "conexa", nota: "Honorarios no sujetos a arancel: tope de un tercio de la cuantía, salvo temeridad."}
+      - {norma: "LEC", articulo: "736", apartado: "1", tipo: "conexa", nota: "Apelación del auto que deniega medidas cautelares: costas según el art. 394."}
+      - {norma: "LEC", articulo: "716", apartado: "párrafo 2.º", tipo: "conexa", nota: "El auto de liquidación de daños es apelable con pronunciamiento expreso de costas (art. 394)."}
+      - {norma: "LEC", articulo: "241", apartado: "1.3.º", tipo: "conexa", nota: "Los depósitos necesarios para recurrir forman parte de las costas."}
+      - {norma: "LEC", articulo: "450", apartado: "1", tipo: "conexa", nota: "Se puede desistir del recurso antes de resolverlo; de la casación, solo hasta el señalamiento."}
+      - {norma: "LOPJ", articulo: "da 15", apartado: "8", tipo: "regula", nota: "Estimado total o parcialmente el recurso, la misma resolución ordena devolver todo el depósito."}
+      - {norma: "LOPJ", articulo: "da 15", apartado: "9", tipo: "regula", nota: "Inadmitido el recurso o confirmada la resolución, el recurrente pierde el depósito."}
+    no_consta_en_norma:
+      - "Apelación estimada: si el apelado que se opuso carga con las costas (el 398.1 remite al 394 desde el RDL 6/2023), jurisprudencial."
+      - "Costas de los recursos de reposición, revisión y queja: la LEC no tiene regla propia; casuística."
+      - "Costas de la impugnación de la sentencia por el apelado (art. 461): jurisprudencial."
+    afines: ["Costas: vencimiento, temeridad y allanamiento", "Recurso de apelación (plazo, interposición, prueba en segunda instancia)", "Impugnación de la sentencia por el apelado", "Recurso de casación", "Depósito para recurrir", "Tasación de costas y su impugnación"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Recurso de queja"
+    sinonimos: ["queja", "queja por denegación de la casación", "auto que deniega la tramitación del recurso", "inadmisión de la casación por la Audiencia", "recurso contra la inadmisión", "queja ante el Tribunal Supremo", "queja en desahucio", "depósito de la queja", "recurso mal denegado", "plazo de la queja"]
+    normas_base: ["LEC", "LOPJ"]
+    remisiones:
+      - {norma: "LEC", articulo: "494", tipo: "regula", nota: "Cabe queja contra el auto que deniega la tramitación de un recurso de casación, ante quien debía resolverlo; preferente."}
+      - {norma: "LEC", articulo: "494", apartado: "párrafo 2.º", tipo: "regula", nota: "No procede en desahucios de finca urbana o rústica cuya sentencia no tenga fuerza de cosa juzgada."}
+      - {norma: "LEC", articulo: "495", apartado: "1", tipo: "regula", nota: "Se interpone ante el órgano del recurso no tramitado en diez días desde la notificación, con copia de lo recurrido."}
+      - {norma: "LEC", articulo: "495", apartado: "2", tipo: "regula", nota: "Se resuelve en cinco días: bien denegado, se comunica; mal denegado, se ordena seguir la tramitación."}
+      - {norma: "LEC", articulo: "495", apartado: "3", tipo: "regula", nota: "Contra el auto que resuelve la queja no cabe recurso."}
+      - {norma: "LEC", articulo: "479", apartado: "2, párrafo 2.º", tipo: "regula", nota: "El auto del tribunal a quo que inadmite la casación solo es recurrible en queja."}
+      - {norma: "LEC", articulo: "479", apartado: "2, párrafo 3.º", tipo: "conexa", nota: "Contra la providencia que tiene por interpuesta la casación no cabe recurso; el recurrido se opone al comparecer."}
+      - {norma: "LEC", articulo: "483", apartado: "1", tipo: "conexa", nota: "Ya ante el tribunal de casación, el LAJ inadmite por decreto si faltan tiempo, forma, denuncia previa, depósito o el 449."}
+      - {norma: "LEC", articulo: "458", apartado: "4, párrafo 2.º", tipo: "conexa", nota: "Apelación: la inadmisión la acuerda por auto el tribunal que debe resolverla; el 494 ya no la incluye."}
+      - {norma: "LEC", articulo: "454", tipo: "conexa", nota: "El auto que resuelve la reposición no es recurrible, salvo los casos en que proceda la queja."}
+      - {norma: "LEC", articulo: "448", apartado: "2", tipo: "conexa", nota: "Los plazos para recurrir corren desde el día siguiente a la notificación o a la de su aclaración."}
+      - {norma: "LOPJ", articulo: "da 15", apartado: "3.a)", tipo: "regula", nota: "La queja exige un depósito de 30 euros."}
+      - {norma: "LOPJ", articulo: "da 15", apartado: "6, párrafo 2.º", tipo: "conexa", nota: "El depósito de la queja se acredita al presentarla."}
+      - {norma: "LOPJ", articulo: "da 15", apartado: "4", tipo: "conexa", nota: "Excluye del depósito la reposición que la ley exija antes de la queja."}
+    no_consta_en_norma:
+      - "Recurso contra el auto que inadmite la apelación (458.4): la LEC no lo prevé; si cabe reposición o nulidad, casuística."
+      - "La LEC vigente no exige reposición previa a la queja, aunque el 454 LEC y la da 15.4 LOPJ aún la mencionan."
+      - "Queja frente a la inadmisión de otros recursos no previstos en el 494: criterio restrictivo, jurisprudencial."
+    afines: ["Recurso de casación", "Recurso de apelación (plazo, interposición, prueba en segunda instancia)", "Recurso de reposición", "Depósito para recurrir", "Recurso de revisión contra decretos del LAJ"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Recurso de casación"
+    sinonimos: ["casación civil", "interés casacional", "interés casacional notorio", "oposición a la doctrina del Tribunal Supremo", "jurisprudencia contradictoria de Audiencias", "casación por infracción procesal", "casación de derechos fundamentales", "Sección de Admisión", "inadmisión por providencia", "auto casacional", "casación foral ante el TSJ", "extensión del escrito de casación", "error patente en la prueba"]
+    normas_base: ["LEC", "LOPJ", "CE"]
+    remisiones:
+      - {norma: "LEC", articulo: "477", apartado: "1", tipo: "regula", nota: "Recurribles: sentencias que ponen fin a la segunda instancia de las Audiencias como órgano colegiado, y algunos autos de exequátur."}
+      - {norma: "LEC", articulo: "477", apartado: "2", tipo: "regula", nota: "Se funda en infracción de norma procesal o sustantiva con interés casacional; sin él, si se tutelan derechos fundamentales."}
+      - {norma: "LEC", articulo: "477", apartado: "3", tipo: "regula", nota: "Interés casacional: oposición a doctrina del TS, jurisprudencia contradictoria de Audiencias o norma sin doctrina."}
+      - {norma: "LEC", articulo: "477", apartado: "4", tipo: "regula", nota: "Interés casacional notorio: cuestión de interés general que afecta a gran número de situaciones."}
+      - {norma: "LEC", articulo: "477", apartado: "5", tipo: "regula", nota: "La valoración de la prueba y los hechos no son revisables, salvo error patente e inmediatamente verificable."}
+      - {norma: "LEC", articulo: "477", apartado: "6", tipo: "regula", nota: "Infracción procesal: hay que acreditar su denuncia previa en la instancia y, en su caso, la petición de subsanación."}
+      - {norma: "LEC", articulo: "466", tipo: "regula", nota: "Contra las sentencias de segunda instancia de las Audiencias cabe recurso de casación."}
+      - {norma: "LEC", articulo: "478", apartado: "1", tipo: "regula", nota: "Competencia de la Sala Primera del TS; del TSJ si se funda en Derecho civil propio y lo prevé el Estatuto."}
+      - {norma: "LEC", articulo: "478", apartado: "2", tipo: "conexa", nota: "Si la misma parte recurre ante el TS y el TSJ, se tiene por no presentado el primero."}
+      - {norma: "LEC", articulo: "479", apartado: "1", tipo: "regula", nota: "Se interpone ante el tribunal que dictó la resolución en veinte días desde el siguiente a la notificación."}
+      - {norma: "LEC", articulo: "479", apartado: "2", tipo: "regula", nota: "El LAJ lo tiene por interpuesto en tres días si es recurrible, en plazo y con denuncia previa de lo procesal."}
+      - {norma: "LEC", articulo: "481", apartado: "1", tipo: "regula", nota: "El escrito identifica el cauce, la modalidad y justificación del interés casacional, la norma infringida y lo que se pide."}
+      - {norma: "LEC", articulo: "481", apartado: "2", tipo: "regula", nota: "Se articula en motivos; no se acumulan infracciones distintas en un mismo motivo."}
+      - {norma: "LEC", articulo: "481", apartado: "3", tipo: "regula", nota: "Solo infracciones relevantes para el fallo, invocadas oportunamente o consideradas por la Audiencia."}
+      - {norma: "LEC", articulo: "481", apartado: "4", tipo: "regula", nota: "Cada motivo se encabeza con la cita precisa de la norma infringida y el resumen de la infracción."}
+      - {norma: "LEC", articulo: "481", apartado: "8", tipo: "conexa", nota: "La Sala de Gobierno del TS puede fijar extensión máxima y formato de los escritos de interposición y oposición."}
+      - {norma: "LEC", articulo: "482", apartado: "1", tipo: "conexa", nota: "Remisión de autos y emplazamiento por treinta días; si el recurrente no comparece, recurso desierto."}
+      - {norma: "LEC", articulo: "483", apartado: "1", tipo: "regula", nota: "El LAJ inadmite por decreto si faltan tiempo, forma, denuncia previa, depósitos o requisitos del 449."}
+      - {norma: "LEC", articulo: "483", apartado: "3", tipo: "regula", nota: "Se inadmite por providencia sucintamente motivada y se admite por auto que razona por qué debe pronunciarse la Sala."}
+      - {norma: "LEC", articulo: "483", apartado: "4", tipo: "regula", nota: "Contra la providencia o el auto sobre la admisión no cabe recurso."}
+      - {norma: "LEC", articulo: "485", tipo: "conexa", nota: "Admitido, traslado a los recurridos para oponerse en veinte días y decir si quieren vista."}
+      - {norma: "LEC", articulo: "486", apartado: "1", tipo: "conexa", nota: "Vista solo si la Sala la considera conveniente; si no, deliberación, votación y fallo."}
+      - {norma: "LEC", articulo: "487", apartado: "1", tipo: "regula", nota: "Se resuelve por sentencia o, si se opone a doctrina ya fijada, por auto que casa y devuelve al tribunal de origen."}
+      - {norma: "LEC", articulo: "487", apartado: "3", tipo: "regula", nota: "Con infracciones procesales y sustantivas, se resuelven primero las que llevarían a reponer actuaciones."}
+      - {norma: "LEC", articulo: "487", apartado: "4", tipo: "conexa", nota: "Contra la sentencia o el auto que resuelve la casación no cabe recurso."}
+      - {norma: "LEC", articulo: "449", apartado: "1", tipo: "conexa", nota: "Procesos con lanzamiento: el demandado debe acreditar el pago de rentas para recurrir en casación."}
+      - {norma: "LEC", articulo: "398", apartado: "2", tipo: "conexa", nota: "Casación desestimada del todo: costas al recurrente, salvo circunstancias especiales."}
+      - {norma: "LOPJ", articulo: "56", apartado: "1.º", tipo: "conexa", nota: "La Sala de lo Civil del TS conoce de los recursos de casación, revisión y otros extraordinarios civiles."}
+      - {norma: "LOPJ", articulo: "73", apartado: "1.a)", tipo: "conexa", nota: "La Sala de lo Civil y Penal del TSJ conoce de la casación fundada en Derecho civil propio si lo prevé el Estatuto."}
+      - {norma: "LOPJ", articulo: "da 15", apartado: "3.d)", tipo: "conexa", nota: "Depósito de 50 euros para recurrir en casación."}
+      - {norma: "CE", articulo: "123", apartado: "1", tipo: "conexa", nota: "El Tribunal Supremo es el órgano jurisdiccional superior en todos los órdenes, salvo garantías constitucionales."}
+    no_consta_en_norma:
+      - "Contenido de la «doctrina jurisprudencial» y del interés casacional notorio: los fija la Sala Primera en su práctica de admisión."
+      - "Interés casacional por falta de doctrina del TS sobre la norma: requisitos de antigüedad de la norma, jurisprudencial."
+      - "Error patente del 477.5: estándar fijado por la jurisprudencia de la Sala Primera."
+    fuera_de_la_herramienta:
+      - "Acuerdo de 8 de septiembre de 2023 de la Sala de Gobierno del TS (BOE-A-2023-19798): escritos de casación civil de 50.000 caracteres como máximo."
+      - "Real Decreto-ley 5/2023, disposición transitoria 10.ª.4: la casación nueva rige frente a resoluciones dictadas desde su entrada en vigor."
+      # PENDIENTE: no he comprobado en esta pasada qué dice el Estatuto valenciano sobre la casación ante el TSJ; la línea no afirma su contenido.
+      - "Estatuto de Autonomía de la Comunitat Valenciana: decide si el TSJ conoce de la casación en Derecho civil valenciano (art. 478.1 LEC)."
+    afines: ["Recurso extraordinario por infracción procesal", "Recurso de queja", "Costas en los recursos", "Depósito para recurrir", "Recurso de apelación (plazo, interposición, prueba en segunda instancia)", "Tutela judicial efectiva e indefensión"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Recurso extraordinario por infracción procesal"
+    sinonimos: ["REIP", "recurso por infracción procesal", "infracción procesal en casación", "motivo procesal de casación", "denuncia previa en la instancia", "vulneración del art. 24 CE en casación", "régimen transitorio de la casación civil", "recurso extraordinario suprimido", "infracción de normas reguladoras de la sentencia", "nulidad por infracción procesal en casación"]
+    normas_base: ["LEC", "LOPJ", "CE"]
+    remisiones:
+      - {norma: "LEC", articulo: "468", tipo: "conexa", nota: "Sin contenido desde el 20-03-2024 (RDL 6/2023), como los arts. 469 a 476: el recurso ya no existe."}
+      - {norma: "LEC", articulo: "469", tipo: "conexa", nota: "Sin contenido; recogía los motivos (jurisdicción, sentencia, garantías procesales, art. 24 CE)."}
+      - {norma: "LEC", articulo: "df 16", tipo: "conexa", nota: "Suprimida por el RDL 6/2023: era el régimen transitorio que atribuía este recurso a la Sala Primera."}
+      - {norma: "LEC", articulo: "466", tipo: "regula", nota: "Contra las sentencias de segunda instancia de las Audiencias cabe ya solo el recurso de casación."}
+      - {norma: "LEC", articulo: "477", apartado: "2", tipo: "regula", nota: "La casación se funda en infracción de norma procesal o sustantiva, siempre con interés casacional."}
+      - {norma: "LEC", articulo: "477", apartado: "5", tipo: "regula", nota: "Valoración de la prueba y hechos fuera de la casación, salvo error de hecho patente e inmediatamente verificable."}
+      - {norma: "LEC", articulo: "477", apartado: "6", tipo: "regula", nota: "Infracción procesal: hay que acreditar su denuncia previa en la instancia y, si era subsanable, la petición de subsanación."}
+      - {norma: "LEC", articulo: "479", apartado: "2", tipo: "regula", nota: "Si el motivo es procesal, el recurso solo se tiene por interpuesto si consta la denuncia previa de la infracción."}
+      - {norma: "LEC", articulo: "481", apartado: "1", tipo: "conexa", nota: "El escrito expresa la norma procesal o sustantiva infringida."}
+      - {norma: "LEC", articulo: "483", apartado: "1", tipo: "regula", nota: "El LAJ inadmite por decreto si falta la denuncia previa en la instancia de la infracción procesal."}
+      - {norma: "LEC", articulo: "487", apartado: "3", tipo: "regula", nota: "Se resuelven primero los motivos cuya estimación llevaría a reponer las actuaciones."}
+      - {norma: "LEC", articulo: "488", tipo: "conexa", nota: "Sigue en el texto pero presupone el recurso suprimido y remite al 467, que está sin contenido."}
+      - {norma: "LEC", articulo: "459", tipo: "conexa", nota: "En apelación se alega la infracción procesal de la primera instancia, acreditando su denuncia oportuna."}
+      - {norma: "LOPJ", articulo: "da 15", apartado: "3.c)", tipo: "conexa", nota: "Aún fija 50 euros de depósito para este recurso, aunque la LEC lo ha suprimido."}
+      - {norma: "CE", articulo: "24", apartado: "1", tipo: "conexa", nota: "Tutela judicial efectiva sin indefensión: fundamento de los motivos procesales."}
+    no_consta_en_norma:
+      - "Si una infracción procesal sin interés casacional puede acceder a la casación: el 477.2 exige interés en todo caso; jurisprudencial."
+      - "Recursos por infracción procesal aún pendientes contra resoluciones anteriores a la reforma: rige la ley anterior; casuística."
+    fuera_de_la_herramienta:
+      - "Real Decreto-ley 5/2023, disposición transitoria 10.ª.4: los recursos contra resoluciones anteriores a su vigor siguen la ley anterior."
+      - "Real Decreto-ley 6/2023, art. 103.92: deja sin contenido los arts. 468 a 476 LEC con efectos de 20 de marzo de 2024."
+    afines: ["Recurso de casación", "Nulidad de actuaciones", "Tutela judicial efectiva e indefensión", "Recurso de apelación (plazo, interposición, prueba en segunda instancia)", "Congruencia y motivación de la sentencia", "Recurso de queja"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Rescisión de la sentencia firme a instancia del rebelde"
+    sinonimos: ["rescisión de sentencia firme", "audiencia al rebelde", "rebelde involuntario", "demandado rebelde", "fuerza mayor ininterrumpida", "desconocimiento del pleito", "emplazamiento por edictos", "cédula no recibida", "plazo de cuatro meses", "plazo máximo de dieciséis meses", "nueva sentencia tras la rescisión"]
+    normas_base: ["LEC", "LOPJ"]
+    remisiones:
+      - {norma: "LEC", articulo: "501", tipo: "regula", nota: "El demandado que estuvo siempre en rebeldía puede pedir al tribunal que dictó la sentencia firme su rescisión."}
+      - {norma: "LEC", articulo: "501", apartado: "1.º", tipo: "regula", nota: "Fuerza mayor ininterrumpida que le impidió comparecer, aunque conociera el pleito."}
+      - {norma: "LEC", articulo: "501", apartado: "2.º", tipo: "regula", nota: "Desconocimiento del pleito: la cédula del art. 161 no llegó a su poder por causa no imputable."}
+      - {norma: "LEC", articulo: "501", apartado: "3.º", tipo: "regula", nota: "Desconocimiento del pleito: emplazado por edictos y ausente del lugar del proceso y de donde se publicaron."}
+      - {norma: "LEC", articulo: "502", apartado: "1.1.º", tipo: "regula", nota: "Veinte días desde la notificación personal de la sentencia firme."}
+      - {norma: "LEC", articulo: "502", apartado: "1.2.º", tipo: "regula", nota: "Cuatro meses desde la publicación del edicto, si no se notificó personalmente."}
+      - {norma: "LEC", articulo: "502", apartado: "2", tipo: "regula", nota: "Prórroga si persiste la fuerza mayor (134.2), con tope de dieciséis meses desde la notificación."}
+      - {norma: "LEC", articulo: "503", tipo: "regula", nota: "No cabe contra sentencias firmes que por ley carecen de efecto de cosa juzgada."}
+      - {norma: "LEC", articulo: "504", apartado: "1", tipo: "regula", nota: "La demanda no suspende la ejecución, salvo lo previsto en el art. 566."}
+      - {norma: "LEC", articulo: "504", apartado: "2", tipo: "regula", nota: "Se tramita por el juicio ordinario."}
+      - {norma: "LEC", articulo: "505", apartado: "1", tipo: "regula", nota: "Tras la prueba sobre las causas, sentencia sobre la rescisión, sin recurso."}
+      - {norma: "LEC", articulo: "505", apartado: "2", tipo: "regula", nota: "Estimada, a instancia de parte se suspende la ejecución de la sentencia rescindida."}
+      - {norma: "LEC", articulo: "506", apartado: "1", tipo: "regula", nota: "Desestimada, todas las costas al rebelde."}
+      - {norma: "LEC", articulo: "506", apartado: "2", tipo: "regula", nota: "Estimada, sin costas salvo temeridad."}
+      - {norma: "LEC", articulo: "507", apartado: "1", tipo: "regula", nota: "Estimada, diez días al rebelde para alegar como en la contestación; luego, el juicio que corresponda."}
+      - {norma: "LEC", articulo: "508", tipo: "regula", nota: "Si el rebelde no alega, nueva sentencia en los mismos términos que la rescindida, sin recurso."}
+      - {norma: "LEC", articulo: "566", apartado: "1", tipo: "conexa", nota: "Admitida la demanda, cabe suspender la ejecución con caución por lo litigado y los daños."}
+      - {norma: "LEC", articulo: "500", tipo: "conexa", nota: "Si no se notificó personalmente, los recursos ordinarios corren desde el edicto en el Tablón Edictal Judicial Único."}
+      - {norma: "LEC", articulo: "497", apartado: "2", tipo: "conexa", nota: "La sentencia se notifica al rebelde personalmente; en paradero desconocido, por extracto en el TEJU."}
+      - {norma: "LEC", articulo: "164", tipo: "conexa", nota: "La comunicación edictal se hace por el Tablón Edictal Judicial Único, tras las averiguaciones del art. 156."}
+      - {norma: "LEC", articulo: "524", apartado: "4", tipo: "conexa", nota: "Mientras corre el plazo de rescisión, solo cabe anotación preventiva de sentencias inscribibles."}
+      - {norma: "LEC", articulo: "134", apartado: "2", tipo: "conexa", nota: "La fuerza mayor interrumpe los plazos; la aprecia el LAJ por decreto, recurrible en revisión."}
+      - {norma: "LOPJ", articulo: "da 15", apartado: "3.b)", tipo: "conexa", nota: "La rescisión a instancia del rebelde exige un depósito de 50 euros."}
+    no_consta_en_norma:
+      - "El 501.3.º y el 502.1.2.º aún hablan de edictos en Boletines Oficiales, hoy sustituidos por el TEJU (164): ajuste interpretativo."
+      - "Rescisión o incidente de nulidad (228) ante un emplazamiento edictal sin agotar averiguaciones: jurisprudencial."
+      - "Cómputo de los dieciséis meses del 502.2 cuando nunca hubo notificación: casuística."
+    afines: ["Rebeldía del demandado", "Actos de comunicación: domicilio, emplazamiento y edictos", "Nulidad de actuaciones", "Revisión de sentencias firmes", "Suspensión de la ejecución", "Depósito para recurrir"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"

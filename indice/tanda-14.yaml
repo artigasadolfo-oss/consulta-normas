@@ -1,0 +1,380 @@
+# Índice de conceptos de «Consulta de normas» — tanda 14 (prioridad B: prueba, verbales especiales y zonas tensionadas)
+# Revisor: armero. Espejo: legalize-es@aca28304d, leído con `git show aca28304d:es/…` (no el árbol de trabajo, que hoy trae erratas).
+# Todo precepto citado se ha leído en el espejo en esta pasada. Vigencia: scripts/contraste_boe.py --solo "LEC,LOPJ,CE,CC,LAU,
+# LPH" --espejo-commit aca28304d (08-10-2026, 12:50). Distintos citados: solo LAU 10, 17 y 18 (voz 102, provisional; notas según la
+# API vigente y el RDL 29/2026). LEC 22 y 685, CC 396 y LPH 10 distintos pero no citados.
+# Voces 67, 68, 69, 70, 71, 72, 73, 88, 89, 90 y 102 de la lista maestra (11 voces, prioridad B). Ver tanda-14-notas.md.
+
+voces:
+  - voz: "Fuerza probatoria de documentos públicos y privados"
+    sinonimos: ["fuerza probatoria", "prueba plena", "documento público", "documento privado", "escritura pública", "copia simple", "cotejo", "cotejo de letras", "impugnación de documento", "fecha frente a terceros", "documento electrónico", "apostilla"]
+    normas_base: ["LEC", "CC"]
+    remisiones:
+      - {norma: "LEC", articulo: "317", tipo: "regula", nota: "Son públicos a efectos de prueba: judiciales, notariales, de corredor, registrales y los de funcionario con fe pública."}
+      - {norma: "LEC", articulo: "318", tipo: "regula", nota: "Hacen la prueba del 319 en original, copia o certificación fehaciente, o por copia simple cuya autenticidad no se impugne."}
+      - {norma: "LEC", articulo: "319", apartado: "1", tipo: "regula", nota: "Prueba plena del hecho, acto o estado de cosas documentado, de su fecha y de la identidad del fedatario y de los intervinientes."}
+      - {norma: "LEC", articulo: "319", apartado: "2", tipo: "conexa", nota: "Otros documentos administrativos públicos: lo que diga su ley; si nada dice, ciertos salvo que otras pruebas los desvirtúen."}
+      - {norma: "LEC", articulo: "319", apartado: "3", tipo: "conexa", nota: "En materia de usura el tribunal forma libremente su convicción, sin la vinculación de la prueba plena."}
+      - {norma: "LEC", articulo: "320", apartado: "1", tipo: "regula", nota: "Impugnada la autenticidad del público: cotejo con el original, con el Libro Registro o verificación de la firma electrónica."}
+      - {norma: "LEC", articulo: "320", apartado: "3", tipo: "regula", nota: "Si el cotejo confirma la copia, costas y gastos al impugnante; impugnación temeraria: multa de 120 a 600 euros."}
+      - {norma: "LEC", articulo: "322", apartado: "1", tipo: "conexa", nota: "Escrituras antiguas sin protocolo o públicos sin original con que cotejar: prueba plena salvo prueba en contrario."}
+      - {norma: "LEC", articulo: "323", apartado: "2", tipo: "conexa", nota: "Extranjero sin tratado: público si cumple los requisitos de su país y lleva legalización o apostilla."}
+      - {norma: "LEC", articulo: "267", tipo: "conexa", nota: "El público se aporta por copia simple; si se impugna, se lleva a los autos original, copia o certificación con efectos."}
+      - {norma: "LEC", articulo: "324", tipo: "regula", nota: "Son privados, a efectos de prueba, los documentos que no encajan en ninguno de los casos del art. 317."}
+      - {norma: "LEC", articulo: "326", apartado: "1", tipo: "regula", nota: "El privado hace prueba plena, como el público, si no impugna su autenticidad la parte a quien perjudica."}
+      - {norma: "LEC", articulo: "326", apartado: "2", tipo: "regula", nota: "Impugnado: cotejo pericial de letras u otra prueba; si no se acredita la autenticidad o no se propone prueba, sana crítica."}
+      - {norma: "LEC", articulo: "326", apartado: "3", tipo: "conexa", nota: "Documento electrónico impugnado (autenticidad, integridad, fecha y hora): vía del 326.2 y Reglamento (UE) 910/2014."}
+      - {norma: "LEC", articulo: "326", apartado: "4", tipo: "regula", nota: "Con servicio de confianza cualificado se presume correcto; comprueba el impugnante, que paga si falla y puede ser multado."}
+      - {norma: "LEC", articulo: "268", apartado: "2", tipo: "conexa", nota: "La copia simple del privado surte los efectos del original mientras ninguna parte cuestione su conformidad."}
+      - {norma: "LEC", articulo: "334", apartado: "1", tipo: "regula", nota: "Copia reprográfica impugnada: cotejo con el original; si no es posible, sana crítica con el resultado de las demás pruebas."}
+      - {norma: "LEC", articulo: "327", tipo: "conexa", nota: "Libros de comerciantes: leyes mercantiles; el tribunal puede reclamarlos, motivadamente, con los asientos concretos."}
+      - {norma: "CC", articulo: "1218", tipo: "regula", nota: "El público prueba, aun contra tercero, el hecho que motiva su otorgamiento y su fecha; entre partes, sus declaraciones."}
+      - {norma: "CC", articulo: "1217", tipo: "conexa", nota: "Los documentos en que interviene notario se rigen por la legislación notarial."}
+      - {norma: "CC", articulo: "1220", tipo: "conexa", nota: "Copias impugnadas de públicos con matriz: solo prueban si se cotejan; si discrepan, prevalece la matriz."}
+      - {norma: "CC", articulo: "1223", tipo: "conexa", nota: "Escritura defectuosa por incompetencia del notario o falta de forma: vale como privado si la firman los otorgantes."}
+      - {norma: "CC", articulo: "1225", tipo: "regula", nota: "El privado reconocido legalmente vale como escritura pública entre los firmantes y sus causahabientes."}
+      - {norma: "CC", articulo: "1227", tipo: "regula", nota: "Fecha del privado frente a terceros: desde su inscripción, la muerte de un firmante o su entrega a funcionario."}
+      - {norma: "CC", articulo: "1228", tipo: "conexa", nota: "Asientos y papeles privados prueban solo contra quien los escribió; quien se aprovecha acepta lo que le perjudica."}
+      - {norma: "CC", articulo: "1230", tipo: "conexa", nota: "Los privados hechos para alterar lo pactado en escritura pública no producen efecto contra tercero."}
+    no_consta_en_norma:
+      - "La prueba plena del público cubre que se hizo la declaración, no su veracidad intrínseca: doctrina jurisprudencial."
+      - "Si basta la impugnación genérica («se impugnan todos los documentos») para privar al privado de prueba plena: jurisprudencial."
+      - "Valor del documento privado emanado de la propia parte que lo aporta (facturas, albaranes): sana crítica; casuística."
+    fuera_de_la_herramienta:
+      - "Ley del Notariado y Reglamento Notarial: copias, matriz y fe pública notarial (a ella remite el art. 1217 CC)."
+      - "Reglamento (UE) 910/2014 (eIDAS): servicios de confianza cualificados, al que remiten los apartados 3 y 4 del art. 326 LEC."
+    afines: ["Documentos: aportación e impugnación", "Documentos y pruebas posteriores (preclusión)", "Medios de reproducción, correos y mensajería (WhatsApp) como prueba", "Exhibición de documentos entre partes y por terceros", "Admisión de hechos y silencio en la contestación", "Dictamen pericial de parte y judicial"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Exhibición de documentos entre partes y por terceros"
+    sinonimos: ["exhibición documental", "exhibición de documentos", "requerimiento de exhibición", "documento en poder de la contraria", "negativa a exhibir", "exhibición por tercero", "exhibición por la Administración", "certificación de organismo público", "copia simple del documento", "valor de la copia por negativa", "testimonio del documento exhibido", "exhibición de libros"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "328", apartado: "1", tipo: "regula", nota: "Cada parte puede pedir a las demás que exhiban documentos que no tiene y que se refieren al objeto o a la eficacia de la prueba."}
+      - {norma: "LEC", articulo: "328", apartado: "2", tipo: "regula", nota: "Con la solicitud, copia simple del documento o, si no la hay, indicación lo más exacta posible de su contenido."}
+      - {norma: "LEC", articulo: "328", apartado: "3", tipo: "conexa", nota: "Infracción de propiedad industrial o intelectual a escala comercial: exhibición de documentos bancarios, con principio de prueba."}
+      - {norma: "LEC", articulo: "329", apartado: "1", tipo: "regula", nota: "Negativa injustificada: el tribunal puede dar valor a la copia o a la versión del solicitante, junto a las demás pruebas."}
+      - {norma: "LEC", articulo: "329", apartado: "2", tipo: "regula", nota: "O, en su lugar, requerir por providencia que se aporten, según su naturaleza, las demás pruebas y lo pretendido."}
+      - {norma: "LEC", articulo: "330", apartado: "1", tipo: "regula", nota: "Al tercero no litigante solo se le exige exhibir si el tribunal ve el documento trascendente para sentenciar."}
+      - {norma: "LEC", articulo: "330", apartado: "1, párrafo 2.º", tipo: "regula", nota: "Comparecencia personal del tercero y resolución sin recurso; la parte puede reproducir la petición en segunda instancia."}
+      - {norma: "LEC", articulo: "330", apartado: "2", tipo: "regula", nota: "No son terceros los titulares de la relación controvertida o de las que son su causa, aunque no sean parte."}
+      - {norma: "LEC", articulo: "331", tipo: "conexa", nota: "Si el exhibiente no quiere desprenderse del documento, el LAJ extiende testimonio o se digitaliza bajo su fe."}
+      - {norma: "LEC", articulo: "332", apartado: "1", tipo: "regula", nota: "Las Administraciones no pueden negarse a certificar ni a exhibir, salvo documentación reservada o secreta, que razonan."}
+      - {norma: "LEC", articulo: "332", apartado: "2", tipo: "conexa", nota: "También las empresas de servicios públicos o encargadas de actividades públicas, salvo deber legal de secreto."}
+      - {norma: "LEC", articulo: "333", tipo: "conexa", nota: "Dibujos, fotos o planos de los que solo hay original: en la exhibición se obtiene copia con fe del LAJ."}
+      - {norma: "LEC", articulo: "327", tipo: "conexa", nota: "Libros de comerciantes: el tribunal puede reclamarlos, motivada y excepcionalmente, con los asientos concretos."}
+      - {norma: "LEC", articulo: "265", apartado: "2", tipo: "conexa", nota: "Si el documento está en archivo o registro del que pueden obtenerse copias, hay que aportarlo, no solo designarlo."}
+      - {norma: "LEC", articulo: "256", apartado: "1", tipo: "conexa", nota: "Antes del pleito, la exhibición se pide como diligencia preliminar (documentos, cosa, testamento, cuentas, póliza)."}
+      - {norma: "LEC", articulo: "261", apartado: "2.ª", tipo: "conexa", nota: "Diligencia preliminar desatendida: entrada y registro si hay indicios de dónde están los documentos."}
+    no_consta_en_norma:
+      - "Qué negativa es «injustificada» (329) y el peso de la copia del solicitante frente a otras pruebas: casuística jurisprudencial."
+      - "Momento para pedir la exhibición entre partes: el art. 328 no lo fija; se propone con la prueba (audiencia previa o verbal)."
+      - "Datos personales de terceros y secreto profesional o bancario frente a la exhibición: ponderación jurisprudencial."
+    afines: ["Diligencias preliminares", "Documentos: aportación e impugnación", "Fuerza probatoria de documentos públicos y privados", "Proposición de prueba", "Prueba anticipada y aseguramiento de la prueba", "Carga de la prueba"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Prueba anticipada y aseguramiento de la prueba"
+    sinonimos: ["prueba anticipada", "anticipación de la prueba", "aseguramiento de la prueba", "medidas de aseguramiento", "conservar la prueba", "testigo de edad avanzada", "peritaje antes de la demanda", "estado de la obra antes de reparar", "riesgo de destrucción de pruebas", "acta del estado de cosas", "caución sustitutoria", "prueba antes del pleito"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "293", apartado: "1", tipo: "regula", nota: "Antes del proceso o durante él cabe anticipar un acto de prueba si hay temor fundado de que no pueda hacerse en su momento."}
+      - {norma: "LEC", articulo: "293", apartado: "2", tipo: "regula", nota: "Antes del pleito, ante el tribunal competente para el asunto principal, que controla de oficio su competencia; sin declinatoria."}
+      - {norma: "LEC", articulo: "294", apartado: "1", tipo: "conexa", nota: "Se propone según las normas de cada medio de prueba, exponiendo las razones de la petición."}
+      - {norma: "LEC", articulo: "294", apartado: "2", tipo: "regula", nota: "Si es fundada, se acuerda por providencia y se practica cuando convenga, siempre antes del juicio o vista."}
+      - {norma: "LEC", articulo: "295", apartado: "1", tipo: "regula", nota: "Antes del proceso, el solicitante designa a los futuros demandados, citados con cinco días al menos para intervenir."}
+      - {norma: "LEC", articulo: "295", apartado: "3", tipo: "regula", nota: "Practicada antes del proceso, pierde su valor si no se demanda en dos meses, salvo fuerza mayor o causa análoga."}
+      - {norma: "LEC", articulo: "295", apartado: "4", tipo: "regula", nota: "Si después es posible y una parte lo pide, se repite; ambas se valoran según la sana crítica."}
+      - {norma: "LEC", articulo: "296", apartado: "1", tipo: "conexa", nota: "Documentos y materiales quedan bajo custodia del tribunal que la acordó hasta que se unen a la demanda."}
+      - {norma: "LEC", articulo: "297", apartado: "1", tipo: "regula", nota: "Aseguramiento: medidas para que conductas o hechos naturales no destruyan o alteren cosas o estados de cosas."}
+      - {norma: "LEC", articulo: "297", apartado: "2", tipo: "regula", nota: "Medidas para conservar cosas o situaciones o dejar constancia fehaciente de ellas; también mandatos de hacer o no hacer."}
+      - {norma: "LEC", articulo: "297", apartado: "3", tipo: "conexa", nota: "Jurisdicción y competencia para el aseguramiento: las de la prueba anticipada."}
+      - {norma: "LEC", articulo: "297", apartado: "4", tipo: "regula", nota: "Acordadas antes del proceso, decaen sin demanda en veinte días: se alzan, con costas y daños a cargo del solicitante."}
+      - {norma: "LEC", articulo: "298", apartado: "1", tipo: "regula", nota: "Requisitos: prueba posible, pertinente y útil; riesgo de que luego sea imposible; medida conducente, breve y proporcionada."}
+      - {norma: "LEC", articulo: "298", apartado: "2", tipo: "conexa", nota: "El tribunal pondera el ofrecimiento del solicitante de garantizar los daños y perjuicios de la medida."}
+      - {norma: "LEC", articulo: "298", apartado: "3", tipo: "conexa", nota: "Cabe sustituir la medida por caución bastante del afectado que responda de la práctica de la prueba."}
+      - {norma: "LEC", articulo: "298", apartado: "4", tipo: "regula", nota: "Se adopta oyendo a quien la soporta y, si hay proceso, al demandado; solo este discute la utilidad de la prueba."}
+      - {norma: "LEC", articulo: "298", apartado: "5", tipo: "regula", nota: "Sin audiencia si el retraso causa daño irreparable o hay riesgo de destrucción: providencia motivada e irrecurrible."}
+      - {norma: "LEC", articulo: "298", apartado: "6", tipo: "regula", nota: "Adoptada sin audiencia, oposición en veinte días desde la notificación de la providencia."}
+      - {norma: "LEC", articulo: "298", apartado: "8", tipo: "conexa", nota: "Oposición: vista en cinco días y auto irrecurrible en tres."}
+      - {norma: "LEC", articulo: "64", apartado: "2", tipo: "conexa", nota: "La declinatoria no impide practicar el aseguramiento de prueba, salvo caución del demandado."}
+    no_consta_en_norma:
+      - "Recurso contra la providencia del 294.2: aunque el epígrafe dice «recursos», el texto no regula ninguno; rige el régimen general."
+      - "Si la prueba anticipada solicitada antes del pleito interrumpe la prescripción de la acción: criterio jurisprudencial."
+      - "Acta notarial de presencia o pericial extrajudicial como alternativa: no es prueba anticipada; vale lo que su clase de prueba."
+    afines: ["Diligencias preliminares", "Medidas cautelares antes de la demanda", "Caución", "Dictamen pericial de parte y judicial", "Reconocimiento judicial", "Exhibición de documentos entre partes y por terceros"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Prueba ilícita"
+    sinonimos: ["prueba ilícita", "prueba ilegal", "prueba prohibida", "vulneración de derechos fundamentales", "grabación oculta", "detective privado", "videovigilancia", "correo intervenido", "secreto de las comunicaciones", "intimidad", "nulidad de la prueba", "fruto del árbol envenenado"]
+    normas_base: ["LEC", "LOPJ", "CE"]
+    remisiones:
+      - {norma: "LOPJ", articulo: "11", apartado: "1", tipo: "regula", nota: "No surten efecto las pruebas obtenidas, directa o indirectamente, violentando derechos o libertades fundamentales."}
+      - {norma: "LEC", articulo: "287", apartado: "1", tipo: "regula", nota: "Quien vea vulnerados derechos fundamentales al obtener una prueba admitida debe alegarlo de inmediato."}
+      - {norma: "LEC", articulo: "287", apartado: "1, párrafo 2.º", tipo: "regula", nota: "También de oficio; se resuelve en el acto del juicio, oídas las partes y con prueba sobre la ilicitud."}
+      - {norma: "LEC", articulo: "287", apartado: "2", tipo: "regula", nota: "Contra lo resuelto, solo reposición en el acto; la impugnación se reproduce en la apelación contra la sentencia."}
+      - {norma: "LEC", articulo: "287", apartado: "3", tipo: "regula", nota: "En el verbal, la cuestión se resuelve en el auto del art. 438.10, antes de la vista."}
+      - {norma: "LEC", articulo: "438", apartado: "9", tipo: "conexa", nota: "Verbal: impugnación por ilicitud (art. 287) en los tres días siguientes al traslado de la proposición de prueba."}
+      - {norma: "LEC", articulo: "438", apartado: "10", tipo: "conexa", nota: "Verbal: el auto resuelve impugnaciones, excepciones, prueba y si hay vista; cabe reposición con efecto suspensivo."}
+      - {norma: "LEC", articulo: "433", apartado: "1", tipo: "regula", nota: "Ordinario: si se suscita la ilicitud de una prueba, se resuelve antes de practicar las demás."}
+      - {norma: "LEC", articulo: "283", apartado: "3", tipo: "regula", nota: "Nunca se admite como prueba una actividad prohibida por la ley."}
+      - {norma: "CE", articulo: "24", apartado: "2", tipo: "regula", nota: "Derecho a un proceso con todas las garantías y a utilizar los medios de prueba pertinentes."}
+      - {norma: "CE", articulo: "18", apartado: "1", tipo: "conexa", nota: "Derecho al honor, a la intimidad personal y familiar y a la propia imagen."}
+      - {norma: "CE", articulo: "18", apartado: "2", tipo: "conexa", nota: "Domicilio inviolable: sin consentimiento o resolución judicial no hay entrada ni registro, salvo flagrante delito."}
+      - {norma: "CE", articulo: "18", apartado: "3", tipo: "conexa", nota: "Secreto de las comunicaciones, salvo resolución judicial."}
+      - {norma: "CE", articulo: "18", apartado: "4", tipo: "conexa", nota: "La ley limita el uso de la informática para proteger el honor y la intimidad."}
+      - {norma: "LEC", articulo: "265", apartado: "1.5.º", tipo: "conexa", nota: "Informes de detectives habilitados: se aportan con la demanda o contestación; si no se reconocen los hechos, testifical."}
+      - {norma: "LEC", articulo: "382", apartado: "1", tipo: "conexa", nota: "Grabaciones de palabra, imagen o sonido: se proponen como reproducción, con transcripción de lo relevante."}
+      - {norma: "LEC", articulo: "459", tipo: "conexa", nota: "En apelación cabe alegar infracción de garantías procesales, acreditando que se denunció en su momento."}
+    no_consta_en_norma:
+      - "Grabar una conversación propia no vulnera el secreto de las comunicaciones (doctrina del TC); puede afectar a la intimidad."
+      - "Alcance de la ineficacia de la prueba derivada (conexión de antijuridicidad): doctrina del TC y del TS."
+      - "Prueba obtenida por un particular sin finalidad probatoria y su admisibilidad: jurisprudencial."
+      - "Seguimientos de detective y cámaras de videovigilancia: sus límites los fija la doctrina sobre intimidad y la normativa de datos."
+    fuera_de_la_herramienta:
+      - "LO 3/2018, de Protección de Datos Personales y garantía de los derechos digitales: videovigilancia y tratamiento de datos."
+      - "Ley 5/2014, de Seguridad Privada: actividades y límites de los detectives privados."
+    afines: ["Derecho a la prueba y a un proceso con todas las garantías", "Pertinencia y utilidad de la prueba; protesta", "Medios de reproducción, correos y mensajería (WhatsApp) como prueba", "Tutela judicial efectiva e indefensión", "Juicio ordinario: práctica de la prueba y conclusiones", "Inviolabilidad del domicilio en la ejecución y el lanzamiento"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Presunciones y hechos exentos de prueba"
+    sinonimos: ["presunción", "presunción legal", "presunción judicial", "prueba de indicios", "prueba indiciaria", "presunción iuris tantum", "presunción iuris et de iure", "hecho notorio", "hechos conformes", "hechos exentos de prueba", "prueba en contrario", "enlace preciso y directo"]
+    normas_base: ["LEC", "CC"]
+    remisiones:
+      - {norma: "LEC", articulo: "281", apartado: "3", tipo: "regula", nota: "Exentos de prueba los hechos en que hay plena conformidad de las partes, salvo materia indisponible."}
+      - {norma: "LEC", articulo: "281", apartado: "4", tipo: "regula", nota: "No hay que probar los hechos de notoriedad absoluta y general."}
+      - {norma: "LEC", articulo: "281", apartado: "2", tipo: "conexa", nota: "Costumbre y derecho extranjero se prueban; la costumbre no, si hay conformidad y no afecta al orden público."}
+      - {norma: "LEC", articulo: "385", apartado: "1", tipo: "regula", nota: "La presunción legal dispensa de probar el hecho presunto, pero el indicio ha de quedar admitido o probado."}
+      - {norma: "LEC", articulo: "385", apartado: "2", tipo: "regula", nota: "La prueba en contrario puede negar el hecho presunto o el enlace entre el indicio y lo presumido."}
+      - {norma: "LEC", articulo: "385", apartado: "3", tipo: "regula", nota: "Toda presunción legal admite prueba en contrario, salvo que la ley la prohíba expresamente."}
+      - {norma: "LEC", articulo: "386", apartado: "1", tipo: "regula", nota: "Presunción judicial: de un hecho admitido o probado a otro, si hay enlace preciso y directo según el criterio humano."}
+      - {norma: "LEC", articulo: "386", apartado: "1, párrafo 2.º", tipo: "regula", nota: "La sentencia que la aplica debe incluir el razonamiento por el que establece la presunción."}
+      - {norma: "LEC", articulo: "386", apartado: "2", tipo: "regula", nota: "El perjudicado por una presunción judicial siempre puede practicar prueba en contrario."}
+      - {norma: "LEC", articulo: "433", apartado: "2, párrafo 2.º", tipo: "conexa", nota: "En conclusiones, quien sostenga que un hecho es cierto por presunción debe decirlo y fundarlo."}
+      - {norma: "LEC", articulo: "217", apartado: "6", tipo: "conexa", nota: "Las reglas generales de carga ceden ante una disposición legal expresa que la distribuya de otro modo."}
+      - {norma: "LEC", articulo: "428", apartado: "3", tipo: "conexa", nota: "Conformidad en todos los hechos y discusión solo jurídica: sentencia en veinte días sin juicio."}
+      - {norma: "CC", articulo: "434", tipo: "regula", nota: "La buena fe se presume siempre; quien afirma la mala fe del poseedor debe probarla."}
+      - {norma: "CC", articulo: "448", tipo: "conexa", nota: "El poseedor en concepto de dueño se presume con justo título y no puede obligársele a exhibirlo."}
+      - {norma: "CC", articulo: "1183", tipo: "regula", nota: "Cosa perdida en poder del deudor: se presume su culpa y no caso fortuito, salvo prueba en contrario."}
+      - {norma: "CC", articulo: "1189", tipo: "conexa", nota: "Documento privado de la deuda en poder del deudor: se presume que el acreedor se lo entregó voluntariamente."}
+      - {norma: "CC", articulo: "1110", tipo: "conexa", nota: "Recibo del capital sin reserva extingue los intereses; el del último plazo, los plazos anteriores."}
+      - {norma: "CC", articulo: "1277", tipo: "regula", nota: "La causa no expresada en el contrato se presume existente y lícita mientras el deudor no pruebe lo contrario."}
+      - {norma: "CC", articulo: "1361", tipo: "conexa", nota: "Se presumen gananciales los bienes del matrimonio mientras no se pruebe que son privativos."}
+      - {norma: "CC", articulo: "1562", tipo: "regula", nota: "Sin constancia del estado de la finca, se presume que el arrendatario la recibió en buen estado."}
+      - {norma: "CC", articulo: "1563", tipo: "conexa", nota: "El arrendatario responde del deterioro o pérdida de la cosa, salvo que pruebe que fue sin culpa suya."}
+      - {norma: "CC", articulo: "33", tipo: "conexa", nota: "Conmoriencia: sin prueba de quién murió antes, se presumen muertos a la vez y no hay transmisión entre ellos."}
+      - {norma: "CC", articulo: "116", tipo: "conexa", nota: "Se presumen hijos del marido los nacidos tras la boda y antes de 300 días desde la disolución o separación."}
+    no_consta_en_norma:
+      - "Los arts. 1249 a 1253 CC (presunciones) están derogados: no deben citarse; su régimen está en los arts. 385 y 386 LEC."
+      - "Frontera entre hecho notorio y conocimiento privado del juez: jurisprudencial."
+      - "Control en apelación y casación de la presunción judicial (razonabilidad del enlace): jurisprudencial."
+    afines: ["Carga de la prueba", "Admisión de hechos y silencio en la contestación", "Interrogatorio de parte y ficta confessio", "Hechos controvertidos y fijación del objeto", "Juicio ordinario: práctica de la prueba y conclusiones", "Bienes privativos y gananciales"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Diligencias finales"
+    sinonimos: ["diligencias finales", "diligencias para mejor proveer", "prueba después del juicio", "prueba no practicada", "testigo que no compareció", "pericial no emitida a tiempo", "hecho de nueva noticia", "repetición de la prueba", "escrito de valoración de diligencias finales", "suspensión del plazo para sentencia", "insuficiencia probatoria", "429.1"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "435", apartado: "1", tipo: "regula", nota: "Solo a instancia de parte y por auto se acuerdan como diligencias finales actuaciones de prueba, con las reglas del apartado."}
+      - {norma: "LEC", articulo: "435", apartado: "1.1.ª", tipo: "regula", nota: "No caben para pruebas que pudieron proponerse en tiempo, incluidas las que cabía proponer tras la advertencia del 429.1."}
+      - {norma: "LEC", articulo: "435", apartado: "1.2.ª", tipo: "regula", nota: "Sí para pruebas admitidas que no se practicaron por causas ajenas a quien las propuso."}
+      - {norma: "LEC", articulo: "435", apartado: "1.3.ª", tipo: "regula", nota: "Sí para pruebas pertinentes y útiles sobre hechos nuevos o de nueva noticia del art. 286."}
+      - {norma: "LEC", articulo: "435", apartado: "2", tipo: "regula", nota: "Excepcionalmente, incluso de oficio: repetir prueba sobre hechos relevantes que falló por circunstancias ya desaparecidas."}
+      - {norma: "LEC", articulo: "435", apartado: "2, párrafo 2.º", tipo: "conexa", nota: "El auto que acuerda esa repetición expresa con detalle las circunstancias y los motivos."}
+      - {norma: "LEC", articulo: "436", apartado: "1", tipo: "regula", nota: "Se practican en veinte días; después, cinco días para un escrito que resuma y valore su resultado."}
+      - {norma: "LEC", articulo: "436", apartado: "2", tipo: "regula", nota: "El plazo para dictar sentencia vuelve a contarse al terminar el plazo de ese escrito."}
+      - {norma: "LEC", articulo: "434", apartado: "2", tipo: "regula", nota: "Acordadas diligencias finales dentro del plazo de sentencia, ese plazo queda en suspenso."}
+      - {norma: "LEC", articulo: "447", apartado: "1", tipo: "regula", nota: "En el verbal también caben diligencias finales: se les aplica el art. 435."}
+      - {norma: "LEC", articulo: "429", apartado: "1, párrafo 3.º", tipo: "conexa", nota: "Si el tribunal ve insuficiente la prueba, lo advierte en la audiencia previa y puede indicar qué pruebas convendrían."}
+      - {norma: "LEC", articulo: "286", apartado: "3", tipo: "conexa", nota: "Hecho nuevo no reconocido: prueba si el estado del pleito lo permite; si no, en el ordinario, diligencias finales."}
+      - {norma: "LEC", articulo: "271", apartado: "1", tipo: "conexa", nota: "Tras el juicio no se admiten documentos ni dictámenes, salvo por la regla 3.ª del 435 (hechos nuevos)."}
+      - {norma: "LEC", articulo: "271", apartado: "2", tipo: "conexa", nota: "Excepción: resoluciones judiciales o administrativas posteriores a las conclusiones y decisivas, aun en plazo de sentencia."}
+      - {norma: "LEC", articulo: "460", apartado: "2.2.ª", tipo: "conexa", nota: "En apelación, prueba admitida y no practicada por causa no imputable, ni siquiera como diligencia final."}
+    no_consta_en_norma:
+      - "Recurso contra el auto que acuerda o deniega diligencias finales: el art. 435 no prevé uno propio; rige el general (451.2)."
+      - "Alcance de la iniciativa probatoria de oficio fuera del 435.2, cuando el texto dice «solo a instancia de parte»: jurisprudencial."
+    afines: ["Juicio ordinario: práctica de la prueba y conclusiones", "Documentos y pruebas posteriores (preclusión)", "Preclusión de alegaciones y hechos nuevos", "Proposición de prueba", "Recurso de apelación (plazo, interposición, prueba en segunda instancia)", "Pertinencia y utilidad de la prueba; protesta"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Juicio ordinario: práctica de la prueba y conclusiones"
+    sinonimos: ["acto del juicio", "juicio ordinario", "práctica de la prueba", "conclusiones", "informe final", "orden de las pruebas", "unidad de acto", "visto para sentencia", "incomparecencia al juicio", "sentencia sin juicio", "señalamiento del juicio", "interrupción del juicio"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "431", tipo: "regula", nota: "El juicio sirve para interrogatorios, testigos, peritos, reconocimiento y reproducciones, y después para las conclusiones."}
+      - {norma: "LEC", articulo: "429", apartado: "2", tipo: "regula", nota: "Admitida la prueba, el juicio se señala para dentro del mes siguiente a la audiencia previa."}
+      - {norma: "LEC", articulo: "429", apartado: "4", tipo: "conexa", nota: "Las pruebas que no hayan de practicarse en el juicio se llevan a cabo antes de él."}
+      - {norma: "LEC", articulo: "429", apartado: "5", tipo: "regula", nota: "Cada parte dice qué testigos y peritos presenta y cuáles cita el tribunal; la citación se acuerda en la audiencia."}
+      - {norma: "LEC", articulo: "429", apartado: "6", tipo: "conexa", nota: "No se cita al juicio a las partes que comparecieron, por sí o por procurador, a la audiencia previa."}
+      - {norma: "LEC", articulo: "429", apartado: "8", tipo: "regula", nota: "Solo documental no impugnada o pericias sin ratificación pedida: sentencia sin juicio en veinte días."}
+      - {norma: "LEC", articulo: "432", apartado: "1", tipo: "regula", nota: "Se comparece con procurador y abogado; por videoconferencia si se acuerda y se cumple el art. 137 bis."}
+      - {norma: "LEC", articulo: "432", apartado: "2", tipo: "regula", nota: "Si no comparece ninguna parte, visto para sentencia; si comparece alguna, el juicio se celebra."}
+      - {norma: "LEC", articulo: "433", apartado: "1", tipo: "regula", nota: "Se practican las pruebas admitidas; antes, la ilicitud de alguna prueba y los hechos nuevos del art. 286."}
+      - {norma: "LEC", articulo: "433", apartado: "2", tipo: "regula", nota: "Conclusiones orales sobre los hechos: admitidos, probados o inciertos, resumiendo cada prueba, presunciones y carga."}
+      - {norma: "LEC", articulo: "433", apartado: "3", tipo: "regula", nota: "Después, informe sobre los argumentos jurídicos, sin alterar las pretensiones."}
+      - {norma: "LEC", articulo: "433", apartado: "4", tipo: "conexa", nota: "Si no se considera ilustrado, el tribunal puede dar la palabra más veces sobre las cuestiones que indique."}
+      - {norma: "LEC", articulo: "434", apartado: "1", tipo: "regula", nota: "Sentencia en los veinte días siguientes a la terminación del juicio."}
+      - {norma: "LEC", articulo: "289", apartado: "1", tipo: "regula", nota: "Las pruebas se practican contradictoriamente en vista pública."}
+      - {norma: "LEC", articulo: "289", apartado: "2", tipo: "conexa", nota: "Presencia judicial inexcusable en interrogatorios, testigos, reconocimiento, reproducciones y explicaciones periciales."}
+      - {norma: "LEC", articulo: "290", tipo: "regula", nota: "Prueba en unidad de acto; excepcionalmente fuera del juicio, señalada con cinco días y siempre antes de él."}
+      - {norma: "LEC", articulo: "300", apartado: "1", tipo: "regula", nota: "Orden: partes, testigos, peritos, reconocimiento y reproducciones, salvo que el tribunal acuerde otro."}
+      - {norma: "LEC", articulo: "300", apartado: "2", tipo: "conexa", nota: "Si alguna prueba no puede practicarse, el acto sigue con las restantes."}
+      - {norma: "LEC", articulo: "285", apartado: "2", tipo: "conexa", nota: "Contra la admisión o inadmisión de una prueba, reposición en el acto y, si se desestima, protesta para la segunda instancia."}
+      - {norma: "LEC", articulo: "347", apartado: "1", tipo: "conexa", nota: "Los peritos intervienen en el juicio como pidan las partes y admita el tribunal: explicación, preguntas, crítica, tachas."}
+      - {norma: "LEC", articulo: "186", apartado: "2.º", tipo: "conexa", nota: "El juez agiliza el debate y puede retirar la palabra a quien divaga tras una segunda advertencia."}
+      - {norma: "LEC", articulo: "193", apartado: "1", tipo: "conexa", nota: "Iniciada la vista, solo se interrumpe por incidente, prueba fuera de sede, testigo o perito citado ausente, o causa de suspensión."}
+      - {norma: "LEC", articulo: "194", apartado: "1", tipo: "conexa", nota: "Redacta y firma la sentencia el juez que asistió al juicio, aunque después haya dejado el tribunal."}
+    no_consta_en_norma:
+      - "Duración de las conclusiones y si cabe entregar notas escritas: la LEC no lo fija; queda a la dirección del juez (186)."
+      - "Plazo de veinte días del 434.1 como plazo impropio, cuyo incumplimiento no anula la sentencia: criterio jurisprudencial."
+      - "Testigo que la parte se comprometió a presentar y no viene: el 193.1.3.º solo prevé el citado judicialmente; casuística."
+    afines: ["Audiencia previa: contenido y orden", "Diligencias finales", "Interrogatorio de parte y ficta confessio", "Testigos y tachas", "Dictamen pericial de parte y judicial", "Suspensión de la vista y nuevo señalamiento", "Grabación y documentación de las vistas"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Obra nueva y obra ruinosa"
+    sinonimos: ["obra nueva", "suspensión de obra nueva", "interdicto de obra nueva", "paralizar una obra", "obra ruinosa", "interdicto de obra ruinosa", "demolición de edificio en ruina", "árbol que amenaza caer", "construcción peligrosa", "ruina inminente", "caución para continuar la obra", "tutela sumaria frente a obras"]
+    normas_base: ["LEC", "CC"]
+    remisiones:
+      - {norma: "LEC", articulo: "250", apartado: "1.5.º", tipo: "regula", nota: "Verbal, sea cual sea la cuantía, para pedir con carácter sumario la suspensión de una obra nueva."}
+      - {norma: "LEC", articulo: "250", apartado: "1.6.º", tipo: "regula", nota: "Verbal sumario para demoler obra, edificio, árbol o columna en ruina que amenace dañar a quien demanda."}
+      - {norma: "LEC", articulo: "441", apartado: "2", tipo: "regula", nota: "Obra nueva: antes de contestar, orden inmediata de suspensión; cabe caución para seguir y obras para conservar lo hecho."}
+      - {norma: "LEC", articulo: "441", apartado: "2, párrafo 2.º", tipo: "conexa", nota: "La caución para continuar la obra se presta en la forma del art. 64.2, párrafo segundo."}
+      - {norma: "LEC", articulo: "64", apartado: "2, párrafo 2.º", tipo: "conexa", nota: "Caución en dinero, aval solidario a primer requerimiento u otro medio de disponibilidad inmediata."}
+      - {norma: "LEC", articulo: "447", apartado: "2", tipo: "regula", nota: "Sin cosa juzgada las sentencias sobre posesión y las demás pretensiones que la LEC califica de sumarias, como estas."}
+      - {norma: "LEC", articulo: "438", apartado: "2", tipo: "conexa", nota: "En los verbales que acaban sin efectos de cosa juzgada no se admite reconvención."}
+      - {norma: "LEC", articulo: "439", apartado: "1", tipo: "conexa", nota: "Retener o recobrar la posesión: demanda inadmisible pasado un año desde la perturbación o el despojo."}
+      - {norma: "CC", articulo: "389", tipo: "regula", nota: "Construcción que amenaza ruina: el propietario debe demolerla o hacer las obras que eviten su caída; si no, la Autoridad."}
+      - {norma: "CC", articulo: "390", tipo: "regula", nota: "Árbol corpulento que amenaza caer sobre finca ajena o vía: su dueño debe arrancarlo; si no, la Autoridad a su costa."}
+      - {norma: "CC", articulo: "391", tipo: "conexa", nota: "Si el edificio o el árbol llegan a caer, se aplican los arts. 1907 y 1908."}
+      - {norma: "CC", articulo: "1907", tipo: "conexa", nota: "El propietario responde de los daños por ruina del edificio debida a falta de las reparaciones necesarias."}
+      - {norma: "CC", articulo: "1908", apartado: "3.º", tipo: "conexa", nota: "Responde el propietario de la caída de árboles en sitios de tránsito, salvo fuerza mayor."}
+      - {norma: "CC", articulo: "1909", tipo: "conexa", nota: "Si el daño procede de defecto de construcción, el tercero repite contra el arquitecto o el constructor."}
+      - {norma: "CC", articulo: "590", tipo: "conexa", nota: "Construcciones peligrosas junto a pared ajena: distancias y obras de resguardo de reglamentos y usos o, a falta, pericial."}
+    no_consta_en_norma:
+      - "Si el plazo de un año del 439.1 alcanza a la suspensión de obra nueva: el texto habla de retener o recobrar la posesión; jurisprudencial."
+      - "Que la obra esté en curso y no terminada para poder suspenderla: requisito elaborado por la jurisprudencia."
+      - "Si la suspensión puede pedirse frente a obras de una comunidad de propietarios autorizadas por la junta: casuística."
+    fuera_de_la_herramienta:
+      - "Normativa urbanística valenciana y ordenanzas municipales: declaración de ruina y órdenes de ejecución por el Ayuntamiento."
+    afines: ["Tutela sumaria de la posesión", "Inmisiones y relaciones de vecindad", "Daños causados por animales, edificios y cosas", "Caución", "Reconocimiento judicial", "Ámbito del juicio verbal por materia y cuantía"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Tutela de derechos reales inscritos"
+    sinonimos: ["tutela de derechos reales inscritos", "artículo 41 de la Ley Hipotecaria", "acción real registral", "titular registral", "ocupante sin título inscrito", "certificación literal del Registro", "caución del demandado", "efectividad del derecho inscrito", "perturbación del titular inscrito", "250.1.7.º", "juicio verbal registral", "recuperar finca inscrita"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "250", apartado: "1.7.º", tipo: "regula", nota: "Verbal para el titular de un derecho real inscrito frente a quien se opone o lo perturba sin título inscrito."}
+      - {norma: "LEC", articulo: "439", apartado: "2.1.º", tipo: "regula", nota: "Inadmisión si la demanda no expresa las medidas necesarias para asegurar la eficacia de la sentencia."}
+      - {norma: "LEC", articulo: "439", apartado: "2.2.º", tipo: "regula", nota: "Debe fijar la caución que prestará el demandado para contestar (frutos, daños y costas), salvo renuncia del actor."}
+      - {norma: "LEC", articulo: "439", apartado: "2.3.º", tipo: "regula", nota: "Hay que acompañar certificación literal del Registro que acredite la vigencia, sin contradicción, del asiento."}
+      - {norma: "LEC", articulo: "441", apartado: "3", tipo: "regula", nota: "Admitida la demanda, el tribunal adopta las medidas pedidas necesarias para asegurar el cumplimiento de la sentencia."}
+      - {norma: "LEC", articulo: "438", apartado: "4", tipo: "regula", nota: "Apercibimiento: si no contesta, o contesta sin prestar la caución que fije el tribunal, sentencia con lo pedido."}
+      - {norma: "LEC", articulo: "444", apartado: "2", tipo: "regula", nota: "Oposición tasada: certificación falsa u omisa, relación directa con el titular o prescripción, inscripción propia, finca distinta."}
+      - {norma: "LEC", articulo: "447", apartado: "3", tipo: "regula", nota: "La sentencia carece de efectos de cosa juzgada: cabe después el declarativo ordinario."}
+      - {norma: "LEC", articulo: "438", apartado: "2", tipo: "conexa", nota: "En los verbales que acaban sin efectos de cosa juzgada no se admite reconvención."}
+      - {norma: "LEC", articulo: "64", apartado: "2, párrafo 2.º", tipo: "conexa", nota: "Caución en dinero, aval solidario a primer requerimiento u otro medio de disponibilidad inmediata."}
+      - {norma: "LEC", articulo: "439", apartado: "6", tipo: "conexa", nota: "Si se recupera la posesión de una finca: decir si es vivienda habitual del ocupante y si el actor es gran tenedor."}
+      - {norma: "LEC", articulo: "441", apartado: "5", tipo: "conexa", nota: "Vivienda habitual del demandado: información sobre servicios sociales y aviso de oficio para valorar su vulnerabilidad."}
+      - {norma: "LEC", articulo: "52", apartado: "1.1.º", tipo: "conexa", nota: "Acciones reales sobre inmuebles: competente el tribunal del lugar donde esté la finca."}
+    no_consta_en_norma:
+      - "Ocupante con título no inscrito pero oponible (arrendatario, precarista consentido): encaje en la causa 2.ª del 444.2; casuística."
+      - "Cuantía de la caución que fija el tribunal «dentro de la solicitada por el actor» (438.4): sin criterio legal; casuística."
+      - "Elección entre esta vía, el precario y la recuperación de vivienda del 250.1.4.º frente a ocupantes: criterio del actor y jurisprudencia."
+    fuera_de_la_herramienta:
+      - "Ley Hipotecaria, art. 41: acción real del titular inscrito, que la LEC tramita por el juicio verbal del art. 250.1.7.º."
+    afines: ["Desahucio por precario", "Tutela sumaria de la posesión", "Ocupación ilegal de vivienda (desahucio exprés)", "Acción reivindicatoria y declarativa de dominio", "Caución", "Vulnerabilidad y gran tenedor en la demanda"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Condiciones generales en el verbal y procedimiento testigo"
+    sinonimos: ["condiciones generales de la contratación", "acción individual de condiciones generales", "cláusula suelo", "gastos hipotecarios", "procedimiento testigo", "pleito testigo", "suspensión por procedimiento testigo", "extensión de efectos de la sentencia", "litigación en masa", "nulidad de cláusula", "no incorporación de cláusula", "reclamación previa al banco"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "250", apartado: "1.14.º", tipo: "regula", nota: "Verbal, sea cual sea la cuantía, para las acciones individuales relativas a condiciones generales de la contratación."}
+      - {norma: "LEC", articulo: "249", apartado: "1.5.º", tipo: "regula", nota: "Las acciones colectivas sobre condiciones generales van al juicio ordinario."}
+      - {norma: "LEC", articulo: "52", apartado: "1.14.º", tipo: "regula", nota: "No incorporación o nulidad: tribunal del domicilio del demandante; declarativa, cesación o retractación: del demandado."}
+      - {norma: "LEC", articulo: "438 bis", apartado: "1", tipo: "regula", nota: "Antes de admitir, el LAJ avisa si hay pleitos previos iguales, sin control de transparencia ni vicios y con identidad sustancial."}
+      - {norma: "LEC", articulo: "438 bis", apartado: "1, párrafo 2.º", tipo: "regula", nota: "Actor y demandado pueden pedir en demanda o contestación que se siga este cauce, si concurren sus presupuestos."}
+      - {norma: "LEC", articulo: "438 bis", apartado: "2", tipo: "regula", nota: "Auto de suspensión hasta la sentencia firme del procedimiento testigo, que es preferente; apelable con trámite urgente."}
+      - {norma: "LEC", articulo: "438 bis", apartado: "3", tipo: "regula", nota: "Firme la sentencia testigo, providencia sobre qué queda por resolver; cinco días para desistir, seguir o pedir extensión."}
+      - {norma: "LEC", articulo: "438 bis", apartado: "4", tipo: "regula", nota: "Si el actor desiste, decreto sin condena en costas."}
+      - {norma: "LEC", articulo: "438 bis", apartado: "5", tipo: "regula", nota: "Si sigue pese a la providencia y solo obtiene lo ya resuelto en el testigo, cabe que cada parte pague sus costas."}
+      - {norma: "LEC", articulo: "438 bis", apartado: "6", tipo: "conexa", nota: "La extensión de efectos de la sentencia testigo se tramita por el art. 519."}
+      - {norma: "LEC", articulo: "519", apartado: "2", tipo: "regula", nota: "Extensión de sentencia firme tras apelación: misma situación y demandado, sin transparencia ni vicios, cláusula igual, competencia."}
+      - {norma: "LEC", articulo: "519", apartado: "2, párrafo 2.º", tipo: "regula", nota: "Se pide por escrito en el plazo máximo de un año desde la firmeza de la sentencia que se quiere extender."}
+      - {norma: "LEC", articulo: "519", apartado: "3", tipo: "conexa", nota: "Diez días al condenado para allanarse u oponerse; si no responde, se entiende que está conforme."}
+      - {norma: "LEC", articulo: "519", apartado: "4", tipo: "conexa", nota: "Auto en cinco días; costas del art. 394 si se estima con oposición; sin costas si se rechaza."}
+      - {norma: "LEC", articulo: "519", apartado: "5", tipo: "conexa", nota: "El auto que extiende o deniega la extensión es apelable, con tramitación preferente."}
+      - {norma: "LEC", articulo: "455", apartado: "4", tipo: "conexa", nota: "Son preferentes las apelaciones contra las resoluciones del procedimiento testigo y los autos de suspensión."}
+      - {norma: "LEC", articulo: "455", apartado: "1", tipo: "conexa", nota: "El límite de 3.000 euros para apelar rige solo en los verbales por cuantía, no en los verbales por materia como este."}
+      - {norma: "LEC", articulo: "439", apartado: "5", tipo: "conexa", nota: "Cláusulas abusivas en préstamos hipotecarios: inadmisión sin la reclamación previa extrajudicial al prestamista."}
+    no_consta_en_norma:
+      - "Qué es «identidad sustancial» de las condiciones generales y cuándo sobra el control de transparencia: jurisprudencial."
+      - "Si el actor que no pidió el cauce testigo puede oponerse eficazmente a la suspensión: el texto solo da apelación contra el auto."
+      - "Relación entre la reclamación previa del 439.5 y el requisito de procedibilidad de la LO 1/2025: criterio jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Ley 7/1998, de Condiciones Generales de la Contratación: acciones individuales y colectivas a que remiten los arts. 250.1.14.º y 249.1.5.º LEC."
+    afines: ["Control de oficio de cláusulas abusivas en el proceso", "Cláusulas abusivas: concepto, nulidad e integración", "Ámbito del juicio verbal por materia y cuantía", "Competencia territorial y fueros imperativos", "Acciones colectivas y de cesación de consumo", "Suspensión del proceso", "Requisito de procedibilidad (MASC)"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Zonas de mercado residencial tensionado y límites de renta"
+    sinonimos: ["zona tensionada", "zona de mercado residencial tensionado", "tope del alquiler", "límite de renta", "congelación del alquiler", "renta del contrato anterior", "índice de precios de referencia", "gran tenedor", "prórroga extraordinaria en zona tensionada", "incremento del 10 %", "IRAV", "alquiler por habitaciones en zona tensionada"]
+    normas_base: ["LAU"]
+    remisiones:
+      - {norma: "LAU", articulo: "17", apartado: "6", tipo: "regula", nota: "Zona tensionada: la renta inicial no supera la última de vivienda de los cinco años previos, actualizada (texto de 08-10-2026)."}
+      - {norma: "LAU", articulo: "17", apartado: "6, párrafo 2.º", tipo: "regula", nota: "Prohibido repercutir cuotas, gastos, servicios o tributos que no recogía el contrato anterior (desde 08-10-2026)."}
+      - {norma: "LAU", articulo: "17", apartado: "6, párrafo 3.º", tipo: "regula", nota: "Hasta un 10 % más si hubo rehabilitación, mejora energética o de accesibilidad en dos años, o contrato de diez o más años."}
+      - {norma: "LAU", articulo: "17", apartado: "7", tipo: "regula", nota: "Gran tenedor en zona tensionada: tope del índice de precios de referencia, sin repercutir conceptos que lo superen."}
+      - {norma: "LAU", articulo: "17", apartado: "7, párrafo 2.º", tipo: "regula", nota: "Mismo tope para vivienda sin contrato en cinco años, si lo prevé la resolución ministerial que declara la zona."}
+      - {norma: "LAU", articulo: "17", apartado: "8", tipo: "conexa", nota: "Temporales sucesivos en la misma vivienda: incremento anual no superior al IRAV (desde 08-10-2026)."}
+      - {norma: "LAU", articulo: "17", apartado: "9, párrafo 2.º", tipo: "regula", nota: "Por habitaciones en zona tensionada: renta unitaria o suma de parciales dentro de los límites 6, 7 y 8 (desde 08-10-2026)."}
+      - {norma: "LAU", articulo: "dt 7", tipo: "regula", nota: "El 17.7 rige para contratos desde la Ley 12/2023 y una vez aprobado el sistema de índices de precios de referencia."}
+      - {norma: "LAU", articulo: "10", apartado: "3", tipo: "regula", nota: "Zona tensionada: prórroga extraordinaria anual hasta tres años a petición del inquilino; salvo pacto, nuevo contrato o necesidad."}
+      - {norma: "LAU", articulo: "18", apartado: "1", tipo: "conexa", nota: "Actualización anual solo si se pacta; con tope del IRAV (texto de 08-10-2026)."}
+      - {norma: "LAU", articulo: "da 11", tipo: "conexa", nota: "El INE define el IRAV como límite de referencia de la actualización del art. 18."}
+      - {norma: "LAU", articulo: "6", tipo: "conexa", nota: "Son nulas las estipulaciones que modifiquen en perjuicio del arrendatario las normas del título II, salvo autorización legal."}
+    no_consta_en_norma:
+      - "Consecuencia de pactar una renta por encima del tope (nulidad del exceso, devolución, plazo): la LAU no la regula."
+      - "Si la renta de un arrendamiento temporal previo cuenta como «última renta» del 17.6, que ahora dice «de vivienda»: sin criterio judicial."
+      - "Vivienda antes destinada a uso turístico: no hubo «contrato de arrendamiento de vivienda» previo; solo cabe el 17.7, párrafo 2.º."
+    fuera_de_la_herramienta:
+      - "Ley 12/2023, por el derecho a la vivienda, arts. 3.k) y 18: concepto de gran tenedor y procedimiento de declaración de la zona."
+      - "Resoluciones trimestrales del Ministerio de Vivienda (BOE) con las zonas declaradas y su vigencia; sistema estatal de índices de referencia."
+      - "RDL 29/2026, disp. final 6.ª (sin convalidar): hasta 31-12-2027 sin nuevo pacto, subida máxima del 2 %; ninguna si la renta supera el índice."
+      - "RDL 29/2026, disp. final 5.ª (sin convalidar): prórroga extraordinaria de hasta dos años, incompatible con la del 10.3 LAU, que prevalece."
+      - "RDL 28/2026 (vigor 15-11-2026, sin convalidar): la prórroga del 10.3 pasa al 10.6; el nuevo 10.2.e) aplica el 17.6 fuera de zona tensionada."
+      - "Ley 12/2023, disp. trans. 4.ª.1 (redacción del RDL 29/2026): los contratos anteriores a esa ley pueden acogerse a las prórrogas del art. 10 LAU."
+    # PENDIENTE: verificar en el BOE (resoluciones trimestrales del Ministerio) que ningún municipio de la Comunitat Valenciana está declarado zona tensionada; solo consta en fuentes secundarias, a 29-07-2026.
+    # VIGENCIA: LAU 10, 17 y 18 distintos en el espejo (17.8 y 17.9 no existen en él); notas según la API vigente y el texto del RDL 29/2026. LAU 6, da 11 y dt 7 idénticos.
+    afines: ["Renta: pago, recibo y actualización", "Duración y prórroga del arrendamiento de vivienda", "Arrendamiento de temporada y para uso distinto de vivienda", "Gastos generales, servicios e IBI", "Vivienda de uso turístico: exclusión de la LAU", "Vulnerabilidad y gran tenedor en la demanda"]
+    estado: "provisional"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"

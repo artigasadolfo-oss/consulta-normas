@@ -75,12 +75,12 @@ voces:
       - {norma: "TRLGDCU", articulo: "120", apartado: "1", tipo: "regula", nota: "Responde de lo que se manifieste en tres años desde la entrega del bien; segunda mano, pacto de al menos un año."}
       - {norma: "TRLGDCU", articulo: "121", apartado: "1", tipo: "regula", nota: "Se presume que la falta manifestada en los dos años siguientes a la entrega ya existía."}
       - {norma: "TRLGDCU", articulo: "124", tipo: "regula", nota: "La acción prescribe a los cinco años desde que se manifiesta la falta de conformidad."}
+      - {norma: "TRLGDCU", articulo: "59 bis", apartado: "2", tipo: "regula", nota: "Para la garantía de conformidad, «bienes» son solo las cosas muebles corporales: no alcanza a los inmuebles."}
       - {norma: "TRLGDCU", articulo: "6", tipo: "conexa", nota: "Producto es todo bien mueble según el art. 335 CC."}
       - {norma: "LOE", articulo: "17", apartado: "9", tipo: "conexa", nota: "La responsabilidad de los agentes de la edificación no excluye la del vendedor por los arts. 1484 y siguientes CC."}
     no_consta_en_norma:
       - "El plazo de seis meses del 1490 es de caducidad, no de prescripción, y no se interrumpe: jurisprudencial."
       - "Aliud pro alio (cosa inhábil para su fin): incumplimiento del 1124 con plazo del 1964, no saneamiento: jurisprudencial."
-      - "Que la garantía de conformidad del TRLGDCU no alcance a la compraventa de inmuebles: el texto no lo dice expresamente."
     fuera_de_la_herramienta:
       - "Código de Comercio, arts. 336 y 342: venta mercantil; cuatro días si llegó embalada (cantidad o calidad) y treinta días para vicios internos."
     afines: ["Saneamiento por evicción", "Compraventa: entrega, precio y riesgos", "Incumplimiento y facultad resolutoria (art. 1124)", "Responsabilidad de los agentes: plazos de 10, 3 y 1 año", "Caducidad de la acción (como excepción)"]

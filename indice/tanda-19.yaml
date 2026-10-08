@@ -1,0 +1,426 @@
+# Índice de conceptos de «Consulta de normas» — tanda 19 (prioridad B: voces 216 a 227, bloque 12 de obligaciones y contratos)
+# Revisor: armero. Espejo: legalize-es@aca28304d, leído con `git show aca28304d:es/…` (no el árbol de trabajo, que hoy trae erratas).
+# Todo precepto citado se ha leído en el espejo en esta pasada. Vigencia: contraste con la API de boe.es (08-10-2026).
+# Ver tanda-19-notas.md.
+
+voces:
+  - voz: "Pago: prueba, imputación y pago por tercero"
+    sinonimos: ["prueba del pago", "carga de la prueba del pago", "recibo", "recibo sin reserva de intereses", "imputación de pagos", "pago parcial", "pago por tercero", "reembolso del tercero que paga", "pago al acreedor aparente", "lugar del pago", "pago con pagaré o letra", "dación en pago", "cesión de bienes en pago"]
+    normas_base: ["CC", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "1157", tipo: "regula", nota: "Solo hay pago cuando se entrega por completo la cosa o se hace por completo la prestación debida."}
+      - {norma: "CC", articulo: "1156", tipo: "conexa", nota: "El pago o cumplimiento es la primera de las causas de extinción de las obligaciones."}
+      - {norma: "LEC", articulo: "217", apartado: "3", tipo: "regula", nota: "Al demandado le incumbe probar los hechos que extinguen la eficacia de los del actor, como el pago."}
+      - {norma: "LEC", articulo: "217", apartado: "7", tipo: "conexa", nota: "El tribunal tiene en cuenta la disponibilidad y facilidad probatoria de cada parte."}
+      - {norma: "CC", articulo: "1110", tipo: "regula", nota: "El recibo del capital sin reserva extingue los intereses; el del último plazo sin reserva, los plazos anteriores."}
+      - {norma: "CC", articulo: "1229", tipo: "conexa", nota: "La nota del acreedor al margen o al dorso del título o del recibo hace prueba a favor del deudor."}
+      - {norma: "CC", articulo: "1188", tipo: "conexa", nota: "La entrega voluntaria al deudor del documento privado del crédito implica renuncia a la acción."}
+      - {norma: "CC", articulo: "1189", tipo: "conexa", nota: "Si el documento privado de la deuda está en poder del deudor, se presume entregado voluntariamente."}
+      - {norma: "CC", articulo: "1158", tipo: "regula", nota: "Puede pagar cualquier persona, tenga o no interés, lo conozca y apruebe el deudor o lo ignore."}
+      - {norma: "CC", articulo: "1158", apartado: "párrafo 2.º", tipo: "regula", nota: "Quien paga por cuenta de otro le reclama lo pagado, salvo que pagara contra su expresa voluntad."}
+      - {norma: "CC", articulo: "1158", apartado: "párrafo 3.º", tipo: "regula", nota: "Si pagó contra su voluntad, solo repite aquello en que el pago le fue útil al deudor."}
+      - {norma: "CC", articulo: "1159", tipo: "regula", nota: "Quien paga en nombre del deudor ignorándolo este no puede obligar al acreedor a subrogarle."}
+      - {norma: "CC", articulo: "1210", tipo: "conexa", nota: "Se presume subrogación si paga un acreedor preferente, un tercero con aprobación del deudor o un interesado."}
+      - {norma: "CC", articulo: "1162", tipo: "regula", nota: "Se paga al acreedor o a otra persona autorizada para recibir en su nombre."}
+      - {norma: "CC", articulo: "1163", apartado: "párrafo 2.º", tipo: "regula", nota: "El pago hecho a un tercero vale en cuanto se convirtió en utilidad del acreedor."}
+      - {norma: "CC", articulo: "1164", tipo: "regula", nota: "El pago de buena fe al que está en posesión del crédito libera al deudor."}
+      - {norma: "CC", articulo: "1165", tipo: "conexa", nota: "No vale el pago al acreedor hecho después de ordenada judicialmente la retención de la deuda."}
+      - {norma: "CC", articulo: "1166", tipo: "regula", nota: "No se puede obligar al acreedor a recibir cosa distinta de la debida, aunque valga igual o más."}
+      - {norma: "CC", articulo: "1169", tipo: "regula", nota: "Salvo pacto, no cabe imponer el pago parcial; sí el de la parte líquida sin esperar a la ilíquida."}
+      - {norma: "CC", articulo: "1170", apartado: "párrafo 2.º", tipo: "regula", nota: "Pagarés y letras solo pagan cuando se cobran o se perjudican por culpa del acreedor; entretanto, acción en suspenso."}
+      - {norma: "CC", articulo: "1171", tipo: "conexa", nota: "Lugar del pago: el pactado; si no, donde estaba la cosa determinada; en otro caso, domicilio del deudor."}
+      - {norma: "CC", articulo: "1168", tipo: "conexa", nota: "Los gastos extrajudiciales del pago son del deudor; los judiciales, según la LEC."}
+      - {norma: "CC", articulo: "1172", tipo: "regula", nota: "Con varias deudas de la misma especie, el deudor declara al pagar a cuál se aplica."}
+      - {norma: "CC", articulo: "1172", apartado: "párrafo 2.º", tipo: "regula", nota: "Si acepta un recibo con la imputación hecha por el acreedor, no puede impugnarla salvo causa de invalidez."}
+      - {norma: "CC", articulo: "1173", tipo: "regula", nota: "Si la deuda produce interés, no se imputa a capital mientras no estén cubiertos los intereses."}
+      - {norma: "CC", articulo: "1174", tipo: "regula", nota: "Sin imputación, se aplica a la deuda vencida más onerosa; si son de igual gravamen, a prorrata."}
+      - {norma: "CC", articulo: "1175", tipo: "conexa", nota: "La cesión de bienes a los acreedores solo libera, salvo pacto, por el importe líquido de lo cedido."}
+      - {norma: "CC", articulo: "1900", tipo: "conexa", nota: "En el cobro de lo indebido, la prueba del pago incumbe a quien pretende haberlo hecho."}
+    no_consta_en_norma:
+      - "Dación en pago (el acreedor acepta cosa distinta): no regulada como figura general en el CC; jurisprudencial."
+      - "Valor de la transferencia o del extracto bancario sin concepto como prueba del pago: casuística."
+      - "Imputación pactada en contratos de préstamo con consumidores (orden intereses-capital): jurisprudencial."
+    afines: ["Ofrecimiento de pago y consignación", "Carga de la prueba", "Compensación y nulidad alegadas por el demandado", "Mora del deudor e intereses moratorios", "Cesión de créditos y retracto de crédito litigioso", "Enriquecimiento injusto y cobro de lo indebido", "Oposición a la ejecución por motivos de fondo"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Fuerza mayor y caso fortuito"
+    sinonimos: ["caso fortuito", "fuerza mayor", "suceso imprevisible o inevitable", "exoneración del deudor", "imposibilidad sobrevenida de la prestación", "pérdida de la cosa debida", "riesgo de la cosa", "caso fortuito del deudor moroso", "pacto de asunción del caso fortuito", "fuerza mayor extraña a la conducción", "pandemia y cumplimiento", "presunción de culpa por pérdida de la cosa"]
+    normas_base: ["CC", "LOE"]
+    remisiones:
+      - {norma: "CC", articulo: "1105", tipo: "regula", nota: "Nadie responde de sucesos imprevisibles o, previstos, inevitables, salvo que la ley o la obligación lo digan."}
+      - {norma: "CC", articulo: "1096", apartado: "párrafo 3.º", tipo: "regula", nota: "El deudor moroso, o que se obligó a entregar lo mismo a varios, carga con el caso fortuito hasta la entrega."}
+      - {norma: "CC", articulo: "1182", tipo: "regula", nota: "La pérdida de la cosa determinada sin culpa y antes de la mora extingue la obligación."}
+      - {norma: "CC", articulo: "1183", tipo: "regula", nota: "La pérdida en poder del deudor se presume culpable y no fortuita, salvo prueba en contrario."}
+      - {norma: "CC", articulo: "1184", tipo: "regula", nota: "En las obligaciones de hacer, libera la imposibilidad legal o física sobrevenida de la prestación."}
+      - {norma: "CC", articulo: "1185", tipo: "conexa", nota: "Deuda procedente de delito: la pérdida no libera, salvo que el acreedor rehusara sin razón la cosa ofrecida."}
+      - {norma: "CC", articulo: "1186", tipo: "conexa", nota: "Extinguida la obligación por pérdida, pasan al acreedor las acciones del deudor contra terceros."}
+      - {norma: "CC", articulo: "1104", tipo: "conexa", nota: "Culpa es omitir la diligencia que exige la obligación según personas, tiempo y lugar; si no, la del buen padre de familia."}
+      - {norma: "CC", articulo: "1122", apartado: "1.ª", tipo: "conexa", nota: "Pendiente la condición suspensiva, la pérdida de la cosa sin culpa del deudor extingue la obligación."}
+      - {norma: "CC", articulo: "1575", apartado: "párrafo 2.º", tipo: "conexa", nota: "Ejemplos legales de caso fortuito extraordinario: incendio, guerra, peste, inundación insólita, terremoto."}
+      - {norma: "CC", articulo: "1589", tipo: "conexa", nota: "El contratista que pone el material soporta la destrucción de la obra antes de entregarla, salvo mora en recibirla."}
+      - {norma: "CC", articulo: "1602", tipo: "conexa", nota: "Los porteadores responden de pérdidas y averías salvo que prueben caso fortuito o fuerza mayor."}
+      - {norma: "CC", articulo: "1784", tipo: "conexa", nota: "El posadero responde de los efectos del viajero, salvo robo a mano armada u otra fuerza mayor."}
+      - {norma: "CC", articulo: "1891", tipo: "conexa", nota: "El gestor de negocios responde del caso fortuito en operaciones arriesgadas o si antepuso su interés."}
+      - {norma: "CC", articulo: "1896", apartado: "párrafo 2.º", tipo: "conexa", nota: "Quien cobró lo indebido de mala fe responde de menoscabos por cualquier causa, salvo fortuito que igual habría sufrido la cosa."}
+      - {norma: "CC", articulo: "1905", tipo: "conexa", nota: "El poseedor del animal solo se exonera por fuerza mayor o culpa de quien sufrió el daño."}
+      - {norma: "CC", articulo: "1908", apartado: "3.º", tipo: "conexa", nota: "El propietario responde de la caída de árboles en sitios de tránsito, salvo fuerza mayor."}
+      - {norma: "LOE", articulo: "17", apartado: "8", tipo: "conexa", nota: "Los agentes de la edificación no responden si prueban caso fortuito, fuerza mayor, acto de tercero o del perjudicado."}
+    no_consta_en_norma:
+      - "Distinción entre caso fortuito y fuerza mayor (suceso interno o ajeno a la actividad): doctrinal y jurisprudencial."
+      - "Cláusula rebus sic stantibus y alteración extraordinaria de las circunstancias: no consta en norma; jurisprudencial."
+      - "Pandemias, restricciones administrativas o huelgas como fuerza mayor: casuística."
+      - "Validez de las cláusulas que trasladan el caso fortuito al deudor (1105 «así lo declare la obligación»): casuística."
+    fuera_de_la_herramienta:
+      - "RDLeg 8/2004 (responsabilidad civil y seguro de vehículos), art. 1.1: en daños personales, exonera la fuerza mayor extraña a la conducción."
+    afines: ["Daños y perjuicios por incumplimiento contractual", "Incumplimiento y facultad resolutoria (art. 1124)", "Mora del deudor e intereses moratorios", "Responsabilidad extracontractual", "Daños causados por animales, edificios y cosas", "Responsabilidad de los agentes: plazos de 10, 3 y 1 año"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Cesión de créditos y retracto de crédito litigioso"
+    sinonimos: ["cesión de crédito", "venta de crédito", "cesionario", "notificación de la cesión al deudor", "pago al cedente", "compra de deuda por fondos", "crédito litigioso", "retracto de crédito litigioso", "extinción del crédito litigioso por el deudor", "plazo de nueve días", "responsabilidad del cedente", "sucesión procesal del cesionario", "compensación frente al cesionario"]
+    normas_base: ["CC", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "1112", tipo: "regula", nota: "Los derechos nacidos de una obligación son transmisibles con sujeción a las leyes, salvo pacto en contrario."}
+      - {norma: "CC", articulo: "1526", tipo: "regula", nota: "Frente a terceros, la cesión surte efecto desde su fecha cierta (1218 y 1227); si es de inmueble, desde la inscripción."}
+      - {norma: "CC", articulo: "1527", tipo: "regula", nota: "El deudor que paga al cedente antes de conocer la cesión queda liberado."}
+      - {norma: "CC", articulo: "1528", tipo: "regula", nota: "La cesión comprende los derechos accesorios: fianza, hipoteca, prenda o privilegio."}
+      - {norma: "CC", articulo: "1529", tipo: "regula", nota: "El cedente de buena fe responde de la existencia y legitimidad del crédito; de la solvencia, si se pactó o era anterior y pública."}
+      - {norma: "CC", articulo: "1529", apartado: "párrafo 3.º", tipo: "conexa", nota: "El cedente de mala fe responde siempre de los gastos y de los daños y perjuicios."}
+      - {norma: "CC", articulo: "1530", tipo: "conexa", nota: "Garantía de solvencia sin plazo pactado: un año desde la cesión o desde el vencimiento del crédito."}
+      - {norma: "CC", articulo: "1535", tipo: "regula", nota: "Vendido un crédito litigioso, el deudor lo extingue reembolsando el precio pagado, las costas y sus intereses."}
+      - {norma: "CC", articulo: "1535", apartado: "párrafo 2.º", tipo: "regula", nota: "El crédito es litigioso desde que se contesta a la demanda relativa a él."}
+      - {norma: "CC", articulo: "1535", apartado: "párrafo 3.º", tipo: "regula", nota: "El deudor ejercita el derecho en nueve días desde que el cesionario le reclama el pago."}
+      - {norma: "CC", articulo: "1536", tipo: "regula", nota: "No cabe si se cede a un coheredero o condueño, a un acreedor en pago o al poseedor de la finca afectada."}
+      - {norma: "CC", articulo: "1198", tipo: "regula", nota: "Compensación frente al cesionario según el deudor consintiera la cesión, la conociera o la ignorara."}
+      - {norma: "CC", articulo: "1280", apartado: "6.º", tipo: "conexa", nota: "Constará en documento público la cesión de derechos procedentes de un acto en escritura pública."}
+      - {norma: "CC", articulo: "1218", tipo: "conexa", nota: "El documento público prueba frente a terceros el hecho que motiva su otorgamiento y su fecha."}
+      - {norma: "CC", articulo: "1227", tipo: "conexa", nota: "Fecha del documento privado frente a terceros: registro, muerte de un firmante o entrega a funcionario."}
+      - {norma: "CC", articulo: "1209", tipo: "conexa", nota: "La subrogación en el crédito no se presume fuera de los casos legales; debe establecerse con claridad."}
+      - {norma: "CC", articulo: "1212", tipo: "conexa", nota: "La subrogación transfiere el crédito con sus derechos anexos frente al deudor, fiadores e hipotecas."}
+      - {norma: "LEC", articulo: "17", apartado: "1", tipo: "regula", nota: "El adquirente del objeto litigioso pide ocupar la posición del transmitente; diez días a la otra parte."}
+      - {norma: "LEC", articulo: "17", apartado: "2", tipo: "regula", nota: "Se deniega si la otra parte tiene defensas solo frente al transmitente, reconvención o merma de su defensa."}
+      - {norma: "LEC", articulo: "540", tipo: "conexa", nota: "La ejecución se despacha o continúa a favor del sucesor del ejecutante que acredite la sucesión."}
+    no_consta_en_norma:
+      - "Si el 1535 alcanza a las cesiones en bloque de carteras de créditos y cómo se fija su precio: jurisprudencial (TS y TJUE)."
+      - "Si la notificación de la cesión al deudor condiciona la legitimación del cesionario: jurisprudencial."
+      - "Cuándo es litigioso el crédito en procesos sin contestación (monitorio, ejecución): jurisprudencial."
+    afines: ["Sucesión procesal (muerte de la parte y transmisión del objeto litigioso)", "Falta de legitimación", "Compensación y nulidad alegadas por el demandado", "Pago: prueba, imputación y pago por tercero", "Ejecución hipotecaria: especialidades", "Títulos ejecutivos"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Acción subrogatoria y rescisión por fraude de acreedores"
+    sinonimos: ["acción subrogatoria", "acción oblicua", "acción pauliana", "acción revocatoria", "rescisión por fraude de acreedores", "consilium fraudis", "eventus damni", "enajenación gratuita en fraude", "venta tras embargo o condena", "subsidiariedad de la rescisión", "plazo de cuatro años de la rescisión", "adquirente de mala fe", "repudiación de herencia en perjuicio de acreedores", "responsabilidad patrimonial universal"]
+    normas_base: ["CC"]
+    remisiones:
+      - {norma: "CC", articulo: "1911", tipo: "conexa", nota: "El deudor responde del cumplimiento con todos sus bienes, presentes y futuros."}
+      - {norma: "CC", articulo: "1111", tipo: "regula", nota: "Tras perseguir los bienes del deudor, el acreedor ejerce sus acciones no personalísimas e impugna sus actos en fraude."}
+      - {norma: "CC", articulo: "1290", tipo: "conexa", nota: "Los contratos válidamente celebrados solo se rescinden en los casos establecidos por la ley."}
+      - {norma: "CC", articulo: "1291", apartado: "3.º", tipo: "regula", nota: "Rescindibles los contratos en fraude de acreedores cuando estos no puedan cobrar de otro modo."}
+      - {norma: "CC", articulo: "1291", apartado: "4.º", tipo: "conexa", nota: "Y los del demandado sobre cosas litigiosas sin conocimiento de los litigantes o del juez."}
+      - {norma: "CC", articulo: "1292", tipo: "conexa", nota: "Rescindibles los pagos hechos en insolvencia de deudas que aún no eran exigibles."}
+      - {norma: "CC", articulo: "1294", tipo: "regula", nota: "Acción subsidiaria: solo si el perjudicado carece de todo otro recurso legal para reparar el perjuicio."}
+      - {norma: "CC", articulo: "1295", tipo: "regula", nota: "Obliga a devolver la cosa con sus frutos y el precio con sus intereses."}
+      - {norma: "CC", articulo: "1295", apartado: "párrafo 2.º", tipo: "regula", nota: "No procede si la cosa está legalmente en poder de terceros de buena fe; queda indemnización del causante."}
+      - {norma: "CC", articulo: "1297", tipo: "regula", nota: "Se presumen en fraude de acreedores las enajenaciones a título gratuito."}
+      - {norma: "CC", articulo: "1297", apartado: "párrafo 2.º", tipo: "regula", nota: "Y las onerosas de quien ya tenía sentencia condenatoria en cualquier instancia o mandamiento de embargo."}
+      - {norma: "CC", articulo: "1298", tipo: "regula", nota: "El adquirente de mala fe indemniza los daños si por cualquier causa no puede devolver la cosa."}
+      - {norma: "CC", articulo: "1299", tipo: "regula", nota: "La acción para pedir la rescisión dura cuatro años."}
+      - {norma: "CC", articulo: "1124", apartado: "párrafo 4.º", tipo: "conexa", nota: "La resolución respeta a los terceros adquirentes conforme a los arts. 1295 y 1298 y a la Ley Hipotecaria."}
+      - {norma: "CC", articulo: "1001", tipo: "conexa", nota: "Si el heredero repudia en perjuicio de sus acreedores, estos piden al juez que les autorice a aceptar."}
+      - {norma: "CC", articulo: "1083", tipo: "conexa", nota: "Los acreedores de un coheredero pueden intervenir a su costa en la partición para evitar el fraude."}
+      - {norma: "CC", articulo: "1937", tipo: "conexa", nota: "Los acreedores pueden hacer valer la prescripción pese a la renuncia del deudor."}
+    no_consta_en_norma:
+      - "Requisitos de la pauliana (crédito anterior, perjuicio, fraude, subsidiariedad): jurisprudencial."
+      - "Si basta la conciencia del perjuicio (scientia fraudis) sin intención de dañar: jurisprudencial."
+      - "Naturaleza de caducidad del plazo del 1299 y su día inicial (otorgamiento o inscripción): jurisprudencial."
+      - "Requisitos de la subrogatoria (crédito exigible, inactividad e insolvencia del deudor): jurisprudencial."
+    fuera_de_la_herramienta:
+      - "TRLC (RDLeg 1/2020), arts. 226 y 238: declarado el concurso, rescisión concursal y demás impugnaciones, ante el juez del concurso."
+    afines: ["Embargo e inembargabilidad", "Averiguación patrimonial", "Simulación y causa del contrato", "Aceptación y repudiación de la herencia", "Anotación preventiva de demanda", "Nulidad y anulabilidad del contrato", "Fraude de ley y actos contrarios a normas imperativas"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Simulación y causa del contrato"
+    sinonimos: ["simulación absoluta", "simulación relativa", "negocio disimulado", "contrato simulado", "causa falsa", "causa ilícita", "contrato sin causa", "presunción de causa", "contradocumento", "compraventa que encubre una donación", "precio confesado no pagado", "causa torpe", "prueba de la simulación por presunciones"]
+    normas_base: ["CC", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "1261", apartado: "3.º", tipo: "regula", nota: "No hay contrato sin causa de la obligación que se establezca."}
+      - {norma: "CC", articulo: "1274", tipo: "regula", nota: "Causa: en los onerosos, la prestación de la otra parte; en los remuneratorios, el servicio; en los gratuitos, la liberalidad."}
+      - {norma: "CC", articulo: "1275", tipo: "regula", nota: "Los contratos sin causa o con causa ilícita no producen efecto; ilícita es la contraria a las leyes o a la moral."}
+      - {norma: "CC", articulo: "1276", tipo: "regula", nota: "La causa falsa anula el contrato, salvo que se pruebe que se funda en otra verdadera y lícita."}
+      - {norma: "CC", articulo: "1277", tipo: "regula", nota: "Aunque no se exprese, la causa se presume existente y lícita mientras el deudor no pruebe lo contrario."}
+      - {norma: "CC", articulo: "1219", tipo: "regula", nota: "La escritura que desvirtúa otra anterior solo afecta a terceros si se anota en el registro o en la matriz."}
+      - {norma: "CC", articulo: "1230", tipo: "regula", nota: "Los documentos privados que alteran lo pactado en escritura pública no producen efecto contra tercero."}
+      - {norma: "CC", articulo: "1218", apartado: "párrafo 2.º", tipo: "conexa", nota: "La escritura hace prueba contra los contratantes y causahabientes de las declaraciones que hicieron en ella."}
+      - {norma: "CC", articulo: "1301", apartado: "2.º", tipo: "conexa", nota: "La acción por falsedad de la causa caduca a los cuatro años desde la consumación del contrato."}
+      - {norma: "CC", articulo: "1303", tipo: "conexa", nota: "Declarada la nulidad, se restituyen las cosas con sus frutos y el precio con sus intereses."}
+      - {norma: "CC", articulo: "1305", tipo: "conexa", nota: "Causa ilícita constitutiva de delito de ambos: sin acción entre sí; si solo de uno, el inocente recupera lo dado."}
+      - {norma: "CC", articulo: "1306", apartado: "1.ª", tipo: "conexa", nota: "Causa torpe sin delito y culpa de ambos: ninguno repite lo dado ni exige lo prometido."}
+      - {norma: "CC", articulo: "1306", apartado: "2.ª", tipo: "conexa", nota: "Culpa de uno solo: él no repite ni exige; el otro recupera lo dado y no está obligado a cumplir."}
+      - {norma: "CC", articulo: "633", tipo: "conexa", nota: "La donación de inmueble solo vale en escritura pública que exprese los bienes y el valor de las cargas."}
+      - {norma: "CC", articulo: "1297", tipo: "conexa", nota: "Se presumen en fraude de acreedores las enajenaciones gratuitas y las onerosas tras condena o embargo."}
+      - {norma: "CC", articulo: "6", apartado: "4", tipo: "conexa", nota: "El acto en fraude de ley no impide aplicar la norma que se trató de eludir."}
+      - {norma: "LEC", articulo: "386", apartado: "1", tipo: "regula", nota: "Presunción judicial desde un hecho probado con enlace preciso y directo; la sentencia razona la inferencia."}
+      - {norma: "LEC", articulo: "386", apartado: "2", tipo: "conexa", nota: "El perjudicado por la presunción judicial siempre puede practicar prueba en contrario."}
+    no_consta_en_norma:
+      - "Concepto de simulación absoluta y relativa: el CC no la define; se construye sobre los arts. 1275 y 1276 (jurisprudencial)."
+      - "Validez de la donación de inmueble encubierta bajo compraventa en escritura: jurisprudencial (Sala Primera)."
+      - "Indicios de simulación (parentesco, precio vil o no pagado, retención de la posesión): jurisprudencial."
+      - "Imprescriptibilidad de la acción de simulación absoluta por nulidad radical: jurisprudencial."
+    afines: ["Nulidad y anulabilidad del contrato", "Acción subrogatoria y rescisión por fraude de acreedores", "Fraude de ley y actos contrarios a normas imperativas", "Presunciones y hechos exentos de prueba", "Donación y su revocación", "Fuerza probatoria de documentos públicos y privados", "Requisitos del contrato y autonomía de la voluntad"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Forma del contrato y elevación a escritura pública"
+    sinonimos: ["libertad de forma", "forma constitutiva", "forma ad solemnitatem", "forma ad probationem", "elevación a público", "acción para compeler a otorgar escritura", "documento privado de compraventa", "contrato verbal", "escritura pública", "contratos que deben constar en documento público", "tradición instrumental", "forma de la donación", "forma de las capitulaciones", "condena a emitir una declaración de voluntad"]
+    normas_base: ["CC", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "1278", tipo: "regula", nota: "Los contratos obligan sea cual sea su forma, si concurren las condiciones esenciales de validez."}
+      - {norma: "CC", articulo: "1258", tipo: "regula", nota: "Se perfeccionan por el mero consentimiento y obligan a lo pactado y a lo que exigen la buena fe, el uso y la ley."}
+      - {norma: "CC", articulo: "1279", tipo: "regula", nota: "Si la ley exige escritura u otra forma, las partes pueden compelerse a llenarla desde que hubo consentimiento válido."}
+      - {norma: "CC", articulo: "1280", apartado: "1.º", tipo: "regula", nota: "Documento público para crear, transmitir, modificar o extinguir derechos reales sobre inmuebles."}
+      - {norma: "CC", articulo: "1280", apartado: "2.º", tipo: "regula", nota: "Y para los arrendamientos de inmuebles por seis o más años que deban perjudicar a tercero."}
+      - {norma: "CC", articulo: "1280", apartado: "3.º", tipo: "conexa", nota: "Y para las capitulaciones matrimoniales y sus modificaciones."}
+      - {norma: "CC", articulo: "1280", apartado: "4.º", tipo: "regula", nota: "Y para la cesión, repudiación y renuncia de derechos hereditarios o de la sociedad conyugal."}
+      - {norma: "CC", articulo: "1280", apartado: "5.º", tipo: "conexa", nota: "Y para los poderes para pleitos, para administrar bienes y los relativos a actos en escritura pública."}
+      - {norma: "CC", articulo: "1280", apartado: "6.º", tipo: "conexa", nota: "Y para la cesión de acciones o derechos que proceden de un acto consignado en escritura pública."}
+      - {norma: "CC", articulo: "1280", apartado: "párrafo 2.º", tipo: "regula", nota: "Los demás contratos de más de 1.500 pesetas, por escrito, aunque sea privado."}
+      - {norma: "CC", articulo: "633", tipo: "regula", nota: "La donación de inmueble solo es válida en escritura pública que exprese los bienes y las cargas."}
+      - {norma: "CC", articulo: "632", tipo: "regula", nota: "Donación de mueble: verbal con entrega simultánea; si no, por escrito y con aceptación escrita."}
+      - {norma: "CC", articulo: "1327", tipo: "regula", nota: "Para su validez, las capitulaciones matrimoniales han de constar en escritura pública."}
+      - {norma: "CC", articulo: "1667", tipo: "conexa", nota: "Sociedad civil en cualquier forma, salvo aportación de inmuebles o derechos reales: escritura pública."}
+      - {norma: "CC", articulo: "1827", tipo: "conexa", nota: "La fianza no se presume: debe ser expresa y no se extiende a más de lo contenido en ella."}
+      - {norma: "CC", articulo: "1462", apartado: "párrafo 2.º", tipo: "conexa", nota: "La escritura pública de venta equivale a la entrega, salvo que de ella resulte lo contrario."}
+      - {norma: "CC", articulo: "1218", tipo: "conexa", nota: "El documento público prueba, aun contra tercero, el hecho que motiva su otorgamiento y su fecha."}
+      - {norma: "CC", articulo: "1223", tipo: "conexa", nota: "La escritura defectuosa por incompetencia del notario u otra falta de forma vale como documento privado firmado."}
+      - {norma: "CC", articulo: "1225", tipo: "conexa", nota: "El documento privado reconocido vale como escritura pública entre los firmantes y sus causahabientes."}
+      - {norma: "CC", articulo: "1227", tipo: "conexa", nota: "La fecha del documento privado solo cuenta frente a terceros desde su registro, muerte de un firmante o entrega a funcionario."}
+      - {norma: "CC", articulo: "11", apartado: "1", tipo: "conexa", nota: "Forma de los contratos con elemento extranjero: ley del lugar de otorgamiento, entre otras alternativas."}
+      - {norma: "LEC", articulo: "708", apartado: "1", tipo: "regula", nota: "Condena firme a emitir declaración de voluntad: pasados veinte días, el auto la tiene por emitida."}
+      - {norma: "LEC", articulo: "708", apartado: "2", tipo: "conexa", nota: "El tribunal fija los elementos no esenciales; si faltan los esenciales, solo cabe ejecutar por daños y perjuicios."}
+    no_consta_en_norma:
+      - "La forma del 1280 no es constitutiva, salvo donación de inmueble, capitulaciones y otros casos legales: jurisprudencial."
+      - "La cifra de 1.500 pesetas del 1280 nunca se actualizó: regla sin eficacia práctica; casuística."
+      - "Acumulación de la elevación a público con el pago del precio o la entrega: casuística."
+    afines: ["Requisitos del contrato y autonomía de la voluntad", "Fuerza probatoria de documentos públicos y privados", "Compraventa: entrega, precio y riesgos", "Donación y su revocación", "Capitulaciones matrimoniales", "Ejecución de obligaciones de hacer y no hacer", "Fianza"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Requisitos del contrato y autonomía de la voluntad"
+    sinonimos: ["elementos esenciales del contrato", "consentimiento, objeto y causa", "oferta y aceptación", "perfección del contrato", "contrato entre ausentes", "autonomía de la voluntad", "libertad contractual", "límites de la autonomía de la voluntad", "pacta sunt servanda", "fuerza obligatoria del contrato", "relatividad del contrato", "estipulación a favor de tercero", "contrato en nombre ajeno sin poder", "ratificación", "objeto del contrato", "pacto sobre herencia futura", "capacidad para contratar"]
+    normas_base: ["CC"]
+    remisiones:
+      - {norma: "CC", articulo: "1254", tipo: "regula", nota: "El contrato existe desde que una o varias personas consienten en obligarse a dar algo o prestar un servicio."}
+      - {norma: "CC", articulo: "1261", tipo: "regula", nota: "No hay contrato sin consentimiento, objeto cierto y causa de la obligación."}
+      - {norma: "CC", articulo: "1262", tipo: "regula", nota: "El consentimiento es el concurso de oferta y aceptación sobre la cosa y la causa."}
+      - {norma: "CC", articulo: "1262", apartado: "párrafo 2.º", tipo: "regula", nota: "Entre ausentes, hay consentimiento cuando el oferente conoce la aceptación o no puede ignorarla de buena fe."}
+      - {norma: "CC", articulo: "1262", apartado: "párrafo 3.º", tipo: "conexa", nota: "En los contratos por dispositivos automáticos, hay consentimiento desde que se manifiesta la aceptación."}
+      - {norma: "CC", articulo: "1255", tipo: "regula", nota: "Libertad de pactos, cláusulas y condiciones, salvo contrarios a las leyes, la moral o el orden público."}
+      - {norma: "CC", articulo: "1256", tipo: "regula", nota: "La validez y el cumplimiento no pueden dejarse al arbitrio de uno de los contratantes."}
+      - {norma: "CC", articulo: "1091", tipo: "regula", nota: "Las obligaciones contractuales tienen fuerza de ley entre las partes y se cumplen a tenor del contrato."}
+      - {norma: "CC", articulo: "1258", tipo: "regula", nota: "Perfección consensual; obligan también a las consecuencias conformes a la buena fe, al uso y a la ley."}
+      - {norma: "CC", articulo: "1257", tipo: "regula", nota: "El contrato solo produce efecto entre las partes y sus herederos, salvo derechos intransmisibles."}
+      - {norma: "CC", articulo: "1257", apartado: "párrafo 2.º", tipo: "regula", nota: "El tercero beneficiario exige la estipulación a su favor si comunicó su aceptación antes de revocarse."}
+      - {norma: "CC", articulo: "1259", tipo: "regula", nota: "Nadie contrata en nombre de otro sin su autorización o representación legal."}
+      - {norma: "CC", articulo: "1259", apartado: "párrafo 2.º", tipo: "regula", nota: "El contrato sin poder es nulo salvo ratificación antes de que lo revoque la otra parte."}
+      - {norma: "CC", articulo: "1263", tipo: "regula", nota: "Los menores no emancipados contratan lo que la ley les permite y los bienes y servicios de la vida corriente."}
+      - {norma: "CC", articulo: "1264", tipo: "conexa", nota: "Sin perjuicio de las prohibiciones y requisitos especiales de capacidad que fijen las leyes."}
+      - {norma: "CC", articulo: "1271", tipo: "regula", nota: "Pueden ser objeto las cosas en el comercio, aun futuras, y los servicios no contrarios a las leyes o buenas costumbres."}
+      - {norma: "CC", articulo: "1271", apartado: "párrafo 2.º", tipo: "conexa", nota: "Sobre herencia futura solo caben contratos de división entre vivos del caudal conforme al art. 1056."}
+      - {norma: "CC", articulo: "1272", tipo: "regula", nota: "No pueden ser objeto de contrato las cosas o servicios imposibles."}
+      - {norma: "CC", articulo: "1273", tipo: "regula", nota: "Objeto determinado en su especie; la cantidad puede quedar indeterminada si se determina sin nuevo convenio."}
+      - {norma: "CC", articulo: "1115", tipo: "conexa", nota: "Es nula la obligación cuya condición depende de la exclusiva voluntad del deudor."}
+      - {norma: "CC", articulo: "1300", tipo: "conexa", nota: "Los contratos con los requisitos del 1261 son anulables si adolecen de algún vicio que los invalide."}
+      - {norma: "CC", articulo: "6", apartado: "2", tipo: "conexa", nota: "Renunciar a derechos o excluir la ley aplicable solo vale si no daña el interés u orden público ni a terceros."}
+      - {norma: "CC", articulo: "1089", tipo: "conexa", nota: "Las obligaciones nacen de la ley, los contratos, los cuasicontratos y los actos ilícitos o culposos."}
+    no_consta_en_norma:
+      - "Inexistencia frente a nulidad por falta de un requisito esencial: doctrinal y jurisprudencial."
+      - "Tratos preliminares, precontrato y responsabilidad precontractual: no regulados; jurisprudencial."
+      - "Contratos atípicos o mixtos: lo pactado y, por analogía, el contrato típico más próximo; jurisprudencial."
+    afines: ["Nulidad y anulabilidad del contrato", "Vicios del consentimiento: error, dolo e intimidación", "Interpretación de los contratos", "Simulación y causa del contrato", "Forma del contrato y elevación a escritura pública", "Fraude de ley y actos contrarios a normas imperativas", "Contratos a distancia y fuera del establecimiento"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Obligaciones condicionales, a plazo y vencimiento anticipado"
+    sinonimos: ["condición suspensiva", "condición resolutoria", "condición potestativa", "condición imposible", "cumplimiento ficto de la condición", "retroactividad de la condición", "obligación a plazo", "día cierto", "plazo en beneficio de ambas partes", "fijación judicial del plazo", "pérdida del beneficio del plazo", "vencimiento anticipado", "cláusula de vencimiento anticipado", "pago anticipado"]
+    normas_base: ["CC", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "1113", tipo: "regula", nota: "Es exigible desde luego la obligación pura y también la sujeta a condición resolutoria."}
+      - {norma: "CC", articulo: "1114", tipo: "regula", nota: "En las condicionales, adquirir o perder derechos depende del acontecimiento que constituye la condición."}
+      - {norma: "CC", articulo: "1115", tipo: "regula", nota: "Nula si la condición depende de la exclusiva voluntad del deudor; válida si de la suerte o de un tercero."}
+      - {norma: "CC", articulo: "1116", tipo: "regula", nota: "Las condiciones imposibles, inmorales o ilegales anulan la obligación; la de no hacer lo imposible se tiene por no puesta."}
+      - {norma: "CC", articulo: "1117", tipo: "conexa", nota: "Condición de que ocurra algo en tiempo fijo: se extingue al pasar el tiempo o ser indudable que no ocurrirá."}
+      - {norma: "CC", articulo: "1118", tipo: "conexa", nota: "Condición de que no ocurra algo: eficaz al pasar el tiempo; si no se fijó, el que verosímilmente se quiso."}
+      - {norma: "CC", articulo: "1119", tipo: "regula", nota: "Se tiene por cumplida la condición cuando el obligado impide voluntariamente su cumplimiento."}
+      - {norma: "CC", articulo: "1120", tipo: "regula", nota: "Cumplida la condición, sus efectos se retrotraen a la constitución; frutos e intereses compensados si son recíprocas."}
+      - {norma: "CC", articulo: "1121", tipo: "conexa", nota: "Pendiente la condición, el acreedor puede ejercitar acciones conservativas; el deudor repite lo pagado."}
+      - {norma: "CC", articulo: "1122", tipo: "conexa", nota: "Pérdida, deterioro o mejora de la cosa pendiente la condición suspensiva: reglas 1.ª a 6.ª."}
+      - {norma: "CC", articulo: "1123", tipo: "regula", nota: "Cumplida la condición resolutoria, las partes se restituyen lo percibido."}
+      - {norma: "CC", articulo: "1125", tipo: "regula", nota: "La obligación a día cierto solo es exigible cuando el día llega; día cierto es el que necesariamente vendrá."}
+      - {norma: "CC", articulo: "1125", apartado: "párrafo 3.º", tipo: "regula", nota: "Si es incierto que el día llegue, la obligación es condicional."}
+      - {norma: "CC", articulo: "1126", tipo: "regula", nota: "Lo pagado anticipadamente no se repite; si se ignoraba el plazo, se reclaman intereses o frutos."}
+      - {norma: "CC", articulo: "1127", tipo: "regula", nota: "El término se presume en beneficio de acreedor y deudor, salvo que resulte puesto a favor de uno."}
+      - {norma: "CC", articulo: "1128", tipo: "regula", nota: "Los tribunales fijan el plazo si no se señaló y se quiso conceder, o si quedó a voluntad del deudor."}
+      - {norma: "CC", articulo: "1129", apartado: "1.º", tipo: "regula", nota: "Pierde el plazo el deudor que resulta insolvente después de contraer la obligación, salvo que la garantice."}
+      - {norma: "CC", articulo: "1129", apartado: "2.º", tipo: "regula", nota: "Y el que no otorga las garantías comprometidas."}
+      - {norma: "CC", articulo: "1129", apartado: "3.º", tipo: "regula", nota: "Y el que disminuye las garantías o las pierde por caso fortuito sin sustituirlas de inmediato."}
+      - {norma: "CC", articulo: "1130", tipo: "conexa", nota: "En el plazo por días desde uno determinado, ese día se excluye y el cómputo empieza al siguiente."}
+      - {norma: "CC", articulo: "1124", tipo: "conexa", nota: "Facultad resolutoria implícita en las obligaciones recíprocas por incumplimiento de una parte."}
+      - {norma: "LEC", articulo: "693", apartado: "1", tipo: "regula", nota: "Ejecución hipotecaria por plazos impagados: al menos tres mensualidades o incumplimiento equivalente a tres meses."}
+      - {norma: "LEC", articulo: "693", apartado: "2", tipo: "regula", nota: "Cabe reclamar todo lo adeudado si se pactó e inscribió; en vivienda de persona física, art. 24 Ley 5/2019."}
+      - {norma: "LEC", articulo: "693", apartado: "3", tipo: "conexa", nota: "Liberación del bien consignando lo vencido; en vivienda habitual, aun sin consentimiento del acreedor."}
+    no_consta_en_norma:
+      - "Abusividad de la cláusula de vencimiento anticipado en préstamos con consumidores: jurisprudencial (TJUE y TS)."
+      - "Validez del vencimiento anticipado pactado fuera del 1129 entre empresarios: autonomía de la voluntad; casuística."
+      - "Condición puramente potestativa frente a simplemente potestativa (1115): doctrinal y jurisprudencial."
+    fuera_de_la_herramienta:
+      - "Ley 5/2019, art. 24: vencimiento anticipado en préstamos inmobiliarios a personas físicas (mora, 3 % o 7 % del capital, requerimiento de un mes)."
+    afines: ["Incumplimiento y facultad resolutoria (art. 1124)", "Ejecución hipotecaria: especialidades", "Oposición en la ejecución hipotecaria", "Cláusulas abusivas: lista legal (gastos, sumisión, penalizaciones)", "Préstamo e intereses", "Cómputo civil de plazos"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Enriquecimiento injusto y cobro de lo indebido"
+    sinonimos: ["enriquecimiento sin causa", "enriquecimiento injusto", "cobro de lo indebido", "pago indebido", "condictio indebiti", "repetición de lo pagado", "restitución de lo cobrado por error", "accipiens de buena fe", "accipiens de mala fe", "presunción de error en el pago", "cuasicontrato", "devolución de cantidades pagadas sin causa", "acción in rem verso"]
+    normas_base: ["CC"]
+    remisiones:
+      - {norma: "CC", articulo: "1887", tipo: "conexa", nota: "Cuasicontratos: hechos lícitos y voluntarios de los que nace una obligación con un tercero."}
+      - {norma: "CC", articulo: "1895", tipo: "regula", nota: "Quien recibe por error lo que no tenía derecho a cobrar debe restituirlo."}
+      - {norma: "CC", articulo: "1896", tipo: "regula", nota: "Quien acepta de mala fe un pago indebido abona el interés legal del capital o los frutos de la cosa."}
+      - {norma: "CC", articulo: "1896", apartado: "párrafo 2.º", tipo: "regula", nota: "Y responde de menoscabos y perjuicios hasta la devolución, salvo fortuito que igual habría sufrido la cosa."}
+      - {norma: "CC", articulo: "1897", tipo: "regula", nota: "El de buena fe solo responde de pérdidas en cuanto se enriqueció; si enajenó, restituye el precio o cede la acción."}
+      - {norma: "CC", articulo: "1898", tipo: "conexa", nota: "Mejoras y gastos de quien recibió indebidamente: reglas de la posesión (título V del libro II)."}
+      - {norma: "CC", articulo: "1899", tipo: "regula", nota: "No restituye quien de buena fe inutilizó el título, dejó prescribir o canceló garantías; se reclama al verdadero deudor."}
+      - {norma: "CC", articulo: "1900", tipo: "regula", nota: "Quien reclama prueba el pago y su error; si el demandado niega haber recibido, basta probar la entrega."}
+      - {norma: "CC", articulo: "1901", tipo: "regula", nota: "Se presume el error si se entregó lo nunca debido o ya pagado; cabe probar liberalidad u otra causa justa."}
+      - {norma: "CC", articulo: "1158", apartado: "párrafo 3.º", tipo: "conexa", nota: "Quien paga contra la expresa voluntad del deudor solo repite aquello en que el pago le fue útil."}
+      - {norma: "CC", articulo: "1163", tipo: "conexa", nota: "El pago al menor o al tercero vale en cuanto se convirtió en utilidad de aquel o del acreedor."}
+      - {norma: "CC", articulo: "1303", tipo: "conexa", nota: "Declarada la nulidad, restitución recíproca de las cosas con sus frutos y del precio con sus intereses."}
+      - {norma: "CC", articulo: "1304", tipo: "conexa", nota: "Nulidad por minoría de edad: el menor solo restituye en cuanto se enriqueció con la prestación."}
+      - {norma: "CC", articulo: "1893", tipo: "conexa", nota: "El dueño que aprovecha la gestión ajena indemniza al gestor los gastos necesarios y útiles."}
+      - {norma: "CC", articulo: "1894", tipo: "conexa", nota: "Quien presta alimentos sin conocimiento del obligado puede reclamárselos, salvo que los diera por piedad."}
+      - {norma: "CC", articulo: "10", apartado: "9, párrafo 3.º", tipo: "conexa", nota: "Enriquecimiento sin causa con elemento extranjero: ley en virtud de la cual se produjo la transferencia de valor."}
+      - {norma: "CC", articulo: "1964", apartado: "2", tipo: "conexa", nota: "Sin plazo especial, las acciones personales prescriben a los cinco años desde que puede exigirse el cumplimiento."}
+    no_consta_en_norma:
+      - "Acción general de enriquecimiento injusto y sus requisitos (enriquecimiento, empobrecimiento, nexo, falta de causa): jurisprudencial."
+      - "Subsidiariedad de la acción de enriquecimiento frente a las contractuales: jurisprudencial."
+      - "Restitución de lo pagado por cláusulas abusivas y día inicial de su prescripción: jurisprudencial (TJUE y TS)."
+    afines: ["Pago: prueba, imputación y pago por tercero", "Nulidad y anulabilidad del contrato", "Gestión de negocios ajenos", "Liquidación del estado posesorio: frutos, gastos y mejoras", "Prescripción (como excepción)", "Cláusulas abusivas: concepto, nulidad e integración"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Fraude de ley y actos contrarios a normas imperativas"
+    sinonimos: ["fraude de ley", "norma de cobertura", "norma defraudada", "actos contrarios a normas imperativas", "nulidad de pleno derecho", "nulidad radical", "contrato contra legem", "orden público", "renuncia de derechos", "exclusión voluntaria de la ley aplicable", "fraude de ley en derecho internacional privado", "causa ilícita", "renuncia previa del consumidor"]
+    normas_base: ["CC", "TRLGDCU"]
+    remisiones:
+      - {norma: "CC", articulo: "6", apartado: "3", tipo: "regula", nota: "Los actos contrarios a normas imperativas y prohibitivas son nulos de pleno derecho, salvo otro efecto previsto."}
+      - {norma: "CC", articulo: "6", apartado: "4", tipo: "regula", nota: "Actos amparados en una norma que persiguen un resultado prohibido: fraude de ley; se aplica la norma eludida."}
+      - {norma: "CC", articulo: "6", apartado: "2", tipo: "regula", nota: "Excluir la ley o renunciar a derechos solo vale si no contraría el interés u orden público ni perjudica a terceros."}
+      - {norma: "CC", articulo: "6", apartado: "1", tipo: "conexa", nota: "La ignorancia de las leyes no excusa; el error de derecho solo produce los efectos que las leyes fijen."}
+      - {norma: "CC", articulo: "12", apartado: "4", tipo: "regula", nota: "Es fraude de ley usar una norma de conflicto para eludir una ley imperativa española."}
+      - {norma: "CC", articulo: "12", apartado: "3", tipo: "conexa", nota: "No se aplica la ley extranjera contraria al orden público."}
+      - {norma: "CC", articulo: "1255", tipo: "regula", nota: "La autonomía de la voluntad tiene por límite las leyes, la moral y el orden público."}
+      - {norma: "CC", articulo: "1275", tipo: "regula", nota: "El contrato con causa ilícita (contraria a las leyes o a la moral) no produce efecto alguno."}
+      - {norma: "CC", articulo: "1116", tipo: "conexa", nota: "Las condiciones prohibidas por la ley anulan la obligación que de ellas dependa."}
+      - {norma: "CC", articulo: "1271", apartado: "párrafo 3.º", tipo: "conexa", nota: "Solo pueden ser objeto de contrato los servicios no contrarios a las leyes o a las buenas costumbres."}
+      - {norma: "CC", articulo: "1102", tipo: "conexa", nota: "Es nula la renuncia a la acción para exigir la responsabilidad por dolo."}
+      - {norma: "CC", articulo: "1303", tipo: "conexa", nota: "Declarada la nulidad, restitución recíproca de las cosas con sus frutos y del precio con sus intereses."}
+      - {norma: "CC", articulo: "1305", tipo: "regula", nota: "Objeto o causa ilícitos constitutivos de delito de ambos: sin acción entre sí; si solo de uno, el otro recupera."}
+      - {norma: "CC", articulo: "1306", tipo: "regula", nota: "Causa torpe sin delito: no repite ni exige quien es culpable; el inocente recupera lo dado y no cumple."}
+      - {norma: "CC", articulo: "7", apartado: "1", tipo: "conexa", nota: "Los derechos se ejercitan conforme a las exigencias de la buena fe."}
+      - {norma: "CC", articulo: "7", apartado: "2", tipo: "conexa", nota: "La ley no ampara el abuso del derecho ni su ejercicio antisocial; indemnización y medidas de cesación."}
+      - {norma: "TRLGDCU", articulo: "10", tipo: "conexa", nota: "Es nula la renuncia previa a los derechos del consumidor y los actos en fraude de ley según el art. 6 CC."}
+    no_consta_en_norma:
+      - "Cuándo la infracción de una norma imperativa no acarrea nulidad civil (normas administrativas o de policía): jurisprudencial."
+      - "El fraude de ley no se presume y no exige intención de defraudar: jurisprudencial."
+      - "Nulidad de pleno derecho imprescriptible y apreciable de oficio: jurisprudencial."
+    afines: ["Abuso de derecho y buena fe", "Nulidad y anulabilidad del contrato", "Simulación y causa del contrato", "Requisitos del contrato y autonomía de la voluntad", "Irrenunciabilidad de los derechos del consumidor", "Acción subrogatoria y rescisión por fraude de acreedores"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Responsabilidad por hecho ajeno"
+    sinonimos: ["responsabilidad por hecho ajeno", "culpa in vigilando", "culpa in eligendo", "responsabilidad de los padres por los hijos", "responsabilidad del empresario por sus dependientes", "responsabilidad de los centros docentes", "responsabilidad del tutor", "responsabilidad del curador", "acción de repetición contra el dependiente", "prueba de la diligencia del buen padre de familia", "responsabilidad del propietario no conductor", "responsabilidad del contratista por sus operarios"]
+    normas_base: ["CC", "LOE"]
+    remisiones:
+      - {norma: "CC", articulo: "1903", tipo: "regula", nota: "La obligación de reparar alcanza los actos de las personas de quienes se debe responder."}
+      - {norma: "CC", articulo: "1903", apartado: "párrafo 2.º", tipo: "regula", nota: "Los padres responden de los daños causados por los hijos que se encuentren bajo su guarda."}
+      - {norma: "CC", articulo: "1903", apartado: "párrafo 3.º", tipo: "regula", nota: "Los tutores, de los menores bajo su autoridad que habitan en su compañía."}
+      - {norma: "CC", articulo: "1903", apartado: "párrafo 4.º", tipo: "regula", nota: "Los curadores con representación plena, de la persona a quien prestan apoyo si conviven con ella."}
+      - {norma: "CC", articulo: "1903", apartado: "párrafo 5.º", tipo: "regula", nota: "Dueños o directores de empresa, de sus dependientes en el servicio o con ocasión de sus funciones."}
+      - {norma: "CC", articulo: "1903", apartado: "párrafo 6.º", tipo: "regula", nota: "Titulares de centros docentes no superiores, de alumnos menores bajo control del profesorado."}
+      - {norma: "CC", articulo: "1903", apartado: "párrafo 7.º", tipo: "regula", nota: "Cesa la responsabilidad si prueban que emplearon toda la diligencia de un buen padre de familia."}
+      - {norma: "CC", articulo: "1904", tipo: "regula", nota: "Quien paga el daño causado por sus dependientes puede repetir de ellos lo satisfecho."}
+      - {norma: "CC", articulo: "1904", apartado: "párrafo 2.º", tipo: "regula", nota: "Los centros docentes repiten contra los profesores solo por dolo o culpa grave."}
+      - {norma: "CC", articulo: "1902", tipo: "conexa", nota: "Quien por acción u omisión causa daño a otro con culpa o negligencia está obligado a repararlo."}
+      - {norma: "CC", articulo: "1910", tipo: "conexa", nota: "El cabeza de familia responde de las cosas que se arrojen o caigan de la casa que habita."}
+      - {norma: "CC", articulo: "1596", tipo: "conexa", nota: "El contratista responde del trabajo de las personas que ocupa en la obra."}
+      - {norma: "CC", articulo: "1564", tipo: "conexa", nota: "El arrendatario responde del deterioro causado por las personas de su casa."}
+      - {norma: "CC", articulo: "1721", tipo: "conexa", nota: "El mandatario responde del sustituto no autorizado o, si podía nombrarlo, notoriamente incapaz o insolvente."}
+      - {norma: "CC", articulo: "1784", tipo: "conexa", nota: "El posadero responde de los daños en los efectos del viajero causados por sus dependientes o por extraños."}
+      - {norma: "CC", articulo: "1890", tipo: "conexa", nota: "El gestor de negocios responde de los actos de aquel en quien delegue."}
+      - {norma: "CC", articulo: "1092", tipo: "conexa", nota: "La responsabilidad civil derivada de delito se rige por el Código Penal."}
+      - {norma: "CC", articulo: "1968", apartado: "2.º", tipo: "conexa", nota: "La acción por culpa extracontractual prescribe al año desde que lo supo el agraviado."}
+      - {norma: "LOE", articulo: "17", apartado: "2", tipo: "conexa", nota: "Los agentes de la edificación responden por actos propios y de las personas de quienes deban responder."}
+      - {norma: "LOE", articulo: "17", apartado: "6", tipo: "conexa", nota: "El constructor responde del jefe de obra, de sus dependientes y de sus subcontratistas."}
+    no_consta_en_norma:
+      - "Carácter cuasiobjetivo e inversión de la carga de la prueba de la diligencia: jurisprudencial."
+      - "Relación de dependencia en subcontratas, franquicias y encargos no laborales: casuística."
+      - "Hijos mayores de edad que conviven con los padres: el 1903 no los incluye; casuística."
+    fuera_de_la_herramienta:
+      - "RDLeg 8/2004, art. 1.3: responde el propietario no conductor ligado al conductor por las relaciones del 1903 CC o del 120.5 CP."
+    afines: ["Responsabilidad extracontractual", "Daños causados por animales, edificios y cosas", "Intervención de terceros", "Prescripción (como excepción)", "Agentes de la edificación y sus obligaciones"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Daños causados por animales, edificios y cosas"
+    sinonimos: ["daños causados por animales", "mordedura de perro", "responsabilidad del poseedor del animal", "ruina de edificio", "caída de cornisas o fachada", "caída de árboles", "objetos que caen de un balcón", "cosas arrojadas o caídas", "humos nocivos", "explosión", "emanaciones de cloacas", "daños por la caza", "obra que amenaza ruina", "responsabilidad del propietario del edificio"]
+    normas_base: ["CC", "LEC", "LOE"]
+    remisiones:
+      - {norma: "CC", articulo: "1905", tipo: "regula", nota: "El poseedor del animal, o quien se sirve de él, responde aunque escape; solo le exoneran fuerza mayor o culpa de la víctima."}
+      - {norma: "CC", articulo: "1906", tipo: "regula", nota: "El propietario de una heredad de caza responde de sus daños en fincas vecinas si no impidió su multiplicación."}
+      - {norma: "CC", articulo: "1907", tipo: "regula", nota: "El propietario del edificio responde de su ruina total o parcial por falta de las reparaciones necesarias."}
+      - {norma: "CC", articulo: "1908", apartado: "1.º", tipo: "regula", nota: "El propietario responde de la explosión de máquinas mal cuidadas y de explosivos mal colocados."}
+      - {norma: "CC", articulo: "1908", apartado: "2.º", tipo: "regula", nota: "Y de los humos excesivos, nocivos a las personas o a las propiedades."}
+      - {norma: "CC", articulo: "1908", apartado: "3.º", tipo: "regula", nota: "Y de la caída de árboles en sitios de tránsito, salvo fuerza mayor."}
+      - {norma: "CC", articulo: "1908", apartado: "4.º", tipo: "regula", nota: "Y de las emanaciones de cloacas o depósitos de materias infectantes construidos sin precauciones."}
+      - {norma: "CC", articulo: "1909", tipo: "regula", nota: "Si el daño procede de defecto de construcción, el tercero repite contra el arquitecto o el constructor."}
+      - {norma: "CC", articulo: "1910", tipo: "regula", nota: "El cabeza de familia que habita la casa responde de las cosas que se arrojen o caigan de ella."}
+      - {norma: "CC", articulo: "389", tipo: "regula", nota: "Construcción que amenaza ruina: el propietario la derriba o la repara; si no, la Autoridad a su costa."}
+      - {norma: "CC", articulo: "390", tipo: "regula", nota: "Árbol corpulento que amenaza caer sobre finca ajena o vía: el dueño lo arranca; si no, la Autoridad a su costa."}
+      - {norma: "CC", articulo: "391", tipo: "conexa", nota: "Si el edificio o el árbol llegan a caer, se aplican los arts. 1907 y 1908."}
+      - {norma: "CC", articulo: "1902", tipo: "conexa", nota: "Regla general de la responsabilidad por culpa o negligencia."}
+      - {norma: "CC", articulo: "1968", apartado: "2.º", tipo: "conexa", nota: "La acción por culpa extracontractual prescribe al año desde que lo supo el agraviado."}
+      - {norma: "CC", articulo: "1591", tipo: "conexa", nota: "Contratista y arquitecto responden diez años de la ruina por vicios de la construcción, del suelo o de la dirección."}
+      - {norma: "LOE", articulo: "17", apartado: "1", tipo: "conexa", nota: "Agentes de la edificación frente a propietarios y adquirentes: daños materiales en el edificio a 10, 3 y 1 año."}
+      - {norma: "LEC", articulo: "250", apartado: "1.6.º", tipo: "conexa", nota: "Juicio verbal sumario para demoler obra, edificio, árbol u objeto en ruina que amenace dañar al demandante."}
+    no_consta_en_norma:
+      - "Carácter objetivo de la responsabilidad del 1905 y alcance de la culpa de la víctima: jurisprudencial."
+      - "Daños por agua o filtraciones desde el piso superior: 1902 o 1910 según el caso; casuística."
+      - "Relación entre el 1909 CC y la LOE en edificios sujetos a esta: jurisprudencial."
+    afines: ["Responsabilidad extracontractual", "Responsabilidad por hecho ajeno", "Fuerza mayor y caso fortuito", "Obra nueva y obra ruinosa", "Daños entre comunidad y propietarios (filtraciones)", "Responsabilidad de los agentes: plazos de 10, 3 y 1 año", "Inmisiones y relaciones de vecindad"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
