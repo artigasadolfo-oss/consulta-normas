@@ -94,6 +94,57 @@ caso("`vigilar` a un artículo inexistente -> error", any("vigilar" in x for x i
 caso("`vigilar` y `fuera_de_la_herramienta` (campos nuevos del Armero) se aceptan", indice.valida([con(vigilar=[dict(norma="A", articulo="2")], fuera_de_la_herramienta=["Reglamento (UE) 1215/2012"])], N) == [])
 caso("`fuera_de_la_herramienta` que no es lista -> error (no se cae la voz entera en silencio)", any("lista" in x for x in indice.valida([con(fuera_de_la_herramienta="texto")], N)))
 
+print("[línea base FIJA para normas que no viven en git (decreto del DOGV importado a mano)]")
+import json, os, tempfile
+def vozd(cita, espejo="legalize-es@aca28304d"):
+    return dict(voz="D", espejo=espejo, normas_base=["DEC"], vigilar=[], remisiones=[dict(norma="DEC", articulo=a, tipo="regula", nota="n") for a in cita])
+dec_hoy = norma(**{"1": "d1", "2": "d2", "3": "d3"})
+bases = {"DEC": indice.crea_base([dict(k="1", e="", t="", b="d1"), dict(k="2", e="", t="", b="d2"), dict(k="3", e="", t="", b="d3")], "es-vc/X.md", "a" * 64, "2026-10-08")}
+BF = lambda s, c: indice.base_fija(bases, s)
+caso("base_fija: sin entrada para la norma -> None (prudencia, como hasta ahora)", indice.base_fija(bases, "OTRA") is None and indice.base_fija({}, "DEC") is None and indice.base_fija(None, "DEC") is None)
+caso("base_fija: devuelve una copia (no se puede alterar la guardada)", (lambda b: (b.update(x=1), indice.base_fija(bases, "DEC") == {"1": H("d1"), "2": H("d2"), "3": H("d3")})[1])(indice.base_fija(bases, "DEC")))
+caso("crea_base: guarda origen, sha256, fecha, estado oficial y una huella por artículo", set(bases["DEC"]) == {"origen", "sha256", "fijada_el", "status", "huellas"} and len(bases["DEC"]["huellas"]) == 3)
+caso("con base fija y texto sin cambios -> la voz NO caduca (el caso del D 11/1995)", indice.caducidad_voz(vozd(["1", "2"]), {"DEC": dec_hoy}, BF) == [])
+dec_cambia = norma(**{"1": "d1", "2": "d2 REFORMADO", "3": "d3"})
+r = indice.caducidad_voz(vozd(["1", "2"]), {"DEC": dec_cambia}, BF)
+caso("con base fija, si cambia un artículo citado -> caduca y lo nombra (la protección sigue)", r == [dict(n="DEC", k="2", r="cambia")], str(r))
+caso("con base fija, si cambia uno que la voz no cita -> no caduca", indice.caducidad_voz(vozd(["1"]), {"DEC": dec_cambia}, BF) == [])
+caso("sin entrada en la base fija -> '?' (la prudencia se mantiene)", indice.caducidad_voz(vozd(["1"]), {"DEC": dec_hoy}, lambda s, c: indice.base_fija({}, s)) == [dict(n="DEC", r="?")])
+caso("la base fija sirve con cualquier commit del espejo en la voz (no depende de él)", indice.caducidad_voz(vozd(["1"], espejo="legalize-es@deadbeef0"), {"DEC": dec_hoy}, BF) == [])
+# condición b) del Armero: el estado oficial también se vigila (un decreto derogado conserva su texto literal)
+bases_e = {"DEC": indice.crea_base([dict(k="1", e="", t="", b="d1"), dict(k="2", e="", t="", b="d2")], "es-vc/X.md", "a" * 64, "2026-10-08", status="in_force")}
+BE = lambda s, c: indice.base_fija(bases_e, s)
+con_estado = lambda st: dict(norma(**{"1": "d1", "2": "d2"}), status=st)
+caso("estado oficial: la base fija lo guarda y se puede leer", bases_e["DEC"]["status"] == "in_force" and indice.base_fija(bases_e, "DEC").estado == "in_force")
+caso("estado oficial igual (in_force) y texto igual -> NO caduca", indice.caducidad_voz(vozd(["1"]), {"DEC": con_estado("in_force")}, BE) == [])
+r = indice.caducidad_voz(vozd(["1"]), {"DEC": con_estado("repealed")}, BE)
+caso("estado oficial distinto con el MISMO texto -> caduca y dice de qué a qué (decreto derogado)", r == [dict(n="DEC", r="estado", antes="in_force", ahora="repealed")], str(r))
+r = indice.caducidad_voz(vozd(["1", "2"]), {"DEC": dict(norma(**{"1": "d1", "2": "d2 NUEVO"}), status="repealed")}, BE)
+caso("si cambian a la vez el estado y un artículo -> una razón por cada cosa", sorted(x["r"] for x in r) == ["cambia", "estado"], str(r))
+caso("una base sin estado (la de git, o una antigua) no inventa caducidades por estado", indice.caducidad_voz(vozd(["1"]), {"DEC": con_estado("repealed")}, BF) == [])
+caso("la norma actual sin estado en su cabecera tampoco caduca (no se compara lo que no hay)", indice.caducidad_voz(vozd(["1"]), {"DEC": norma(**{"1": "d1", "2": "d2"})}, BE) == [])
+caso("el estado NO cuenta como artículo alterado en el aviso agregado del Armero", indice.cambios_norma([dict(vozd(["1"]), voz="D")], {"DEC": con_estado("repealed")}, BE) == {})
+# build.base_en_commit REAL con un fichero temporal: el respaldo solo actúa si hay entrada, y las normas del BOE no se tocan
+import build
+tmp = Path(tempfile.mkdtemp()) / "lineas_base.json"
+tmp.write_text(json.dumps(bases), encoding="utf-8")
+cn = {"DEC": dict(cfg=dict(boe="X", sigla="DEC"), ruta="es-vc/NO-EXISTE.md"), "LEC": dict(cfg=dict(boe="BOE-A-2000-323", sigla="LEC"), ruta="es/BOE-A-2000-323.md")}
+guardada = build.BASES
+try:
+    build._BASE.clear(); build.BASES = tmp
+    caso("build.base_en_commit: norma sin git y CON línea base fija -> la usa", build.base_en_commit(cn, "DEC", "0000000") == {"1": H("d1"), "2": H("d2"), "3": H("d3")})
+    caso("build.base_en_commit: una norma del BOE con commit inexistente sigue dando None aunque el fichero exista", build.base_en_commit(cn, "LEC", "0000000") is None)
+    build._BASE.clear(); build.BASES = tmp.with_name("no-existe.json")
+    caso("build.base_en_commit: sin fichero de bases -> None (prudencia)", build.base_en_commit(cn, "DEC", "0000000") is None)
+finally:
+    build.BASES = guardada; build._BASE.clear()
+real = json.loads((AQUI / "lineas_base.json").read_text(encoding="utf-8")) if (AQUI / "lineas_base.json").is_file() else {}
+e = real.get("D 11/1995") or {}
+_v, _a, voces_reales = indice.carga(AQUI / "indice")
+citados = {indice.clave_articulo(r["articulo"]) for v in voces_reales for r in (v.get("remisiones") or []) if r.get("norma") == "D 11/1995"}
+caso("lineas_base.json del repositorio: el D 11/1995 tiene su línea base con sha256, fecha y estado oficial", len(e.get("sha256", "")) == 64 and bool(e.get("fijada_el")) and bool(e.get("huellas")) and e.get("status") == "in_force" and "armero" in e.get("origen", "").lower(), str({k: (v if k != "huellas" else len(v)) for k, v in e.items()}))
+caso("lineas_base.json: cubre TODOS los artículos del D 11/1995 que citan las voces reales (si no, saldría '?')", bool(citados) and citados <= set(e.get("huellas", {})), f"citados {sorted(citados)} / base {sorted(e.get('huellas', {}))}")
+
 print("[utilidades]")
 caso("clave_articulo: «da 7»->da7, «DT 2»->dt2, «22 quáter»->«22 quater», «49 bis» y «282» intactos", [indice.clave_articulo(x) for x in ("da 7", "DT 2", "22 quáter", "49 bis", "282")] == ["da7", "dt2", "22 quater", "49 bis", "282"])
 casos = {"1": 1, "1.2.º": 1, "2.a)": 2, "3, párrafo 2.º": 3, "4.º": None, "2.º": None, "": None, None: None, "1.7.º": 1, "10": 10, "5.ª": None, "1.1.ª": 1}

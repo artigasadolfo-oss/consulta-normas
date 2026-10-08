@@ -142,6 +142,31 @@ def commit_espejo(espejo):
     return m.group(1) if m else None
 
 
+class BaseFija(dict):
+    """{clave: huella} de una línea base FIJA, con el estado oficial con el que se fijó (atributo `estado`, p. ej. «in_force»).
+    Es un dict normal para todo lo demás: así `cambios_norma` y `caducidad_voz` la tratan igual que una base sacada de git."""
+    estado = None
+
+
+def base_fija(bases, sigla):
+    """Línea base FIJA de una norma que no vive en git (importada a mano, p. ej. un decreto del DOGV): {clave: huella} o None.
+    Solo existe si alguien la fijó a propósito (scripts/fija_base.py). Una norma sin entrada sigue dando None, es decir, caducidad por prudencia."""
+    e = (bases or {}).get(sigla)
+    h = e.get("huellas") if isinstance(e, dict) else None
+    if not h:
+        return None
+    b = BaseFija(h)
+    b.estado = e.get("status") or None
+    return b
+
+
+def crea_base(chunks, origen, sha256, fijada_el, status=None):
+    """Entrada de lineas_base.json para una norma: huella por artículo del texto que se da por revisado, el estado oficial de su cabecera,
+    de dónde sale y cuándo se fijó. Si el estado oficial cambia al reimportar, caducan las voces aunque los artículos sean iguales
+    (un decreto derogado conserva su texto literal y la huella por sí sola no lo detectaría)."""
+    return dict(origen=origen, sha256=sha256, fijada_el=fijada_el, status=status, huellas=mapa_huellas(chunks))
+
+
 def caducidad_voz(v, normas, base_fn):
     """Lista de razones por las que la voz está caducada ([] = no caduca). Cada razón: {n: sigla, k: clave, r: código, [v: 'vigilar']}.
     Códigos: 'cambia' (a, d), 'falta' (b), 'nuevo' (c), '?' (no se pudo comprobar). base_fn(sigla, commit) -> {clave: huella} | None."""
@@ -159,6 +184,9 @@ def caducidad_voz(v, normas, base_fn):
         if base is None:
             return [dict(n=sigla, r="?")]
         cur = normas[sigla]["mapa"]
+        eb, ec = getattr(base, "estado", None), normas[sigla].get("status")
+        if eb and ec and eb != ec:   # solo las líneas base fijas recuerdan el estado oficial; las de git no lo llevan
+            razones.append(dict(n=sigla, r="estado", antes=eb, ahora=ec))
         for k in sorted(items[sigla], key=orden_natural):
             via = items[sigla][k]
             extra = {"v": "vigilar"} if via == "vigilar" else {}

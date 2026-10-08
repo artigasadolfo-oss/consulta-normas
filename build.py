@@ -34,6 +34,8 @@ ES = CORPUS / "es"
 # Texto desde el que se COMPILA. Por defecto, el espejo. Con CONSULTA_NORMAS_CORPUS=<carpeta> se compila desde una copia congelada
 # (es/, es-vc/ y un fichero `.commit` con el sha): sirve para no depender del espejo cuando este trae erratas (ocurrió el 08-10-2026).
 TEXTO = Path(os.environ["CONSULTA_NORMAS_CORPUS"]) if os.environ.get("CONSULTA_NORMAS_CORPUS") else CORPUS
+# Líneas base FIJAS de las normas que no están en git (importadas a mano del DOGV): ver indice.base_fija y scripts/fija_base.py.
+BASES = Path(os.environ.get("CONSULTA_NORMAS_BASES", AQUI / "lineas_base.json"))
 
 # id interno, BOE-ID, siglas, nombre corto, modo secuencial (ver parse_norma)
 NORMAS = [
@@ -389,6 +391,11 @@ def base_en_commit(claves_norma, sigla, commit):
                 res = indice.mapa_huellas(chunks)
     except Exception:
         res = None
+    if res is None:   # norma que no vive en git: si alguien fijó su línea base a propósito, se usa; si no, sigue siendo None (prudencia)
+        try:
+            res = indice.base_fija(json.loads(BASES.read_text(encoding="utf-8")) if BASES.is_file() else {}, sigla)
+        except Exception:
+            res = None
     _BASE[k] = res
     return res
 
@@ -425,7 +432,7 @@ def construye(solo_comprobar=False):
         n_cab = verifica_sin_perdidas(cfg, lineas, chunks)
         arts = [c for c in chunks if c["k"] not in ("cab", "pre")]
         n_art, n_disp = cuenta_real(chunks)
-        claves_norma[cfg["sigla"]] = dict(id=cfg["id"], keys={c["k"] for c in chunks}, cfg=cfg,
+        claves_norma[cfg["sigla"]] = dict(id=cfg["id"], keys={c["k"] for c in chunks}, cfg=cfg, status=meta.get("status"),
                                           mapa=indice.mapa_huellas(chunks), ruta=f"{cfg.get('dir', 'es')}/{cfg['boe']}.md")
         resumen.append(f"{cfg['sigla']:10s} {n_art:5d} artículos + {n_disp:3d} disposiciones  "
                        f"({len(chunks)} bloques, {n_cab} cabeceras consumidas) "

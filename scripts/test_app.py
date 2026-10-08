@@ -289,6 +289,8 @@ with sync_playwright() as p:
     AVISO_ = "Índice orientativo. No sustituye la lectura del precepto ni recoge jurisprudencia. Contrasta con el texto antes de invocarlo."
     def slug_(s): return build.indice.slug(s)
     check("índice: entrada «Índice de conceptos» en el menú", pg.locator("#nav-indice").is_visible())
+    cads_ = pg.evaluate("()=>window.__NT.idx().voces.filter(v=>v.es==='caducada').map(v=>v.v)")
+    check("índice REAL: ninguna voz sale caducada sin que haya cambiado nada (una norma importada a mano sin línea base la caducaría por prudencia)", cads_ == [], str(cads_))
     pg.evaluate("h=>{location.hash=h}", ""); time.sleep(0.3)
     pg.click("#nav-indice"); time.sleep(0.4)
     check("índice: lista todas las voces (muestra + tanda 1 del Armero)", pg.locator("#lista .idx-row").count() == len(muestra) >= 16 and pg.evaluate("location.hash") == "#i", str(pg.locator("#lista .idx-row").count()))
@@ -369,6 +371,9 @@ with sync_playwright() as p:
     check("índice: voz caducada -> aviso en rojo que nombra CADA artículo y el motivo, y manda leer el texto vigente",
           "Caducada" in cad_ and "ha cambiado el texto de LEC Art. 63" in cad_ and "ya no se encuentra LEC Art. 66" in cad_ and "ha aparecido LEC" in cad_ and "(artículo vigilado)" in cad_ and "Lee el texto vigente" in cad_, cad_)
     check("índice: voz caducada -> etiqueta «caducada» en su fila de la lista", pg.locator("#lista .idx-row", has_text="Declinatoria").locator(".ie-cad").count() == 1)
+    pg.evaluate("()=>{var v=window.__NT.idx().voces.filter(x=>x.s==='declinatoria')[0];v.cad=[{n:'D 11/1995',r:'estado',antes:'in_force',ahora:'repealed'}];window.__NT.vistaIndice(v.s)}"); time.sleep(0.3)
+    cad_e_ = pg.inner_text("#lector .idx-cad")
+    check("índice: voz caducada por cambio del estado oficial de una norma -> lo dice, de qué a qué y manda leer el texto vigente", "ha cambiado el estado oficial de D 11/1995 (antes «in_force», ahora «repealed»)" in cad_e_ and "Lee el texto vigente" in cad_e_, cad_e_)
     pg.evaluate("()=>{var v=window.__NT.idx().voces.filter(x=>x.s==='declinatoria')[0];v.cad=[{n:'LEC',r:'?'}];window.__NT.vistaIndice(v.s)}"); time.sleep(0.3)
     check("índice: espejo no comprobable -> lo dice (no inventa una norma)", "no se ha podido comprobar" in pg.inner_text("#lector .idx-cad"), pg.inner_text("#lector .idx-cad"))
     pg.evaluate("()=>{var v=window.__NT.idx().voces.filter(x=>x.s==='declinatoria')[0];v.es='provisional';v.cad=[];window.__NT.vistaIndice(v.s)}"); time.sleep(0.2)

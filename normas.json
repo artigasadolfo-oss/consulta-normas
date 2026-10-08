@@ -119,9 +119,7 @@
   "version": "0.1-muestra",
   "voces": 308,
   "provisionales": 40,
-  "caducadas": [
-   "Servicios a domicilio: presupuesto y factura"
-  ],
+  "caducadas": [],
   "cambios_norma": {},
   "dependen": {
    "CC": [

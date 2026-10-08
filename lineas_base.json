@@ -1,0 +1,18 @@
+{
+ "D 11/1995": {
+  "fijada_el": "2026-10-08",
+  "huellas": {
+   "1": "4c66292bd79d60812c0d1da15d7fab6bdc992dca15e442a08ad24c77037e9704",
+   "2": "af8f33c4890737b82d88cba2085e14431fabb626594cc449aff545287278bea2",
+   "3": "5541ab3b00856c4e26b98c779f3200ee7a2fa39bd463dac9160c694852e15421",
+   "4": "79b3184b1cc792bd4ba6a937e1d472a919dc5dd80873cf14c16f9095b967f3d3",
+   "5": "7d60f93b3579733631ae9d3b34566cafbc8009fb886f665def4b3bd95cde9152",
+   "6": "3eb47ce2603a440ca537b28c629cd23c22160236fc840bbe85d65843126c748a",
+   "df1": "d61c5c4127729c855e9512fb181170078ecc64da082088b0f791c584e595bec7",
+   "df2": "63ca1b8c5daeed137eedf69b3e6ffc10e6b685653c2a0811340983501dc94b13"
+  },
+  "origen": "revisado por el armero, tanda 23, 08-10-2026 (es-vc/DOGV-1995-833645.md, DOGV id 42036; importado a mano, sin versión en git; sha256 coincide con el que el Armero calculó)",
+  "sha256": "4c24f1d9dd8d618a58489f639bbb4dc34753d1cd081702b61cb7dba6e1d3dc64",
+  "status": "in_force"
+ }
+}
