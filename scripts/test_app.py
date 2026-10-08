@@ -247,8 +247,22 @@ with sync_playwright() as p:
     check("«presupuesto previo por escrito» encuentra D 11/1995 art. 2 entre los 5 primeros", "D 11/1995 Art. 2" in ids3_[:5], str(ids3_[:5]))
     check("«artículo 2 del Decreto 11/1995, de 10 de enero» -> D 11/1995 art. 2", "#a/d11-1995/2" in probar_("lec", "1", "según el artículo 2 del Decreto 11/1995, de 10 de enero, del Gobierno Valenciano"))
 
+    print("\n[familia de un artículo: el normal y todos sus bis/ter/quater]")
+    def fam_(q):
+        consulta(pg, q)
+        return pg.eval_on_selector_all("#lista .item .ar", "els=>els.map(e=>e.textContent.trim())")
+    F_ = {q: fam_(q) for q in ("11 lec", "11 bis lec", "11bis lec", "11 ter lec", "545 lec", "545 bis lec", "545bis lec", "283 bis lec", "9 bis lau", "9bis lau", "282 lec")}
+    check("familia: «11 LEC» da el 11 y TODOS sus bis/ter/quater, con el 11 primero", F_["11 lec"] == ["Art. 11", "Art. 11 bis", "Art. 11 ter", "Art. 11 quater"], str(F_["11 lec"]))
+    check("familia: «11 bis LEC» y «11bis LEC» dan la misma familia, con el 11 bis primero", F_["11 bis lec"] == F_["11bis lec"] and F_["11 bis lec"][0] == "Art. 11 bis" and set(F_["11 bis lec"]) == set(F_["11 lec"]), str(F_["11 bis lec"]))
+    check("familia: «11 ter LEC» pone el 11 ter primero y trae también el 11", F_["11 ter lec"][0] == "Art. 11 ter" and "Art. 11" in F_["11 ter lec"], str(F_["11 ter lec"]))
+    check("familia: «545», «545 bis» y «545bis» (el 545 bis NO existe en la LEC) dan el 545", F_["545 lec"] == F_["545 bis lec"] == F_["545bis lec"] == ["Art. 545"], str((F_["545 lec"], F_["545 bis lec"], F_["545bis lec"])))
+    consulta(pg, "545 bis lec")
+    check("familia: si lo pedido no existe, lo dice («no tiene el artículo 545 bis»)", "no tiene el artículo 545 bis" in pg.inner_text("#lista"), pg.inner_text("#lista")[:160])
+    check("familia: «283 bis LEC» (solo existe con letras) enseña el 283 y el 283 bis a) a k)", F_["283 bis lec"][0] == "Art. 283" and sum(1 for x in F_["283 bis lec"] if x.startswith("Art. 283 bis")) == 11, str(F_["283 bis lec"]))
+    check("familia: «9 bis LAU» y «9bis LAU» dan el 9 bis primero y también el 9", F_["9 bis lau"] == F_["9bis lau"] == ["Art. 9 bis", "Art. 9"], str((F_["9 bis lau"], F_["9bis lau"])))
+    check("familia: un artículo sin variantes sigue dando solo él («282 LEC»)", F_["282 lec"] == ["Art. 282"], str(F_["282 lec"]))
     print("\n[índice de conceptos (contenido del Armero)]")
-    _v, _a, muestra = build.indice.carga(AQUI / "indice")   # muestra + tandas del Armero, tal cual
+    _v, _a, muestra = build.indice.carga(pathlib.Path(os.environ.get("CONSULTA_NORMAS_INDICE", AQUI / "indice")))   # muestra + tandas del Armero, tal cual
     AVISO_ = "Índice orientativo. No sustituye la lectura del precepto ni recoge jurisprudencia. Contrasta con el texto antes de invocarlo."
     def slug_(s): return build.indice.slug(s)
     check("índice: entrada «Índice de conceptos» en el menú", pg.locator("#nav-indice").is_visible())
@@ -274,7 +288,7 @@ with sync_playwright() as p:
     # las afines que existen como voz son enlace; las que aún no existen, texto (se calcula con las voces reales: crecen con cada tanda)
     import unicodedata as _ud
     _nq = lambda s: re.sub(r"\s+", " ", re.sub(r"[^a-z0-9 ]+", " ", "".join(ch for ch in _ud.normalize("NFD", s.lower()) if not _ud.combining(ch)))).strip()
-    _v, _a, _vs = build.indice.carga(AQUI / "indice")
+    _v, _a, _vs = build.indice.carga(pathlib.Path(os.environ.get("CONSULTA_NORMAS_INDICE", AQUI / "indice")))
     _nombres = {_nq(x["voz"]) for x in _vs}
     _af = next(x for x in _vs if build.indice.slug(x["voz"]) == "requisito-de-procedibilidad-masc").get("afines") or []
     _con = [a for a in _af if _nq(a) in _nombres]; _sin = [a for a in _af if _nq(a) not in _nombres]
@@ -350,7 +364,7 @@ with sync_playwright() as p:
     esperadas = 0
     for cfg_ in build.NORMAS:
         _, _, l_ = build.lee_norma(cfg_); ch_, _ = build.parse_norma(cfg_, l_)
-        esperadas += any(c_["k"] == "21" for c_ in ch_)
+        esperadas += sum(1 for c_ in ch_ if c_["k"] == "21" or re.match(r"^21 (bis|ter|quater|quinquies|sexies|septies|octies)", c_["k"]))   # el 21 y su familia (21 bis…)
     check(f"21 sin norma: sale en las {esperadas} normas que lo tienen", n == esperadas, f"{n} vs {esperadas}")
     consulta(pg, "63-65 lec")
     arts = pg.locator("#lector article").count()

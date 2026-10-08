@@ -378,7 +378,14 @@ function resuelve(cons){
   cons.piezas.forEach(function(p){
     normas.forEach(function(n){
       var cs=[];
-      if(p.t==='art'){var c=buscaArt(n,p.num,p.suf);if(c)cs.push(c);else if(cons.alias)avisos.push('El '+n.sigla+' no tiene el artículo '+p.num+(p.suf?' '+p.suf:'')+(p.num>n.max?' (llega al '+n.max+')':''));if(p.ap&&c)ap=p.ap}
+      if(p.t==='art'){
+        /* FAMILIA del número: pedir «545», «545 bis» o «545bis» da el artículo normal y todos sus bis/ter/quater…, con el pedido primero.
+           Si lo pedido no existe (p. ej. «545 bis» en la LEC) se enseña el resto de la familia y se dice. */
+        var c=buscaArt(n,p.num,p.suf),fam=n.ch.filter(function(x){return x.num===p.num});
+        if(c)cs.push(c);
+        fam.forEach(function(x){if(cs.indexOf(x)<0)cs.push(x)});
+        if(!c&&cons.alias)avisos.push(fam.length?'El '+n.sigla+' no tiene el artículo '+p.num+(p.suf?' '+p.suf:'')+': te enseño el '+p.num+(fam.length>1?' y sus variantes (bis, ter…)':''):'El '+n.sigla+' no tiene el artículo '+p.num+(p.suf?' '+p.suf:'')+(p.num>n.max?' (llega al '+n.max+')':''));
+        if(p.ap&&c)ap=p.ap}
       else if(p.t==='rango'){var a=Math.min(p.a,p.b),b=Math.max(p.a,p.b);n.ch.forEach(function(c){if(c.num!=null&&c.num>=a&&c.num<=b)cs.push(c)});n.rangos.forEach(function(r){if(r[1]>=a&&r[0]<=b&&cs.indexOf(r[2])<0)cs.push(r[2])});cs.sort(function(x,y){return x.i-y.i});if(!cs.length&&cons.alias)avisos.push('El '+n.sigla+' no tiene artículos entre el '+a+' y el '+b);cs=cs.slice(0,80)}
       else if(p.t==='disp'){var c2=n.map.get(p.k);if(c2)cs.push(c2);else if(cons.alias)avisos.push('El '+n.sigla+' no tiene esa disposición ('+p.k.toUpperCase()+')')}
       cs.forEach(function(c){var id=c.n.id+'|'+c.k;if(!vistos.has(id)){vistos.add(id);items.push({c:c})}});

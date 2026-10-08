@@ -446,7 +446,7 @@ def construye(solo_comprobar=False):
             d["av"] = av[d["sigla"]]
     if av:
         print("Avisos de contraste con boe.es en pantalla:", {s: len(v) for s, v in av.items()})
-    idx, cambios = indice.compila(AQUI / "indice", claves_norma, lambda s, c: base_en_commit(claves_norma, s, c))
+    idx, cambios = indice.compila(Path(os.environ.get("CONSULTA_NORMAS_INDICE", AQUI / "indice")), claves_norma, lambda s, c: base_en_commit(claves_norma, s, c))
     resumen_idx = None
     if idx:
         cad = [v["v"] for v in idx["voces"] if v["es"] == "caducada"]
