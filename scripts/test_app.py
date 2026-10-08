@@ -593,6 +593,27 @@ with sync_playwright() as p:
     check("CC 1483: ya no lleva al final el rótulo «§ 2.º Del saneamiento por los defectos»", "§ 2.º del saneamiento por los defectos" not in t1483_, t1483_[:120])
     check("CC 1484: el rótulo «§ 2.º Del saneamiento por los defectos o gravámenes ocultos» encabeza su ruta", "§ 2.º del saneamiento por los defectos o gravámenes ocultos" in t1484_)
     check("CC 1475: conserva además su capítulo y su título en la ruta (el § cuelga de ellos, no los sustituye)", "capítulo" in t1475_ and "título" in t1475_, t1475_[:260])
+
+    print("\n[rótulos sueltos sin palabra clave (CC, LOPJ): son estructura, no texto del artículo anterior]")
+    sueltos2_ = []
+    for cfg_ in build.NORMAS:
+        _, _, l_ = build.lee_norma(cfg_); ch_, _ = build.parse_norma(cfg_, l_)
+        for c_ in ch_:
+            if not re.match(r"^\d", c_["k"]): continue
+            for ln_ in (c_["b"] if isinstance(c_["b"], list) else str(c_["b"]).split("\n")):
+                m_ = re.match(r"^\s*#{3,5}\s+(.*\S)", ln_)
+                if m_ and not re.match(r"^[\"«“*(\[]", m_.group(1)) and len(m_.group(1)) <= 110:
+                    sueltos2_.append((cfg_["sigla"], c_["k"], m_.group(1)[:40]))
+    check("ningún artículo numerado lleva dentro una cabecera de nivel 3-5 suelta (CC «Disposición general», LOPJ «Seccion tercera»…)", not sueltos2_, str(sueltos2_[:4]))
+    for h_, quien_, frag_ in (("#a/cc/1171", "CC 1171", "de la imputación de pagos"),
+                              ("#a/cc/1224", "CC 1224", "de los documentos privados"), ("#a/lopj/138", "LOPJ 138", "seccion tercera")):
+        t_ = lector_(h_)
+        check(f"{quien_}: ya no lleva al final el rótulo «{frag_}»", not re.search(re.escape(frag_) + r"\.?\s*$", t_.replace("copiar", "").strip()), t_[-100:])
+    for h_, quien_, frag_ in (("#a/cc/353", "CC 353", "disposición general"), ("#a/cc/1156", "CC 1156", "disposiciones generales"), ("#a/cc/1172", "CC 1172", "de la imputación de pagos"),
+                              ("#a/cc/1225", "CC 1225", "de los documentos privados"), ("#a/lopj/104", "LOPJ 104", "disposiciones generales"), ("#a/lopj/139", "LOPJ 139", "seccion tercera")):
+        check(f"{quien_}: el rótulo «{frag_}» encabeza su ruta", frag_ in lector_(h_))
+    check("el texto citado de una reforma NO se toma por estructura: LO 1/2025 art. 1 conserva sus «LIBRO I…»", "libro i. de la extensión" in lector_("#a/lo1-2025/1"), lector_("#a/lo1-2025/1")[:80])
+    check("«(Suprimido)» de la LEC 490 sigue siendo texto del 490", "suprimido" in lector_("#a/lec/490"))
     vaya("")
 
     print("\n[teclado: Cmd+K, j/k, flechas, Tab y Escape en todas las listas]")

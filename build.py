@@ -243,6 +243,15 @@ def parse_norma(cfg, lineas):
                 ruta.append((nivel, txt_plano))
                 cierra()
                 continue
+            # --- rótulo suelto sin palabra clave (CC «Disposición general», «De la imputación de pagos»; LOPJ «Disposiciones generales»,
+            #     «Seccion tercera…»): entre dos artículos numerados, una cabecera de nivel 3-5 es estructura del siguiente, no texto del anterior.
+            #     Se excluyen las que abren con comillas, «, *, ( o [ (texto citado de una reforma, «(Suprimido)», formularios).
+            if (re.match(r"^\d", chunks[-1]["k"]) and 3 <= nivel <= 5 and len(txt_plano) <= 110
+                    and not re.match(r"^[\"«“*(\[]", txt_plano)):
+                ruta[:] = [(n, t) for n, t in ruta if n < nivel]
+                ruta.append((nivel, txt_plano))
+                cierra()
+                continue
             # --- otra cabecera: forma parte del texto
             (actual["b"] if actual else intro).append(ln)
         else:
