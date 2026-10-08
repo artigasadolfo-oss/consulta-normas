@@ -279,6 +279,7 @@ var fdate=function(iso){if(!iso)return '';var p=iso.split('-');return p[2]+'-'+p
 /* ---------- carga ---------- */
 function cargar(){
   var b64=document.getElementById('datos').textContent.trim();
+  if(b64.charAt(0)==='@')return Promise.reject(new Error('Esto es la PLANTILLA (el molde sin datos), no la herramienta. Abre el fichero «index.html» de la misma carpeta.'));
   var bin=atob(b64),u8=new Uint8Array(bin.length);
   for(var i=0;i<bin.length;i++)u8[i]=bin.charCodeAt(i);
   if(typeof DecompressionStream==='undefined')return Promise.reject(new Error('Este navegador no puede abrir los datos (hace falta Safari 16.4 o Chrome 80 o superior).'));
