@@ -576,6 +576,25 @@ with sync_playwright() as p:
     if pg.locator("#b-notas").count():
         check("Notas de reforma se muestran", pg.locator("#lector p.nota").first.is_visible())
 
+    print("\n[rótulos «§» del Código Civil: son estructura, no texto del artículo anterior]")
+    sueltos_ = []
+    for cfg_ in build.NORMAS:
+        _, _, l_ = build.lee_norma(cfg_); ch_, _ = build.parse_norma(cfg_, l_)
+        for c_ in ch_:
+            for ln_ in (c_["b"] if isinstance(c_["b"], list) else str(c_["b"]).split("\n")):
+                if re.match(r"^\s*§", ln_):
+                    sueltos_.append((cfg_["sigla"], c_["k"], ln_[:50]))
+    check("ningún artículo lleva dentro un rótulo «§» suelto (es estructura)", not sueltos_, str(sueltos_[:4]))
+    def lector_(h):
+        vaya(h); return re.sub(r"\s+", " ", pg.text_content("#lector") or "").lower()
+    t1474_, t1475_, t1483_, t1484_ = lector_("#a/cc/1474"), lector_("#a/cc/1475"), lector_("#a/cc/1483"), lector_("#a/cc/1484")
+    check("CC 1474: ya no lleva al final el rótulo «§ 1.º Del saneamiento en caso de evicción»", "§ 1.º del saneamiento en caso de evicción" not in t1474_, t1474_[:120])
+    check("CC 1475: el rótulo «§ 1.º Del saneamiento en caso de evicción» encabeza su ruta", "§ 1.º del saneamiento en caso de evicción" in t1475_)
+    check("CC 1483: ya no lleva al final el rótulo «§ 2.º Del saneamiento por los defectos»", "§ 2.º del saneamiento por los defectos" not in t1483_, t1483_[:120])
+    check("CC 1484: el rótulo «§ 2.º Del saneamiento por los defectos o gravámenes ocultos» encabeza su ruta", "§ 2.º del saneamiento por los defectos o gravámenes ocultos" in t1484_)
+    check("CC 1475: conserva además su capítulo y su título en la ruta (el § cuelga de ellos, no los sustituye)", "capítulo" in t1475_ and "título" in t1475_, t1475_[:260])
+    vaya("")
+
     print("\n[teclado: Cmd+K, j/k, flechas, Tab y Escape en todas las listas]")
     def foco_():
         return pg.evaluate("()=>{var a=document.activeElement;return a?(a.id||a.tagName):''}")
