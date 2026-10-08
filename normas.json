@@ -117,9 +117,11 @@
  "boe_contrastado": "2026-10-08",
  "indice": {
   "version": "0.1-muestra",
-  "voces": 264,
-  "provisionales": 38,
-  "caducadas": [],
+  "voces": 308,
+  "provisionales": 40,
+  "caducadas": [
+   "Servicios a domicilio: presupuesto y factura"
+  ],
   "cambios_norma": {},
   "dependen": {
    "CC": [
@@ -256,7 +258,33 @@
     "Concurrencia de la LOE con la responsabilidad contractual y el art. 1591 CC",
     "Información precontractual e integración de la oferta y la publicidad",
     "Responsabilidad por productos defectuosos",
-    "Responsabilidad por servicios defectuosos"
+    "Responsabilidad por servicios defectuosos",
+    "Irrenunciabilidad de los derechos del consumidor",
+    "Servicios a domicilio: presupuesto y factura",
+    "Oferta vinculante confidencial",
+    "Acuerdo alcanzado en el MASC: eficacia y ejecución",
+    "Derecho a la vivienda y función social de la propiedad",
+    "Decretos-leyes: convalidación y vigencia",
+    "Arrendamientos de renta antigua (anteriores a 1995)",
+    "Formalización e inscripción del arrendamiento",
+    "Resolución judicial en equidad ante falta de mayoría",
+    "Alimentos entre parientes",
+    "Filiación: reclamación e impugnación",
+    "Administración e intervención del caudal hereditario",
+    "Novación",
+    "Saneamiento por evicción",
+    "Retracto convencional",
+    "Gestión de negocios ajenos",
+    "Sociedad civil y comunidad con actividad",
+    "Medianería",
+    "Deslinde y amojonamiento",
+    "Accesión y construcción en suelo ajeno",
+    "Derechos de uso y habitación",
+    "Capitulaciones matrimoniales",
+    "Ley aplicable al régimen económico de extranjeros",
+    "Protección de los consumidores como principio rector",
+    "Seguridad jurídica e irretroactividad",
+    "Igualdad en la aplicación de la ley"
    ],
    "CE": [
     "Cuestiones prejudiciales (penal, administrativa, civil)",
@@ -273,7 +301,21 @@
     "Prueba ilícita",
     "Medidas cautelares sin audiencia y oposición",
     "Recurso de casación",
-    "Recurso extraordinario por infracción procesal"
+    "Recurso extraordinario por infracción procesal",
+    "Reparto de asuntos",
+    "Publicidad de las actuaciones y vista a puerta cerrada",
+    "Inviolabilidad del domicilio en la ejecución y el lanzamiento",
+    "Derecho a la vivienda y función social de la propiedad",
+    "Decretos-leyes: convalidación y vigencia",
+    "Consumidor vulnerable",
+    "Protección de los consumidores como principio rector",
+    "Seguridad jurídica e irretroactividad",
+    "Igualdad en la aplicación de la ley",
+    "Cuestión de inconstitucionalidad",
+    "Responsabilidad del Estado por error judicial y funcionamiento anormal"
+   ],
+   "D 11/1995": [
+    "Servicios a domicilio: presupuesto y factura"
    ],
    "LAU": [
     "Enervación del desahucio",
@@ -303,7 +345,9 @@
     "Tácita reconducción",
     "Cargas anteriores y ocupantes del inmueble subastado",
     "Usufructo",
-    "Vivienda familiar: disposición por el cónyuge titular"
+    "Vivienda familiar: disposición por el cónyuge titular",
+    "Arrendamientos de renta antigua (anteriores a 1995)",
+    "Formalización e inscripción del arrendamiento"
    ],
    "LEC": [
     "Declinatoria",
@@ -498,7 +542,41 @@
     "Disolución y liquidación de la sociedad de gananciales",
     "Separación de bienes y compensación por trabajo doméstico",
     "Información precontractual e integración de la oferta y la publicidad",
-    "Responsabilidad por productos defectuosos"
+    "Responsabilidad por productos defectuosos",
+    "Reparto de asuntos",
+    "Policía de estrados: llamada al orden y sanciones",
+    "Publicidad de las actuaciones y vista a puerta cerrada",
+    "Reclamaciones de consumo y servicio de atención al cliente",
+    "Confidencialidad del MASC",
+    "Oferta vinculante confidencial",
+    "Acuerdo alcanzado en el MASC: eficacia y ejecución",
+    "Inviolabilidad del domicilio en la ejecución y el lanzamiento",
+    "Derecho a la vivienda y función social de la propiedad",
+    "Reconstrucción de autos",
+    "Reconocimiento judicial",
+    "Formalización e inscripción del arrendamiento",
+    "Resolución judicial en equidad ante falta de mayoría",
+    "Avalúo de los bienes embargados",
+    "Liquidación de daños, frutos y rendición de cuentas",
+    "Ejecución de títulos extranjeros",
+    "Modificación, alzamiento y caución sustitutoria",
+    "Alimentos entre parientes",
+    "Filiación: reclamación e impugnación",
+    "Administración e intervención del caudal hereditario",
+    "Saneamiento por evicción",
+    "Retracto convencional",
+    "Sociedad civil y comunidad con actividad",
+    "Medianería",
+    "Deslinde y amojonamiento",
+    "Derechos de uso y habitación",
+    "Capitulaciones matrimoniales",
+    "Ley aplicable al régimen económico de extranjeros",
+    "Consumidor vulnerable",
+    "Acciones colectivas y de cesación de consumo",
+    "Modalidades de MASC (conciliación privada, abogado colaborativo…)",
+    "Seguridad jurídica e irretroactividad",
+    "Igualdad en la aplicación de la ley",
+    "Responsabilidad del Estado por error judicial y funcionamiento anormal"
    ],
    "LO 1/2025": [
     "Requisito de procedibilidad (MASC)",
@@ -533,7 +611,16 @@
     "Guarda y custodia y régimen de visitas",
     "Liquidación del régimen económico matrimonial (procedimiento)",
     "Medidas judiciales de apoyo a personas con discapacidad",
-    "Juicio cambiario"
+    "Juicio cambiario",
+    "Reparto de asuntos",
+    "Reclamaciones de consumo y servicio de atención al cliente",
+    "Confidencialidad del MASC",
+    "Oferta vinculante confidencial",
+    "Acuerdo alcanzado en el MASC: eficacia y ejecución",
+    "Alimentos entre parientes",
+    "Filiación: reclamación e impugnación",
+    "Modalidades de MASC (conciliación privada, abogado colaborativo…)",
+    "Seguridad jurídica e irretroactividad"
    ],
    "LOE": [
     "Intervención de terceros",
@@ -553,7 +640,8 @@
     "Garantías y seguros de la edificación",
     "Recepción de la obra",
     "Concurrencia de la LOE con la responsabilidad contractual y el art. 1591 CC",
-    "Información precontractual e integración de la oferta y la publicidad"
+    "Información precontractual e integración de la oferta y la publicidad",
+    "Requisitos básicos de la edificación y documentación de la obra"
    ],
    "LOPJ": [
     "Falta de jurisdicción / competencia internacional",
@@ -593,7 +681,22 @@
     "Modificación de medidas definitivas",
     "Guarda y custodia y régimen de visitas",
     "Liquidación del régimen económico matrimonial (procedimiento)",
-    "Ley aplicable a la sucesión de extranjeros"
+    "Ley aplicable a la sucesión de extranjeros",
+    "Reparto de asuntos",
+    "Policía de estrados: llamada al orden y sanciones",
+    "Publicidad de las actuaciones y vista a puerta cerrada",
+    "Confidencialidad del MASC",
+    "Inviolabilidad del domicilio en la ejecución y el lanzamiento",
+    "Decretos-leyes: convalidación y vigencia",
+    "Reconstrucción de autos",
+    "Ejecución de títulos extranjeros",
+    "Alimentos entre parientes",
+    "Filiación: reclamación e impugnación",
+    "Ley aplicable al régimen económico de extranjeros",
+    "Protección de los consumidores como principio rector",
+    "Igualdad en la aplicación de la ley",
+    "Cuestión de inconstitucionalidad",
+    "Responsabilidad del Estado por error judicial y funcionamiento anormal"
    ],
    "LPH": [
     "Caducidad de la acción (como excepción)",
@@ -619,7 +722,8 @@
     "Servidumbres y acceso para obras e instalaciones comunes",
     "Tercería de mejor derecho",
     "Cargas anteriores y ocupantes del inmueble subastado",
-    "Inmisiones y relaciones de vecindad"
+    "Inmisiones y relaciones de vecindad",
+    "Resolución judicial en equidad ante falta de mayoría"
    ],
    "TRLGDCU": [
     "Sumisión expresa y tácita",
@@ -643,7 +747,13 @@
     "Información precontractual e integración de la oferta y la publicidad",
     "Viajes combinados y servicios de viaje vinculados",
     "Responsabilidad por productos defectuosos",
-    "Responsabilidad por servicios defectuosos"
+    "Responsabilidad por servicios defectuosos",
+    "Reclamaciones de consumo y servicio de atención al cliente",
+    "Irrenunciabilidad de los derechos del consumidor",
+    "Servicios a domicilio: presupuesto y factura",
+    "Consumidor vulnerable",
+    "Acciones colectivas y de cesación de consumo",
+    "Protección de los consumidores como principio rector"
    ]
   }
  },

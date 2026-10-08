@@ -1,0 +1,287 @@
+# Índice de conceptos de «Consulta de normas» — tanda 26 (prioridad C: 293, 294, 298, 304, 305, 306, 307 y 308; última tanda)
+# Orden de las voces: el de la lista maestra.
+# Revisor: armero. Espejo: legalize-es@aca28304d, leído con `git show aca28304d:es/…` (no el árbol de trabajo, que hoy trae erratas).
+# Todo precepto citado se ha leído en el espejo en esta pasada. Vigencia: contraste con la API de boe.es (08-10-2026).
+# Ver tanda-26-notas.md.
+
+voces:
+  - voz: "Consumidor vulnerable"
+    sinonimos: ["consumidor vulnerable", "persona consumidora vulnerable", "vulnerabilidad del consumidor", "consumidor especialmente protegido", "consumidor mayor", "consumidor con discapacidad", "consumidor en situación de desprotección", "colectivos vulnerables", "información accesible", "formato accesible", "lectura fácil", "prueba del desistimiento del vulnerable", "discriminación del consumidor vulnerable", "personas mayores en el proceso", "ajustes de procedimiento"]
+    normas_base: ["TRLGDCU", "LEC", "CE"]
+    remisiones:
+      - {norma: "TRLGDCU", articulo: "3", apartado: "2", tipo: "regula", nota: "Persona física en especial subordinación, indefensión o desprotección, por sus circunstancias, en una relación concreta de consumo."}
+      - {norma: "TRLGDCU", articulo: "3", apartado: "1", tipo: "conexa", nota: "Consumidor es la persona física que actúa con un propósito ajeno a su actividad comercial, empresarial, oficio o profesión."}
+      - {norma: "TRLGDCU", articulo: "8", apartado: "1", tipo: "regula", nota: "Los derechos básicos de los consumidores (salud, intereses económicos, indemnización, información) lo son también del vulnerable."}
+      - {norma: "TRLGDCU", articulo: "8", apartado: "1.f)", tipo: "regula", nota: "Derecho a la protección mediante procedimientos eficaces, en especial de las personas consumidoras vulnerables."}
+      - {norma: "TRLGDCU", articulo: "8", apartado: "2", tipo: "regula", nota: "Sus derechos gozan de especial atención, concretada por reglamento y normativa sectorial, evitando trámites que dificulten ejercerlos."}
+      - {norma: "TRLGDCU", articulo: "19", apartado: "6", tipo: "regula", nota: "Políticas de consumo para el vulnerable: remover sus causas y garantizar sus derechos en información, posventa y servicios básicos."}
+      - {norma: "TRLGDCU", articulo: "20", apartado: "2", tipo: "regula", nota: "La información de la oferta comercial se da al vulnerable en términos claros, comprensibles, veraces y en formato accesible."}
+      - {norma: "TRLGDCU", articulo: "60", apartado: "1", tipo: "regula", nota: "Información precontractual: al vulnerable, en formato fácilmente accesible y con la asistencia necesaria para su comprensión."}
+      - {norma: "TRLGDCU", articulo: "60", apartado: "5", tipo: "conexa", nota: "La carga de probar que se cumplieron los deberes de información precontractual incumbe al empresario."}
+      - {norma: "TRLGDCU", articulo: "72", tipo: "conexa", nota: "Corresponde al consumidor probar que ejercitó su derecho de desistimiento conforme a la ley."}
+      - {norma: "TRLGDCU", articulo: "72", apartado: "párrafo 2.º", tipo: "regula", nota: "El consumidor vulnerable prueba que ejercitó el desistimiento con una simple afirmación de parte hecha en plazo."}
+      - {norma: "TRLGDCU", articulo: "97", apartado: "1", tipo: "regula", nota: "Contratos a distancia y fuera del establecimiento: información previa en formatos adecuados, accesibles y comprensibles al vulnerable."}
+      - {norma: "TRLGDCU", articulo: "17", apartado: "3", tipo: "conexa", nota: "Información y educación: atención especial a los sectores con mayor proporción de personas consumidoras vulnerables."}
+      - {norma: "TRLGDCU", articulo: "18", apartado: "2", tipo: "conexa", nota: "Etiquetado: información veraz, suficiente y accesible sobre las características esenciales, con atención al vulnerable."}
+      - {norma: "TRLGDCU", articulo: "47", apartado: "l)", tipo: "conexa", nota: "Es infracción de consumo toda actuación discriminatoria contra personas consumidoras vulnerables, cualquiera que sea el motivo."}
+      - {norma: "TRLGDCU", articulo: "80", apartado: "2", tipo: "conexa", nota: "En las acciones individuales, la duda sobre el sentido de una cláusula se resuelve a favor del consumidor."}
+      - {norma: "LEC", articulo: "7 bis", apartado: "1", tipo: "conexa", nota: "En el proceso, ajustes para personas con discapacidad y mayores: a petición desde los 65 años; desde los 80, también de oficio."}
+      - {norma: "LEC", articulo: "7 bis", apartado: "3", tipo: "conexa", nota: "Los procesos, declarativos o de ejecución, en que es parte una persona de ochenta años o más son de tramitación preferente."}
+      - {norma: "CE", articulo: "51", apartado: "1", tipo: "conexa", nota: "Los poderes públicos garantizan la defensa de los consumidores y usuarios mediante procedimientos eficaces."}
+    no_consta_en_norma:
+      - "Cómo se prueba la condición de vulnerable y si el juez puede apreciarla de oficio en un pleito de consumo: la ley no lo dice; jurisprudencial."
+      - "Si ser vulnerable altera el control de transparencia o de abusividad de una cláusula: el TRLGDCU no lo establece; jurisprudencial."
+    afines: ["Concepto de consumidor y de empresario", "Información precontractual e integración de la oferta y la publicidad", "Desistimiento del consumidor", "Contratos a distancia y fuera del establecimiento", "Reclamaciones de consumo y servicio de atención al cliente", "Medidas judiciales de apoyo a personas con discapacidad"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Acciones colectivas y de cesación de consumo"
+    sinonimos: ["acción colectiva", "acciones colectivas de consumo", "acción de cesación", "cesación de cláusulas abusivas", "intereses colectivos", "intereses difusos", "asociación de consumidores", "legitimación de las asociaciones de consumidores", "grupo de afectados", "llamamiento a los perjudicados", "extensión de efectos de la sentencia", "acción de clase", "acción de representación", "entidad habilitada", "macropleito de consumo", "multa por día de retraso en la cesación"]
+    normas_base: ["TRLGDCU", "LEC"]
+    remisiones:
+      - {norma: "TRLGDCU", articulo: "53", tipo: "regula", nota: "La cesación condena a cesar en la conducta y prohíbe reiterarla; cabe frente a conducta ya finalizada si hay indicios de reiteración."}
+      - {norma: "TRLGDCU", articulo: "53", apartado: "párrafo 3.º", tipo: "regula", nota: "Se le acumulan nulidad, resolución, restitución de lo cobrado e indemnización; conoce de ellas el mismo juzgado de la cesación."}
+      - {norma: "TRLGDCU", articulo: "54", apartado: "1", tipo: "regula", nota: "Abusivas, distancia, fuera de establecimiento, garantías y viajes: INC, entes autonómicos y locales, asociaciones, Fiscal y entidades UE."}
+      - {norma: "TRLGDCU", articulo: "54", apartado: "2", tipo: "conexa", nota: "Todas esas entidades pueden personarse en los procesos de cesación promovidos por otra cualquiera de ellas."}
+      - {norma: "TRLGDCU", articulo: "54", apartado: "3", tipo: "regula", nota: "Demás conductas lesivas de intereses colectivos o difusos: legitimación del art. 11.2 y 3 LEC, más entes públicos de consumo y Fiscal."}
+      - {norma: "TRLGDCU", articulo: "56", tipo: "regula", nota: "Las acciones de cesación de este título son imprescriptibles, salvo lo previsto para las condiciones generales inscritas."}
+      - {norma: "TRLGDCU", articulo: "24", apartado: "1", tipo: "conexa", nota: "Solo las asociaciones de consumidores que cumplen la ley representan los intereses generales; las demás, solo a sus asociados."}
+      - {norma: "TRLGDCU", articulo: "24", apartado: "2", tipo: "conexa", nota: "Son representativas, a efectos del art. 11.3 LEC, las que forman parte del Consejo de Consumidores y Usuarios."}
+      - {norma: "LEC", articulo: "11", apartado: "1", tipo: "regula", nota: "Las asociaciones de consumidores defienden en juicio a sus asociados, a la asociación y los intereses generales, sin excluir al perjudicado."}
+      - {norma: "LEC", articulo: "11", apartado: "2", tipo: "regula", nota: "Afectados determinados o fácilmente determinables: legitimación de asociaciones, entidades de defensa y los propios grupos de afectados."}
+      - {norma: "LEC", articulo: "11", apartado: "3", tipo: "regula", nota: "Afectados indeterminados o de difícil determinación: solo las asociaciones de consumidores que sean representativas."}
+      - {norma: "LEC", articulo: "11", apartado: "5", tipo: "conexa", nota: "El Ministerio Fiscal está legitimado para cualquier acción en defensa de los intereses de los consumidores y usuarios."}
+      - {norma: "LEC", articulo: "6", apartado: "1.7.º", tipo: "regula", nota: "Tiene capacidad para ser parte el grupo de afectados determinados o determinables; para demandar, constituido con la mayoría."}
+      - {norma: "LEC", articulo: "6", apartado: "1.8.º", tipo: "conexa", nota: "También las entidades habilitadas por el Derecho de la Unión para la cesación en defensa de intereses colectivos y difusos."}
+      - {norma: "LEC", articulo: "7", apartado: "7", tipo: "conexa", nota: "Por el grupo de afectados comparecen quienes, de hecho o por sus pactos, actúan en su nombre frente a terceros."}
+      - {norma: "LEC", articulo: "15", apartado: "1", tipo: "regula", nota: "Se llama al proceso a los perjudicados mediante publicación de la admisión en medios; el Fiscal es parte si el interés social lo justifica."}
+      - {norma: "LEC", articulo: "15", apartado: "2", tipo: "regula", nota: "Afectados determinados: comunicación previa a todos; el consumidor interviene en cualquier momento, sin actos ya precluidos."}
+      - {norma: "LEC", articulo: "15", apartado: "3", tipo: "regula", nota: "Afectados indeterminados: suspensión de hasta dos meses; después no cabe personarse, salvo los arts. 221 y 519."}
+      - {norma: "LEC", articulo: "15", apartado: "4", tipo: "regula", nota: "El llamamiento no se aplica a los procesos de cesación en defensa de intereses colectivos y difusos."}
+      - {norma: "LEC", articulo: "13", apartado: "1", tipo: "conexa", nota: "Cualquier consumidor o usuario puede intervenir en los procesos instados por las entidades de defensa de los consumidores."}
+      - {norma: "LEC", articulo: "256", apartado: "1.6.º", tipo: "regula", nota: "Diligencia preliminar para concretar a los integrantes del grupo cuando, sin estar determinados, sean fácilmente determinables."}
+      - {norma: "LEC", articulo: "52", apartado: "1.16.º", tipo: "regula", nota: "Cesación colectiva: tribunal del establecimiento del demandado; si no lo hay, el de su domicilio; sin domicilio en España, el del actor."}
+      - {norma: "LEC", articulo: "52", apartado: "1.14.º", tipo: "conexa", nota: "Condiciones generales: acción individual en el domicilio del demandante; la declarativa, de cesación o retractación, donde el demandado."}
+      - {norma: "LEC", articulo: "250", apartado: "1.12.º", tipo: "regula", nota: "Va al juicio verbal, cualquiera que sea la cuantía, la acción de cesación en defensa de intereses colectivos y difusos."}
+      - {norma: "LEC", articulo: "249", apartado: "1.5.º", tipo: "regula", nota: "Van al juicio ordinario las acciones colectivas relativas a condiciones generales de la contratación previstas en su legislación."}
+      - {norma: "LEC", articulo: "76", apartado: "2.1.º", tipo: "conexa", nota: "Procede acumular procesos por intereses colectivos o difusos de consumidores si no pudo evitarse con acumulación o intervención."}
+      - {norma: "LEC", articulo: "221", apartado: "1", tipo: "regula", nota: "La sentencia de condena fija los beneficiados o los datos para serlo, y dice si la declaración de ilicitud alcanza a quien no fue parte."}
+      - {norma: "LEC", articulo: "221", apartado: "2", tipo: "regula", nota: "En la cesación estimada cabe publicar la sentencia, total o parcialmente, o una declaración rectificadora a costa del demandado."}
+      - {norma: "LEC", articulo: "222", apartado: "3", tipo: "regula", nota: "La cosa juzgada alcanza a los titulares no litigantes de los derechos que fundan la legitimación de los arts. 11 y 11 bis."}
+      - {norma: "LEC", articulo: "519", apartado: "1", tipo: "regula", nota: "Sin beneficiados identificados en la sentencia, el tribunal de la ejecución reconoce por auto a los solicitantes, que luego ejecutan."}
+      - {norma: "LEC", articulo: "519", apartado: "2", tipo: "conexa", nota: "Extensión a otros de una sentencia firme de acción individual sobre condiciones generales, recurrida en apelación, en un año."}
+      - {norma: "LEC", articulo: "711", apartado: "2", tipo: "regula", nota: "La sentencia de cesación colectiva impone multa de 600 a 60.000 euros por día de retraso en cumplirla, ingresada en el Tesoro."}
+      - {norma: "LEC", articulo: "728", apartado: "3", tipo: "conexa", nota: "En la cesación colectiva el tribunal puede dispensar de caución al solicitante de la medida cautelar (último párrafo)."}
+    fuera_de_la_herramienta:
+      - "Directiva (UE) 2020/1828, de acciones de representación: aplicable desde el 25-06-2023; a 08-10-2026 ni la LEC ni el TRLGDCU de boe.es la incorporan."
+      - "Ley 7/1998, de Condiciones Generales de la Contratación: acciones colectivas de cesación, retractación y declarativa sobre condiciones generales."
+    no_consta_en_norma:
+      - "Si la acción de cesación colectiva exige el intento previo de MASC del art. 5 LO 1/2025, que no la exceptúa: la ley no lo aclara; jurisprudencial."
+      - "Si el consumidor que no se personó queda vinculado por la sentencia desestimatoria de la acción colectiva (art. 222.3 LEC): jurisprudencial."
+    afines: ["Cláusulas abusivas: concepto, nulidad e integración", "Condiciones generales en el verbal y procedimiento testigo", "Falta de legitimación", "Cosa juzgada", "Diligencias preliminares", "Acumulación de procesos", "Competencia territorial y fueros imperativos"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Modalidades de MASC (conciliación privada, abogado colaborativo…)"
+    sinonimos: ["medios adecuados de solución de controversias", "MASC", "modalidades de MASC", "conciliación privada", "persona conciliadora", "conciliación ante notario", "conciliación ante el registrador", "conciliación ante el letrado de la Administración de Justicia", "conciliación ante el juez de paz", "mediación", "opinión de persona experta independiente", "dictamen de experto independiente", "derecho colaborativo", "abogado colaborativo", "negociación directa entre abogados", "derivación judicial a mediación", "tercero neutral"]
+    normas_base: ["LO 1/2025", "LEC"]
+    remisiones:
+      - {norma: "LO 1/2025", articulo: "2", tipo: "regula", nota: "MASC es toda actividad negociadora reconocida en una ley a la que las partes acuden de buena fe, solas o con un tercero neutral."}
+      - {norma: "LO 1/2025", articulo: "5", apartado: "1", tipo: "regula", nota: "Cumplen el requisito la mediación, la conciliación, la opinión de experto, la oferta vinculante, la negociación directa y el colaborativo."}
+      - {norma: "LO 1/2025", articulo: "14", apartado: "1", tipo: "regula", nota: "Valen las modalidades de este capítulo, la mediación de la Ley 5/2012 y cualquier otro MASC legal, incluida la negociación directa."}
+      - {norma: "LO 1/2025", articulo: "14", apartado: "2", tipo: "regula", nota: "La mediación se rige por la Ley 5/2012 y, en su caso, por la autonómica, y sirve para cumplir el requisito de procedibilidad."}
+      - {norma: "LO 1/2025", articulo: "14", apartado: "3", tipo: "regula", nota: "La conciliación ante notario se rige por la Ley del Notariado (capítulo VII del título VII)."}
+      - {norma: "LO 1/2025", articulo: "14", apartado: "4", tipo: "regula", nota: "La conciliación ante el registrador se rige por el título IV bis de la Ley Hipotecaria."}
+      - {norma: "LO 1/2025", articulo: "14", apartado: "5", tipo: "regula", nota: "La conciliación ante el letrado de la Administración de Justicia se rige por el título IX de la Ley 15/2015, de Jurisdicción Voluntaria."}
+      - {norma: "LO 1/2025", articulo: "14", apartado: "6", tipo: "regula", nota: "La conciliación ante el juez de paz se rige por el art. 47 LEC y el título IX de la Ley 15/2015."}
+      - {norma: "LO 1/2025", articulo: "15", apartado: "1", tipo: "regula", nota: "Quien vaya a demandar puede encargar a un conciliador con conocimientos técnicos o jurídicos que gestione la negociación."}
+      - {norma: "LO 1/2025", articulo: "15", apartado: "2", tipo: "regula", nota: "Conciliador: colegiado ejerciente (abogacía, procura, notariado…) o mediador inscrito; imparcial y obligado a confidencialidad."}
+      - {norma: "LO 1/2025", articulo: "15", apartado: "3", tipo: "conexa", nota: "El encargo, de una o de ambas partes, expresa la discrepancia, la otra parte y el teléfono y correo para las citaciones."}
+      - {norma: "LO 1/2025", articulo: "16", tipo: "regula", nota: "El conciliador informa, cita, levanta acta de inicio y final, propone soluciones y, sin acuerdo, certifica el intento."}
+      - {norma: "LO 1/2025", articulo: "18", apartado: "1", tipo: "regula", nota: "Las partes designan de mutuo acuerdo un experto independiente que emite una opinión no vinculante sobre la materia del conflicto."}
+      - {norma: "LO 1/2025", articulo: "18", apartado: "3", tipo: "conexa", nota: "Emitido el dictamen, las partes tienen diez días hábiles para hacer observaciones o propuestas a fin de aceptarlo."}
+      - {norma: "LO 1/2025", articulo: "18", apartado: "5", tipo: "regula", nota: "Si alguna parte no acepta el dictamen, el experto certifica el intento a efectos del requisito de procedibilidad."}
+      - {norma: "LO 1/2025", articulo: "19", apartado: "1", tipo: "regula", nota: "Derecho colaborativo: cada parte con abogado acreditado en la materia, con terceros neutrales si procede, busca una solución pactada."}
+      - {norma: "LO 1/2025", articulo: "19", apartado: "2", tipo: "regula", nota: "Principios del colaborativo, entre ellos la renuncia de sus abogados a litigar el asunto si no hay acuerdo."}
+      - {norma: "LO 1/2025", articulo: "19", apartado: "3", tipo: "conexa", nota: "Los abogados del proceso colaborativo levantan acta final con partes, sesiones, acuerdos y cuestiones sin acuerdo."}
+      - {norma: "LO 1/2025", articulo: "17", apartado: "1", tipo: "conexa", nota: "La oferta vinculante confidencial obliga al oferente desde que la otra parte la acepta expresamente, de forma irrevocable."}
+      - {norma: "LO 1/2025", articulo: "6", apartado: "2", tipo: "conexa", nota: "El abogado solo es preceptivo en la oferta vinculante, salvo cuantía de hasta 2.000 euros o ley sectorial que no lo exija."}
+      - {norma: "LO 1/2025", articulo: "7", apartado: "2", tipo: "conexa", nota: "Interrupción de la prescripción según el tercero: mediador (Ley 5/2012), conciliador, experto independiente o letrado de la AJ."}
+      - {norma: "LO 1/2025", articulo: "10", apartado: "3", tipo: "conexa", nota: "Con tercero neutral, este expide a petición de parte el documento que acredita el intento, la buena fe y, en su caso, la incomparecencia."}
+      - {norma: "LO 1/2025", articulo: "11", apartado: "2", tipo: "conexa", nota: "Si la parte invitada rechaza al tercero neutral propuesto unilateralmente, sus honorarios hasta entonces los paga quien lo propuso."}
+      - {norma: "LO 1/2025", articulo: "da7", tipo: "conexa", nota: "Consumo: basta la reclamación previa a la empresa sin respuesta en plazo o no satisfactoria, sin perjuicio de otros MASC."}
+      - {norma: "LEC", articulo: "19", apartado: "5", tipo: "conexa", nota: "El juez o el LAJ pueden proponer, por resolución motivada, derivar el litigio a un MASC; requiere la conformidad de las partes."}
+      - {norma: "LEC", articulo: "da12", tipo: "conexa", nota: "Las referencias de la LEC a la mediación se entienden hechas también a los demás MASC de la LO 1/2025."}
+      - {norma: "LEC", articulo: "47", apartado: "2", tipo: "conexa", nota: "El juez de paz conoce de los expedientes de conciliación civil de cuantía inferior a 10.000 euros (título IX de la Ley 15/2015)."}
+    fuera_de_la_herramienta:
+      - "Ley 5/2012, de mediación en asuntos civiles y mercantiles (BOE-A-2012-9112): régimen de la mediación, a la que remite el art. 14.2 LO 1/2025."
+      - "Ley 15/2015, de Jurisdicción Voluntaria, título IX; Ley del Notariado, cap. VII del tít. VII; Ley Hipotecaria, tít. IV bis: conciliaciones del art. 14."
+    no_consta_en_norma:
+      - "Si la conciliación privada o el colaborativo valen como MASC cuando el tercero o los abogados no cumplen los requisitos de los arts. 15 o 19: jurisprudencial."
+      - "Qué abogado se considera «acreditado en Derecho colaborativo» (art. 19.1 LO 1/2025): la ley no fija quién acredita; no consta en norma."
+    afines: ["Requisito de procedibilidad (MASC)", "Confidencialidad del MASC", "Oferta vinculante confidencial", "Acuerdo alcanzado en el MASC: eficacia y ejecución", "Costas y MASC", "Interrupción de la prescripción"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Protección de los consumidores como principio rector"
+    sinonimos: ["protección de los consumidores", "defensa de los consumidores y usuarios", "artículo 51 de la Constitución", "principio rector de la política social y económica", "principio informador del ordenamiento", "principio pro consumidor", "in dubio pro consumidor", "derechos básicos del consumidor", "interpretación favorable al consumidor", "eficacia de los principios rectores", "alegación de los principios rectores ante los tribunales", "fomento de las asociaciones de consumidores", "libertad de empresa y consumo"]
+    normas_base: ["CE", "TRLGDCU", "LOPJ", "CC"]
+    remisiones:
+      - {norma: "CE", articulo: "51", apartado: "1", tipo: "regula", nota: "Los poderes públicos garantizan la defensa de los consumidores: seguridad, salud e intereses económicos, con procedimientos eficaces."}
+      - {norma: "CE", articulo: "51", apartado: "2", tipo: "regula", nota: "Promueven su información y educación, fomentan sus organizaciones y las oyen en lo que pueda afectarles."}
+      - {norma: "CE", articulo: "51", apartado: "3", tipo: "conexa", nota: "En ese marco, la ley regula el comercio interior y el régimen de autorización de productos comerciales."}
+      - {norma: "CE", articulo: "53", apartado: "3", tipo: "regula", nota: "Los principios rectores informan legislación, práctica judicial y actuación pública; se alegan ante los jueces según sus leyes."}
+      - {norma: "CE", articulo: "9", apartado: "2", tipo: "conexa", nota: "Los poderes públicos promueven que la libertad y la igualdad sean reales y efectivas y remueven los obstáculos que lo impidan."}
+      - {norma: "CE", articulo: "38", tipo: "conexa", nota: "Se reconoce la libertad de empresa en el marco de la economía de mercado; los poderes públicos la garantizan y protegen."}
+      - {norma: "TRLGDCU", articulo: "1", tipo: "regula", nota: "El TRLGDCU desarrolla el art. 51 CE, principio informador del ordenamiento (art. 53.3), en el marco de los arts. 38, 128 y 139 CE."}
+      - {norma: "TRLGDCU", articulo: "2", tipo: "conexa", nota: "La norma se aplica a las relaciones entre consumidores o usuarios y empresarios."}
+      - {norma: "TRLGDCU", articulo: "8", apartado: "1", tipo: "regula", nota: "Derechos básicos: salud y seguridad, intereses económicos, indemnización, información, representación y procedimientos eficaces."}
+      - {norma: "TRLGDCU", articulo: "10", tipo: "regula", nota: "Es nula la renuncia previa a los derechos que reconoce la norma, y nulos los actos en fraude de ley (art. 6 CC)."}
+      - {norma: "TRLGDCU", articulo: "19", apartado: "1", tipo: "conexa", nota: "Los intereses económicos del consumidor deben respetarse; si el empresario no colabora ante cláusula ya anulada, interés legal más 50 %."}
+      - {norma: "TRLGDCU", articulo: "80", apartado: "2", tipo: "conexa", nota: "En las acciones individuales, la duda sobre el sentido de una cláusula se resuelve a favor del consumidor."}
+      - {norma: "LOPJ", articulo: "7", apartado: "3", tipo: "conexa", nota: "Los jueces protegen intereses individuales y colectivos; para estos se legitima a asociaciones y grupos afectados o habilitados."}
+      - {norma: "LOPJ", articulo: "4 bis", apartado: "1", tipo: "conexa", nota: "Los jueces aplican el Derecho de la Unión Europea de conformidad con la jurisprudencia del Tribunal de Justicia."}
+      - {norma: "CC", articulo: "3", apartado: "1", tipo: "conexa", nota: "Las normas se interpretan por su sentido, contexto, antecedentes y realidad social, atendiendo a su espíritu y finalidad."}
+    fuera_de_la_herramienta:
+      - "Directiva 93/13/CEE del Consejo, sobre cláusulas abusivas en los contratos con consumidores (DO L 95 de 21-04-1993), y su interpretación por el TJUE."
+    no_consta_en_norma:
+      - "Si el art. 51 CE permite al juez dar al consumidor una protección que no recoge ley alguna (el art. 53.3 CE remite a las leyes): jurisprudencial."
+      - "Alcance del principio pro consumidor fuera de la interpretación de cláusulas del art. 80.2 TRLGDCU: jurisprudencial."
+    afines: ["Concepto de consumidor y de empresario", "Irrenunciabilidad de los derechos del consumidor", "Cláusulas abusivas: concepto, nulidad e integración", "Control de oficio de cláusulas abusivas en el proceso", "Consumidor vulnerable", "Acciones colectivas y de cesación de consumo"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Seguridad jurídica e irretroactividad"
+    sinonimos: ["seguridad jurídica", "irretroactividad", "retroactividad de las leyes", "ley aplicable en el tiempo", "derecho transitorio", "entrada en vigor de las leyes", "vacatio legis", "derogación de las leyes", "derogación tácita", "jerarquía normativa", "publicidad de las normas", "interdicción de la arbitrariedad", "confianza legítima", "derechos adquiridos", "tempus regit actum", "ley procesal en el tiempo", "ignorancia de la ley"]
+    normas_base: ["CE", "CC", "LEC", "LO 1/2025"]
+    remisiones:
+      - {norma: "CE", articulo: "9", apartado: "3", tipo: "regula", nota: "Garantiza legalidad, jerarquía y publicidad normativa, seguridad jurídica e irretroactividad de lo sancionador o restrictivo de derechos."}
+      - {norma: "CE", articulo: "9", apartado: "1", tipo: "conexa", nota: "Los ciudadanos y los poderes públicos están sujetos a la Constitución y al resto del ordenamiento jurídico."}
+      - {norma: "CE", articulo: "25", apartado: "1", tipo: "conexa", nota: "Nadie puede ser condenado o sancionado por lo que no era delito o infracción según la legislación vigente al producirse."}
+      - {norma: "CC", articulo: "2", apartado: "3", tipo: "regula", nota: "Las leyes no tienen efecto retroactivo si no disponen lo contrario."}
+      - {norma: "CC", articulo: "2", apartado: "1", tipo: "regula", nota: "Las leyes entran en vigor a los veinte días de su completa publicación en el BOE, si en ellas no se dispone otra cosa."}
+      - {norma: "CC", articulo: "2", apartado: "2", tipo: "regula", nota: "Las leyes solo se derogan por otras posteriores; derogar una ley no hace revivir las que esta había derogado."}
+      - {norma: "CC", articulo: "1", apartado: "2", tipo: "conexa", nota: "Carecen de validez las disposiciones que contradigan otra de rango superior."}
+      - {norma: "CC", articulo: "1", apartado: "5", tipo: "conexa", nota: "Los tratados no se aplican directamente en España hasta su publicación íntegra en el BOE."}
+      - {norma: "CC", articulo: "4", apartado: "2", tipo: "conexa", nota: "Las leyes penales, excepcionales y temporales no se aplican a supuestos ni momentos distintos de los previstos en ellas."}
+      - {norma: "CC", articulo: "6", apartado: "1", tipo: "conexa", nota: "La ignorancia de las leyes no excusa de su cumplimiento; el error de derecho solo produce los efectos que la ley determine."}
+      - {norma: "LEC", articulo: "2", tipo: "regula", nota: "Salvo norma transitoria, los asuntos se sustancian con las normas procesales vigentes, que nunca serán retroactivas."}
+      - {norma: "LO 1/2025", articulo: "dt9", apartado: "1", tipo: "conexa", nota: "Las previsiones de la LO 1/2025 solo se aplican a los procedimientos incoados tras su entrada en vigor."}
+      - {norma: "CE", articulo: "161", apartado: "1.a)", tipo: "conexa", nota: "Declarar inconstitucional una ley afecta a la jurisprudencia que la interpretó, pero las sentencias recaídas conservan la cosa juzgada."}
+      - {norma: "CE", articulo: "164", apartado: "1", tipo: "conexa", nota: "Las sentencias del TC son cosa juzgada desde el día siguiente a su publicación; las de inconstitucionalidad valen frente a todos."}
+      - {norma: "CE", articulo: "86", apartado: "1", tipo: "conexa", nota: "El decreto-ley es disposición legislativa provisional, solo ante extraordinaria y urgente necesidad y con límites de materia."}
+    fuera_de_la_herramienta:
+      - "CC, disposiciones transitorias (derechos nacidos bajo la legislación anterior): la herramienta no las separa; aparecen dentro del bloque del art. 1976."
+      - "LOTC (BOE-A-1979-23709), art. 40.1: la sentencia de inconstitucionalidad no permite revisar procesos fenecidos con cosa juzgada, salvo sancionadores."
+    no_consta_en_norma:
+      - "Grados de retroactividad (máxima, media, mínima) y protección de la confianza legítima: construcción jurisprudencial."
+      - "Qué son «disposiciones restrictivas de derechos individuales» a efectos de su irretroactividad (art. 9.3 CE): jurisprudencial."
+    afines: ["Decretos-leyes: convalidación y vigencia", "Cómputo civil de plazos", "Fraude de ley y actos contrarios a normas imperativas", "Cuestión de inconstitucionalidad", "Cosa juzgada", "Igualdad en la aplicación de la ley"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Igualdad en la aplicación de la ley"
+    sinonimos: ["igualdad en la aplicación de la ley", "igualdad ante la ley", "cambio de criterio judicial", "apartamiento del propio precedente", "precedente judicial", "jurisprudencia contradictoria", "unificación de criterios", "pleno no jurisdiccional", "acuerdo de unificación de criterios", "interés casacional", "doctrina jurisprudencial", "discriminación", "término de comparación", "valor de la jurisprudencia", "independencia judicial y precedente"]
+    normas_base: ["CE", "LOPJ", "LEC", "CC"]
+    remisiones:
+      - {norma: "CE", articulo: "14", tipo: "regula", nota: "Los españoles son iguales ante la ley, sin discriminación por nacimiento, raza, sexo, religión, opinión u otra circunstancia."}
+      - {norma: "CE", articulo: "53", apartado: "2", tipo: "regula", nota: "El art. 14 se tutela ante los tribunales ordinarios por un procedimiento preferente y sumario y, en su caso, en amparo."}
+      - {norma: "CE", articulo: "24", apartado: "1", tipo: "conexa", nota: "Todos tienen derecho a la tutela efectiva de jueces y tribunales, sin que en ningún caso pueda producirse indefensión."}
+      - {norma: "CE", articulo: "120", apartado: "3", tipo: "conexa", nota: "Las sentencias serán siempre motivadas y se pronunciarán en audiencia pública."}
+      - {norma: "CE", articulo: "117", apartado: "1", tipo: "conexa", nota: "Los jueces son independientes, inamovibles, responsables y sometidos únicamente al imperio de la ley."}
+      - {norma: "CE", articulo: "123", apartado: "1", tipo: "conexa", nota: "El Tribunal Supremo es el órgano jurisdiccional superior en todos los órdenes, salvo en materia de garantías constitucionales."}
+      - {norma: "LOPJ", articulo: "264", apartado: "1", tipo: "regula", nota: "Secciones de una Sala con criterios dispares en asuntos sustancialmente iguales: Pleno jurisdiccional para unificar el criterio."}
+      - {norma: "LOPJ", articulo: "264", apartado: "3", tipo: "regula", nota: "Las Secciones conservan su independencia, pero deben motivar las razones por las que se apartan del criterio acordado."}
+      - {norma: "LOPJ", articulo: "264", apartado: "4", tipo: "conexa", nota: "La Junta de Jueces de Sección del Tribunal de Instancia puede reunirse a examinar criterios dispares en asuntos iguales."}
+      - {norma: "LOPJ", articulo: "12", apartado: "2", tipo: "conexa", nota: "Solo por vía de recurso puede un tribunal corregir la interpretación del ordenamiento hecha por sus inferiores."}
+      - {norma: "LOPJ", articulo: "12", apartado: "3", tipo: "conexa", nota: "Ni tribunales, ni órganos de gobierno, ni el CGPJ pueden dar instrucciones a los inferiores sobre cómo interpretar el ordenamiento."}
+      - {norma: "LOPJ", articulo: "5", apartado: "1", tipo: "conexa", nota: "Los jueces aplican las leyes según la Constitución y conforme a la interpretación del Tribunal Constitucional."}
+      - {norma: "LOPJ", articulo: "7", apartado: "2", tipo: "conexa", nota: "Los derechos del art. 53.2 CE se reconocen según su contenido constitucional; los jueces no pueden restringirlo ni inaplicarlo."}
+      - {norma: "LEC", articulo: "477", apartado: "3", tipo: "regula", nota: "Interés casacional: oposición a doctrina del TS, jurisprudencia contradictoria de Audiencias o falta de doctrina del TS."}
+      - {norma: "LEC", articulo: "477", apartado: "4", tipo: "conexa", nota: "Interés casacional notorio si la cuestión es de interés general para la interpretación uniforme de la ley."}
+      - {norma: "CC", articulo: "1", apartado: "6", tipo: "regula", nota: "La jurisprudencia complementa el ordenamiento con la doctrina que, de modo reiterado, establece el Tribunal Supremo."}
+      - {norma: "CC", articulo: "1", apartado: "7", tipo: "conexa", nota: "Los jueces deben resolver en todo caso los asuntos de que conozcan, ateniéndose al sistema de fuentes."}
+    no_consta_en_norma:
+      - "Requisitos de la desigualdad en la aplicación judicial (mismo órgano, término de comparación, cambio de criterio inmotivado): jurisprudencial."
+      - "Si vincula a los juzgados el acuerdo de unificación de criterios de una Audiencia (el art. 264 LOPJ solo obliga a motivar a las Secciones): jurisprudencial."
+    afines: ["Recurso de casación", "Tutela judicial efectiva e indefensión", "Congruencia y motivación de la sentencia", "Seguridad jurídica e irretroactividad", "Cuestión de inconstitucionalidad", "Nulidad de actuaciones"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Cuestión de inconstitucionalidad"
+    sinonimos: ["cuestión de inconstitucionalidad", "plantear la cuestión de inconstitucionalidad", "duda de constitucionalidad de una ley", "juicio de relevancia", "juicio de aplicabilidad", "audiencia a las partes sobre la cuestión", "inconstitucionalidad de la ley aplicable", "auto de planteamiento", "suspensión del proceso por cuestión de inconstitucionalidad", "efectos de la sentencia del Tribunal Constitucional", "interpretación conforme a la Constitución", "inaplicación de reglamentos ilegales", "ley preconstitucional", "cuestión prejudicial europea", "Tribunal Constitucional"]
+    normas_base: ["CE", "LOPJ"]
+    remisiones:
+      - {norma: "CE", articulo: "163", tipo: "regula", nota: "Si el juez duda de la constitucionalidad de una ley aplicable de la que depende el fallo, plantea la cuestión al TC; nunca es suspensiva."}
+      - {norma: "LOPJ", articulo: "5", apartado: "2", tipo: "regula", nota: "El órgano judicial que duda de una ley aplicable de cuya validez depende el fallo plantea la cuestión según la Ley Orgánica del TC."}
+      - {norma: "LOPJ", articulo: "5", apartado: "3", tipo: "regula", nota: "Solo procede plantearla cuando por vía interpretativa no sea posible acomodar la norma al ordenamiento constitucional."}
+      - {norma: "LOPJ", articulo: "5", apartado: "1", tipo: "regula", nota: "La Constitución vincula a los jueces, que interpretan las leyes según ella y la doctrina del Tribunal Constitucional."}
+      - {norma: "LOPJ", articulo: "6", tipo: "regula", nota: "Los jueces no aplican los reglamentos ni disposiciones contrarios a la Constitución, a la ley o al principio de jerarquía normativa."}
+      - {norma: "CE", articulo: "164", apartado: "1", tipo: "regula", nota: "Las sentencias del TC son cosa juzgada desde el día siguiente a su publicación; las de inconstitucionalidad valen frente a todos."}
+      - {norma: "CE", articulo: "164", apartado: "2", tipo: "conexa", nota: "Salvo que el fallo disponga otra cosa, la ley sigue vigente en la parte no afectada por la inconstitucionalidad."}
+      - {norma: "CE", articulo: "161", apartado: "1.a)", tipo: "conexa", nota: "Declarar inconstitucional una ley afecta a la jurisprudencia que la interpretó, pero las sentencias recaídas conservan la cosa juzgada."}
+      - {norma: "CE", articulo: "165", tipo: "conexa", nota: "Una ley orgánica regula el funcionamiento del Tribunal Constitucional y el procedimiento ante él."}
+      - {norma: "CE", articulo: "9", apartado: "1", tipo: "conexa", nota: "Los ciudadanos y los poderes públicos están sujetos a la Constitución y al resto del ordenamiento jurídico."}
+      - {norma: "CE", articulo: "ddu", apartado: "3", tipo: "conexa", nota: "Quedan derogadas cuantas disposiciones se opongan a lo establecido en la Constitución."}
+      - {norma: "LOPJ", articulo: "5", apartado: "4", tipo: "conexa", nota: "Para fundar la casación basta la infracción de precepto constitucional; la decide siempre el Tribunal Supremo."}
+      - {norma: "LOPJ", articulo: "4 bis", apartado: "2", tipo: "conexa", nota: "La cuestión prejudicial europea se plantea según la jurisprudencia del TJUE, siempre por auto y previa audiencia de las partes."}
+    fuera_de_la_herramienta:
+      - "LOTC (BOE-A-1979-23709), art. 35.1 y 2: se plantea concluso el proceso y en plazo de sentencia, oídos partes y Fiscal 10 días; auto irrecurrible."
+      - "LOTC, art. 35.3: el proceso queda suspendido provisionalmente hasta la admisión y, admitida, hasta que el TC resuelva."
+      - "LOTC, arts. 37.2, 38.3 y 40.1: personación de las partes en 15 días; vinculación del juez a la sentencia; no se revisan procesos fenecidos."
+    no_consta_en_norma:
+      - "Si el juez puede inaplicar por sí una ley preconstitucional contraria a la Constitución (disp. derogatoria 3 CE) sin plantear la cuestión: jurisprudencial."
+      - "Cómo casa que la cuestión «en ningún caso» sea suspensiva (art. 163 CE) con la suspensión del proceso del art. 35.3 LOTC: doctrina del TC."
+    afines: ["Decretos-leyes: convalidación y vigencia", "Suspensión del proceso", "Cuestiones prejudiciales (penal, administrativa, civil)", "Tutela judicial efectiva e indefensión", "Seguridad jurídica e irretroactividad", "Igualdad en la aplicación de la ley"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Responsabilidad del Estado por error judicial y funcionamiento anormal"
+    sinonimos: ["error judicial", "funcionamiento anormal de la Administración de Justicia", "responsabilidad patrimonial del Estado-juez", "indemnización por error judicial", "declaración de error judicial", "dilaciones indebidas", "retraso judicial", "prisión preventiva indebida", "responsabilidad de jueces y magistrados", "acción de repetición contra el juez", "reclamación al Ministerio de Justicia", "plazo de tres meses del error judicial", "plazo de un año de la indemnización", "daño efectivo y evaluable", "responsabilidad civil del juez"]
+    normas_base: ["CE", "LOPJ", "LEC"]
+    remisiones:
+      - {norma: "CE", articulo: "121", tipo: "regula", nota: "Los daños por error judicial o por funcionamiento anormal de la Administración de Justicia se indemnizan a cargo del Estado."}
+      - {norma: "LOPJ", articulo: "292", apartado: "1", tipo: "regula", nota: "Error judicial o funcionamiento anormal: indemnización a cargo del Estado a todos los perjudicados, salvo fuerza mayor."}
+      - {norma: "LOPJ", articulo: "292", apartado: "2", tipo: "regula", nota: "El daño ha de ser efectivo, evaluable económicamente e individualizado respecto de una persona o grupo de personas."}
+      - {norma: "LOPJ", articulo: "292", apartado: "3", tipo: "regula", nota: "La mera revocación o anulación de una resolución judicial no da por sí sola derecho a indemnización."}
+      - {norma: "LOPJ", articulo: "293", apartado: "1", tipo: "regula", nota: "La reclamación por error exige una decisión judicial previa que lo reconozca, que puede ser la sentencia de revisión."}
+      - {norma: "LOPJ", articulo: "293", apartado: "1.a)", tipo: "regula", nota: "La acción para que se declare el error ha de instarse inexcusablemente en tres meses desde que pudo ejercitarse."}
+      - {norma: "LOPJ", articulo: "293", apartado: "1.b)", tipo: "regula", nota: "Se pide ante la Sala del Tribunal Supremo del mismo orden jurisdiccional que el órgano al que se imputa el error."}
+      - {norma: "LOPJ", articulo: "293", apartado: "1.c)", tipo: "conexa", nota: "Se sigue el procedimiento del recurso de revisión civil; son parte siempre el Ministerio Fiscal y la Administración del Estado."}
+      - {norma: "LOPJ", articulo: "293", apartado: "1.e)", tipo: "conexa", nota: "Si el error no se aprecia, se imponen las costas al peticionario."}
+      - {norma: "LOPJ", articulo: "293", apartado: "1.f)", tipo: "regula", nota: "No cabe declarar el error mientras no se hayan agotado los recursos previstos contra la resolución a la que se imputa."}
+      - {norma: "LOPJ", articulo: "293", apartado: "1.g)", tipo: "conexa", nota: "Pedir la declaración de error no impide ejecutar la resolución a la que se imputa."}
+      - {norma: "LOPJ", articulo: "293", apartado: "2", tipo: "regula", nota: "La indemnización se pide al Ministerio de Justicia, con recurso contencioso; prescribe al año desde que pudo ejercitarse."}
+      - {norma: "LOPJ", articulo: "294", apartado: "1", tipo: "conexa", nota: "Prisión preventiva y absolución o sobreseimiento libre; nulos por STC 85/2019 los incisos «por inexistencia…» y «por esta misma causa»."}
+      - {norma: "LOPJ", articulo: "295", tipo: "regula", nota: "No hay indemnización si el error o el funcionamiento anormal se debió a dolo o culpa del propio perjudicado."}
+      - {norma: "LOPJ", articulo: "296", apartado: "1", tipo: "regula", nota: "Los daños causados por jueces se reclaman al Estado; el perjudicado nunca puede dirigirse directamente contra el juez."}
+      - {norma: "LOPJ", articulo: "296", apartado: "2", tipo: "conexa", nota: "Si hubo dolo o culpa grave del juez, el Estado que indemnizó puede exigirle el reembolso por vía administrativa."}
+      - {norma: "CE", articulo: "24", apartado: "2", tipo: "conexa", nota: "Derecho a un proceso público sin dilaciones indebidas y con todas las garantías."}
+      - {norma: "CE", articulo: "106", apartado: "2", tipo: "conexa", nota: "Los particulares son indemnizados por toda lesión derivada del funcionamiento de los servicios públicos, salvo fuerza mayor."}
+      - {norma: "LEC", articulo: "509", tipo: "conexa", nota: "La revisión de sentencias firmes se pide a la Sala de lo Civil del TS o a la Sala de lo Civil y Penal del TSJ."}
+      - {norma: "LEC", articulo: "514", tipo: "conexa", nota: "Revisión: emplazamiento por veinte días, vista según los arts. 440 y siguientes e informe del Fiscal antes de la sentencia."}
+    fuera_de_la_herramienta:
+      - "Ley 40/2015 (BOE-A-2015-10566), art. 32.7: la responsabilidad por el funcionamiento de la Administración de Justicia se rige por la LOPJ."
+      - "Ley 39/2015 (BOE-A-2015-10565), art. 67, y Ley 40/2015, arts. 32 y 36: régimen general de responsabilidad patrimonial al que remite el art. 293.2 LOPJ."
+    no_consta_en_norma:
+      - "Cuándo hay error judicial indemnizable (resolución manifiestamente errónea, no mera discrepancia interpretativa): jurisprudencial."
+      - "Si las dilaciones indebidas son funcionamiento anormal y cómo se cuantifica el daño: la ley no lo fija; jurisprudencial."
+    afines: ["Revisión de sentencias firmes", "Responsabilidad extracontractual", "Tutela judicial efectiva e indefensión", "Nulidad de actuaciones", "Prescripción (como excepción)", "Cuestión de inconstitucionalidad"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"

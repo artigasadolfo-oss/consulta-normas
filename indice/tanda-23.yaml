@@ -1,0 +1,444 @@
+# Índice de conceptos de «Consulta de normas» — tanda 23 (cierre de las B: 290 a 292, 295 a 297 y 301 a 303; primeras C: 20, 35 y 36)
+# Orden de las voces: el de la lista maestra (20, 35, 36, 290, 291, 292, 295, 296, 297, 301, 302, 303).
+# Revisor: armero. Espejo: legalize-es@aca28304d, leído con `git show aca28304d:es/…` (no el árbol de trabajo, que hoy trae erratas).
+# D 11/1995 (es-vc/DOGV-1995-833645.md) no está en git: es el único texto leído del fichero (ver notas).
+# Todo precepto citado se ha leído en el espejo en esta pasada. Vigencia: contraste con la API de boe.es (08-10-2026).
+# Ver tanda-23-notas.md.
+
+voces:
+  - voz: "Reparto de asuntos"
+    sinonimos: ["reparto", "normas de reparto", "turno de reparto", "diligencia de reparto", "infracción de las normas de reparto", "impugnar el reparto", "nulidad por infracción del reparto", "asunto no repartido", "medidas urgentes antes del reparto", "decanato", "presidencia del Tribunal de Instancia", "Servicio Común General", "recurso gubernativo contra el reparto", "juez predeterminado por la ley", "liberación de reparto", "reparto entre plazas de la Sección Civil"]
+    normas_base: ["LEC", "LOPJ", "CE", "LO 1/2025"]
+    remisiones:
+      - {norma: "LEC", articulo: "68", apartado: "1", tipo: "regula", nota: "Todos los asuntos civiles se reparten cuando haya más de un juzgado en el partido; igual entre Secciones de la Audiencia."}
+      - {norma: "LEC", articulo: "68", apartado: "2", tipo: "regula", nota: "Sin diligencia de reparto no se cursa el asunto; a instancia de parte se anula lo actuado salvo la orden de pasarlo a reparto."}
+      - {norma: "LEC", articulo: "68", apartado: "3", tipo: "regula", nota: "Contra el reparto no cabe declinatoria, pero cualquier litigante puede impugnar la infracción de las normas vigentes al presentar."}
+      - {norma: "LEC", articulo: "68", apartado: "4", tipo: "regula", nota: "Nulas las resoluciones del tribunal al que no correspondía, si se pide en el trámite inmediato a conocerse la infracción."}
+      - {norma: "LEC", articulo: "69", tipo: "regula", nota: "El reparto y la remisión a la oficina judicial se hacen en los dos días siguientes a la presentación."}
+      - {norma: "LEC", articulo: "70", tipo: "regula", nota: "En asuntos no repartidos, el decano o presidente adopta a instancia de parte medidas urgentes ante perjuicio grave e irreparable."}
+      - {norma: "LOPJ", articulo: "168", apartado: "1", tipo: "regula", nota: "La Presidencia del Tribunal de Instancia adopta las medidas urgentes en los asuntos no repartidos."}
+      - {norma: "LOPJ", articulo: "168", apartado: "2.b)", tipo: "regula", nota: "La Presidencia del Tribunal de Instancia resuelve en única instancia los recursos gubernativos contra el reparto del LAJ."}
+      - {norma: "LOPJ", articulo: "167", apartado: "1", tipo: "regula", nota: "En los Tribunales de Instancia, reparto entre las plazas con normas predeterminadas y públicas que aprueba la Sala de Gobierno."}
+      - {norma: "LOPJ", articulo: "167", apartado: "2", tipo: "regula", nota: "Liberación temporal de reparto a propuesta de la Junta; las modificaciones de las normas no afectan a los procesos en trámite."}
+      - {norma: "LOPJ", articulo: "167", apartado: "5", tipo: "regula", nota: "Reparte el LAJ bajo la supervisión de la Presidencia del Tribunal de Instancia, que resuelve las incidencias."}
+      - {norma: "LOPJ", articulo: "152", apartado: "2.1.º", tipo: "regula", nota: "La Sala de Gobierno del TSJ aprueba las normas de reparto entre Salas, Secciones de la Audiencia y jueces de una misma Sección."}
+      - {norma: "LOPJ", articulo: "159", apartado: "2", tipo: "conexa", nota: "A los acuerdos sobre normas de reparto se les da publicidad suficiente."}
+      - {norma: "LOPJ", articulo: "170", apartado: "1", tipo: "conexa", nota: "La Junta de Sección del Tribunal de Instancia propone las normas de reparto entre sus jueces."}
+      - {norma: "LOPJ", articulo: "160", apartado: "9", tipo: "conexa", nota: "El Presidente del Tribunal reparte entre Salas del mismo orden y sus Secciones según las normas de la Sala de Gobierno."}
+      - {norma: "LOPJ", articulo: "454", apartado: "3", tipo: "conexa", nota: "Los LAJ garantizan que el reparto se ajuste a las normas aprobadas y certifican a petición de parte."}
+      - {norma: "CE", articulo: "24", apartado: "2", tipo: "regula", nota: "Todos tienen derecho al juez ordinario predeterminado por la ley."}
+      - {norma: "LO 1/2025", articulo: "da1", tipo: "conexa", nota: "Las menciones legales a los Juzgados de Primera Instancia se entienden hechas a las Secciones de los Tribunales de Instancia."}
+    no_consta_en_norma:
+      - "Si la infracción de las normas de reparto lesiona el derecho al juez ordinario predeterminado por la ley (art. 24.2 CE): doctrina constitucional."
+      - "Relación entre la impugnación procesal del art. 68.3 LEC y el recurso gubernativo del art. 168.2.b) LOPJ: la ley no las coordina."
+    afines: ["Competencia objetiva", "Competencia territorial y fueros imperativos", "Declinatoria", "Abstención y recusación de jueces y magistrados", "Nulidad de actuaciones"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Policía de estrados: llamada al orden y sanciones"
+    sinonimos: ["policía de estrados", "orden en la sala", "llamada al orden", "retirar la palabra", "expulsión de la sala", "amonestación", "apercibimiento al abogado", "multa al abogado", "corrección disciplinaria", "falta de respeto al tribunal", "público que perturba la vista", "testigo que falta al respeto", "recurso de audiencia en justicia", "recurso de alzada ante la Sala de Gobierno", "incomparecencia del abogado citado", "renuncia a la defensa antes del juicio", "toga"]
+    normas_base: ["LOPJ", "LEC"]
+    remisiones:
+      - {norma: "LOPJ", articulo: "190", apartado: "1", tipo: "regula", nota: "Corresponde al presidente del tribunal o al juez mantener el orden en la sala y acordar lo que proceda."}
+      - {norma: "LOPJ", articulo: "190", apartado: "2", tipo: "conexa", nota: "Deben amparar en sus derechos a los presentes."}
+      - {norma: "LOPJ", articulo: "190", apartado: "3", tipo: "conexa", nota: "Las mismas obligaciones tiene el LAJ en las actuaciones que se celebran solo ante él."}
+      - {norma: "LOPJ", articulo: "191", tipo: "regula", nota: "Quien perturbe la vista o falte al respeto es amonestado y, si no obedece a la primera advertencia, expulsado."}
+      - {norma: "LOPJ", articulo: "192", tipo: "regula", nota: "Quien se resista a la expulsión es multado, hasta la multa más alta que el Código Penal fijaba para las faltas."}
+      - {norma: "LOPJ", articulo: "193", apartado: "1", tipo: "regula", nota: "Misma multa a testigos, peritos, partes o representantes que falten de palabra, obra o por escrito al respeto debido."}
+      - {norma: "LOPJ", articulo: "193", apartado: "2", tipo: "regula", nota: "A los abogados y procuradores de las partes se les aplica el régimen propio del título V del libro VII."}
+      - {norma: "LOPJ", articulo: "194", apartado: "1", tipo: "regula", nota: "Constan en el acta el hecho, la explicación del sancionado y el acuerdo de quien preside."}
+      - {norma: "LOPJ", articulo: "194", apartado: "2", tipo: "regula", nota: "Recurso de audiencia en justicia en tres días ante quien sancionó; después, alzada en cinco días ante la Sala de Gobierno."}
+      - {norma: "LOPJ", articulo: "195", tipo: "conexa", nota: "Si los hechos son delito, sus autores son detenidos en el acto y puestos a disposición del juez competente."}
+      - {norma: "LOPJ", articulo: "552", tipo: "regula", nota: "Abogados y procuradores pueden ser corregidos si incumplen las obligaciones de la LOPJ o las leyes procesales, sin ser delito."}
+      - {norma: "LOPJ", articulo: "553", tipo: "regula", nota: "Corrección por faltar al respeto, desobedecer la llamada al orden, no comparecer citado o renunciar en los siete días previos."}
+      - {norma: "LOPJ", articulo: "553", apartado: "2.º", tipo: "regula", nota: "Llamados al orden en las alegaciones orales, no obedecer reiteradamente a quien preside."}
+      - {norma: "LOPJ", articulo: "554", apartado: "1", tipo: "regula", nota: "Correcciones: apercibimiento o multa, con el máximo de la multa prevista en el Código Penal para las faltas."}
+      - {norma: "LOPJ", articulo: "554", apartado: "2", tipo: "regula", nota: "La multa se gradúa por gravedad, antecedentes y circunstancias, y siempre con audiencia del interesado."}
+      - {norma: "LOPJ", articulo: "555", apartado: "1", tipo: "regula", nota: "La corrección la impone la autoridad ante la que se siguen las actuaciones."}
+      - {norma: "LOPJ", articulo: "555", apartado: "2", tipo: "conexa", nota: "En los propios autos o en pieza aparte; constan el hecho, las alegaciones del implicado y el acuerdo."}
+      - {norma: "LOPJ", articulo: "556", tipo: "regula", nota: "Audiencia en justicia en cinco días ante quien corrigió; después, alzada en cinco días ante la Sala de Gobierno."}
+      - {norma: "LOPJ", articulo: "557", tipo: "conexa", nota: "Las correcciones especiales de las leyes procesales siguen el modo de imposición y los recursos de los arts. 555 y 556."}
+      - {norma: "LOPJ", articulo: "546", apartado: "3", tipo: "conexa", nota: "Las correcciones por actuación ante los tribunales son distintas de la responsabilidad disciplinaria colegial."}
+      - {norma: "LOPJ", articulo: "187", apartado: "1", tipo: "conexa", nota: "En audiencia pública, jueces, fiscales, LAJ, abogados y procuradores usan toga."}
+      - {norma: "LEC", articulo: "186", apartado: "1.º", tipo: "regula", nota: "Quien preside mantiene el buen orden en la vista y corrige en el acto las faltas como dispone la LOPJ."}
+      - {norma: "LEC", articulo: "186", apartado: "2.º", tipo: "regula", nota: "Llama la atención a quien divaga y, si no atiende a la segunda advertencia, puede retirarle el uso de la palabra."}
+      - {norma: "LEC", articulo: "247", apartado: "3", tipo: "conexa", nota: "Multa de 180 a 6.000 euros, sin superar un tercio de la cuantía, por mala fe procesal o abuso del servicio de Justicia."}
+      - {norma: "LEC", articulo: "247", apartado: "5", tipo: "conexa", nota: "Las sanciones por mala fe procesal siguen los recursos del título V del libro VII de la LOPJ."}
+    no_consta_en_norma:
+      - "Cuantía máxima de las multas de los arts. 192, 193 y 554 LOPJ, que remiten a la multa de las faltas, suprimidas por la LO 1/2015: no la fija la LOPJ."
+      - "Si retirar la palabra al abogado (art. 186.2.º LEC) causa indefensión que funde la nulidad: jurisprudencial."
+    afines: ["Buena fe procesal, abuso del servicio de justicia y multas", "Vista del juicio verbal: desarrollo e incomparecencias", "Publicidad de las actuaciones y vista a puerta cerrada", "Grabación y documentación de las vistas", "Postulación (abogado y procurador)"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Publicidad de las actuaciones y vista a puerta cerrada"
+    sinonimos: ["publicidad de las actuaciones", "audiencia pública", "vista pública", "vista a puerta cerrada", "puerta cerrada", "actuaciones reservadas", "carácter reservado de los autos", "secreto de las actuaciones", "protección de la intimidad en el juicio", "menores en la vista", "procesos de familia a puerta cerrada", "acceso a los autos", "examen de las actuaciones", "copias y testimonios", "acceso a las sentencias", "anonimización de sentencias", "secreto de las deliberaciones", "lista de señalamientos"]
+    normas_base: ["CE", "LOPJ", "LEC"]
+    remisiones:
+      - {norma: "CE", articulo: "120", apartado: "1", tipo: "regula", nota: "Las actuaciones judiciales son públicas, con las excepciones que prevean las leyes de procedimiento."}
+      - {norma: "CE", articulo: "120", apartado: "3", tipo: "regula", nota: "Las sentencias son siempre motivadas y se pronuncian en audiencia pública."}
+      - {norma: "CE", articulo: "24", apartado: "2", tipo: "regula", nota: "Derecho a un proceso público sin dilaciones indebidas y con todas las garantías."}
+      - {norma: "LOPJ", articulo: "232", apartado: "1", tipo: "regula", nota: "Las actuaciones judiciales son públicas, con las excepciones de las leyes de procedimiento."}
+      - {norma: "LOPJ", articulo: "232", apartado: "3", tipo: "regula", nota: "Por orden público y protección de derechos, resolución motivada puede limitar la publicidad o declarar el secreto."}
+      - {norma: "LOPJ", articulo: "232", apartado: "2", tipo: "conexa", nota: "La relación semanal de señalamientos se publica en lugar visible: fecha, hora, tipo de actuación y procedimiento."}
+      - {norma: "LOPJ", articulo: "186", tipo: "conexa", nota: "Audiencia pública todos los días hábiles para pruebas, vistas y publicación de sentencias."}
+      - {norma: "LOPJ", articulo: "234", apartado: "2", tipo: "regula", nota: "Partes e interesados legítimos y directos pueden acceder a los autos no secretos ni reservados y pedir testimonios."}
+      - {norma: "LOPJ", articulo: "235", tipo: "conexa", nota: "Terceros con interés legítimo acceden a resoluciones previa anonimización y respetando intimidad y víctimas."}
+      - {norma: "LOPJ", articulo: "266", apartado: "1", tipo: "conexa", nota: "Acceso de cualquier interesado al texto de las sentencias, restringible por intimidad, tutela especial o uso ilícito."}
+      - {norma: "LEC", articulo: "138", apartado: "1", tipo: "regula", nota: "Pruebas, vistas y comparecencias para oír a las partes antes de resolver se practican en audiencia pública."}
+      - {norma: "LEC", articulo: "138", apartado: "2", tipo: "regula", nota: "Puerta cerrada por orden público o seguridad nacional, interés de menores, vida privada u otros derechos, o interés de la justicia."}
+      - {norma: "LEC", articulo: "138", apartado: "3", tipo: "regula", nota: "Antes se oye a las partes presentes; auto sin recurso, salvo protesta y alegación en el recurso contra la sentencia."}
+      - {norma: "LEC", articulo: "138", apartado: "3, párrafo 2.º", tipo: "conexa", nota: "El LAJ puede acordarlo por decreto en las actuaciones de su exclusiva competencia; solo cabe reposición."}
+      - {norma: "LEC", articulo: "138", apartado: "4", tipo: "conexa", nota: "La relación de señalamientos del órgano judicial se hace pública cada semana."}
+      - {norma: "LEC", articulo: "140", apartado: "1", tipo: "regula", nota: "Quien acredite interés legítimo y directo puede conocer el estado de las actuaciones no reservadas y pedir copias."}
+      - {norma: "LEC", articulo: "140", apartado: "3", tipo: "regula", nota: "Por auto, el tribunal puede declarar reservados todos o parte de los autos; solo los conocen las partes y sus profesionales."}
+      - {norma: "LEC", articulo: "141", tipo: "conexa", nota: "Quien acredite interés legítimo accede a libros, archivos y registros judiciales no reservados."}
+      - {norma: "LEC", articulo: "139", tipo: "conexa", nota: "Las deliberaciones y votaciones de los tribunales colegiados son secretas, salvo la publicidad de los votos particulares."}
+      - {norma: "LEC", articulo: "289", apartado: "1", tipo: "regula", nota: "Las pruebas se practican contradictoriamente en vista pública o con publicidad y documentación similares."}
+      - {norma: "LEC", articulo: "754", tipo: "regula", nota: "En familia y capacidad, puerta cerrada y actuaciones reservadas por providencia, aunque no concurra el art. 138.2."}
+      - {norma: "LEC", articulo: "212", apartado: "2", tipo: "conexa", nota: "Cualquier interesado puede acceder al texto de las sentencias, previa disociación de los datos personales."}
+    no_consta_en_norma:
+      - "Grabación o difusión de la vista por el público o los medios de comunicación: no la regulan la LEC ni la LOPJ; jurisprudencial."
+      - "Si celebrar a puerta cerrada sin oír antes a las partes (art. 138.3) causa nulidad: jurisprudencial."
+    afines: ["Grabación y documentación de las vistas", "Policía de estrados: llamada al orden y sanciones", "Nulidad de actuaciones", "Tutela judicial efectiva e indefensión", "Separación y divorcio contenciosos"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Reclamaciones de consumo y servicio de atención al cliente"
+    sinonimos: ["reclamación al servicio de atención al cliente", "servicio de atención al cliente", "SAC", "queja del consumidor", "reclamación previa extrajudicial", "clave identificativa de la reclamación", "justificante de la reclamación", "plazo para contestar la reclamación", "quince días para responder", "teléfono de atención gratuito", "línea de tarificación especial", "hoja de reclamaciones", "arbitraje de consumo", "junta arbitral de consumo", "entidad de resolución alternativa", "reclamación ante el Banco de España", "requisito de procedibilidad en consumo", "reclamación previa en cláusulas suelo"]
+    normas_base: ["TRLGDCU", "LO 1/2025", "LEC"]
+    remisiones:
+      - {norma: "TRLGDCU", articulo: "21", apartado: "1", tipo: "conexa", nota: "El régimen de reclamación y garantía del contrato debe permitir al consumidor reclamar con eficacia y obtener la devolución del precio."}
+      - {norma: "TRLGDCU", articulo: "21", apartado: "2", tipo: "regula", nota: "El servicio de atención entrega clave identificativa y justificante escrito de cada queja; con atención personal directa."}
+      - {norma: "TRLGDCU", articulo: "21", apartado: "2, párrafo 4.º", tipo: "regula", nota: "La línea telefónica sobre el contrato no puede costar más que una llamada a un fijo geográfico o móvil estándar."}
+      - {norma: "TRLGDCU", articulo: "21", apartado: "2, párrafo 6.º", tipo: "regula", nota: "Suministros, financieros, seguros, postales, transporte y sanitarios: teléfono de atención gratuito."}
+      - {norma: "TRLGDCU", articulo: "21", apartado: "3", tipo: "regula", nota: "El empresario informa de los medios para reclamar: al menos el de contratación, vía postal, telefónica y electrónica."}
+      - {norma: "TRLGDCU", articulo: "21", apartado: "3, párrafo 2.º", tipo: "regula", nota: "Respuesta a las reclamaciones en el plazo más breve posible y, como máximo, en quince días desde su presentación."}
+      - {norma: "TRLGDCU", articulo: "21", apartado: "4", tipo: "regula", nota: "Reclamación no resuelta satisfactoriamente: el consumidor puede acudir a una entidad de resolución alternativa notificada a la Comisión."}
+      - {norma: "TRLGDCU", articulo: "47", apartado: "q)", tipo: "conexa", nota: "Es infracción incumplir las obligaciones sobre servicios de atención al cliente de esta norma y de su normativa específica."}
+      - {norma: "TRLGDCU", articulo: "8", apartado: "1.f)", tipo: "conexa", nota: "Es derecho básico la protección de los derechos del consumidor mediante procedimientos eficaces."}
+      - {norma: "TRLGDCU", articulo: "57", apartado: "1", tipo: "regula", nota: "Arbitraje de consumo: vinculante y ejecutivo, salvo intoxicación, lesión, muerte o indicios racionales de delito."}
+      - {norma: "TRLGDCU", articulo: "57", apartado: "4", tipo: "regula", nota: "No vinculan al consumidor los convenios arbitrales firmados antes de surgir el conflicto; al empresario, sí."}
+      - {norma: "TRLGDCU", articulo: "58", apartado: "1", tipo: "conexa", nota: "La sumisión al arbitraje de consumo es voluntaria y debe constar expresamente."}
+      - {norma: "LO 1/2025", articulo: "da7", tipo: "regula", nota: "Consumo: cumple el requisito la reclamación previa al empresario sin respuesta en el plazo de la ley especial o no satisfactoria."}
+      - {norma: "LO 1/2025", articulo: "da7", apartado: "párrafo 2.º", tipo: "regula", nota: "También la resolución de Banco de España, CNMV o DGSFP, o acudir a un procedimiento de la Ley 7/2017."}
+      - {norma: "LO 1/2025", articulo: "5", apartado: "1", tipo: "conexa", nota: "Requisito de procedibilidad general: acudir antes a un MASC, con identidad entre objeto negociado y objeto del litigio."}
+      - {norma: "LO 1/2025", articulo: "10", apartado: "2", tipo: "conexa", nota: "Basta un documento que pruebe que la otra parte recibió la solicitud, en qué fecha, y pudo acceder a su contenido."}
+      - {norma: "LEC", articulo: "439", apartado: "5", tipo: "regula", nota: "Cláusulas abusivas en préstamo hipotecario: no se admite la demanda sin reclamación previa extrajudicial al prestamista."}
+      - {norma: "LEC", articulo: "264", apartado: "4.º", tipo: "conexa", nota: "Con la demanda se presenta el documento que acredita el intento de negociación previa exigido por la ley."}
+    no_consta_en_norma:
+      - "Qué plazo de espera rige a efectos de la da7 LO 1/2025 (quince días del art. 21.3, quince hábiles de la Ley 10/2025 o el sectorial): no lo fija la ley."
+      - "Si la hoja oficial de reclamaciones autonómica vale como reclamación extrajudicial previa de la da7: no lo dice la ley."
+    fuera_de_la_herramienta:
+      - "Ley 10/2025, de servicios de atención a la clientela, art. 17.1: respuesta en quince días hábiles, salvo plazo sectorial distinto."
+      - "Ley 10/2025, art. 2: suministros, transporte, postales, comunicaciones, financieros y empresas grandes (250 trabajadores o 50 M€)."
+      - "Ley 7/2017, de resolución alternativa de litigios de consumo: la citan el art. 21.4 TRLGDCU y la da7 LO 1/2025."
+      - "Decreto valenciano 77/1994, de hojas de reclamaciones de consumidores y usuarios (modelo de la Orden 4/2013)."
+    afines: ["Requisito de procedibilidad (MASC)", "Concepto de consumidor y de empresario", "Irrenunciabilidad de los derechos del consumidor", "Servicios a domicilio: presupuesto y factura", "Acciones colectivas y de cesación de consumo", "Contratos a distancia y fuera del establecimiento"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Irrenunciabilidad de los derechos del consumidor"
+    sinonimos: ["irrenunciabilidad", "renuncia previa del consumidor", "renuncia a derechos del consumidor", "cláusula de renuncia", "renuncia al desistimiento", "renuncia a la garantía", "exoneración de responsabilidad del empresario", "limitación de responsabilidad", "fraude de ley en consumo", "normas imperativas de consumo", "elección de ley extranjera", "cláusulas más beneficiosas", "renuncia a la factura", "renuncia a elegir notario", "obstáculos para darse de baja"]
+    normas_base: ["TRLGDCU", "CC"]
+    remisiones:
+      - {norma: "TRLGDCU", articulo: "10", tipo: "regula", nota: "Es nula la renuncia previa a los derechos que el TRLGDCU reconoce, y los actos en fraude de ley del art. 6 CC."}
+      - {norma: "CC", articulo: "6", apartado: "2", tipo: "regula", nota: "La renuncia a derechos legales solo vale si no contraría el interés o el orden público ni perjudica a terceros."}
+      - {norma: "CC", articulo: "6", apartado: "3", tipo: "regula", nota: "Los actos contrarios a normas imperativas y prohibitivas son nulos de pleno derecho, salvo otro efecto previsto."}
+      - {norma: "CC", articulo: "6", apartado: "4", tipo: "regula", nota: "Fraude de ley: el acto que persigue un resultado prohibido no impide aplicar la norma eludida."}
+      - {norma: "TRLGDCU", articulo: "86", tipo: "regula", nota: "Son abusivas las cláusulas que limiten o priven al consumidor de derechos reconocidos por normas dispositivas o imperativas."}
+      - {norma: "TRLGDCU", articulo: "86", apartado: "7", tipo: "regula", nota: "Es abusiva la imposición de cualquier otra renuncia o limitación de los derechos del consumidor."}
+      - {norma: "TRLGDCU", articulo: "86", apartado: "1", tipo: "conexa", nota: "Abusiva la exclusión o limitación de sus derechos por incumplimiento, en particular en conformidad e indemnización."}
+      - {norma: "TRLGDCU", articulo: "86", apartado: "6", tipo: "conexa", nota: "Abusiva la imposición de renuncias a la entrega de documento acreditativo de la operación."}
+      - {norma: "TRLGDCU", articulo: "87", apartado: "6", tipo: "conexa", nota: "Abusivas la renuncia o los obstáculos desproporcionados al derecho a poner fin a contratos de tracto sucesivo."}
+      - {norma: "TRLGDCU", articulo: "89", apartado: "8", tipo: "conexa", nota: "Abusivos los pactos de renuncia o transacción sobre el derecho a elegir notario."}
+      - {norma: "TRLGDCU", articulo: "83", tipo: "regula", nota: "Las cláusulas abusivas son nulas de pleno derecho y se tienen por no puestas; el contrato subsiste si puede."}
+      - {norma: "TRLGDCU", articulo: "92", apartado: "3", tipo: "regula", nota: "En contratos a distancia y fuera del establecimiento los derechos son irrenunciables; valen las cláusulas más beneficiosas."}
+      - {norma: "TRLGDCU", articulo: "102", apartado: "2", tipo: "regula", nota: "Nulas de pleno derecho las cláusulas que penalicen el desistimiento o impongan renunciar a él."}
+      - {norma: "TRLGDCU", articulo: "68", apartado: "1, párrafo 2.º", tipo: "conexa", nota: "Nulas de pleno derecho las cláusulas que penalicen el ejercicio del derecho de desistimiento."}
+      - {norma: "TRLGDCU", articulo: "130", tipo: "regula", nota: "Ineficaces frente al perjudicado las cláusulas que excluyan o limiten la responsabilidad por productos o servicios defectuosos."}
+      - {norma: "TRLGDCU", articulo: "67", apartado: "2", tipo: "regula", nota: "La protección frente a cláusulas abusivas se aplica sea cual sea la ley elegida si el contrato tiene vínculo estrecho con el EEE."}
+      - {norma: "TRLGDCU", articulo: "67", apartado: "3", tipo: "conexa", nota: "Lo mismo para las garantías de los arts. 114 a 126, con vínculo estrecho con el Espacio Económico Europeo."}
+      - {norma: "TRLGDCU", articulo: "61", apartado: "3", tipo: "conexa", nota: "Si el contrato tiene cláusulas más beneficiosas que la oferta o la publicidad, prevalecen."}
+      - {norma: "TRLGDCU", articulo: "59", apartado: "2", tipo: "conexa", nota: "La regulación sectorial debe respetar el nivel de protección del TRLGDCU y puede elevarlo."}
+    no_consta_en_norma:
+      - "Validez de la renuncia posterior al nacimiento del derecho (transacción o finiquito con el consumidor): el art. 10 solo anula la renuncia previa; jurisprudencial."
+      - "Si una renuncia negociada individualmente, ajena al control de abusividad, cae en el art. 10: jurisprudencial."
+    afines: ["Cláusulas abusivas: concepto, nulidad e integración", "Cláusulas abusivas: lista legal (gastos, sumisión, penalizaciones)", "Fraude de ley y actos contrarios a normas imperativas", "Desistimiento del consumidor", "Control de oficio de cláusulas abusivas en el proceso", "Concepto de consumidor y de empresario"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Servicios a domicilio: presupuesto y factura"
+    sinonimos: ["servicio a domicilio", "reparación a domicilio", "fontanero", "electricista", "cerrajero", "pintor", "reforma de la vivienda", "mantenimiento de la vivienda", "presupuesto previo por escrito", "presupuesto recibido antes de la realización de los trabajos", "renuncio al presupuesto", "cobro del presupuesto", "factura de la reparación", "factura superior al presupuesto", "vicios ocultos durante la obra", "piezas usadas", "precio abusivo del servicio", "Decreto 11/1995 valenciano"]
+    normas_base: ["D 11/1995", "TRLGDCU", "CC"]
+    remisiones:
+      - {norma: "D 11/1995", articulo: "1", apartado: "1", tipo: "regula", nota: "Se aplica a quienes prestan servicios a domicilio al consumidor."}
+      - {norma: "D 11/1995", articulo: "1", apartado: "2", tipo: "regula", nota: "Servicios a domicilio: mantenimiento y reforma de la vivienda, sus instalaciones y anexos, comunes o individuales."}
+      - {norma: "D 11/1995", articulo: "1", apartado: "3", tipo: "conexa", nota: "Excluidos la entrega a domicilio y los servicios accesorios de una venta de bienes."}
+      - {norma: "D 11/1995", articulo: "1", apartado: "4", tipo: "conexa", nota: "Tampoco se aplica a los servicios a domicilio con regulación específica de protección del consumidor."}
+      - {norma: "D 11/1995", articulo: "2", apartado: "1", tipo: "regula", nota: "Derecho a presupuesto previo por escrito; el prestador debe acreditar documentalmente que informó de ello antes del servicio."}
+      - {norma: "D 11/1995", articulo: "2", apartado: "2", tipo: "regula", nota: "Contenido: partes, descripción, materiales, mano de obra y desplazamiento, fechas, precio total con impuestos, garantía y validez."}
+      - {norma: "D 11/1995", articulo: "2", apartado: "2.j)", tipo: "regula", nota: "Firma del cliente junto a la frase «Presupuesto recibido antes de la realización de los trabajos», en mayúsculas."}
+      - {norma: "D 11/1995", articulo: "2", apartado: "3", tipo: "conexa", nota: "Original para el cliente; el prestador conserva la copia firmada al menos un año desde el fin de la garantía."}
+      - {norma: "D 11/1995", articulo: "2", apartado: "4", tipo: "regula", nota: "Vicios ocultos no presupuestados: aviso escrito inmediato con el aumento y su causa, firmado por ambos."}
+      - {norma: "D 11/1995", articulo: "2", apartado: "5", tipo: "regula", nota: "Las variaciones pedidas por el usuario constan por escrito y él las aprueba con su firma."}
+      - {norma: "D 11/1995", articulo: "2", apartado: "6", tipo: "regula", nota: "El presupuesto no aceptado solo se cobra si se acredita que se informó antes de que su elaboración era de pago."}
+      - {norma: "D 11/1995", articulo: "2", apartado: "6, párrafo 2.º", tipo: "conexa", nota: "Al cobrar el presupuesto, el desplazamiento se factura una sola vez aunque hicieran falta varios."}
+      - {norma: "D 11/1995", articulo: "2", apartado: "7", tipo: "regula", nota: "La renuncia al presupuesto consta en la factura con «renuncio al presupuesto» de puño y letra del cliente y su firma."}
+      - {norma: "D 11/1995", articulo: "3", apartado: "1", tipo: "regula", nota: "Factura: número, partes, servicio, precio con desglose de materiales, mano de obra e impuestos, garantía y firmas."}
+      - {norma: "D 11/1995", articulo: "3", apartado: "2", tipo: "regula", nota: "La factura debe coincidir con el presupuesto; el exceso no se debe y, si se pagó, se devuelve de inmediato."}
+      - {norma: "D 11/1995", articulo: "3", apartado: "3", tipo: "regula", nota: "Los materiales no se cobran por encima de su precio de venta al público; facturas de compra a disposición del cliente."}
+      - {norma: "D 11/1995", articulo: "4", tipo: "regula", nota: "Prohibido usar piezas o materiales usados sin autorización previa y escrita del cliente."}
+      - {norma: "D 11/1995", articulo: "6", apartado: "2", tipo: "conexa", nota: "Infracciones: prestaciones innecesarias, presupuesto irreal, servicio distinto del contratado o precio que duplique el usual."}
+      - {norma: "D 11/1995", articulo: "df2", tipo: "conexa", nota: "Entró en vigor a los seis meses de su publicación en el Diari Oficial de la Generalitat Valenciana."}
+      - {norma: "TRLGDCU", articulo: "92", apartado: "2.a)", tipo: "conexa", nota: "El contrato celebrado en el domicilio del consumidor es un contrato fuera del establecimiento."}
+      - {norma: "TRLGDCU", articulo: "102", apartado: "1, párrafo 2.º", tipo: "conexa", nota: "Visita no solicitada al domicilio: el plazo de desistimiento se amplía a treinta días naturales."}
+      - {norma: "TRLGDCU", articulo: "103", apartado: "h)", tipo: "regula", nota: "Sin desistimiento si el consumidor pidió la visita para una reparación urgente, salvo servicios o bienes adicionales."}
+      - {norma: "TRLGDCU", articulo: "103", apartado: "a)", tipo: "conexa", nota: "Sin desistimiento en el servicio ya ejecutado íntegramente con consentimiento expreso y conocimiento de la pérdida."}
+      - {norma: "TRLGDCU", articulo: "99", apartado: "2", tipo: "conexa", nota: "Fuera del establecimiento, copia del contrato firmado o su confirmación en papel u otro soporte duradero aceptado."}
+      - {norma: "TRLGDCU", articulo: "148", apartado: "párrafo 2.º", tipo: "conexa", nota: "La rehabilitación y reparación de viviendas, el gas y la electricidad están sujetos a la responsabilidad del art. 148."}
+      - {norma: "CC", articulo: "1544", tipo: "conexa", nota: "En el arrendamiento de obras o servicios una parte se obliga a ejecutar una obra o prestar un servicio por precio cierto."}
+      - {norma: "CC", articulo: "1593", tipo: "conexa", nota: "Por ajuste alzado no cabe pedir aumento de precio salvo cambio autorizado por el dueño que aumente la obra."}
+    no_consta_en_norma:
+      - "Efecto civil del incumplimiento del decreto (falta de presupuesto o de factura) más allá del exceso no debido del art. 3.2: no lo dice; jurisprudencial."
+      - "Si el decreto alcanza a servicios fuera de la vivienda (locales, vehículos): su art. 1.2 se limita a la vivienda y sus anexos."
+    fuera_de_la_herramienta:
+      - "Ley valenciana 2/1987, citada en los arts. 1.1 y 6: derogada por la Ley 1/2011, hoy texto refundido del Decreto Legislativo 1/2019."
+      - "Decreto valenciano 77/1994, de hojas de reclamaciones, al que remite el art. 2.2.i) del decreto."
+    afines: ["Contratos a distancia y fuera del establecimiento", "Desistimiento del consumidor", "Reclamaciones de consumo y servicio de atención al cliente", "Contrato de obra: precio, riesgo y vicios", "Responsabilidad por servicios defectuosos", "Información precontractual e integración de la oferta y la publicidad"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Confidencialidad del MASC"
+    sinonimos: ["confidencialidad de la negociación", "confidencialidad de la mediación", "secreto de las negociaciones", "documentos de la negociación previa", "comunicaciones entre abogados", "correos de negociación", "propuestas sin perjuicio", "aportar la negociación como prueba", "inadmisión de la prueba confidencial", "dispensa de confidencialidad", "secreto profesional del tercero neutral", "mediador como testigo", "perito que intervino en la mediación", "oferta rechazada y costas", "qué se puede contar de la negociación"]
+    normas_base: ["LO 1/2025", "LEC", "LOPJ"]
+    remisiones:
+      - {norma: "LO 1/2025", articulo: "9", apartado: "1", tipo: "regula", nota: "El proceso y su documentación son confidenciales, salvo si se acudió o no a la negociación y el objeto de la controversia."}
+      - {norma: "LO 1/2025", articulo: "9", apartado: "1, párrafo 2.º", tipo: "regula", nota: "Obliga a partes, abogados y tercero neutral, con deber y derecho de secreto profesional: nadie puede revelar lo obtenido."}
+      - {norma: "LO 1/2025", articulo: "9", apartado: "2", tipo: "regula", nota: "No pueden declarar ni aportar documentación de la negociación en juicio o arbitraje, ni ser obligados a ello, salvo excepciones."}
+      - {norma: "LO 1/2025", articulo: "9", apartado: "2.a)", tipo: "regula", nota: "Excepción: dispensa recíproca de todas las partes, expresa y por escrito."}
+      - {norma: "LO 1/2025", articulo: "9", apartado: "2.b)", tipo: "regula", nota: "Excepción: impugnación de la tasación y exoneración o moderación de costas del art. 245 LEC, solo a esos fines."}
+      - {norma: "LO 1/2025", articulo: "9", apartado: "2.c)", tipo: "conexa", nota: "Excepción: la piden los jueces del orden penal por resolución motivada."}
+      - {norma: "LO 1/2025", articulo: "9", apartado: "2.d)", tipo: "conexa", nota: "Excepción: orden público, interés superior del menor o prevención de daños a la integridad de una persona."}
+      - {norma: "LO 1/2025", articulo: "9", apartado: "3", tipo: "regula", nota: "Lo revelado o aportado con infracción se inadmite y no se incorpora al expediente, sin perjuicio de responsabilidad."}
+      - {norma: "LO 1/2025", articulo: "9", apartado: "4", tipo: "conexa", nota: "Los datos personales se tratan conforme al Reglamento general de protección de datos y la LO 3/2018."}
+      - {norma: "LO 1/2025", articulo: "17", apartado: "3", tipo: "regula", nota: "La oferta vinculante es confidencial en todo caso y se le aplica el art. 9."}
+      - {norma: "LO 1/2025", articulo: "17", apartado: "4", tipo: "regula", nota: "Rechazada la oferta, se acredita su remisión y recepción con la demanda o contestación, sin mencionar su contenido."}
+      - {norma: "LO 1/2025", articulo: "18", apartado: "2", tipo: "regula", nota: "El dictamen de la persona experta independiente es confidencial con los efectos del art. 9, antes o durante el proceso."}
+      - {norma: "LO 1/2025", articulo: "10", apartado: "2", tipo: "conexa", nota: "Sin tercero neutral, el intento se acredita con documento de ambas partes: identidad, fechas, objeto y declaración de buena fe."}
+      - {norma: "LO 1/2025", articulo: "10", apartado: "3", tipo: "conexa", nota: "Con tercero neutral, este certifica identidad, objeto, reuniones, buena fe y, en su caso, la incomparecencia o el rechazo."}
+      - {norma: "LO 1/2025", articulo: "15", apartado: "2.b)", tipo: "conexa", nota: "La persona conciliadora debe ser imparcial y guardar los deberes de confidencialidad y secreto profesional."}
+      - {norma: "LO 1/2025", articulo: "19", apartado: "2", tipo: "conexa", nota: "La confidencialidad es principio del Derecho colaborativo, con renuncia de los abogados a litigar si no hay acuerdo."}
+      - {norma: "LEC", articulo: "283", apartado: "3", tipo: "regula", nota: "Nunca se admite como prueba una actividad prohibida por la ley; a él remite el art. 9.2 LO 1/2025."}
+      - {norma: "LEC", articulo: "245", apartado: "5, párrafo 3.º", tipo: "regula", nota: "Para pedir exoneración o moderación se aporta la propuesta íntegra, que a ese solo efecto queda dispensada de confidencialidad."}
+      - {norma: "LEC", articulo: "335", apartado: "3", tipo: "conexa", nota: "Salvo acuerdo, no se puede pedir dictamen a un perito que intervino en una mediación o arbitraje del mismo asunto."}
+      - {norma: "LEC", articulo: "347", apartado: "1, párrafo 2.º", tipo: "conexa", nota: "Se deniega la intervención del perito en el juicio si tiene deber de confidencialidad por una mediación previa entre las partes."}
+      - {norma: "LEC", articulo: "da12", tipo: "conexa", nota: "Las referencias de la LEC a la mediación se entienden hechas a cualquier medio adecuado de solución de controversias."}
+      - {norma: "LOPJ", articulo: "542", apartado: "3", tipo: "conexa", nota: "Los abogados guardan secreto de lo que conozcan por su actuación profesional y no pueden ser obligados a declarar."}
+    no_consta_en_norma:
+      - "Si la confidencialidad cubre los correos o burofaxes de negociación directa entre abogados, sin tercero neutral: la ley no lo precisa."
+      - "Si el rechazo de una propuesta puede alegarse en la sentencia a efectos de costas (art. 394 LEC) sin romper la confidencialidad: no lo resuelve la ley."
+    fuera_de_la_herramienta:
+      - "Ley 5/2012, de mediación en asuntos civiles y mercantiles, art. 9: confidencialidad de la mediación (a ella remite el art. 14.2 LO 1/2025)."
+    afines: ["Requisito de procedibilidad (MASC)", "Oferta vinculante confidencial", "Acuerdo alcanzado en el MASC: eficacia y ejecución", "Prueba ilícita", "Costas y MASC", "Modalidades de MASC (conciliación privada, abogado colaborativo…)"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Oferta vinculante confidencial"
+    sinonimos: ["oferta vinculante", "oferta vinculante confidencial", "OVC", "propuesta de acuerdo", "oferta de pago antes de demandar", "aceptación de la oferta", "aceptación irrevocable", "plazo de un mes para aceptar", "oferta rechazada", "oferta no contestada", "burofax con oferta", "oferta y requisito de procedibilidad", "abogado obligatorio en la oferta vinculante", "oferta de menos de 2.000 euros", "exoneración de costas por oferta rechazada"]
+    normas_base: ["LO 1/2025", "LEC", "CC"]
+    remisiones:
+      - {norma: "LO 1/2025", articulo: "17", apartado: "1", tipo: "regula", nota: "El oferente queda obligado a cumplir lo ofrecido cuando la otra parte lo acepta expresamente; la aceptación es irrevocable."}
+      - {norma: "LO 1/2025", articulo: "17", apartado: "2", tipo: "regula", nota: "La remisión de oferta y aceptación debe dejar constancia de identidad del oferente, recepción efectiva, fecha y contenido."}
+      - {norma: "LO 1/2025", articulo: "17", apartado: "3", tipo: "regula", nota: "La oferta es confidencial en todo caso, con el régimen del art. 9."}
+      - {norma: "LO 1/2025", articulo: "17", apartado: "4", tipo: "regula", nota: "Rechazada o no aceptada expresamente en un mes (o plazo mayor fijado), decae y el requisito de procedibilidad queda cumplido."}
+      - {norma: "LO 1/2025", articulo: "6", apartado: "2", tipo: "regula", nota: "Asistencia letrada preceptiva en la oferta vinculante, salvo cuantía no superior a 2.000 euros o ley sectorial que no la exija."}
+      - {norma: "LO 1/2025", articulo: "6", apartado: "3", tipo: "conexa", nota: "Si no es preceptiva y una parte quiere abogado, lo comunica en tres días para que la otra pueda valerse también de él."}
+      - {norma: "LO 1/2025", articulo: "5", apartado: "1, párrafo 2.º", tipo: "regula", nota: "Formular una oferta vinculante confidencial es uno de los modos de cumplir el requisito de procedibilidad."}
+      - {norma: "LO 1/2025", articulo: "7", apartado: "1", tipo: "conexa", nota: "La solicitud de negociación interrumpe la prescripción o suspende la caducidad; propuesta sin respuesta en treinta días: se reanuda."}
+      - {norma: "LO 1/2025", articulo: "7", apartado: "3", tipo: "regula", nota: "Sin respuesta o sin acuerdo, la demanda debe presentarse en un año para que el requisito se tenga por cumplido."}
+      - {norma: "LO 1/2025", articulo: "13", apartado: "1", tipo: "conexa", nota: "El acuerdo alcanzado vincula, impide demandar con igual objeto y solo cabe la acción de nulidad contractual."}
+      - {norma: "LO 1/2025", articulo: "13", apartado: "2", tipo: "conexa", nota: "Para ser título ejecutivo, el acuerdo se eleva a escritura pública o se homologa judicialmente cuando proceda."}
+      - {norma: "LEC", articulo: "245", apartado: "5", tipo: "regula", nota: "El condenado en costas puede pedir exoneración o moderación si su propuesta rechazada coincide sustancialmente con la sentencia."}
+      - {norma: "LEC", articulo: "395", apartado: "1, párrafo 2.º", tipo: "regula", nota: "Hay mala fe del allanado antes de contestar si rechazó el acuerdo ofrecido o la participación en un MASC: costas."}
+      - {norma: "LEC", articulo: "394", apartado: "4", tipo: "conexa", nota: "Si el requerido rehusó negociar, el requirente queda exento de costas, salvo abuso del servicio público de Justicia."}
+      - {norma: "LEC", articulo: "264", apartado: "4.º", tipo: "conexa", nota: "Con la demanda o la contestación se presenta el documento que acredite el intento de negociación previa."}
+      - {norma: "LEC", articulo: "403", apartado: "2", tipo: "conexa", nota: "No se admite la demanda sin las circunstancias del art. 399.3, párrafo 2.º, cuando la ley exige el MASC como requisito."}
+      - {norma: "CC", articulo: "1262", tipo: "conexa", nota: "Consentimiento: concurso de oferta y aceptación; a distancia, desde que el oferente conoce la aceptación o no puede ignorarla."}
+      - {norma: "CC", articulo: "1809", tipo: "conexa", nota: "Transacción: contrato por el que las partes, con recíprocas concesiones, evitan un pleito o ponen término al comenzado."}
+    no_consta_en_norma:
+      - "Si el oferente puede revocar la oferta antes de que se acepte o venza el plazo de un mes: la ley no lo dice."
+      - "Grado de concreción que debe tener la oferta para cumplir el requisito de procedibilidad (oferta simbólica o irrisoria): no lo fija la ley."
+      - "Si la oferta aceptada sin escritura ni homologación se exige por juicio declarativo o monitorio: la ley solo regula el título ejecutivo (art. 13.2)."
+    afines: ["Requisito de procedibilidad (MASC)", "Confidencialidad del MASC", "Costas y MASC", "Acuerdo alcanzado en el MASC: eficacia y ejecución", "Allanamiento", "Interrupción de la prescripción"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Acuerdo alcanzado en el MASC: eficacia y ejecución"
+    sinonimos: ["acuerdo de mediación", "acuerdo extrajudicial", "acuerdo de conciliación privada", "acta final de la negociación", "elevar el acuerdo a escritura pública", "escritura unilateral del acuerdo", "homologación judicial del acuerdo", "acuerdo como título ejecutivo", "ejecutar el acuerdo de mediación", "incumplimiento del acuerdo", "nulidad del acuerdo", "acuerdo parcial", "acuerdo en derecho de familia", "transacción extrajudicial", "caducidad de la ejecución del acuerdo"]
+    normas_base: ["LO 1/2025", "LEC", "CC"]
+    remisiones:
+      - {norma: "LO 1/2025", articulo: "12", apartado: "1", tipo: "regula", nota: "El documento recoge identidad y domicilio de las partes, abogados y tercero, lugar, fecha, obligaciones y el procedimiento seguido."}
+      - {norma: "LO 1/2025", articulo: "12", apartado: "2", tipo: "regula", nota: "Lo firman las partes o sus representantes; cada una tiene derecho a copia y el tercero neutral conserva un ejemplar."}
+      - {norma: "LO 1/2025", articulo: "12", apartado: "3", tipo: "regula", nota: "Las partes pueden compelerse a elevarlo a escritura; si la requerida no acude, el solicitante la otorga unilateralmente."}
+      - {norma: "LO 1/2025", articulo: "12", apartado: "4", tipo: "conexa", nota: "Gastos de la escritura: lo pactado o, en su defecto, quien la pide, sin perjuicio de repercutirlos como costas en la ejecución."}
+      - {norma: "LO 1/2025", articulo: "12", apartado: "5", tipo: "regula", nota: "El notario verifica los requisitos de la ley y que el contenido no es contrario a Derecho."}
+      - {norma: "LO 1/2025", articulo: "12", apartado: "6", tipo: "conexa", nota: "Si ha de ejecutarse en otro Estado, además de la escritura, los requisitos de los convenios internacionales y del Derecho de la UE."}
+      - {norma: "LO 1/2025", articulo: "12", apartado: "7", tipo: "regula", nota: "Homologación judicial cuando la ley lo exija o el acuerdo nazca de una derivación del tribunal dentro del proceso."}
+      - {norma: "LO 1/2025", articulo: "13", apartado: "1", tipo: "regula", nota: "Vincula a las partes, que no pueden demandar con igual objeto; solo cabe la acción de nulidad contractual y la oposición en ejecución."}
+      - {norma: "LO 1/2025", articulo: "13", apartado: "2", tipo: "regula", nota: "Es título ejecutivo si se eleva a escritura pública, se homologa judicialmente o consta en certificación del art. 103 bis LH."}
+      - {norma: "LO 1/2025", articulo: "4", apartado: "1", tipo: "regula", nota: "Libertad para convenir sin contrariar ley, buena fe ni orden público; con acuerdo parcial se demanda solo lo que sigue en disputa."}
+      - {norma: "LO 1/2025", articulo: "4", apartado: "1, párrafo 2.º", tipo: "conexa", nota: "No cabe sobre materias indisponibles, pero sí sobre efectos y medidas de los arts. 102 y 103 CC, con homologación judicial."}
+      - {norma: "LO 1/2025", articulo: "16", apartado: "i)", tipo: "conexa", nota: "La persona conciliadora redacta el acta final con lo acordado y la firma con las partes y sus abogados."}
+      - {norma: "LO 1/2025", articulo: "18", apartado: "4", tipo: "conexa", nota: "Si todas las partes aceptan el dictamen del experto, el acuerdo se documenta y produce efectos conforme a los arts. 12 y 13."}
+      - {norma: "LO 1/2025", articulo: "19", apartado: "3", tipo: "conexa", nota: "En el Derecho colaborativo, los abogados redactan un acta final con los acuerdos y lo que quedó sin acuerdo."}
+      - {norma: "LEC", articulo: "517", apartado: "2.2.º", tipo: "regula", nota: "Son título ejecutivo los acuerdos de mediación y de cualquier otro MASC elevados a escritura pública."}
+      - {norma: "LEC", articulo: "517", apartado: "2.3.º", tipo: "regula", nota: "También las resoluciones que homologan transacciones judiciales y acuerdos logrados en el proceso."}
+      - {norma: "LEC", articulo: "550", apartado: "1.1.º", tipo: "regula", nota: "Con la demanda ejecutiva basada en un acuerdo de MASC en escritura se acompañan las actas de las sesiones constitutiva y final."}
+      - {norma: "LEC", articulo: "545", apartado: "2", tipo: "regula", nota: "Acuerdo de mediación: ejecuta el tribunal de primera instancia del lugar en que se firmó."}
+      - {norma: "LEC", articulo: "556", apartado: "1", tipo: "regula", nota: "Oposición en diez días: pago o cumplimiento justificado documentalmente, caducidad y pactos para evitar la ejecución en documento público."}
+      - {norma: "LEC", articulo: "559", apartado: "1.3.º", tipo: "conexa", nota: "Oposición procesal: nulidad del despacho si el acuerdo de mediación no cumple los requisitos para llevar aparejada ejecución."}
+      - {norma: "LEC", articulo: "518", tipo: "conexa", nota: "La acción ejecutiva fundada en acuerdo de mediación caduca a los cinco años."}
+      - {norma: "LEC", articulo: "da12", tipo: "conexa", nota: "Lo que la LEC dice de la mediación se extiende a cualquier otro medio adecuado de solución de controversias."}
+      - {norma: "LEC", articulo: "415", apartado: "2", tipo: "conexa", nota: "El acuerdo homologado en la audiencia previa tiene efectos de transacción judicial y se ejecuta como una sentencia."}
+      - {norma: "LEC", articulo: "565", apartado: "1, párrafo 2.º", tipo: "conexa", nota: "En cualquier momento de la ejecución las partes pueden acudir a un MASC, y se suspende el curso de la ejecución."}
+      - {norma: "CC", articulo: "1816", tipo: "conexa", nota: "La transacción tiene para las partes autoridad de cosa juzgada; la vía de apremio solo procede en la transacción judicial."}
+      - {norma: "CC", articulo: "1817", tipo: "conexa", nota: "La transacción con error, dolo, violencia o falsedad de documentos se rige por el art. 1265."}
+      - {norma: "CC", articulo: "1279", tipo: "conexa", nota: "Si la ley exige escritura u otra forma, los contratantes pueden compelerse a llenarla una vez perfeccionado el contrato."}
+    no_consta_en_norma:
+      - "Día inicial de los cinco años del art. 518 LEC para un acuerdo en escritura, que no tiene firmeza: no lo dice la ley."
+      - "Si el acuerdo en documento privado, sin escritura ni homologación, vale para el juicio monitorio: no lo dice la ley."
+      - "Alcance del control notarial de que el acuerdo no es contrario a Derecho (art. 12.5) frente a cláusulas abusivas: no lo precisa la ley."
+    fuera_de_la_herramienta:
+      - "Ley Hipotecaria, art. 103 bis: conciliación ante el registrador; su certificación es título ejecutivo (art. 13.2 LO 1/2025)."
+    afines: ["Requisito de procedibilidad (MASC)", "Confidencialidad del MASC", "Oferta vinculante confidencial", "Transacción judicial", "Títulos ejecutivos", "Oposición a la ejecución por motivos de fondo", "Caducidad de la acción ejecutiva"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Inviolabilidad del domicilio en la ejecución y el lanzamiento"
+    sinonimos: ["inviolabilidad del domicilio", "entrada en el domicilio", "lanzamiento", "fecha del lanzamiento", "día y hora del lanzamiento", "desalojo de la vivienda", "auxilio de la fuerza pública", "cerrajero en el lanzamiento", "plazo de un mes para desalojar", "prórroga del desalojo", "ocupantes de la vivienda", "terceros ocupantes", "ocupantes de mero hecho", "bienes abandonados en la vivienda", "suspensión del lanzamiento", "vulnerabilidad y lanzamiento", "servicios sociales y lanzamiento", "lanzamiento tras la subasta"]
+    normas_base: ["CE", "LEC", "LOPJ"]
+    remisiones:
+      - {norma: "CE", articulo: "18", apartado: "2", tipo: "regula", nota: "El domicilio es inviolable: entrada solo con consentimiento del titular o resolución judicial, salvo flagrante delito."}
+      - {norma: "CE", articulo: "117", apartado: "3", tipo: "conexa", nota: "Juzgar y hacer ejecutar lo juzgado corresponde exclusivamente a los juzgados y tribunales."}
+      - {norma: "CE", articulo: "47", tipo: "conexa", nota: "Derecho a una vivienda digna y adecuada, principio rector que los poderes públicos deben hacer efectivo."}
+      - {norma: "LEC", articulo: "703", apartado: "1", tipo: "regula", nota: "Título de entrega de inmueble: el LAJ ordena de inmediato lo que proceda; lo que no se retire en plazo se tiene por abandonado."}
+      - {norma: "LEC", articulo: "703", apartado: "1, párrafo 3.º", tipo: "regula", nota: "En desahucios basta un funcionario Gestor autorizado por el LAJ, que puede pedir el auxilio de la fuerza pública."}
+      - {norma: "LEC", articulo: "703", apartado: "3", tipo: "conexa", nota: "Desperfectos constatados en el lanzamiento: retención y depósito de bienes del responsable para responder de los daños."}
+      - {norma: "LEC", articulo: "703", apartado: "4", tipo: "conexa", nota: "Si se entrega la posesión antes de la fecha, decreto que declara ejecutada la sentencia y cancela la diligencia."}
+      - {norma: "LEC", articulo: "704", apartado: "1", tipo: "regula", nota: "Vivienda habitual del ejecutado o dependientes: un mes para desalojar, prorrogable otro más por motivo fundado."}
+      - {norma: "LEC", articulo: "704", apartado: "1, párrafo 2.º", tipo: "regula", nota: "Pasados los plazos, lanzamiento inmediato con día y hora exactos fijados en la resolución."}
+      - {norma: "LEC", articulo: "704", apartado: "2", tipo: "regula", nota: "Terceros ocupantes: se les notifica y tienen diez días para presentar título; el lanzamiento de los de mero hecho va por el art. 675."}
+      - {norma: "LEC", articulo: "549", apartado: "3", tipo: "regula", nota: "Desahucio: pedir la ejecución en la demanda basta para el lanzamiento en el día y hora señalados, sin más trámite."}
+      - {norma: "LEC", articulo: "549", apartado: "4, párrafo 2.º", tipo: "regula", nota: "Si es vivienda habitual, antes del lanzamiento hay que haber seguido los trámites del art. 441.5 a 7."}
+      - {norma: "LEC", articulo: "441", apartado: "5", tipo: "regula", nota: "Vivienda habitual: aviso de oficio a servicios sociales; si confirman vulnerabilidad, puede suspenderse la vista o el lanzamiento."}
+      - {norma: "LEC", articulo: "441", apartado: "6", tipo: "regula", nota: "El tribunal puede suspender el proceso hasta dos meses (actor persona física) o cuatro (persona jurídica)."}
+      - {norma: "LEC", articulo: "441", apartado: "7", tipo: "regula", nota: "Decisión ponderada y proporcional, también ante la vulnerabilidad del actor; criterios económicos y sociales de vulnerabilidad."}
+      - {norma: "LEC", articulo: "150", apartado: "4", tipo: "regula", nota: "La notificación que fija la fecha del lanzamiento de una vivienda se traslada a los servicios sociales competentes."}
+      - {norma: "LEC", articulo: "675", apartado: "2", tipo: "conexa", nota: "Inmueble subastado ocupado: lanzamiento si el tribunal resolvió que los ocupantes no tienen derecho; si no, petición en un año."}
+      - {norma: "LEC", articulo: "675", apartado: "3", tipo: "conexa", nota: "La petición de lanzamiento se ventila en una vista en diez días; auto sin recurso, y lanzamiento si no comparecen sin causa."}
+      - {norma: "LOPJ", articulo: "17", apartado: "1", tipo: "conexa", nota: "Todos deben prestar a jueces y tribunales la colaboración requerida en el proceso y en la ejecución de lo resuelto."}
+    vigilar:
+      - {norma: "LEC", articulo: "22"}
+    # VIGENCIA: los artículos citados son idénticos al texto vigente de boe.es. Voz «provisional» porque el RDL 29/2026 (vigente desde
+    # el 08-10-2026, convalidación pendiente) suspende procesos y lanzamientos de vulnerables (art. 2) y añade el art. 22.6 LEC.
+    no_consta_en_norma:
+      - "Si la resolución que acuerda el lanzamiento basta como autorización de entrada del art. 18.2 CE o hace falta un auto específico: jurisprudencial."
+      - "Exigencia de juicio de proporcionalidad con menores o personas dependientes antes del lanzamiento, más allá del art. 441.7: jurisprudencial."
+    fuera_de_la_herramienta:
+      - "RDL 29/2026, art. 2: suspensión hasta el 31-12-2030 de procesos y lanzamientos de vulnerables sin alternativa habitacional."
+      - "RDL 29/2026, art. 5.Dos: nuevo art. 22.6 LEC, enervación por la Administración y suspensión del lanzamiento durante dos meses."
+    afines: ["Lanzamiento", "Desahucio por falta de pago", "Vulnerabilidad y gran tenedor en la demanda", "Ocupación ilegal de vivienda (desahucio exprés)", "Cargas anteriores y ocupantes del inmueble subastado", "Derecho a la vivienda y función social de la propiedad"]
+    estado: "provisional"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Derecho a la vivienda y función social de la propiedad"
+    sinonimos: ["derecho a la vivienda", "vivienda digna y adecuada", "artículo 47 de la Constitución", "función social de la propiedad", "función social de la vivienda", "derecho de propiedad", "artículo 33 de la Constitución", "principios rectores", "gran tenedor", "vulnerabilidad económica", "alternativa habitacional", "alquiler social", "expropiación", "límites del derecho de propiedad", "ponderación entre propietario y ocupante"]
+    normas_base: ["CE", "CC", "LEC"]
+    remisiones:
+      - {norma: "CE", articulo: "47", tipo: "regula", nota: "Derecho a una vivienda digna y adecuada; los poderes públicos promueven las condiciones y regulan el suelo contra la especulación."}
+      - {norma: "CE", articulo: "33", apartado: "1", tipo: "regula", nota: "Se reconoce el derecho a la propiedad privada y a la herencia."}
+      - {norma: "CE", articulo: "33", apartado: "2", tipo: "regula", nota: "La función social de estos derechos delimita su contenido, de acuerdo con las leyes."}
+      - {norma: "CE", articulo: "33", apartado: "3", tipo: "regula", nota: "Nadie puede ser privado de sus bienes sino por utilidad pública o interés social, con indemnización y conforme a las leyes."}
+      - {norma: "CE", articulo: "53", apartado: "3", tipo: "regula", nota: "Los principios rectores informan legislación y práctica judicial, pero solo se alegan ante los jueces según las leyes que los desarrollen."}
+      - {norma: "CE", articulo: "128", apartado: "1", tipo: "conexa", nota: "Toda la riqueza del país, sea cual fuere su titularidad, está subordinada al interés general."}
+      - {norma: "CE", articulo: "39", apartado: "1", tipo: "conexa", nota: "Los poderes públicos aseguran la protección social, económica y jurídica de la familia."}
+      - {norma: "CE", articulo: "9", apartado: "2", tipo: "conexa", nota: "Los poderes públicos deben promover que la libertad y la igualdad sean reales y efectivas y remover los obstáculos."}
+      - {norma: "CE", articulo: "18", apartado: "2", tipo: "conexa", nota: "El domicilio es inviolable: sin consentimiento, solo resolución judicial o flagrante delito."}
+      - {norma: "CC", articulo: "348", tipo: "regula", nota: "La propiedad es el derecho de gozar y disponer de una cosa sin más limitaciones que las establecidas en las leyes."}
+      - {norma: "CC", articulo: "349", tipo: "conexa", nota: "Nadie puede ser privado de su propiedad sino por autoridad competente, utilidad pública y previa indemnización."}
+      - {norma: "LEC", articulo: "439", apartado: "6", tipo: "regula", nota: "La demanda de recuperación de una finca debe decir si es vivienda habitual del ocupante y si el actor es gran tenedor."}
+      - {norma: "LEC", articulo: "441", apartado: "5", tipo: "regula", nota: "Vivienda habitual: aviso a servicios sociales para valorar la vulnerabilidad y proponer alternativa habitacional."}
+      - {norma: "LEC", articulo: "441", apartado: "7", tipo: "regula", nota: "El tribunal pondera la vulnerabilidad de ambas partes; criterios de renta, IPREM, dependencia, violencia y menores."}
+      - {norma: "LEC", articulo: "150", apartado: "4", tipo: "conexa", nota: "La fecha del lanzamiento de una vivienda se comunica a los servicios sociales por si procediera su actuación."}
+      - {norma: "LEC", articulo: "704", apartado: "1", tipo: "conexa", nota: "Vivienda habitual del ejecutado: un mes para desalojar, prorrogable un mes más por motivo fundado."}
+    vigilar:
+      - {norma: "LEC", articulo: "22"}
+    # VIGENCIA: los artículos citados son idénticos al texto vigente de boe.es. El RDL 29/2026 (ver notas) desarrolla la función
+    # social de la vivienda fuera de la herramienta y reforma el art. 22 LEC: por eso `vigilar`.
+    no_consta_en_norma:
+      - "Si el art. 47 CE permite por sí solo suspender un desahucio sin ley que lo prevea: no, por el art. 53.3; su alcance interpretativo es jurisprudencial."
+      - "Contenido esencial del derecho de propiedad frente a las suspensiones legales de desahucios: doctrina constitucional."
+    fuera_de_la_herramienta:
+      - "Ley 12/2023, por el derecho a la vivienda, art. 3.k): concepto de gran tenedor, al que remite el art. 439.6.b) LEC."
+      - "RDL 29/2026, de protección de la función social de la vivienda: suspensión de desahucios de vulnerables hasta el 31-12-2030 (art. 2)."
+    afines: ["Inviolabilidad del domicilio en la ejecución y el lanzamiento", "Vulnerabilidad y gran tenedor en la demanda", "Desahucio por falta de pago", "Ocupación ilegal de vivienda (desahucio exprés)", "Decretos-leyes: convalidación y vigencia", "Acción reivindicatoria y declarativa de dominio"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Decretos-leyes: convalidación y vigencia"
+    sinonimos: ["decreto-ley", "real decreto-ley", "RDL", "convalidación", "derogación del decreto-ley", "Congreso deroga el decreto-ley", "plazo de treinta días", "extraordinaria y urgente necesidad", "límites materiales del decreto-ley", "tramitación como proyecto de ley", "Diputación Permanente", "Cortes disueltas", "decreto-ley repetido tras su derogación", "entrada en vigor de las leyes", "reviviscencia de la norma derogada", "decreto legislativo", "recurso de inconstitucionalidad contra un decreto-ley"]
+    normas_base: ["CE", "CC", "LOPJ"]
+    remisiones:
+      - {norma: "CE", articulo: "86", apartado: "1", tipo: "regula", nota: "Extraordinaria y urgente necesidad; no puede afectar a instituciones básicas, derechos del título I, autonomías ni derecho electoral."}
+      - {norma: "CE", articulo: "86", apartado: "2", tipo: "regula", nota: "Debate y votación en el Congreso en los treinta días siguientes a su promulgación: convalidación o derogación expresa."}
+      - {norma: "CE", articulo: "86", apartado: "3", tipo: "regula", nota: "En ese plazo, las Cortes pueden tramitarlos como proyectos de ley por el procedimiento de urgencia."}
+      - {norma: "CE", articulo: "78", apartado: "2", tipo: "regula", nota: "Con las Cámaras disueltas, la Diputación Permanente asume sus facultades del art. 86."}
+      - {norma: "CE", articulo: "78", apartado: "3", tipo: "conexa", nota: "Disueltas las Cámaras, las Diputaciones Permanentes ejercen sus funciones hasta que se constituyan las nuevas Cortes."}
+      - {norma: "CE", articulo: "115", apartado: "1", tipo: "conexa", nota: "La disolución la decreta el Rey a propuesta del Presidente del Gobierno; el decreto fija la fecha de las elecciones."}
+      - {norma: "CE", articulo: "82", apartado: "1", tipo: "conexa", nota: "Distinto del decreto-ley: las Cortes pueden delegar en el Gobierno dictar normas con rango de ley (decreto legislativo)."}
+      - {norma: "CE", articulo: "81", apartado: "1", tipo: "conexa", nota: "Materias reservadas a ley orgánica: desarrollo de derechos fundamentales, Estatutos, régimen electoral y demás previstas."}
+      - {norma: "CE", articulo: "9", apartado: "3", tipo: "regula", nota: "Garantiza legalidad, jerarquía, publicidad, irretroactividad de lo sancionador o restrictivo y seguridad jurídica."}
+      - {norma: "CE", articulo: "161", apartado: "1.a)", tipo: "regula", nota: "El Tribunal Constitucional conoce del recurso de inconstitucionalidad contra leyes y disposiciones con fuerza de ley."}
+      - {norma: "CE", articulo: "163", tipo: "regula", nota: "El juez que duda de la constitucionalidad de una norma con rango de ley decisiva para el fallo plantea la cuestión al TC."}
+      - {norma: "CE", articulo: "164", apartado: "1", tipo: "conexa", nota: "Las sentencias del TC se publican en el BOE, son cosa juzgada y las de inconstitucionalidad tienen efectos frente a todos."}
+      - {norma: "LOPJ", articulo: "5", apartado: "2", tipo: "conexa", nota: "El órgano judicial planteará la cuestión de inconstitucionalidad de la norma con rango de ley de cuya validez dependa el fallo."}
+      - {norma: "CC", articulo: "2", apartado: "1", tipo: "regula", nota: "Las leyes entran en vigor a los veinte días de su publicación en el BOE, salvo que dispongan otra cosa."}
+      - {norma: "CC", articulo: "2", apartado: "2", tipo: "regula", nota: "Solo se derogan por otras posteriores; por la simple derogación no recobran vigencia las que la ley derogada había derogado."}
+      - {norma: "CC", articulo: "2", apartado: "3", tipo: "regula", nota: "Las leyes no tienen efecto retroactivo, si no disponen lo contrario."}
+    no_consta_en_norma:
+      - "Cómputo del plazo de treinta días del art. 86.2 CE (naturales, desde la promulgación) y forma de la convalidación: Reglamento del Congreso y práctica parlamentaria."
+      - "Validez de un decreto-ley que reproduce otro derogado por el Congreso: doctrina constitucional."
+      - "Si la derogación del decreto-ley por el Congreso produce efectos solo hacia el futuro y si hace revivir la redacción que modificó: no lo dice la CE."
+      - "Control judicial del presupuesto de extraordinaria y urgente necesidad: solo por el TC; doctrina constitucional."
+    fuera_de_la_herramienta:
+      - "RD 806/2026, de 5 de octubre (BOE de 06-10-2026): disuelve el Congreso y el Senado; elecciones el 29-11-2026."
+      - "RDL 28/2026 y 29/2026, de 6 de octubre (BOE de 07-10-2026): promulgados con las Cámaras ya disueltas; los convalida o deroga la Diputación Permanente."
+      - "RDL 26/2026: derogado por el Congreso (Resolución de 2-10-2026, BOE-A-2026-20526)."
+    afines: ["Seguridad jurídica e irretroactividad", "Cuestión de inconstitucionalidad", "Derecho a la vivienda y función social de la propiedad", "Enervación del desahucio", "Cómputo civil de plazos"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"

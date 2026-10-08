@@ -1,0 +1,441 @@
+# Índice de conceptos de «Consulta de normas» — tanda 24 (prioridad C: 37, 74, 111, 112, 130, 159, 160, 161, 168, 197, 198 y 199)
+# Orden de las voces: el de la lista maestra.
+# Revisor: armero. Espejo: legalize-es@aca28304d, leído con `git show aca28304d:es/…` (no el árbol de trabajo, que hoy trae erratas).
+# Todo precepto citado se ha leído en el espejo en esta pasada. Vigencia: contraste con la API de boe.es (08-10-2026).
+# Ver tanda-24-notas.md.
+
+voces:
+  - voz: "Reconstrucción de autos"
+    sinonimos: ["reconstrucción de autos", "reconstrucción de actuaciones", "reconstitución de actuaciones", "pérdida de los autos", "extravío del expediente", "desaparición de autos", "mutilación de actuaciones", "autos destruidos", "expediente extraviado", "Decreto de 1940 de reconstrucción de autos", "comparecencia de reconstrucción", "situación procesal de la que debe partirse"]
+    normas_base: ["LEC", "LOPJ"]
+    remisiones:
+      - {norma: "LEC", articulo: "232", apartado: "1", tipo: "regula", nota: "Tramita la reconstitución total o parcial el LAJ de la oficina judicial en que ocurrió la desaparición o mutilación."}
+      - {norma: "LEC", articulo: "232", apartado: "2", tipo: "regula", nota: "El Ministerio Fiscal es siempre parte en el procedimiento de reconstrucción de actuaciones."}
+      - {norma: "LEC", articulo: "233", tipo: "regula", nota: "De oficio o por las partes o sus herederos; el escrito dice cuándo se perdió, el estado del pleito y aporta las copias que haya."}
+      - {norma: "LEC", articulo: "234", apartado: "1", tipo: "regula", nota: "Acordado el inicio, el LAJ cita a comparecencia ante sí en diez días, con abogado si era preceptivo en el pleito."}
+      - {norma: "LEC", articulo: "234", apartado: "2", tipo: "regula", nota: "La ausencia de una parte no impide seguir con las presentes; si no comparece ninguna, se sustancia con el Fiscal."}
+      - {norma: "LEC", articulo: "235", apartado: "1", tipo: "regula", nota: "La comparecencia empieza pidiendo a las partes conformidad o disconformidad con los escritos y documentos aportados."}
+      - {norma: "LEC", articulo: "235", apartado: "2", tipo: "regula", nota: "Oídas las partes e informado el Fiscal, el LAJ fija los extremos de acuerdo y los de disconformidad no accidental."}
+      - {norma: "LEC", articulo: "235", apartado: "3", tipo: "regula", nota: "Sin controversia, decreto del LAJ que declara reconstituidas las actuaciones y fija la situación procesal de partida."}
+      - {norma: "LEC", articulo: "235", apartado: "4", tipo: "regula", nota: "Con desacuerdo, vista ante el tribunal en diez días, prueba en el acto o en quince días, y auto apelable."}
+      - {norma: "LEC", articulo: "ddu", apartado: "2.20.º", tipo: "conexa", nota: "Deroga el Decreto de 23 de febrero de 1940 sobre reconstrucción de autos y actuaciones judiciales."}
+      - {norma: "LEC", articulo: "145", apartado: "1.3.º", tipo: "conexa", nota: "El LAJ expide certificaciones o testimonios de las actuaciones no declaradas secretas ni reservadas."}
+      - {norma: "LEC", articulo: "147", tipo: "conexa", nota: "Las vistas se graban en imagen y sonido, la grabación va al expediente electrónico y las partes pueden pedir copia."}
+      - {norma: "LOPJ", articulo: "230", apartado: "2", tipo: "conexa", nota: "Los documentos emitidos por medios técnicos valen como originales si se garantizan su autenticidad e integridad."}
+    no_consta_en_norma:
+      - "Plazo para instar la reconstrucción y efecto de la pérdida de los autos sobre la caducidad de la instancia (art. 238 LEC): la ley no lo resuelve."
+      - "Valor de las copias privadas aportadas para reconstruir frente a las auténticas: la LEC no lo precisa en este procedimiento."
+    afines: ["Grabación y documentación de las vistas", "Caducidad de la instancia", "Recurso de apelación (plazo, interposición, prueba en segunda instancia)", "Fuerza probatoria de documentos públicos y privados", "Resoluciones procesales: clases y firmeza"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Reconocimiento judicial"
+    sinonimos: ["reconocimiento judicial", "inspección ocular", "reconocimiento de lugares", "examen del inmueble por el juez", "visita del juez a la finca", "reconocimiento de objetos", "reconocimiento de personas", "reconocimiento judicial y pericial conjunto", "acta del reconocimiento", "grabación del reconocimiento", "persona técnica o práctica", "entrada en el lugar a reconocer", "reconocimiento fuera de la sede", "testigos en el lugar del reconocimiento"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "299", apartado: "1.5.º", tipo: "conexa", nota: "El reconocimiento judicial es uno de los medios de prueba de que se puede hacer uso en juicio."}
+      - {norma: "LEC", articulo: "353", apartado: "1", tipo: "regula", nota: "Se acuerda cuando, para esclarecer y apreciar los hechos, el tribunal debe examinar por sí mismo un lugar, objeto o persona."}
+      - {norma: "LEC", articulo: "353", apartado: "2", tipo: "regula", nota: "Quien lo pide expresa los extremos principales y si irá con persona técnica o práctica; la otra parte puede añadir extremos."}
+      - {norma: "LEC", articulo: "353", apartado: "3", tipo: "regula", nota: "Acordado, el LAJ señala día y hora con al menos cinco días de antelación."}
+      - {norma: "LEC", articulo: "354", apartado: "1", tipo: "regula", nota: "El tribunal puede acordar las medidas necesarias, incluida la entrada en el lugar que deba reconocerse."}
+      - {norma: "LEC", articulo: "354", apartado: "2", tipo: "regula", nota: "Las partes, sus procuradores y abogados pueden concurrir y hacer de palabra las observaciones oportunas."}
+      - {norma: "LEC", articulo: "354", apartado: "3", tipo: "regula", nota: "Si se oye a las personas técnicas o prácticas, declaran previo juramento o promesa de decir verdad."}
+      - {norma: "LEC", articulo: "355", apartado: "1", tipo: "regula", nota: "El de personas es un interrogatorio del tribunal, a puerta cerrada o fuera de la sede si conviene; las partes intervienen si no estorba."}
+      - {norma: "LEC", articulo: "355", apartado: "2", tipo: "regula", nota: "Se garantiza siempre el respeto a la dignidad e intimidad de la persona reconocida."}
+      - {norma: "LEC", articulo: "356", apartado: "1", tipo: "regula", nota: "El tribunal puede disponer por providencia el reconocimiento judicial y el pericial en un solo acto."}
+      - {norma: "LEC", articulo: "356", apartado: "2", tipo: "conexa", nota: "Las partes pueden pedir la práctica conjunta; el tribunal la ordena si la estima procedente."}
+      - {norma: "LEC", articulo: "357", apartado: "1", tipo: "regula", nota: "A instancia y costa de parte, los testigos declaran tras el reconocimiento si ver el lugar o la cosa aclara su testimonio."}
+      - {norma: "LEC", articulo: "357", apartado: "2", tipo: "conexa", nota: "En las mismas circunstancias, puede practicarse a petición de parte el interrogatorio de la contraria."}
+      - {norma: "LEC", articulo: "358", apartado: "1", tipo: "regula", nota: "Acta detallada del LAJ con lo percibido por el tribunal y las observaciones; no hace falta si hay grabación firmada."}
+      - {norma: "LEC", articulo: "359", tipo: "regula", nota: "Se graba en imagen y sonido; sin garantía de autenticidad, acta escrita; la parte puede pedir copia a su costa."}
+      - {norma: "LEC", articulo: "289", apartado: "2", tipo: "regula", nota: "Es inexcusable la presencia judicial en el reconocimiento de lugares, objetos o personas."}
+      - {norma: "LEC", articulo: "300", apartado: "1.4.º", tipo: "conexa", nota: "En el juicio o vista se practica tras los peritos, salvo que haya de hacerse fuera de la sede del tribunal."}
+      - {norma: "LEC", articulo: "290", tipo: "conexa", nota: "La prueba fuera del juicio se señala con cinco días de antelación y se practica antes del juicio o vista."}
+      - {norma: "LEC", articulo: "291", tipo: "conexa", nota: "Las partes son citadas con al menos cuarenta y ocho horas a las pruebas que se practiquen fuera del juicio."}
+      - {norma: "LEC", articulo: "169", apartado: "2", tipo: "conexa", nota: "Fuera de la circunscripción, auxilio judicial si el tribunal no se desplaza y no es posible la videoconferencia."}
+      - {norma: "LEC", articulo: "129 bis", apartado: "2", tipo: "conexa", nota: "El reconocimiento judicial personal exige la presencia física de la persona y, si es parte, de su defensa, salvo excepciones."}
+      - {norma: "LEC", articulo: "441", apartado: "2", tipo: "conexa", nota: "En la suspensión de obra nueva, el tribunal puede acordar reconocimiento judicial, pericial o conjunto antes de la vista."}
+      - {norma: "LEC", articulo: "431", tipo: "conexa", nota: "En el juicio ordinario se practica, en su caso, el reconocimiento judicial."}
+      - {norma: "LEC", articulo: "734", apartado: "2", tipo: "conexa", nota: "En la vista de cautelares puede pedirse reconocimiento judicial; si no cabe en el acto, se practica en cinco días."}
+    no_consta_en_norma:
+      - "Regla de valoración del reconocimiento judicial: la LEC no la fija, a diferencia de los arts. 316, 348 y 376; jurisprudencial."
+      - "Efecto sobre la validez de un reconocimiento practicado sin citar a las partes: jurisprudencial."
+    afines: ["Proposición de prueba", "Pertinencia y utilidad de la prueba; protesta", "Dictamen pericial de parte y judicial", "Testigos y tachas", "Obra nueva y obra ruinosa", "Juicio ordinario: práctica de la prueba y conclusiones"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Arrendamientos de renta antigua (anteriores a 1995)"
+    sinonimos: ["renta antigua", "contrato de renta antigua", "alquiler de renta antigua", "LAU de 1964", "prórroga forzosa", "contrato anterior al 9 de mayo de 1985", "decreto Boyer", "Real Decreto-ley 2/1985", "subrogación en renta antigua", "local de negocio de renta antigua", "jubilación del arrendatario del local", "traspaso del local de negocio", "actualización de renta antigua", "repercusión del IBI al inquilino de renta antigua", "derecho preferente a continuar en el local", "indemnización de dieciocho mensualidades", "disposiciones transitorias de la LAU"]
+    normas_base: ["LAU", "CC"]
+    remisiones:
+      - {norma: "LAU", articulo: "dt 1", apartado: "1", tipo: "regula", nota: "Vivienda pactada desde el 9-5-1985 y vigente en 1995: art. 9 del RDL 2/1985 y LAU de 1964; se aplican los apartados 2 y 3 de la dt 2.ª."}
+      - {norma: "LAU", articulo: "dt 1", apartado: "1, párrafo 3.º", tipo: "regula", nota: "La tácita reconducción del art. 1566 CC es por tres años y el arriendo renovado se rige por la LAU de 1994 para vivienda."}
+      - {norma: "LAU", articulo: "dt 1", apartado: "2", tipo: "regula", nota: "Local pactado desde el 9-5-1985: RDL 2/1985 y LAU de 1964; renovado por tácita reconducción, rige la LAU de uso distinto."}
+      - {norma: "LAU", articulo: "dt 2", apartado: "1", tipo: "regula", nota: "Vivienda pactada antes del 9-5-1985: normas de inquilinato de la LAU de 1964, con las modificaciones de esta disposición."}
+      - {norma: "LAU", articulo: "dt 2", apartado: "2", tipo: "regula", nota: "Se aplican los arts. 12, 15 y 24 de la LAU de 1994 (cónyuge que no consiente el desistimiento, separación y discapacidad)."}
+      - {norma: "LAU", articulo: "dt 2", apartado: "3, párrafo 2.º", tipo: "conexa", nota: "No hay tanteo ni retracto si la vivienda se adjudica al dividir una comunidad anterior al arriendo o heredada."}
+      - {norma: "LAU", articulo: "dt 2", apartado: "4", tipo: "regula", nota: "Subrogación por muerte: cónyuge; en su defecto, hijos con dos años de convivencia; después, ascendientes a cargo con tres."}
+      - {norma: "LAU", articulo: "dt 2", apartado: "4, párrafo 2.º", tipo: "regula", nota: "Se extingue al morir el subrogado; si es un hijo sin minusvalía del 65 %, a los dos años o al cumplir 25 si es posterior."}
+      - {norma: "LAU", articulo: "dt 2", apartado: "5", tipo: "regula", nota: "Muerto quien se subrogó antes de 1995, solo cónyuge o hijos convivientes dos años; no se autorizan más subrogaciones."}
+      - {norma: "LAU", articulo: "dt 2", apartado: "7", tipo: "regula", nota: "Los derechos del cónyuge alcanzan al conviviente análogo de al menos dos años, o sin plazo si hay descendencia común."}
+      - {norma: "LAU", articulo: "dt 2", apartado: "9", tipo: "regula", nota: "El subrogado prueba la convivencia habitual en la vivienda; rigen procedimiento y prelación del art. 16 LAU; no cabe renunciar a otro grado."}
+      - {norma: "LAU", articulo: "dt 2", apartado: "10", tipo: "regula", nota: "El arrendador puede exigir el IBI y repercutir obras de reparación necesarias y el coste de servicios y suministros."}
+      - {norma: "LAU", articulo: "dt 2", apartado: "11", tipo: "regula", nota: "Actualización de la renta a instancia del arrendador, previo requerimiento fehaciente y con certificación del INE."}
+      - {norma: "LAU", articulo: "dt 2", apartado: "11.6.ª", tipo: "regula", nota: "El inquilino puede oponerse en treinta días naturales: solo IPC anual, y el contrato se extingue a los ocho años del requerimiento."}
+      - {norma: "LAU", articulo: "dt 2", apartado: "11.7.ª", tipo: "conexa", nota: "No hay actualización si los ingresos de los convivientes no superan de 2,5 a 3,5 veces el SMI, según cuántos sean."}
+      - {norma: "LAU", articulo: "dt 3", apartado: "1", tipo: "regula", nota: "Local de negocio pactado antes del 9-5-1985: LAU de 1964 de local de negocio, con las modificaciones de esta disposición."}
+      - {norma: "LAU", articulo: "dt 3", apartado: "3", tipo: "regula", nota: "Persona física: se extingue por su jubilación o muerte, salvo que se subrogue el cónyuge (luego un descendiente) que siga la actividad."}
+      - {norma: "LAU", articulo: "dt 3", apartado: "4", tipo: "regula", nota: "Arrendatario persona jurídica: se extingue entre cinco y veinte años desde 1995, según la actividad, la superficie y la cuota del IAE."}
+      - {norma: "LAU", articulo: "dt 3", apartado: "6", tipo: "conexa", nota: "Actualización anual de la renta del local a instancia del arrendador, previo requerimiento fehaciente, por tablas."}
+      - {norma: "LAU", articulo: "dt 3", apartado: "7", tipo: "conexa", nota: "Si el arrendatario actualiza la renta, los plazos de los apartados 3 y 4 se alargan cinco años."}
+      - {norma: "LAU", articulo: "dt 3", apartado: "10", tipo: "regula", nota: "Indemnización de dieciocho mensualidades si en un año otro ejerce en el local la misma actividad o una afín."}
+      - {norma: "LAU", articulo: "dt 3", apartado: "11", tipo: "regula", nota: "Extinguido, preferencia para seguir si en un año se arrienda a otro: 30 días naturales; si no se notifica, subrogación en el nuevo contrato."}
+      - {norma: "LAU", articulo: "dt 4", apartado: "1", tipo: "conexa", nota: "Los asimilados al inquilinato y al local de negocio anteriores al 9-5-1985 siguen la LAU de 1964, con las reglas de la dt 3.ª."}
+      - {norma: "LAU", articulo: "dt 5", tipo: "conexa", nota: "Los arrendamientos de viviendas de protección oficial siguen rigiéndose por su normativa propia."}
+      - {norma: "LAU", articulo: "ddu", tipo: "regula", nota: "Deroga la LAU de 1964 y los arts. 8 y 9 del RDL 2/1985, sin perjuicio de lo que mantienen las disposiciones transitorias."}
+      - {norma: "LAU", articulo: "df2", tipo: "conexa", nota: "La LAU de 1994 entró en vigor el 1 de enero de 1995."}
+      - {norma: "CC", articulo: "1566", tipo: "conexa", nota: "Tácita reconducción si el arrendatario sigue quince días en la cosa con aquiescencia del arrendador, salvo requerimiento previo."}
+    fuera_de_la_herramienta:
+      - "Decreto 4104/1964, texto refundido de la LAU de 1964 (BOE-A-1964-21865): derogado desde el 01-01-1995, pero rige estos contratos por las dt 1.ª a 4.ª."
+      - "Real Decreto-ley 2/1985 (BOE-A-1985-8402), art. 9: duración libre, sin prórroga forzosa del art. 57 LAU 1964, en los contratos desde el 9-5-1985."
+    no_consta_en_norma:
+      - "Si la jubilación del arrendatario persona física extingue el local cuando la actividad la sigue una sociedad o un familiar no subrogado: jurisprudencial."
+      - "Si un contrato de 1985 a 1994 se sometió por pacto a la prórroga forzosa (lo admite el preámbulo de la LAU): depende del clausulado; jurisprudencial."
+    afines: ["Subrogación", "Tácita reconducción", "Ámbito de la LAU y arrendamientos excluidos", "Renta: pago, recibo y actualización", "Gastos generales, servicios e IBI", "Indemnización por clientela en el arrendamiento de local", "Desahucio por expiración del plazo"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Formalización e inscripción del arrendamiento"
+    sinonimos: ["formalización del arrendamiento", "contrato de arrendamiento por escrito", "contrato verbal de arrendamiento", "compelerse a formalizar por escrito", "elevar el arrendamiento a escritura pública", "inscripción del arrendamiento", "arrendamiento inscrito", "Registro de la Propiedad y arrendamiento", "tercero hipotecario y arrendamiento", "artículo 34 de la Ley Hipotecaria", "fecha cierta del contrato privado", "venta quita renta", "contenido mínimo del contrato de alquiler", "registro único de arrendamientos"]
+    normas_base: ["LAU", "CC", "LEC"]
+    remisiones:
+      - {norma: "LAU", articulo: "37", tipo: "regula", nota: "Las partes pueden compelerse a formalizar por escrito; desde el RDL 29/2026 es obligatorio si lo pide el inquilino, sin invalidar el verbal."}
+      - {norma: "LAU", articulo: "37", apartado: "párrafo 2.º", tipo: "regula", nota: "El escrito recoge la identidad de las partes, la finca, la duración pactada, la renta inicial y las demás cláusulas."}
+      - {norma: "LAU", articulo: "13", apartado: "1, párrafo 2.º", tipo: "regula", nota: "Pasados cinco años (siete si persona jurídica), si cae el derecho del arrendador se extingue el arriendo, salvo inscripción anterior."}
+      - {norma: "LAU", articulo: "13", apartado: "3", tipo: "conexa", nota: "Dura cinco años (siete) el arriendo concertado de buena fe con quien figura como propietario en el Registro de la Propiedad."}
+      - {norma: "LAU", articulo: "14", apartado: "párrafo 1.º", tipo: "regula", nota: "El adquirente se subroga los cinco (o siete) primeros años aunque reúna los requisitos del art. 34 de la Ley Hipotecaria."}
+      - {norma: "LAU", articulo: "14", apartado: "párrafo 2.º", tipo: "regula", nota: "Si lo pactado es más largo, se subroga por todo salvo que sea tercero del art. 34 LH; entonces el vendedor indemniza al inquilino."}
+      - {norma: "LAU", articulo: "29", tipo: "regula", nota: "En el uso distinto de vivienda, el adquirente se subroga salvo que reúna los requisitos del art. 34 de la Ley Hipotecaria."}
+      - {norma: "LAU", articulo: "da 2", apartado: "1", tipo: "regula", nota: "Son inscribibles los arrendamientos de inmuebles y sus subarriendos, cesiones y subrogaciones (art. 2.5.º de la Ley Hipotecaria)."}
+      - {norma: "LAU", articulo: "da 2", apartado: "2", tipo: "conexa", nota: "Remite al reglamento los requisitos de acceso de los arrendamientos urbanos al Registro de la Propiedad."}
+      - {norma: "CC", articulo: "1278", tipo: "regula", nota: "Los contratos obligan cualquiera que sea su forma si concurren las condiciones esenciales para su validez."}
+      - {norma: "CC", articulo: "1279", tipo: "conexa", nota: "Si la ley exige una forma, los contratantes pueden compelerse a llenarla desde que hay consentimiento y demás requisitos."}
+      - {norma: "CC", articulo: "1280", apartado: "2.º", tipo: "regula", nota: "Constan en documento público los arrendamientos de inmuebles por seis o más años que deban perjudicar a tercero."}
+      - {norma: "CC", articulo: "1227", tipo: "conexa", nota: "La fecha del documento privado frente a terceros cuenta desde su inscripción, la muerte de un firmante o su entrega a un funcionario."}
+      - {norma: "CC", articulo: "1549", tipo: "regula", nota: "Frente a terceros no surten efecto los arrendamientos de bienes raíces no inscritos en el Registro de la Propiedad."}
+      - {norma: "CC", articulo: "1571", tipo: "conexa", nota: "El comprador puede terminar el arriendo salvo pacto y lo que disponga la Ley Hipotecaria; en la LAU rigen sus arts. 14 y 29."}
+      - {norma: "LEC", articulo: "249", apartado: "1.6.º", tipo: "conexa", nota: "Van al juicio ordinario los asuntos de arrendamientos urbanos, salvo rentas, desahucios y los demás reservados al verbal."}
+    # VIGENCIA: LAU 37 distinto en el espejo (RDL 29/2026, vigente desde el 08-10-2026, convalidación pendiente): el vigente añade el
+    # apartado 2 (forma escrita obligatoria a instancia del arrendatario). Nota según la API vigente. LAU 13, 14, 29 y da 2 idénticos.
+    vigilar:
+      - {norma: "LAU", articulo: "37"}
+    fuera_de_la_herramienta:
+      - "Ley Hipotecaria, arts. 2.5.º y 34: inscripción del arrendamiento y protección del tercero que adquiere confiado en el Registro."
+      - "RD 297/1996 (BOE-A-1996-5930): para inscribir, escritura pública o elevación a escritura del contrato privado; cabe sobre parte de finca."
+      - "RD 1312/2024 (BOE-A-2024-26931): número de Registro Único para ofertar alquileres de corta duración en plataformas, desde el 01-07-2025."
+    no_consta_en_norma:
+      - "Prueba de la existencia, la renta y la duración del arrendamiento verbal: reglas generales de la prueba; jurisprudencial."
+      - "Si el adquirente que conocía el arriendo no inscrito puede ser tercero del art. 34 LH (buena fe): jurisprudencial."
+    afines: ["Enajenación de la finca arrendada y resolución del derecho del arrendador", "Forma del contrato y elevación a escritura pública", "Ámbito de la LAU y arrendamientos excluidos", "Arrendamiento de temporada y para uso distinto de vivienda", "Derechos de tanteo y retracto del arrendatario", "Vivienda de uso turístico: exclusión de la LAU"]
+    estado: "provisional"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Resolución judicial en equidad ante falta de mayoría"
+    sinonimos: ["resolución en equidad", "juicio de equidad en propiedad horizontal", "falta de mayoría en la junta", "acuerdo imposible por falta de mayoría", "petición al juez por falta de mayoría", "artículo 17.7 LPH", "regla 7.ª del artículo 17", "bloqueo de la junta", "empate en la junta de propietarios", "suplir el acuerdo de la junta", "nombramiento judicial de presidente", "relevo judicial del presidente", "comparecencia de los contradictores", "comunidad ordinaria sin mayoría"]
+    normas_base: ["LPH", "CC", "LEC"]
+    remisiones:
+      - {norma: "LPH", articulo: "17", apartado: "7, párrafo 2.º", tipo: "regula", nota: "Sin mayoría, el juez resuelve en equidad a instancia de parte (un mes desde la 2.ª junta), tras comparecencia, en 20 días y con costas."}
+      - {norma: "LPH", articulo: "17", apartado: "7", tipo: "regula", nota: "Acuerdos ordinarios: mayoría de propietarios y de cuotas; en segunda convocatoria, mayoría de asistentes con más de la mitad de sus cuotas."}
+      - {norma: "LPH", articulo: "17", apartado: "8", tipo: "conexa", nota: "Los ausentes citados que no discrepan en 30 días naturales tras ser informados cuentan como votos favorables, con excepciones."}
+      - {norma: "LPH", articulo: "17", apartado: "6", tipo: "conexa", nota: "Lo no regulado que modifique el título constitutivo o los estatutos exige unanimidad de propietarios y cuotas."}
+      - {norma: "LPH", articulo: "17", apartado: "9", tipo: "conexa", nota: "Los acuerdos válidamente adoptados conforme a este artículo obligan a todos los propietarios."}
+      - {norma: "LPH", articulo: "16", apartado: "2, párrafo 3.º", tipo: "conexa", nota: "Sin quórum en primera convocatoria, la junta se celebra en segunda convocatoria sin sujeción a quórum."}
+      - {norma: "LPH", articulo: "13", apartado: "2", tipo: "conexa", nota: "El presidente designado puede pedir su relevo al juez en un mes; se resuelve de plano por el cauce del art. 17.7.ª, con sustituto."}
+      - {norma: "LPH", articulo: "13", apartado: "2, párrafo 2.º", tipo: "conexa", nota: "También puede acudirse al juez cuando, por cualquier causa, la junta no puede designar presidente."}
+      - {norma: "LPH", articulo: "18", apartado: "1", tipo: "conexa", nota: "Si hay acuerdo, se impugna por contrario a la ley o estatutos, lesivo para la comunidad o gravemente perjudicial para un propietario."}
+      - {norma: "CC", articulo: "3", apartado: "2", tipo: "regula", nota: "Las resoluciones solo pueden descansar exclusivamente en la equidad cuando la ley lo permite expresamente."}
+      - {norma: "CC", articulo: "398", apartado: "párrafo 3.º", tipo: "conexa", nota: "En la comunidad ordinaria, sin mayoría o con acuerdo gravemente perjudicial, el juez provee a instancia de parte, incluso un administrador."}
+      - {norma: "LEC", articulo: "52", apartado: "1.8.º", tipo: "conexa", nota: "En los juicios de propiedad horizontal es competente el tribunal del lugar en que radique la finca."}
+      - {norma: "LEC", articulo: "249", apartado: "1.8.º", tipo: "conexa", nota: "Las acciones de la LPH van al juicio ordinario, salvo las de cantidad, que siguen el verbal o el procedimiento especial."}
+    no_consta_en_norma:
+      - "Cauce procesal de la petición del art. 17.7 LPH (comparecencia y veinte días) frente al juicio ordinario del art. 249.1.8.º LEC: jurisprudencial."
+      - "Si cabe pedir la resolución en equidad cuando lo que falta es la unanimidad del art. 17.6 LPH: jurisprudencial."
+      - "Legitimación de quien votó en contra para pedirla («a instancia de parte»): jurisprudencial."
+    afines: ["Mayorías y cómputo de votos", "Impugnación de acuerdos (plazo del art. 18)", "Junta de propietarios: convocatoria y orden del día", "Legitimación del presidente", "Copropiedad y acción de división de cosa común", "Competencia territorial y fueros imperativos"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Avalúo de los bienes embargados"
+    sinonimos: ["avalúo", "tasación de los bienes embargados", "valoración de los bienes embargados", "perito tasador", "valor de tasación", "valor de subasta", "recusación del perito tasador", "provisión de fondos del perito tasador", "alegaciones a la valoración", "informe de perito tasador de parte", "decreto de valoración definitiva", "deducción de cargas anteriores", "tipo de subasta en la hipoteca", "75 por ciento de la tasación"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "637", tipo: "regula", nota: "Se avalúan los embargados que no sean dinero, saldos ni valores o participaciones, salvo acuerdo de ejecutante y ejecutado sobre su valor."}
+      - {norma: "LEC", articulo: "638", apartado: "1", tipo: "regula", nota: "El LAJ designa perito tasador de la Administración de Justicia; si no, servicio técnico público; si no, de listas de entidades y colegios."}
+      - {norma: "LEC", articulo: "638", apartado: "2", tipo: "regula", nota: "El perito designado puede ser recusado por el ejecutante y por el ejecutado que haya comparecido."}
+      - {norma: "LEC", articulo: "638", apartado: "3", tipo: "regula", nota: "En tres días el perito puede pedir provisión de fondos a cuenta; el LAJ decide y, abonada, el perito emite el dictamen."}
+      - {norma: "LEC", articulo: "639", apartado: "1", tipo: "conexa", nota: "El perito acepta al día siguiente de la notificación, salvo causa de abstención; puede hacerlo telemáticamente."}
+      - {norma: "LEC", articulo: "639", apartado: "2", tipo: "regula", nota: "Entrega la valoración a la vez al tribunal y a las partes en ocho días desde la aceptación; ampliable por decreto justificado."}
+      - {norma: "LEC", articulo: "639", apartado: "3", tipo: "regula", nota: "Se tasa por el valor de mercado, sin descontar en los inmuebles las cargas, que se tratan conforme al art. 666."}
+      - {norma: "LEC", articulo: "639", apartado: "4", tipo: "regula", nota: "Cinco días para alegar y aportar informe de perito tasador; el LAJ fija por decreto la valoración definitiva según la sana crítica."}
+      - {norma: "LEC", articulo: "666", apartado: "1", tipo: "regula", nota: "El inmueble sale a subasta por el avalúo menos las cargas anteriores y preferentes que resulten de la certificación de dominio y cargas."}
+      - {norma: "LEC", articulo: "666", apartado: "2", tipo: "regula", nota: "Si las cargas igualan o superan el valor, el LAJ deja en suspenso la ejecución sobre ese bien."}
+      - {norma: "LEC", articulo: "657", apartado: "1", tipo: "conexa", nota: "El LAJ pide a los acreedores preferentes y al ejecutado que informen de la subsistencia y cuantía actual de sus créditos."}
+      - {norma: "LEC", articulo: "670", apartado: "1", tipo: "conexa", nota: "Se aprueba el remate si la mejor postura alcanza el 70 % del valor por el que el bien salió a subasta."}
+      - {norma: "LEC", articulo: "670", apartado: "3", tipo: "conexa", nota: "Por debajo del 70 %, mejora del ejecutado en diez días; luego, mínimos del 50 % o 40 %; en vivienda habitual, 70 % o 60 %."}
+      - {norma: "LEC", articulo: "682", apartado: "2.1.º", tipo: "regula", nota: "En la ejecución hipotecaria, el tipo es el pactado en la escritura, nunca inferior al 75 % de la tasación del art. 18 del RDL 24/2021."}
+      - {norma: "LEC", articulo: "124", apartado: "3", tipo: "conexa", nota: "Causas de recusación del perito: las de la LOPJ, dictamen previo contrario, servicios al litigante contrario o participar en la parte."}
+    no_consta_en_norma:
+      - "Recurso contra el decreto de valoración definitiva del art. 639.4 LEC: el artículo no lo señala; jurisprudencial."
+      - "Si cabe pedir nuevo avalúo cuando el valor de mercado varía mucho entre la tasación y la subasta: jurisprudencial."
+    afines: ["Subasta: convocatoria, posturas y aprobación del remate", "Cargas anteriores y ocupantes del inmueble subastado", "Adjudicación al acreedor y vivienda habitual", "Recusación y tacha de peritos", "Ejecución hipotecaria: especialidades", "Embargo e inembargabilidad"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Liquidación de daños, frutos y rendición de cuentas"
+    sinonimos: ["liquidación de daños y perjuicios en ejecución", "incidente de liquidación", "relación detallada de daños", "equivalente pecuniario", "liquidación de frutos y rentas", "rendición de cuentas de una administración", "saldo de la rendición de cuentas", "cuantificación en ejecución de sentencia", "condena con reserva de liquidación", "bases de liquidación", "operación aritmética", "conformidad tácita del deudor", "oposición a la liquidación", "daños por medida cautelar revocada"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "712", tipo: "regula", nota: "Cauce para fijar en ejecución el equivalente pecuniario, los daños y perjuicios, frutos y rentas o el saldo de una rendición de cuentas."}
+      - {norma: "LEC", articulo: "713", apartado: "1", tipo: "regula", nota: "El perjudicado pide motivadamente la liquidación con relación detallada y valorada de los daños; puede aportar dictámenes."}
+      - {norma: "LEC", articulo: "713", apartado: "2", tipo: "regula", nota: "El LAJ da traslado al obligado para que conteste en diez días."}
+      - {norma: "LEC", articulo: "714", apartado: "1", tipo: "regula", nota: "Si el deudor se conforma, decreto del LAJ y se ejecuta como ejecución dineraria (arts. 571 y siguientes)."}
+      - {norma: "LEC", articulo: "714", apartado: "2", tipo: "regula", nota: "Se tiene por conforme al deudor que calla diez días o niega en general sin concretar puntos, razones y alcance de su discrepancia."}
+      - {norma: "LEC", articulo: "715", tipo: "regula", nota: "Con oposición motivada, trámites del verbal; el tribunal puede nombrar perito y la vista espera diez días desde el traslado del dictamen."}
+      - {norma: "LEC", articulo: "716", tipo: "regula", nota: "Auto en cinco días desde la vista que fija la cantidad; apelable sin efecto suspensivo y con costas según el art. 394."}
+      - {norma: "LEC", articulo: "717", tipo: "regula", nota: "Equivalente de prestación no dineraria: estimación razonada, traslado por diez días y trámite de los arts. 714 a 716."}
+      - {norma: "LEC", articulo: "718", tipo: "regula", nota: "Frutos y rentas: el LAJ requiere al deudor para que presente la liquidación en el plazo que fije, según las bases del título."}
+      - {norma: "LEC", articulo: "719", apartado: "1", tipo: "regula", nota: "Si el acreedor acepta la liquidación del deudor, decreto; si no, se tramita por el art. 715."}
+      - {norma: "LEC", articulo: "719", apartado: "2", tipo: "regula", nota: "Si el deudor no la presenta, la presenta el acreedor y se sigue por los arts. 714 a 716."}
+      - {norma: "LEC", articulo: "720", tipo: "regula", nota: "Rendición de cuentas de una administración y entrega del saldo: arts. 718 y 719, con plazos ampliables por decreto."}
+      - {norma: "LEC", articulo: "219", apartado: "1", tipo: "conexa", nota: "Quien reclama dinero, frutos o rentas debe cuantificar o fijar bases que dejen la liquidación en pura operación aritmética."}
+      - {norma: "LEC", articulo: "219", apartado: "3", tipo: "conexa", nota: "Fuera de esos casos no cabe condena con reserva de liquidación, salvo que la liquidación se deje para otro pleito."}
+      - {norma: "LEC", articulo: "701", apartado: "3", tipo: "conexa", nota: "Si no se halla la cosa a entregar, se sustituye por una compensación pecuniaria fijada por los arts. 712 y siguientes."}
+      - {norma: "LEC", articulo: "706", apartado: "2, párrafo 2.º", tipo: "conexa", nota: "En el hacer no personalísimo, si el ejecutante opta por el resarcimiento, se cuantifica por los arts. 712 y siguientes."}
+      - {norma: "LEC", articulo: "710", apartado: "2", tipo: "conexa", nota: "En el no hacer que no se puede reiterar ni deshacer, la ejecución se dirige a resarcir los daños y perjuicios."}
+      - {norma: "LEC", articulo: "534", apartado: "1, párrafo 2.º", tipo: "conexa", nota: "Revocada la ejecución provisional, si la restitución es imposible, los daños se liquidan por los arts. 712 y siguientes."}
+      - {norma: "LEC", articulo: "742", tipo: "conexa", nota: "Firme el auto que estima la oposición a la cautelar, los daños que causó se fijan por los arts. 712 y siguientes."}
+      - {norma: "LEC", articulo: "576", apartado: "1", tipo: "conexa", nota: "La condena a cantidad líquida devenga desde la sentencia de primera instancia el interés legal más dos puntos."}
+    no_consta_en_norma:
+      - "Si en la liquidación pueden introducirse partidas no comprendidas en el título (límite de la cosa juzgada): jurisprudencial."
+      - "Desde cuándo devenga interés de mora procesal la cantidad que solo se liquida en ejecución (art. 576 LEC habla de cantidad líquida): jurisprudencial."
+    afines: ["Ejecución por entrega de cosas", "Ejecución de obligaciones de hacer y no hacer", "Mandato y rendición de cuentas", "Liquidación del estado posesorio: frutos, gastos y mejoras", "Daños y perjuicios por incumplimiento contractual", "Intereses de la mora procesal"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Ejecución de títulos extranjeros"
+    sinonimos: ["ejecución de sentencia extranjera", "título ejecutivo extranjero", "exequátur", "reconocimiento de sentencia extranjera", "reconocimiento de resoluciones de otro Estado de la UE", "Reglamento Bruselas I bis", "Reglamento 1215/2012", "certificado del artículo 53", "denegación del reconocimiento", "denegación de la ejecución", "traducción de la resolución extranjera", "documento público extranjero con fuerza ejecutiva", "laudo extranjero", "cooperación jurídica internacional"]
+    normas_base: ["LEC", "LOPJ"]
+    remisiones:
+      - {norma: "LEC", articulo: "523", apartado: "1", tipo: "regula", nota: "La fuerza ejecutiva en España de sentencias y títulos extranjeros la fijan los tratados y la ley de cooperación jurídica internacional."}
+      - {norma: "LEC", articulo: "523", apartado: "2", tipo: "regula", nota: "La ejecución se tramita en todo caso conforme a la LEC, salvo lo que dispongan los tratados vigentes en España."}
+      - {norma: "LEC", articulo: "525", apartado: "2", tipo: "regula", nota: "No cabe ejecución provisional de sentencias extranjeras no firmes, salvo previsión expresa de un tratado."}
+      - {norma: "LEC", articulo: "df25", apartado: "1.1.ª", tipo: "regula", nota: "Las resoluciones de otro Estado de la UE comprendidas en el Reglamento 1215/2012 se reconocen sin procedimiento alguno."}
+      - {norma: "LEC", articulo: "df25", apartado: "1.2.ª", tipo: "conexa", nota: "La denegación del reconocimiento planteada como incidente se resuelve por los arts. 388 y siguientes, con eficacia solo en ese pleito."}
+      - {norma: "LEC", articulo: "df25", apartado: "1.5.ª", tipo: "regula", nota: "La denegación por los motivos del art. 45 del Reglamento se pide al juzgado de primera instancia de los arts. 50 y 51 LEC."}
+      - {norma: "LEC", articulo: "df25", apartado: "2.1.ª", tipo: "regula", nota: "Lo que tiene fuerza ejecutiva en el Estado miembro de origen se ejecuta en España sin declaración de fuerza ejecutiva."}
+      - {norma: "LEC", articulo: "df25", apartado: "2.2.ª", tipo: "regula", nota: "El ejecutante aporta los documentos del art. 42 del Reglamento; traducción de la resolución solo si sin ella no puede seguirse."}
+      - {norma: "LEC", articulo: "df25", apartado: "2.4.ª", tipo: "conexa", nota: "Toda resolución con fuerza ejecutiva de un Estado miembro permite pedir las medidas cautelares de la LEC."}
+      - {norma: "LEC", articulo: "df25", apartado: "3.2.ª", tipo: "regula", nota: "Si no se le notificó antes, el ejecutado tiene cinco días desde el despacho para pedir la traducción de la resolución."}
+      - {norma: "LEC", articulo: "df25", apartado: "3.3.ª", tipo: "regula", nota: "Hasta recibir la traducción se suspende el plazo de oposición del art. 556.1; sin ella en un mes, se sobresee la ejecución."}
+      - {norma: "LEC", articulo: "df25", apartado: "4", tipo: "regula", nota: "La denegación de la ejecución por los motivos del art. 45 del Reglamento se tramita por el verbal ante el juzgado de la ejecución."}
+      - {norma: "LEC", articulo: "df25", apartado: "4.2.ª", tipo: "regula", nota: "La demanda de denegación se presenta en diez días desde la notificación del despacho, con los documentos del art. 47.3 del Reglamento."}
+      - {norma: "LEC", articulo: "df25", apartado: "4.6.ª", tipo: "conexa", nota: "Contra el auto cabe apelación; puede suspenderse si la resolución está recurrida o es recurrible en el Estado de origen."}
+      - {norma: "LEC", articulo: "df25", apartado: "5.1.ª", tipo: "conexa", nota: "El certificado del art. 53 del Reglamento, para ejecutar en la UE una sentencia española, se pide por otrosí en la demanda."}
+      - {norma: "LEC", articulo: "df25", apartado: "7.1.ª", tipo: "conexa", nota: "Los documentos públicos ejecutivos de otro Estado miembro se ejecutan sin declaración; solo se deniegan por orden público manifiesto."}
+      - {norma: "LEC", articulo: "ddu", apartado: "1.3.ª", tipo: "conexa", nota: "Los arts. 951 a 958 de la LEC de 1881 sobre sentencias extranjeras rigieron hasta la ley de cooperación jurídica internacional."}
+      - {norma: "LEC", articulo: "722", apartado: "párrafo 2.º", tipo: "conexa", nota: "Quien es parte de un proceso o arbitraje extranjero puede pedir cautelares en España, salvo competencia exclusiva española."}
+      - {norma: "LOPJ", articulo: "22", apartado: "e)", tipo: "regula", nota: "Competencia exclusiva española para reconocer y ejecutar en España resoluciones, laudos y acuerdos de mediación extranjeros."}
+      - {norma: "LOPJ", articulo: "85", apartado: "5.º", tipo: "regula", nota: "Las Secciones Civiles del Tribunal de Instancia conocen del reconocimiento y ejecución de resoluciones y laudos extranjeros, salvo tratado."}
+      - {norma: "LOPJ", articulo: "86", apartado: "5.l)", tipo: "conexa", nota: "Las Secciones de Familia, Infancia y Capacidad conocen de las resoluciones extranjeras sobre menores, familia y apoyos."}
+      - {norma: "LOPJ", articulo: "87", apartado: "8", tipo: "conexa", nota: "Las Secciones de lo Mercantil conocen del reconocimiento y ejecución de resoluciones extranjeras en las materias de su competencia."}
+      - {norma: "LOPJ", articulo: "73", apartado: "1.c)", tipo: "conexa", nota: "La Sala de lo Civil del TSJ conoce del exequátur de laudos o resoluciones arbitrales extranjeros, salvo tratado o norma de la UE."}
+    fuera_de_la_herramienta:
+      - "Ley 29/2015, de cooperación jurídica internacional en materia civil (BOE-A-2015-8564), título V: exequátur con abogado y procurador (art. 54)."
+      - "Reglamento (UE) 1215/2012 (Bruselas I bis), al que remite la df 25.ª LEC: certificado del art. 53 y motivos de denegación del art. 45."
+    no_consta_en_norma:
+      - "Día inicial de la caducidad de la acción ejecutiva (art. 518 LEC) cuando se ejecuta una resolución extranjera: la LEC no lo fija; jurisprudencial."
+    afines: ["Títulos ejecutivos", "Falta de jurisdicción / competencia internacional", "Despacho de la ejecución y plazo de espera", "Oposición a la ejecución por motivos de fondo", "Caducidad de la acción ejecutiva", "Lengua de las actuaciones: valenciano, traducción e intérprete"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Modificación, alzamiento y caución sustitutoria"
+    sinonimos: ["modificación de las medidas cautelares", "alzamiento de las medidas cautelares", "levantamiento de la medida cautelar", "caución sustitutoria", "sustituir la medida cautelar por caución", "aval sustitutorio", "hechos nuevos en cautelares", "reiterar la solicitud de cautelares", "alzamiento tras sentencia absolutoria", "mantenimiento de la cautelar al recurrir", "daños por la medida cautelar alzada", "cautelares y MASC", "decaimiento de las cautelares anteriores a la demanda"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "743", tipo: "regula", nota: "Se modifican alegando y probando hechos que no pudieron tenerse en cuenta al concederlas ni al oponerse; trámite de los arts. 734 y ss."}
+      - {norma: "LEC", articulo: "736", apartado: "2", tipo: "conexa", nota: "Aunque se hayan denegado, el actor puede reproducir la solicitud si cambian las circunstancias."}
+      - {norma: "LEC", articulo: "744", apartado: "1", tipo: "regula", nota: "Absuelto el demandado en instancia, el LAJ las alza, salvo que el recurrente pida al recurrir que se mantengan u otra distinta."}
+      - {norma: "LEC", articulo: "744", apartado: "2", tipo: "regula", nota: "Con estimación parcial, el tribunal decide por auto, oída la contraria, si las mantiene, alza o modifica."}
+      - {norma: "LEC", articulo: "745", tipo: "regula", nota: "Firme la absolución, de fondo o en la instancia, se alzan de oficio y se liquidan los daños (art. 742); igual si se renuncia o desiste."}
+      - {norma: "LEC", articulo: "742", tipo: "regula", nota: "Firme el auto que estima la oposición, se fijan los daños por los arts. 712 y siguientes y se exigen al solicitante."}
+      - {norma: "LEC", articulo: "741", apartado: "2", tipo: "regula", nota: "Si alza las medidas tras la oposición, el tribunal condena al actor en costas y al pago de los daños y perjuicios causados."}
+      - {norma: "LEC", articulo: "731", apartado: "1", tipo: "regula", nota: "Terminado el proceso se alzan, salvo condena: entonces duran hasta el plazo del art. 548 y, si no se pide la ejecución, se alzan."}
+      - {norma: "LEC", articulo: "731", apartado: "1, párrafo 2.º", tipo: "regula", nota: "Tampoco se mantienen si el proceso queda en suspenso más de seis meses por causa imputable al solicitante."}
+      - {norma: "LEC", articulo: "731", apartado: "2", tipo: "conexa", nota: "Despachada la ejecución provisional, se alzan las cautelares relacionadas con ella."}
+      - {norma: "LEC", articulo: "730", apartado: "2, párrafo 2.º", tipo: "conexa", nota: "Las pedidas antes de la demanda decaen si no se demanda en veinte días; el LAJ las alza con costas y responsabilidad por daños."}
+      - {norma: "LEC", articulo: "730", apartado: "2, párrafo 3.º", tipo: "conexa", nota: "Con acuerdo en el MASC, las partes se pronuncian sobre su alzamiento; si ambas lo piden, lo ordena el LAJ y, si no, el tribunal."}
+      - {norma: "LEC", articulo: "730", apartado: "2, párrafo 4.º", tipo: "conexa", nota: "Sin acuerdo en el MASC, puede pedirse el alzamiento en veinte días desde el fin de la negociación o la propuesta sin respuesta."}
+      - {norma: "LEC", articulo: "740", apartado: "párrafo 2.º", tipo: "regula", nota: "Quien se opone a la medida acordada puede ofrecer caución sustitutoria."}
+      - {norma: "LEC", articulo: "734", apartado: "2, párrafo 2.º", tipo: "conexa", nota: "En la vista se alega sobre el tipo y cuantía de la caución, y el afectado puede pedir caución sustitutoria (art. 746)."}
+      - {norma: "LEC", articulo: "746", apartado: "1", tipo: "regula", nota: "El afectado puede pedir que se acepte, en lugar de la medida, caución suficiente para asegurar el cumplimiento de la sentencia."}
+      - {norma: "LEC", articulo: "746", apartado: "2", tipo: "regula", nota: "Se pondera el fundamento de la petición, la pretensión, la apariencia de buen derecho del demandado y el perjuicio desproporcionado."}
+      - {norma: "LEC", articulo: "747", apartado: "1", tipo: "regula", nota: "Se pide en la vista del art. 734, en la oposición o por escrito motivado; traslado de cinco días, vista y auto en otros cinco."}
+      - {norma: "LEC", articulo: "747", apartado: "2", tipo: "regula", nota: "Contra el auto que acepta o rechaza la caución sustitutoria no cabe recurso alguno."}
+      - {norma: "LEC", articulo: "747", apartado: "3", tipo: "regula", nota: "Puede prestarse en cualquiera de las formas del art. 529.3, párrafo segundo."}
+      - {norma: "LEC", articulo: "529", apartado: "3, párrafo 2.º", tipo: "conexa", nota: "Formas: dinero, aval solidario indefinido a primer requerimiento de entidad de crédito o SGR, u otro medio de disponibilidad inmediata."}
+      - {norma: "LEC", articulo: "737", tipo: "conexa", nota: "La caución del solicitante es siempre previa a cumplir la medida; el tribunal decide por providencia su idoneidad y suficiencia."}
+      - {norma: "LEC", articulo: "738", apartado: "2", tipo: "conexa", nota: "La mejora, reducción o modificación del embargo preventivo la decide el tribunal."}
+    no_consta_en_norma:
+      - "Recurso contra el auto que resuelve la modificación del art. 743 LEC: la ley no lo dice expresamente; jurisprudencial."
+      - "Si la caución sustitutoria puede reducirse o liberarse antes de la sentencia firme: jurisprudencial."
+    afines: ["Medidas cautelares: presupuestos", "Caución", "Medidas cautelares sin audiencia y oposición", "Medidas cautelares antes de la demanda", "Embargo preventivo", "Liquidación de daños, frutos y rendición de cuentas"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Alimentos entre parientes"
+    sinonimos: ["alimentos entre parientes", "pensión de alimentos a los padres", "alimentos a un hermano", "alimentos al hijo mayor de edad", "obligación legal de alimentos", "alimentista", "alimentante", "orden de los obligados a dar alimentos", "proporcionalidad de los alimentos", "alimentos desde la demanda", "cese de la obligación de alimentos", "irrenunciabilidad de los alimentos", "pensiones alimenticias atrasadas", "auxilios necesarios para la vida", "alimentos en especie en la propia casa"]
+    normas_base: ["CC", "LEC", "LOPJ", "LO 1/2025"]
+    remisiones:
+      - {norma: "CC", articulo: "142", tipo: "regula", nota: "Comprenden sustento, habitación, vestido, asistencia médica y educación del menor o en formación no culpable; también embarazo y parto."}
+      - {norma: "CC", articulo: "143", tipo: "regula", nota: "Se deben alimentos completos cónyuges, ascendientes y descendientes; entre hermanos, solo los auxilios necesarios para la vida."}
+      - {norma: "CC", articulo: "144", tipo: "regula", nota: "Con varios obligados se reclaman por orden: cónyuge, descendientes, ascendientes de grado más próximo y hermanos."}
+      - {norma: "CC", articulo: "145", apartado: "párrafo 1.º", tipo: "regula", nota: "Con varios obligados, la pensión se reparte en proporción a su caudal respectivo."}
+      - {norma: "CC", articulo: "145", apartado: "párrafo 2.º", tipo: "conexa", nota: "En urgente necesidad, el juez puede obligar provisionalmente a uno solo, que luego repite contra los demás."}
+      - {norma: "CC", articulo: "146", tipo: "regula", nota: "La cuantía es proporcional al caudal o medios de quien los da y a las necesidades de quien los recibe."}
+      - {norma: "CC", articulo: "147", tipo: "regula", nota: "Se reducen o aumentan según cambien las necesidades del alimentista y la fortuna del obligado."}
+      - {norma: "CC", articulo: "148", apartado: "párrafo 1.º", tipo: "regula", nota: "Son exigibles desde que se necesitan, pero solo se abonan desde la fecha de interposición de la demanda."}
+      - {norma: "CC", articulo: "148", apartado: "párrafo 2.º", tipo: "conexa", nota: "Se pagan por meses anticipados; muerto el alimentista, sus herederos no devuelven lo cobrado por anticipado."}
+      - {norma: "CC", articulo: "148", apartado: "párrafo 3.º", tipo: "conexa", nota: "A petición del alimentista o del Fiscal, el juez adopta con urgencia cautelares para asegurar anticipos y necesidades futuras."}
+      - {norma: "CC", articulo: "149", tipo: "regula", nota: "El obligado elige pagar la pensión o mantener en su casa al alimentista, salvo convivencia fijada, justa causa o interés del menor."}
+      - {norma: "CC", articulo: "150", tipo: "regula", nota: "La obligación cesa con la muerte del obligado, aunque los prestase por sentencia firme."}
+      - {norma: "CC", articulo: "151", tipo: "regula", nota: "El derecho es irrenunciable, intransmisible e incompensable; las pensiones atrasadas sí pueden renunciarse, compensarse y cederse."}
+      - {norma: "CC", articulo: "152", tipo: "regula", nota: "Cesa por muerte del alimentista, ruina del obligado, poder trabajar o mejorar de fortuna, causa de desheredación o mala conducta."}
+      - {norma: "CC", articulo: "153", tipo: "conexa", nota: "Estas reglas se aplican a otros alimentos legales, testamentarios o pactados, salvo lo pactado, ordenado o dispuesto especialmente."}
+      - {norma: "CC", articulo: "93", apartado: "párrafo 2.º", tipo: "conexa", nota: "Con hijos mayores sin ingresos en el domicilio familiar, el juez de familia fija sus alimentos por los arts. 142 y siguientes."}
+      - {norma: "CC", articulo: "1814", tipo: "conexa", nota: "No se puede transigir sobre alimentos futuros."}
+      - {norma: "CC", articulo: "9", apartado: "7", tipo: "conexa", nota: "La ley aplicable a los alimentos entre parientes se fija por el Protocolo de La Haya de 23 de noviembre de 2007."}
+      - {norma: "LEC", articulo: "250", apartado: "1.8.º", tipo: "regula", nota: "Por juicio verbal, cualquiera que sea la cuantía, las demandas de alimentos debidos por ley o por otro título."}
+      - {norma: "LEC", articulo: "266", apartado: "1.º", tipo: "regula", nota: "A la demanda de alimentos se acompañan los documentos que justifiquen cumplidamente el título por el que se piden."}
+      - {norma: "LEC", articulo: "608", tipo: "conexa", nota: "En la ejecución de alimentos legales no rigen los límites del art. 607: el tribunal fija la cantidad embargable."}
+      - {norma: "LOPJ", articulo: "86", apartado: "5.e)", tipo: "conexa", nota: "Donde exista, la Sección de Familia, Infancia y Capacidad conoce de los alimentos entre parientes."}
+      - {norma: "LO 1/2025", articulo: "5", apartado: "2", tipo: "conexa", nota: "El MASC previo se exige en los declarativos salvo las materias de la lista, entre las que no están los alimentos entre parientes."}
+    no_consta_en_norma:
+      - "Si los alimentos del hijo mayor de edad los reclama él (art. 142 CC) o el progenitor con quien convive (art. 93 CC): jurisprudencial."
+      - "Alcance de la «mala conducta» o «falta de aplicación al trabajo» del art. 152.5.º CC: jurisprudencial."
+    afines: ["Pensión de alimentos a los hijos", "Modificación de medidas definitivas", "Embargo de sueldos y pensiones", "Requisito de procedibilidad (MASC)", "Ámbito del juicio verbal por materia y cuantía", "Preterición y desheredación"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Filiación: reclamación e impugnación"
+    sinonimos: ["filiación", "reclamación de paternidad", "reclamación de filiación no matrimonial", "impugnación de la paternidad", "impugnación de la filiación", "prueba de ADN", "prueba biológica de paternidad", "negativa a la prueba de paternidad", "posesión de estado", "presunción de paternidad del marido", "reconocimiento de hijo", "impugnación del reconocimiento", "plazo para impugnar la paternidad", "alimentos provisionales en filiación", "principio de prueba en filiación"]
+    normas_base: ["CC", "LEC", "LO 1/2025", "LOPJ"]
+    remisiones:
+      - {norma: "CC", articulo: "108", tipo: "conexa", nota: "Filiación por naturaleza, matrimonial o no, y por adopción, todas con los mismos efectos."}
+      - {norma: "CC", articulo: "112", apartado: "párrafo 1.º", tipo: "regula", nota: "La determinación legal tiene efectos retroactivos si son compatibles con su naturaleza y la ley no dispone otra cosa."}
+      - {norma: "CC", articulo: "112", apartado: "párrafo 2.º", tipo: "conexa", nota: "Conservan su validez los actos del representante legal del hijo anteriores a la determinación."}
+      - {norma: "CC", articulo: "113", tipo: "regula", nota: "Se acredita por inscripción, documento o sentencia, presunción matrimonial o, en su defecto, posesión de estado; cede ante otra contradictoria."}
+      - {norma: "CC", articulo: "116", tipo: "conexa", nota: "Se presumen hijos del marido los nacidos tras el matrimonio y antes de 300 días desde su disolución o la separación."}
+      - {norma: "CC", articulo: "120", tipo: "conexa", nota: "La no matrimonial se determina por declaración registral, reconocimiento, expediente del Registro Civil o sentencia firme."}
+      - {norma: "CC", articulo: "131", tipo: "regula", nota: "Cualquiera con interés legítimo puede pedir que se declare la filiación manifestada por posesión de estado, si no contradice otra."}
+      - {norma: "CC", articulo: "132", tipo: "regula", nota: "Sin posesión de estado, la reclamación de filiación matrimonial es imprescriptible y corresponde a los progenitores o al hijo."}
+      - {norma: "CC", articulo: "133", apartado: "1", tipo: "regula", nota: "Sin posesión de estado, el hijo reclama la no matrimonial toda su vida; sus herederos, por el tiempo que reste de los plazos."}
+      - {norma: "CC", articulo: "133", apartado: "2", tipo: "regula", nota: "Los progenitores pueden reclamarla en un año desde que conocen los hechos; la acción no pasa a sus herederos."}
+      - {norma: "CC", articulo: "134", tipo: "regula", nota: "Quien reclama como hijo o progenitor puede impugnar a la vez la filiación contradictoria."}
+      - {norma: "CC", articulo: "136", apartado: "1", tipo: "regula", nota: "El marido impugna la paternidad en un año desde la inscripción; el plazo no corre mientras ignore el nacimiento."}
+      - {norma: "CC", articulo: "136", apartado: "2", tipo: "regula", nota: "Si conocía el nacimiento pero no su falta de paternidad biológica, el año corre desde que la conoce."}
+      - {norma: "CC", articulo: "137", apartado: "1", tipo: "regula", nota: "El hijo impugna la del padre o progenitor no gestante en un año desde la inscripción o desde su mayoría de edad o fin de los apoyos."}
+      - {norma: "CC", articulo: "137", apartado: "2", tipo: "regula", nota: "Si el hijo desconoce la falta de paternidad biológica, el año corre desde que la conoce."}
+      - {norma: "CC", articulo: "137", apartado: "4", tipo: "regula", nota: "Sin posesión de estado de filiación matrimonial, el hijo o sus herederos pueden impugnar en cualquier tiempo."}
+      - {norma: "CC", articulo: "138", tipo: "conexa", nota: "El reconocimiento se impugna por vicio del consentimiento según el art. 141; por otras causas, según esta sección."}
+      - {norma: "CC", articulo: "139", tipo: "conexa", nota: "La gestante puede impugnar probando la suposición del parto o que no es cierta la identidad del hijo."}
+      - {norma: "CC", articulo: "140", tipo: "regula", nota: "La no matrimonial sin posesión de estado la impugnan los perjudicados; con ella, los afectados en cuatro años desde que existe."}
+      - {norma: "CC", articulo: "140", apartado: "párrafo 3.º", tipo: "conexa", nota: "Los hijos tienen en todo caso acción durante un año desde la mayoría de edad o desde recobrar capacidad suficiente."}
+      - {norma: "CC", articulo: "141", tipo: "regula", nota: "El reconocimiento con error, violencia o intimidación lo impugna su autor en un año desde que lo hizo o cesó el vicio."}
+      - {norma: "LEC", articulo: "764", apartado: "1", tipo: "regula", nota: "Puede pedirse a los tribunales la determinación legal de la filiación o impugnar la determinada, en los casos de la ley civil."}
+      - {norma: "LEC", articulo: "764", apartado: "2", tipo: "regula", nota: "Se inadmite la demanda que impugne una filiación declarada por sentencia firme o pida otra contradictoria con ella."}
+      - {norma: "LEC", articulo: "765", apartado: "1", tipo: "regula", nota: "Las acciones del hijo menor las ejercen su representante legal o el Fiscal; con apoyos, él, el apoyo facultado o el Fiscal."}
+      - {norma: "LEC", articulo: "765", apartado: "2", tipo: "conexa", nota: "Muerto el actor, sus herederos pueden continuar las acciones ya entabladas."}
+      - {norma: "LEC", articulo: "766", tipo: "regula", nota: "Son demandados los atribuidos o aparentes progenitores e hijo que no demanden; si han muerto, sus herederos."}
+      - {norma: "LEC", articulo: "767", apartado: "1", tipo: "regula", nota: "No se admite la demanda sin un principio de prueba de los hechos en que se funda."}
+      - {norma: "LEC", articulo: "767", apartado: "2", tipo: "regula", nota: "Se admite toda clase de pruebas, incluidas las biológicas."}
+      - {norma: "LEC", articulo: "767", apartado: "3", tipo: "regula", nota: "Sin prueba directa, cabe declararla por reconocimiento, posesión de estado, convivencia con la madre en la concepción u otros hechos."}
+      - {norma: "LEC", articulo: "767", apartado: "4", tipo: "regula", nota: "La negativa injustificada a la prueba biológica permite declararla si hay otros indicios y no hay prueba por otro medio."}
+      - {norma: "LEC", articulo: "768", apartado: "1", tipo: "conexa", nota: "Mientras se impugna, medidas de protección sobre la persona y bienes del sometido a la potestad del aparente progenitor."}
+      - {norma: "LEC", articulo: "768", apartado: "2", tipo: "regula", nota: "Reclamada la filiación, el tribunal puede acordar alimentos provisionales a cargo del demandado."}
+      - {norma: "LEC", articulo: "749", apartado: "1", tipo: "regula", nota: "En determinación e impugnación de la filiación, el Ministerio Fiscal es siempre parte."}
+      - {norma: "LEC", articulo: "751", apartado: "1", tipo: "regula", nota: "No surten efecto la renuncia, el allanamiento ni la transacción."}
+      - {norma: "LEC", articulo: "751", apartado: "2.1.º", tipo: "conexa", nota: "El desistimiento en filiación no exige conformidad del Fiscal si no hay menores, personas con apoyo representativo o ausentes."}
+      - {norma: "LEC", articulo: "753", apartado: "1", tipo: "conexa", nota: "Se tramita por el juicio verbal, con contestación escrita en veinte días."}
+      - {norma: "LEC", articulo: "525", apartado: "1.1.ª", tipo: "conexa", nota: "Las sentencias de filiación no se ejecutan provisionalmente, salvo sus pronunciamientos patrimoniales."}
+      - {norma: "LO 1/2025", articulo: "5", apartado: "2.d)", tipo: "regula", nota: "La filiación, paternidad y maternidad están excluidas del requisito de MASC previo."}
+      - {norma: "LOPJ", articulo: "86", apartado: "5.d)", tipo: "conexa", nota: "Donde exista, la Sección de Familia, Infancia y Capacidad conoce de maternidad, paternidad, filiación y adopción."}
+    no_consta_en_norma:
+      - "Naturaleza de caducidad de los plazos de un año de los arts. 133.2, 136, 137 y 141 CC y su día inicial en cada caso: jurisprudencial."
+      - "Valor de la negativa a la prueba biológica cuando los demás indicios son débiles (art. 767.4 LEC): jurisprudencial."
+    afines: ["Alimentos entre parientes", "Pensión de alimentos a los hijos", "Litisconsorcio pasivo necesario", "Caducidad de la acción (como excepción)", "Dictamen pericial de parte y judicial", "Legítimas: cuantía y cálculo"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Administración e intervención del caudal hereditario"
+    sinonimos: ["intervención del caudal hereditario", "intervención judicial de la herencia", "administración judicial de la herencia", "administrador de la herencia", "aseguramiento de los bienes del difunto", "inventario judicial de la herencia", "herencia sin testamento ni parientes", "herencia yacente", "Estado heredero abintestato", "rendición de cuentas del administrador", "caución del administrador", "retribución del administrador judicial", "venta de bienes inventariados", "intervención a instancia de acreedores de la herencia"]
+    normas_base: ["LEC", "CC"]
+    remisiones:
+      - {norma: "LEC", articulo: "790", apartado: "1", tipo: "regula", nota: "Sin testamento ni parientes conocidos, o ausentes o menores sin representante, el tribunal asegura de oficio bienes y papeles del difunto."}
+      - {norma: "LEC", articulo: "790", apartado: "2", tipo: "regula", nota: "Comparecidos los parientes, se les entregan los bienes, cesa la intervención y deben acudir al notario para la declaración de herederos."}
+      - {norma: "LEC", articulo: "791", apartado: "1", tipo: "conexa", nota: "El LAJ averigua si hubo testamento (certificado de últimas voluntades) y, si no hay otro medio, se oye a parientes y vecinos."}
+      - {norma: "LEC", articulo: "791", apartado: "2", tipo: "regula", nota: "Sin testamento ni parientes, auto que ocupa papeles e inventaría y deposita los bienes; aviso a Hacienda por si hereda el Estado."}
+      - {norma: "LEC", articulo: "791", apartado: "3", tipo: "conexa", nota: "Si la Administración inicia su declaración como heredera, se le encomienda la administración sin caución."}
+      - {norma: "LEC", articulo: "792", apartado: "1", tipo: "regula", nota: "A instancia de parte: cónyuge o pariente que insta la declaración notarial de herederos, coheredero que pide la división o la Administración."}
+      - {norma: "LEC", articulo: "792", apartado: "2", tipo: "regula", nota: "También la piden los acreedores reconocidos en el testamento o por los coherederos o con título ejecutivo."}
+      - {norma: "LEC", articulo: "793", apartado: "1", tipo: "regula", nota: "Acordada la intervención, auto con las medidas indispensables para la seguridad de los bienes y papeles del difunto."}
+      - {norma: "LEC", articulo: "793", apartado: "3", tipo: "regula", nota: "Se cita al inventario al cónyuge, parientes, herederos y legatarios de parte alícuota, acreedores instantes, Fiscal y Abogado del Estado."}
+      - {norma: "LEC", articulo: "794", apartado: "1", tipo: "regula", nota: "El LAJ forma el inventario con los que concurran: bienes de la herencia y escrituras, documentos y papeles de importancia."}
+      - {norma: "LEC", articulo: "794", apartado: "4", tipo: "regula", nota: "La controversia sobre incluir o excluir bienes va a vista por el verbal; la sentencia deja a salvo los derechos de terceros."}
+      - {norma: "LEC", articulo: "795", tipo: "regula", nota: "Auto sobre administración y custodia: depósito del metálico, administrador (viudo, mayor partícipe o tercero) y caución dispensable."}
+      - {norma: "LEC", articulo: "796", apartado: "1", tipo: "regula", nota: "Cesa con la declaración de herederos, salvo que se pida la división judicial; entonces puede seguir hasta la entrega de lotes."}
+      - {norma: "LEC", articulo: "796", apartado: "2", tipo: "regula", nota: "En la división, los herederos de común acuerdo pueden pedir que cese, salvo menores sin representante o ausentes."}
+      - {norma: "LEC", articulo: "796", apartado: "3", tipo: "conexa", nota: "No cesa mientras no se pague o afiance a los acreedores que se opusieron a la partición."}
+      - {norma: "LEC", articulo: "797", apartado: "3", tipo: "conexa", nota: "La administración de las fincas y el nombramiento del administrador pueden hacerse constar en el Registro de la Propiedad."}
+      - {norma: "LEC", articulo: "798", tipo: "regula", nota: "Antes de la aceptación, el administrador representa a la herencia en los pleitos; aceptada, solo en lo relativo a la administración."}
+      - {norma: "LEC", articulo: "799", apartado: "1", tipo: "regula", nota: "Rinde cuenta justificada en los plazos que fije el tribunal, nunca superiores a un año."}
+      - {norma: "LEC", articulo: "800", apartado: "3", tipo: "regula", nota: "Sin oposición a las cuentas en el término común, decreto que las aprueba, exonera al administrador y le devuelve la caución."}
+      - {norma: "LEC", articulo: "800", apartado: "4", tipo: "regula", nota: "Impugnadas las cuentas, contestación conforme al art. 438 y, si se pide, vista por los trámites del verbal."}
+      - {norma: "LEC", articulo: "801", apartado: "2", tipo: "regula", nota: "Hace las reparaciones ordinarias; las extraordinarias las resuelve el juzgado tras oír a los interesados, peritaje y presupuesto."}
+      - {norma: "LEC", articulo: "802", apartado: "1", tipo: "conexa", nota: "Deposita sin dilación lo que recaude, salvo lo necesario para pleitos, notaría, contribuciones y atenciones ordinarias."}
+      - {norma: "LEC", articulo: "803", apartado: "1", tipo: "regula", nota: "El administrador no puede enajenar ni gravar los bienes inventariados."}
+      - {norma: "LEC", articulo: "803", apartado: "2", tipo: "regula", nota: "Salvo los deteriorables, los de conservación costosa, frutos en buen momento o los necesarios para pagar deudas."}
+      - {norma: "LEC", articulo: "803", apartado: "3", tipo: "conexa", nota: "La venta la decreta el tribunal a propuesta del administrador, oídos los interesados, en subasta notarial o de jurisdicción voluntaria."}
+      - {norma: "LEC", articulo: "804", apartado: "1", tipo: "regula", nota: "Retribución tasada: 2 % de muebles y frutos vendidos, 1 % de inmuebles y cobros, 0,5 % de efectos públicos y 4 a 10 % del resto."}
+      - {norma: "LEC", articulo: "805", tipo: "conexa", nota: "Se conservan las administraciones subalternas del finado, que rinden cuentas al administrador judicial."}
+      - {norma: "CC", articulo: "1020", tipo: "conexa", nota: "Durante el inventario y hasta la aceptación, el notario puede proveer, a instancia de parte, a la administración y custodia de los bienes."}
+      - {norma: "CC", articulo: "1026", tipo: "conexa", nota: "En el beneficio de inventario, el administrador representa a la herencia para sus acciones y para contestar demandas."}
+    no_consta_en_norma:
+      - "Si la solicitud de intervención del caudal exige MASC previo (el art. 5.2 LO 1/2025 alcanza los procesos especiales del libro IV): jurisprudencial."
+      - "Responsabilidad del administrador judicial por mala gestión y cauce para exigirla: la LEC no la regula fuera de la rendición de cuentas."
+    afines: ["División judicial de la herencia", "Herencia yacente y comunidades sin personalidad como parte", "Aceptación y repudiación de la herencia", "Responsabilidad del heredero por deudas y beneficio de inventario", "Albacea y contador-partidor", "Mandato y rendición de cuentas"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"

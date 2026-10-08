@@ -1,0 +1,397 @@
+# Índice de conceptos de «Consulta de normas» — tanda 25 (prioridad C: 234, 235, 236, 237, 238, 249, 250, 251, 252, 270, 271 y 279)
+# Orden de las voces: el de la lista maestra.
+# Revisor: armero. Espejo: legalize-es@aca28304d, leído con `git show aca28304d:es/…` (no el árbol de trabajo, que hoy trae erratas).
+# Todo precepto citado se ha leído en el espejo en esta pasada. Vigencia: contraste con la API de boe.es (08-10-2026).
+# Ver tanda-25-notas.md.
+
+voces:
+  - voz: "Novación"
+    sinonimos: ["novación", "novación extintiva", "novación modificativa", "novación subjetiva", "novación objetiva", "cambio de deudor", "sustitución del deudor", "delegación de deuda", "expromisión", "asunción de deuda", "subrogación en el crédito", "subrogación del que paga", "pago con subrogación", "refinanciación de la deuda", "animus novandi"]
+    normas_base: ["CC"]
+    remisiones:
+      - {norma: "CC", articulo: "1156", tipo: "conexa", nota: "La novación es una de las causas de extinción de las obligaciones, con el pago, la condonación o la compensación."}
+      - {norma: "CC", articulo: "1203", tipo: "regula", nota: "Las obligaciones se modifican variando su objeto o condiciones principales, cambiando el deudor o subrogando a un tercero."}
+      - {norma: "CC", articulo: "1204", tipo: "regula", nota: "Solo hay novación extintiva si se declara terminantemente o si la obligación antigua y la nueva son de todo punto incompatibles."}
+      - {norma: "CC", articulo: "1205", tipo: "regula", nota: "El cambio de deudor puede hacerse sin conocimiento del primitivo, pero nunca sin consentimiento del acreedor."}
+      - {norma: "CC", articulo: "1206", tipo: "regula", nota: "La insolvencia del nuevo deudor aceptado no reaviva la acción contra el primitivo, salvo si era anterior y pública o él la conocía."}
+      - {norma: "CC", articulo: "1207", tipo: "regula", nota: "Extinguida la obligación principal por novación, las accesorias solo subsisten si aprovechan a terceros que no consintieron."}
+      - {norma: "CC", articulo: "1208", tipo: "regula", nota: "La novación es nula si lo es la obligación primitiva, salvo nulidad que solo pueda invocar el deudor o convalidada por ratificación."}
+      - {norma: "CC", articulo: "1209", tipo: "regula", nota: "La subrogación no se presume fuera de los casos del Código; en los demás ha de establecerse con claridad."}
+      - {norma: "CC", articulo: "1210", tipo: "regula", nota: "Se presume si paga un acreedor a otro preferente, un tercero con aprobación del deudor o quien tiene interés en el cumplimiento."}
+      - {norma: "CC", articulo: "1211", tipo: "regula", nota: "El deudor subroga sin el acreedor si toma prestado por escritura pública para pagar y lo hace constar en la carta de pago."}
+      - {norma: "CC", articulo: "1212", tipo: "regula", nota: "La subrogación transfiere el crédito con sus derechos anexos frente al deudor, los fiadores y los poseedores de las hipotecas."}
+      - {norma: "CC", articulo: "1213", tipo: "regula", nota: "Con pago parcial, el acreedor cobra el resto con preferencia al que se subrogó por ese pago parcial."}
+      - {norma: "CC", articulo: "1143", apartado: "párrafo 1.º", tipo: "conexa", nota: "La novación hecha por un acreedor solidario o con un deudor solidario extingue la obligación, salvo el art. 1146."}
+      - {norma: "CC", articulo: "1158", tipo: "conexa", nota: "Quien paga por otro puede reclamarle lo pagado; si pagó contra su expresa voluntad, solo en lo que le fue útil."}
+      - {norma: "CC", articulo: "1159", tipo: "conexa", nota: "Quien paga en nombre del deudor ignorándolo este no puede obligar al acreedor a subrogarle en sus derechos."}
+      - {norma: "CC", articulo: "1839", tipo: "conexa", nota: "El fiador que paga se subroga en todos los derechos que el acreedor tenía contra el deudor."}
+      - {norma: "CC", articulo: "1847", tipo: "conexa", nota: "La fianza se extingue al tiempo que la obligación del deudor y por las mismas causas."}
+      - {norma: "CC", articulo: "1851", tipo: "conexa", nota: "La prórroga concedida al deudor por el acreedor sin consentimiento del fiador extingue la fianza."}
+      - {norma: "CC", articulo: "1528", tipo: "conexa", nota: "La venta o cesión de un crédito comprende sus derechos accesorios: fianza, hipoteca, prenda o privilegio."}
+    no_consta_en_norma:
+      - "Cuándo la ampliación de plazo, la refinanciación o el cambio de interés es novación extintiva o solo modificativa (art. 1204 CC): jurisprudencial."
+      - "Asunción acumulativa de deuda, sin liberar al deudor primitivo: el CC no la regula; jurisprudencial."
+    afines: ["Pago: prueba, imputación y pago por tercero", "Cesión de créditos y retracto de crédito litigioso", "Fianza", "Solidaridad y mancomunidad", "Préstamo e intereses", "Obligaciones condicionales, a plazo y vencimiento anticipado"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Saneamiento por evicción"
+    sinonimos: ["evicción", "saneamiento por evicción", "privación de la cosa comprada", "posesión legal y pacífica", "citación de evicción", "notificación de la demanda al vendedor", "llamada al vendedor al pleito", "renuncia al saneamiento", "pacto de exclusión de la evicción", "evicción parcial", "cargas ocultas de la finca", "servidumbre no aparente", "evicción entre coherederos", "evicción en la permuta", "garantía del vendedor frente a terceros"]
+    normas_base: ["CC", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "1461", tipo: "conexa", nota: "El vendedor está obligado a la entrega y al saneamiento de la cosa objeto de la venta."}
+      - {norma: "CC", articulo: "1474", apartado: "1.º", tipo: "regula", nota: "Por el saneamiento, el vendedor responde al comprador de la posesión legal y pacífica de la cosa vendida."}
+      - {norma: "CC", articulo: "1475", tipo: "regula", nota: "Hay evicción si se priva al comprador, por sentencia firme y derecho anterior a la compra, de todo o parte de la cosa."}
+      - {norma: "CC", articulo: "1475", apartado: "párrafo 3.º", tipo: "regula", nota: "El vendedor responde aunque nada se pacte, pero las partes pueden aumentar, disminuir o suprimir esa obligación."}
+      - {norma: "CC", articulo: "1476", tipo: "regula", nota: "Es nulo el pacto que exime al vendedor de responder de la evicción si hubo mala fe por su parte."}
+      - {norma: "CC", articulo: "1477", tipo: "regula", nota: "Con renuncia, solo se devuelve el valor al tiempo de la evicción, salvo renuncia consciente del riesgo y sometida a sus consecuencias."}
+      - {norma: "CC", articulo: "1478", tipo: "regula", nota: "Se debe el valor al tiempo de la evicción, frutos entregados, costas y gastos del contrato; con mala fe, daños y gastos de recreo."}
+      - {norma: "CC", articulo: "1479", tipo: "regula", nota: "Si sin la parte perdida no se habría comprado, cabe la rescisión devolviendo la cosa sin más gravámenes que al adquirirla."}
+      - {norma: "CC", articulo: "1480", tipo: "regula", nota: "El saneamiento no puede exigirse hasta la sentencia firme que condene al comprador a perder la cosa o parte de ella."}
+      - {norma: "CC", articulo: "1481", tipo: "regula", nota: "Sin probar que se notificó al vendedor la demanda de evicción a instancia del comprador, no hay saneamiento."}
+      - {norma: "CC", articulo: "1482", tipo: "regula", nota: "El comprador demandado pide, en el plazo para contestar, que se notifique la demanda al vendedor; su plazo queda en suspenso."}
+      - {norma: "CC", articulo: "1482", apartado: "párrafo 4.º", tipo: "conexa", nota: "Si los citados de evicción no comparecen en tiempo y forma, sigue corriendo para el comprador el plazo para contestar."}
+      - {norma: "CC", articulo: "1483", tipo: "regula", nota: "Carga o servidumbre no aparente omitida en la escritura: rescisión o indemnización en un año; después, solo indemnización."}
+      - {norma: "LEC", articulo: "14", apartado: "2", tipo: "regula", nota: "El demandado pide en el plazo para contestar que se notifique al tercero; el plazo se interrumpe y se oye al actor diez días."}
+      - {norma: "LEC", articulo: "14", apartado: "2.3.ª", tipo: "conexa", nota: "El plazo para contestar se reanuda al notificarse la denegación o con el traslado de la contestación del tercero o al vencer su plazo."}
+      - {norma: "LEC", articulo: "14", apartado: "2.5.ª", tipo: "conexa", nota: "Si el tercero resulta absuelto, las costas pueden imponerse a quien pidió su intervención (art. 394)."}
+      - {norma: "CC", articulo: "1069", tipo: "conexa", nota: "Hecha la partición, los coherederos se deben recíprocamente evicción y saneamiento de los bienes adjudicados."}
+      - {norma: "CC", articulo: "638", tipo: "conexa", nota: "El donatario se subroga en las acciones de evicción del donante, que no responde salvo donación onerosa, hasta el gravamen."}
+      - {norma: "CC", articulo: "1540", tipo: "conexa", nota: "Quien pierde por evicción lo recibido en permuta elige recuperar lo que dio, si aún lo tiene el otro, o la indemnización."}
+      - {norma: "CC", articulo: "1553", tipo: "conexa", nota: "El saneamiento de la compraventa se aplica al arrendamiento, con devolución del precio proporcional al tiempo disfrutado."}
+      - {norma: "CC", articulo: "1529", tipo: "conexa", nota: "El cedente de buena fe responde de la existencia y legitimidad del crédito, no de la solvencia del deudor salvo pacto."}
+      - {norma: "CC", articulo: "1849", tipo: "conexa", nota: "Si el acreedor acepta un inmueble en pago y lo pierde después por evicción, el fiador queda libre."}
+    no_consta_en_norma:
+      - "Si hay evicción sin sentencia firme (privación administrativa o allanamiento del comprador ante un derecho evidente): jurisprudencial."
+      - "Plazo para reclamar el saneamiento por evicción y su día inicial: el CC no lo fija; jurisprudencial."
+    afines: ["Compraventa: entrega, precio y riesgos", "Saneamiento por vicios ocultos", "Intervención de terceros", "Acción reivindicatoria y declarativa de dominio", "Partición de la herencia y su impugnación", "Donación y su revocación"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Retracto convencional"
+    sinonimos: ["retracto convencional", "pacto de retro", "pacto de retroventa", "venta con pacto de retro", "derecho de recompra", "derecho a recuperar la cosa vendida", "plazo del retracto convencional", "reembolso del precio en el retracto", "retroventa en garantía", "pacto comisorio", "venta en garantía", "retracto convencional frente a terceros", "acción de retracto"]
+    normas_base: ["CC", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "1506", tipo: "conexa", nota: "La venta se resuelve por las causas generales de las obligaciones y, además, por el retracto convencional o el legal."}
+      - {norma: "CC", articulo: "1507", tipo: "regula", nota: "Hay retracto convencional si el vendedor se reserva recuperar la cosa, cumpliendo el art. 1518 y lo demás pactado."}
+      - {norma: "CC", articulo: "1508", tipo: "regula", nota: "A falta de pacto dura cuatro años desde la fecha del contrato; si se pacta, no puede exceder de diez."}
+      - {norma: "CC", articulo: "1509", tipo: "regula", nota: "Si el vendedor no cumple lo del art. 1518, el comprador adquiere irrevocablemente el dominio."}
+      - {norma: "CC", articulo: "1510", tipo: "regula", nota: "Se ejercita contra todo poseedor que traiga causa del comprador aunque no se mencione, salvo la Ley Hipotecaria para terceros."}
+      - {norma: "CC", articulo: "1511", tipo: "regula", nota: "El comprador sustituye al vendedor en todos sus derechos y acciones."}
+      - {norma: "CC", articulo: "1512", tipo: "regula", nota: "Los acreedores del vendedor solo pueden usar el retracto tras hacer excusión en los bienes de este."}
+      - {norma: "CC", articulo: "1513", tipo: "conexa", nota: "Si el comprador de parte indivisa adquiere el todo por el art. 404, puede obligar al vendedor que retrae a redimir el todo."}
+      - {norma: "CC", articulo: "1514", tipo: "regula", nota: "Si varios venden juntos una finca indivisa con pacto de retro, cada uno retrae solo su parte; igual los herederos del vendedor."}
+      - {norma: "CC", articulo: "1515", tipo: "regula", nota: "En esos casos el comprador puede exigir que se pongan de acuerdo para redimir el todo; no se le obliga al retracto parcial."}
+      - {norma: "CC", articulo: "1516", tipo: "conexa", nota: "El copropietario que vendió por separado su parte retrae solo su porción, y no se le obliga a redimir la finca entera."}
+      - {norma: "CC", articulo: "1517", tipo: "conexa", nota: "Con varios herederos del comprador se retrae contra cada uno por su parte; si se adjudicó a uno, contra él por el todo."}
+      - {norma: "CC", articulo: "1518", tipo: "regula", nota: "El vendedor reembolsa el precio, los gastos del contrato y pagos legítimos de la venta y los gastos necesarios y útiles."}
+      - {norma: "CC", articulo: "1519", tipo: "conexa", nota: "Frutos: sin abono si los había al vender; si no y los hay al retraer, se prorratean por el último año de posesión."}
+      - {norma: "CC", articulo: "1520", tipo: "regula", nota: "El vendedor recobra la cosa libre de cargas del comprador, pero respeta los arriendos de buena fe y según costumbre."}
+      - {norma: "CC", articulo: "1859", tipo: "conexa", nota: "El acreedor no puede apropiarse las cosas dadas en prenda o hipoteca, ni disponer de ellas."}
+      - {norma: "CC", articulo: "1884", tipo: "conexa", nota: "El acreedor anticrético no adquiere el inmueble por impago en plazo; el pacto contrario es nulo."}
+      - {norma: "LEC", articulo: "249", apartado: "1.7.º", tipo: "regula", nota: "Las acciones de retracto de cualquier tipo se deciden en juicio ordinario, cualquiera que sea su cuantía."}
+      - {norma: "LEC", articulo: "266", apartado: "2.º", tipo: "regula", nota: "A la demanda de retracto se une principio de prueba del título y, si se exige, la consignación del precio o caución."}
+      - {norma: "LEC", articulo: "251", apartado: "3.ª", tipo: "conexa", nota: "Cuantía de la demanda basada en el derecho de retracto: valor del bien, con preferencia por el precio de la compraventa (3.ª, 4.º)."}
+    fuera_de_la_herramienta:
+      - "Ley Hipotecaria: protección del tercero frente al retracto convencional no inscrito, a la que remite el art. 1510 CC."
+    no_consta_en_norma:
+      - "Retroventa pactada en garantía de un préstamo y pacto comisorio encubierto (arts. 1859 y 1884 CC): calificación jurisprudencial."
+      - "Si basta el ofrecimiento de reembolso dentro del plazo del art. 1508 CC o hace falta pago o consignación: jurisprudencial."
+    afines: ["Compraventa: entrega, precio y riesgos", "Retracto legal de comuneros y colindantes", "Derechos de tanteo y retracto del arrendatario", "Préstamo e intereses", "Simulación y causa del contrato", "Cuantía del proceso y su impugnación"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Gestión de negocios ajenos"
+    sinonimos: ["gestión de negocios ajenos", "gestor oficioso", "gestión sin mandato", "cuasicontrato de gestión", "ratificación de la gestión", "gastos del gestor", "reembolso al gestor", "gestión útil", "gestión para evitar un perjuicio inminente", "alimentos prestados por un extraño", "gastos funerarios", "actuar en nombre de otro sin poder", "negotiorum gestio"]
+    normas_base: ["CC"]
+    remisiones:
+      - {norma: "CC", articulo: "1887", tipo: "conexa", nota: "Son cuasi contratos los hechos lícitos y voluntarios que obligan a su autor con un tercero y a veces recíprocamente."}
+      - {norma: "CC", articulo: "1888", tipo: "regula", nota: "Quien gestiona sin mandato negocios ajenos debe seguir hasta terminar el asunto o requerir al dueño para que le sustituya."}
+      - {norma: "CC", articulo: "1889", tipo: "regula", nota: "Diligencia de un buen padre de familia; indemniza los perjuicios por su culpa, y el tribunal puede moderar la indemnización."}
+      - {norma: "CC", articulo: "1890", tipo: "regula", nota: "Si delega, responde de los actos del delegado, sin perjuicio de la obligación directa de este con el dueño del negocio."}
+      - {norma: "CC", articulo: "1890", apartado: "párrafo 2.º", tipo: "regula", nota: "Si los gestores son dos o más, su responsabilidad es solidaria."}
+      - {norma: "CC", articulo: "1891", tipo: "regula", nota: "Responde del caso fortuito si acomete operaciones arriesgadas que el dueño no solía hacer o antepone su interés al del dueño."}
+      - {norma: "CC", articulo: "1892", tipo: "regula", nota: "La ratificación de la gestión por el dueño del negocio produce los efectos del mandato expreso."}
+      - {norma: "CC", articulo: "1893", tipo: "regula", nota: "Sin ratificación, el dueño que aprovecha la gestión responde de lo contraído en su interés y abona gastos necesarios y útiles y perjuicios."}
+      - {norma: "CC", articulo: "1893", apartado: "párrafo 2.º", tipo: "regula", nota: "Igual si la gestión buscaba evitar un perjuicio inminente y manifiesto, aunque no resulte provecho alguno."}
+      - {norma: "CC", articulo: "1894", tipo: "regula", nota: "El extraño que da alimentos sin conocimiento del obligado puede reclamárselos, salvo que los diera por piedad y sin ánimo de reclamar."}
+      - {norma: "CC", articulo: "1894", apartado: "párrafo 2.º", tipo: "conexa", nota: "Los gastos funerarios proporcionados los pagan quienes debían alimentar al difunto, aunque no deje bienes."}
+      - {norma: "CC", articulo: "1259", apartado: "párrafo 2.º", tipo: "conexa", nota: "El contrato en nombre de otro sin autorización ni representación es nulo, salvo ratificación antes de que la otra parte lo revoque."}
+      - {norma: "CC", articulo: "1727", apartado: "párrafo 2.º", tipo: "conexa", nota: "En lo que el mandatario se excede, el mandante solo queda obligado si lo ratifica expresa o tácitamente."}
+      - {norma: "CC", articulo: "1720", tipo: "conexa", nota: "Todo mandatario debe dar cuenta de sus operaciones y abonar al mandante cuanto haya recibido por el mandato."}
+      - {norma: "CC", articulo: "1158", tipo: "conexa", nota: "Quien paga por otro puede reclamarle lo pagado; si pagó contra su expresa voluntad, solo en lo que le fue útil."}
+      - {norma: "CC", articulo: "1964", apartado: "2", tipo: "conexa", nota: "Las acciones personales sin plazo especial prescriben a los cinco años desde que puede exigirse el cumplimiento."}
+    no_consta_en_norma:
+      - "Requisitos de la gestión (ausencia de prohibición del dueño, ánimo de gestionar lo ajeno) y su frontera con el enriquecimiento injusto: jurisprudencial."
+      - "Si el gestor tiene derecho a retribución, además del reembolso de gastos del art. 1893 CC: la ley no lo dice; jurisprudencial."
+    afines: ["Mandato y rendición de cuentas", "Enriquecimiento injusto y cobro de lo indebido", "Pago: prueba, imputación y pago por tercero", "Alimentos entre parientes", "Prescripción (como excepción)"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Sociedad civil y comunidad con actividad"
+    sinonimos: ["sociedad civil", "contrato de sociedad", "sociedad civil irregular", "sociedad de pactos secretos", "comunidad de bienes con actividad", "CB", "comunidad de bienes que explota un negocio", "socio industrial", "aportación social", "reparto de ganancias y pérdidas", "administración de la sociedad civil", "disolución de la sociedad civil", "renuncia del socio", "liquidación de la sociedad civil", "responsabilidad de los socios por deudas sociales", "entidad sin personalidad jurídica", "demandar a una comunidad de bienes"]
+    normas_base: ["CC", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "1665", tipo: "regula", nota: "Contrato por el que dos o más ponen en común dinero, bienes o industria con ánimo de partir entre sí las ganancias."}
+      - {norma: "CC", articulo: "1666", tipo: "conexa", nota: "Objeto lícito e interés común; disuelta la sociedad ilícita, sus ganancias van a la beneficencia del domicilio social."}
+      - {norma: "CC", articulo: "1667", tipo: "regula", nota: "Se constituye en cualquier forma, salvo aportación de inmuebles o derechos reales, que exige escritura pública."}
+      - {norma: "CC", articulo: "1668", tipo: "regula", nota: "Si se aportan inmuebles, es nula sin inventario firmado por las partes y unido a la escritura."}
+      - {norma: "CC", articulo: "1669", tipo: "regula", nota: "Sin personalidad la de pactos secretos en que cada socio contrata en su nombre; se rige por la comunidad de bienes."}
+      - {norma: "CC", articulo: "1670", tipo: "conexa", nota: "Puede adoptar las formas del Código de Comercio, cuyas normas se aplican en lo que no se opongan al CC."}
+      - {norma: "CC", articulo: "1678", tipo: "conexa", nota: "La particular tiene por objeto cosas determinadas, su uso o frutos, una empresa señalada o el ejercicio de una profesión."}
+      - {norma: "CC", articulo: "1681", tipo: "regula", nota: "Cada socio debe lo que prometió aportar y responde de la evicción de las cosas ciertas aportadas como un vendedor."}
+      - {norma: "CC", articulo: "1682", tipo: "regula", nota: "Quien no aporta el dinero prometido o lo toma de la caja social debe intereses desde ese día, más los daños."}
+      - {norma: "CC", articulo: "1686", tipo: "regula", nota: "El socio responde de los daños causados por su culpa y no puede compensarlos con los beneficios que haya aportado."}
+      - {norma: "CC", articulo: "1689", tipo: "regula", nota: "Ganancias y pérdidas según lo pactado; sin pacto, en proporción a lo aportado; el industrial, como el que menos aportó."}
+      - {norma: "CC", articulo: "1691", tipo: "regula", nota: "Es nulo excluir a un socio de toda ganancia o pérdida; solo el socio industrial puede quedar exento de pérdidas."}
+      - {norma: "CC", articulo: "1692", tipo: "conexa", nota: "El administrador nombrado en el contrato actúa pese a la oposición de los demás, salvo mala fe; irrevocable sin causa legítima."}
+      - {norma: "CC", articulo: "1695", tipo: "regula", nota: "Sin pacto de administración, todo socio es apoderado y obliga a la sociedad; ninguno innova en inmuebles sin consentimiento."}
+      - {norma: "CC", articulo: "1697", tipo: "regula", nota: "La sociedad se obliga por el socio que obra como tal y por cuenta social, con poder y dentro de sus límites."}
+      - {norma: "CC", articulo: "1698", tipo: "regula", nota: "Los socios no responden solidariamente de las deudas sociales; la sociedad no se obliga por actos del socio en su nombre."}
+      - {norma: "CC", articulo: "1699", tipo: "regula", nota: "Los acreedores sociales son preferentes sobre los bienes sociales; los de un socio pueden embargar su parte en el fondo."}
+      - {norma: "CC", articulo: "1700", tipo: "regula", nota: "Se extingue por término, pérdida de la cosa o fin del negocio, muerte o concurso de un socio, voluntad de uno o apoyo representativo."}
+      - {norma: "CC", articulo: "1705", tipo: "regula", nota: "La renuncia de un socio solo disuelve la sociedad sin término; ha de ser de buena fe, en tiempo oportuno y comunicada."}
+      - {norma: "CC", articulo: "1707", tipo: "regula", nota: "En la constituida por tiempo determinado, la disolución solo puede pedirse por justo motivo apreciado por los tribunales."}
+      - {norma: "CC", articulo: "1708", tipo: "regula", nota: "La partición entre socios sigue las reglas de las herencias; al industrial no se le adjudican bienes aportados, salvo pacto."}
+      - {norma: "CC", articulo: "392", tipo: "conexa", nota: "Hay comunidad cuando la propiedad de una cosa o un derecho pertenece pro indiviso a varias personas."}
+      - {norma: "CC", articulo: "398", tipo: "conexa", nota: "En la comunidad, los acuerdos de administración se toman por mayoría de intereses; sin mayoría, provee el juez."}
+      - {norma: "CC", articulo: "1137", tipo: "conexa", nota: "La pluralidad de deudores no implica solidaridad, salvo que la obligación lo determine expresamente."}
+      - {norma: "LEC", articulo: "6", apartado: "2", tipo: "regula", nota: "Pueden ser demandadas las entidades sin personalidad con elementos personales y patrimoniales al servicio de un fin."}
+      - {norma: "LEC", articulo: "7", apartado: "7", tipo: "regula", nota: "Por esas entidades comparecen quienes, de hecho o por sus pactos, actúan en su nombre frente a terceros."}
+      - {norma: "LEC", articulo: "544", tipo: "regula", nota: "Título frente a entidad sin personalidad que actúa en el tráfico: ejecución contra los socios o gestores que obraron por ella."}
+    no_consta_en_norma:
+      - "Si la sociedad civil con pactos no secretos pero no inscrita tiene personalidad jurídica (art. 1669 CC a contrario): jurisprudencial."
+      - "Si los comuneros de una comunidad de bienes con actividad responden solidariamente frente a terceros pese al art. 1698 CC: jurisprudencial."
+    afines: ["Copropiedad y acción de división de cosa común", "Herencia yacente y comunidades sin personalidad como parte", "Falta de capacidad para ser parte / procesal", "Mandato y rendición de cuentas", "Solidaridad y mancomunidad", "Títulos ejecutivos"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Medianería"
+    sinonimos: ["medianería", "pared medianera", "muro medianero", "servidumbre de medianería", "presunción de medianería", "signos contrarios a la medianería", "seto medianero", "zanja medianera", "acequia medianera", "renuncia a la medianería", "alzar la pared medianera", "apoyar vigas en la medianera", "abrir huecos en pared medianera", "gastos de la pared medianera", "adquirir la medianería"]
+    normas_base: ["CC", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "571", tipo: "regula", nota: "La medianería se rige por el CC y por las ordenanzas y usos locales en lo que no se opongan a él ni esté previsto."}
+      - {norma: "CC", articulo: "572", tipo: "regula", nota: "Se presume, salvo título, signo o prueba, en paredes entre edificios hasta el punto común de elevación, jardines, corrales y cercas."}
+      - {norma: "CC", articulo: "573", tipo: "regula", nota: "Signos contrarios (huecos, pared sobre una sola finca, cargas de una sola…): la pared es del dueño favorecido por el signo."}
+      - {norma: "CC", articulo: "574", tipo: "regula", nota: "Zanjas y acequias entre heredades se presumen medianeras; la tierra sacada a un solo lado es signo en contra."}
+      - {norma: "CC", articulo: "575", tipo: "regula", nota: "Reparar y construir lo medianero se paga en proporción al derecho; cabe eximirse renunciando, salvo si sostiene un edificio propio."}
+      - {norma: "CC", articulo: "576", tipo: "regula", nota: "Quien derriba su edificio apoyado en la medianera puede renunciar, pero paga esa vez las obras para evitar daños a la pared."}
+      - {norma: "CC", articulo: "577", tipo: "regula", nota: "Cualquier dueño puede alzarla a su costa, indemnizando perjuicios y la mayor conservación; si no resiste, la rehace en su suelo."}
+      - {norma: "CC", articulo: "578", tipo: "regula", nota: "Los demás adquieren la medianería de lo alzado pagando en proporción la obra y la mitad del terreno del mayor espesor."}
+      - {norma: "CC", articulo: "579", tipo: "regula", nota: "Cada medianero la usa en proporción a su derecho, apoyando obra o vigas hasta la mitad, sin impedir el uso de los demás."}
+      - {norma: "CC", articulo: "579", apartado: "párrafo 2.º", tipo: "regula", nota: "Para usarla necesita el consentimiento de los demás; si no lo obtiene, unos peritos fijan condiciones para no perjudicarles."}
+      - {norma: "CC", articulo: "580", tipo: "regula", nota: "Ningún medianero puede abrir ventana ni hueco alguno en la pared medianera sin consentimiento del otro."}
+      - {norma: "CC", articulo: "388", tipo: "conexa", nota: "Todo propietario puede cerrar o cercar sus heredades, sin perjuicio de las servidumbres constituidas sobre ellas."}
+      - {norma: "CC", articulo: "1907", tipo: "conexa", nota: "El propietario de un edificio responde de los daños por su ruina si sobrevino por falta de las reparaciones necesarias."}
+      - {norma: "CC", articulo: "1963", tipo: "conexa", nota: "Las acciones reales sobre bienes inmuebles prescriben a los treinta años."}
+      - {norma: "LEC", articulo: "251", apartado: "5.ª", tipo: "conexa", nota: "Cuantía en demandas sobre servidumbre (lo es la medianería en el CC): precio de constitución si consta y no tiene más de cinco años."}
+      - {norma: "LEC", articulo: "52", apartado: "1.1.º", tipo: "conexa", nota: "En acciones reales sobre inmuebles es competente el tribunal del lugar en que esté sita la cosa litigiosa."}
+    no_consta_en_norma:
+      - "Naturaleza de la medianería (servidumbre, como la llama el CC, o copropiedad) y si cabe pedir su división (art. 400 CC): jurisprudencial."
+      - "Si el uso o el alzado sin el consentimiento del art. 579 CC permite pedir la demolición o solo la indemnización: jurisprudencial."
+    afines: ["Servidumbres: constitución, extinción y acciones", "Luces, vistas y distancias", "Inmisiones y relaciones de vecindad", "Copropiedad y acción de división de cosa común", "Obra nueva y obra ruinosa", "Deslinde y amojonamiento"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Deslinde y amojonamiento"
+    sinonimos: ["deslinde", "amojonamiento", "acción de deslinde", "deslinde de fincas", "linderos confusos", "confusión de linderos", "colocación de mojones", "mojones", "deslinde judicial", "deslinde notarial", "deslinde de fincas no inscritas", "expediente de deslinde", "imprescriptibilidad del deslinde", "cercar la finca", "exceso o falta de cabida entre colindantes"]
+    normas_base: ["CC", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "384", tipo: "regula", nota: "Todo propietario, y el titular de derechos reales, puede deslindar su propiedad citando a los dueños colindantes."}
+      - {norma: "CC", articulo: "385", tipo: "regula", nota: "Se deslinda según los títulos de cada propietario y, si no bastan, por la posesión en que estén los colindantes."}
+      - {norma: "CC", articulo: "386", tipo: "regula", nota: "Si ni títulos ni posesión ni otra prueba fijan el límite, el terreno disputado se reparte en partes iguales."}
+      - {norma: "CC", articulo: "387", tipo: "regula", nota: "Si los títulos suman más o menos terreno del que existe, el exceso o la falta se reparte proporcionalmente."}
+      - {norma: "CC", articulo: "388", tipo: "conexa", nota: "Todo propietario puede cerrar o cercar sus heredades, sin perjuicio de las servidumbres constituidas sobre ellas."}
+      - {norma: "CC", articulo: "1965", tipo: "regula", nota: "No prescribe entre propietarios colindantes la acción para pedir el deslinde de las propiedades contiguas."}
+      - {norma: "LEC", articulo: "251", apartado: "3.ª", tipo: "regula", nota: "Cuantía de las acciones de deslinde y amojonamiento: valor del bien según la regla 3.ª, numeral 6.º."}
+      - {norma: "LEC", articulo: "249", apartado: "2", tipo: "conexa", nota: "Van al juicio ordinario las demandas de más de quince mil euros o de cuantía imposible de calcular."}
+      - {norma: "LEC", articulo: "250", apartado: "2", tipo: "conexa", nota: "Van al juicio verbal las demandas de hasta quince mil euros no reservadas al ordinario por razón de la materia."}
+      - {norma: "LEC", articulo: "52", apartado: "1.1.º", tipo: "regula", nota: "En acciones reales sobre inmuebles es competente el tribunal del lugar de la cosa; si está en varias circunscripciones, a elección."}
+    fuera_de_la_herramienta:
+      - "Ley 15/2015, de Jurisdicción Voluntaria (BOE-A-2015-7391), arts. 104 y 105: deslinde de fincas no inscritas ante el LAJ del lugar; abogado si vale más de 6.000 euros."
+      - "Ley Hipotecaria (BOE-A-1946-2453), art. 200: deslinde de fincas inscritas ante notario; sin acuerdo de los interesados, el notario da por concluso el expediente."
+    no_consta_en_norma:
+      - "Frontera entre la acción de deslinde (linderos confusos) y la reivindicatoria (disputa sobre la titularidad de una franja): jurisprudencial."
+      - "Valor del Catastro frente a los títulos y la posesión al fijar el lindero (art. 385 CC): jurisprudencial."
+    afines: ["Acción reivindicatoria y declarativa de dominio", "Usucapión", "Medianería", "Cuantía del proceso y su impugnación", "Posesión: clases, adquisición y efectos", "Competencia territorial y fueros imperativos"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Accesión y construcción en suelo ajeno"
+    sinonimos: ["accesión", "derecho de accesión", "construcción en suelo ajeno", "edificar en terreno ajeno", "plantar en terreno ajeno", "constructor de buena fe", "constructor de mala fe", "accesión invertida", "construcción extralimitada", "materiales ajenos", "demolición de lo edificado de mala fe", "mejoras en finca ajena", "frutos naturales, industriales y civiles", "unión de cosas muebles", "especificación", "mezcla o confusión", "aluvión"]
+    normas_base: ["CC"]
+    remisiones:
+      - {norma: "CC", articulo: "353", tipo: "regula", nota: "La propiedad da derecho por accesión a lo que los bienes producen o se les une o incorpora, natural o artificialmente."}
+      - {norma: "CC", articulo: "354", tipo: "conexa", nota: "Pertenecen al propietario los frutos naturales, industriales y civiles."}
+      - {norma: "CC", articulo: "358", tipo: "regula", nota: "Lo edificado, plantado o sembrado en predio ajeno y las mejoras hechas en él pertenecen al dueño del suelo, según los artículos siguientes."}
+      - {norma: "CC", articulo: "359", tipo: "regula", nota: "Todas las obras, siembras y plantaciones se presumen hechas por el propietario y a su costa, salvo prueba en contrario."}
+      - {norma: "CC", articulo: "360", tipo: "regula", nota: "El dueño del suelo que construye con materiales ajenos paga su valor y, si hay mala fe, los daños; retirarlos solo sin menoscabo."}
+      - {norma: "CC", articulo: "361", tipo: "regula", nota: "Ante lo hecho de buena fe, el dueño del suelo elige quedárselo indemnizando (arts. 453 y 454) o cobrar el precio del terreno o la renta."}
+      - {norma: "CC", articulo: "362", tipo: "regula", nota: "Quien edifica, planta o siembra de mala fe en terreno ajeno lo pierde sin derecho a indemnización."}
+      - {norma: "CC", articulo: "363", tipo: "regula", nota: "El dueño del terreno puede exigir al de mala fe la demolición o el arranque y reponer las cosas a su costa."}
+      - {norma: "CC", articulo: "364", tipo: "regula", nota: "Con mala fe de ambos, rigen las reglas de la buena fe; hay mala fe del dueño si se hizo a su vista, ciencia y paciencia sin oponerse."}
+      - {norma: "CC", articulo: "365", tipo: "conexa", nota: "El dueño del suelo responde subsidiariamente del valor de los materiales del tercero de buena fe si el constructor no tiene bienes."}
+      - {norma: "CC", articulo: "366", tipo: "conexa", nota: "El acrecentamiento paulatino de las riberas por la corriente pertenece a los dueños de las heredades confinantes."}
+      - {norma: "CC", articulo: "375", tipo: "conexa", nota: "Unidas sin mala fe dos cosas muebles de distintos dueños, el de la principal adquiere la accesoria indemnizando su valor."}
+      - {norma: "CC", articulo: "379", tipo: "conexa", nota: "Quien incorpora de mala fe su cosa accesoria la pierde e indemniza; si la mala fe es del dueño de la principal, el otro elige."}
+      - {norma: "CC", articulo: "383", tipo: "conexa", nota: "Quien de buena fe hace obra nueva con materia ajena la hace suya indemnizando su valor, salvo materia más valiosa que la obra."}
+      - {norma: "CC", articulo: "433", tipo: "conexa", nota: "Es poseedor de buena fe quien ignora que en su título o modo de adquirir haya vicio que lo invalide."}
+      - {norma: "CC", articulo: "434", tipo: "conexa", nota: "La buena fe se presume siempre; quien afirma la mala fe del poseedor debe probarla."}
+      - {norma: "CC", articulo: "453", tipo: "conexa", nota: "Gastos necesarios a todo poseedor; útiles al de buena fe, con retención, o el aumento de valor a elección del vencedor."}
+      - {norma: "CC", articulo: "454", tipo: "conexa", nota: "Los gastos de puro lujo no se abonan al de buena fe, que puede llevarse los adornos si no hay deterioro y no se le pagan."}
+      - {norma: "CC", articulo: "1359", tipo: "conexa", nota: "Las mejoras en bienes gananciales o privativos siguen su carácter; si se pagan con fondos comunes, la sociedad cobra el aumento de valor."}
+    no_consta_en_norma:
+      - "Accesión invertida (quien edifica de buena fe invadiendo parte del suelo ajeno adquiere esa franja pagando su valor): jurisprudencial."
+      - "Construcción en suelo de un cónyuge o comunero con consentimiento de este: si rige el art. 361 CC o el enriquecimiento injusto, jurisprudencial."
+    afines: ["Liquidación del estado posesorio: frutos, gastos y mejoras", "Acción reivindicatoria y declarativa de dominio", "Bienes privativos y gananciales", "Posesión: clases, adquisición y efectos", "Enriquecimiento injusto y cobro de lo indebido", "Copropiedad y acción de división de cosa común"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Derechos de uso y habitación"
+    sinonimos: ["derecho de uso", "derecho de habitación", "uso y habitación", "usuario", "habitacionista", "derecho real de uso", "derecho real de habitación", "habitación del legitimario con discapacidad", "habitación legal del legitimario", "uso o habitación del cónyuge viudo", "intransmisibilidad del uso", "prohibición de arrendar el derecho de uso", "extinción del derecho de habitación", "abuso grave de la cosa", "valor del derecho de uso"]
+    normas_base: ["CC", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "523", tipo: "regula", nota: "Facultades y obligaciones del usuario y del habitacionista: las del título constitutivo y, en su defecto, las de este capítulo."}
+      - {norma: "CC", articulo: "524", tipo: "regula", nota: "El uso da derecho a los frutos de la cosa ajena que basten a las necesidades del usuario y de su familia, aunque esta crezca."}
+      - {norma: "CC", articulo: "524", apartado: "párrafo 2.º", tipo: "regula", nota: "La habitación faculta para ocupar en casa ajena las piezas necesarias para sí y para las personas de su familia."}
+      - {norma: "CC", articulo: "525", tipo: "regula", nota: "Los derechos de uso y habitación no se pueden arrendar ni traspasar a otro por ninguna clase de título."}
+      - {norma: "CC", articulo: "526", tipo: "conexa", nota: "El uso de un rebaño permite aprovechar crías, leche y lana en cuanto baste para el consumo del usuario y su familia."}
+      - {norma: "CC", articulo: "527", tipo: "regula", nota: "Si consume todos los frutos u ocupa toda la casa, paga cultivo, reparos ordinarios y contribuciones como el usufructuario."}
+      - {norma: "CC", articulo: "527", apartado: "párrafo 2.º", tipo: "regula", nota: "Si solo usa una parte, no contribuye mientras al propietario le quede bastante para cubrir gastos y cargas; si no, suple."}
+      - {norma: "CC", articulo: "528", tipo: "regula", nota: "Se aplican las normas del usufructo en cuanto no se opongan a este capítulo."}
+      - {norma: "CC", articulo: "529", tipo: "regula", nota: "Se extinguen por las causas del usufructo y, además, por abuso grave de la cosa y de la habitación."}
+      - {norma: "CC", articulo: "513", tipo: "conexa", nota: "El usufructo se extingue por muerte, plazo o condición, consolidación, renuncia, pérdida total, resolución del derecho o prescripción."}
+      - {norma: "CC", articulo: "822", tipo: "regula", nota: "La habitación sobre la vivienda habitual donada o legada al legitimario con discapacidad conviviente no computa para las legítimas."}
+      - {norma: "CC", articulo: "822", apartado: "párrafo 2.º", tipo: "regula", nota: "Se atribuye por ley al legitimario con discapacidad conviviente que la necesite, salvo exclusión, sin impedir que convivan los demás."}
+      - {norma: "CC", articulo: "822", apartado: "párrafo 3.º", tipo: "conexa", nota: "El derecho de habitación de los dos párrafos anteriores es intransmisible."}
+      - {norma: "CC", articulo: "1406", tipo: "conexa", nota: "Muerto el otro cónyuge, el viudo tiene preferencia para que se incluya en su haber la vivienda de su residencia habitual."}
+      - {norma: "CC", articulo: "1407", tipo: "regula", nota: "Sobre el local profesional o la vivienda habitual, el cónyuge puede pedir la propiedad o un derecho de uso o habitación."}
+      - {norma: "CC", articulo: "96", apartado: "1", tipo: "conexa", nota: "El uso de la vivienda familiar en la crisis matrimonial se atribuye a los hijos menores y al cónyuge con quien queden."}
+      - {norma: "CC", articulo: "1280", apartado: "1.º", tipo: "conexa", nota: "Constan en documento público los actos que crean, transmiten, modifican o extinguen derechos reales sobre inmuebles."}
+      - {norma: "LEC", articulo: "251", apartado: "4.ª", tipo: "regula", nota: "Cuantía en demandas sobre el uso o la habitación: la base imponible del impuesto por su constitución o transmisión."}
+    no_consta_en_norma:
+      - "Naturaleza del uso de la vivienda familiar del art. 96 CC (si es derecho real de uso o derecho familiar) y su oponibilidad a terceros: jurisprudencial."
+      - "Si el derecho de habitación del art. 822 CC es inscribible o se cancela al cesar la necesidad o la convivencia: la norma no lo dice; jurisprudencial."
+    afines: ["Usufructo", "Uso de la vivienda familiar", "Legítimas: cuantía y cálculo", "Derechos del cónyuge viudo", "Disolución y liquidación de la sociedad de gananciales", "Cuantía del proceso y su impugnación"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Capitulaciones matrimoniales"
+    sinonimos: ["capitulaciones matrimoniales", "capitulaciones", "pacto de régimen económico", "escritura de capitulaciones", "separación de bienes pactada", "cambio de régimen económico matrimonial", "modificación de las capitulaciones", "capitulaciones prenupciales", "acuerdo prematrimonial", "capitulaciones del menor", "nulidad de las capitulaciones", "fraude a acreedores por cambio de régimen", "derechos de terceros y cambio de régimen", "indicación en el Registro Civil", "régimen supletorio de gananciales"]
+    normas_base: ["CC", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "1315", tipo: "regula", nota: "El régimen económico del matrimonio es el que los cónyuges estipulen en capitulaciones, sin más límites que los del Código."}
+      - {norma: "CC", articulo: "1316", tipo: "regula", nota: "A falta de capitulaciones o si son ineficaces, el régimen es el de sociedad de gananciales."}
+      - {norma: "CC", articulo: "1317", tipo: "regula", nota: "La modificación del régimen durante el matrimonio no perjudica en ningún caso los derechos ya adquiridos por terceros."}
+      - {norma: "CC", articulo: "1323", tipo: "conexa", nota: "Los cónyuges pueden transmitirse bienes y derechos por cualquier título y celebrar entre sí toda clase de contratos."}
+      - {norma: "CC", articulo: "1325", tipo: "regula", nota: "En capitulaciones se puede estipular, modificar o sustituir el régimen económico y otras disposiciones por razón del matrimonio."}
+      - {norma: "CC", articulo: "1326", tipo: "regula", nota: "Las capitulaciones pueden otorgarse antes o después de celebrado el matrimonio."}
+      - {norma: "CC", articulo: "1327", tipo: "regula", nota: "Para su validez, las capitulaciones han de constar en escritura pública."}
+      - {norma: "CC", articulo: "1328", tipo: "regula", nota: "Es nula la estipulación contraria a las leyes o a las buenas costumbres o que limite la igualdad de derechos de los cónyuges."}
+      - {norma: "CC", articulo: "1329", tipo: "regula", nota: "El menor no emancipado que pueda casarse otorga capitulaciones con sus padres o tutor, salvo si solo pacta separación o participación."}
+      - {norma: "CC", articulo: "1331", tipo: "regula", nota: "Modificarlas exige el concurso de quienes otorgaron las anteriores, si viven y se afecta a derechos que ellos concedieron."}
+      - {norma: "CC", articulo: "1332", tipo: "conexa", nota: "Los pactos modificativos se anotan en la escritura de las capitulaciones anteriores y el notario lo hace constar en las copias."}
+      - {norma: "CC", articulo: "1333", tipo: "regula", nota: "Se mencionan en la inscripción del matrimonio en el Registro Civil y, si afectan a inmuebles, se toma razón en el de la Propiedad."}
+      - {norma: "CC", articulo: "1334", tipo: "regula", nota: "Lo estipulado para un futuro matrimonio queda sin efecto si no se contrae en el plazo de un año."}
+      - {norma: "CC", articulo: "1335", tipo: "regula", nota: "Su invalidez se rige por las reglas generales de los contratos; la anulación no perjudica a terceros de buena fe."}
+      - {norma: "CC", articulo: "1280", apartado: "3.º", tipo: "conexa", nota: "Deben constar en documento público las capitulaciones matrimoniales y sus modificaciones."}
+      - {norma: "CC", articulo: "1392", apartado: "4.º", tipo: "conexa", nota: "La sociedad de gananciales concluye de pleno derecho si los cónyuges convienen un régimen distinto en la forma legal."}
+      - {norma: "CC", articulo: "1435", tipo: "regula", nota: "Hay separación de bienes si se pacta, si se excluyen los gananciales sin fijar otras reglas o si se extingue el régimen anterior."}
+      - {norma: "CC", articulo: "1401", tipo: "conexa", nota: "Hasta pagarse las deudas de la sociedad, los acreedores conservan sus créditos contra el cónyuge deudor; el otro responde con lo adjudicado."}
+      - {norma: "CC", articulo: "9", apartado: "3", tipo: "conexa", nota: "Son válidas las capitulaciones conformes a la ley de los efectos del matrimonio o a la de la nacionalidad o residencia de un cónyuge."}
+      - {norma: "LEC", articulo: "806", tipo: "conexa", nota: "Sin acuerdo, el régimen con masa común, por capitulaciones o por ley, se liquida por el procedimiento de los arts. 806 y siguientes."}
+    no_consta_en_norma:
+      - "Validez de los pactos en capitulaciones sobre las consecuencias de una futura ruptura (pensión compensatoria, vivienda, alimentos): jurisprudencial."
+      - "Efecto frente a terceros de buena fe de las capitulaciones no indicadas en el Registro Civil (art. 1333 CC): el CC no fija la sanción; jurisprudencial."
+    afines: ["Separación de bienes y compensación por trabajo doméstico", "Disolución y liquidación de la sociedad de gananciales", "Bienes privativos y gananciales", "Ley aplicable al régimen económico de extranjeros", "Acción subrogatoria y rescisión por fraude de acreedores", "Liquidación del régimen económico matrimonial (procedimiento)"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Ley aplicable al régimen económico de extranjeros"
+    sinonimos: ["ley aplicable al régimen económico matrimonial", "régimen económico de extranjeros", "matrimonio de extranjeros", "matrimonio mixto", "régimen económico de los británicos", "efectos del matrimonio", "ley personal común", "residencia habitual común", "elección de ley del régimen económico", "Reglamento 2016/1103", "régimen económico de los residentes extranjeros en Benidorm", "prueba del derecho extranjero", "conflictos de leyes interregionales", "vecindad civil y régimen económico", "ley del lugar de celebración del matrimonio"]
+    normas_base: ["CC", "LEC", "LOPJ"]
+    remisiones:
+      - {norma: "CC", articulo: "9", apartado: "2", tipo: "regula", nota: "Efectos del matrimonio: ley personal común; si no, la elegida antes de la boda; luego, la residencia común posterior o el lugar de la boda."}
+      - {norma: "CC", articulo: "9", apartado: "3", tipo: "regula", nota: "Capitulaciones válidas si se ajustan a la ley de los efectos del matrimonio o a la nacionalidad o residencia de un cónyuge."}
+      - {norma: "CC", articulo: "9", apartado: "1", tipo: "conexa", nota: "La ley personal es la de la nacionalidad y rige capacidad, estado civil, derechos y deberes de familia y sucesión."}
+      - {norma: "CC", articulo: "9", apartado: "8", tipo: "conexa", nota: "Los derechos legales del viudo se rigen por la ley de los efectos del matrimonio, a salvo las legítimas de los descendientes."}
+      - {norma: "CC", articulo: "9", apartado: "9", tipo: "conexa", nota: "Doble nacionalidad: prevalece la española; si no, la coincidente con la última residencia habitual y, en su defecto, la última adquirida."}
+      - {norma: "CC", articulo: "10", apartado: "1", tipo: "conexa", nota: "La posesión, la propiedad y los demás derechos sobre inmuebles y su publicidad se rigen por la ley del lugar donde se hallen."}
+      - {norma: "CC", articulo: "12", apartado: "1", tipo: "conexa", nota: "La calificación para determinar la norma de conflicto se hace siempre con arreglo a la ley española."}
+      - {norma: "CC", articulo: "12", apartado: "2", tipo: "conexa", nota: "La remisión al derecho extranjero es a su ley material, sin reenvío salvo el que se haga a la ley española."}
+      - {norma: "CC", articulo: "12", apartado: "3", tipo: "conexa", nota: "La ley extranjera no se aplica cuando resulte contraria al orden público."}
+      - {norma: "CC", articulo: "12", apartado: "6", tipo: "regula", nota: "Tribunales y autoridades aplican de oficio las normas de conflicto del derecho español."}
+      - {norma: "CC", articulo: "16", apartado: "1", tipo: "conexa", nota: "Conflictos entre derechos civiles españoles: normas del capítulo IV, con la vecindad civil como ley personal."}
+      - {norma: "CC", articulo: "16", apartado: "3", tipo: "regula", nota: "Matrimonio entre españoles: ley española según el art. 9 y, en su defecto, el CC; separación si ambas leyes personales la imponen."}
+      - {norma: "LEC", articulo: "281", apartado: "2", tipo: "regula", nota: "El derecho extranjero debe probarse en contenido y vigencia; el tribunal puede valerse de cuantos medios de averiguación estime."}
+      - {norma: "LOPJ", articulo: "22 quater", apartado: "c)", tipo: "regula", nota: "Competencia española sobre relaciones patrimoniales entre cónyuges por residencia habitual o nacionalidad, si no la tiene otro tribunal."}
+      - {norma: "LOPJ", articulo: "22 ter", apartado: "1", tipo: "conexa", nota: "Fuera de los foros exclusivos y de la sumisión, los tribunales españoles conocen si el demandado está domiciliado en España."}
+    fuera_de_la_herramienta:
+      - "Reglamento (UE) 2016/1103: desplaza los arts. 9.2 y 9.3 CC para los cónyuges casados o que eligieron ley desde el 29-01-2019 (art. 69.3)."
+      - "Reglamento (UE) 2016/1103, arts. 20, 22 y 26: aplicación universal; elección de ley de residencia o nacionalidad; sin elección, primera residencia habitual común."
+    no_consta_en_norma:
+      - "Consecuencia de no probar el derecho extranjero alegado (desestimación o aplicación de la ley española): jurisprudencial."
+      - "Si la ley del art. 9.2 CC sigue rigiendo cuando los cónyuges cambian después de nacionalidad o de residencia (inmutabilidad): jurisprudencial."
+    afines: ["Capitulaciones matrimoniales", "Ley aplicable a la sucesión de extranjeros", "Bienes privativos y gananciales", "Falta de jurisdicción / competencia internacional", "Disolución y liquidación de la sociedad de gananciales", "Derechos del cónyuge viudo"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - voz: "Requisitos básicos de la edificación y documentación de la obra"
+    sinonimos: ["requisitos básicos de la edificación", "requisitos de funcionalidad", "requisitos de seguridad", "requisitos de habitabilidad", "Código Técnico de la Edificación", "CTE", "proyecto de edificación", "documentación de la obra ejecutada", "Libro del Edificio", "instrucciones de uso y mantenimiento", "certificado final de obra", "licencias de edificación", "obras que requieren proyecto", "deber de conservación del propietario", "normas básicas de la edificación"]
+    normas_base: ["LOE"]
+    remisiones:
+      - {norma: "LOE", articulo: "1", apartado: "1", tipo: "conexa", nota: "La LOE regula el proceso de la edificación y las obligaciones de sus agentes para asegurar los requisitos básicos de los edificios."}
+      - {norma: "LOE", articulo: "2", apartado: "1", tipo: "conexa", nota: "Se aplica a construir edificios permanentes, públicos o privados, de los usos de los grupos a), b) y c)."}
+      - {norma: "LOE", articulo: "2", apartado: "2", tipo: "regula", nota: "Requieren proyecto la obra nueva, las intervenciones que alteran la configuración arquitectónica y las de edificios protegidos."}
+      - {norma: "LOE", articulo: "2", apartado: "3", tipo: "conexa", nota: "La edificación comprende sus instalaciones fijas, su equipamiento propio y los elementos de urbanización adscritos."}
+      - {norma: "LOE", articulo: "3", apartado: "1", tipo: "regula", nota: "Requisitos básicos que deben cumplirse en proyecto, construcción, mantenimiento, conservación y uso de los edificios."}
+      - {norma: "LOE", articulo: "3", apartado: "1.a)", tipo: "regula", nota: "Funcionalidad: utilización, accesibilidad, acceso a telecomunicaciones y a los servicios postales."}
+      - {norma: "LOE", articulo: "3", apartado: "1.b)", tipo: "regula", nota: "Seguridad: estructural, en caso de incendio y de utilización."}
+      - {norma: "LOE", articulo: "3", apartado: "1.c)", tipo: "regula", nota: "Habitabilidad: salubridad y estanqueidad, protección contra el ruido, ahorro de energía y otros aspectos funcionales."}
+      - {norma: "LOE", articulo: "3", apartado: "2", tipo: "regula", nota: "El Código Técnico de la Edificación fija las exigencias básicas de calidad para cumplir los requisitos básicos."}
+      - {norma: "LOE", articulo: "4", tipo: "regula", nota: "El proyecto define las exigencias técnicas de la obra y justifica técnicamente las soluciones conforme a la normativa aplicable."}
+      - {norma: "LOE", articulo: "5", tipo: "regula", nota: "Construir, hacer obras en los edificios y ocuparlos exige las licencias y autorizaciones administrativas preceptivas."}
+      - {norma: "LOE", articulo: "6", apartado: "2", tipo: "conexa", nota: "El acta de recepción recoge partes, fecha del certificado final, coste, reservas y garantías; se adjunta el certificado final de obra."}
+      - {norma: "LOE", articulo: "7", tipo: "regula", nota: "Terminada la obra, el proyecto con sus modificaciones, el acta de recepción, los agentes y las instrucciones forman el Libro del Edificio."}
+      - {norma: "LOE", articulo: "7", apartado: "párrafo 3.º", tipo: "regula", nota: "Toda la documentación de la obra ejecutada, que constituye el Libro del Edificio, se entrega a los usuarios finales."}
+      - {norma: "LOE", articulo: "9", apartado: "2.e)", tipo: "regula", nota: "El promotor debe entregar al adquirente la documentación de la obra ejecutada y lo que exijan las Administraciones."}
+      - {norma: "LOE", articulo: "12", apartado: "3.f)", tipo: "regula", nota: "El director de obra elabora y suscribe la documentación de la obra ejecutada para entregarla al promotor."}
+      - {norma: "LOE", articulo: "13", apartado: "2.f)", tipo: "conexa", nota: "El director de la ejecución colabora en esa documentación aportando los resultados del control realizado."}
+      - {norma: "LOE", articulo: "16", apartado: "1", tipo: "regula", nota: "Los propietarios conservan el edificio con uso y mantenimiento adecuados y reciben, conservan y transmiten su documentación."}
+      - {norma: "LOE", articulo: "16", apartado: "2", tipo: "regula", nota: "Los usuarios, propietarios o no, deben usar el edificio conforme a las instrucciones de uso y mantenimiento."}
+      - {norma: "LOE", articulo: "17", apartado: "1.a)", tipo: "conexa", nota: "Diez años por vicios que afecten a elementos estructurales y comprometan la resistencia mecánica y estabilidad del edificio."}
+      - {norma: "LOE", articulo: "17", apartado: "1.b)", tipo: "conexa", nota: "Tres años por vicios de elementos constructivos o instalaciones que incumplan los requisitos de habitabilidad del art. 3.1.c)."}
+      - {norma: "LOE", articulo: "17", apartado: "7", tipo: "conexa", nota: "Los directores que firman el certificado final de obra responden de su veracidad y exactitud."}
+      - {norma: "LOE", articulo: "df2", tipo: "conexa", nota: "Autoriza al Gobierno a aprobar el Código Técnico para los requisitos del art. 3.1.b) y c); entretanto, las normas básicas NBE."}
+    fuera_de_la_herramienta:
+      - "Real Decreto 314/2006, Código Técnico de la Edificación (BOE-A-2006-5515): exigencias básicas por requisito, en desarrollo de la df 2.ª LOE."
+    no_consta_en_norma:
+      - "Si el incumplimiento del CTE sin daño material puede reclamarse por la LOE o solo como incumplimiento contractual: jurisprudencial."
+      - "Consecuencia civil de no entregar al adquirente el Libro del Edificio: la LOE no la fija; jurisprudencial."
+    afines: ["Agentes de la edificación y sus obligaciones", "Responsabilidad de los agentes: plazos de 10, 3 y 1 año", "Recepción de la obra", "Garantías y seguros de la edificación", "Concurrencia de la LOE con la responsabilidad contractual y el art. 1591 CC", "Obras en elementos comunes y accesibilidad"]
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
