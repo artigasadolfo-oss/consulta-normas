@@ -1,6 +1,6 @@
 # Índice de conceptos de «Consulta de normas» — PROPUESTA de tres voces nuevas (RDL 29/2026 y RDL 28/2026)
 # APROBADAS por Adolfo el 09-10-2026 tal como las propuso el Armero (títulos y convención «nota RDL 28/2026» sin cambios). Alta por taller: tanda 27.
-# Opcional pendiente: el Armero propone renombrar la 2.ª «Cesión del crédito hipotecario del consumidor (art. 25 bis Ley 5/2019)» (el título actual sobrepasa el 25 bis.5).
+# Renombrada el 09-10-2026 la 2.ª a «Cesión del crédito hipotecario del consumidor (art. 25 bis Ley 5/2019)»: propuesta del Armero, aprobada por Adolfo.
 # Revisor: armero. Espejo: legalize-es@597314599f (composición `corpus-aca28304d-rdl29`). Todo precepto citado se ha leído en
 # la composición y se ha contrastado en boe.es el 09-10-2026 (diario: BOE-A-2026-20823 y BOE-A-2026-20822; consolidada:
 # LEC, LAU, CC y Ley 5/2019). Ver voces-nuevas-propuesta-notas.md.
@@ -49,7 +49,7 @@ voces:
     revisada_el: "2026-10-09"
     revisor: "armero"
 
-  - voz: "Cesión de crédito hipotecario vencido sobre vivienda habitual"
+  - voz: "Cesión del crédito hipotecario del consumidor (art. 25 bis Ley 5/2019)"
     sinonimos: ["cesión de préstamo hipotecario", "venta de cartera hipotecaria", "venta de créditos dudosos", "fondo cesionario", "fondo buitre", "cambio de acreedor hipotecario", "notificación de la cesión del crédito", "readquisición del préstamo cedido", "deudor hipotecario sin recursos", "Código de Buenas Prácticas", "excepciones oponibles al cesionario", "artículo 25 bis Ley 5/2019"]
     normas_base: ["CC", "LEC"]
     remisiones:
