@@ -119,7 +119,7 @@ voces:
       - {norma: "LAU", articulo: "25", apartado: "2", tipo: "regula", nota: "Tanteo en 30 días naturales desde la notificación fehaciente de precio y condiciones; en venta conjunta, precio imputado y criterios."}
       - {norma: "LAU", articulo: "25", apartado: "2, párrafo 2.º", tipo: "regula", nota: "Los efectos de esa notificación caducan a los 180 días naturales."}
       - {norma: "LAU", articulo: "25", apartado: "3", tipo: "regula", nota: "Retracto si no se notificó, faltó un requisito (precio imputado incluido) o se vendió más barato; 30 días desde copia de la escritura."}
-      - {norma: "LAU", articulo: "25", apartado: "4", tipo: "regula", nota: "Prefiere a cualquier derecho similar, salvo el retracto del condueño o el convencional inscrito antes del arrendamiento."}
+      - {norma: "LAU", articulo: "25", apartado: "4", tipo: "regula", nota: "Prefiere a cualquier otro derecho similar, salvo el retracto del condueño de la vivienda o el convencional ya inscrito al celebrarse el arrendamiento."}
       - {norma: "LAU", articulo: "25", apartado: "5", tipo: "conexa", nota: "Para inscribir la venta hay que justificar las notificaciones; en venta conjunta, precio imputado en escritura."}
       - {norma: "LAU", articulo: "25", apartado: "6", tipo: "conexa", nota: "Si se venden también los accesorios arrendados por el mismo arrendador, no cabe ejercerlo solo sobre la vivienda."}
       - {norma: "LAU", articulo: "25", apartado: "7", tipo: "regula", nota: "Desde 08-10-2026 no decae por venderse junto con otros inmuebles o activos, si la vivienda es jurídicamente individualizable."}
@@ -140,6 +140,7 @@ voces:
       - "Local: si la prohibición de renunciar (25.8) le alcanza, pese a que el título III cede ante el pacto (4.3): sin criterio judicial."
       - "Si el retracto del arrendatario exige consignar el precio (266.2.º: «cuando se exija por ley o por contrato»): jurisprudencial."
       - "Transmisiones que no son compraventa (dación en pago, aportación a sociedad, permuta): alcance del art. 25, jurisprudencial."
+      - "Venta de una cuota indivisa de la vivienda arrendada: si da tanteo al arrendatario (25.1: «la vivienda») o solo retracto al condueño: jurisprudencial."
     fuera_de_la_herramienta:
       - "RDL 29/2026 (pendiente de convalidación): da la redacción vigente del art. 25 LAU; si se deroga, vuelve el texto anterior (renuncia pactable)."
       - "Legislación estatal y autonómica de vivienda: tanteo y retracto de la Administración en ventas conjuntas (art. 25.7 LAU)."
@@ -278,6 +279,9 @@ voces:
       - {norma: "LAU", articulo: "10", apartado: "1", tipo: "regula", nota: "Vivienda habitual: cumplidos 5 o 7 años sin preaviso (4 meses arrendador, 2 arrendatario), prórroga anual hasta 3 años más."}
       - {norma: "LAU", articulo: "10", apartado: "4", tipo: "conexa", nota: "Al contrato prorrogado le sigue aplicando el régimen legal y convencional al que estaba sometido."}
       - {norma: "LEC", articulo: "250", apartado: "1.1.º", tipo: "conexa", nota: "La recuperación de la finca por expiración del plazo contractual o legal se tramita por el juicio verbal."}
+      - {norma: "LAU", articulo: "dt 3", apartado: "5, párrafo 2.º", tipo: "conexa", nota: "Local de renta antigua (antes de 9-5-1985), casos de los ap. 4 y 5: la tácita reconducción sigue el 1566 CC; el renovado, la LAU de uso distinto."}
+      - {norma: "LAU", articulo: "dt 1", apartado: "1, párrafo 3.º", tipo: "conexa", nota: "Vivienda contratada desde 9-5-1985 y vigente al 1-1-1995: tácita reconducción del 1566 CC por tres años; el renovado, por la LAU de vivienda."}
+      - {norma: "LAU", articulo: "dt 1", apartado: "2", tipo: "conexa", nota: "Local de negocio contratado desde 9-5-1985 y vigente al 1-1-1995: tras la tácita reconducción del 1566 CC, el renovado sigue la LAU de uso distinto."}
     no_consta_en_norma:
       - "Qué es «aquiescencia» y qué basta como requerimiento que impide la reconducción (burofax, demanda): jurisprudencial."
       - "Plazo del contrato reconducido si la renta se pacta anual pero se paga por meses: jurisprudencial."
@@ -287,7 +291,8 @@ voces:
       - "RDL 28/2026 (vigor 15-11-2026, pendiente de convalidación): nuevo art. 10, prórrogas de 5 o 7 años; la herramienta lo da como nota. Revisar la voz entonces."
     # VIGENCIA: LAU 10 en la redacción del RDL 29/2026 (vigor 08-10-2026; el 10.1 añade «de vivienda habitual»), leída en la composición
     # 597314599f, que trae además, como nota, el art. 10 del RDL 28/2026 desde el 15-11-2026. LAU 4.3 idéntico al texto anterior;
-    # CC 1565 a 1567, 1569, 1570, 1577 y 1581 y LEC 250 sin cambios.
+    # CC 1565 a 1567, 1569, 1570, 1577 y 1581 y LEC 250 sin cambios. LAU dt 1.ª (1, párrafo 3.º, y 2) y dt 3.ª (5, párrafo 2.º): las
+    # únicas de la LAU que nombran la tácita reconducción, leídas en la composición y en boe.es (versión 07-10-2026), sin cambios.
     # AVISO: RDL 29/2026 y RDL 28/2026 no convalidados a esta fecha (Diputación Permanente, art. 86.2 CE). El 15-11-2026 cambian el
     # 10.1 (prórroga tácita por 5 o 7 años) y también el 10.4, que pasará a ser la nulidad de pactos de prórroga en perjuicio del
     # arrendatario: las dos remisiones al art. 10 habrán de revisarse ese día. Va «provisional» por eso.

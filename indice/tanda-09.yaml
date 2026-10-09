@@ -10,7 +10,7 @@
 
 voces:
   - voz: "Ejecución hipotecaria: especialidades"
-    sinonimos: ["procedimiento de ejecución hipotecaria", "ejecución directa sobre bienes hipotecados", "acción hipotecaria", "ejecución de hipoteca", "vencimiento anticipado", "requerimiento de pago al deudor hipotecario", "certificación de dominio y cargas", "liberación del bien hipotecado", "hipotecante no deudor", "tercer poseedor"]
+    sinonimos: ["procedimiento de ejecución hipotecaria", "ejecución directa sobre bienes hipotecados", "acción hipotecaria", "ejecución de hipoteca", "vencimiento anticipado", "requerimiento de pago al deudor hipotecario", "certificación de dominio y cargas", "liberación del bien hipotecado", "hipotecante no deudor", "tercer poseedor", "cesión del crédito hipotecario"]
     normas_base: ["LEC"]
     remisiones:
       - {norma: "LEC", articulo: "681", apartado: "1", tipo: "regula", nota: "La deuda con prenda o hipoteca puede reclamarse directamente contra los bienes gravados, con las especialidades de este capítulo."}
@@ -44,18 +44,29 @@ voces:
       - {norma: "LEC", articulo: "698", apartado: "2", tipo: "conexa", nota: "En ese juicio cabe pedir que se retenga lo que deba entregarse al acreedor, con garantía si no hay solvencia notoria."}
       - {norma: "LEC", articulo: "575", apartado: "1 bis", tipo: "conexa", nota: "Ejecución de vivienda habitual: las costas exigibles al deudor no pasan del 5 % de lo reclamado."}
       - {norma: "LEC", articulo: "579", apartado: "1", tipo: "conexa", nota: "Si el producto de la subasta no cubre el crédito, se sigue por lo que falte con las normas ordinarias."}
+      - {norma: "LEC", articulo: "540", apartado: "2", tipo: "conexa", nota: "Sucesor del ejecutante: se despacha o sigue la ejecución a su favor con los documentos fehacientes de la sucesión; si ya estaba despachada, se notifica."}
+      - {norma: "LEC", articulo: "540", apartado: "3", tipo: "conexa", nota: "Sin documentos fehacientes suficientes: audiencia de 15 días a las partes del título y al pretendido sucesor; el tribunal decide a efectos de la ejecución."}
     no_consta_en_norma:
       - "Vencimiento anticipado declarado abusivo: si se sobresee o se sigue por lo vencido, criterio jurisprudencial (TJUE y TS)."
       - "Elección entre esta vía y la ejecución ordinaria sobre el bien hipotecado (579.1): el texto no la ordena."
+      - "Cesionario del crédito hipotecario como sucesor del 540 y defensas del deudor en ese trámite: el texto no lo dice; criterio jurisprudencial."
     fuera_de_la_herramienta:
       - "Ley Hipotecaria (arts. 129 y 129 bis) y su Reglamento: venta extrajudicial y vencimiento anticipado inscrito."
       - "Ley 5/2019, de crédito inmobiliario, art. 24: requisitos del vencimiento anticipado; a él remite el 693.2 LEC."
       - "Ley 1/2013, art. 1, y RDL 6/2012 (Código de Buenas Prácticas): suspensión de lanzamientos y medidas para deudores vulnerables."
       - "RDL 29/2026 (pendiente de convalidar), art. 1.5: adjudicación bajo el 70 % del valor de mercado, lanzamiento del vulnerable sin alternativa suspendido hasta el 31-12-2030; art. 2: suspensión de procesos."
-    afines: ["Oposición en la ejecución hipotecaria", "Adjudicación al acreedor y vivienda habitual", "Deuda remanente tras ejecutar la vivienda habitual", "Despacho de la ejecución y plazo de espera", "Vulnerabilidad y gran tenedor en la demanda", "Subasta: convocatoria, posturas y aprobación del remate", "Cargas anteriores y ocupantes del inmueble subastado"]
+      - "Ley 5/2019, art. 25 bis.1 y 2 (disp. final 1.ª RDL 29/2026, BOE-A-2026-20823, sin convalidar): ante el cesionario, el deudor conserva excepciones y defensas, compensación incluida, y los códigos de buenas prácticas."
+      - "Ley 5/2019, art. 25 bis.4: prohibido ceder préstamos hipotecarios vencidos cuyo deudor esté acogido al RDL 6/2012 (Código de Buenas Prácticas)."
+      - "Ley 5/2019, art. 25 bis.5: crédito vencido con hipoteca sobre vivienda habitual: se avisa al deudor del RDL 6/2012; si en seis meses acredita que puede acogerse, el cedente readquiere al precio de la cesión."
+      - "Ley 5/2019, art. 25 bis.3 y 6: se informa de la cesión al prestatario, salvo si el cedente sigue gestionando el crédito; toda comunicación va a todos los titulares y avalistas."
+      - "RDL 29/2026, disp. final 11.ª.2: el art. 25 bis rige en las cesiones de crédito hipotecario hechas desde el 8-10-2026, sea cual sea la fecha del contrato."
+    afines: ["Oposición en la ejecución hipotecaria", "Adjudicación al acreedor y vivienda habitual", "Deuda remanente tras ejecutar la vivienda habitual", "Despacho de la ejecución y plazo de espera", "Vulnerabilidad y gran tenedor en la demanda", "Subasta: convocatoria, posturas y aprobación del remate", "Cargas anteriores y ocupantes del inmueble subastado", "Sucesión procesal (muerte de la parte y transmisión del objeto litigioso)"]
     # VIGENCIA: LEC 685.2 en la redacción del RDL 29/2026 (BOE 07-10-2026, vigor 08-10-2026), leído en la composición: certificación de
     # «viviendas» (antes «propiedades») y sin los párrafos anulados por la STC 26/2025. 685.1 y 685.5 no cambian. LEC 575, 579 y 681
     # a 698: idénticos a legalize-es@aca28304d y al texto vigente de boe.es.
+    # LEC 540 (sin tocar por el RDL 29/2026, que en la LEC solo modifica los arts. 22 y 685) leído en la composición. Art. 25 bis Ley
+    # 5/2019 leído en BOE-A-2026-20823 (disp. final 1.ª) y en el consolidado de boe.es (actualización 07-10-2026); la Ley 5/2019 no
+    # está en la herramienta. Si el RDL no se convalida, decaen el 25 bis y la disp. final 11.ª.2, como con el RDL 26/2026.
     # AVISO: RDL 29/2026 (vigor 08-10-2026) no convalidado a esta fecha (Diputación Permanente, art. 86.2 CE); si se deroga, el 685.2
     # vuelve a la redacción de la Ley 12/2023 (certificación de «propiedades»), como ocurrió con el RDL 26/2026. Va «provisional» por eso.
     estado: "provisional"

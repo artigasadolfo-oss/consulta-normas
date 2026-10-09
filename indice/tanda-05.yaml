@@ -124,12 +124,19 @@ voces:
     no_consta_en_norma:
       - "Si la omisión de las indicaciones del 439.6 es subsanable antes de inadmitir: la norma dice «no se admitirán» y no lo aclara."
       - "Qué efecto tiene la remisión del 441.5 a los apartados 6.c) y 7 del 439, anulados: el texto no se ha adaptado."
+      - "Si la demanda debe indicar o acreditar que el actor persona física tiene dos o menos viviendas (art. 2.2 RDL 29/2026): el 439.6 solo pide decir si es gran tenedor."
+      - "Cómo se cuentan las «dos o menos viviendas» del art. 2.2 RDL 29/2026 (cotitularidad, gananciales, unidades sin división horizontal): el RDL no lo dice ni remite al 3.k) Ley 12/2023."
+      - "Si esa regla excluye la suspensión sin más o solo pesa en la ponderación, y si alcanza a la vulnerabilidad social: el art. 2.2 dice que «no prevalecerá» la económica."
+      - "Certificación registral: el 439.6 y el 3.k) Ley 12/2023 piden la «relación de propiedades» y el 685.2 la «relación de viviendas»; no se dice si una vale por la otra."
     fuera_de_la_herramienta:
-      - "Ley 12/2023, art. 3.k): concepto de gran tenedor (más de diez inmuebles residenciales o 1.500 m²), reformado por el RDL 29/2026."
-      - "RDL 29/2026, art. 2 (pendiente de convalidación): suspensión del proceso con demandado vulnerable sin alternativa habitacional, hasta el 31-12-2030."
+      - "Ley 12/2023 (BOE-A-2023-12203), art. 3.k), en la redacción del art. 4.Uno RDL 29/2026 (pendiente de convalidación): gran tenedor es quien tiene más de diez inmuebles urbanos de uso residencial o más de 1.500 m² construidos de ese uso, sin garajes ni trasteros; en zona tensionada, cinco o más si la comunidad autónoma lo motiva."
+      - "Ley 12/2023, art. 3.k), párrafos 2.º y 3.º (añadidos por el RDL 29/2026): la condición se acredita con certificación del Registro de la Propiedad con la relación de propiedades; cada unidad residencial de un edificio cuenta como inmueble aunque no haya división horizontal inscrita."
+      - "RDL 29/2026 (BOE-A-2026-20823), art. 2 (pendiente de convalidación): suspensión del proceso con demandado vulnerable sin alternativa habitacional, hasta el 31-12-2030."
+      - "RDL 29/2026, art. 2.2, último párrafo: no se suspende si el tribunal aprecia que prevalece la vulnerabilidad económica o habitacional del actor, salvo que sea persona jurídica o persona física gran tenedora."
+      - "Mismo párrafo: tampoco prevalece la vulnerabilidad económica del demandado si el actor es persona física titular de dos o menos viviendas. El 2.2 rige solo si no se aplica el 22.6 LEC, que no prevé esa excepción."
       - "Ley 39/2006, art. 2.2: concepto de persona dependiente al que remite el 441.7 LEC."
     afines: ["Desahucio por falta de pago", "Desahucio por precario", "Ocupación ilegal de vivienda (desahucio exprés)", "Lanzamiento", "Ejecución hipotecaria: especialidades"]
-    # VIGENCIA: LEC 685.2 y 22.6 en la redacción del RDL 29/2026 (vigor 08-10-2026), pendiente de convalidación (CE 86.2). El RDL quita del 685.2 la vulnerabilidad del deudor y la conciliación previa. 439 y 441 sin cambios. Provisional.
+    # VIGENCIA: LEC 685.2 y 22.6 en la redacción del RDL 29/2026 (vigor 08-10-2026), pendiente de convalidación (CE 86.2). El RDL quita del 685.2 la vulnerabilidad del deudor y la conciliación previa. 439 y 441 sin cambios. Fuera de la herramienta, el RDL reforma el 3.k) Ley 12/2023 y fija la regla del pequeño propietario (art. 2.2). El RDL 26/2026, que ya reformaba el 3.k) y añadía el 22.6, fue derogado por el Congreso (BOE 02-10-2026). Provisional.
     estado: "provisional"
     espejo: "legalize-es@597314599f"
     revisada_el: "2026-10-09"

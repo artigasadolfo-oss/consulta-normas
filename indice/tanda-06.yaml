@@ -18,7 +18,7 @@ voces:
       - {norma: "LAU", articulo: "3", apartado: "1", tipo: "regula", nota: "Uso distinto: edificación cuyo destino primordial no es el de vivienda."}
       - {norma: "LAU", articulo: "3", apartado: "2", tipo: "regula", nota: "Actividad industrial, comercial, profesional, etc.; excluye alojamiento u hospedaje. Ya no menciona la temporada."}
       - {norma: "LAU", articulo: "4", apartado: "1", tipo: "regula", nota: "Imperativos para todo arrendamiento: títulos I (ámbito) y IV (fianza y formalización)."}
-      - {norma: "LAU", articulo: "4", apartado: "2", tipo: "regula", nota: "Vivienda: pactos dentro del título II y, supletoriamente, el Código Civil."}
+      - {norma: "LAU", articulo: "4", apartado: "2", tipo: "regula", nota: "Vivienda: pactos dentro del título II y, supletoriamente, el CC. Desde 08-10-2026 ya no exceptúa la de más de 300 m² o renta de más de 5,5 SMI."}
       - {norma: "LAU", articulo: "4", apartado: "3", tipo: "regula", nota: "Uso distinto: voluntad de las partes; en su defecto, título III y, supletoriamente, el Código Civil."}
       - {norma: "LAU", articulo: "4", apartado: "4", tipo: "regula", nota: "La exclusión de preceptos de la LAU, cuando quepa, ha de ser expresa y precepto a precepto."}
       - {norma: "LAU", articulo: "5", tipo: "regula", nota: "Excluidos: porteros y empleados, militares, rústicos, universitarias, uso turístico y programas del tercer sector."}
@@ -33,14 +33,17 @@ voces:
       - "Régimen de los contratos excluidos por el art. 5 sin remisión expresa (letras a, e y f; la d remite a las normas de la Universidad): la LAU no lo fija."
       - "Texto de 08-10-2026 en contratos anteriores: no hay regla general; el RDL 29/2026 solo prevé la temporada (dt 8.ª LAU) y prórrogas concretas."
       - "Destino primordial en contratos mixtos (vivienda y despacho o negocio): criterio jurisprudencial."
+      - "Vivienda de más de 300 m² o de renta inicial de más de 5,5 SMI pactada antes del 08-10-2026 al amparo del antiguo 4.2: sin transitoria propia; interpretativo."
     fuera_de_la_herramienta:
-      - "RDL 29/2026 (pendiente de convalidación): da el texto vigente de los arts. 2, 3, 4, 5 y 7 y de la dt 8.ª LAU; si se deroga, vuelve el anterior."
+      - "RDL 29/2026 (BOE-A-2026-20823, pendiente de convalidación): da el texto vigente de los arts. 2, 3, 4, 5 y 7 y de la dt 8.ª LAU; si se deroga, vuelve el anterior."
+      - "RDL 29/2026, art. 3.Tres: suprime del 4.2 la excepción de vivienda de más de 300 m² o renta inicial anual de más de 5,5 SMI anual (arrendada entera); si se deroga, vuelve."
       - "Legislación autonómica de vivienda de la Comunitat Valenciana (DA 12.ª LAU): no está en la herramienta."
     afines: ["Vivienda de uso turístico: exclusión de la LAU", "Arrendamiento de temporada y para uso distinto de vivienda", "Arrendamiento de cosas en el Código Civil (régimen supletorio)", "Duración y prórroga del arrendamiento de vivienda"]
     # VIGENCIA: LAU 2, 3.2, 4.2, 5 (e y f), 7, da 12 y dt 8 en la redacción del RDL 29/2026 (BOE 07-10-2026, vigor 08-10-2026), leída en
-    # la composición 597314599f, que la API da por idéntica al BOE. LAU 1 y 6, CC 2 y 1543 sin cambios.
+    # la composición 597314599f, que la API da por idéntica al BOE. El 4.2 vigente ya no trae la excepción de vivienda de lujo (versión
+    # BOE de 08-10-2026 contrastada con la de 06-03-2019). LAU 1 y 6, CC 2 y 1543 sin cambios.
     # AVISO: RDL 29/2026 no convalidado a esta fecha (Diputación Permanente, art. 86.2 CE); si se deroga, esos preceptos vuelven a su
-    # texto anterior, como ocurrió con el RDL 26/2026. Va «provisional» por eso.
+    # texto anterior, como ocurrió con el RDL 26/2026 (el BOE repuso la excepción del 4.2 el 02-10-2026). Va «provisional» por eso.
     estado: "provisional"
     espejo: "legalize-es@597314599f"
     revisada_el: "2026-10-09"
@@ -213,17 +216,20 @@ voces:
       - {norma: "LAU", articulo: "27", apartado: "2.a)", tipo: "conexa", nota: "Impago de la renta: resolución de pleno derecho a instancia del arrendador."}
       - {norma: "CC", articulo: "1555", apartado: "1.º", tipo: "regula", nota: "El arrendatario debe pagar el precio en los términos convenidos."}
       - {norma: "CC", articulo: "1574", tipo: "regula", nota: "Sin pacto: lugar del pago según el art. 1171; tiempo, según la costumbre de la tierra."}
+      - {norma: "CC", articulo: "2", apartado: "3", tipo: "conexa", nota: "Las leyes no son retroactivas si no lo disponen: clave para el tope del IRAV en contratos de 26-05-2023 a 07-10-2026."}
     no_consta_en_norma:
-      - "Si el tope del IRAV alcanza a contratos anteriores al 08-10-2026 con cláusula de IPC: el RDL 29/2026 no da transitoria."
+      - "Si el tope del IRAV del 18.1 alcanza a contratos de 26-05-2023 a 07-10-2026 con cláusula de IPC: no hay transitoria (a los anteriores, sí: dt 4.ª.1 Ley 12/2023)."
       - "Efectos del pago en metálico fuera de los casos del 17.3 (validez, prueba): la ley no los fija."
     fuera_de_la_herramienta:
       - "RDL 29/2026, disp. final 6.ª (pendiente de convalidación): hasta 31-12-2027, sin nuevo pacto, subida máxima del 2 %; ninguna si la renta supera el índice de referencia."
+      - "Ley 12/2023, dt 4.ª.1, redactada por el art. 4.Dos del RDL 29/2026 (BOE-A-2026-20823): los contratos anteriores al 26-05-2023 se actualizan con el límite de la da 11.ª y del 18.1 LAU vigente."
       - "Valores mensuales del IRAV: los publica el INE; no están en la herramienta."
     afines: ["Zonas de mercado residencial tensionado y límites de renta", "Gastos generales, servicios e IBI", "Desahucio por falta de pago", "Obras y conservación"]
     # VIGENCIA: LAU 17.6 a 17.9, 18.1, 20 y 27.2.f) en la redacción del RDL 29/2026 (vigor 08-10-2026), leída en la composición
-    # 597314599f; el 17.1 a 17.5 y el 18.2 no cambian. LAU 19 y da 11, CC sin cambios.
+    # 597314599f; el 17.1 a 17.5 y el 18.2 no cambian. LAU 19 y da 11, CC sin cambios. Dt 4.ª.1 Ley 12/2023 leída en el BOE (API,
+    # versión de 08-10-2026); la herramienta no la trae, y su copia en el corpus conserva el texto de 2023.
     # AVISO: RDL 29/2026 no convalidado a esta fecha (Diputación Permanente, art. 86.2 CE); si se deroga, caen el 17.8, el 17.9 y el IRAV
-    # del 18.1, como ocurrió con el RDL 26/2026. Va «provisional» por eso.
+    # del 18.1, y la dt 4.ª.1 Ley 12/2023 vuelve a remitir al régimen de celebración, como ocurrió con el RDL 26/2026. Va «provisional».
     estado: "provisional"
     espejo: "legalize-es@597314599f"
     revisada_el: "2026-10-09"
