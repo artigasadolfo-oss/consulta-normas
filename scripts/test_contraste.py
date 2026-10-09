@@ -119,5 +119,19 @@ caso("si cambia el texto del espejo, la excepción deja de valer y vuelve a avis
 r = c.compara(dict(B, **{"2": "NUEVO"}), E, con)
 caso("si cambia el texto de boe.es, la excepción también deja de valer", r["distintos"] == ["2"], r)
 
+print("[rótulo del BOE y clave: el número tras «bis» se quita SOLO si la clave del bloque termina en él]")
+# Caso real 10-10-2026 (CP 304 bis y LOPJ 216 bis 2): la expresión del rótulo no puede decidir sola, porque «Artículo 304 bis 1. Será…» (el «1.» es el
+# apartado, que el espejo conserva) y «Artículo 216 bis 2. Texto» (el «2» es parte del artículo, que el espejo no lleva) tienen la MISMA forma.
+caso("sin_rotulo: clave «304 bis» -> el «1.» es el apartado y se conserva", c.esqueleto(c.sin_rotulo("Artículo 304 bis 1. Será castigado con multa", "304 bis")) == c.esqueleto("1. Será castigado con multa"))
+caso("sin_rotulo: clave «216 bis 2» -> el «2» es del artículo y se quita", c.esqueleto(c.sin_rotulo("Artículo 216 bis 2. Texto del dos", "216 bis 2")) == c.esqueleto("Texto del dos"))
+caso("sin_rotulo: PAR DE CONTROL, el mismo texto con otra clave decide otra cosa («216 bis» no se come el «2»)",
+     c.esqueleto(c.sin_rotulo("Artículo 216 bis 2. Texto del dos", "216 bis")) == c.esqueleto("2. Texto del dos"))
+caso("sin_rotulo: sin clave se comporta como siempre (no se come ningún número)", c.esqueleto(c.sin_rotulo("Artículo 22 bis 1. Texto", None)) == c.esqueleto("1. Texto"))
+xml = doc(bloque("a304bis", "Artículo 304 bis", ver("20150101", "20150101", ["Artículo 304 bis", "1. Será castigado con multa.", "2. Segundo apartado."])),
+          bloque("a216bis2", "Artículo 216 bis 2", ver("20150101", "20150101", ["Artículo 216 bis 2", "Texto del dos."])))
+vig, fut = c.bloques_boe(xml, HOY)
+caso("bloques_boe: «Artículo 304 bis» + apartado «1.» conserva el 1 (clave «304 bis»)", vig.get("304 bis") == c.esqueleto("1. Será castigado con multa. 2. Segundo apartado."), vig)
+caso("bloques_boe: «Artículo 216 bis 2» entra con la clave «216 bis 2» y sin el «2» delante del texto", vig.get("216 bis 2") == c.esqueleto("Texto del dos."), vig)
+
 print(f"\n{'TODO VERDE' if not fallos else 'FALLOS: ' + str(fallos)}")
 sys.exit(1 if fallos else 0)

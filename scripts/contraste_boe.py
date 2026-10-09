@@ -41,17 +41,25 @@ def limpia_espejo(t):
 SUFIJOS = ("bis|ter|quater|quáter|quinquies|sexies|septies|octies|nonies|novies|decies|undecies|duodecies|terdecies|quaterdecies|quindecies|"
            "sexdecies|septdecies|octodecies")
 # «624. bis.» (punto antes del bis, TRLC) también es una clave de una pieza; «504 bis 2» (LECrim) solo para la CLAVE (ROTULO_CLAVE).
-# En ROTULO (el que se quita del texto) «216 bis 2» (artículo real de la LOPJ) no es el «216 bis»: el número tras «bis» se come solo si
-# va tras un espacio; en «Artículo 304 bis. 1. Será…» el «1.» es el apartado y no se debe comer (hay un punto tras «bis»).
-ROTULO = re.compile(r"^\s*Art[ií]culo\s+(\d+(?:\.?\s+(?:" + SUFIJOS + r")\b(?:\s+\d{1,2}\b)?)?(?:\s+[a-z]\b)?)\s*\.?", re.I)
+# ROTULO (el que se quita del texto del BOE) NO se come el número tras «bis»: en «Artículo 304 bis 1. Será…» (CP) el «1.» es el apartado y el
+# espejo lo conserva. Pero en «Artículo 216 bis 2» (LOPJ) o «504 bis 2» (LECrim) el «2» ES parte del artículo y el espejo no lo lleva: eso lo
+# decide sin_rotulo(t, clave) mirando la clave del bloque (se come el número solo si la clave termina en él). 10-10-2026.
+ROTULO = re.compile(r"^\s*Art[ií]culo\s+(\d+(?:\.?\s+(?:" + SUFIJOS + r")\b)?(?:\s+[a-z]\b)?)\s*\.?", re.I)
 ROTULO_CLAVE = re.compile(r"^\s*Art[ií]culo\s+(\d+(?:\.?\s+(?:" + SUFIJOS + r")\b)?(?:\s+(?:[a-z]|\d+(?=\s*\.?\s*$))\b)?)\s*\.?", re.I)
 ROTULO_LETRA = re.compile(r"^\s*Art[ií]culo\s+(?:[a-záéíóúñ]+)(?:\s+y\s+[a-záéíóúñ]+)?(?:\s+(?:" + SUFIJOS + r"))?\s*\.", re.I)
 
 
-def sin_rotulo(t):
-    """Quita el rótulo inicial «Artículo 22 bis.» (el que lleva cifras; el espejo y el BOE no lo escriben igual, y la clave ya lo identifica)."""
-    if ROTULO.match(t):
-        return ROTULO.sub("", t, count=1)
+def sin_rotulo(t, clave=None):
+    """Quita el rótulo inicial «Artículo 22 bis.» (el que lleva cifras; el espejo y el BOE no lo escriben igual, y la clave ya lo identifica).
+    Si la clave del bloque termina en un número tras el sufijo («216 bis 2», «504 bis 2»), ese número es parte del artículo y se quita también;
+    si no («304 bis»), el «1.» que sigue es el apartado y se conserva."""
+    m = ROTULO.match(t)
+    if m:
+        resto = t[m.end():]
+        num = re.search(r"\b(?:" + SUFIJOS + r")\s+(\d{1,2})$", clave or "", re.I)
+        if num:
+            resto = re.sub(r"^\s*" + num.group(1) + r"\b\s*\.?", "", resto, count=1)
+        return resto
     return ROTULO_LETRA.sub("", t, count=1)  # «Artículo primero.» (LPH): solo con punto final, para no comerse texto
 
 
@@ -178,8 +186,8 @@ def clave_de_titulo(titulo):
     return None
 
 
-def texto_version(v):
-    return sin_rotulo(" ".join(texto_p(h) for h in v if h.tag != "blockquote" and not (h.get("class") or "").startswith("nota_pie")))  # blockquote = notas de reforma
+def texto_version(v, clave=None):
+    return sin_rotulo(" ".join(texto_p(h) for h in v if h.tag != "blockquote" and not (h.get("class") or "").startswith("nota_pie")), clave)  # blockquote = notas de reforma
 
 
 def clave_orden(v_idx):
@@ -238,9 +246,9 @@ def bloques_boe(xml_texto, hoy=None, rd_duplicados=False):
         if not pasadas:
             continue
         actual = max(pasadas, key=clave_orden)
-        vigente[k] = esqueleto(texto_version(actual[2]))
+        vigente[k] = esqueleto(texto_version(actual[2], k))
         for fv, _, v in sorted((x for x in vs if x[0] > hoy), key=lambda x: (x[0], x[1])):
-            if esqueleto(texto_version(v)) != vigente[k]:
+            if esqueleto(texto_version(v, k)) != vigente[k]:
                 futuras[k] = f"{fv[:4]}-{fv[4:6]}-{fv[6:]}"
                 break
         if k not in futuras:   # reforma anunciada solo en una nota «Téngase en cuenta que, con efectos de…» (no hay versión con fecha futura)
