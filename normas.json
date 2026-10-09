@@ -117,8 +117,8 @@
  "boe_contrastado": "2026-10-09",
  "indice": {
   "version": "0.1-muestra",
-  "voces": 308,
-  "provisionales": 38,
+  "voces": 311,
+  "provisionales": 41,
   "caducadas": [],
   "cambios_norma": {
    "LAU": {
@@ -167,7 +167,8 @@
      "Usufructo",
      "Vivienda familiar: disposición por el cónyuge titular",
      "Arrendamientos de renta antigua (anteriores a 1995)",
-     "Formalización e inscripción del arrendamiento"
+     "Formalización e inscripción del arrendamiento",
+     "Indemnización por no prórroga del arrendamiento de vivienda"
     ]
    }
   },
@@ -332,7 +333,9 @@
     "Ley aplicable al régimen económico de extranjeros",
     "Protección de los consumidores como principio rector",
     "Seguridad jurídica e irretroactividad",
-    "Igualdad en la aplicación de la ley"
+    "Igualdad en la aplicación de la ley",
+    "Cesión de crédito hipotecario vencido sobre vivienda habitual",
+    "Indemnización por no prórroga del arrendamiento de vivienda"
    ],
    "CE": [
     "Cuestiones prejudiciales (penal, administrativa, civil)",
@@ -395,7 +398,8 @@
     "Usufructo",
     "Vivienda familiar: disposición por el cónyuge titular",
     "Arrendamientos de renta antigua (anteriores a 1995)",
-    "Formalización e inscripción del arrendamiento"
+    "Formalización e inscripción del arrendamiento",
+    "Indemnización por no prórroga del arrendamiento de vivienda"
    ],
    "LEC": [
     "Declinatoria",
@@ -624,7 +628,9 @@
     "Modalidades de MASC (conciliación privada, abogado colaborativo…)",
     "Seguridad jurídica e irretroactividad",
     "Igualdad en la aplicación de la ley",
-    "Responsabilidad del Estado por error judicial y funcionamiento anormal"
+    "Responsabilidad del Estado por error judicial y funcionamiento anormal",
+    "Suspensión de desahucios y lanzamientos de hogares vulnerables sin alternativa habitacional",
+    "Cesión de crédito hipotecario vencido sobre vivienda habitual"
    ],
    "LO 1/2025": [
     "Requisito de procedibilidad (MASC)",

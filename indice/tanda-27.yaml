@@ -1,0 +1,150 @@
+# Índice de conceptos de «Consulta de normas» — PROPUESTA de tres voces nuevas (RDL 29/2026 y RDL 28/2026)
+# APROBADAS por Adolfo el 09-10-2026 tal como las propuso el Armero (títulos y convención «nota RDL 28/2026» sin cambios). Alta por taller: tanda 27.
+# Opcional pendiente: el Armero propone renombrar la 2.ª «Cesión del crédito hipotecario del consumidor (art. 25 bis Ley 5/2019)» (el título actual sobrepasa el 25 bis.5).
+# Revisor: armero. Espejo: legalize-es@597314599f (composición `corpus-aca28304d-rdl29`). Todo precepto citado se ha leído en
+# la composición y se ha contrastado en boe.es el 09-10-2026 (diario: BOE-A-2026-20823 y BOE-A-2026-20822; consolidada:
+# LEC, LAU, CC y Ley 5/2019). Ver voces-nuevas-propuesta-notas.md.
+# AVISO: RDL 29/2026 (vigor 08-10-2026) y RDL 28/2026 (vigor 15-11-2026) no están convalidados a esta fecha.
+
+voces:
+  - voz: "Suspensión de desahucios y lanzamientos de hogares vulnerables sin alternativa habitacional"
+    sinonimos: ["suspensión de desahucios", "suspensión del lanzamiento", "moratoria de desahucios", "escudo social", "desahucio de persona vulnerable", "falta de alternativa habitacional", "alternativa habitacional", "fondos buitre", "compensación al arrendador por la suspensión", "suspensión hasta 2030", "incidente de suspensión por vulnerabilidad"]
+    normas_base: ["LEC"]
+    remisiones:
+      - {norma: "LEC", articulo: "441", apartado: "5", tipo: "regula", nota: "Vivienda habitual del demandado: el decreto le informa de los servicios sociales y el juzgado les comunica de oficio el proceso."}
+      - {norma: "LEC", articulo: "441", apartado: "5, párrafo 3.º", tipo: "regula", nota: "Si la Administración confirma la vulnerabilidad económica y, en su caso, social, lo notifica al juzgado en diez días como máximo."}
+      - {norma: "LEC", articulo: "441", apartado: "5, párrafo 5.º", tipo: "regula", nota: "Traslado a las partes por cinco días; se suspende la vista o el lanzamiento si las fechas son inmediatas."}
+      - {norma: "LEC", articulo: "441", apartado: "6", tipo: "regula", nota: "Suspensión ordinaria por auto: dos meses como máximo si el actor es persona física, cuatro si es jurídica; luego se alza sola."}
+      - {norma: "LEC", articulo: "441", apartado: "7", tipo: "regula", nota: "Criterios de vulnerabilidad económica (renta y suministros, umbrales IPREM) y social; el art. 2 RDL 29/2026 remite a ellos."}
+      - {norma: "LEC", articulo: "549", apartado: "4, párrafo 2.º", tipo: "regula", nota: "Vivienda habitual: antes del lanzamiento debe haberse seguido el trámite del 441.5 a 7."}
+      - {norma: "LEC", articulo: "22", apartado: "6", tipo: "regula", nota: "Impago con inquilino vulnerable económico, salvo actor del art. 2.1 RDL 29/2026: la Administración enerva en dos meses o se subroga."}
+      - {norma: "LEC", articulo: "22", apartado: "6, párrafo 3.º", tipo: "regula", nota: "Durante esos dos meses quedan suspendidos el procedimiento y, en su caso, el lanzamiento."}
+      - {norma: "LEC", articulo: "150", apartado: "4", tipo: "conexa", nota: "La notificación que fija el lanzamiento de una vivienda se traslada a los servicios sociales, por si procede su actuación."}
+      - {norma: "LEC", articulo: "439", apartado: "6.b)", tipo: "conexa", nota: "La demanda dice si el actor es gran tenedor: cuenta para las excepciones del último párrafo del art. 2.2 RDL 29/2026."}
+      - {norma: "LEC", articulo: "686", apartado: "1, párrafo 2.º", tipo: "conexa", nota: "Ejecución hipotecaria: el requerimiento de pago incluye las indicaciones del 441.5, con iguales efectos."}
+      - {norma: "LEC", articulo: "704", apartado: "1", tipo: "conexa", nota: "Entrega de la vivienda habitual del ejecutado: un mes para desalojar, prorrogable otro con motivo fundado."}
+    no_consta_en_norma:
+      - "Quién alega y prueba la vulnerabilidad en los procesos nuevos, y si el tribunal actúa de oficio: el art. 2 admite informe de servicios sociales o los criterios del 441.7 LEC, sin repartir la carga."
+      - "Solo la disp. trans. 2.ª (ejecuciones en curso) pone la solicitud y la documentación a cargo del ejecutado; el art. 2 no dice quién insta la suspensión."
+      - "Cómo se acredita que el actor es una entidad del art. 2.1 («precio claramente inferior», fin de eludir la función social o maximizar rentabilidad): el RDL no da criterio ni reparte la prueba; el 439.6 LEC solo pide decir si es gran tenedor."
+      - "Si la revisión cada doce meses y el alzamiento a los tres años (art. 2.2, párrafo 2.º) alcanzan a la suspensión del art. 2.1: están en el apartado 2 y el 2.1 no fija duración."
+      - "Qué pasa con las suspensiones vivas al terminar el 31-12-2030: el art. 2 rige «hasta» esa fecha y no dice si se alzan entonces."
+      - "Si el art. 2 alcanza a la ejecución hipotecaria de la vivienda habitual: habla de «procesos» y de «demandante», y la disp. trans. 2.ª solo menciona los procedimientos del 441.5 LEC."
+      - "Qué es una alternativa habitacional «adecuada», «digna» o «efectiva»: el RDL usa los tres adjetivos y no define ninguno."
+      - "Recurso contra el auto que acuerda o deniega la suspensión del art. 2: el RDL no lo regula."
+    fuera_de_la_herramienta:
+      - "RDL 29/2026 (BOE-A-2026-20823), art. 2.1 (pendiente de convalidación): hasta el 31-12-2030, si demanda una entidad que adquiere inmuebles o carteras de préstamos hipotecarios impagados por precio claramente inferior al de tasación para eludir la función social de la vivienda o maximizar rentabilidad (excluido el sector público de vivienda social), y el demandado es vulnerable y no tiene alternativa habitacional, el tribunal suspende el proceso por auto, haya habido o no suspensión del 441.5 LEC, aunque ya haya sentencia o lanzamiento acordado, si no se ha ejecutado."
+      - "RDL 29/2026, art. 2.2: para los demás demandantes, y solo si no se aplica el 22.6 LEC, con demandado vulnerable sin alternativa ni oferta de la Administración, el tribunal pide a la Administración competente informe sobre sus recursos; si no responde o no los tiene, suspende hasta que se garantice una alternativa adecuada, también tras sentencia si el lanzamiento no se ha ejecutado."
+      - "Art. 2.2, párrafo 2.º: revisión cada doce meses; se alza si desaparece la vulnerabilidad, si se pone a disposición una alternativa adecuada y efectiva o el demandado la rechaza sin causa (previa audiencia), o a los tres años."
+      - "Art. 2.2, párrafo 3.º: el auto pone a cargo de la Administración de vivienda la compensación al actor persona física o persona jurídica de alquiler asequible o social: como máximo, renta dejada de percibir, suministros impagados y costas; sin lucro cesante hipotético ni daño moral; con intereses si se demora. El demandado sigue obligado a la renta. El art. 2.1 no prevé compensación."
+      - "Art. 2.2, último párrafo: no se suspende si prevalece la vulnerabilidad económica o habitacional del actor, salvo que sea persona jurídica o persona física gran tenedora; y no prevalece la vulnerabilidad económica del demandado si el actor es persona física titular de dos o menos viviendas."
+      - "RDL 29/2026, disp. trans. 2.ª: el art. 2 y el 22.6 LEC se aplican a las ejecuciones en curso sin lanzamiento practicado. El ejecutado puede pedir el art. 2 aunque el trámite del 441.5 se resolviera o se agotara el plazo del 441.6; con la solicitud y su documentación, el LAJ suspende provisionalmente el lanzamiento hasta el auto. Para el 22.6, hay que cumplir la enervación extraordinaria antes de seguir."
+      - "RDL 29/2026, art. 1.5: si una entidad del art. 1.1 adquiere, al amparo de las excepciones 1.2.e) o 1.4, por menos del 70 % del valor de mercado la vivienda habitual de una persona vulnerable sin alternativa, queda suspendido hasta el 31-12-2030 todo lanzamiento sobre ella. Esas excepciones no se pueden invocar hasta que se apruebe el Código de Buenas Prácticas."
+    afines: ["Vulnerabilidad y gran tenedor en la demanda", "Desahucio por falta de pago", "Desahucio por expiración del plazo", "Lanzamiento", "Suspensión de la ejecución", "Ocupación ilegal de vivienda (desahucio exprés)"]
+    # VIGENCIA: régimen del art. 2 y la disp. trans. 2.ª del RDL 29/2026 (vigor 08-10-2026, hasta el 31-12-2030), pendiente de convalidación
+    # (CE 86.2); el 22.6 LEC lo añade su art. 5.Dos. LEC 150, 439, 441, 549, 686 y 704 sin cambios por el RDL. El RDL 26/2026, que ya
+    # añadía el 22.6 LEC, fue derogado por el Congreso (BOE 02-10-2026). Si el RDL 29/2026 decae, la voz entera pierde su objeto. Provisional.
+    estado: "provisional"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
+    revisor: "armero"
+
+  - voz: "Cesión de crédito hipotecario vencido sobre vivienda habitual"
+    sinonimos: ["cesión de préstamo hipotecario", "venta de cartera hipotecaria", "venta de créditos dudosos", "fondo cesionario", "fondo buitre", "cambio de acreedor hipotecario", "notificación de la cesión del crédito", "readquisición del préstamo cedido", "deudor hipotecario sin recursos", "Código de Buenas Prácticas", "excepciones oponibles al cesionario", "artículo 25 bis Ley 5/2019"]
+    normas_base: ["CC", "LEC"]
+    remisiones:
+      - {norma: "CC", articulo: "1112", tipo: "conexa", nota: "Los derechos nacidos de una obligación son transmisibles con sujeción a las leyes, salvo pacto en contrario."}
+      - {norma: "CC", articulo: "1526", tipo: "regula", nota: "La cesión surte efecto frente a tercero desde que su fecha es cierta; si se refiere a un inmueble, desde su inscripción."}
+      - {norma: "CC", articulo: "1527", tipo: "regula", nota: "El deudor que paga al acreedor originario antes de conocer la cesión queda liberado."}
+      - {norma: "CC", articulo: "1528", tipo: "regula", nota: "La cesión del crédito comprende la de sus accesorios: fianza, hipoteca, prenda o privilegio."}
+      - {norma: "CC", articulo: "1198", tipo: "regula", nota: "Compensación frente al cesionario: no cabe si el deudor consintió la cesión; si solo la conoció, de deudas anteriores; si la ignoró, hasta conocerla."}
+      - {norma: "CC", articulo: "1535", tipo: "conexa", nota: "Crédito litigioso (desde la contestación): el deudor lo extingue reembolsando precio, costas e intereses, en nueve días desde la reclamación."}
+      - {norma: "CC", articulo: "6", apartado: "3", tipo: "conexa", nota: "Actos contra normas prohibitivas: nulos de pleno derecho, salvo que la norma fije otro efecto. El 25 bis.4 Ley 5/2019 prohíbe sin fijarlo."}
+      - {norma: "LEC", articulo: "540", apartado: "2", tipo: "regula", nota: "El cesionario sucede al ejecutante acreditando la cesión con documentos fehacientes; si ya se despachó, se notifica y sigue con él."}
+      - {norma: "LEC", articulo: "540", apartado: "3", tipo: "regula", nota: "Sin documento fehaciente, o si no basta: traslado y audiencia de quince días, y el tribunal decide sobre la sucesión."}
+      - {norma: "LEC", articulo: "17", apartado: "2", tipo: "conexa", nota: "En el declarativo, la otra parte se opone a la entrada del adquirente si tiene defensas oponibles solo al transmitente."}
+      - {norma: "LEC", articulo: "685", apartado: "2, párrafo 3.º", tipo: "conexa", nota: "La demanda hipotecaria dice si el inmueble es vivienda habitual del deudor y si el ejecutante es gran tenedor (439.6.b)."}
+      - {norma: "LEC", articulo: "693", apartado: "2", tipo: "conexa", nota: "Vencimiento anticipado del préstamo a persona física con hipoteca sobre vivienda: rige el art. 24 Ley 5/2019."}
+      - {norma: "LEC", articulo: "695", apartado: "1.4.ª", tipo: "conexa", nota: "Oposición por abusividad de la cláusula que funda la ejecución o fija la cantidad exigible."}
+    no_consta_en_norma:
+      - "Efecto de la cesión prohibida por el 25 bis.4 Ley 5/2019 (deudor acogido al RDL 6/2012): el precepto no lo fija; si es nulidad (CC 6.3) o ineficacia frente al deudor es interpretativo."
+      - "Efecto de no informar al deudor de la posibilidad de acogerse al RDL 6/2012 (25 bis.5): no se dice si el plazo de seis meses corre igual ni qué consecuencia tiene."
+      - "Qué es crédito «vencido» (25 bis.4 y 5): no se dice si basta el vencimiento anticipado (693.2 LEC y art. 24 Ley 5/2019) o hace falta el vencimiento final."
+      - "Cómo se fija el «mismo precio de la cesión» cuando el préstamo se vende dentro de una cartera a precio global: el 25 bis.5 no lo dice."
+      - "Errata aparente en el 25 bis.5, párrafo 2.º: el cedente readquiere «salvo que haya acordado con el cedente» que sea este quien ofrezca las medidas; por sentido, debería decir cesionario. No consta corrección de errores."
+      - "Si la ejecución hipotecaria del cesionario se suspende mientras corren los seis meses o se tramita la readquisición: ni el 25 bis ni la LEC lo prevén."
+      - "Relación entre la readquisición del 25 bis.5 y el retracto de crédito litigioso (CC 1535), que también se mide por el precio de la cesión: el RDL no los coordina."
+    fuera_de_la_herramienta:
+      - "Ley 5/2019 (BOE-A-2019-3814), art. 25 bis.1, añadido por la disp. final 1.ª RDL 29/2026 (BOE-A-2026-20823, pendiente de convalidación): el prestatario opone al cesionario las mismas excepciones y defensas que al acreedor originario, incluida la compensación, conforme al Código Civil."
+      - "Art. 25 bis.2: siguen aplicándose los códigos de buenas prácticas a los que la entidad estuviera adherida al ceder; cedente y cesionario acuerdan la forma menos gravosa para el deudor de salvaguardar esos derechos."
+      - "Art. 25 bis.3: se informa al prestatario de la cesión, salvo que el prestamista original, de común acuerdo con el nuevo titular, siga prestando los servicios del crédito frente al consumidor."
+      - "Art. 25 bis.4: prohibida la cesión de préstamos hipotecarios vencidos cuyo deudor esté acogido a las medidas del RDL 6/2012 (BOE-A-2012-3394)."
+      - "Art. 25 bis.5: en la cesión de un crédito vencido con hipoteca sobre la vivienda habitual, la comunicación de la cesión informa de la posibilidad de acogerse al RDL 6/2012; si el deudor acredita reunir los requisitos en los seis meses siguientes a esa comunicación, el cedente readquiere el préstamo por el mismo precio de la cesión y ofrece las medidas."
+      - "Art. 25 bis.6: todas estas comunicaciones se envían a todos los titulares y avalistas del crédito."
+      - "RDL 29/2026, disp. final 11.ª.2: el 25 bis se aplica a las cesiones de crédito hipotecario hechas desde su entrada en vigor (08-10-2026), cualquiera que sea la fecha del contrato."
+      - "Ley 5/2019, art. 2: ámbito (prestamista profesional; prestatario, fiador o garante persona física; garantía sobre inmueble residencial, o préstamo para adquirir inmuebles si es consumidor). Art. 24: vencimiento anticipado."
+      - "RDL 29/2026, disp. final 9.ª: incorpora en parte la Directiva (UE) 2021/2167, sobre administradores y compradores de créditos."
+    afines: ["Cesión de créditos y retracto de crédito litigioso", "Ejecución hipotecaria: especialidades", "Oposición en la ejecución hipotecaria", "Sucesión procesal (muerte de la parte y transmisión del objeto litigioso)", "Compensación y nulidad alegadas por el demandado", "Adjudicación al acreedor y vivienda habitual"]
+    # VIGENCIA: el art. 25 bis Ley 5/2019 lo añade la disp. final 1.ª RDL 29/2026 (vigor 08-10-2026), pendiente de convalidación (CE 86.2);
+    # el RDL 26/2026 ya lo había añadido y fue derogado (BOE 02-10-2026; nota de boe.es en el 25 bis). LEC 685.2 en la redacción del
+    # art. 5.Uno RDL 29/2026. CC 6, 1112, 1198, 1526 a 1528 y 1535 y LEC 17, 540, 693 y 695 sin cambios por el RDL. Provisional.
+    estado: "provisional"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
+    revisor: "armero"
+
+  - voz: "Indemnización por no prórroga del arrendamiento de vivienda"
+    sinonimos: ["indemnización por no renovación", "indemnización por no prórroga", "preaviso de seis meses", "prórroga tácita de cinco años", "prórroga de cinco o siete años", "no renovar el alquiler", "fin del contrato de alquiler", "doce mensualidades", "mensualidad por año de residencia", "oferta de nuevo contrato", "RDL 28/2026", "estabilidad del alquiler"]
+    normas_base: ["LAU", "CC"]
+    remisiones:
+      - {norma: "LAU", articulo: "10", apartado: "1", tipo: "regula", nota: "Hoy: tras 5 o 7 años, prórroga anual hasta tres más si nadie preavisa (arrendador, 4 meses). Sin indemnización. Cambia el 15-11-2026."}
+      - {norma: "LAU", articulo: "10", apartado: "nota RDL 28/2026, 1, párrafo 1.º", tipo: "regula", nota: "Desde el 15-11-2026: sin preaviso (arrendador, 6 meses; arrendatario, 2), prórroga tácita y obligatoria por plazos de 5 o 7 años."}
+      - {norma: "LAU", articulo: "10", apartado: "nota RDL 28/2026, 1, párrafo 2.º", tipo: "regula", nota: "Indemniza la mayor de: 12 mensualidades o una por año residido, al valor superior del índice estatal (si no lo hay, renta vigente). Se paga al entregar."}
+      - {norma: "LAU", articulo: "10", apartado: "nota RDL 28/2026, 1, párrafo 3.º", tipo: "regula", nota: "No se debe si el arrendatario podía pedir una prórroga legal de aceptación obligatoria y no la pidió; si la pide, se difiere a su fin."}
+      - {norma: "LAU", articulo: "10", apartado: "nota RDL 28/2026, 1, párrafo 4.º", tipo: "regula", nota: "Si se vende la vivienda, la indemnización la debe el adquirente que se subroga, salvo causa del apartado 2."}
+      - {norma: "LAU", articulo: "10", apartado: "nota RDL 28/2026, 2", tipo: "regula", nota: "Exclusiones, expresas y detalladas por escrito en el preaviso: necesidad del arrendador, no habitar, otra vivienda, nuevo contrato u oferta rechazada."}
+      - {norma: "LAU", articulo: "10", apartado: "nota RDL 28/2026, 2.a)", tipo: "regula", nota: "Necesidad del arrendador persona física, para sí o familiares hasta 2.º grado: si en tres meses desde la entrega no la ocupan, se debe la indemnización."}
+      - {norma: "LAU", articulo: "10", apartado: "nota RDL 28/2026, 2.b) y c)", tipo: "regula", nota: "Arrendatario ausente más de seis de los últimos doce meses sin causa justificada, o con otra vivienda apta en el municipio que pueda ocupar."}
+      - {norma: "LAU", articulo: "10", apartado: "nota RDL 28/2026, 2.e)", tipo: "regula", nota: "Oferta fehaciente de nuevo contrato dentro del preaviso, rechazada: mínimo 5 o 7 años y renta según el 17.6, aunque no sea zona tensionada."}
+      - {norma: "LAU", articulo: "10", apartado: "nota RDL 28/2026, 3 y 4", tipo: "conexa", nota: "Prórroga pactada tras el preaviso: no menos de 5 o 7 años; nulos los pactos de prórroga que empeoren al arrendatario (art. 6)."}
+      - {norma: "LAU", articulo: "10", apartado: "2", tipo: "conexa", nota: "Hoy: prórroga extraordinaria de un año al vulnerable que la pida, obligatoria para el gran tenedor. Desde el 15-11-2026 pasa al 10.5."}
+      - {norma: "LAU", articulo: "10", apartado: "3", tipo: "conexa", nota: "Hoy: prórroga en zona tensionada, hasta tres años. Desde el 15-11-2026 pasa al 10.6, preferente e incompatible con otras."}
+      - {norma: "LAU", articulo: "9", apartado: "1", tipo: "regula", nota: "Duración mínima de 5 o 7 años (arrendador persona jurídica) con prórrogas anuales: el art. 10 opera a partir de ahí."}
+      - {norma: "LAU", articulo: "9", apartado: "3", tipo: "conexa", nota: "Necesidad pactada en el contrato (persona física, 1.er grado): recupera tras el primer año. La causa 10.2.a) nueva llega al 2.º grado y no exige pacto."}
+      - {norma: "LAU", articulo: "6", tipo: "conexa", nota: "Nulos los pactos que modifiquen en perjuicio del arrendatario las normas del título II, salvo que la norma lo autorice."}
+      - {norma: "LAU", articulo: "7", apartado: "1", tipo: "conexa", nota: "Cónyuge no separado o hijos dependientes que siguen en la vivienda: a ellos remite la causa 10.2.b) nueva."}
+      - {norma: "LAU", articulo: "14", tipo: "conexa", nota: "El adquirente se subroga en los cinco o siete primeros años aunque sea tercero hipotecario; desde el 15-11-2026, también en la indemnización."}
+      - {norma: "LAU", articulo: "17", apartado: "6", tipo: "conexa", nota: "Renta del nuevo contrato en zona tensionada: tope de la última renta de los cinco años anteriores. Mide la oferta de la causa 10.2.e)."}
+      - {norma: "CC", articulo: "1566", tipo: "conexa", nota: "Tácita reconducción: la disp. trans. única.5 RDL 28/2026 la somete al nuevo art. 10 desde su primer vencimiento tras el 15-11-2026."}
+      - {norma: "CC", articulo: "1581", tipo: "conexa", nota: "Duración de la tácita reconducción según se fije la renta; rige hasta ese primer vencimiento (disp. trans. única.5 RDL 28/2026)."}
+    no_consta_en_norma:
+      - "En qué fecha se toma el «valor superior del rango individualizado» del sistema estatal de referencia: solo el valor supletorio (renta vigente) se fija a la fecha de la comunicación."
+      - "Qué norma regula el «sistema estatal de referencia de precios de alquiler de vivienda»: el RDL 28/2026 no la cita."
+      - "Qué años cuentan como «residido en la vivienda»: si entran contratos anteriores sobre la misma vivienda y hasta qué fecha se computa."
+      - "Causa c): no define vivienda «apta para atender sus necesidades» ni dice si basta una cuota de pleno dominio o de uso."
+      - "Causa e): no dice qué es rechazo «tácito» de la oferta ni el plazo para aceptarla."
+      - "Causa a): no dice cuánto tiempo debe mantenerse la ocupación por el arrendador o sus familiares una vez cumplidos los tres meses."
+      - "Preavisos de no prórroga hechos entre la publicación (07-10-2026) y la entrada en vigor (15-11-2026) para vencimientos posteriores: la disp. trans. única.1 solo exime de indemnizar a los anteriores a la publicación."
+      - "Qué pasa si se convalida el RDL 28/2026 y decae el 29/2026: el art. único se redacta sobre el 10.1 del RDL 29/2026 y la disp. adic. 1.ª coordina con su disp. final 5.ª; ninguna norma prevé ese escenario."
+    fuera_de_la_herramienta:
+      - "RDL 28/2026 (BOE-A-2026-20822), art. único (vigor 15-11-2026, pendiente de convalidación): nuevo art. 10 LAU. La herramienta lo muestra como nota «Téngase en cuenta» dentro del art. 10, no como texto vigente."
+      - "RDL 28/2026, disp. trans. única.1: el nuevo art. 10 se aplica a los contratos vigentes para los vencimientos posteriores al 15-11-2026; los preavisos válidos anteriores a la publicación (07-10-2026) conservan su eficacia y no generan indemnización, aunque después se aplique una prórroga extraordinaria."
+      - "Disp. trans. única.2: si al 15-11-2026 faltan menos de seis meses para el vencimiento, el arrendador puede preavisar con cuatro meses de antelación."
+      - "Disp. trans. única.3: los contratos que ya estén en la prórroga del 10.1 anterior siguen en ella hasta su término; después rige el nuevo art. 10."
+      - "Disp. trans. única.4: la remisión al art. 10 LAU de la disp. trans. 4.ª.1 Ley 12/2023 (redacción del RDL 29/2026) se entiende hecha al nuevo texto."
+      - "Disp. trans. única.5: contratos en tácita reconducción (1566 CC): nuevo art. 10 desde el primer vencimiento de la reconducción; la duración mínima suma contrato originario y reconducción; los requerimientos válidos anteriores a la publicación no generan indemnización."
+      - "Disp. adic. 1.ª: la prórroga extraordinaria de la disp. final 5.ª RDL 29/2026 no se aplica si procede la del 10.1; aplicada tras un preaviso válido, al acabar se extingue el contrato y se devenga la indemnización, salvo causa del 10.2."
+      - "Disp. adic. 2.ª: las remisiones de otras normas a los antiguos 10.2 y 10.3 se entienden hechas a los nuevos 10.5 y 10.6; para la disp. final 5.ª RDL 29/2026 rigen las reglas propias de la disp. adic. 1.ª.3."
+      - "RDL 29/2026 (BOE-A-2026-20823), disp. final 5.ª (pendiente de convalidación): prórroga extraordinaria anual, hasta dos años, al arrendatario al corriente de pago los ocho meses anteriores."
+      - "Ley 12/2023 (BOE-A-2023-12203), art. 3.k): gran tenedor, al que remite el nuevo 10.5."
+    afines: ["Duración y prórroga del arrendamiento de vivienda", "Necesidad del arrendador para vivienda propia", "Desahucio por expiración del plazo", "Tácita reconducción", "Enajenación de la finca arrendada y resolución del derecho del arrendador", "Zonas de mercado residencial tensionado y límites de renta"]
+    # VIGENCIA: hoy rige el art. 10 LAU en la redacción del art. 3.Ocho RDL 29/2026 (vigor 08-10-2026), sin indemnización. La indemnización
+    # existe solo desde el 15-11-2026 (art. único RDL 28/2026) y la herramienta la enseña en la nota del art. 10, leída en la composición
+    # 597314599f e idéntica al BOE. Ninguno de los dos RDL está convalidado (CE 86.2).
+    # AVISO: no aplicar la indemnización a vencimientos anteriores al 15-11-2026. Ese día el texto de la nota pasa a vigente y hay que
+    # revisar la voz entera: cambian las claves de apartado (los «nota RDL 28/2026, …» pasan a 10.1 a 10.6) y el 10.2 y el 10.3 actuales
+    # se convierten en 10.5 y 10.6. Provisional.
+    estado: "provisional"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
+    revisor: "armero"
