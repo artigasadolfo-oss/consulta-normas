@@ -1,9 +1,10 @@
 # Índice de conceptos de «Consulta de normas» — tanda 8 (obras comunes de la PH y ejecución)
-# Revisor: armero. Espejo: legalize-es@aca28304d. Todo precepto citado se ha leído en el espejo en esta pasada.
+# Revisor: armero. Espejo: legalize-es@aca28304d, salvo «Lanzamiento», revisada el 9-10-2026 contra legalize-es@597314599f
+# (composición con el RDL 29/2026). Todo precepto citado se ha leído en el espejo de su revisión.
 # Vigencia: contraste con la API de boe.es (scripts/contraste_boe.py --solo "LEC,LPH,CC,CE,LO 1/2025", 08-10-2026 07:43): distintos
 # LEC 22 y 685, LPH 10 (versión futura 23-10-2026), CC 396 (errata del espejo). Ver tanda-08-notas.md.
 # AVISO: el espejo YA muestra el art. 10 LPH en la redacción de la Ley 4/2026, que no rige hasta el 23-10-2026.
-# Voces 122 y 131 a 141 de la lista maestra: 12 voces, 224 remisiones, 107 artículos distintos; 10 vigentes y 2 provisionales.
+# Voces 122 y 131 a 141 de la lista maestra: 12 voces, 225 remisiones, 108 artículos distintos; 10 vigentes y 2 provisionales.
 
 voces:
   - voz: "Obras en elementos comunes y accesibilidad"
@@ -397,6 +398,7 @@ voces:
       - {norma: "LEC", articulo: "441", apartado: "5", tipo: "regula", nota: "Vivienda habitual: aviso a servicios sociales; si hay vulnerabilidad, traslado y posible suspensión de vista o lanzamiento."}
       - {norma: "LEC", articulo: "441", apartado: "6", tipo: "regula", nota: "Suspensión por auto: hasta dos meses si el actor es persona física, cuatro si es jurídica."}
       - {norma: "LEC", articulo: "441", apartado: "7", tipo: "conexa", nota: "Ponderación y criterios de vulnerabilidad económica (30 % de ingresos, límites IPREM) y social."}
+      - {norma: "LEC", articulo: "22", apartado: "6", tipo: "regula", nota: "Impago y arrendatario vulnerable: lanzamiento suspendido dos meses; sin alternativa ni pago, la Administración se subroga y no hay lanzamiento."}
       - {norma: "LEC", articulo: "150", apartado: "4", tipo: "regula", nota: "La resolución que fija el lanzamiento de una vivienda se comunica a los servicios sociales competentes."}
       - {norma: "LEC", articulo: "703", apartado: "1, párrafo 2.º", tipo: "regula", nota: "Cosas ajenas al título: requerimiento para retirarlas; si no, se consideran abandonadas."}
       - {norma: "LEC", articulo: "703", apartado: "1, párrafo 3.º", tipo: "regula", nota: "Desahucio por impago o expiración: basta un funcionario gestor, que puede pedir el auxilio de la fuerza pública."}
@@ -412,15 +414,19 @@ voces:
     no_consta_en_norma:
       - "Si el mes del 704.1 rige en el desahucio arrendaticio (el 549.4 solo excluye la espera del 548): criterio jurisprudencial."
       - "Suspensión del lanzamiento a petición del arrendatario sin vulnerabilidad acreditada: no la prevé el texto; criterio judicial."
+      - "Si los dos meses del 22.6 se suman a la suspensión del 441.6 o la absorben: no lo resuelve el texto."
     fuera_de_la_herramienta:
-      - "RDL 29/2026, art. 2 (por convalidar): suspende hasta el 31-12-2030 procesos y lanzamientos de vulnerables sin alternativa."
-      - "RDL 29/2026: nuevo art. 22.6 LEC (enervación a cargo de la Administración, lanzamiento suspendido dos meses). El espejo no lo trae."
+      - "RDL 29/2026, art. 2 y DT 2.ª (por convalidar): hasta el 31-12-2030 suspende procesos y lanzamientos no practicados de vulnerables sin alternativa."
       - "Ley 12/2023 por el derecho a la vivienda y normativa autonómica de servicios sociales: fuera de la herramienta."
     afines: ["Desahucio por falta de pago", "Desahucio por expiración del plazo", "Vulnerabilidad y gran tenedor en la demanda", "Ocupación ilegal de vivienda (desahucio exprés)", "Enervación del desahucio", "Inviolabilidad del domicilio en la ejecución y el lanzamiento", "Cargas anteriores y ocupantes del inmueble subastado"]
     vigilar:
       - {norma: "LEC", articulo: "22"}
-    # VIGENCIA: arts. citados idénticos al texto vigente; LEC 22 distinto (RDL 29/2026): por eso «vigilar» y estado provisional.
+    # VIGENCIA: el apartado 6 del art. 22 LEC lo añade el RDL 29/2026 (BOE 07-10-2026, vigor 08-10-2026; su DT 2.ª lo extiende a las
+    # ejecuciones en curso sin lanzamiento practicado) y no se aplica a los casos del art. 2.1 del propio RDL. LEC 21, 150, 438, 441, 447,
+    # 549, 675, 703 y 704 y CE 18 y 47, releídos en la composición: no cambian.
+    # AVISO: RDL 29/2026 (vigor 08-10-2026) no convalidado a esta fecha (Diputación Permanente, art. 86.2 CE); si se deroga, el 22.6
+    # desaparece, como ocurrió con el RDL 26/2026. Va «provisional» y con «vigilar» LEC 22 por eso.
     estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"

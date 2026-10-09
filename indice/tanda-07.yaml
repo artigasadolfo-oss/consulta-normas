@@ -1,9 +1,11 @@
 # Índice de conceptos de «Consulta de normas» — tanda 7 (Propiedad horizontal, salvo obras comunes)
-# Revisor: armero. Espejo: legalize-es@aca28304d. Todo precepto citado se ha leído en el espejo en esta pasada.
+# Revisor: armero. Espejo: legalize-es@aca28304d, salvo «Limitación de las viviendas de uso turístico en la comunidad», «Obras en
+# elementos privativos» y «Daños entre comunidad y propietarios (filtraciones)», revisadas el 9-10-2026 contra legalize-es@597314599f
+# (composición con el RDL 29/2026). Todo precepto citado se ha leído en el espejo de su revisión.
 # Vigencia: contraste con la API de boe.es (scripts/contraste_boe.py --solo "LPH,CC,LEC", 08-10-2026 07:22): distintos LPH 10
 # (versión futura 23-10-2026), LEC 22 y 685, CC 396 (errata del espejo, sin cambio de fondo). Ver tanda-07-notas.md.
 # AVISO: el espejo YA muestra el art. 10 LPH y la da 3.ª LPH en la redacción de la Ley 4/2026, que no rige hasta el 23-10-2026.
-# Voces 113 a 121 y 123 a 125 de la lista maestra: 12 voces, 179 remisiones, 42 artículos distintos; 9 vigentes y 3 provisionales.
+# Voces 113 a 121 y 123 a 125 de la lista maestra: 12 voces, 181 remisiones, 44 artículos distintos; 9 vigentes y 3 provisionales.
 
 voces:
   - voz: "Impugnación de acuerdos (plazo del art. 18)"
@@ -51,21 +53,27 @@ voces:
       - {norma: "LPH", articulo: "7", apartado: "2", tipo: "conexa", nota: "Cesación: autorización de la junta, cautelar, indemnización y privación del uso hasta tres años."}
       - {norma: "LPH", articulo: "5", apartado: "párrafo 3.º", tipo: "conexa", nota: "El título puede fijar reglas de uso o destino de los pisos; frente a terceros, solo si está inscrito."}
       - {norma: "LPH", articulo: "18", apartado: "1", tipo: "conexa", nota: "El acuerdo es impugnable por las causas del art. 18, incluido el abuso de derecho."}
-      - {norma: "LAU", articulo: "5", apartado: "e)", tipo: "conexa", nota: "La VUT a la que remite la LPH es la cesión del 5.e) LAU: desde el 08-10-2026, nunca más de 31 días."}
+      - {norma: "LAU", articulo: "5", apartado: "e)", tipo: "conexa", nota: "La VUT a la que remite la LPH es la cesión turística del 5.e) LAU, con régimen sectorial propio y nunca de más de 31 días."}
+      - {norma: "LAU", articulo: "9 bis", apartado: "1", tipo: "conexa", nota: "El arrendamiento de vivienda temporal dura más de 31 días y, por regla general, no más de doce meses."}
+      - {norma: "LAU", articulo: "3", apartado: "2", tipo: "conexa", nota: "El uso distinto del de vivienda ya no menciona la temporada y excluye siempre el alojamiento u hospedaje de personas."}
       - {norma: "LEC", articulo: "249", apartado: "1.8.º", tipo: "conexa", nota: "Acciones de la LPH que no son de cantidad (cesación, impugnación): juicio ordinario."}
     no_consta_en_norma:
       - "Si la prohibición por tres quintos alcanza a VUT anteriores a la LO 1/2025 (da 2.ª, 17.12 sin efecto retroactivo): jurisprudencial."
       - "Si una prohibición estatutaria genérica de «actividades» alcanza a la VUT: criterio jurisprudencial."
       - "Si la aprobación de la VUT de un propietario es «aprovechamiento privativo» que excluye el voto presunto del 17.8: no lo dice."
       - "Cesión turística de más de 31 días: ya no es la del 5.e) LAU; si exige la aprobación del 7.3 LPH, no lo resuelve el texto."
+      - "Limitar los arrendamientos de vivienda temporal (9 bis LAU): el 17.12 solo cubre el 5.e); si cabe por el 17.6, no lo resuelve el texto."
     fuera_de_la_herramienta:
       - "Normativa turística de la Comunitat Valenciana (registro y requisitos de la VUT): a ella remiten el 7.3 y el 17.12 LPH."
-      - "RDL 29/2026 (pendiente de convalidación): da el texto vigente del art. 5.e) LAU; el espejo aún no lo trae."
     afines: ["Vivienda de uso turístico: exclusión de la LAU", "Actividades prohibidas (acción de cesación)", "Mayorías y cómputo de votos", "Impugnación de acuerdos (plazo del art. 18)", "Gastos comunes, cuota y fondo de reserva"]
-    # VIGENCIA: LAU 5 distinto en el espejo (RDL 29/2026, vigor 08-10-2026): nota según la API vigente. LPH 5, 7, 17, 18 y da 2, LEC 249 idénticos.
+    # VIGENCIA: LAU 3.2, 5.e) y 9 bis.1 en la redacción del RDL 29/2026 (BOE 07-10-2026, vigor 08-10-2026), leídos en la composición;
+    # contraste de taller con la API de boe.es: idénticos. LPH 5, 7, 17, 18 y da 2, LEC 249: idénticos al texto vigente de boe.es.
+    # AVISO: RDL 29/2026 (vigor 08-10-2026) no convalidado a esta fecha (Diputación Permanente, art. 86.2 CE); si se deroga, el 5.e)
+    # pierde el tope de 31 días, el 3.2 vuelve a incluir la temporada y el 9 bis desaparece, como ocurrió con el RDL 26/2026.
+    # Va «provisional» por eso.
     estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Deudas con la comunidad, preferencia y afección"
@@ -307,10 +315,12 @@ voces:
       - "Licencia municipal y normativa urbanística (valenciana y Ley de Suelo estatal), a las que remite el 10.3 LPH: no están en la herramienta."
     afines: ["Obras en elementos comunes y accesibilidad", "Mayorías y cómputo de votos", "Actividades prohibidas (acción de cesación)", "Título constitutivo, estatutos y cuota de participación", "Servidumbres y acceso para obras e instalaciones comunes"]
     # VIGENCIA: LPH 10 distinto: el espejo ya trae la Ley 4/2026 (vigor 23-10-2026), que solo cambia el 10.1.b); el 10.3 citado
-    # es idéntico en ambas versiones. CC 396: errata del espejo («los elemento de cierre»). LPH 3, 5, 7, 9 y 17: idénticos.
+    # es idéntico en ambas versiones. CC 396: la composición corrige la errata («los elementos de cierre») y es idéntico al texto
+    # vigente de boe.es. LPH 3, 5, 7, 9 y 17: idénticos. Ninguna remisión depende del RDL 29/2026. Va «provisional» solo por el
+    # art. 10 LPH visible en la redacción futura; puede pasar a «vigente» el 23-10-2026 sin otra revisión.
     estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Gastos comunes, cuota y fondo de reserva"
@@ -386,9 +396,11 @@ voces:
       - "Código Técnico de la Edificación (salubridad y protección frente a la humedad): no está en la herramienta."
     afines: ["Obras en elementos comunes y accesibilidad", "Responsabilidad extracontractual", "Responsabilidad de los agentes: plazos de 10, 3 y 1 año", "Daños causados por animales, edificios y cosas", "Prescripción (como excepción)", "Legitimación del presidente", "Obras y conservación"]
     # VIGENCIA: LPH 10 distinto: el espejo ya trae la Ley 4/2026 (vigor 23-10-2026), que solo cambia el 10.1.b); el 10.1.a)
-    # citado es idéntico en ambas versiones. CC 396: errata del espejo. LPH 7, 9, 14, 20 y 22; CC 1902, 1907, 1910, 1964 y 1968;
-    # LOE 3, 17 y 18; LEC 52, 249 y 250: idénticos al texto vigente de boe.es.
+    # citado es idéntico en ambas versiones. CC 396: la composición corrige la errata y es idéntico al texto vigente de boe.es.
+    # LPH 7, 9, 14, 20 y 22; CC 1902, 1907, 1910, 1964 y 1968; LOE 3, 17 y 18; LEC 52, 249 y 250: idénticos al texto vigente de boe.es.
+    # Ninguna remisión depende del RDL 29/2026. Va «provisional» solo por el art. 10 LPH visible en la redacción futura; puede pasar
+    # a «vigente» el 23-10-2026 sin otra revisión.
     estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"

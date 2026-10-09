@@ -1,6 +1,8 @@
 # Índice de conceptos de «Consulta de normas» — tanda 23 (cierre de las B: 290 a 292, 295 a 297 y 301 a 303; primeras C: 20, 35 y 36)
 # Orden de las voces: el de la lista maestra (20, 35, 36, 290, 291, 292, 295, 296, 297, 301, 302, 303).
-# Revisor: armero. Espejo: legalize-es@aca28304d, leído con `git show aca28304d:es/…` (no el árbol de trabajo, que hoy trae erratas).
+# Revisor: armero. Espejo: legalize-es@aca28304d, leído con `git show aca28304d:es/…` (no el árbol de trabajo, que hoy trae erratas),
+# salvo «Inviolabilidad del domicilio en la ejecución y el lanzamiento» y «Derecho a la vivienda y función social de la propiedad»,
+# revisadas el 9-10-2026 contra legalize-es@597314599f (composición con el RDL 29/2026).
 # D 11/1995 (es-vc/DOGV-1995-833645.md) no está en git: es el único texto leído del fichero (ver notas).
 # Todo precepto citado se ha leído en el espejo en esta pasada. Vigencia: contraste con la API de boe.es (08-10-2026).
 # Ver tanda-23-notas.md.
@@ -343,33 +345,36 @@ voces:
       - {norma: "LEC", articulo: "703", apartado: "1", tipo: "regula", nota: "Título de entrega de inmueble: el LAJ ordena de inmediato lo que proceda; lo que no se retire en plazo se tiene por abandonado."}
       - {norma: "LEC", articulo: "703", apartado: "1, párrafo 3.º", tipo: "regula", nota: "En desahucios basta un funcionario Gestor autorizado por el LAJ, que puede pedir el auxilio de la fuerza pública."}
       - {norma: "LEC", articulo: "703", apartado: "3", tipo: "conexa", nota: "Desperfectos constatados en el lanzamiento: retención y depósito de bienes del responsable para responder de los daños."}
-      - {norma: "LEC", articulo: "703", apartado: "4", tipo: "conexa", nota: "Si se entrega la posesión antes de la fecha, decreto que declara ejecutada la sentencia y cancela la diligencia."}
+      - {norma: "LEC", articulo: "703", apartado: "4", tipo: "conexa", nota: "Desahucio de finca urbana: si se entrega la posesión antes de la fecha, decreto que declara ejecutada la sentencia y cancela la diligencia."}
       - {norma: "LEC", articulo: "704", apartado: "1", tipo: "regula", nota: "Vivienda habitual del ejecutado o dependientes: un mes para desalojar, prorrogable otro más por motivo fundado."}
       - {norma: "LEC", articulo: "704", apartado: "1, párrafo 2.º", tipo: "regula", nota: "Pasados los plazos, lanzamiento inmediato con día y hora exactos fijados en la resolución."}
       - {norma: "LEC", articulo: "704", apartado: "2", tipo: "regula", nota: "Terceros ocupantes: se les notifica y tienen diez días para presentar título; el lanzamiento de los de mero hecho va por el art. 675."}
       - {norma: "LEC", articulo: "549", apartado: "3", tipo: "regula", nota: "Desahucio: pedir la ejecución en la demanda basta para el lanzamiento en el día y hora señalados, sin más trámite."}
       - {norma: "LEC", articulo: "549", apartado: "4, párrafo 2.º", tipo: "regula", nota: "Si es vivienda habitual, antes del lanzamiento hay que haber seguido los trámites del art. 441.5 a 7."}
-      - {norma: "LEC", articulo: "441", apartado: "5", tipo: "regula", nota: "Vivienda habitual: aviso de oficio a servicios sociales; si confirman vulnerabilidad, puede suspenderse la vista o el lanzamiento."}
+      - {norma: "LEC", articulo: "441", apartado: "5", tipo: "regula", nota: "Vivienda habitual: aviso de oficio a servicios sociales; con su respuesta o vencido el plazo, puede suspenderse la vista o el lanzamiento."}
       - {norma: "LEC", articulo: "441", apartado: "6", tipo: "regula", nota: "El tribunal puede suspender el proceso hasta dos meses (actor persona física) o cuatro (persona jurídica)."}
       - {norma: "LEC", articulo: "441", apartado: "7", tipo: "regula", nota: "Decisión ponderada y proporcional, también ante la vulnerabilidad del actor; criterios económicos y sociales de vulnerabilidad."}
+      - {norma: "LEC", articulo: "22", apartado: "6", tipo: "regula", nota: "Impago y arrendatario vulnerable: lanzamiento suspendido dos meses; sin alternativa ni pago, la Administración se subroga y no hay lanzamiento."}
       - {norma: "LEC", articulo: "150", apartado: "4", tipo: "regula", nota: "La notificación que fija la fecha del lanzamiento de una vivienda se traslada a los servicios sociales competentes."}
       - {norma: "LEC", articulo: "675", apartado: "2", tipo: "conexa", nota: "Inmueble subastado ocupado: lanzamiento si el tribunal resolvió que los ocupantes no tienen derecho; si no, petición en un año."}
       - {norma: "LEC", articulo: "675", apartado: "3", tipo: "conexa", nota: "La petición de lanzamiento se ventila en una vista en diez días; auto sin recurso, y lanzamiento si no comparecen sin causa."}
       - {norma: "LOPJ", articulo: "17", apartado: "1", tipo: "conexa", nota: "Todos deben prestar a jueces y tribunales la colaboración requerida en el proceso y en la ejecución de lo resuelto."}
     vigilar:
       - {norma: "LEC", articulo: "22"}
-    # VIGENCIA: los artículos citados son idénticos al texto vigente de boe.es. Voz «provisional» porque el RDL 29/2026 (vigente desde
-    # el 08-10-2026, convalidación pendiente) suspende procesos y lanzamientos de vulnerables (art. 2) y añade el art. 22.6 LEC.
+    # VIGENCIA: el apartado 6 del art. 22 LEC lo añade el RDL 29/2026 (BOE 07-10-2026, vigor 08-10-2026; su DT 2.ª lo extiende a las
+    # ejecuciones en curso sin lanzamiento practicado) y no se aplica a los casos del art. 2.1 del propio RDL. LEC 150, 441, 549, 675,
+    # 703 y 704, CE 18, 47 y 117 y LOPJ 17, releídos en la composición: no cambian.
+    # AVISO: RDL 29/2026 (vigor 08-10-2026) no convalidado a esta fecha (Diputación Permanente, art. 86.2 CE); si se deroga, el 22.6
+    # desaparece, como ocurrió con el RDL 26/2026. Va «provisional» y con «vigilar» LEC 22 por eso.
     no_consta_en_norma:
       - "Si la resolución que acuerda el lanzamiento basta como autorización de entrada del art. 18.2 CE o hace falta un auto específico: jurisprudencial."
       - "Exigencia de juicio de proporcionalidad con menores o personas dependientes antes del lanzamiento, más allá del art. 441.7: jurisprudencial."
     fuera_de_la_herramienta:
-      - "RDL 29/2026, art. 2: suspensión hasta el 31-12-2030 de procesos y lanzamientos de vulnerables sin alternativa habitacional."
-      - "RDL 29/2026, art. 5.Dos: nuevo art. 22.6 LEC, enervación por la Administración y suspensión del lanzamiento durante dos meses."
+      - "RDL 29/2026, art. 2 y DT 2.ª (por convalidar): hasta el 31-12-2030 suspende procesos y lanzamientos no practicados de vulnerables sin alternativa."
     afines: ["Lanzamiento", "Desahucio por falta de pago", "Vulnerabilidad y gran tenedor en la demanda", "Ocupación ilegal de vivienda (desahucio exprés)", "Cargas anteriores y ocupantes del inmueble subastado", "Derecho a la vivienda y función social de la propiedad"]
     estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Derecho a la vivienda y función social de la propiedad"
@@ -390,22 +395,27 @@ voces:
       - {norma: "LEC", articulo: "439", apartado: "6", tipo: "regula", nota: "La demanda de recuperación de una finca debe decir si es vivienda habitual del ocupante y si el actor es gran tenedor."}
       - {norma: "LEC", articulo: "441", apartado: "5", tipo: "regula", nota: "Vivienda habitual: aviso a servicios sociales para valorar la vulnerabilidad y proponer alternativa habitacional."}
       - {norma: "LEC", articulo: "441", apartado: "7", tipo: "regula", nota: "El tribunal pondera la vulnerabilidad de ambas partes; criterios de renta, IPREM, dependencia, violencia y menores."}
+      - {norma: "LEC", articulo: "22", apartado: "6", tipo: "conexa", nota: "Arrendatario vulnerable: la Administración ofrece alternativa o paga en dos meses; si no, se subroga en la deuda y no hay lanzamiento."}
       - {norma: "LEC", articulo: "150", apartado: "4", tipo: "conexa", nota: "La fecha del lanzamiento de una vivienda se comunica a los servicios sociales por si procediera su actuación."}
       - {norma: "LEC", articulo: "704", apartado: "1", tipo: "conexa", nota: "Vivienda habitual del ejecutado: un mes para desalojar, prorrogable un mes más por motivo fundado."}
     vigilar:
       - {norma: "LEC", articulo: "22"}
-    # VIGENCIA: los artículos citados son idénticos al texto vigente de boe.es. El RDL 29/2026 (ver notas) desarrolla la función
-    # social de la vivienda fuera de la herramienta y reforma el art. 22 LEC: por eso `vigilar`.
+    # VIGENCIA: el apartado 6 del art. 22 LEC lo añade el RDL 29/2026 (BOE 07-10-2026, vigor 08-10-2026) y no se aplica a los casos
+    # del art. 2.1 del propio RDL. CE 9, 18, 33, 39, 47, 53 y 128, CC 348 y 349 y LEC 150, 439, 441 y 704, releídos en la composición:
+    # no cambian. El art. 3.k) de la Ley 12/2023 (fuera de la herramienta) lo reescribe el art. 4.Uno del RDL 29/2026.
+    # AVISO: RDL 29/2026 (vigor 08-10-2026) no convalidado a esta fecha (Diputación Permanente, art. 86.2 CE); si se deroga, el 22.6
+    # desaparece (como ocurrió con el RDL 26/2026) y el 3.k) vuelve a su texto anterior. Va «provisional» y con «vigilar» LEC 22 por eso.
     no_consta_en_norma:
       - "Si el art. 47 CE permite por sí solo suspender un desahucio sin ley que lo prevea: no, por el art. 53.3; su alcance interpretativo es jurisprudencial."
       - "Contenido esencial del derecho de propiedad frente a las suspensiones legales de desahucios: doctrina constitucional."
     fuera_de_la_herramienta:
-      - "Ley 12/2023, por el derecho a la vivienda, art. 3.k): concepto de gran tenedor, al que remite el art. 439.6.b) LEC."
-      - "RDL 29/2026, de protección de la función social de la vivienda: suspensión de desahucios de vulnerables hasta el 31-12-2030 (art. 2)."
+      - "Ley 12/2023, art. 3.k), según el RDL 29/2026 (por convalidar): gran tenedor; cada unidad residencial cuenta aun sin división horizontal (439.6.b LEC)."
+      - "RDL 29/2026 (por convalidar), art. 2: suspensión de desahucios de vulnerables sin alternativa habitacional hasta el 31-12-2030."
+      - "RDL 29/2026, art. 2.2, in fine: no se suspende si el actor es persona física con dos viviendas o menos, o si prevalece su vulnerabilidad sin ser gran tenedor."
     afines: ["Inviolabilidad del domicilio en la ejecución y el lanzamiento", "Vulnerabilidad y gran tenedor en la demanda", "Desahucio por falta de pago", "Ocupación ilegal de vivienda (desahucio exprés)", "Decretos-leyes: convalidación y vigencia", "Acción reivindicatoria y declarativa de dominio"]
-    estado: "vigente"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    estado: "provisional"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Decretos-leyes: convalidación y vigencia"

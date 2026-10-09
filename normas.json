@@ -1,14 +1,14 @@
 {
  "compilado": "2026-10-09",
- "corpus_commit": "aca28304d",
+ "corpus_commit": "597314599",
  "normas": [
   {
    "id": "lec",
    "boe": "BOE-A-2000-323",
    "sigla": "LEC",
    "dir": "es",
-   "actualizada": "2026-10-05",
-   "sha256": "5d995eb240685f87ab03096790d7208bcd85497b8136f99bb4e7d648836f0a1f",
+   "actualizada": "2026-10-07",
+   "sha256": "3d800bffdef4bbf405db81b3800e7245d4b6a099b45d3b7f20d53d773a0665a3",
    "bloques": 918,
    "articulos": 867,
    "disposiciones": 49
@@ -29,8 +29,8 @@
    "boe": "BOE-A-1994-26003",
    "sigla": "LAU",
    "dir": "es",
-   "actualizada": "2026-10-02",
-   "sha256": "c19f4916c4aa1bb2f54a495da9eb13847ca421ee11e268a3044ead9c08560b96",
+   "actualizada": "2026-10-07",
+   "sha256": "5f248a33b7e82ca696df6f699ee2ab904266a88db1269a56c4135f695f4bf310",
    "bloques": 79,
    "articulos": 53,
    "disposiciones": 25
@@ -52,7 +52,7 @@
    "sigla": "CC",
    "dir": "es",
    "actualizada": "2025-01-03",
-   "sha256": "77f0d17fe837bfa84ed3598867805d86b7135d362c9be6b6bb2cdfa38e6ba407",
+   "sha256": "f801e090bb6822e9d6c235c7d68bbe76f04816a488a41a0acc35146df30acd92",
    "bloques": 2002,
    "articulos": 1998,
    "disposiciones": 0
@@ -118,9 +118,59 @@
  "indice": {
   "version": "0.1-muestra",
   "voces": 308,
-  "provisionales": 40,
+  "provisionales": 38,
   "caducadas": [],
-  "cambios_norma": {},
+  "cambios_norma": {
+   "LAU": {
+    "articulos": [
+     "39",
+     "40",
+     "41",
+     "42",
+     "43",
+     "44",
+     "45",
+     "46",
+     "47",
+     "48",
+     "49",
+     "50",
+     "51"
+    ],
+    "voces": [
+     "Enervación del desahucio",
+     "Desahucio por falta de pago",
+     "Desahucio por expiración del plazo",
+     "Ámbito de la LAU y arrendamientos excluidos",
+     "Vivienda de uso turístico: exclusión de la LAU",
+     "Arrendamiento de temporada y para uso distinto de vivienda",
+     "Duración y prórroga del arrendamiento de vivienda",
+     "Resolución del contrato por incumplimiento",
+     "Renta: pago, recibo y actualización",
+     "Fianza y garantías adicionales",
+     "Gastos generales, servicios e IBI",
+     "Obras y conservación",
+     "Desistimiento del arrendatario",
+     "Necesidad del arrendador para vivienda propia",
+     "Limitación de las viviendas de uso turístico en la comunidad",
+     "Uso de la vivienda familiar",
+     "Zonas de mercado residencial tensionado y límites de renta",
+     "Subrogación",
+     "Cesión y subarriendo (también del local)",
+     "Enajenación de la finca arrendada y resolución del derecho del arrendador",
+     "Derechos de tanteo y retracto del arrendatario",
+     "Separación o divorcio del arrendatario",
+     "Indemnización por clientela en el arrendamiento de local",
+     "Arrendamiento de cosas en el Código Civil (régimen supletorio)",
+     "Tácita reconducción",
+     "Cargas anteriores y ocupantes del inmueble subastado",
+     "Usufructo",
+     "Vivienda familiar: disposición por el cónyuge titular",
+     "Arrendamientos de renta antigua (anteriores a 1995)",
+     "Formalización e inscripción del arrendamiento"
+    ]
+   }
+  },
   "dependen": {
    "CC": [
     "Desahucio por precario",
@@ -758,7 +808,7 @@
  "formulas": {
   "version": "",
   "formulas": 157,
-  "provisionales": 2,
+  "provisionales": 3,
   "caducadas": []
  }
 }

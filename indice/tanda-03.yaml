@@ -1,5 +1,6 @@
 # Índice de conceptos de «Consulta de normas» — tanda 3 (resto de excepciones, partes y actuaciones)
-# Revisor: armero. Espejo: legalize-es@aca28304d. Todo precepto citado se ha leído en el espejo en esta pasada.
+# Revisor: armero. Espejo: legalize-es@aca28304d, salvo «Carencia sobrevenida de objeto / satisfacción extraprocesal», revisada el 9-10-2026
+# contra legalize-es@597314599f (composición con el RDL 29/2026). Todo precepto citado se ha leído en el espejo de su revisión.
 # Vigencia: scripts/contraste_boe.py --solo "LEC,CC,LOPJ,CE,LO 1/2025", ejecutado el 8-10-2026 a las 06:36. Distintos: LEC 22 y 685,
 # CC 396. Sin vigencias futuras en esas normas. La única voz que cita un artículo afectado (LEC 22) va «provisional». Ver notas.
 
@@ -10,23 +11,27 @@ voces:
     remisiones:
       - {norma: "LEC", articulo: "22", apartado: "1", tipo: "regula", nota: "Sin interés legítimo sobrevenido y con acuerdo de las partes: decreto del LAJ que termina el proceso, sin costas."}
       - {norma: "LEC", articulo: "22", apartado: "2", tipo: "regula", nota: "Si una parte lo niega motivadamente: comparecencia en diez días y auto en otros diez; costas al que pierda."}
-      - {norma: "LEC", articulo: "22", apartado: "2, párrafo 2.º", tipo: "regula", nota: "Si solo quedan en disputa las costas: auto de terminación con costas según el art. 395; cabe apelación."}
+      - {norma: "LEC", articulo: "22", apartado: "2, párrafo 2.º", tipo: "regula", nota: "Si solo quedan en disputa las costas: auto de terminación, oída la otra parte; puede condenar en costas según el art. 395."}
+      - {norma: "LEC", articulo: "22", apartado: "2, párrafo 3.º", tipo: "regula", nota: "Contra ese auto que decide sobre las costas cabe apelación."}
       - {norma: "LEC", articulo: "22", apartado: "3", tipo: "regula", nota: "Sin recurso el auto que ordena seguir; apelable el que acuerda la terminación."}
       - {norma: "LEC", articulo: "413", apartado: "1", tipo: "regula", nota: "La sentencia ignora los cambios posteriores, salvo que priven definitivamente de interés la pretensión."}
       - {norma: "LEC", articulo: "413", apartado: "2", tipo: "regula", nota: "Si la pretensión pierde el interés legítimo, se aplica el art. 22."}
-      - {norma: "LEC", articulo: "395", apartado: "1", tipo: "conexa", nota: "Criterio de costas al que remite el 22.2: mala fe si hubo requerimiento fehaciente o rechazo del MASC."}
+      - {norma: "LEC", articulo: "395", apartado: "1", tipo: "conexa", nota: "Criterio al que remite el 22.2: sin costas salvo mala fe o abuso; mala fe si hubo requerimiento fehaciente o rechazo del acuerdo o del MASC."}
       - {norma: "LEC", articulo: "21", tipo: "conexa", nota: "Si el demandado reconoce lo pedido en el proceso en vez de satisfacerlo fuera, es allanamiento: sentencia condenatoria."}
-      - {norma: "LEC", articulo: "22", apartado: "4", tipo: "conexa", nota: "Desahucio por impago: el pago enervador tiene régimen propio. El art. 22 tiene un apartado 6 desde el 08-10-2026."}
+      - {norma: "LEC", articulo: "22", apartado: "4", tipo: "conexa", nota: "Desahucio por impago: el pago enervador del arrendatario termina el proceso por decreto del LAJ; régimen propio, no el del 22.1."}
+      - {norma: "LEC", articulo: "22", apartado: "6", tipo: "conexa", nota: "Vulnerable sin alternativa: la Administración paga en dos meses (enervada y terminado el proceso) o queda subrogada; no computa para el 22.4."}
       - {norma: "LEC", articulo: "443", apartado: "1", tipo: "conexa", nota: "Verbal: al abrir la vista el tribunal comprueba si subsiste el litigio."}
     no_consta_en_norma:
       - "Si la carencia sobrevenida puede apreciarse de oficio, sin que la alegue ninguna parte: jurisprudencial."
       - "La carencia sobrevenida en apelación o casación: jurisprudencial; el art. 22 se redacta para la instancia."
     afines: ["Allanamiento", "Desistimiento", "Enervación del desahucio", "Costas: vencimiento, temeridad y allanamiento"]
-    # VIGENCIA: el RDL 29/2026 añade el apartado 6 al art. 22 (vigente desde el 08-10-2026; el espejo aún no lo trae). Leída la versión
-    # vigente en la API de boe.es: los apartados 1 a 5 no cambian. Va «provisional» porque la huella del artículo entero cambiará.
+    # VIGENCIA: el apartado 6 del art. 22 lo añade el RDL 29/2026 (BOE 07-10-2026, vigor 08-10-2026; su DT 2.ª lo extiende a las ejecuciones
+    # en curso sin lanzamiento practicado) y no se aplica a los casos del art. 2.1 del propio RDL. Los apartados 1 a 5 no cambian.
+    # AVISO: RDL 29/2026 (vigor 08-10-2026) no convalidado a esta fecha (Diputación Permanente, art. 86.2 CE); si se deroga, el 22.6
+    # desaparece, como ocurrió con el RDL 26/2026. Va «provisional» por eso.
     estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Compensación y nulidad alegadas por el demandado"

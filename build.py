@@ -388,6 +388,14 @@ def base_en_commit(claves_norma, sigla, commit):
     if k in _BASE:
         return _BASE[k]
     res = None
+    try:   # ¿es el identificador de una composición de texto (no un commit)? Sus huellas están fijadas en lineas_base.json
+        bases_ = json.loads(BASES.read_text(encoding="utf-8")) if BASES.is_file() else {}
+        res = indice.base_compuesta(bases_, commit, sigla)
+    except Exception:
+        res = None
+    if res is not None:
+        _BASE[k] = res
+        return res
     try:
         cfg = claves_norma[sigla]["cfg"]
         r = subprocess.run(["git", "-C", str(CORPUS), "show", f"{commit}:{claves_norma[sigla]['ruta']}"],

@@ -1,6 +1,8 @@
 # Índice de conceptos de «Consulta de normas» — tanda 13 (prioridad B: partes, actuaciones y alegaciones)
-# Revisor: armero. Espejo: legalize-es@aca28304d, leído con `git show aca28304d:es/…` (no el árbol de trabajo, que hoy trae erratas).
-# Todo precepto citado se ha leído en el espejo en esta pasada. Vigencia: scripts/contraste_boe.py --solo "LEC,LOPJ,CE,LO 1/2025,CC,
+# Revisor: armero. Espejo: legalize-es@aca28304d, leído con `git show aca28304d:es/…` (no el árbol de trabajo, que hoy trae erratas),
+# salvo «Ampliación de la demanda y prohibición de cambio de demanda», revisada el 9-10-2026 contra legalize-es@597314599f
+# (composición con el RDL 29/2026), que desde entonces cita LEC 22.4. Todo precepto citado se ha leído en el espejo de su revisión.
+# Vigencia: scripts/contraste_boe.py --solo "LEC,LOPJ,CE,LO 1/2025,CC,
 # TRLGDCU" --espejo-commit aca28304d (08-10-2026, 12:30). Distintos: LEC 22 y 685, CC 396; ninguno citado; ninguna versión futura.
 # Voces 17, 18, 19, 28, 29, 30, 31, 32, 33, 34, 54 y 55 de la lista maestra (12 voces, prioridad B). Ver tanda-13-notas.md.
 
@@ -368,20 +370,26 @@ voces:
       - {norma: "LEC", articulo: "411", tipo: "conexa", nota: "Los cambios de domicilio, de la cosa litigiosa o del objeto no alteran la jurisdicción ni la competencia iniciales."}
       - {norma: "LEC", articulo: "220", apartado: "1", tipo: "conexa", nota: "Intereses o prestaciones periódicas: la sentencia puede condenar también a las que venzan después."}
       - {norma: "LEC", articulo: "220", apartado: "2", tipo: "conexa", nota: "Desahucio con reclamación de rentas: si se pidió en la demanda, condena a las que venzan hasta la entrega de la posesión."}
+      - {norma: "LEC", articulo: "22", apartado: "4, párrafo 1.º", tipo: "conexa", nota: "Para enervar el desahucio, el arrendatario paga lo reclamado en la demanda y lo que adeude en el momento del pago."}
       - {norma: "LEC", articulo: "218", apartado: "1", tipo: "conexa", nota: "La sentencia es congruente con las pretensiones deducidas oportunamente, sin apartarse de la causa de pedir."}
       - {norma: "LEC", articulo: "73", apartado: "1", tipo: "conexa", nota: "Requisitos para acumular acciones: competencia, mismo tipo de juicio y que la ley no lo prohíba."}
       - {norma: "LEC", articulo: "443", apartado: "3", tipo: "conexa", nota: "En la vista del verbal, sin acuerdo, las partes hacen aclaraciones y fijan los hechos controvertidos."}
     no_consta_en_norma:
       - "Frontera entre alegación complementaria o rectificación secundaria (426) y cambio sustancial de la demanda: casuística jurisprudencial."
       - "Reducción de la cuantía pedida o de las pretensiones en la audiencia: se admite como desistimiento parcial según la jurisprudencia."
-      - "Cantidades vencidas durante el pleito fuera de los casos del 220: si se incluyen sin ampliar es criterio jurisprudencial."
+      - "Cantidades vencidas durante el pleito fuera de los casos del 220 y del 22.4: si se incluyen sin ampliar es criterio jurisprudencial."
     vigilar:
       - {norma: "LEC", articulo: "22"}
-    # VIGENCIA: el 413.2 remite al art. 22 (carencia sobrevenida), que el RDL 29/2026 reforma y el espejo aún no recoge. No se cita.
+    # VIGENCIA: el RDL 29/2026 (BOE 07-10-2026, vigor 08-10-2026) añade al art. 22 LEC el apartado 6; los apartados 1 a 5 no cambian.
+    # Se cita el 22.4, que no depende del RDL. El 22.6 (la Administración paga lo reclamado y lo devengado hasta el pago) no se cita:
+    # es materia de «Enervación del desahucio» y de «Carencia sobrevenida…», que trata también el 413.2 (remisión al art. 22).
+    # LEC 73, 218, 220, 286, 400, 401, 411, 412, 413, 420, 426 y 443, releídos en la composición: no cambian.
+    # AVISO: RDL 29/2026 (vigor 08-10-2026) no convalidado a esta fecha (Diputación Permanente, art. 86.2 CE); si se deroga, el 22.6
+    # desaparece, como ocurrió con el RDL 26/2026. La voz no lo cita y sigue «vigente»; «vigilar» LEC 22 se mantiene por eso.
     afines: ["Acumulación de acciones", "Preclusión de alegaciones y hechos nuevos", "Audiencia previa: contenido y orden", "Congruencia y motivación de la sentencia", "Litisconsorcio pasivo necesario", "Carencia sobrevenida de objeto / satisfacción extraprocesal"]
     estado: "vigente"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Admisión de hechos y silencio en la contestación"

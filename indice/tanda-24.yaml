@@ -1,7 +1,10 @@
 # Índice de conceptos de «Consulta de normas» — tanda 24 (prioridad C: 37, 74, 111, 112, 130, 159, 160, 161, 168, 197, 198 y 199)
 # Orden de las voces: el de la lista maestra.
-# Revisor: armero. Espejo: legalize-es@aca28304d, leído con `git show aca28304d:es/…` (no el árbol de trabajo, que hoy trae erratas).
+# Revisor: armero. Espejo: 10 voces, legalize-es@aca28304d, leído con `git show aca28304d:es/…` (no el árbol de trabajo, que hoy trae
+# erratas). 2 voces («Arrendamientos de renta antigua…» y «Formalización e inscripción del arrendamiento»), revisadas el 9-10-2026 contra
+# legalize-es@597314599f (composición: aca28304d + LAU entera, LEC 22 y 685 y CC 396 de a5e9eecce6).
 # Todo precepto citado se ha leído en el espejo en esta pasada. Vigencia: contraste con la API de boe.es (08-10-2026).
+# AVISO: RDL 29/2026 (vigor 08-10-2026) no está convalidado a esta fecha.
 # Ver tanda-24-notas.md.
 
 voces:
@@ -86,7 +89,7 @@ voces:
       - {norma: "LAU", articulo: "dt 2", apartado: "10", tipo: "regula", nota: "El arrendador puede exigir el IBI y repercutir obras de reparación necesarias y el coste de servicios y suministros."}
       - {norma: "LAU", articulo: "dt 2", apartado: "11", tipo: "regula", nota: "Actualización de la renta a instancia del arrendador, previo requerimiento fehaciente y con certificación del INE."}
       - {norma: "LAU", articulo: "dt 2", apartado: "11.6.ª", tipo: "regula", nota: "El inquilino puede oponerse en treinta días naturales: solo IPC anual, y el contrato se extingue a los ocho años del requerimiento."}
-      - {norma: "LAU", articulo: "dt 2", apartado: "11.7.ª", tipo: "conexa", nota: "No hay actualización si los ingresos de los convivientes no superan de 2,5 a 3,5 veces el SMI, según cuántos sean."}
+      - {norma: "LAU", articulo: "dt 2", apartado: "11.7.ª", tipo: "conexa", nota: "No hay actualización si los ingresos del arrendatario y de quienes conviven con él no exceden de 2,5 a 3,5 veces el SMI, según cuántos sean."}
       - {norma: "LAU", articulo: "dt 3", apartado: "1", tipo: "regula", nota: "Local de negocio pactado antes del 9-5-1985: LAU de 1964 de local de negocio, con las modificaciones de esta disposición."}
       - {norma: "LAU", articulo: "dt 3", apartado: "3", tipo: "regula", nota: "Persona física: se extingue por su jubilación o muerte, salvo que se subrogue el cónyuge (luego un descendiente) que siga la actividad."}
       - {norma: "LAU", articulo: "dt 3", apartado: "4", tipo: "regula", nota: "Arrendatario persona jurídica: se extingue entre cinco y veinte años desde 1995, según la actividad, la superficie y la cuota del IAE."}
@@ -94,7 +97,7 @@ voces:
       - {norma: "LAU", articulo: "dt 3", apartado: "7", tipo: "conexa", nota: "Si el arrendatario actualiza la renta, los plazos de los apartados 3 y 4 se alargan cinco años."}
       - {norma: "LAU", articulo: "dt 3", apartado: "10", tipo: "regula", nota: "Indemnización de dieciocho mensualidades si en un año otro ejerce en el local la misma actividad o una afín."}
       - {norma: "LAU", articulo: "dt 3", apartado: "11", tipo: "regula", nota: "Extinguido, preferencia para seguir si en un año se arrienda a otro: 30 días naturales; si no se notifica, subrogación en el nuevo contrato."}
-      - {norma: "LAU", articulo: "dt 4", apartado: "1", tipo: "conexa", nota: "Los asimilados al inquilinato y al local de negocio anteriores al 9-5-1985 siguen la LAU de 1964, con las reglas de la dt 3.ª."}
+      - {norma: "LAU", articulo: "dt 4", apartado: "1", tipo: "conexa", nota: "Los asimilados al inquilinato y al local de negocio anteriores al 9-5-1985 siguen la LAU de 1964, con las reglas de la dt 3.ª (apartados 2 y 3)."}
       - {norma: "LAU", articulo: "dt 5", tipo: "conexa", nota: "Los arrendamientos de viviendas de protección oficial siguen rigiéndose por su normativa propia."}
       - {norma: "LAU", articulo: "ddu", tipo: "regula", nota: "Deroga la LAU de 1964 y los arts. 8 y 9 del RDL 2/1985, sin perjuicio de lo que mantienen las disposiciones transitorias."}
       - {norma: "LAU", articulo: "df2", tipo: "conexa", nota: "La LAU de 1994 entró en vigor el 1 de enero de 1995."}
@@ -106,17 +109,21 @@ voces:
       - "Si la jubilación del arrendatario persona física extingue el local cuando la actividad la sigue una sociedad o un familiar no subrogado: jurisprudencial."
       - "Si un contrato de 1985 a 1994 se sometió por pacto a la prórroga forzosa (lo admite el preámbulo de la LAU): depende del clausulado; jurisprudencial."
     afines: ["Subrogación", "Tácita reconducción", "Ámbito de la LAU y arrendamientos excluidos", "Renta: pago, recibo y actualización", "Gastos generales, servicios e IBI", "Indemnización por clientela en el arrendamiento de local", "Desahucio por expiración del plazo"]
+    # VIGENCIA: LAU dt 2.ª y dt 3.ª distintas en la composición 597314599f solo por el formato de sus tablas (fila de cabecera); los
+    # apartados citados (dt 2.ª 1 a 11 y dt 3.ª 1 a 11), idénticos letra a letra. LAU dt 1.ª, dt 4.ª, dt 5.ª, ddu y df 2.ª y CC 1566 sin
+    # cambios. Ninguna remisión depende del RDL 29/2026: sigue «vigente».
     estado: "vigente"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Formalización e inscripción del arrendamiento"
     sinonimos: ["formalización del arrendamiento", "contrato de arrendamiento por escrito", "contrato verbal de arrendamiento", "compelerse a formalizar por escrito", "elevar el arrendamiento a escritura pública", "inscripción del arrendamiento", "arrendamiento inscrito", "Registro de la Propiedad y arrendamiento", "tercero hipotecario y arrendamiento", "artículo 34 de la Ley Hipotecaria", "fecha cierta del contrato privado", "venta quita renta", "contenido mínimo del contrato de alquiler", "registro único de arrendamientos"]
     normas_base: ["LAU", "CC", "LEC"]
     remisiones:
-      - {norma: "LAU", articulo: "37", tipo: "regula", nota: "Las partes pueden compelerse a formalizar por escrito; desde el RDL 29/2026 es obligatorio si lo pide el inquilino, sin invalidar el verbal."}
-      - {norma: "LAU", articulo: "37", apartado: "párrafo 2.º", tipo: "regula", nota: "El escrito recoge la identidad de las partes, la finca, la duración pactada, la renta inicial y las demás cláusulas."}
+      - {norma: "LAU", articulo: "37", apartado: "1", tipo: "regula", nota: "Las partes pueden compelerse recíprocamente a formalizar por escrito el contrato de arrendamiento."}
+      - {norma: "LAU", articulo: "37", apartado: "1, párrafo 2.º", tipo: "regula", nota: "El escrito recoge la identidad de las partes, la finca, la duración pactada, la renta inicial y las demás cláusulas."}
+      - {norma: "LAU", articulo: "37", apartado: "2", tipo: "regula", nota: "Si lo pide el arrendatario, la forma escrita es obligatoria; incumplirla no invalida el verbal, sin perjuicio de responsabilidades administrativas."}
       - {norma: "LAU", articulo: "13", apartado: "1, párrafo 2.º", tipo: "regula", nota: "Pasados cinco años (siete si persona jurídica), si cae el derecho del arrendador se extingue el arriendo, salvo inscripción anterior."}
       - {norma: "LAU", articulo: "13", apartado: "3", tipo: "conexa", nota: "Dura cinco años (siete) el arriendo concertado de buena fe con quien figura como propietario en el Registro de la Propiedad."}
       - {norma: "LAU", articulo: "14", apartado: "párrafo 1.º", tipo: "regula", nota: "El adquirente se subroga los cinco (o siete) primeros años aunque reúna los requisitos del art. 34 de la Ley Hipotecaria."}
@@ -124,28 +131,35 @@ voces:
       - {norma: "LAU", articulo: "29", tipo: "regula", nota: "En el uso distinto de vivienda, el adquirente se subroga salvo que reúna los requisitos del art. 34 de la Ley Hipotecaria."}
       - {norma: "LAU", articulo: "da 2", apartado: "1", tipo: "regula", nota: "Son inscribibles los arrendamientos de inmuebles y sus subarriendos, cesiones y subrogaciones (art. 2.5.º de la Ley Hipotecaria)."}
       - {norma: "LAU", articulo: "da 2", apartado: "2", tipo: "conexa", nota: "Remite al reglamento los requisitos de acceso de los arrendamientos urbanos al Registro de la Propiedad."}
+      - {norma: "LAU", articulo: "38", apartado: "1", tipo: "conexa", nota: "El título V sanciona a las plataformas de alquiler de corta duración que incumplan el suministro de datos a la Ventanilla Única Digital."}
       - {norma: "CC", articulo: "1278", tipo: "regula", nota: "Los contratos obligan cualquiera que sea su forma si concurren las condiciones esenciales para su validez."}
       - {norma: "CC", articulo: "1279", tipo: "conexa", nota: "Si la ley exige una forma, los contratantes pueden compelerse a llenarla desde que hay consentimiento y demás requisitos."}
       - {norma: "CC", articulo: "1280", apartado: "2.º", tipo: "regula", nota: "Constan en documento público los arrendamientos de inmuebles por seis o más años que deban perjudicar a tercero."}
       - {norma: "CC", articulo: "1227", tipo: "conexa", nota: "La fecha del documento privado frente a terceros cuenta desde su inscripción, la muerte de un firmante o su entrega a un funcionario."}
       - {norma: "CC", articulo: "1549", tipo: "regula", nota: "Frente a terceros no surten efecto los arrendamientos de bienes raíces no inscritos en el Registro de la Propiedad."}
       - {norma: "CC", articulo: "1571", tipo: "conexa", nota: "El comprador puede terminar el arriendo salvo pacto y lo que disponga la Ley Hipotecaria; en la LAU rigen sus arts. 14 y 29."}
-      - {norma: "LEC", articulo: "249", apartado: "1.6.º", tipo: "conexa", nota: "Van al juicio ordinario los asuntos de arrendamientos urbanos, salvo rentas, desahucios y los demás reservados al verbal."}
-    # VIGENCIA: LAU 37 distinto en el espejo (RDL 29/2026, vigente desde el 08-10-2026, convalidación pendiente): el vigente añade el
-    # apartado 2 (forma escrita obligatoria a instancia del arrendatario). Nota según la API vigente. LAU 13, 14, 29 y da 2 idénticos.
+      - {norma: "LEC", articulo: "249", apartado: "1.6.º", tipo: "conexa", nota: "Van al ordinario los asuntos de arrendamientos urbanos, salvo rentas o cantidades, desahucio por impago o por plazo y cuantía valorable."}
+    # VIGENCIA: LAU 37 y título V (38) en la redacción del RDL 29/2026 (BOE 07-10-2026, vigor 08-10-2026), leída en la composición
+    # 597314599f, que la API da por idéntica al BOE. LAU 13, 14, 29 y da 2, CC 1227, 1278, 1279, 1280, 1549 y 1571 y LEC 249 sin cambios.
+    # AVISO: RDL 29/2026 no convalidado a esta fecha (Diputación Permanente, art. 86.2 CE); si se deroga, caen el 37.2 y el título V y el
+    # 37 vuelve a ser un texto sin numerar (las remisiones «1» y «1, párrafo 2.º» dejan de casar), como ocurrió con el RDL 26/2026.
+    # Va «provisional» por eso.
     vigilar:
       - {norma: "LAU", articulo: "37"}
+      - {norma: "LAU", articulo: "38"}
     fuera_de_la_herramienta:
       - "Ley Hipotecaria, arts. 2.5.º y 34: inscripción del arrendamiento y protección del tercero que adquiere confiado en el Registro."
       - "RD 297/1996 (BOE-A-1996-5930): para inscribir, escritura pública o elevación a escritura del contrato privado; cabe sobre parte de finca."
       - "RD 1312/2024 (BOE-A-2024-26931): número de Registro Único para ofertar alquileres de corta duración en plataformas, desde el 01-07-2025."
+      - "RDL 29/2026 (BOE-A-2026-20823), art. 3.19 y 3.20 (pendiente de convalidación): da el 37.2 y el título V LAU; si se deroga, vuelve el texto anterior."
     no_consta_en_norma:
       - "Prueba de la existencia, la renta y la duración del arrendamiento verbal: reglas generales de la prueba; jurisprudencial."
       - "Si el adquirente que conocía el arriendo no inscrito puede ser tercero del art. 34 LH (buena fe): jurisprudencial."
+      - "Efecto civil de que el arrendador desatienda la petición de forma escrita del 37.2 LAU: la ley solo salva el verbal y remite a la norma sectorial."
     afines: ["Enajenación de la finca arrendada y resolución del derecho del arrendador", "Forma del contrato y elevación a escritura pública", "Ámbito de la LAU y arrendamientos excluidos", "Arrendamiento de temporada y para uso distinto de vivienda", "Derechos de tanteo y retracto del arrendatario", "Vivienda de uso turístico: exclusión de la LAU"]
     estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Resolución judicial en equidad ante falta de mayoría"

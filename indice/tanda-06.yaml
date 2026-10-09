@@ -1,5 +1,6 @@
 # Índice de conceptos de «Consulta de normas» — tanda 6 (Arrendamientos urbanos)
-# Revisor: armero. Espejo: legalize-es@aca28304d. Todo precepto citado se ha leído en el espejo en esta pasada.
+# Revisor: armero. Espejo: las 11 voces, revisadas el 9-10-2026 contra legalize-es@597314599f (composición: aca28304d + LAU entera,
+# LEC 22 y 685 y CC 396 de a5e9eecce6). Todo precepto citado se ha leído en ese texto en esta pasada.
 # Vigencia: contraste con la API de boe.es (scripts/contraste_boe.py, 08-10-2026: LAU 34 artículos distintos) y lectura de
 # la versión vigente desde el 08-10-2026 de cada artículo LAU distinto. Las notas siguen el texto VIGENTE (API), no el espejo.
 # Todas las voces citan algún artículo LAU reformado por el RDL 29/2026: van «provisional» (ver tanda-06-notas.md).
@@ -25,20 +26,24 @@ voces:
       - {norma: "LAU", articulo: "7", apartado: "1", tipo: "regula", nota: "Sigue siendo vivienda si en ella viven el cónyuge o hijos dependientes, o si se ocupa por contrato de vivienda temporal."}
       - {norma: "LAU", articulo: "7", apartado: "2", tipo: "regula", nota: "Temporal: la causa consta en el contrato y la prueba el arrendador; si falta, es vivienda habitual desde la firma."}
       - {norma: "LAU", articulo: "da 12", tipo: "conexa", nota: "Salvaguarda de la legislación autonómica de vivienda, también sobre vivienda temporal y por habitaciones."}
+      - {norma: "LAU", articulo: "dt 8", tipo: "conexa", nota: "Temporada o temporal anterior al 08-10-2026: uso distinto hasta el plazo pactado, sin prórroga; si se renueva, vivienda temporal."}
       - {norma: "CC", articulo: "1543", tipo: "conexa", nota: "Arrendamiento de cosas: ceder el goce o uso de una cosa por tiempo determinado y precio cierto."}
       - {norma: "CC", articulo: "2", apartado: "3", tipo: "conexa", nota: "Las leyes no son retroactivas si no lo disponen: clave para contratos anteriores al 08-10-2026."}
     no_consta_en_norma:
-      - "Régimen de los contratos excluidos por el art. 5 sin remisión expresa (letras a, d, e y f): la LAU no lo fija."
-      - "Aplicación del texto de 08-10-2026 a contratos anteriores: el RDL 29/2026 solo da transitoria a la temporada (dt 8.ª LAU)."
+      - "Régimen de los contratos excluidos por el art. 5 sin remisión expresa (letras a, e y f; la d remite a las normas de la Universidad): la LAU no lo fija."
+      - "Texto de 08-10-2026 en contratos anteriores: no hay regla general; el RDL 29/2026 solo prevé la temporada (dt 8.ª LAU) y prórrogas concretas."
       - "Destino primordial en contratos mixtos (vivienda y despacho o negocio): criterio jurisprudencial."
     fuera_de_la_herramienta:
-      - "RDL 29/2026 (pendiente de convalidación): da el texto vigente de los arts. 2, 3, 4, 5 y 7 LAU; el espejo aún no lo trae."
+      - "RDL 29/2026 (pendiente de convalidación): da el texto vigente de los arts. 2, 3, 4, 5 y 7 y de la dt 8.ª LAU; si se deroga, vuelve el anterior."
       - "Legislación autonómica de vivienda de la Comunitat Valenciana (DA 12.ª LAU): no está en la herramienta."
     afines: ["Vivienda de uso turístico: exclusión de la LAU", "Arrendamiento de temporada y para uso distinto de vivienda", "Arrendamiento de cosas en el Código Civil (régimen supletorio)", "Duración y prórroga del arrendamiento de vivienda"]
-    # VIGENCIA: LAU 2, 3, 4, 5, 7 y da 12 distintos en el espejo; notas según la API vigente desde 08-10-2026. LAU 1 y 6, CC 2 y 1543 idénticos.
+    # VIGENCIA: LAU 2, 3.2, 4.2, 5 (e y f), 7, da 12 y dt 8 en la redacción del RDL 29/2026 (BOE 07-10-2026, vigor 08-10-2026), leída en
+    # la composición 597314599f, que la API da por idéntica al BOE. LAU 1 y 6, CC 2 y 1543 sin cambios.
+    # AVISO: RDL 29/2026 no convalidado a esta fecha (Diputación Permanente, art. 86.2 CE); si se deroga, esos preceptos vuelven a su
+    # texto anterior, como ocurrió con el RDL 26/2026. Va «provisional» por eso.
     estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Vivienda de uso turístico: exclusión de la LAU"
@@ -53,7 +58,7 @@ voces:
       - {norma: "LAU", articulo: "8", apartado: "2", tipo: "conexa", nota: "El inquilino solo puede subarrendar en parte y con consentimiento escrito del arrendador."}
       - {norma: "LAU", articulo: "27", apartado: "2.c)", tipo: "conexa", nota: "Subarriendo o cesión inconsentidos: resolución de pleno derecho a instancia del arrendador."}
       - {norma: "LAU", articulo: "27", apartado: "2.f)", tipo: "conexa", nota: "Resolución si la vivienda deja de destinarse de forma primordial a la necesidad de vivienda del arrendatario."}
-      - {norma: "LAU", articulo: "38", tipo: "conexa", nota: "Título V (arts. 38 a 51): sanciones a plataformas de alquiler de corta duración. El espejo trae otro texto."}
+      - {norma: "LAU", articulo: "38", tipo: "conexa", nota: "Título V (arts. 38 a 51): sanciones a las plataformas en línea de alquiler de corta duración por los datos del Reglamento (UE) 2024/1028."}
       - {norma: "LPH", articulo: "17", apartado: "12", tipo: "regula", nota: "Tres quintos para limitar, condicionar o prohibir la actividad o subir hasta un 20 % sus gastos; sin efecto retroactivo."}
       - {norma: "LPH", articulo: "7", apartado: "2", tipo: "conexa", nota: "Actividad prohibida en estatutos o molesta: requerimiento del presidente y acción de cesación."}
     no_consta_en_norma:
@@ -63,12 +68,15 @@ voces:
     fuera_de_la_herramienta:
       - "Normativa turística de la Comunitat Valenciana (registro y requisitos de la vivienda turística): a ella remite el art. 5.e)."
       - "Reglamento (UE) 2024/1028, sobre datos de alquileres de corta duración: base del título V LAU."
-      - "RDL 29/2026 (pendiente de convalidación): introduce el tope de 31 días del 5.e) y el nuevo 3.2."
+      - "RDL 29/2026 (pendiente de convalidación): introduce el tope de 31 días del 5.e), el nuevo 3.2 y el título V."
     afines: ["Limitación de las viviendas de uso turístico en la comunidad", "Ámbito de la LAU y arrendamientos excluidos", "Arrendamiento de temporada y para uso distinto de vivienda", "Actividades prohibidas (acción de cesación)", "Cesión y subarriendo (también del local)"]
-    # VIGENCIA: LAU 2, 3, 5, 7, 9 bis, 27 y 38 distintos en el espejo; notas según la API vigente. LAU 8, LPH 7 y LPH 17 idénticos.
+    # VIGENCIA: LAU 2.3, 3.2, 5.e), 7.2, 9 bis, 27.2.f) y título V (38 a 51) en la redacción del RDL 29/2026 (vigor 08-10-2026), leída en
+    # la composición 597314599f. LAU 8, LPH 7 y LPH 17 sin cambios.
+    # AVISO: RDL 29/2026 no convalidado a esta fecha (Diputación Permanente, art. 86.2 CE); si se deroga, caen el tope de 31 días, el
+    # 9 bis y el título V, como ocurrió con el RDL 26/2026. Va «provisional» por eso.
     estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Arrendamiento de temporada y para uso distinto de vivienda"
@@ -78,7 +86,7 @@ voces:
       - {norma: "LAU", articulo: "2", apartado: "3", tipo: "regula", nota: "Vivienda temporal: arrendatario desplazado de su domicilio habitual por causa justificada y acreditable."}
       - {norma: "LAU", articulo: "7", apartado: "2", tipo: "regula", nota: "La causa consta en el contrato y la prueba el arrendador; si falta, vivienda habitual con efecto retroactivo."}
       - {norma: "LAU", articulo: "9 bis", apartado: "1", tipo: "regula", nota: "Duración libre, más de 31 días y como regla hasta doce meses; prórroga expresa si subsiste la causa."}
-      - {norma: "LAU", articulo: "9 bis", apartado: "2", tipo: "regula", nota: "Más de doce meses sin causa o más de dos contratos seguidos: el primero se tiene por vivienda habitual."}
+      - {norma: "LAU", articulo: "9 bis", apartado: "2", tipo: "regula", nota: "Más de doce meses sin causa, o más de dos contratos seguidos entre las mismas partes y vivienda: el primero es vivienda habitual."}
       - {norma: "LAU", articulo: "9", apartado: "4", tipo: "regula", nota: "Los apartados 1 a 3 del art. 9 no se aplican a la vivienda temporal, que se rige por el 9 bis."}
       - {norma: "LAU", articulo: "11", apartado: "2", tipo: "regula", nota: "Desistimiento en la vivienda temporal: pasado un mes, con diez días de preaviso y sin indemnización."}
       - {norma: "LAU", articulo: "17", apartado: "8", tipo: "regula", nota: "Contratos temporales sucesivos sobre la misma vivienda: la renta no puede subir más que el IRAV anual."}
@@ -88,7 +96,7 @@ voces:
       - {norma: "LAU", articulo: "3", apartado: "2", tipo: "regula", nota: "Uso distinto: actividad industrial, comercial, profesional, etc.; ya no cita la temporada y excluye el hospedaje."}
       - {norma: "LAU", articulo: "4", apartado: "3", tipo: "regula", nota: "Uso distinto: voluntad de las partes; en su defecto, título III y, supletoriamente, el Código Civil."}
       - {norma: "LAU", articulo: "29", tipo: "regula", nota: "Uso distinto: el adquirente de la finca se subroga, salvo que reúna los requisitos del art. 34 LH."}
-      - {norma: "LAU", articulo: "30", tipo: "regula", nota: "Uso distinto: se aplican los arts. 21, 22, 23 y 26, y el 19 desde el comienzo del contrato."}
+      - {norma: "LAU", articulo: "30", tipo: "regula", nota: "Uso distinto: se aplican los arts. 21 (también el 21.5), 22, 23 y 26, y el 19 desde el comienzo, salvo pacto (art. 4.3)."}
       - {norma: "LAU", articulo: "32", tipo: "regula", nota: "Local con actividad: cesión y subarriendo sin consentimiento, con elevación de renta y notificación en un mes."}
       - {norma: "LAU", articulo: "34", tipo: "regula", nota: "Indemnización por clientela: cinco años de venta al público y voluntad de renovar con cuatro meses de antelación."}
       - {norma: "LAU", articulo: "35", tipo: "regula", nota: "Uso distinto: resolución de pleno derecho por el 27.2 a), b), d) y e) y por cesión o subarriendo contra el art. 32."}
@@ -101,10 +109,13 @@ voces:
       - "RDL 29/2026 (pendiente de convalidación): crea la vivienda temporal; si se deroga, vuelve la temporada como uso distinto."
       - "Legislación autonómica de vivienda (DA 12.ª LAU): no está en la herramienta."
     afines: ["Ámbito de la LAU y arrendamientos excluidos", "Vivienda de uso turístico: exclusión de la LAU", "Desahucio por expiración del plazo", "Indemnización por clientela en el arrendamiento de local", "Cesión y subarriendo (también del local)"]
-    # VIGENCIA: LAU 2, 3, 4, 7, 9, 9 bis, 11, 17, 21 bis, 36, da 12 y dt 8 distintos en el espejo (9 bis y dt 8, «sin efecto» allí); notas según la API vigente. LAU 29, 30, 32, 34 y 35 idénticos.
+    # VIGENCIA: LAU 2.3, 3.2, 4, 7.2, 9.4, 9 bis, 11.2, 17.8, 21 (21.5), 21 bis, 36.5, da 12 y dt 8 en la redacción del RDL 29/2026 (vigor
+    # 08-10-2026), leída en la composición 597314599f. LAU 29, 30, 32, 34 y 35 sin cambios en su letra.
+    # AVISO: RDL 29/2026 no convalidado a esta fecha (Diputación Permanente, art. 86.2 CE); si se deroga, desaparece la vivienda temporal
+    # y la temporada vuelve a ser uso distinto, como ocurrió con el RDL 26/2026. Va «provisional» por eso.
     estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Duración y prórroga del arrendamiento de vivienda"
@@ -116,7 +127,8 @@ voces:
       - {norma: "LAU", articulo: "9", apartado: "2", tipo: "regula", nota: "Sin plazo o con plazo indeterminado: se entiende por un año, con las prórrogas del 9.1."}
       - {norma: "LAU", articulo: "9", apartado: "3", tipo: "conexa", nota: "Necesidad del arrendador persona física pactada en el contrato: excluye la prórroga tras el primer año."}
       - {norma: "LAU", articulo: "9", apartado: "4", tipo: "regula", nota: "La vivienda temporal no sigue el art. 9: su duración la rige el art. 9 bis."}
-      - {norma: "LAU", articulo: "10", apartado: "1", tipo: "regula", nota: "Tras 5 o 7 años sin preaviso (arrendador 4 meses, inquilino 2), prórroga anual hasta tres más. Cambia el 15-11-2026."}
+      - {norma: "LAU", articulo: "9 bis", apartado: "2", tipo: "conexa", nota: "Temporal de más de doce meses sin causa, o más de dos seguidos: el primero es vivienda habitual, con los plazos de los arts. 9 y 10."}
+      - {norma: "LAU", articulo: "10", apartado: "1", tipo: "regula", nota: "Vivienda habitual: tras 5 o 7 años sin preaviso (arrendador 4 meses, inquilino 2), prórroga anual hasta tres más. Cambia el 15-11-2026."}
       - {norma: "LAU", articulo: "10", apartado: "2", tipo: "regula", nota: "Prórroga extraordinaria de un año al vulnerable que la pida; obligatoria si el arrendador es gran tenedor."}
       - {norma: "LAU", articulo: "10", apartado: "3", tipo: "regula", nota: "Zona tensionada: prórroga extraordinaria anual, hasta tres años, a petición del inquilino, salvo excepciones."}
       - {norma: "LAU", articulo: "10", apartado: "4", tipo: "regula", nota: "El contrato prorrogado conserva su régimen legal y convencional."}
@@ -129,14 +141,18 @@ voces:
       - "Qué rige si el inquilino sigue tras agotar las prórrogas del 10.1: la LAU calla; se acude al 1566 CC (interpretativo)."
       - "Forma de la comunicación de no renovación: el art. 10.1 no la exige (el 4.6 admite la vía electrónica pactada)."
     fuera_de_la_herramienta:
-      - "RDL 28/2026 (vigor 15-11-2026, pendiente de convalidación): nuevo art. 10, prórrogas de 5 o 7 años, preaviso de 6 meses e indemnización."
-      - "RDL 29/2026, disp. final 5.ª (pendiente de convalidación): prórroga extraordinaria de hasta dos años al inquilino al corriente de pago."
+      - "RDL 28/2026 (vigor 15-11-2026, pendiente de convalidación): nuevo art. 10, prórrogas de 5 o 7 años, preaviso de 6 meses e indemnización; la herramienta lo da como nota."
+      - "RDL 29/2026, disp. final 5.ª (pendiente de convalidación): prórroga extraordinaria anual, hasta dos años, al inquilino al corriente de pago los ocho meses anteriores."
       - "Ley 12/2023, por el derecho a la vivienda: declaración de zonas tensionadas y concepto de gran tenedor (art. 3.k)."
     afines: ["Desahucio por expiración del plazo", "Necesidad del arrendador para vivienda propia", "Tácita reconducción", "Desistimiento del arrendatario", "Zonas de mercado residencial tensionado y límites de renta"]
-    # VIGENCIA: LAU 9 (añade 9.4) y 10 distintos en el espejo. LAU 10.1 vigente desde 08-10-2026 añade «de vivienda habitual» (RDL 29/2026, art. 3.8): la API no lo consolida como vigente (ver notas). LAU 6, 13 y 14 idénticos.
+    # VIGENCIA: LAU 9.4, 9 bis y 10 en la redacción del RDL 29/2026 (vigor 08-10-2026; el 10.1 añade «de vivienda habitual»), leída en la
+    # composición 597314599f, que trae además, como nota, el texto del art. 10 del RDL 28/2026 desde el 15-11-2026. LAU 6, 13 y 14, CC 1566
+    # y 1581 sin cambios.
+    # AVISO: RDL 29/2026 y RDL 28/2026 no convalidados a esta fecha (Diputación Permanente, art. 86.2 CE); si se deroga el 29, caen el 9.4
+    # y el 9 bis, como ocurrió con el RDL 26/2026. El 15-11-2026 hay que revisar de nuevo el 10. Va «provisional» por eso.
     estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Resolución del contrato por incumplimiento"
@@ -149,7 +165,7 @@ voces:
       - {norma: "LAU", articulo: "27", apartado: "2.c)", tipo: "regula", nota: "Arrendador: subarriendo o cesión inconsentidos."}
       - {norma: "LAU", articulo: "27", apartado: "2.d)", tipo: "regula", nota: "Arrendador: daños dolosos en la finca u obras no consentidas cuando el consentimiento es necesario."}
       - {norma: "LAU", articulo: "27", apartado: "2.e)", tipo: "regula", nota: "Arrendador: actividades molestas, insalubres, nocivas, peligrosas o ilícitas en la vivienda."}
-      - {norma: "LAU", articulo: "27", apartado: "2.f)", tipo: "regula", nota: "Arrendador: la vivienda deja de destinarse de forma primordial a la necesidad de vivienda (texto de 08-10-2026)."}
+      - {norma: "LAU", articulo: "27", apartado: "2.f)", tipo: "regula", nota: "Arrendador: la vivienda deja de destinarse de forma primordial a la necesidad de vivienda del arrendatario o del ocupante del art. 7."}
       - {norma: "LAU", articulo: "27", apartado: "3.a)", tipo: "regula", nota: "Arrendatario: el arrendador no hace las reparaciones de conservación del art. 21."}
       - {norma: "LAU", articulo: "27", apartado: "3.b)", tipo: "regula", nota: "Arrendatario: perturbación de hecho o de derecho del arrendador en el uso de la vivienda."}
       - {norma: "LAU", articulo: "27", apartado: "4", tipo: "regula", nota: "Arrendamiento inscrito con pacto resolutorio: resuelve el requerimiento judicial o notarial no contestado en diez días hábiles."}
@@ -167,17 +183,20 @@ voces:
     fuera_de_la_herramienta:
       - "RDL 29/2026 (pendiente de convalidación): redacta el 27.2.f); antes decía «necesidad permanente de vivienda»."
     afines: ["Desahucio por falta de pago", "Enervación del desahucio", "Obras y conservación", "Cesión y subarriendo (también del local)", "Incumplimiento y facultad resolutoria (art. 1124)"]
-    # VIGENCIA: LAU 27 distinto en el espejo (solo cambia el 27.2.f). LAU 28 y 35, CC y LEC 249 y 250 idénticos.
+    # VIGENCIA: LAU 27.2.f) en la redacción del RDL 29/2026 (vigor 08-10-2026), leída en la composición 597314599f; el resto del 27 no
+    # cambia. LAU 28 y 35, CC y LEC 249 y 250 sin cambios.
+    # AVISO: RDL 29/2026 no convalidado a esta fecha (Diputación Permanente, art. 86.2 CE); si se deroga, el 27.2.f) vuelve a decir
+    # «necesidad permanente de vivienda», como ocurrió con el RDL 26/2026. Va «provisional» por eso.
     estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Renta: pago, recibo y actualización"
     sinonimos: ["renta", "pago del alquiler", "recibo del alquiler", "actualización de la renta", "IRAV", "subida del alquiler", "IPC del alquiler", "elevación de renta por mejoras"]
     normas_base: ["LAU", "CC"]
     remisiones:
-      - {norma: "LAU", articulo: "17", apartado: "1", tipo: "regula", nota: "La renta es la que libremente estipulen las partes, con los límites de los apartados 6 a 9."}
+      - {norma: "LAU", articulo: "17", apartado: "1", tipo: "regula", nota: "La renta es la que libremente estipulen las partes. Sus límites no están en este apartado, sino en los apartados 6 a 9."}
       - {norma: "LAU", articulo: "17", apartado: "2", tipo: "regula", nota: "Salvo pacto, pago mensual en los siete primeros días; nunca más de una mensualidad por adelantado."}
       - {norma: "LAU", articulo: "17", apartado: "3", tipo: "regula", nota: "Pago por medios electrónicos; en metálico y en la vivienda solo si una parte carece de cuenta o medios y lo pide."}
       - {norma: "LAU", articulo: "17", apartado: "4", tipo: "regula", nota: "Recibo con desglose y renta en vigor; si no lo da, el arrendador paga los gastos de acreditar el pago."}
@@ -190,7 +209,7 @@ voces:
       - {norma: "LAU", articulo: "19", apartado: "1", tipo: "regula", nota: "Mejoras tras 5 o 7 años: interés legal más tres puntos sobre lo invertido, con tope del 20 % de la renta."}
       - {norma: "LAU", articulo: "19", apartado: "4", tipo: "conexa", nota: "Mejoras pactadas con subida de renta en cualquier momento, sin reiniciar el cómputo de las prórrogas."}
       - {norma: "LAU", articulo: "da 11", tipo: "regula", nota: "El INE define el IRAV como límite de referencia de la actualización del art. 18."}
-      - {norma: "LAU", articulo: "20", apartado: "3", tipo: "conexa", nota: "Gastos pactados: los primeros 5 o 7 años suben solo hasta el doble de lo que pueda subir la renta."}
+      - {norma: "LAU", articulo: "20", apartado: "3", tipo: "conexa", nota: "Gastos pactados, salvo tributos: los primeros 5 o 7 años suben solo hasta el doble de lo que pueda subir la renta (art. 18.1)."}
       - {norma: "LAU", articulo: "27", apartado: "2.a)", tipo: "conexa", nota: "Impago de la renta: resolución de pleno derecho a instancia del arrendador."}
       - {norma: "CC", articulo: "1555", apartado: "1.º", tipo: "regula", nota: "El arrendatario debe pagar el precio en los términos convenidos."}
       - {norma: "CC", articulo: "1574", tipo: "regula", nota: "Sin pacto: lugar del pago según el art. 1171; tiempo, según la costumbre de la tierra."}
@@ -198,13 +217,16 @@ voces:
       - "Si el tope del IRAV alcanza a contratos anteriores al 08-10-2026 con cláusula de IPC: el RDL 29/2026 no da transitoria."
       - "Efectos del pago en metálico fuera de los casos del 17.3 (validez, prueba): la ley no los fija."
     fuera_de_la_herramienta:
-      - "RDL 29/2026, disp. final 6.ª (pendiente de convalidación): hasta 31-12-2027, sin nuevo pacto, subida máxima del 2 %; ninguna si supera el índice."
+      - "RDL 29/2026, disp. final 6.ª (pendiente de convalidación): hasta 31-12-2027, sin nuevo pacto, subida máxima del 2 %; ninguna si la renta supera el índice de referencia."
       - "Valores mensuales del IRAV: los publica el INE; no están en la herramienta."
     afines: ["Zonas de mercado residencial tensionado y límites de renta", "Gastos generales, servicios e IBI", "Desahucio por falta de pago", "Obras y conservación"]
-    # VIGENCIA: LAU 17, 18, 20 y 27 distintos en el espejo (18.1: IRAV en lugar de IGC e IPC); notas según la API vigente. LAU 19 y da 11, CC idénticos.
+    # VIGENCIA: LAU 17.6 a 17.9, 18.1, 20 y 27.2.f) en la redacción del RDL 29/2026 (vigor 08-10-2026), leída en la composición
+    # 597314599f; el 17.1 a 17.5 y el 18.2 no cambian. LAU 19 y da 11, CC sin cambios.
+    # AVISO: RDL 29/2026 no convalidado a esta fecha (Diputación Permanente, art. 86.2 CE); si se deroga, caen el 17.8, el 17.9 y el IRAV
+    # del 18.1, como ocurrió con el RDL 26/2026. Va «provisional» por eso.
     estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Fianza y garantías adicionales"
@@ -215,7 +237,7 @@ voces:
       - {norma: "LAU", articulo: "36", apartado: "2", tipo: "regula", nota: "Sin actualización los primeros 5 o 7 años; en cada prórroga posterior se ajusta a una o dos mensualidades."}
       - {norma: "LAU", articulo: "36", apartado: "3", tipo: "regula", nota: "Plazo pactado de más de 5 o 7 años: actualización pactada; si no, la pactada para la renta."}
       - {norma: "LAU", articulo: "36", apartado: "4", tipo: "regula", nota: "El saldo a devolver devenga el interés legal pasado un mes desde la entrega de llaves."}
-      - {norma: "LAU", articulo: "36", apartado: "5", tipo: "regula", nota: "Garantía adicional: hasta dos mensualidades en vivienda de 5 o 7 años, una en temporal; prohibido exigir seguro de impago."}
+      - {norma: "LAU", articulo: "36", apartado: "5", tipo: "regula", nota: "Garantía adicional: hasta dos mensualidades en vivienda con contrato de hasta 5 o 7 años, una en temporal; nunca seguro de impago."}
       - {norma: "LAU", articulo: "36", apartado: "6", tipo: "regula", nota: "Exentas de fianza las Administraciones y entes públicos cuando pagan con cargo a sus presupuestos."}
       - {norma: "LAU", articulo: "36", apartado: "7", tipo: "regula", nota: "Al terminar, documento firmado del estado de la vivienda; si falta o no anota daños, se presume buen estado."}
       - {norma: "LAU", articulo: "da 3", tipo: "regula", nota: "Las comunidades autónomas pueden exigir depositar la fianza; si no se devuelve en un mes, interés legal."}
@@ -231,10 +253,13 @@ voces:
     fuera_de_la_herramienta:
       - "Normativa valenciana de depósito obligatorio de fianzas (DA 3.ª LAU): no está en la herramienta."
     afines: ["Desahucio por falta de pago", "Tácita reconducción", "Obras y conservación", "Fianza"]
-    # VIGENCIA: LAU 4, 27 y 36 distintos en el espejo (36.5 y 36.7 nuevos); notas según la API vigente. LAU da 3 y CC idénticos.
+    # VIGENCIA: LAU 36.5 y 36.7 en la redacción del RDL 29/2026 (vigor 08-10-2026), leída en la composición 597314599f; el 36.1 a 36.4 y
+    # el 36.6 no cambian. LAU 4.1 y 27.2.b) sin cambios en su letra; LAU da 3 y CC sin cambios.
+    # AVISO: RDL 29/2026 no convalidado a esta fecha (Diputación Permanente, art. 86.2 CE); si se deroga, caen la prohibición del seguro
+    # de impago y el 36.7, como ocurrió con el RDL 26/2026. Va «provisional» por eso.
     estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Gastos generales, servicios e IBI"
@@ -245,8 +270,8 @@ voces:
       - {norma: "LAU", articulo: "20", apartado: "1, párrafo 2.º", tipo: "regula", nota: "En propiedad horizontal, los que correspondan a la finca según su cuota de participación."}
       - {norma: "LAU", articulo: "20", apartado: "1, párrafo 3.º", tipo: "regula", nota: "Sin propiedad horizontal no pueden imputarse gastos de comunidad al arrendatario."}
       - {norma: "LAU", articulo: "20", apartado: "1, párrafo 4.º", tipo: "regula", nota: "Pacto escrito con el importe anual a la fecha del contrato; el pacto sobre tributos no afecta a la Administración."}
-      - {norma: "LAU", articulo: "20", apartado: "2", tipo: "regula", nota: "Gestión inmobiliaria y formalización: nunca al arrendatario; otros servicios, solo si los pidió por escrito."}
-      - {norma: "LAU", articulo: "20", apartado: "3", tipo: "regula", nota: "Primeros 5 o 7 años: los gastos suben solo por acuerdo anual y hasta el doble de la subida de la renta."}
+      - {norma: "LAU", articulo: "20", apartado: "2", tipo: "regula", nota: "Gestión inmobiliaria y formalización: nunca al arrendatario; otros servicios, solo si los pidió por escrito, informado del coste."}
+      - {norma: "LAU", articulo: "20", apartado: "3", tipo: "regula", nota: "Primeros 5 o 7 años: salvo tributos, los gastos suben solo por acuerdo anual y hasta el doble de la subida de la renta."}
       - {norma: "LAU", articulo: "20", apartado: "4", tipo: "regula", nota: "Servicios individualizados por contador: siempre a cargo del arrendatario."}
       - {norma: "LAU", articulo: "20", apartado: "5", tipo: "regula", nota: "El pago de los gastos se acredita como el de la renta (art. 17.4)."}
       - {norma: "LAU", articulo: "17", apartado: "6, párrafo 2.º", tipo: "regula", nota: "Zona tensionada: el nuevo contrato no puede repercutir gastos o tributos que no figuraran en el anterior."}
@@ -262,10 +287,14 @@ voces:
       - "Texto refundido de la Ley reguladora de las Haciendas Locales: sujeto pasivo del IBI y de las tasas locales."
       - "RDL 29/2026 (pendiente de convalidación): da la redacción vigente del art. 20 LAU."
     afines: ["Renta: pago, recibo y actualización", "Gastos comunes, cuota y fondo de reserva", "Zonas de mercado residencial tensionado y límites de renta", "Desahucio por falta de pago"]
-    # VIGENCIA: LAU 4, 17, 20 y 27 distintos en el espejo (20 reescrito: tributos, comunidad sin PH, gestión inmobiliaria); notas según la API vigente. LAU 6 idéntico.
+    # VIGENCIA: LAU 20 entero (reescrito y renumerado: el 20.3 a 20.5 vigentes eran el 20.2 a 20.4) y 17.6 en la redacción del RDL 29/2026
+    # (vigor 08-10-2026), leída en la composición 597314599f; los apartados citados existen con ese número. LAU 4.3, 17.4, 27.2.a) y 6 sin
+    # cambios en su letra.
+    # AVISO: RDL 29/2026 no convalidado a esta fecha (Diputación Permanente, art. 86.2 CE); si se deroga, el art. 20 vuelve a su texto y
+    # numeración anteriores, como ocurrió con el RDL 26/2026. Va «provisional» por eso.
     estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Obras y conservación"
@@ -276,8 +305,8 @@ voces:
       - {norma: "LAU", articulo: "21", apartado: "2", tipo: "regula", nota: "Obra inaplazable: el inquilino la soporta; si dura más de veinte días, rebaja proporcional de la renta."}
       - {norma: "LAU", articulo: "21", apartado: "3", tipo: "regula", nota: "El inquilino avisa cuanto antes y permite verificar; puede hacer las urgentes y cobrarlas de inmediato."}
       - {norma: "LAU", articulo: "21", apartado: "4", tipo: "regula", nota: "Pequeñas reparaciones por desgaste del uso ordinario: a cargo del arrendatario."}
-      - {norma: "LAU", articulo: "21", apartado: "5", tipo: "regula", nota: "Requerimiento escrito con presupuesto; quince días naturales al arrendador; si no, obra y descuento en rentas futuras."}
-      - {norma: "LAU", articulo: "21 bis", tipo: "regula", nota: "Vivienda temporal: todo a cargo del arrendador; cinco días hábiles para responder; si no, repara y descuenta."}
+      - {norma: "LAU", articulo: "21", apartado: "5", tipo: "regula", nota: "Requerimiento escrito con presupuesto; quince días naturales; sin respuesta o con negativa injustificada, obra y descuento de rentas futuras."}
+      - {norma: "LAU", articulo: "21 bis", tipo: "regula", nota: "Vivienda temporal: conservación y pequeñas reparaciones, del arrendador; responde en cinco días hábiles; si no, repara y cobra o descuenta."}
       - {norma: "LAU", articulo: "22", apartado: "1", tipo: "regula", nota: "El arrendatario soporta las obras de mejora que no puedan diferirse hasta el fin del arriendo."}
       - {norma: "LAU", articulo: "22", apartado: "2", tipo: "regula", nota: "Aviso escrito con tres meses; el inquilino puede desistir en un mes, salvo afección irrelevante."}
       - {norma: "LAU", articulo: "22", apartado: "3", tipo: "regula", nota: "Reducción de renta por la parte de la que se vea privado e indemnización de los gastos causados."}
@@ -286,7 +315,7 @@ voces:
       - {norma: "LAU", articulo: "24", tipo: "regula", nota: "Adaptación por discapacidad o mayores de setenta años, con aviso escrito; reposición al final si la exige el arrendador."}
       - {norma: "LAU", articulo: "26", tipo: "regula", nota: "Obras que hacen inhabitable la vivienda: el inquilino suspende el contrato o desiste, sin indemnización."}
       - {norma: "LAU", articulo: "19", tipo: "conexa", nota: "Elevación de renta por obras de mejora tras 5 o 7 años, o pactada en cualquier momento."}
-      - {norma: "LAU", articulo: "30", tipo: "conexa", nota: "Uso distinto: se aplican los arts. 21, 22, 23 y 26."}
+      - {norma: "LAU", articulo: "30", tipo: "conexa", nota: "Uso distinto: se aplican los arts. 21 (también el 21.5), 22, 23 y 26, salvo pacto en contra (art. 4.3)."}
       - {norma: "LAU", articulo: "27", apartado: "3.a)", tipo: "conexa", nota: "El inquilino puede resolver si el arrendador no hace las reparaciones del art. 21."}
       - {norma: "LAU", articulo: "28", tipo: "conexa", nota: "La pérdida de la finca no imputable al arrendador extingue el contrato y pone límite al deber de reparar."}
       - {norma: "CC", articulo: "1554", apartado: "2.º", tipo: "conexa", nota: "Régimen general: el arrendador hace las reparaciones necesarias para conservar la cosa."}
@@ -297,12 +326,16 @@ voces:
       - "Si el descuento de rentas del 21.5 discutido por el arrendador permite desahuciar por impago: interpretativo."
       - "Aplicación del 21.5 y del 21 bis a contratos anteriores al 08-10-2026: no hay transitoria."
     fuera_de_la_herramienta:
-      - "RDL 29/2026 (pendiente de convalidación): añade el 21.5 y el 21 bis LAU; el espejo da el 21 bis «sin efecto»."
+      - "RDL 29/2026 (pendiente de convalidación): añade el 21.5 y el 21 bis LAU; si se deroga, ambos desaparecen."
     afines: ["Resolución del contrato por incumplimiento", "Renta: pago, recibo y actualización", "Daños entre comunidad y propietarios (filtraciones)", "Desistimiento del arrendatario"]
-    # VIGENCIA: LAU 21, 21 bis y 27 distintos en el espejo (21.5 nuevo; 21 bis «sin efecto» allí); notas según la API vigente. LAU 19, 22, 23, 24, 26, 28 y 30, y CC idénticos.
+    # VIGENCIA: LAU 21.5 y 21 bis añadidos por el RDL 29/2026 (vigor 08-10-2026), leídos en la composición 597314599f; el 21.1 a 21.4 no
+    # cambian. Por la remisión del art. 30 al 21 entero, el 21.5 alcanza también al uso distinto, salvo pacto. LAU 19, 22, 23, 24, 26,
+    # 27.3.a), 28 y 30, y CC sin cambios en su letra.
+    # AVISO: RDL 29/2026 no convalidado a esta fecha (Diputación Permanente, art. 86.2 CE); si se deroga, caen el 21.5 y el 21 bis, como
+    # ocurrió con el RDL 26/2026. Va «provisional» por eso.
     estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Desistimiento del arrendatario"
@@ -316,7 +349,7 @@ voces:
       - {norma: "LAU", articulo: "12", tipo: "regula", nota: "Desistimiento sin consentimiento del cónyuge o conviviente: el contrato puede seguir a su favor; requerimiento de 15 días."}
       - {norma: "LAU", articulo: "12", apartado: "3", tipo: "regula", nota: "Abandono sin aviso: sigue el cónyuge que convivía si lo notifica por escrito en un mes; si no, paga ese mes."}
       - {norma: "LAU", articulo: "9", apartado: "1", tipo: "conexa", nota: "Hasta los 5 o 7 años, el inquilino puede no renovar avisando treinta días antes de cada vencimiento."}
-      - {norma: "LAU", articulo: "10", apartado: "1", tipo: "conexa", nota: "En la prórroga tácita, puede no renovar avisando un mes antes del fin de cada anualidad."}
+      - {norma: "LAU", articulo: "10", apartado: "1", tipo: "conexa", nota: "En la prórroga tácita de la vivienda habitual, puede no renovar avisando un mes antes del fin de cada anualidad."}
       - {norma: "LAU", articulo: "22", apartado: "2", tipo: "conexa", nota: "Puede desistir en el mes siguiente al aviso de obras de mejora que afecten a la vivienda."}
       - {norma: "LAU", articulo: "26", tipo: "conexa", nota: "Puede desistir sin indemnización si las obras hacen inhabitable la vivienda."}
       - {norma: "LAU", articulo: "4", apartado: "3", tipo: "conexa", nota: "Uso distinto: el desistimiento depende de lo pactado; el art. 11 es del título II."}
@@ -328,10 +361,13 @@ voces:
     fuera_de_la_herramienta:
       - "RDL 29/2026 (pendiente de convalidación): suprime la indemnización pactable de una mensualidad por año del antiguo art. 11."
     afines: ["Duración y prórroga del arrendamiento de vivienda", "Separación o divorcio del arrendatario", "Arrendamiento de temporada y para uso distinto de vivienda", "Obras y conservación"]
-    # VIGENCIA: LAU 4, 9, 10 y 11 distintos en el espejo (el 11 del espejo aún permite pactar indemnización); notas según la API vigente. LAU 6, 12, 22 y 26, y CC idénticos.
+    # VIGENCIA: LAU 11 entero y 10.1 («de vivienda habitual») en la redacción del RDL 29/2026 (vigor 08-10-2026), leídos en la composición
+    # 597314599f; el 9.1 y el 4.3 no cambian en su letra. LAU 6, 12, 22 y 26, y CC sin cambios.
+    # AVISO: RDL 29/2026 no convalidado a esta fecha (Diputación Permanente, art. 86.2 CE); si se deroga, vuelve el 11 que permitía pactar
+    # indemnización, como ocurrió con el RDL 26/2026. El 10.1 cambia otra vez el 15-11-2026 (RDL 28/2026). Va «provisional» por eso.
     estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Necesidad del arrendador para vivienda propia"
@@ -350,11 +386,14 @@ voces:
       - "Prueba de la necesidad real y momento en que debe existir (comunicación o entrega): jurisprudencial."
       - "Si basta una cláusula genérica de necesidad sin concretar el beneficiario: el 9.3 exige constancia expresa; alcance, jurisprudencial."
     fuera_de_la_herramienta:
-      - "RDL 29/2026, disp. final 5.ª (pendiente de convalidación): frente a su prórroga extraordinaria vale la necesidad aunque no conste en el contrato."
-      - "RDL 28/2026 (vigor 15-11-2026, pendiente de convalidación): la necesidad hasta el segundo grado excluye la indemnización por no prorrogar."
+      - "RDL 29/2026, disp. final 5.ª (pendiente de convalidación): frente a su prórroga extraordinaria vale la necesidad real y acreditada, aunque no conste en el contrato."
+      - "RDL 28/2026 (vigor 15-11-2026, pendiente de convalidación): la necesidad del arrendador persona física hasta el segundo grado excluye la indemnización por no prorrogar."
     afines: ["Duración y prórroga del arrendamiento de vivienda", "Desahucio por expiración del plazo", "Zonas de mercado residencial tensionado y límites de renta"]
-    # VIGENCIA: LAU 9 y 10 distintos en el espejo (9.3 idéntico en su texto; cambia el artículo entero por el 9.4); notas según la API vigente. LEC 250 idéntico.
+    # VIGENCIA: LAU 9.4 y 10 en la redacción del RDL 29/2026 (vigor 08-10-2026), leídos en la composición 597314599f; el 9.1 a 9.3 no
+    # cambian, y el 10.2 y el 10.3 conservan su contenido. LEC 250 sin cambios.
+    # AVISO: RDL 29/2026 y RDL 28/2026 no convalidados a esta fecha (Diputación Permanente, art. 86.2 CE); si se deroga el 29, cae el 9.4,
+    # como ocurrió con el RDL 26/2026. El 15-11-2026 hay que revisar de nuevo el 10. Va «provisional» por eso.
     estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"

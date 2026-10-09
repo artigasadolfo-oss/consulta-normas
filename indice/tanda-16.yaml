@@ -1,5 +1,7 @@
 # Índice de conceptos de «Consulta de normas» — tanda 16 (prioridad B: ejecución, bloque 8, voces 145 a 156)
-# Revisor: armero. Espejo: legalize-es@aca28304d, leído con `git show aca28304d:es/…` (no el árbol de trabajo, que hoy trae erratas).
+# Revisor: armero. Espejo: legalize-es@aca28304d, leído con `git show aca28304d:es/…` (no el árbol de trabajo, que hoy trae erratas),
+# salvo «Deuda remanente tras ejecutar la vivienda habitual», revisada el 9-10-2026 contra legalize-es@597314599f
+# (composición con el RDL 29/2026).
 # Todo precepto citado se ha leído en el espejo en esta pasada. Vigencia: scripts/contraste_boe.py --solo "LEC,CC,LOPJ,CE,LAU,LPH"
 # --espejo-commit aca28304d (08-10-2026). Distintos citados: LEC 685 (solo en la voz 152; el apartado 5 citado es idéntico).
 # Ver tanda-16-notas.md.
@@ -261,13 +263,13 @@ voces:
       - {norma: "LEC", articulo: "579", apartado: "2.b)", tipo: "regula", nota: "Si el adjudicatario o su grupo vende la vivienda en diez años, la deuda se reduce en el 50 % de la plusvalía obtenida."}
       - {norma: "LEC", articulo: "579", apartado: "2.b), párrafo 2.º", tipo: "conexa", nota: "Lo cobrado por encima del umbral liberatorio se pone a disposición del deudor; consta en el decreto y en el Registro."}
       - {norma: "LEC", articulo: "654", apartado: "3", tipo: "regula", nota: "Si no alcanza, se imputa a intereses remuneratorios, principal, moratorios y costas, y se certifica la deuda pendiente."}
-      - {norma: "LEC", articulo: "685", apartado: "5", tipo: "regula", nota: "Contra avalistas por lo que falte, si se les notificó la demanda inicial; base sin intereses de demora de la ejecución."}
+      - {norma: "LEC", articulo: "685", apartado: "5", tipo: "regula", nota: "Seguir por lo que falte (579.1) exige haber notificado la demanda inicial; contra avalistas, base sin intereses de demora."}
       - {norma: "LEC", articulo: "575", apartado: "1 bis", tipo: "regula", nota: "En la ejecución de la vivienda habitual las costas exigibles al deudor no superan el 5 % de lo reclamado."}
       - {norma: "LEC", articulo: "670", apartado: "3, párrafo 6.º", tipo: "conexa", nota: "Vivienda habitual: remate no inferior al 70 %, o a lo debido con mínimo del 60 %; se aplica la imputación del 654.3."}
       - {norma: "LEC", articulo: "671", apartado: "párrafo 2.º", tipo: "conexa", nota: "Subasta desierta: la adjudicación por lo suficiente (mínimo 40 %) termina la ejecución y libera los demás bienes."}
       - {norma: "LEC", articulo: "692", apartado: "1, párrafo 2.º", tipo: "conexa", nota: "Si el dueño es el deudor, lo que excede de la cobertura hipotecaria paga el resto de la deuda tras los acreedores posteriores."}
       - {norma: "LEC", articulo: "693", apartado: "3", tipo: "conexa", nota: "Vivienda habitual: el deudor puede liberarla consignando lo vencido; costas sobre las cuotas atrasadas con el tope del 575.1 bis."}
-      - {norma: "LEC", articulo: "241", apartado: "1.7.º", tipo: "conexa", nota: "La tasa judicial de la ejecución de hipoteca de vivienda habitual no entra en las costas."}
+      - {norma: "LEC", articulo: "241", apartado: "1.7.º", tipo: "conexa", nota: "No entra en costas la tasa de la ejecución de hipoteca para adquirir vivienda habitual ni la de las ulteriores contra ejecutado o avalistas."}
       - {norma: "LEC", articulo: "570", tipo: "conexa", nota: "La ejecución solo termina con la completa satisfacción del ejecutante, por decreto del LAJ."}
       - {norma: "CC", articulo: "1911", tipo: "regula", nota: "El deudor responde del cumplimiento con todos sus bienes, presentes y futuros."}
     no_consta_en_norma:
@@ -278,11 +280,15 @@ voces:
       - "Real Decreto-ley 6/2012, de protección de deudores hipotecarios sin recursos: Código de Buenas Prácticas y dación en pago."
       - "Texto refundido de la Ley Concursal (RDLeg 1/2020): exoneración del pasivo insatisfecho de la persona física."
       - "Ley 1/2013, disposición transitoria 4.ª: régimen transitorio en las ejecuciones en curso (a la que remite la nota del art. 579)."
-    # VIGENCIA: LEC 685 distinto en el espejo (versión del RDL 29/2026, vigente desde el 08-10-2026). Solo cambia el 685.2; el 685.5 citado es idéntico en los dos textos.
+    # VIGENCIA: el RDL 29/2026 (BOE 07-10-2026, vigor 08-10-2026, art. 5.Uno) solo reescribe el 685.2 LEC (certificación de «viviendas»,
+    # sin los párrafos anulados por la STC 26/2025). El 685.5, único apartado citado, no cambia. LEC 241, 570, 575, 579, 654, 670, 671,
+    # 692 y 693 y CC 1911, releídos en la composición: no cambian.
+    # AVISO: RDL 29/2026 (vigor 08-10-2026) no convalidado a esta fecha (Diputación Permanente, art. 86.2 CE); si se deroga, el 685.2
+    # vuelve a la redacción de la Ley 12/2023, como ocurrió con el RDL 26/2026. La voz no cita el 685.2 y pasa a «vigente».
     afines: ["Adjudicación al acreedor y vivienda habitual", "Ejecución hipotecaria: especialidades", "Subasta: convocatoria, posturas y aprobación del remate", "Liquidación de intereses y tasación de costas en la ejecución", "Fianza"]
-    estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    estado: "vigente"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Suspensión de la ejecución"

@@ -1,8 +1,11 @@
 # Índice de conceptos de «Consulta de normas» — tanda 9 (hipotecaria, cautelares, recursos y costas)
-# Revisor: armero. Espejo: legalize-es@aca28304d. Todo precepto citado se ha leído en el espejo en esta pasada.
+# Revisor: armero. Espejo: legalize-es@aca28304d, salvo «Ejecución hipotecaria: especialidades» y «Costas: vencimiento, temeridad y
+# allanamiento», revisadas el 9-10-2026 contra legalize-es@597314599f (composición con el RDL 29/2026). Todo precepto citado se ha
+# leído en el espejo de su revisión.
 # Vigencia: contraste con la API de boe.es (scripts/contraste_boe.py --solo "LEC,LOPJ,LO 1/2025,TRLGDCU,CE,CC", 08-10-2026 07:51):
 # distintos LEC 22 y 685, CC 396 (errata del espejo). LOPJ, LO 1/2025, TRLGDCU y CE: ninguno. Ver tanda-09-notas.md.
-# AVISO: el art. 685.2 LEC del espejo muestra en negrita párrafos anulados por la STC 26/2025; desde el 08-10-2026 rige otro texto.
+# AVISO: el art. 685.2 LEC de legalize-es@aca28304d muestra en negrita párrafos anulados por la STC 26/2025; desde el 08-10-2026 rige
+# otro texto, que es el que trae legalize-es@597314599f (RDL 29/2026, sin los párrafos anulados).
 # Voces 142, 143, 144, 162 y 169 a 176 de la lista maestra (12 voces). Recuento y estados en tanda-09-notas.md.
 
 voces:
@@ -12,13 +15,15 @@ voces:
     remisiones:
       - {norma: "LEC", articulo: "681", apartado: "1", tipo: "regula", nota: "La deuda con prenda o hipoteca puede reclamarse directamente contra los bienes gravados, con las especialidades de este capítulo."}
       - {norma: "LEC", articulo: "682", apartado: "1", tipo: "regula", nota: "Solo si la ejecución se dirige exclusivamente contra los bienes hipotecados o pignorados."}
-      - {norma: "LEC", articulo: "682", apartado: "2.1.º", tipo: "regula", nota: "La escritura fija el precio de tasación para subasta, nunca inferior al 75 % de la tasación oficial."}
+      - {norma: "LEC", articulo: "682", apartado: "2.1.º", tipo: "regula", nota: "La escritura fija el precio de tasación para subasta, nunca inferior al 75 % de la tasación del art. 18 RDL 24/2021."}
       - {norma: "LEC", articulo: "682", apartado: "2.2.º", tipo: "regula", nota: "La escritura fija un domicilio del deudor para requerimientos y notificaciones."}
-      - {norma: "LEC", articulo: "683", apartado: "1", tipo: "conexa", nota: "Cambio de ese domicilio: dentro de la misma población, sin consentimiento del acreedor; fuera, con él."}
+      - {norma: "LEC", articulo: "683", apartado: "1.1.ª", tipo: "conexa", nota: "Inmuebles: sin consentimiento del acreedor en la misma población o en el término que fija la competencia; fuera, con él."}
       - {norma: "LEC", articulo: "684", apartado: "1.1.º", tipo: "regula", nota: "Inmuebles: tribunal del lugar de la finca; no rige la sumisión expresa ni tácita."}
       - {norma: "LEC", articulo: "684", apartado: "2", tipo: "conexa", nota: "El tribunal examina de oficio su competencia territorial."}
       - {norma: "LEC", articulo: "685", apartado: "1", tipo: "regula", nota: "Demanda contra el deudor y, en su caso, el hipotecante no deudor o el tercer poseedor que acreditó su adquisición."}
-      - {norma: "LEC", articulo: "685", apartado: "2", tipo: "regula", nota: "Título y certificación registral; indicar vivienda habitual y gran tenedor. Texto del RDL 29/2026, aún no en el espejo."}
+      - {norma: "LEC", articulo: "685", apartado: "2", tipo: "regula", nota: "Título con los requisitos del despacho y documentos de los arts. 550, 573 y 574; sin título inscrito, certificación registral."}
+      - {norma: "LEC", articulo: "685", apartado: "2, párrafo 3.º", tipo: "regula", nota: "Demanda hipotecaria: decir si es vivienda habitual del deudor y si el ejecutante es gran tenedor (439.6.b)."}
+      - {norma: "LEC", articulo: "685", apartado: "2, párrafo 4.º", tipo: "regula", nota: "Si niega ser gran tenedor, certificación del Registro con la relación de viviendas a nombre del actor."}
       - {norma: "LEC", articulo: "685", apartado: "5", tipo: "conexa", nota: "Para seguir luego contra avalistas o fiadores por lo que falte (579.1), deben haber sido notificados de la demanda."}
       - {norma: "LEC", articulo: "686", apartado: "1", tipo: "regula", nota: "El auto manda requerir de pago al deudor, hipotecante no deudor o tercer poseedor en el domicilio del Registro."}
       - {norma: "LEC", articulo: "686", apartado: "2", tipo: "regula", nota: "Sin requerimiento judicial si se acredita el notarial previo hecho en el domicilio registral (581.2)."}
@@ -34,7 +39,7 @@ voces:
       - {norma: "LEC", articulo: "693", apartado: "1", tipo: "regula", nota: "Impago parcial: basta que venzan tres plazos mensuales o cuotas equivalentes a tres meses."}
       - {norma: "LEC", articulo: "693", apartado: "2", tipo: "regula", nota: "Vencimiento total si se pactó e inscribió; persona física y vivienda: art. 24 Ley 5/2019 y art. 129 bis LH."}
       - {norma: "LEC", articulo: "693", apartado: "3", tipo: "regula", nota: "Vivienda habitual: el deudor libera el bien consignando lo vencido, sin consentimiento del acreedor; otra vez, tras 3 años."}
-      - {norma: "LEC", articulo: "697", tipo: "conexa", nota: "Solo se suspende por causa penal sobre falsedad del título o invalidez del despacho (art. 569)."}
+      - {norma: "LEC", articulo: "697", tipo: "conexa", nota: "Fuera de oposición y tercería, solo suspende la causa penal sobre falsedad del título o invalidez del despacho (569)."}
       - {norma: "LEC", articulo: "698", apartado: "1", tipo: "regula", nota: "Lo demás (nulidad del título, cuantía, vencimiento) va al juicio que corresponda, sin suspender la ejecución."}
       - {norma: "LEC", articulo: "698", apartado: "2", tipo: "conexa", nota: "En ese juicio cabe pedir que se retenga lo que deba entregarse al acreedor, con garantía si no hay solvencia notoria."}
       - {norma: "LEC", articulo: "575", apartado: "1 bis", tipo: "conexa", nota: "Ejecución de vivienda habitual: las costas exigibles al deudor no pasan del 5 % de lo reclamado."}
@@ -46,12 +51,16 @@ voces:
       - "Ley Hipotecaria (arts. 129 y 129 bis) y su Reglamento: venta extrajudicial y vencimiento anticipado inscrito."
       - "Ley 5/2019, de crédito inmobiliario, art. 24: requisitos del vencimiento anticipado; a él remite el 693.2 LEC."
       - "Ley 1/2013, art. 1, y RDL 6/2012 (Código de Buenas Prácticas): suspensión de lanzamientos y medidas para deudores vulnerables."
-      - "RDL 29/2026, arts. 1.5 y 2: suspensión hasta el 31-12-2030 de lanzamientos de vulnerables sin alternativa (pendiente de convalidar)."
+      - "RDL 29/2026 (pendiente de convalidar), art. 1.5: adjudicación bajo el 70 % del valor de mercado, lanzamiento del vulnerable sin alternativa suspendido hasta el 31-12-2030; art. 2: suspensión de procesos."
     afines: ["Oposición en la ejecución hipotecaria", "Adjudicación al acreedor y vivienda habitual", "Deuda remanente tras ejecutar la vivienda habitual", "Despacho de la ejecución y plazo de espera", "Vulnerabilidad y gran tenedor en la demanda", "Subasta: convocatoria, posturas y aprobación del remate", "Cargas anteriores y ocupantes del inmueble subastado"]
-    # VIGENCIA: cita LEC 685, cambiado el 08-10-2026 por el RDL 29/2026 (texto leído en la API, versión BOE-A-2026-20823). Provisional.
+    # VIGENCIA: LEC 685.2 en la redacción del RDL 29/2026 (BOE 07-10-2026, vigor 08-10-2026), leído en la composición: certificación de
+    # «viviendas» (antes «propiedades») y sin los párrafos anulados por la STC 26/2025. 685.1 y 685.5 no cambian. LEC 575, 579 y 681
+    # a 698: idénticos a legalize-es@aca28304d y al texto vigente de boe.es.
+    # AVISO: RDL 29/2026 (vigor 08-10-2026) no convalidado a esta fecha (Diputación Permanente, art. 86.2 CE); si se deroga, el 685.2
+    # vuelve a la redacción de la Ley 12/2023 (certificación de «propiedades»), como ocurrió con el RDL 26/2026. Va «provisional» por eso.
     estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Oposición en la ejecución hipotecaria"
@@ -390,6 +399,8 @@ voces:
       - {norma: "LEC", articulo: "32", apartado: "5", tipo: "regula", nota: "Abogado y procurador no preceptivos: se excluyen, salvo temeridad, abuso o domicilio en otro partido judicial."}
       - {norma: "LEC", articulo: "22", apartado: "1", tipo: "conexa", nota: "Satisfacción extraprocesal con acuerdo de las partes: terminación sin condena en costas."}
       - {norma: "LEC", articulo: "22", apartado: "2, párrafo 2.º", tipo: "conexa", nota: "Si solo se discuten las costas, el auto puede imponerlas con los criterios del art. 395."}
+      - {norma: "LEC", articulo: "22", apartado: "5", tipo: "conexa", nota: "Enervado el desahucio, costas al arrendatario, salvo que no se cobrara por causa imputable al arrendador."}
+      - {norma: "LEC", articulo: "22", apartado: "6", tipo: "conexa", nota: "Enervación extraordinaria del arrendatario vulnerable sin alternativa: la Administración paga también las costas del actor."}
       - {norma: "LEC", articulo: "247", apartado: "3", tipo: "conexa", nota: "Mala fe o abuso del servicio público de Justicia: multa de 180 a 6.000 euros, sin pasar del tercio de la cuantía."}
     no_consta_en_norma:
       - "Temeridad y mala fe a efectos de costas: el texto no las define; criterio jurisprudencial."
@@ -397,11 +408,16 @@ voces:
       - "«Abuso del servicio público de Justicia»: la LEC lo usa sin definirlo; criterio jurisprudencial en formación."
     fuera_de_la_herramienta:
       - "Ley 1/1996, de asistencia jurídica gratuita: costas del beneficiario; a ella remiten los arts. 241.1 y 394.3 LEC."
-    # VIGENCIA: cita LEC 22 (apartados 1 y 2, idénticos en la API); el RDL 29/2026 le añade el apartado 6, que el espejo no trae. Provisional.
+      - "RDL 29/2026 (pendiente de convalidar), art. 2.2: si se suspende el desahucio del vulnerable, la Administración compensa al actor persona física o arrendador social, costas incluidas."
     afines: ["Costas y MASC", "Tasación de costas y su impugnación", "Costas en los recursos", "Allanamiento", "Desistimiento", "Carencia sobrevenida de objeto / satisfacción extraprocesal", "Buena fe procesal, abuso del servicio de justicia y multas"]
+    # VIGENCIA: LEC 22.6 en la redacción del RDL 29/2026 (BOE 07-10-2026, vigor 08-10-2026; su DT 2.ª lo extiende a las ejecuciones en
+    # curso sin lanzamiento practicado), leído en la composición; no se aplica a los casos del art. 2.1 del propio RDL. LEC 22.1, 22.2 y
+    # 22.5, y LEC 32, 241, 243, 247 y 394 a 398: idénticos a legalize-es@aca28304d y al texto vigente de boe.es.
+    # AVISO: RDL 29/2026 (vigor 08-10-2026) no convalidado a esta fecha (Diputación Permanente, art. 86.2 CE); si se deroga, el 22.6
+    # desaparece, como ocurrió con el RDL 26/2026. Va «provisional» por eso.
     estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Costas y MASC"

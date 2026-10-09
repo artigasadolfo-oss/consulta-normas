@@ -1,6 +1,8 @@
 # Índice de conceptos de «Consulta de normas» — tanda 14 (prioridad B: prueba, verbales especiales y zonas tensionadas)
-# Revisor: armero. Espejo: legalize-es@aca28304d, leído con `git show aca28304d:es/…` (no el árbol de trabajo, que hoy trae erratas).
-# Todo precepto citado se ha leído en el espejo en esta pasada. Vigencia: scripts/contraste_boe.py --solo "LEC,LOPJ,CE,CC,LAU,
+# Revisor: armero. Espejo: legalize-es@aca28304d, leído con `git show aca28304d:es/…` (no el árbol de trabajo, que hoy trae erratas),
+# salvo «Zonas de mercado residencial tensionado y límites de renta», revisada el 9-10-2026 contra legalize-es@597314599f
+# (composición con el RDL 29/2026). Todo precepto citado se ha leído en el espejo de su revisión.
+# Vigencia: scripts/contraste_boe.py --solo "LEC,LOPJ,CE,CC,LAU,
 # LPH" --espejo-commit aca28304d (08-10-2026, 12:50). Distintos citados: solo LAU 10, 17 y 18 (voz 102, provisional; notas según la
 # API vigente y el RDL 29/2026). LEC 22 y 685, CC 396 y LPH 10 distintos pero no citados.
 # Voces 67, 68, 69, 70, 71, 72, 73, 88, 89, 90 y 102 de la lista maestra (11 voces, prioridad B). Ver tanda-14-notas.md.
@@ -349,11 +351,12 @@ voces:
     normas_base: ["LAU"]
     remisiones:
       - {norma: "LAU", articulo: "17", apartado: "6", tipo: "regula", nota: "Zona tensionada: la renta inicial no supera la última de vivienda de los cinco años previos, actualizada (texto de 08-10-2026)."}
-      - {norma: "LAU", articulo: "17", apartado: "6, párrafo 2.º", tipo: "regula", nota: "Prohibido repercutir cuotas, gastos, servicios o tributos que no recogía el contrato anterior (desde 08-10-2026)."}
+      - {norma: "LAU", articulo: "17", apartado: "6, párrafo 2.º", tipo: "regula", nota: "Prohibido repercutir cuotas, gastos, servicios o tributos que no recogía el contrato anterior (servicios y tributos, desde 08-10-2026)."}
       - {norma: "LAU", articulo: "17", apartado: "6, párrafo 3.º", tipo: "regula", nota: "Hasta un 10 % más si hubo rehabilitación, mejora energética o de accesibilidad en dos años, o contrato de diez o más años."}
       - {norma: "LAU", articulo: "17", apartado: "7", tipo: "regula", nota: "Gran tenedor en zona tensionada: tope del índice de precios de referencia, sin repercutir conceptos que lo superen."}
       - {norma: "LAU", articulo: "17", apartado: "7, párrafo 2.º", tipo: "regula", nota: "Mismo tope para vivienda sin contrato en cinco años, si lo prevé la resolución ministerial que declara la zona."}
       - {norma: "LAU", articulo: "17", apartado: "8", tipo: "conexa", nota: "Temporales sucesivos en la misma vivienda: incremento anual no superior al IRAV (desde 08-10-2026)."}
+      - {norma: "LAU", articulo: "17", apartado: "9", tipo: "conexa", nota: "Por habitaciones: la suma de las rentas parciales simultáneas no supera la renta unitaria de la vivienda completa (desde 08-10-2026)."}
       - {norma: "LAU", articulo: "17", apartado: "9, párrafo 2.º", tipo: "regula", nota: "Por habitaciones en zona tensionada: renta unitaria o suma de parciales dentro de los límites 6, 7 y 8 (desde 08-10-2026)."}
       - {norma: "LAU", articulo: "dt 7", tipo: "regula", nota: "El 17.7 rige para contratos desde la Ley 12/2023 y una vez aprobado el sistema de índices de precios de referencia."}
       - {norma: "LAU", articulo: "10", apartado: "3", tipo: "regula", nota: "Zona tensionada: prórroga extraordinaria anual hasta tres años a petición del inquilino; salvo pacto, nuevo contrato o necesidad."}
@@ -362,19 +365,24 @@ voces:
       - {norma: "LAU", articulo: "6", tipo: "conexa", nota: "Son nulas las estipulaciones que modifiquen en perjuicio del arrendatario las normas del título II, salvo autorización legal."}
     no_consta_en_norma:
       - "Consecuencia de pactar una renta por encima del tope (nulidad del exceso, devolución, plazo): la LAU no la regula."
-      - "Si la renta de un arrendamiento temporal previo cuenta como «última renta» del 17.6, que ahora dice «de vivienda»: sin criterio judicial."
-      - "Vivienda antes destinada a uso turístico: no hubo «contrato de arrendamiento de vivienda» previo; solo cabe el 17.7, párrafo 2.º."
+      - "Si la renta de un arrendamiento temporal previo cuenta como «última renta» del 17.6, que ahora dice «de vivienda» (su párrafo 3.º aún dice «de vivienda habitual»): sin criterio judicial."
+      - "Vivienda antes destinada a uso turístico, sin contrato de arrendamiento de vivienda en los cinco años previos: no hay «última renta» del 17.6; solo cabe el 17.7, párrafo 2.º."
     fuera_de_la_herramienta:
-      - "Ley 12/2023, por el derecho a la vivienda, arts. 3.k) y 18: concepto de gran tenedor y procedimiento de declaración de la zona."
+      - "Ley 12/2023, por el derecho a la vivienda, arts. 3.k) (redacción del RDL 29/2026) y 18: concepto de gran tenedor y procedimiento de declaración de la zona."
       - "Resoluciones trimestrales del Ministerio de Vivienda (BOE) con las zonas declaradas y su vigencia; sistema estatal de índices de referencia."
       - "RDL 29/2026, disp. final 6.ª (sin convalidar): hasta 31-12-2027 sin nuevo pacto, subida máxima del 2 %; ninguna si la renta supera el índice."
       - "RDL 29/2026, disp. final 5.ª (sin convalidar): prórroga extraordinaria de hasta dos años, incompatible con la del 10.3 LAU, que prevalece."
-      - "RDL 28/2026 (vigor 15-11-2026, sin convalidar): la prórroga del 10.3 pasa al 10.6; el nuevo 10.2.e) aplica el 17.6 fuera de zona tensionada."
-      - "Ley 12/2023, disp. trans. 4.ª.1 (redacción del RDL 29/2026): los contratos anteriores a esa ley pueden acogerse a las prórrogas del art. 10 LAU."
+      - "RDL 28/2026 (vigor 15-11-2026, sin convalidar): la prórroga del 10.3 pasa al 10.6; la oferta de nuevo contrato del 10.2.e) se ajusta al 17.6 aun fuera de zona tensionada."
+      - "Ley 12/2023, disp. trans. 4.ª.1 (redacción del RDL 29/2026): los contratos anteriores a esa ley pueden acogerse a las prórrogas del art. 10 LAU y se actualizan con el tope de la da 11.ª y del 18.1 LAU."
     # PENDIENTE: verificar en el BOE (resoluciones trimestrales del Ministerio) que ningún municipio de la Comunitat Valenciana está declarado zona tensionada; solo consta en fuentes secundarias, a 29-07-2026.
-    # VIGENCIA: LAU 10, 17 y 18 distintos en el espejo (17.8 y 17.9 no existen en él); notas según la API vigente y el texto del RDL 29/2026. LAU 6, da 11 y dt 7 idénticos.
+    # VIGENCIA: LAU 10.1, 17.6 a 17.9 y 18.1 en la redacción del RDL 29/2026 (BOE 07-10-2026, vigor 08-10-2026), leída en la composición
+    # 597314599f: el 17.6 dice ya «de vivienda» y separa en su párrafo 2.º la prohibición de repercutir; el 17.8 y el 17.9 son nuevos.
+    # El 10.3 no lo toca el RDL 29/2026; el 15-11-2026 lo sustituye el 10.6 (RDL 28/2026) y hay que revisar de nuevo la voz.
+    # LAU 6, da 11 y dt 7 sin cambios. Disp. finales 5.ª y 6.ª del RDL 29/2026 y disp. trans. 4.ª Ley 12/2023, leídas en boe.es.
+    # AVISO: RDL 29/2026 no convalidado a esta fecha (Diputación Permanente, art. 86.2 CE); si se deroga, caen el 17.8, el 17.9, el IRAV
+    # del 18.1 y la redacción nueva del 17.6 y del 17.7, como ocurrió con el RDL 26/2026. Va «provisional» por eso.
     afines: ["Renta: pago, recibo y actualización", "Duración y prórroga del arrendamiento de vivienda", "Arrendamiento de temporada y para uso distinto de vivienda", "Gastos generales, servicios e IBI", "Vivienda de uso turístico: exclusión de la LAU", "Vulnerabilidad y gran tenedor en la demanda"]
     estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
