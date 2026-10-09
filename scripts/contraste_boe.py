@@ -185,6 +185,23 @@ def clave_orden(v_idx):
     return (v.get("fecha_publicacion") or "00000000", fv, i)
 
 
+MESES = {m: i for i, m in enumerate("enero febrero marzo abril mayo junio julio agosto septiembre octubre noviembre diciembre".split(), 1)}
+NOTA_FUTURA = re.compile(r"Téngase en cuenta que, con efectos de (\d{1,2}) de ([a-záéíóú]+) de (\d{4}), se modifica por", re.I)
+
+
+def fecha_nota_futura(version):
+    """'AAAA-MM-DD' si la versión lleva la nota «Téngase en cuenta que, con efectos de <fecha>, se modifica por … con la siguiente redacción»: así
+    anuncia el BOE una reforma YA PUBLICADA que aún no rige cuando no crea una versión nueva con fecha futura. Caso real (09-10-2026): art. 10 LAU,
+    RDL 28/2026, en vigor el 15-11-2026. Ojo: la versión que lleva la nota YA es el texto vigente (aquí, el del RDL 29/2026); el texto futuro va
+    dentro de la nota, no en el cuerpo, y la `fecha_vigencia` vacía de esa versión NO significa «futura» (verificado en el cuerpo del artículo)."""
+    for h in version:
+        if h.tag == "blockquote":
+            m = NOTA_FUTURA.search(" ".join(texto_p(h).split()))
+            if m and m.group(2).lower() in MESES:
+                return f"{m.group(3)}-{MESES[m.group(2).lower()]:02d}-{int(m.group(1)):02d}"
+    return None
+
+
 def bloques_boe(xml_texto, hoy=None):
     """Texto de cada artículo/disposición según la API del BOE. Devuelve (vigente, futuras):
     vigente = {clave: esqueleto} de la versión más recientemente publicada entre las que YA están en vigor en `hoy`;
@@ -215,6 +232,10 @@ def bloques_boe(xml_texto, hoy=None):
             if esqueleto(texto_version(v)) != vigente[k]:
                 futuras[k] = f"{fv[:4]}-{fv[4:6]}-{fv[6:]}"
                 break
+        if k not in futuras:   # reforma anunciada solo en una nota «Téngase en cuenta que, con efectos de…» (no hay versión con fecha futura)
+            fn = fecha_nota_futura(actual[2])
+            if fn and fn.replace("-", "") > hoy:
+                futuras[k] = fn
     return vigente, futuras
 
 

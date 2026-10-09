@@ -41,6 +41,26 @@ caso("el día que entra en vigor pasa a ser el vigente y deja de ser futura", vi
 xml = doc(bloque("a5", "Artículo 5", ver("20250101", "20250101", ["Artículo 5. X.", "Igual."]), ver("20270101", "20261201", ["Artículo 5. X.", "Igual."])))
 caso("versión futura con el mismo texto -> no es aviso", c.bloques_boe(xml, HOY)[1] == {})
 
+print("[reforma anunciada en una NOTA «Téngase en cuenta que, con efectos de…» (caso real: art. 10 LAU, RDL 28/2026, en vigor el 15-11-2026)]")
+NOTA = ('<blockquote class="siempreSeVe">Téngase en cuenta que, con efectos de 15 de noviembre de 2026, se modifica por el art. único del Real Decreto-ley 28/2026, '
+        'de 6 de octubre, Ref. BOE-A-2026-20822#au, con la siguiente redacción: «1. Texto futuro completamente distinto.»</blockquote>')
+xml = doc(bloque("a10", "Artículo 10",
+    ver("20230526", "20230525", ["Artículo 10. Prórroga.", "1. Texto de 2023."], id_norma="BOE-A-2023-12203"),
+    ver("", "20261007", ["Artículo 10. Prórroga.", "1. Texto del RDL 29 (vigente desde el 08-10-2026)."], id_norma="BOE-A-2026-20822", extra=NOTA)))
+vig, fut = c.bloques_boe(xml, HOY)
+caso("la versión con fecha_vigencia VACÍA es la vigente: su cuerpo es el texto actual (el futuro va dentro de la nota)",
+     vig["10"] == c.esqueleto("Prórroga. 1. Texto del RDL 29 (vigente desde el 08-10-2026)."), vig)
+caso("y la nota se avisa como reforma futura del 15-11-2026", fut == {"10": "2026-11-15"}, fut)
+vig2, fut2 = c.bloques_boe(xml, dt.date(2026, 11, 15))
+caso("el 15-11-2026 la nota deja de ser un aviso de futuro", fut2 == {}, fut2)
+xml_pasada = xml.replace("15 de noviembre de 2026", "15 de enero de 2026")
+caso("una nota con fecha ya pasada no es aviso", c.bloques_boe(xml_pasada, HOY)[1] == {})
+caso("fecha_nota_futura: mes en letra -> AAAA-MM-DD; sin nota -> None",
+     c.fecha_nota_futura(c.ET.fromstring("<version>" + NOTA + "</version>")) == "2026-11-15" and c.fecha_nota_futura(c.ET.fromstring("<version><p>x</p></version>")) is None)
+xml2 = doc(bloque("a22", "Artículo 22", ver("20250403", "20250103", ["Artículo 22. T.", "1. Texto."], extra=NOTA),   # la nota va en la versión VIGENTE
+                  ver("20261008", "20261007", ["Artículo 22. T.", "1. Texto.", "6. Nuevo."])))                  # y hay otra con fecha futura propia
+caso("si ya hay una versión con fecha futura, manda la de la versión (la nota no la pisa)", c.bloques_boe(xml2, HOY)[1] == {"22": "2026-10-08"}, c.bloques_boe(xml2, HOY)[1])
+
 print("[claves y texto: el atributo `titulo` va en letra; el primer párrafo lleva la cifra]")
 xml = doc(bloque("aquintobis", "Artículo quinto bis", ver("20250101", "20250101", ["Artículo 5 bis.", "Texto."])),
           bloque("ada1", "Disposición adicional primera", ver("20250101", "20250101", ["Disposición adicional primera. Algo.", "Texto da."])),
