@@ -43,7 +43,7 @@ NORMAS = [
     dict(id="lo1-2025", boe="BOE-A-2025-76",  sigla="LO 1/2025", corto="LO 1/2025 de eficiencia del Servicio Público de Justicia", secuencial=True),
     dict(id="lau",    boe="BOE-A-1994-26003", sigla="LAU",       corto="Ley de Arrendamientos Urbanos"),
     dict(id="lph",    boe="BOE-A-1960-10906", sigla="LPH",       corto="Ley de Propiedad Horizontal"),
-    dict(id="cc",     boe="BOE-A-1889-4763",  sigla="CC",        corto="Código Civil"),
+    dict(id="cc",     boe="BOE-A-1889-4763",  sigla="CC",        corto="Código Civil", disp_ordinales=True),
     dict(id="lopj",   boe="BOE-A-1985-12666", sigla="LOPJ",      corto="Ley Orgánica del Poder Judicial"),
     dict(id="loe",    boe="BOE-A-1999-21567", sigla="LOE",       corto="Ley de Ordenación de la Edificación"),
     dict(id="trlgdcu", boe="BOE-A-2007-20555", sigla="TRLGDCU",  corto="Ley General de Consumidores y Usuarios", previo_rdl="RDL 1/2007"),
@@ -87,7 +87,7 @@ HEAD = re.compile(r"^(#{1,6})\s+(.*\S)\s*$")
 ESTRUCT = re.compile(r"^(?:(?:LIBRO|TÍTULO|TITULO|CAPÍTULO|CAPITULO|SECCIÓN|SECCION|SUBSECCIÓN|Libro|Título|Titulo|Capítulo|Capitulo|Sección|Seccion|Subsección|Subseccion)\b|§)")   # 08-10-2026: también en minúscula («Capítulo I.» de la LECrim) y «§ 1.º Del saneamiento…» (CC, nivel 5): sin esto el rótulo quedaba pegado al texto del artículo vecino
 # Rótulos de estructura que solo existen en una norma concreta (opción estruct_extra de NORMAS; solo niveles 2 a 5, nunca los que citan otra ley entre « »)
 ESTRUCT_EXTRA = {
-    "cc": re.compile(r"^(?:Disposici[oó]n(?:es)?\s+(?:preliminar(?:es)?|general(?:es)?)\b|Del?\s)"),
+    "cc": re.compile(r"^(?:Disposici[oó]n(?:es)?\s+(?:preliminar(?:es)?|general(?:es)?|final|adicionales|transitorias|derogatorias)\b|Del?\s)"),
     "lecrim": re.compile(r"^(?:Del?\s|Utilizaci[oó]n\s)"),   # el nombre del Título cuando viene en una línea aparte («TÍTULO IV» + «De las personas a quienes…»)
 }
 PREAM = re.compile(r"^(PREÁMBULO|EXPOSICIÓN DE MOTIVOS)\b", re.I)
@@ -175,7 +175,39 @@ def lee_norma(cfg):
         k, _, v = ln.partition(":")
         meta[k.strip()] = v.strip().strip('"')
     cuerpo = texto[m.end():]
-    return raw, meta, cuerpo.split("\n")
+    lineas = cuerpo.split("\n")
+    if cfg.get("disp_ordinales"):
+        lineas = reescribe_disp_ordinales(lineas)
+    return raw, meta, lineas
+
+
+def reescribe_disp_ordinales(lineas):
+    """Opción `disp_ordinales` (Código Civil). Tras el art. 1976 el BOE pone una línea de texto plano («DISPOSICIONES TRANSITORIAS»,
+    «DISPOSICIONES ADICIONALES») y cabeceras `###### Primera.` sin la palabra «Disposición»: el analizador las dejaba dentro del texto
+    del art. 1976. Se reescriben como cabeceras normales (`#### Disposiciones transitorias`, `###### Disposición transitoria primera.`)
+    ANTES de analizar; la prueba de reconstrucción compara contra estas mismas líneas, de modo que no se pierde ni se pisa texto legal.
+    Solo toca la línea plana en mayúsculas y los ordinales sueltos que vienen después de ella; el cuerpo de cada disposición no se modifica."""
+    plana = re.compile(r"^DISPOSICI(?:Ó|O)N(?:ES)?\s+(ADICIONAL(?:ES)?|TRANSITORIAS?|FINAL|DEROGATORIAS?)\s*$")
+    suelta = re.compile(r"^######\s+([A-Za-zÁÉÍÓÚáéíóúñ]+)\.\s*$")
+    sing = {"ADICIONAL": "adicional", "ADICIONALES": "adicional", "TRANSITORIA": "transitoria", "TRANSITORIAS": "transitoria",
+            "FINAL": "final", "DEROGATORIA": "derogatoria", "DEROGATORIAS": "derogatoria"}
+    out, tipo = [], None
+    for ln in lineas:
+        m = plana.match(ln.strip())
+        if m:
+            tipo = sing[m.group(1)]
+            plural = m.group(1).endswith("S") and m.group(1) != "FINAL"
+            out.append("## Disposiciones " + {"adicional": "adicionales", "transitoria": "transitorias", "derogatoria": "derogatorias"}[tipo]
+                       if plural else "#### Disposición " + tipo)
+            continue
+        s = suelta.match(ln) if tipo else None
+        if s and not re.match(r"^Art[ií]culo", s.group(1), re.I):
+            out.append(f"###### Disposición {tipo} {s.group(1).lower()}.")
+            continue
+        if ln.startswith("######") and tipo and not s:
+            tipo = None      # otra cabecera de nivel 6 (un artículo): se acabó la sección de disposiciones
+        out.append(ln)
+    return out
 
 
 def parse_norma(cfg, lineas):

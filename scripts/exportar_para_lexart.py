@@ -28,6 +28,9 @@ ESQUEMA (esquema = "consulta-normas/lexart-corpus@1"; si cambia algo incompatibl
       "sha256": "...",                  huella del fichero fuente del espejo
       "dir": "es" | "es-vc",            carpeta del espejo
       "fuente": "texto consolidado del BOE" | "DOGV, importado a mano",
+      "contraste": {"fecha": "AAAA-MM-DD", "avisos": {"<clave>": [["d"], ["f", "AAAA-MM-DD"]]}},   contraste con la API de boe.es del día de la exportación:
+                                              "d" = el texto del espejo difiere del consolidado vigente; "f" = reforma ya publicada que entra en vigor en esa fecha.
+                                              Sin red la exportación FALLA (no se exporta sin avisos); --sin-contraste la fuerza y deja "contraste": null.
       "recuento": {"articulos": N, "disposiciones": M, "bloques": B},   los de build.py (artículos reales, con bis/ter y los números que
                                                                          cubren los rangos derogados; disposiciones aparte)
       "bloques": [ {                    en el orden del texto
@@ -131,6 +134,9 @@ def bloque(c):
 def exporta():
     alias_plantilla = alias_de_plantilla()
     normas, resumen = [], []
+    av, av_fecha = ({}, None) if SIN_CONTRASTE else build.avisos_boe(build.NORMAS)
+    if av_fecha is None and not SIN_CONTRASTE:
+        raise SystemExit("no he podido contrastar con boe.es: no se exporta sin avisos de diferencia/reforma (usa --sin-contraste solo a sabiendas)")
     for cfg in build.NORMAS:
         raw, meta, chunks, avisos, n_cab, n_art, n_disp = build.analiza(cfg)
         bloques = [bloque(c) for c in chunks]
@@ -148,7 +154,8 @@ def exporta():
             url=meta.get("url_html_consolidada", ""), estado=meta.get("status", ""), actualizada=meta.get("last_updated", ""),
             sha256=hashlib.sha256(raw).hexdigest(), dir=cfg.get("dir", "es"),
             fuente="DOGV, importado a mano" if cfg.get("dir") == "es-vc" else "texto consolidado del BOE",
-            recuento=dict(articulos=n_art, disposiciones=n_disp, bloques=len(chunks)), bloques=bloques))
+            recuento=dict(articulos=n_art, disposiciones=n_disp, bloques=len(chunks)),
+            contraste=None if av_fecha is None else dict(fecha=av_fecha, avisos=av.get(cfg["sigla"], {})), bloques=bloques))
         resumen.append((cfg["sigla"], n_art, n_disp, len(bloques)))
     return dict(esquema=ESQUEMA, compilado=dt.date.today().isoformat(), corpus_commit=build.git_head(), normas=normas), resumen
 
@@ -172,10 +179,16 @@ def contrasta_con_manifiesto(datos):
         raise SystemExit("normas.json y la exportación no tienen las mismas normas")
 
 
+SIN_CONTRASTE = False
+
+
 def main():
+    global SIN_CONTRASTE
     ap = argparse.ArgumentParser()
+    ap.add_argument("--sin-contraste", action="store_true", help="exporta sin consultar boe.es (no recomendado)")
     ap.add_argument("--salida", default=str(AQUI / "salida" / "lexart-corpus.json"))
     a = ap.parse_args()
+    SIN_CONTRASTE = a.sin_contraste
     datos, resumen = exporta()
     contrasta_con_manifiesto(datos)
     total = sum(r[3] for r in resumen)
