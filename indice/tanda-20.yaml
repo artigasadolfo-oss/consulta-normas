@@ -1,5 +1,7 @@
 # Índice de conceptos de «Consulta de normas» — tanda 20 (prioridad B: voces 228 a 233 y 241 a 246, cierre del bloque 12 y bloque 13)
-# Revisor: armero. Espejo: legalize-es@aca28304d, leído con `git show aca28304d:es/…` (no el árbol de trabajo, que hoy trae erratas).
+# Revisor: armero. Espejo: legalize-es@aca28304d, leído con `git show aca28304d:es/…` (no el árbol de trabajo, que hoy trae erratas),
+# salvo «Retracto legal de comuneros y colindantes», revisada el 9-10-2026 contra legalize-es@597314599f
+# (composición con el RDL 29/2026).
 # Todo precepto citado se ha leído en el espejo en esta pasada. Vigencia: contraste con la API de boe.es (08-10-2026).
 # Ver tanda-20-notas.md.
 
@@ -75,16 +77,18 @@ voces:
       - {norma: "CC", articulo: "1506", tipo: "conexa", nota: "La venta se resuelve también por el retracto convencional o por el legal."}
       - {norma: "LEC", articulo: "249", apartado: "1.7.º", tipo: "regula", nota: "La acción de retracto de cualquier tipo se tramita por el juicio ordinario, sea cual sea la cuantía."}
       - {norma: "LEC", articulo: "266", apartado: "2.º", tipo: "regula", nota: "Con la demanda, principio de prueba del título y, si la ley o el contrato la exigen, consignación del precio o caución."}
-    # VIGENCIA: CC 396 difiere entre el espejo y boe.es solo por una errata del espejo en el párrafo 1.º («los elemento de cierre»); el párrafo 3.º citado es idéntico en ambos textos.
+    # VIGENCIA: CC 396 cambia en la composición solo porque corrige la errata del párrafo 1.º («los elementos de cierre», como boe.es);
+    # el párrafo 3.º citado no cambia. El RDL 29/2026 no toca ningún artículo citado. CC 1067, 1506, 1511, 1518 y 1521 a 1525 y
+    # LEC 249 y 266, releídos en la composición: no cambian.
     no_consta_en_norma:
       - "Caducidad del plazo de nueve días y exigencia de conocimiento completo de la venta (precio y condiciones): jurisprudencial."
       - "Carácter rústico de la finca del 1523 según su destino y no su clasificación urbanística: jurisprudencial."
       - "Si la consignación del precio es requisito de admisión o basta la caución del 266 LEC: casuística."
       - "Retracto de comuneros en ventas de la cuota en subasta judicial o de la totalidad de la cosa: jurisprudencial."
     afines: ["Copropiedad y acción de división de cosa común", "Derechos de tanteo y retracto del arrendatario", "Retracto convencional", "Cesión de créditos y retracto de crédito litigioso", "Partición de la herencia y su impugnación", "Caducidad de la acción (como excepción)", "Compraventa: entrega, precio y riesgos"]
-    estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    estado: "vigente"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Préstamo e intereses"

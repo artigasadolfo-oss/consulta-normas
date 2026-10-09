@@ -1,10 +1,12 @@
 # Índice de conceptos de «Consulta de normas» — tanda 15 (prioridad B: resto de la LAU y propiedad horizontal)
-# Revisor: armero. Espejo: legalize-es@aca28304d, leído con `git show aca28304d:es/…` (no el árbol de trabajo, que hoy trae erratas).
-# Todo precepto citado se ha leído en el espejo en esta pasada. Vigencia: scripts/contraste_boe.py --solo "LEC,LAU,LPH,CC"
+# Revisor: armero. Espejo: legalize-es@aca28304d, leído con `git show aca28304d:es/…` (no el árbol de trabajo, que hoy trae erratas),
+# salvo las 9 voces revisadas el 9-10-2026 contra legalize-es@597314599f (composición: aca28304d + LAU entera, LEC 22 y 685 y CC 396
+# de a5e9eecce6): todas menos «Enajenación de la finca arrendada…», «Administrador y secretario» y «Complejos inmobiliarios…».
+# Todo precepto citado se ha leído en el espejo de su revisión. Vigencia: scripts/contraste_boe.py --solo "LEC,LAU,LPH,CC"
 # --espejo-commit aca28304d (08-10-2026, 12:56). Distintos citados: LAU 2, 3, 4, 5, 7, 10, 25 y 27 (RDL 29/2026); LPH 10 (versión futura
 # 23-10-2026, ya en el espejo; apartados citados idénticos); CC 396 (errata del espejo). Notas LAU según la API vigente.
-# Voces 103 a 110 y 126 a 129 de la lista maestra: 12 voces (prioridad B), 189 remisiones, 85 artículos distintos;
-# 4 vigentes y 8 provisionales. Ver tanda-15-notas.md.
+# Voces 103 a 110 y 126 a 129 de la lista maestra: 12 voces (prioridad B), 190 remisiones, 85 artículos distintos;
+# 5 vigentes y 7 provisionales. Ver tanda-15-notas.md (08-10-2026) y docs/revision-rdl29/tanda-15-notas.md (09-10-2026).
 
 voces:
   - voz: "Subrogación"
@@ -35,9 +37,12 @@ voces:
     fuera_de_la_herramienta:
       - "Texto refundido de la LAU de 1964 (Decreto 4104/1964), arts. 58 y 60: subrogaciones y traspasos a que remiten las dt 2.ª y 3.ª."
     afines: ["Separación o divorcio del arrendatario", "Cesión y subarriendo (también del local)", "Arrendamientos de renta antigua (anteriores a 1995)", "Duración y prórroga del arrendamiento de vivienda", "Desistimiento del arrendatario", "Sucesión procesal (muerte de la parte y transmisión del objeto litigioso)"]
+    # VIGENCIA: LAU dt 2.ª y dt 3.ª distintas en la composición 597314599f solo por el formato de sus tablas (fila de cabecera);
+    # dt 2.ª 4 y 9 y dt 3.ª 3 citados, idénticos letra a letra. LAU 6, 8, 12, 15, 16 y 33 sin cambios. Ninguna remisión depende del
+    # RDL 29/2026: sigue «vigente». Solo la 3.ª entrada de no_consta_en_norma alude a la vivienda temporal (art. 2.3, del RDL 29/2026).
     estado: "vigente"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Cesión y subarriendo (también del local)"
@@ -64,13 +69,17 @@ voces:
     no_consta_en_norma:
       - "Consentimiento tácito del arrendador (cobra la renta sabiendo del subarriendo o la cesión): jurisprudencial."
       - "Cambio de socios o de control de la sociedad arrendataria: si es cesión encubierta, jurisprudencial (el 32.3 solo trata fusión y escisión)."
-      - "Subarriendo de habitación tras el nuevo 2.1: si el subarrendatario queda protegido como arrendatario de vivienda habitual, sin criterio."
+      - "Alcance de la remisión del 8.2 al título II en el subarriendo de habitación para vivienda habitual (plazo mínimo frente a su 3.er párrafo): sin criterio."
       - "Subarriendo encubierto (alquiler de habitaciones o turístico por el inquilino) y su prueba: casuística."
-    # VIGENCIA: LAU 2, 4 y 27 distintos en el espejo (RDL 29/2026, sin convalidar). 4.3 y 27.2.c) idénticos; 2.1 cambia (habitación). Notas según la API vigente.
+    # VIGENCIA: LAU 2.1 en la redacción del RDL 29/2026 (BOE 07-10-2026, vigor 08-10-2026), leída en la composición 597314599f, que la
+    # API da por idéntica al BOE. LAU 4.3 y 27.2.c), aunque sus artículos cambian, son idénticos al texto anterior; LAU 6, 8, 32 y 35 y
+    # CC 1550 a 1552 sin cambios.
+    # AVISO: RDL 29/2026 no convalidado a esta fecha (Diputación Permanente, art. 86.2 CE); si se deroga, el 2.1 vuelve a «necesidad
+    # permanente de vivienda» sin la habitación, como ocurrió con el RDL 26/2026. Va «provisional» por eso.
     afines: ["Subrogación", "Resolución del contrato por incumplimiento", "Desahucio por precario", "Arrendamiento de temporada y para uso distinto de vivienda", "Arrendamiento de cosas en el Código Civil (régimen supletorio)", "Ámbito de la LAU y arrendamientos excluidos"]
     estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Enajenación de la finca arrendada y resolución del derecho del arrendador"
@@ -110,7 +119,7 @@ voces:
       - {norma: "LAU", articulo: "25", apartado: "2", tipo: "regula", nota: "Tanteo en 30 días naturales desde la notificación fehaciente de precio y condiciones; en venta conjunta, precio imputado y criterios."}
       - {norma: "LAU", articulo: "25", apartado: "2, párrafo 2.º", tipo: "regula", nota: "Los efectos de esa notificación caducan a los 180 días naturales."}
       - {norma: "LAU", articulo: "25", apartado: "3", tipo: "regula", nota: "Retracto si no se notificó, faltó un requisito (precio imputado incluido) o se vendió más barato; 30 días desde copia de la escritura."}
-      - {norma: "LAU", articulo: "25", apartado: "4", tipo: "regula", nota: "Prefiere a cualquier derecho similar, salvo el retracto del condueño o el convencional inscrito antes del arrendamiento."}
+      - {norma: "LAU", articulo: "25", apartado: "4", tipo: "regula", nota: "Prefiere a cualquier otro derecho similar, salvo el retracto del condueño de la vivienda o el convencional ya inscrito al celebrarse el arrendamiento."}
       - {norma: "LAU", articulo: "25", apartado: "5", tipo: "conexa", nota: "Para inscribir la venta hay que justificar las notificaciones; en venta conjunta, precio imputado en escritura."}
       - {norma: "LAU", articulo: "25", apartado: "6", tipo: "conexa", nota: "Si se venden también los accesorios arrendados por el mismo arrendador, no cabe ejercerlo solo sobre la vivienda."}
       - {norma: "LAU", articulo: "25", apartado: "7", tipo: "regula", nota: "Desde 08-10-2026 no decae por venderse junto con otros inmuebles o activos, si la vivienda es jurídicamente individualizable."}
@@ -131,14 +140,20 @@ voces:
       - "Local: si la prohibición de renunciar (25.8) le alcanza, pese a que el título III cede ante el pacto (4.3): sin criterio judicial."
       - "Si el retracto del arrendatario exige consignar el precio (266.2.º: «cuando se exija por ley o por contrato»): jurisprudencial."
       - "Transmisiones que no son compraventa (dación en pago, aportación a sociedad, permuta): alcance del art. 25, jurisprudencial."
+      - "Venta de una cuota indivisa de la vivienda arrendada: si da tanteo al arrendatario (25.1: «la vivienda») o solo retracto al condueño: jurisprudencial."
     fuera_de_la_herramienta:
-      - "RDL 29/2026 (sin convalidar): da la redacción vigente del art. 25 LAU; si se deroga, vuelve el texto anterior (renuncia pactable)."
+      - "RDL 29/2026 (pendiente de convalidación): da la redacción vigente del art. 25 LAU; si se deroga, vuelve el texto anterior (renuncia pactable)."
       - "Legislación estatal y autonómica de vivienda: tanteo y retracto de la Administración en ventas conjuntas (art. 25.7 LAU)."
-    # VIGENCIA: LAU 4 y 25 distintos en el espejo (RDL 29/2026); el espejo trae el 25 antiguo (renuncia pactable, sin reglas de venta conjunta). Notas según la API vigente. LAU 31 idéntico.
+    # VIGENCIA: LAU 25 en la redacción del RDL 29/2026 (BOE 07-10-2026, vigor 08-10-2026), leída en la composición 597314599f, que la
+    # API da por idéntica al BOE: existen con ese número el 25.7 (cuatro párrafos) y el 25.8. LAU 4.3, aunque el art. 4 cambia, es
+    # idéntico al texto anterior; LAU 31, CC 1518, 1521, 1522 y 1524 y LEC 266 y 403 sin cambios. Comprobado en boe.es que el RDL solo
+    # trae dos transitorias propias (prórrogas del RDL 8/2026; ejecuciones en curso) y que la dt 8.ª LAU solo trata la vivienda temporal.
+    # AVISO: RDL 29/2026 no convalidado a esta fecha (Diputación Permanente, art. 86.2 CE); si se deroga, caen el 25.7 y el 25.8 y la
+    # renuncia vuelve a ser pactable, como ocurrió con el RDL 26/2026. Va «provisional» por eso.
     afines: ["Enajenación de la finca arrendada y resolución del derecho del arrendador", "Retracto legal de comuneros y colindantes", "Retracto convencional", "Formalización e inscripción del arrendamiento", "Compraventa: entrega, precio y riesgos", "Ofrecimiento de pago y consignación"]
     estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Separación o divorcio del arrendatario"
@@ -164,11 +179,15 @@ voces:
       - "Si el desistimiento o la no renovación del arrendatario es «disponer» de la vivienda (arts. 96.3 y 1320 CC): jurisprudencial."
       - "Consecuencia de no comunicar en los dos meses del 15.2: el texto no la fija; casuística."
       - "Parejas de hecho que se separan: el art. 15 solo prevé el matrimonio; aplicación analógica, jurisprudencial."
-    # VIGENCIA: LAU 7 distinto en el espejo (RDL 29/2026): «vivienda permanente» pasa a «vivienda habitual» y se añade la vivienda temporal. Resto idéntico.
+    # VIGENCIA: LAU 7 en la redacción del RDL 29/2026 (BOE 07-10-2026, vigor 08-10-2026), leída en la composición 597314599f: el
+    # 7.1 existe ahora con ese número («vivienda habitual» en lugar de «permanente» y añade la vivienda temporal). LAU 12, 15 y 16,
+    # CC 90, 96 y 1320 y LEC 774 sin cambios.
+    # AVISO: RDL 29/2026 no convalidado a esta fecha (Diputación Permanente, art. 86.2 CE); si se deroga, el art. 7 vuelve a ser un
+    # párrafo único sin numerar y la remisión al «7.1» deja de casar, como ocurrió con el RDL 26/2026. Va «provisional» por eso.
     afines: ["Uso de la vivienda familiar", "Subrogación", "Desistimiento del arrendatario", "Separación y divorcio contenciosos", "Divorcio de mutuo acuerdo y convenio regulador", "Vivienda familiar: disposición por el cónyuge titular"]
     estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Indemnización por clientela en el arrendamiento de local"
@@ -190,11 +209,12 @@ voces:
       - "Compensación de la clientela fuera del art. 34 (enriquecimiento injusto): jurisprudencial."
     fuera_de_la_herramienta:
       - "Ley 60/2003, de Arbitraje: designación y actuación del árbitro al que remite el art. 34 LAU."
-    # VIGENCIA: LAU 3 y 4 distintos en el espejo (RDL 29/2026); 3.1, 4.3 y 4.4 idénticos al texto vigente. LAU 34 idéntico.
+    # VIGENCIA: LAU 3 y 4 cambian con el RDL 29/2026 (3.2 y 4.2), pero el 3.1, el 4.3 y el 4.4 citados son idénticos letra a letra
+    # en la composición 597314599f y en el texto anterior; LAU 34 sin cambios. Ninguna remisión depende del RDL 29/2026: pasa a «vigente».
     afines: ["Arrendamiento de temporada y para uso distinto de vivienda", "Desahucio por expiración del plazo", "Tácita reconducción", "Cesión y subarriendo (también del local)", "Enriquecimiento injusto y cobro de lo indebido", "Arrendamiento de cosas en el Código Civil (régimen supletorio)"]
-    estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    estado: "vigente"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Arrendamiento de cosas en el Código Civil (régimen supletorio)"
@@ -222,9 +242,10 @@ voces:
       - {norma: "CC", articulo: "1580", tipo: "conexa", nota: "Reparaciones de predios urbanos a cargo del propietario: las que diga la costumbre; en la duda, son suyas."}
       - {norma: "CC", articulo: "1581", tipo: "regula", nota: "Sin plazo fijado: por años, meses o días según la renta sea anual, mensual o diaria; cesa sin requerimiento."}
       - {norma: "CC", articulo: "1582", tipo: "conexa", nota: "Muebles arrendados con la casa o el local: su arrendamiento dura lo que el de la finca."}
-      - {norma: "LAU", articulo: "4", apartado: "2", tipo: "regula", nota: "Vivienda: pactos dentro del título II LAU y, supletoriamente, el Código Civil."}
+      - {norma: "LAU", articulo: "4", apartado: "2", tipo: "regula", nota: "Vivienda del art. 2, también la de más de 300 m² o renta alta desde 08-10-2026: pactos dentro del título II LAU y, supletoriamente, el CC."}
       - {norma: "LAU", articulo: "4", apartado: "3", tipo: "regula", nota: "Uso distinto: lo pactado, en su defecto el título III LAU y, supletoriamente, el Código Civil."}
-      - {norma: "LAU", articulo: "5", tipo: "regula", nota: "Excluidos de la LAU: porteros, militares, rústicos, universitarias, cesión turística de hasta 31 días y programas sociales."}
+      - {norma: "LAU", articulo: "3", apartado: "2", tipo: "conexa", nota: "Desde 08-10-2026 el uso distinto ya no incluye la temporada ni lo recreativo, y excluye el alojamiento u hospedaje de personas."}
+      - {norma: "LAU", articulo: "5", tipo: "regula", nota: "Excluidos de la LAU: porteros, militares, rústicos, universitarias, cesión turística (máximo 31 días) y cesiones del tercer sector a vulnerables."}
     no_consta_en_norma:
       - "Qué normas del CC suplen al título II LAU y cuáles quedan desplazadas por su carácter imperativo (art. 6): casuística."
       - "Plaza de garaje o trastero arrendados sin la vivienda: si es uso distinto (LAU) o arrendamiento de cosa del CC, jurisprudencial."
@@ -232,11 +253,15 @@ voces:
     fuera_de_la_herramienta:
       - "Legislación de arrendamientos rústicos, a la que remite el art. 5.c) LAU."
       - "Normativa turística valenciana: régimen de la cesión turística excluida por el art. 5.e) LAU."
-    # VIGENCIA: LAU 4 y 5 distintos en el espejo (RDL 29/2026): 4.2 remite ahora al art. 2; 5.e) limita a 31 días y añade la f). Notas según la API vigente.
+    # VIGENCIA: LAU 3.2, 4.2 y 5 (e y f) en la redacción del RDL 29/2026 (BOE 07-10-2026, vigor 08-10-2026), leída en la composición
+    # 597314599f, que la API da por idéntica al BOE: el 4.2 remite al art. 2 y suprime la excepción de las viviendas de más de 300 m² o
+    # renta superior a 5,5 veces el SMI; el 3.2 suprime la temporada. LAU 4.3 idéntico al texto anterior; CC citados sin cambios.
+    # AVISO: RDL 29/2026 no convalidado a esta fecha (Diputación Permanente, art. 86.2 CE); si se deroga, vuelven la excepción del 4.2,
+    # la temporada del 3.2 y el 5.e) sin tope de días, como ocurrió con el RDL 26/2026. Va «provisional» por eso.
     afines: ["Ámbito de la LAU y arrendamientos excluidos", "Tácita reconducción", "Vivienda de uso turístico: exclusión de la LAU", "Resolución del contrato por incumplimiento", "Obras y conservación", "Desahucio por expiración del plazo"]
     estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Tácita reconducción"
@@ -254,18 +279,27 @@ voces:
       - {norma: "LAU", articulo: "10", apartado: "1", tipo: "regula", nota: "Vivienda habitual: cumplidos 5 o 7 años sin preaviso (4 meses arrendador, 2 arrendatario), prórroga anual hasta 3 años más."}
       - {norma: "LAU", articulo: "10", apartado: "4", tipo: "conexa", nota: "Al contrato prorrogado le sigue aplicando el régimen legal y convencional al que estaba sometido."}
       - {norma: "LEC", articulo: "250", apartado: "1.1.º", tipo: "conexa", nota: "La recuperación de la finca por expiración del plazo contractual o legal se tramita por el juicio verbal."}
+      - {norma: "LAU", articulo: "dt 3", apartado: "5, párrafo 2.º", tipo: "conexa", nota: "Local de renta antigua (antes de 9-5-1985), casos de los ap. 4 y 5: la tácita reconducción sigue el 1566 CC; el renovado, la LAU de uso distinto."}
+      - {norma: "LAU", articulo: "dt 1", apartado: "1, párrafo 3.º", tipo: "conexa", nota: "Vivienda contratada desde 9-5-1985 y vigente al 1-1-1995: tácita reconducción del 1566 CC por tres años; el renovado, por la LAU de vivienda."}
+      - {norma: "LAU", articulo: "dt 1", apartado: "2", tipo: "conexa", nota: "Local de negocio contratado desde 9-5-1985 y vigente al 1-1-1995: tras la tácita reconducción del 1566 CC, el renovado sigue la LAU de uso distinto."}
     no_consta_en_norma:
       - "Qué es «aquiescencia» y qué basta como requerimiento que impide la reconducción (burofax, demanda): jurisprudencial."
       - "Plazo del contrato reconducido si la renta se pacta anual pero se paga por meses: jurisprudencial."
       - "Que el contrato reconducido conserva las condiciones del anterior salvo el plazo: doctrina jurisprudencial."
       - "Si, agotadas las prórrogas del art. 10 LAU, cabe la tácita reconducción del CC en vivienda: jurisprudencial (el 4.2 remite al CC)."
     fuera_de_la_herramienta:
-      - "RDL 28/2026 (vigor 15-11-2026, sin convalidar): nueva redacción del art. 10 LAU; la voz habrá de recurarse entonces."
-    # VIGENCIA: LAU 4 y 10 distintos en el espejo (RDL 29/2026: el 10.1 dice ahora «de vivienda habitual»); el art. 10 cambia otra vez el 15-11-2026 (RDL 28/2026).
+      - "RDL 28/2026 (vigor 15-11-2026, pendiente de convalidación): nuevo art. 10, prórrogas de 5 o 7 años; la herramienta lo da como nota. Revisar la voz entonces."
+    # VIGENCIA: LAU 10 en la redacción del RDL 29/2026 (vigor 08-10-2026; el 10.1 añade «de vivienda habitual»), leída en la composición
+    # 597314599f, que trae además, como nota, el art. 10 del RDL 28/2026 desde el 15-11-2026. LAU 4.3 idéntico al texto anterior;
+    # CC 1565 a 1567, 1569, 1570, 1577 y 1581 y LEC 250 sin cambios. LAU dt 1.ª (1, párrafo 3.º, y 2) y dt 3.ª (5, párrafo 2.º): las
+    # únicas de la LAU que nombran la tácita reconducción, leídas en la composición y en boe.es (versión 07-10-2026), sin cambios.
+    # AVISO: RDL 29/2026 y RDL 28/2026 no convalidados a esta fecha (Diputación Permanente, art. 86.2 CE). El 15-11-2026 cambian el
+    # 10.1 (prórroga tácita por 5 o 7 años) y también el 10.4, que pasará a ser la nulidad de pactos de prórroga en perjuicio del
+    # arrendatario: las dos remisiones al art. 10 habrán de revisarse ese día. Va «provisional» por eso.
     afines: ["Desahucio por expiración del plazo", "Duración y prórroga del arrendamiento de vivienda", "Arrendamiento de cosas en el Código Civil (régimen supletorio)", "Arrendamiento de temporada y para uso distinto de vivienda", "Indemnización por clientela en el arrendamiento de local", "Fianza"]
     estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Título constitutivo, estatutos y cuota de participación"
@@ -297,11 +331,15 @@ voces:
       - "Si limitar usos o actividades en los estatutos exige unanimidad (17.6) fuera del supuesto turístico del 17.12: jurisprudencial."
     fuera_de_la_herramienta:
       - "Ley y Reglamento Hipotecarios: inscripción del título constitutivo y de los estatutos (art. 5 LPH)."
-    # VIGENCIA: LPH 10 con versión futura 23-10-2026 (Ley 4/2026), ya en el espejo; el 10.3.b) citado es idéntico en ambos textos. CC 396: errata del espejo, sin cambio de fondo.
+    # VIGENCIA: LPH 10 distinto: el espejo ya trae la Ley 4/2026 (vigor 23-10-2026), que solo cambia el 10.1.b); el 10.3.b) citado
+    # es idéntico en ambas versiones. CC 396: la composición 597314599f corrige la errata («los elementos de cierre») y es idéntico al
+    # texto vigente de boe.es; su párrafo 4.º citado no cambia. LPH 2, 3, 5, 6, 9, 14, 17, 18 y dt 1.ª: idénticos. Ninguna remisión
+    # depende del RDL 29/2026. Va «provisional» solo por el art. 10 LPH visible en la redacción futura; puede pasar a «vigente» el
+    # 23-10-2026 sin otra revisión.
     afines: ["Mayorías y cómputo de votos", "Gastos comunes, cuota y fondo de reserva", "Impugnación de acuerdos (plazo del art. 18)", "Limitación de las viviendas de uso turístico en la comunidad", "Complejos inmobiliarios privados y urbanizaciones", "Obras en elementos privativos"]
     estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Administrador y secretario"
@@ -398,9 +436,12 @@ voces:
       - "Negativa del propietario a permitir la entrada: hace falta resolución judicial; cauce procesal, casuística."
     fuera_de_la_herramienta:
       - "Real Decreto-ley 1/1998, sobre infraestructuras comunes de telecomunicación, al que remite el art. 17.1 LPH."
-    # VIGENCIA: LPH 10 con versión futura 23-10-2026 (Ley 4/2026), ya en el espejo; los apartados citados, 1.c) y 3.b), son idénticos en ambos textos. CC 396: errata del espejo, sin cambio de fondo.
+    # VIGENCIA: LPH 10 distinto: el espejo ya trae la Ley 4/2026 (vigor 23-10-2026), que solo cambia el 10.1.b); el 10.1.c) y el
+    # 10.3.b) citados son idénticos en ambas versiones. CC 396: la composición 597314599f corrige la errata («los elementos de cierre»)
+    # y es idéntico al texto vigente de boe.es. LPH 3, 7, 9 y 17 y CC 569: idénticos. Ninguna remisión depende del RDL 29/2026. Va
+    # «provisional» solo por el art. 10 LPH visible en la redacción futura; puede pasar a «vigente» el 23-10-2026 sin otra revisión.
     afines: ["Obras en elementos comunes y accesibilidad", "Obras en elementos privativos", "Daños entre comunidad y propietarios (filtraciones)", "Servidumbres: constitución, extinción y acciones", "Servidumbre de paso", "Mayorías y cómputo de votos"]
     estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"

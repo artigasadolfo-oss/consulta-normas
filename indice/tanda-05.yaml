@@ -1,5 +1,5 @@
 # Índice de conceptos de «Consulta de normas» — tanda 5 (Juicio verbal, desahucios y procesos sumarios)
-# Revisor: armero. Espejo: legalize-es@aca28304d. Todo precepto citado se ha leído en el espejo en esta pasada.
+# Revisor: armero. Espejo: legalize-es@aca28304d; las voces «Desahucio por falta de pago», «Desahucio por expiración del plazo» y «Vulnerabilidad y gran tenedor en la demanda» están revisadas contra legalize-es@597314599f (composición con el RDL 29/2026). Todo precepto citado se ha leído en esta pasada.
 # Vigencia: contraste con la API de boe.es (scripts/contraste_boe.py, 08-10-2026) y lectura de la versión vigente de los
 # artículos afectados. Las voces que citan LEC 22, LEC 685 o la LAU van «provisional» (ver tanda-05-notas.md).
 # AVISO: RDL 29/2026 (vigor 08-10-2026) y RDL 28/2026 (vigor 15-11-2026) no están convalidados a esta fecha.
@@ -27,7 +27,8 @@ voces:
       - {norma: "LEC", articulo: "444", apartado: "1", tipo: "regula", nota: "Oposición limitada a alegar y probar el pago o la procedencia de la enervación."}
       - {norma: "LEC", articulo: "22", apartado: "4", tipo: "regula", nota: "Enervación por decreto; no cabe si ya se enervó antes o hubo requerimiento fehaciente 30 días antes de demandar."}
       - {norma: "LEC", articulo: "22", apartado: "5", tipo: "regula", nota: "Enervada la acción, costas al arrendatario salvo que no se cobrara por causa imputable al arrendador."}
-      - {norma: "LEC", articulo: "22", tipo: "conexa", nota: "Desde 08-10-2026, nuevo 22.6 (RDL 29/2026), aún no en el espejo: enervación a cargo de la Administración si hay vulnerabilidad."}
+      - {norma: "LEC", articulo: "22", apartado: "6", tipo: "regula", nota: "Inquilino vulnerable sin alternativa: la Administración paga o consigna en dos meses (proceso en suspenso); si no, se subroga."}
+      - {norma: "LEC", articulo: "22", apartado: "6, párrafo 6.º", tipo: "conexa", nota: "Esa enervación no cuenta como anterior para el 22.4; y cabe aunque hubiera requerimiento fehaciente (párrafo 7.º)."}
       - {norma: "LEC", articulo: "447", apartado: "1", tipo: "regula", nota: "Sentencia en cinco días; tras allanamiento del 437.3, lanzamiento subsidiario sin más trámites."}
       - {norma: "LEC", articulo: "447", apartado: "2", tipo: "regula", nota: "Sin cosa juzgada sobre el desahucio; sí la tienen los pronunciamientos sobre rentas y frente al fiador."}
       - {norma: "LEC", articulo: "449", apartado: "1", tipo: "regula", nota: "Para apelar o recurrir en casación, el demandado acredita tener pagadas las rentas vencidas y las adelantadas."}
@@ -48,10 +49,10 @@ voces:
       - "RDL 29/2026, art. 2 (pendiente de convalidación): suspensión del proceso si el demandado es vulnerable y sin alternativa habitacional, hasta el 31-12-2030."
       - "RDL 29/2026, disp. trans. 2.ª: aplica el art. 2 y el nuevo 22.6 LEC a las ejecuciones en curso sin lanzamiento practicado."
     afines: ["Enervación del desahucio", "Vulnerabilidad y gran tenedor en la demanda", "Desahucio por expiración del plazo", "Lanzamiento", "Resolución del contrato por incumplimiento"]
-    # VIGENCIA: LEC 22 cambia el 08-10-2026 (nuevo 22.6; 22.1 a 22.5 idénticos) y la LAU cambia en bloque (27.2.a y 27.4 idénticos; cambia el 27.2.f). Provisional hasta que el espejo traiga el RDL 29/2026.
+    # VIGENCIA: el 22.6 LEC lo añade el RDL 29/2026 (vigor 08-10-2026), pendiente de convalidación (CE 86.2). LEC 22.1 a 22.5 y LAU 27.2.a) y 27.4 no dependen de él. Provisional por el 22.6.
     estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Desahucio por expiración del plazo"
@@ -69,13 +70,19 @@ voces:
       - {norma: "LEC", articulo: "447", apartado: "2", tipo: "regula", nota: "Sin cosa juzgada sobre el desahucio; sí la tienen los pronunciamientos sobre rentas y frente al fiador."}
       - {norma: "LEC", articulo: "549", apartado: "4", tipo: "regula", nota: "Sin plazo de espera de veinte días; si es vivienda habitual, antes del lanzamiento, trámite del 441.5 a 7."}
       - {norma: "LEC", articulo: "703", apartado: "1", tipo: "conexa", nota: "Lanzamiento: basta un funcionario Gestor; las cosas no retiradas en plazo se tienen por abandonadas."}
+      - {norma: "LAU", articulo: "2", apartado: "3", tipo: "conexa", nota: "Vivienda temporal: cubre la necesidad de vivienda de quien está desplazado de su domicilio por causa justificada y acreditable."}
+      - {norma: "LAU", articulo: "3", apartado: "2", tipo: "conexa", nota: "Ya no menciona la temporada: enumera actividades y excluye en todo caso el alojamiento u hospedaje de personas."}
+      - {norma: "LAU", articulo: "7", apartado: "2", tipo: "conexa", nota: "Vivienda temporal sin causa expresa en el contrato (la prueba es del arrendador): es habitual desde su firma."}
       - {norma: "LAU", articulo: "9", apartado: "1", tipo: "regula", nota: "Prórroga obligatoria anual hasta cinco años (siete si el arrendador es persona jurídica), salvo preaviso del inquilino."}
       - {norma: "LAU", articulo: "9", apartado: "3", tipo: "regula", nota: "Necesidad del arrendador persona física pactada en el contrato: tras el primer año, preaviso de dos meses."}
-      - {norma: "LAU", articulo: "9 bis", tipo: "regula", nota: "Vivienda temporal: más de 31 días y, como regla, hasta 12 meses. El espejo dice «sin efecto»; rige desde 08-10-2026."}
-      - {norma: "LAU", articulo: "10", apartado: "1", tipo: "regula", nota: "Tras 5 o 7 años, prórroga anual hasta tres más si nadie preavisa (arrendador, 4 meses). Cambia el 15-11-2026."}
+      - {norma: "LAU", articulo: "9", apartado: "4", tipo: "conexa", nota: "Los apartados 1 a 3 no rigen para la vivienda temporal: su duración se rige por el art. 9 bis."}
+      - {norma: "LAU", articulo: "9 bis", apartado: "1", tipo: "regula", nota: "Vivienda temporal: más de 31 días y, como regla, hasta 12 meses; prórroga solo por acuerdo expreso si sigue la causa."}
+      - {norma: "LAU", articulo: "9 bis", apartado: "2", tipo: "regula", nota: "Más de 12 meses sin causa, o más de dos contratos seguidos entre las mismas partes: vivienda habitual (arts. 9 y 10)."}
+      - {norma: "LAU", articulo: "10", apartado: "1", tipo: "regula", nota: "Vivienda habitual: tras 5 o 7 años, prórroga anual hasta tres más si nadie preavisa (arrendador, 4 meses). Cambia el 15-11-2026."}
       - {norma: "LAU", articulo: "10", apartado: "2", tipo: "conexa", nota: "Prórroga extraordinaria de un año al vulnerable que la pida; obligatoria si el arrendador es gran tenedor."}
       - {norma: "LAU", articulo: "10", apartado: "3", tipo: "conexa", nota: "Zona tensionada: prórroga extraordinaria anual, hasta tres años, a solicitud del arrendatario."}
-      - {norma: "LAU", articulo: "dt 8", tipo: "regula", nota: "Temporada anterior al 08-10-2026: se extingue al fin del plazo pactado, sin prórroga. El espejo dice «sin efecto»."}
+      - {norma: "LAU", articulo: "dt 8", apartado: "1", tipo: "regula", nota: "Temporada o vivienda temporal anterior al 08-10-2026: sigue como uso distinto y se extingue al fin del plazo, sin prórroga."}
+      - {norma: "LAU", articulo: "dt 8", apartado: "2", tipo: "conexa", nota: "El arrendamiento temporal renovado se rige por las normas de la vivienda temporal."}
       - {norma: "CC", articulo: "1565", tipo: "regula", nota: "Arrendamiento por tiempo determinado: concluye el día prefijado sin necesidad de requerimiento."}
       - {norma: "CC", articulo: "1566", tipo: "regula", nota: "Tácita reconducción si sigue quince días con aquiescencia del arrendador, salvo requerimiento previo."}
       - {norma: "CC", articulo: "1581", tipo: "conexa", nota: "Sin plazo pactado: por años, meses o días según se fije la renta; cesa cumplido el término."}
@@ -83,17 +90,15 @@ voces:
     no_consta_en_norma:
       - "Si cabe demandar antes del vencimiento para que el desahucio surta efecto a su llegada: la LEC no lo regula."
       - "Si la comunicación de no renovar excluye la tácita reconducción del 1566 CC: el texto exige «requerimiento» sin definirlo."
+      - "Si la tácita reconducción (1566 CC) de una temporada anterior al 08-10-2026 es el «arrendamiento temporal renovado» de la dt 8.ª.2 LAU: no lo define."
     fuera_de_la_herramienta:
       - "RDL 29/2026, disp. final 5.ª (pendiente de convalidación): prórroga extraordinaria de hasta dos años al arrendatario al corriente de pago."
-      - "RDL 28/2026 (vigor 15-11-2026, pendiente de convalidación): nuevo art. 10 LAU, prórrogas de 5 o 7 años, preaviso de 6 meses e indemnización."
-    vigilar:
-      - {norma: "LAU", articulo: "2"}
-      - {norma: "LAU", articulo: "3"}
+      - "RDL 28/2026 (vigor 15-11-2026, pendiente de convalidación): disp. trans. única (contratos vigentes) y adic. 1.ª (coordinación con la prórroga extraordinaria). El texto futuro del art. 10 LAU va en nota dentro del artículo."
     afines: ["Desahucio por falta de pago", "Duración y prórroga del arrendamiento de vivienda", "Tácita reconducción", "Arrendamiento de temporada y para uso distinto de vivienda", "Lanzamiento"]
-    # VIGENCIA: LAU 9 (añade 9.4), 9 bis y dt 8 (en el espejo «sin efecto») según la API vigente desde 08-10-2026; LAU 10 tiene versión con vigencia 15-11-2026 que la API publica con fecha_vigencia vacía. Provisional.
+    # VIGENCIA: LAU 2.3, 3.2, 7.2, 9.4, 9 bis, 10.1 y dt 8 en la redacción del RDL 29/2026 (vigor 08-10-2026), pendiente de convalidación (CE 86.2). LAU 10 cambia otra vez el 15-11-2026 (RDL 28/2026, tampoco convalidado). Provisional.
     estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Vulnerabilidad y gran tenedor en la demanda"
@@ -112,21 +117,29 @@ voces:
       - {norma: "LEC", articulo: "549", apartado: "4, párrafo 2.º", tipo: "regula", nota: "Vivienda habitual: antes del lanzamiento debe haberse seguido el trámite del 441.5 a 7."}
       - {norma: "LEC", articulo: "150", apartado: "4", tipo: "regula", nota: "La notificación que fija el lanzamiento de una vivienda se traslada a los servicios sociales."}
       - {norma: "LEC", articulo: "686", apartado: "1", tipo: "conexa", nota: "Ejecución hipotecaria: el requerimiento de pago incluye las indicaciones del 441.5, con iguales efectos."}
-      - {norma: "LEC", articulo: "685", apartado: "2", tipo: "regula", nota: "Desde 08-10-2026 (RDL 29/2026, aún no en el espejo): la demanda hipotecaria dice si hay vivienda habitual y gran tenedor."}
-      - {norma: "LEC", articulo: "22", tipo: "conexa", nota: "Desde 08-10-2026, nuevo 22.6 (RDL 29/2026), aún no en el espejo: la Administración enerva si el inquilino es vulnerable."}
+      - {norma: "LEC", articulo: "685", apartado: "2, párrafo 3.º", tipo: "regula", nota: "Demanda hipotecaria: decir si es vivienda habitual del deudor y si el ejecutante es gran tenedor (439.6.b)."}
+      - {norma: "LEC", articulo: "685", apartado: "2, párrafo 4.º", tipo: "regula", nota: "Si niega ser gran tenedor, certificación del Registro con la relación de viviendas a nombre del actor."}
+      - {norma: "LEC", articulo: "22", apartado: "6", tipo: "conexa", nota: "Desahucio por impago con inquilino vulnerable sin alternativa: la Administración enerva en dos meses o se subroga."}
       - {norma: "LEC", articulo: "704", apartado: "1", tipo: "conexa", nota: "Entrega de la vivienda habitual del ejecutado: un mes para desalojar, prorrogable otro con motivo fundado."}
     no_consta_en_norma:
       - "Si la omisión de las indicaciones del 439.6 es subsanable antes de inadmitir: la norma dice «no se admitirán» y no lo aclara."
       - "Qué efecto tiene la remisión del 441.5 a los apartados 6.c) y 7 del 439, anulados: el texto no se ha adaptado."
+      - "Si la demanda debe indicar o acreditar que el actor persona física tiene dos o menos viviendas (art. 2.2 RDL 29/2026): el 439.6 solo pide decir si es gran tenedor."
+      - "Cómo se cuentan las «dos o menos viviendas» del art. 2.2 RDL 29/2026 (cotitularidad, gananciales, unidades sin división horizontal): el RDL no lo dice ni remite al 3.k) Ley 12/2023."
+      - "Si esa regla excluye la suspensión sin más o solo pesa en la ponderación, y si alcanza a la vulnerabilidad social: el art. 2.2 dice que «no prevalecerá» la económica."
+      - "Certificación registral: el 439.6 y el 3.k) Ley 12/2023 piden la «relación de propiedades» y el 685.2 la «relación de viviendas»; no se dice si una vale por la otra."
     fuera_de_la_herramienta:
-      - "Ley 12/2023, art. 3.k): concepto de gran tenedor (más de diez inmuebles residenciales o 1.500 m²), reformado por el RDL 29/2026."
-      - "RDL 29/2026, art. 2 (pendiente de convalidación): suspensión del proceso con demandado vulnerable sin alternativa habitacional, hasta el 31-12-2030."
+      - "Ley 12/2023 (BOE-A-2023-12203), art. 3.k), en la redacción del art. 4.Uno RDL 29/2026 (pendiente de convalidación): gran tenedor es quien tiene más de diez inmuebles urbanos de uso residencial o más de 1.500 m² construidos de ese uso, sin garajes ni trasteros; en zona tensionada, cinco o más si la comunidad autónoma lo motiva."
+      - "Ley 12/2023, art. 3.k), párrafos 2.º y 3.º (añadidos por el RDL 29/2026): la condición se acredita con certificación del Registro de la Propiedad con la relación de propiedades; cada unidad residencial de un edificio cuenta como inmueble aunque no haya división horizontal inscrita."
+      - "RDL 29/2026 (BOE-A-2026-20823), art. 2 (pendiente de convalidación): suspensión del proceso con demandado vulnerable sin alternativa habitacional, hasta el 31-12-2030."
+      - "RDL 29/2026, art. 2.2, último párrafo: no se suspende si el tribunal aprecia que prevalece la vulnerabilidad económica o habitacional del actor, salvo que sea persona jurídica o persona física gran tenedora."
+      - "Mismo párrafo: tampoco prevalece la vulnerabilidad económica del demandado si el actor es persona física titular de dos o menos viviendas. El 2.2 rige solo si no se aplica el 22.6 LEC, que no prevé esa excepción."
       - "Ley 39/2006, art. 2.2: concepto de persona dependiente al que remite el 441.7 LEC."
     afines: ["Desahucio por falta de pago", "Desahucio por precario", "Ocupación ilegal de vivienda (desahucio exprés)", "Lanzamiento", "Ejecución hipotecaria: especialidades"]
-    # VIGENCIA: cita LEC 685 y 22, cambiados el 08-10-2026 por el RDL 29/2026 (texto leído en la API). 439 y 441 idénticos en espejo y boe.es. Provisional.
+    # VIGENCIA: LEC 685.2 y 22.6 en la redacción del RDL 29/2026 (vigor 08-10-2026), pendiente de convalidación (CE 86.2). El RDL quita del 685.2 la vulnerabilidad del deudor y la conciliación previa. 439 y 441 sin cambios. Fuera de la herramienta, el RDL reforma el 3.k) Ley 12/2023 y fija la regla del pequeño propietario (art. 2.2). El RDL 26/2026, que ya reformaba el 3.k) y añadía el 22.6, fue derogado por el Congreso (BOE 02-10-2026). Provisional.
     estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Ocupación ilegal de vivienda (desahucio exprés)"

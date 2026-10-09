@@ -1,3 +1,8 @@
+# Índice de conceptos de «Consulta de normas» — muestra
+# Revisor: armero. Espejo: las voces revisadas el 09-10-2026 lo son contra legalize-es@597314599f (composición:
+# aca28304d + LAU entera + LEC 22 y 685 + CC 396 de a5e9eecce6); las demás conservan su sello legalize-es@aca28304d.
+# AVISO: RDL 29/2026 (vigor 08-10-2026) no convalidado a esta fecha (Diputación Permanente, art. 86.2 CE).
+
 version_indice: "0.1-muestra"
 aviso_general: "Índice orientativo. No sustituye la lectura del precepto. Comprueba la fecha de revisión de cada voz."
 
@@ -49,20 +54,26 @@ voces:
     revisor: "armero"
 
   - voz: "Enervación del desahucio"
-    sinonimos: ["enervar el desahucio", "enervación", "pago enervatorio", "rehabilitación del arrendamiento"]
+    sinonimos: ["enervar el desahucio", "enervación", "pago enervatorio", "rehabilitación del arrendamiento", "enervación extraordinaria"]
     normas_base: ["LEC", "LAU"]
     remisiones:
-      - {norma: "LEC", articulo: "22", apartado: "4", tipo: "regula", nota: "Supuesto y límites de la enervación: pago o consignación de lo debido antes de la vista."}
-      - {norma: "LEC", articulo: "22", apartado: "5", tipo: "regula", nota: "Costas en caso de enervación."}
+      - {norma: "LEC", articulo: "22", apartado: "4", tipo: "regula", nota: "Pagar o consignar lo reclamado y lo debido al pagar, en el plazo del 438.5. No cabe si ya se enervó ni tras requerimiento fehaciente 30 días antes. Ver 22.6."}
+      - {norma: "LEC", articulo: "22", apartado: "5", tipo: "regula", nota: "Costas a cargo del arrendatario, salvo que el impago se deba a causas imputables al arrendador."}
+      - {norma: "LEC", articulo: "22", apartado: "6", tipo: "regula", nota: "Arrendatario vulnerable: la Administración ofrece alternativa o paga lo debido y las costas en dos meses; entretanto, proceso y lanzamiento suspendidos."}
+      - {norma: "LEC", articulo: "22", apartado: "6, párrafo 5.º", tipo: "regula", nota: "Sin alternativa ni pago en dos meses, la Administración se subroga en la deuda y no hay lanzamiento mientras dure la vulnerabilidad."}
+      - {norma: "LEC", articulo: "22", apartado: "6, párrafos 6.º y 7.º", tipo: "regula", nota: "No computa como enervación anterior ni impide la ordinaria del 22.4; cabe aunque haya habido requerimiento fehaciente de pago."}
       - {norma: "LEC", articulo: "438", apartado: "5", tipo: "regula", nota: "Requerimiento al demandado: diez días para pagar, enervar o desalojar."}
       - {norma: "LEC", articulo: "439", apartado: "3", tipo: "regula", nota: "La demanda debe indicar si cabe o no la enervación."}
       - {norma: "LEC", articulo: "444", apartado: "1", tipo: "regula", nota: "Oposición limitada a alegar y probar el pago o la procedencia de la enervación."}
       - {norma: "LAU", articulo: "27", apartado: "2.a)", tipo: "conexa", nota: "Falta de pago de renta como causa de resolución del arrendamiento."}
-    no_consta_en_norma: []
-    afines: ["Desahucio por falta de pago", "Resolución del contrato por incumplimiento"]
+    no_consta_en_norma:
+      - "RDL 29/2026 (pendiente de convalidación): añade el 22.6 LEC. Si se deroga, desaparece la enervación extraordinaria y rigen solos los límites del 22.4."
+      - "Qué supuesto queda fuera del 22.6: el texto excluye «el supuesto previsto en el artículo 2.1» del RDL 29/2026, que la herramienta no incluye."
+      - "Aplicación del 22.6 a los procesos en curso: la nota del BOE remite a la disposición transitoria segunda del RDL 29/2026, que la herramienta no incluye."
+    afines: ["Desahucio por falta de pago", "Resolución del contrato por incumplimiento", "Vulnerabilidad y gran tenedor en la demanda"]
     estado: "provisional"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-07"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Requisito de procedibilidad (MASC)"

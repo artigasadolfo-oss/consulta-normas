@@ -160,6 +160,19 @@ def base_fija(bases, sigla):
     return b
 
 
+def base_compuesta(bases, ident, sigla):
+    """Línea base de una COMPOSICIÓN de texto (copia congelada + sustituciones verificadas con el BOE; ver scripts/compone_corpus.py).
+    `ident` es el identificador hexadecimal que el Armero escribe tras la arroba de `espejo` («legalize-es@<ident>») y que no es un commit de git:
+    sus huellas por artículo viven en lineas_base.json -> `_composiciones`. {clave: huella} o None si el identificador o la norma no constan."""
+    e = ((((bases or {}).get("_composiciones") or {}).get(ident) or {}).get("normas") or {}).get(sigla)
+    h = e.get("huellas") if isinstance(e, dict) else None
+    if not h:
+        return None
+    b = BaseFija(h)
+    b.estado = e.get("status") or None
+    return b
+
+
 def crea_base(chunks, origen, sha256, fijada_el, status=None):
     """Entrada de lineas_base.json para una norma: huella por artículo del texto que se da por revisado, el estado oficial de su cabecera,
     de dónde sale y cuándo se fijó. Si el estado oficial cambia al reimportar, caducan las voces aunque los artículos sean iguales

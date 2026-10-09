@@ -41,6 +41,26 @@ caso("el día que entra en vigor pasa a ser el vigente y deja de ser futura", vi
 xml = doc(bloque("a5", "Artículo 5", ver("20250101", "20250101", ["Artículo 5. X.", "Igual."]), ver("20270101", "20261201", ["Artículo 5. X.", "Igual."])))
 caso("versión futura con el mismo texto -> no es aviso", c.bloques_boe(xml, HOY)[1] == {})
 
+print("[reforma anunciada en una NOTA «Téngase en cuenta que, con efectos de…» (caso real: art. 10 LAU, RDL 28/2026, en vigor el 15-11-2026)]")
+NOTA = ('<blockquote class="siempreSeVe">Téngase en cuenta que, con efectos de 15 de noviembre de 2026, se modifica por el art. único del Real Decreto-ley 28/2026, '
+        'de 6 de octubre, Ref. BOE-A-2026-20822#au, con la siguiente redacción: «1. Texto futuro completamente distinto.»</blockquote>')
+xml = doc(bloque("a10", "Artículo 10",
+    ver("20230526", "20230525", ["Artículo 10. Prórroga.", "1. Texto de 2023."], id_norma="BOE-A-2023-12203"),
+    ver("", "20261007", ["Artículo 10. Prórroga.", "1. Texto del RDL 29 (vigente desde el 08-10-2026)."], id_norma="BOE-A-2026-20822", extra=NOTA)))
+vig, fut = c.bloques_boe(xml, HOY)
+caso("la versión con fecha_vigencia VACÍA es la vigente: su cuerpo es el texto actual (el futuro va dentro de la nota)",
+     vig["10"] == c.esqueleto("Prórroga. 1. Texto del RDL 29 (vigente desde el 08-10-2026)."), vig)
+caso("y la nota se avisa como reforma futura del 15-11-2026", fut == {"10": "2026-11-15"}, fut)
+vig2, fut2 = c.bloques_boe(xml, dt.date(2026, 11, 15))
+caso("el 15-11-2026 la nota deja de ser un aviso de futuro", fut2 == {}, fut2)
+xml_pasada = xml.replace("15 de noviembre de 2026", "15 de enero de 2026")
+caso("una nota con fecha ya pasada no es aviso", c.bloques_boe(xml_pasada, HOY)[1] == {})
+caso("fecha_nota_futura: mes en letra -> AAAA-MM-DD; sin nota -> None",
+     c.fecha_nota_futura(c.ET.fromstring("<version>" + NOTA + "</version>")) == "2026-11-15" and c.fecha_nota_futura(c.ET.fromstring("<version><p>x</p></version>")) is None)
+xml2 = doc(bloque("a22", "Artículo 22", ver("20250403", "20250103", ["Artículo 22. T.", "1. Texto."], extra=NOTA),   # la nota va en la versión VIGENTE
+                  ver("20261008", "20261007", ["Artículo 22. T.", "1. Texto.", "6. Nuevo."])))                  # y hay otra con fecha futura propia
+caso("si ya hay una versión con fecha futura, manda la de la versión (la nota no la pisa)", c.bloques_boe(xml2, HOY)[1] == {"22": "2026-10-08"}, c.bloques_boe(xml2, HOY)[1])
+
 print("[claves y texto: el atributo `titulo` va en letra; el primer párrafo lleva la cifra]")
 xml = doc(bloque("aquintobis", "Artículo quinto bis", ver("20250101", "20250101", ["Artículo 5 bis.", "Texto."])),
           bloque("ada1", "Disposición adicional primera", ver("20250101", "20250101", ["Disposición adicional primera. Algo.", "Texto da."])),
@@ -52,6 +72,29 @@ caso("«Disposición adicional primera» -> da1", "da1" in vig, list(vig))
 caso("«Artículo treinta y uno» -> 31", "31" in vig, list(vig))
 caso("«283 bis a)» -> «283 bis a» (como el espejo)", "283 bis a" in vig, list(vig))
 caso("clave_de_titulo: «Art 1» (CC) -> 1; «Artículo único» -> unico", c.clave_de_titulo("Art 1") == "1" and c.clave_de_titulo("Artículo único") == "unico")
+casos_letra = {"Artículo doscientos treinta y uno": "231", "Artículo cuatrocientos cincuenta y cinco": "455", "Artículo doscientos dieciséis bis ": "216 bis",
+               "Artículo ciento uno": "101", "Artículo cien": "100", "Artículo noventa y nueve": "99", "Artículo veintiuno": "21",
+               "Artículo primero": "1", "Artículo cuarto bis": "4 bis", "Artículo quinto": "5", "Artículo treinta y uno": "31", "Artículo uno": "1"}
+mal = {t: (c.clave_de_titulo(t), esp) for t, esp in casos_letra.items() if c.clave_de_titulo(t) != esp}
+caso("clave_de_titulo: cardinales en letra con centenas (231, 455, 216 bis) y sin romper los ordinales («primero», «cuarto bis»)", not mal, str(mal))
+caso("cardinal_en_letras: «tercero» y «cuarto» son ordinales, no cardinales", c.cardinal_en_letras(["tercero"]) == (None, 0) and c.cardinal_en_letras(["cuarto", "bis"]) == (None, 0))
+xml = doc(bloque("adoscientostreintayuno", "Artículo doscientos treinta y uno", ver("20150101", "20150101", ["Artículo doscientos treinta y uno", "1. Texto 231."])),
+          bloque("acuatrocientoscincuentaycinco", "Artículo cuatrocientos cincuenta y cinco", ver("20150101", "20150101", ["Artículo cuatrocientos cincuenta y cinco", "Texto 455."])),
+          bloque("a216bis", "Artículo doscientos dieciséis bis ", ver("20150101", "20150101", ["Artículo 216 bis.", "Texto 216 bis."])),
+          bloque("a216bis2", "Artículo doscientos dieciséis bis 2", ver("20150101", "20150101", ["Artículo 216 bis 2.", "Texto 216 bis 2."])),
+          bloque("a216bis3", "Artículo doscientos dieciséis bis 3", ver("20150101", "20150101", ["Artículo 216 bis 3.", "Texto 216 bis 3."])))
+vig, _ = c.bloques_boe(xml, HOY)
+caso("LOPJ: 231 y 455, titulados en letra TAMBIÉN en su primer párrafo, se emparejan (antes salían «solo en el espejo» y no se contrastaban)", "231" in vig and "455" in vig, list(vig))
+caso("LOPJ: «216 bis», «216 bis 2» y «216 bis 3» son TRES artículos distintos (antes el 2 y el 3 se perdían detrás del primero)", {"216 bis", "216 bis 2", "216 bis 3"} <= set(vig) and vig["216 bis 2"] != vig["216 bis"], list(vig))
+caso("el texto de «216 bis 2» es el suyo, no el del «216 bis»", vig["216 bis 2"].endswith(c.esqueleto("Texto 216 bis 2.")), vig.get("216 bis 2"))
+
+print("[formato nuevo del espejo (legalize v0.4): subcarpeta = 2 primeros caracteres del SHA-1 del identificador]")
+rp = c.rutas_posibles(dict(boe="BOE-A-2000-323"))
+caso("rutas posibles de la LEC: la antigua y la del formato nuevo (es/06/…)", rp == ["es/BOE-A-2000-323.md", "es/06/BOE-A-2000-323.md"], rp)
+rp = c.rutas_posibles(dict(boe="BOE-A-1889-4763"))
+caso("rutas posibles del CC: es/df/… (comprobado contra el origen real)", rp[1] == "es/df/BOE-A-1889-4763.md", rp)
+meta, cuerpo = c.cabecera_meta('---\ntitle: "Ley 1/2000"\nlast_updated: "2026-10-08"\nstatus: "in_force"\n---\n###### Artículo 1.\n\nTexto.\n')
+caso("cabecera_meta: lee last_updated y status y deja el cuerpo", meta.get("last_updated") == "2026-10-08" and meta.get("status") == "in_force" and cuerpo.startswith("###### Artículo 1."), (meta, cuerpo[:30]))
 
 print("[ruido que NO debe contar]")
 a = c.esqueleto("Artículo 22 quáter. Plazo. 1.º Dentro de «cinco» días — art. 3.")

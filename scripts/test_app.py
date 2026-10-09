@@ -579,6 +579,46 @@ with sync_playwright() as p:
     if pg.locator("#b-notas").count():
         check("Notas de reforma se muestran", pg.locator("#lector p.nota").first.is_visible())
 
+    print("\n[rótulos «§» del Código Civil: son estructura, no texto del artículo anterior]")
+    sueltos_ = []
+    for cfg_ in build.NORMAS:
+        _, _, l_ = build.lee_norma(cfg_); ch_, _ = build.parse_norma(cfg_, l_)
+        for c_ in ch_:
+            for ln_ in (c_["b"] if isinstance(c_["b"], list) else str(c_["b"]).split("\n")):
+                if re.match(r"^\s*(?:#{1,6}\s*)?§", ln_):   # en la fuente la línea suelta es «##### § 1.º …»
+                    sueltos_.append((cfg_["sigla"], c_["k"], ln_[:50]))
+    check("ningún artículo lleva dentro un rótulo «§» suelto (es estructura)", not sueltos_, str(sueltos_[:4]))
+    def lector_(h):
+        vaya(h); return re.sub(r"\s+", " ", pg.text_content("#lector") or "").lower()
+    t1474_, t1475_, t1483_, t1484_ = lector_("#a/cc/1474"), lector_("#a/cc/1475"), lector_("#a/cc/1483"), lector_("#a/cc/1484")
+    check("CC 1474: ya no lleva al final el rótulo «§ 1.º Del saneamiento en caso de evicción»", "§ 1.º del saneamiento en caso de evicción" not in t1474_, t1474_[:120])
+    check("CC 1475: el rótulo «§ 1.º Del saneamiento en caso de evicción» encabeza su ruta", "§ 1.º del saneamiento en caso de evicción" in t1475_)
+    check("CC 1483: ya no lleva al final el rótulo «§ 2.º Del saneamiento por los defectos»", "§ 2.º del saneamiento por los defectos" not in t1483_, t1483_[:120])
+    check("CC 1484: el rótulo «§ 2.º Del saneamiento por los defectos o gravámenes ocultos» encabeza su ruta", "§ 2.º del saneamiento por los defectos o gravámenes ocultos" in t1484_)
+    check("CC 1475: conserva además su capítulo y su título en la ruta (el § cuelga de ellos, no los sustituye)", "capítulo" in t1475_ and "título" in t1475_, t1475_[:260])
+
+    print("\n[rótulos sueltos sin palabra clave (CC, LOPJ): son estructura, no texto del artículo anterior]")
+    sueltos2_ = []
+    for cfg_ in build.NORMAS:
+        _, _, l_ = build.lee_norma(cfg_); ch_, _ = build.parse_norma(cfg_, l_)
+        for c_ in ch_:
+            if not re.match(r"^\d", c_["k"]): continue
+            for ln_ in (c_["b"] if isinstance(c_["b"], list) else str(c_["b"]).split("\n")):
+                m_ = re.match(r"^\s*#{3,5}\s+(.*\S)", ln_)
+                if m_ and not re.match(r"^[\"«“*(\[]", m_.group(1)) and len(m_.group(1)) <= 110:
+                    sueltos2_.append((cfg_["sigla"], c_["k"], m_.group(1)[:40]))
+    check("ningún artículo numerado lleva dentro una cabecera de nivel 3-5 suelta (CC «Disposición general», LOPJ «Seccion tercera»…)", not sueltos2_, str(sueltos2_[:4]))
+    for h_, quien_, frag_ in (("#a/cc/1171", "CC 1171", "de la imputación de pagos"),
+                              ("#a/cc/1224", "CC 1224", "de los documentos privados"), ("#a/lopj/138", "LOPJ 138", "seccion tercera")):
+        t_ = lector_(h_)
+        check(f"{quien_}: ya no lleva al final el rótulo «{frag_}»", not re.search(re.escape(frag_) + r"\.?\s*$", t_.replace("copiar", "").strip()), t_[-100:])
+    for h_, quien_, frag_ in (("#a/cc/353", "CC 353", "disposición general"), ("#a/cc/1156", "CC 1156", "disposiciones generales"), ("#a/cc/1172", "CC 1172", "de la imputación de pagos"),
+                              ("#a/cc/1225", "CC 1225", "de los documentos privados"), ("#a/lopj/104", "LOPJ 104", "disposiciones generales"), ("#a/lopj/139", "LOPJ 139", "seccion tercera")):
+        check(f"{quien_}: el rótulo «{frag_}» encabeza su ruta", frag_ in lector_(h_))
+    check("el texto citado de una reforma NO se toma por estructura: LO 1/2025 art. 1 conserva sus «LIBRO I…»", "libro i. de la extensión" in lector_("#a/lo1-2025/1"), lector_("#a/lo1-2025/1")[:80])
+    check("«(Suprimido)» de la LEC 490 sigue siendo texto del 490", "suprimido" in lector_("#a/lec/490"))
+    vaya("")
+
     print("\n[teclado: Cmd+K, j/k, flechas, Tab y Escape en todas las listas]")
     def foco_():
         return pg.evaluate("()=>{var a=document.activeElement;return a?(a.id||a.tagName):''}")
@@ -633,15 +673,16 @@ with sync_playwright() as p:
     check("teclado: la lista de fórmulas tiene UNA parada de tabulador", pg.evaluate("document.querySelectorAll('#fx-lista .idx-row[tabindex=\"0\"]').length") == 1)
     pg.keyboard.press("j"); time.sleep(0.25); f1_ = hash_(); pg.keyboard.press("j"); time.sleep(0.25); f2_ = hash_(); pg.keyboard.press("k"); time.sleep(0.25); f3_ = hash_()
     check("teclado: j y k recorren las fórmulas de sala y abren cada una", f1_.startswith("#f/") and f2_.startswith("#f/") and f1_ != f2_ and f3_ == f1_ and fila_sel("#fx-lista") == f1_, str((f1_, f2_, f3_)))
+    NFX_ = pg.evaluate("()=>window.__NT.fx().f.length")   # nº real de fórmulas (crece con cada tanda del Armero)
     pg.click("#fq"); pg.keyboard.type("reposicion"); time.sleep(0.3); nf_ = pg.locator("#fx-lista .idx-row").count()
     pg.keyboard.press("ArrowDown"); time.sleep(0.25); pg.keyboard.press("ArrowDown"); time.sleep(0.25)
-    check("teclado: en fórmulas el filtro sobrevive a moverse con flechas y j/k solo recorre las filtradas", pg.input_value("#fq") == "reposicion" and pg.locator("#fx-lista .idx-row").count() == nf_ and 0 < nf_ < 120 and foco_() == "fq", f"{nf_} {pg.input_value('#fq')!r}")
+    check("teclado: en fórmulas el filtro sobrevive a moverse con flechas y j/k solo recorre las filtradas", pg.input_value("#fq") == "reposicion" and pg.locator("#fx-lista .idx-row").count() == nf_ and 0 < nf_ < NFX_ and foco_() == "fq", f"{nf_} de {NFX_} {pg.input_value('#fq')!r}")
     pg.keyboard.press("Escape"); time.sleep(0.2)
-    check("teclado: Escape limpia el filtro de fórmulas", pg.input_value("#fq") == "" and pg.locator("#fx-lista .idx-row").count() == 120)
+    check("teclado: Escape limpia el filtro de fórmulas", pg.input_value("#fq") == "" and pg.locator("#fx-lista .idx-row").count() == NFX_)
     pg.click(".fm-chip[data-m=juicio]"); time.sleep(0.3); suelta_(); pg.keyboard.press("j"); time.sleep(0.25)
     sel_f_ = pg.evaluate("document.querySelector('#fx-lista .idx-row.sel')?document.querySelector('#fx-lista .idx-row.sel').getAttribute('href'):null")
     todas_juicio_ = pg.evaluate("[...document.querySelectorAll('#fx-lista .idx-row')].map(e=>e.getAttribute('href'))")
-    check("teclado: con un momento elegido (juicio), j se queda dentro de esa lista", sel_f_ in todas_juicio_ and len(todas_juicio_) < 120, str(len(todas_juicio_)))
+    check("teclado: con un momento elegido (juicio), j se queda dentro de esa lista", sel_f_ in todas_juicio_ and 0 < len(todas_juicio_) < NFX_, f"{len(todas_juicio_)} de {NFX_}")
     pg.click(".fm-chip[data-m='']"); time.sleep(0.2)
     # índice de normas: la rueda de tabulador también
     vaya("#n"); pg.fill("#nq", ""); time.sleep(0.2)

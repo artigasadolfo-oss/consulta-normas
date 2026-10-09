@@ -1,0 +1,612 @@
+# Fórmulas de sala de «Consulta de normas» — tanda 02 (procesos especiales y ejecución, recusación y abstención, lengua e
+# intérpretes, discapacidad y personas mayores, propiedad horizontal, consumidores y videoconferencia)
+# Revisor: armero. Espejo: legalize-es@aca28304d (texto leído con `git show aca28304d:es/<BOE-A-…>.md`, no el árbol de trabajo).
+# Encargo: docs/consulta-armero-formulas-sala-02-08-10-2026.md. Notas: formulas-sala-02-notas.md.
+# Propuesta 2 (desahucio y enervación) fuera de esta tanda por decisión del encargo.
+# Vigencia: contraste con la API de boe.es (scripts/contraste_boe.py --solo "LEC,LOPJ,LPH,TRLGDCU,CE", 08-10-2026, salida y caché
+# en el scratch del Armero). Distintos: LEC 22 y 685, LPH 10 (con versión futura en vigor el 23-10-2026); ninguno citado aquí.
+# 37 fórmulas: 36 vigentes y 1 provisional. Sin campos nuevos. Momento «vista_verbal» usado también para la vista de medidas
+# cautelares (734 LEC), que no es un juicio verbal: el formato solo admite tres momentos (ver notas, apartado 5).
+
+formulas:
+  # ───────────────────────── OPOSICIÓN A LA EJECUCIÓN: VISTA DEL 560 ─────────────────────────
+  - situacion: "Vista de oposición a la ejecución: no comparece el ejecutado (habla el ejecutante)"
+    grupo: "Oposición a la ejecución: vista"
+    momento: ["vista_verbal"]
+    formula: "«Con la venia: el ejecutado, que formuló la oposición, no comparece a la vista. Interesamos que se le tenga por desistido de la oposición, que la ejecución siga adelante y que se le impongan las costas.»"
+    pide: "Que se tenga al ejecutado por desistido de la oposición y se adopten las resoluciones del 442 (costas y, si se piden y acreditan, daños y perjuicios)."
+    aviso: "El 560 remite al 442: al opositor ausente se le aplica el régimen del demandante que no asiste (442.1). Si se reclaman daños y perjuicios, hay que pedirlos y acreditarlos en el acto."
+    bases:
+      - { norma: LEC, articulo: "560", apartado: "párrafo 4.º" }
+      - { norma: LEC, articulo: "442", apartado: "1" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Vista de oposición a la ejecución: no comparece el ejecutante (habla el ejecutado)"
+    grupo: "Oposición a la ejecución: vista"
+    momento: ["vista_verbal"]
+    formula: "«Con la venia: el ejecutante no comparece. Interesamos que el tribunal resuelva sobre la oposición sin oírle y, si la estima, que deje sin efecto la ejecución, alce los embargos y le imponga las costas.»"
+    pide: "Que se resuelva la oposición sin oír al ejecutante (560, párrafo 4.º) y, si se estima, los efectos del 561.3."
+    aviso: "La incomparecencia del ejecutante no equivale a estimar la oposición: el tribunal resuelve sobre lo alegado y lo probado. Llevar la prueba del motivo de oposición."
+    bases:
+      - { norma: LEC, articulo: "560", apartado: "párrafo 4.º" }
+      - { norma: LEC, articulo: "561", apartado: "3" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Oposición a la ejecución: el ejecutado introduce en la vista motivos que no alegó en su escrito"
+    grupo: "Oposición a la ejecución: vista"
+    momento: ["vista_verbal"]
+    formula: "«Nos oponemos, Señoría: la oposición a la ejecución se formula por escrito, en plazo y por causas tasadas. Lo que ahora se alega no figura en el escrito de oposición. Interesamos que no se tome en consideración.»"
+    pide: "Que el debate de la vista se ciña a los motivos del escrito de oposición."
+    aviso: "No impide el control de oficio de cláusulas abusivas en títulos no judiciales (552.1, párrafo 2.º): si el tribunal lo plantea, pedir audiencia en lugar de oponerse."
+    bases:
+      - { norma: LEC, articulo: "556", apartado: "1" }
+      - { norma: LEC, articulo: "557", apartado: "1" }
+      - { norma: LEC, articulo: "560", apartado: "párrafo 1.º" }
+      - { norma: LEC, articulo: "136" }
+    no_consta_en_norma:
+      - "Que en la vista del 560 no puedan añadirse motivos de oposición no es regla expresa: se deduce de la forma escrita y del plazo de diez días (556.1, al que remite el 557.1) y de la preclusión (136)."
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Oposición a la ejecución por pago, quita o espera que no se acredita documentalmente"
+    grupo: "Oposición a la ejecución: vista"
+    momento: ["vista_verbal"]
+    formula: "«Con la venia: el pago [o la quita, espera o pacto de no pedir] solo puede oponerse si consta documentalmente. No se ha aportado documento alguno, y ni la testifical ni la manifestación de la parte lo suplen. Interesamos que se desestime este motivo.»"
+    pide: "Desestimación del motivo de oposición por falta de justificación documental."
+    aviso: "Si el título es judicial o arbitral, el pago se justifica documentalmente (556.1) y los pactos y transacciones deben constar en documento público (556.1, párrafo 2.º); en títulos no judiciales, 557.1.1.ª, 5.ª y 6.ª."
+    bases:
+      - { norma: LEC, articulo: "556", apartado: "1" }
+      - { norma: LEC, articulo: "557", apartado: "1.1.ª" }
+      - { norma: LEC, articulo: "557", apartado: "1.5.ª" }
+      - { norma: LEC, articulo: "557", apartado: "1.6.ª" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  # ───────────────────────── MONITORIO QUE PASA A VERBAL ─────────────────────────
+  - situacion: "Verbal procedente de monitorio: el demandado alega en la vista motivos que no expuso en su oposición"
+    grupo: "Monitorio que pasa a verbal"
+    momento: ["vista_verbal"]
+    formula: "«Nos oponemos, Señoría: el escrito de oposición al monitorio, que debía ser fundado y motivado, delimita la controversia. Los motivos que ahora se introducen no se alegaron en él. Interesamos que no se admitan.»"
+    pide: "Que no se admitan en la vista motivos de oposición nuevos."
+    aviso: "Tras la LO 1/2025 el verbal que sigue al monitorio no tiene contestación: hay impugnación escrita del actor en diez días y proposición de prueba en cinco (818.2). El escrito de oposición es, pues, la única alegación del deudor."
+    bases:
+      - { norma: LEC, articulo: "815", apartado: "1" }
+      - { norma: LEC, articulo: "818", apartado: "1" }
+      - { norma: LEC, articulo: "818", apartado: "2" }
+    no_consta_en_norma:
+      - "La LEC no dice expresamente que el escrito de oposición fije de forma definitiva los motivos del deudor; la doctrina de las Audiencias Provinciales no es uniforme. La exigencia de oposición «fundada y motivada» (815.1) y la ausencia de contestación (818.2) sostienen la objeción, pero no la cierran."
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  # ───────────────────────── MEDIDAS CAUTELARES: VISTA DE LOS ARTS. 733 Y 734 ─────────────────────────
+  - situacion: "Vista de medidas cautelares: la contraria pretende discutir el fondo o practicar prueba ajena a los presupuestos"
+    grupo: "Medidas cautelares: vista"
+    momento: ["vista_verbal"]
+    formula: "«Nos oponemos, Señoría: en esta vista solo es pertinente la prueba sobre los presupuestos de la medida, sin prejuzgar el fondo. Interesamos que se inadmita [la prueba] y, si se admite, que conste nuestra protesta.»"
+    pide: "Inadmisión de la prueba que no versa sobre peligro por la mora, apariencia de buen derecho o caución; subsidiariamente, protesta."
+    aviso: "Contra lo que se resuelva sobre la prueba en la vista no cabe recurso: solo la protesta permite alegar la infracción en el recurso contra el auto (734.3)."
+    bases:
+      - { norma: LEC, articulo: "734", apartado: "2" }
+      - { norma: LEC, articulo: "728", apartado: "1" }
+      - { norma: LEC, articulo: "728", apartado: "2" }
+      - { norma: LEC, articulo: "734", apartado: "3" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Vista de medidas cautelares: protesta contra una resolución sobre el desarrollo de la vista o la prueba"
+    grupo: "Medidas cautelares: vista"
+    momento: ["vista_verbal"]
+    formula: "«Con todo respeto, Señoría: formulamos protesta contra [la resolución], para hacer valer la infracción en el recurso contra el auto que resuelva sobre las medidas.»"
+    pide: "Que conste la protesta y su objeto."
+    aviso: "El auto que acuerda las medidas es apelable sin efecto suspensivo (735.2, párrafo 2.º); el que las deniega, apelable con tramitación preferente (736.1). Sin protesta en la vista, la infracción no podrá alegarse en esa apelación (734.3)."
+    bases:
+      - { norma: LEC, articulo: "734", apartado: "3" }
+      - { norma: LEC, articulo: "735", apartado: "2, párrafo 2.º" }
+      - { norma: LEC, articulo: "736", apartado: "1" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Vista de medidas cautelares: ofrecimiento de caución sustitutoria (habla el demandado)"
+    grupo: "Medidas cautelares: vista"
+    momento: ["vista_verbal"]
+    formula: "«Subsidiariamente, para el caso de que se considere procedente la medida, ofrecemos caución sustitutoria por importe de [ … ] mediante [aval bancario / depósito], suficiente para asegurar el cumplimiento de una eventual sentencia estimatoria.»"
+    pide: "Que se acepte la caución en sustitución de la medida."
+    aviso: "El tribunal pondera el fundamento de la solicitud, la apariencia de buen derecho del demandado y si la medida restringiría de forma grave y desproporcionada su actividad económica (746.2): argumentarlo, no solo ofrecer el importe."
+    bases:
+      - { norma: LEC, articulo: "734", apartado: "2, párrafo 2.º" }
+      - { norma: LEC, articulo: "746", apartado: "1" }
+      - { norma: LEC, articulo: "746", apartado: "2" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Vista de medidas cautelares: alegaciones sobre el tipo y la cuantía de la caución del solicitante"
+    grupo: "Medidas cautelares: vista"
+    momento: ["vista_verbal"]
+    formula: "«Para el caso de que se acuerde la medida, interesamos que la caución del solicitante se fije en [importe] y en [forma], suficiente para responder de los daños que la medida puede causar, y que se preste antes de cualquier acto de cumplimiento.»"
+    pide: "Fijación de una caución suficiente y su prestación previa al cumplimiento."
+    aviso: "La caución se fija atendiendo a la pretensión y al juicio indiciario sobre su fundamento (728.3); la idoneidad y suficiencia se deciden por providencia (737). Si la contraria es una entidad que ejercita una acción de cesación colectiva de consumo, puede ser dispensada (728.3, párrafo 4.º)."
+    bases:
+      - { norma: LEC, articulo: "734", apartado: "2, párrafo 2.º" }
+      - { norma: LEC, articulo: "728", apartado: "3" }
+      - { norma: LEC, articulo: "737" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Vista de medidas cautelares: petición de reconocimiento judicial"
+    grupo: "Medidas cautelares: vista"
+    momento: ["vista_verbal"]
+    formula: "«Interesamos que se practique reconocimiento judicial de [lugar o cosa] para acreditar [extremo relevante para la medida] y, si no puede hacerse en el acto, dentro de los cinco días siguientes.»"
+    pide: "Reconocimiento judicial en la vista o en el plazo de cinco días (734.2)."
+    aviso: "Solo procede cuando sea necesario para acreditar extremos relevantes de los presupuestos de la medida: concretar cuál."
+    bases:
+      - { norma: LEC, articulo: "734", apartado: "2" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Vista de oposición a una medida cautelar acordada sin audiencia previa (habla el opositor)"
+    grupo: "Medidas cautelares: vista"
+    momento: ["vista_verbal"]
+    formula: "«Con la venia: nos oponemos a la medida acordada sin oírnos. Combatimos su procedencia, sus requisitos, su alcance y su tipo. Interesamos que se alce, con imposición de costas al actor y condena a indemnizar los daños causados.»"
+    pide: "Alzamiento de la medida, costas y daños y perjuicios (741.2); subsidiariamente, caución sustitutoria (740, párrafo 2.º)."
+    aviso: "La oposición se formula por escrito en veinte días desde la notificación del auto (739); los motivos contra la medida no tienen límite (740), pero conviene que estén ya en ese escrito. Si se mantiene la medida, las costas son para el opositor (741.2)."
+    bases:
+      - { norma: LEC, articulo: "739" }
+      - { norma: LEC, articulo: "740" }
+      - { norma: LEC, articulo: "741", apartado: "1" }
+      - { norma: LEC, articulo: "741", apartado: "2" }
+    no_consta_en_norma:
+      - "Que los motivos de la vista queden limitados a los del escrito de oposición no lo dice el 740 («sin limitación alguna» se refiere a los motivos contra la medida); es lectura prudente, por la remisión al 734 y por el traslado previo del escrito al solicitante (741.1)."
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  # ───────────────────────── OCUPACIÓN (ART. 250.1.4.º, PÁRRAFO 2.º) ─────────────────────────
+  - situacion: "Recuperación inmediata de vivienda ocupada: el ocupante alega causas distintas del título"
+    grupo: "Ocupación y precario"
+    momento: ["vista_verbal"]
+    formula: "«Nos oponemos, Señoría: en este juicio la oposición solo puede fundarse en la existencia de título suficiente para poseer frente al actor o en la falta de título del actor. Lo alegado es ajeno a esas causas. Interesamos que no se tome en consideración.»"
+    pide: "Que la oposición se ciña a las dos causas del 444.1 bis."
+    aviso: "La vulnerabilidad del ocupante no es causa de oposición: tiene su propio cauce escrito con los servicios sociales y posible suspensión (441.5 a 441.7) si la vivienda es su residencia habitual. Esta tutela solo la tienen la persona física propietaria o poseedora legítima, las entidades sin ánimo de lucro y las públicas de vivienda social (250.1.4.º, párrafo 2.º)."
+    bases:
+      - { norma: LEC, articulo: "444", apartado: "1 bis" }
+      - { norma: LEC, articulo: "250", apartado: "1.4.º, párrafo 2.º" }
+      - { norma: LEC, articulo: "441", apartado: "5" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  # ───────────────────────── RECUSACIÓN Y ABSTENCIÓN ─────────────────────────
+  - situacion: "Cambio de juez después del señalamiento: recusación verbal al inicio de la vista"
+    grupo: "Recusación y abstención"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Con la venia: [el juez / el magistrado …] ha pasado a formar parte del tribunal después del señalamiento. Le recusamos por la causa [n.º] del artículo 219 LOPJ, que consiste en […]. Interesamos la suspensión de la vista.»"
+    pide: "Suspensión de la vista y tramitación del incidente; nuevo señalamiento cuando se resuelva (190.2)."
+    aviso: "La recusación verbal debe formalizarse por escrito en tres días; si no, se inadmite, con multa de 150 a 600 euros y costas de la suspensión (190.2, párrafo 2.º). El escrito exige poder especial del procurador (107.2). Si la vista se celebró sin recusar, cabe hacerlo en los tres días siguientes solo por causa que no pudo conocerse antes de empezar (191)."
+    bases:
+      - { norma: LEC, articulo: "190", apartado: "1" }
+      - { norma: LEC, articulo: "190", apartado: "2" }
+      - { norma: LEC, articulo: "191" }
+      - { norma: LEC, articulo: "107", apartado: "2" }
+      - { norma: LOPJ, articulo: "219" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Causa de recusación del juez conocida durante el acto (sin cambio de juez)"
+    grupo: "Recusación y abstención"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Con la venia: esta parte acaba de conocer [hecho], que puede constituir la causa [n.º] del artículo 219 LOPJ. Interesamos que conste en acta el momento en que lo hemos sabido; formalizaremos la recusación por escrito de inmediato.»"
+    pide: "Que conste en acta el hecho y el momento en que se ha conocido."
+    aviso: "Fuera del cambio de juez tras el señalamiento (190), la recusación es escrita, motivada, con principio de prueba y poder especial (107.2), y debe proponerse tan pronto como se conozca la causa, o se inadmite (107.1). El anuncio no suspende el acto: lo suspende la recusación formulada (109.4)."
+    bases:
+      - { norma: LEC, articulo: "107", apartado: "1" }
+      - { norma: LEC, articulo: "107", apartado: "2" }
+      - { norma: LEC, articulo: "109", apartado: "4" }
+      - { norma: LOPJ, articulo: "219" }
+      - { norma: LOPJ, articulo: "223", apartado: "1" }
+    no_consta_en_norma:
+      - "Dejar constancia en acta del momento en que se conoce la causa es uso forense, para acreditar que se recusó «tan pronto» (107.1); la ley no prevé un anuncio verbal de recusación fuera del caso del 190."
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Recusación del perito designado judicialmente por causa sobrevenida, al comienzo del juicio o la vista"
+    grupo: "Recusación y abstención"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Con la venia: antes de comenzar, presentamos escrito de recusación del perito [nombre], designado por el tribunal, por la causa [del 124.3 LEC o del 219 LOPJ], conocida después de su designación y antes del dictamen. Acompañamos los medios para probarla.»"
+    pide: "Admisión de la recusación y traslado al perito (126); si la niega, comparecencia con prueba (127)."
+    aviso: "Si la causa era anterior a la designación, el plazo fue de dos días desde la notificación del nombramiento (125.2). Tras el juicio o la vista ya no se recusa: solo se pone de manifiesto la causa conocida después (125.3). En la comparecencia del 127, el recusante que no acude se tiene por desistido (127.2)."
+    bases:
+      - { norma: LEC, articulo: "124", apartado: "1" }
+      - { norma: LEC, articulo: "124", apartado: "3" }
+      - { norma: LEC, articulo: "125", apartado: "1" }
+      - { norma: LEC, articulo: "125", apartado: "2, párrafo 2.º" }
+      - { norma: LEC, articulo: "125", apartado: "3" }
+      - { norma: LEC, articulo: "127", apartado: "2" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "La contraria pretende recusar a nuestro perito de parte"
+    grupo: "Recusación y abstención"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Nos oponemos, Señoría: el autor de un dictamen aportado por la parte no es recusable; solo puede ser tachado, por las causas y en el momento del artículo 343. Interesamos que no se admita la recusación.»"
+    pide: "Inadmisión de la recusación del perito de parte."
+    aviso: "Comprobar si, reconducida a tacha, está en plazo: en el ordinario, las tachas del perito de demanda o contestación se proponen en la audiencia previa; en el verbal, no después de la vista (343.2)."
+    bases:
+      - { norma: LEC, articulo: "124", apartado: "2" }
+      - { norma: LEC, articulo: "343", apartado: "1" }
+      - { norma: LEC, articulo: "343", apartado: "2" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "El perito designado judicialmente manifiesta en el acto una causa de abstención"
+    grupo: "Recusación y abstención"
+    momento: ["juicio", "vista_verbal"]
+    formula: "«Con la venia: manifestada por el perito una causa de abstención posterior a la aceptación del cargo, interesamos ser oídos antes de que se resuelva: [nos adherimos / nos oponemos, porque …].»"
+    pide: "Audiencia de las partes antes de decidir sobre la abstención (105.2)."
+    aviso: "La abstención del perito puede ser oral, siempre que esté justificada (105.1); la decide quien lo designó, previa audiencia de las partes, y no cabe recurso (105.2)."
+    bases:
+      - { norma: LEC, articulo: "100", apartado: "2" }
+      - { norma: LEC, articulo: "105", apartado: "1" }
+      - { norma: LEC, articulo: "105", apartado: "2" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  # ───────────────────────── LENGUA COOFICIAL E INTÉRPRETES ─────────────────────────
+  - situacion: "El tribunal o un funcionario usa el valenciano y nuestro cliente no lo entiende"
+    grupo: "Lengua e intérpretes"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Con la venia: nos oponemos al uso del valenciano por el tribunal en este acto. [Mi representado] lo desconoce y ello le causaría indefensión. Interesamos que la actuación se desarrolle en castellano.»"
+    pide: "Que el tribunal y los funcionarios actúen en castellano."
+    aviso: "La oposición solo alcanza a jueces, letrados de la Administración de Justicia, fiscales y funcionarios (142.2) y exige alegar desconocimiento que cause indefensión, no mera preferencia. Partes, abogados, testigos y peritos pueden seguir usando el valenciano (142.3)."
+    bases:
+      - { norma: LEC, articulo: "142", apartado: "1" }
+      - { norma: LEC, articulo: "142", apartado: "2" }
+      - { norma: LOPJ, articulo: "231", apartado: "1" }
+      - { norma: LOPJ, articulo: "231", apartado: "2" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Una parte, un testigo o un perito interviene en valenciano y nuestro cliente no lo entiende"
+    grupo: "Lengua e intérpretes"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Con la venia: no discutimos el derecho del declarante a expresarse en valenciano, pero [mi representado] no lo entiende. Alegando indefensión, interesamos que se habilite intérprete que traduzca al castellano lo declarado.»"
+    pide: "Habilitación de intérprete, con juramento o promesa de fiel traducción (142.5)."
+    aviso: "No cabe oponerse al uso del valenciano por partes, testigos o peritos (142.3): lo que se pide es la traducción, que procede a instancia de parte que alegue indefensión (142.4). Vale también para documentos en valenciano, que son válidos sin traducción salvo esa petición."
+    bases:
+      - { norma: LEC, articulo: "142", apartado: "3" }
+      - { norma: LEC, articulo: "142", apartado: "4" }
+      - { norma: LEC, articulo: "142", apartado: "5" }
+      - { norma: LOPJ, articulo: "231", apartado: "3" }
+      - { norma: LOPJ, articulo: "231", apartado: "4" }
+      - { norma: LOPJ, articulo: "231", apartado: "5" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Nuestro cliente, o un testigo o perito propio, va a declarar en valenciano"
+    grupo: "Lengua e intérpretes"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Con la venia: [el declarante] hará uso de su derecho a expresarse en valenciano, lengua oficial en la Comunitat Valenciana. Lo anticipamos para que, si alguna parte alega indefensión, pueda habilitarse intérprete sin suspender el acto.»"
+    pide: "Que conste el uso de la lengua cooficial y, en su caso, que se habilite intérprete en el acto."
+    aviso: "Es un derecho del declarante (142.3) y la actuación es plenamente válida sin traducción (142.4); la traducción solo se hace si una parte alega indefensión."
+    bases:
+      - { norma: LEC, articulo: "142", apartado: "3" }
+      - { norma: LEC, articulo: "142", apartado: "4" }
+      - { norma: LEC, articulo: "142", apartado: "5" }
+      - { norma: LOPJ, articulo: "231", apartado: "3" }
+    no_consta_en_norma:
+      - "Anunciar de antemano que se declarará en valenciano es uso forense para evitar suspensiones; la ley no lo exige."
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Declarante que no conoce el castellano ni el valenciano"
+    grupo: "Lengua e intérpretes"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Con la venia: [el declarante] no conoce el castellano ni el valenciano. Interesamos que se habilite intérprete, con juramento o promesa de fiel traducción, y que el acta recoja lo declarado en el idioma original y su traducción.»"
+    pide: "Habilitación de intérprete por decreto del letrado de la Administración de Justicia y acta firmada también por el intérprete (143.1)."
+    aviso: "En litigios transfronterizos la interpretación está garantizada en los términos de la Ley de Asistencia Jurídica Gratuita (143.1, párrafo 2.º). Pedirlo antes de la vista evita la suspensión."
+    bases:
+      - { norma: LEC, articulo: "143", apartado: "1" }
+      - { norma: LOPJ, articulo: "231", apartado: "5" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Documento en idioma no oficial aportado en el acto sin traducción"
+    grupo: "Lengua e intérpretes"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Con la venia: el documento que se aporta está redactado en [idioma] y no va acompañado de traducción. Interesamos que se requiera a la contraria para que la aporte, y nos reservamos impugnarla en los cinco días siguientes a su traslado.»"
+    pide: "Requerimiento de traducción (144.1); en su caso, impugnación de la traducción privada (144.2)."
+    aviso: "Un documento en valenciano no está en idioma «no oficial» (142.4). La LEC no prevé la inadmisión directa por falta de traducción: lo prudente es pedir el requerimiento (231). Si la traducción oficial coincide en lo sustancial con la privada, la paga quien la pidió (144.2, párrafo 2.º)."
+    bases:
+      - { norma: LEC, articulo: "144", apartado: "1" }
+      - { norma: LEC, articulo: "144", apartado: "2" }
+      - { norma: LEC, articulo: "231" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  # ───────────────────────── PERSONAS CON DISCAPACIDAD Y PERSONAS MAYORES (ART. 7 BIS LEC) ─────────────────────────
+  - situacion: "Ajustes de procedimiento para una persona con discapacidad o mayor que interviene en el acto"
+    grupo: "Discapacidad y personas mayores"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Con la venia: [el declarante] [tiene una discapacidad / tiene … años]. Al amparo del artículo 7 bis LEC, interesamos que se le hable en lenguaje claro y sencillo, que pueda estar acompañado de [persona de su elección] y que se hagan los ajustes que necesite para participar en igualdad.»"
+    pide: "Adaptaciones y ajustes (7 bis.1), comunicación en lenguaje claro (7 bis.2.a) y acompañante de su elección (7 bis.2.d)."
+    aviso: "De 65 a 79 años, los ajustes solo se hacen a petición del interesado; con 80 o más, también de oficio; para la discapacidad, de oficio o a petición de cualquier parte o del fiscal (7 bis.1). Con 80 años o más el proceso es de tramitación preferente (7 bis.3): recordarlo si hay nuevo señalamiento. Si se deniega el ajuste, pedir que conste."
+    bases:
+      - { norma: LEC, articulo: "7 bis", apartado: "1" }
+      - { norma: LEC, articulo: "7 bis", apartado: "2.a)" }
+      - { norma: LEC, articulo: "7 bis", apartado: "2.d)" }
+      - { norma: LEC, articulo: "7 bis", apartado: "3" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Persona con discapacidad que necesita un facilitador para entender y ser entendida"
+    grupo: "Discapacidad y personas mayores"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Con la venia: interesamos que se permita intervenir a [profesional experto] como facilitador, para que haga las adaptaciones necesarias y [el declarante] pueda entender y ser entendido.»"
+    pide: "Participación del facilitador (7 bis.2.c)."
+    aviso: "Mejor pedirlo antes del acto, identificando al facilitador y su cualificación. Si la persona ha de ser entrevistada como persona con discapacidad, se exige su presencia física (129 bis.2)."
+    bases:
+      - { norma: LEC, articulo: "7 bis", apartado: "1" }
+      - { norma: LEC, articulo: "7 bis", apartado: "2.c)" }
+      - { norma: LEC, articulo: "129 bis", apartado: "2" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Persona sorda o con discapacidad auditiva: intérprete de lengua de signos o apoyos a la comunicación oral"
+    grupo: "Discapacidad y personas mayores"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Con la venia: [el declarante] es [sordo / tiene discapacidad auditiva]. Interesamos que se nombre intérprete de la lengua de signos adecuada [o los medios de apoyo a la comunicación oral que necesite] y que se levante acta de lo actuado.»"
+    pide: "Intérprete de lengua de signos o medios de apoyo (7 bis.2.b; 143.2) y acta."
+    aviso: "El 143.2 obliga a nombrar «siempre» intérprete de lengua de signos a la persona sorda que haya de declarar; el 7 bis.2.b amplía a los apoyos a la comunicación oral y a las personas sordociegas."
+    bases:
+      - { norma: LEC, articulo: "7 bis", apartado: "2.b)" }
+      - { norma: LEC, articulo: "143", apartado: "2" }
+      - { norma: LOPJ, articulo: "231", apartado: "5" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  # ───────────────────────── VIDEOCONFERENCIA Y PRESENCIA TELEMÁTICA ─────────────────────────
+  - situacion: "La contraria pretende que una parte, testigo o perito declare por videoconferencia"
+    grupo: "Videoconferencia"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Nos oponemos, Señoría: para declarar, la ley exige la presencia física de [la parte / el testigo / el perito], salvo excepción que aquí no concurre [reside en el municipio sede / no se pidió con diez días de antelación]. Interesamos que declare presencialmente.»"
+    pide: "Presencia física del declarante (129 bis.2) o, en su caso, que el tribunal la acuerde por resolución motivada (129 bis.3)."
+    aviso: "Excepciones: que el tribunal disponga otra cosa; que el declarante resida en otro municipio y lo pida, desde lugar seguro del suyo; o que intervenga como autoridad o funcionario (129 bis.2). En esos dos últimos casos el tribunal aún puede exigir la presencia (129 bis.3). Si declara una parte, también su abogado ha de estar presente (129 bis.2)."
+    bases:
+      - { norma: LEC, articulo: "129 bis", apartado: "2" }
+      - { norma: LEC, articulo: "129 bis", apartado: "3" }
+      - { norma: LEC, articulo: "137 bis", apartado: "4" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Declarante por videoconferencia: identidad, lugar desde el que interviene y presencia de terceros"
+    grupo: "Videoconferencia"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Con la venia: antes de que declare, interesamos que se compruebe la identidad de [el declarante], que indique desde dónde interviene y que conste que no le acompañan terceras personas ni tiene a la vista documentos que no obren en autos.»"
+    pide: "Comprobación de la identidad y de las condiciones de la intervención."
+    aviso: "La regla es intervenir desde la oficina judicial del partido del domicilio o del trabajo, o desde el juzgado de paz si tiene medios (137 bis.2); desde otro lugar, solo si el juez lo autoriza y puede asegurarse la identidad (137 bis.3). Menores y personas sujetas a un procedimiento de apoyos, solo desde oficina judicial (137 bis.3)."
+    bases:
+      - { norma: LEC, articulo: "137 bis", apartado: "2" }
+      - { norma: LEC, articulo: "137 bis", apartado: "3" }
+      - { norma: LOPJ, articulo: "229", apartado: "3" }
+    no_consta_en_norma:
+      - "Pedir que se muestre la estancia o que conste la ausencia de terceros y de documentos ajenos a autos es uso forense; la ley solo exige asegurar la identidad y las condiciones de la intervención."
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Exhibición de documentos a un declarante que interviene por videoconferencia"
+    grupo: "Videoconferencia"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Con la venia: interesamos que el documento que se exhibe al declarante se identifique por su número en autos y se muestre también a esta parte en pantalla, para garantizar la contradicción.»"
+    pide: "Identificación del documento y su exhibición simultánea a todas las partes."
+    aviso: "La videoconferencia debe asegurar en todo caso la contradicción y el derecho de defensa (LOPJ 229.3; 129 bis.5)."
+    bases:
+      - { norma: LOPJ, articulo: "229", apartado: "3" }
+      - { norma: LEC, articulo: "129 bis", apartado: "5" }
+    no_consta_en_norma:
+      - "El modo concreto (número en autos y pantalla compartida) es uso forense; la norma solo garantiza la contradicción."
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  # ───────────────────────── PROPIEDAD HORIZONTAL (LPH) ─────────────────────────
+  - situacion: "Impugnación de acuerdos de la junta: el actor no está al corriente ni ha consignado (habla la comunidad)"
+    grupo: "Propiedad horizontal"
+    momento: ["audiencia_previa"]
+    formula: "«Con la venia: el actor no acreditó estar al corriente en el pago de la totalidad de las deudas vencidas con la comunidad ni haberlas consignado judicialmente, requisito para impugnar (artículo 18.2 LPH). Interesamos que se aprecie como óbice procesal.»"
+    pide: "Que se aprecie la falta del requisito del 18.2 LPH, por el cauce de las cuestiones procesales (416.1 y 425 LEC)."
+    aviso: "No rige si se impugnan acuerdos sobre el establecimiento o la alteración de cuotas de participación (18.2 LPH, inciso final). En el verbal no hay discusión en sala: las excepciones procesales se resuelven por auto escrito (438.10)."
+    bases:
+      - { norma: LPH, articulo: "18", apartado: "2" }
+      - { norma: LEC, articulo: "416", apartado: "1" }
+      - { norma: LEC, articulo: "425" }
+    no_consta_en_norma:
+      - "Si el defecto puede subsanarse en la audiencia (consignando o acreditando el pago después de la demanda) no lo dice la LPH; hay doctrina del Tribunal Supremo sobre su subsanabilidad que no se ha verificado en esta pasada."
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Impugnación de acuerdos de la junta: subsanación del requisito de estar al corriente (habla el impugnante)"
+    grupo: "Propiedad horizontal"
+    momento: ["audiencia_previa"]
+    formula: "«Con la venia: el requisito del artículo 18.2 LPH es subsanable. [Acreditamos estar al corriente / Acreditamos la consignación judicial de …]. Interesamos que se tenga por cumplido y que continúe la audiencia.»"
+    pide: "Que se tenga por subsanado el defecto (231 LEC, por la vía del 425)."
+    aviso: "La ley habla de consignación «previa» (18.2 LPH): la subsanación en la audiencia es tesis de parte, no regla legal. Llevar el justificante de pago o de consignación."
+    bases:
+      - { norma: LPH, articulo: "18", apartado: "2" }
+      - { norma: LEC, articulo: "231" }
+      - { norma: LEC, articulo: "425" }
+    no_consta_en_norma:
+      - "Subsanabilidad del requisito del 18.2 LPH: elaboración jurisprudencial, no regla expresa; no verificada en esta pasada."
+    estado: "provisional"   # PENDIENTE: verificar la doctrina del Tribunal Supremo sobre la subsanabilidad del requisito del 18.2 LPH y su momento.
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Impugnación de acuerdos de la junta: fijar como controvertida la legitimación del impugnante"
+    grupo: "Propiedad horizontal"
+    momento: ["audiencia_previa", "vista_verbal"]
+    formula: "«Interesamos que se fije como hecho controvertido si el actor asistió a la junta y, en tal caso, si salvó su voto o fue privado indebidamente de él, presupuesto de su legitimación conforme al artículo 18.2 LPH.»"
+    pide: "Inclusión de la legitimación entre los hechos controvertidos (428.1; en el verbal, 443.3)."
+    aviso: "Están legitimados quienes salvaron su voto, los ausentes por cualquier causa y los privados indebidamente del voto (18.2 LPH). El acta de la junta es la prueba natural: pedir su aportación o exhibición si no consta."
+    bases:
+      - { norma: LPH, articulo: "18", apartado: "2" }
+      - { norma: LEC, articulo: "428", apartado: "1" }
+      - { norma: LEC, articulo: "443", apartado: "3" }
+    no_consta_en_norma:
+      - "Si el propietario que se abstuvo, o que votó en contra sin salvar expresamente el voto, está legitimado no lo dice la LPH; es cuestión jurisprudencial no verificada en esta pasada."
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Petición de suspensión cautelar del acuerdo de la junta impugnado"
+    grupo: "Propiedad horizontal"
+    momento: ["vista_verbal"]
+    formula: "«Con la venia: interesamos que se suspenda cautelarmente la ejecución del acuerdo impugnado, porque su cumplimiento durante el pleito [consecuencia concreta] haría ineficaz una sentencia estimatoria.»"
+    pide: "Suspensión cautelar del acuerdo (18.4 LPH), en la vista de medidas con audiencia de la comunidad."
+    aviso: "La impugnación no suspende por sí sola el acuerdo: la suspensión se pide expresamente y exige oír a la comunidad (18.4 LPH), lo que lleva a la vista del 734 LEC. Prever la caución (728.3 LEC) y justificar el peligro por la mora (728.1)."
+    bases:
+      - { norma: LPH, articulo: "18", apartado: "4" }
+      - { norma: LEC, articulo: "728", apartado: "1" }
+      - { norma: LEC, articulo: "728", apartado: "3" }
+      - { norma: LEC, articulo: "734", apartado: "2" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Verbal procedente del monitorio de la comunidad: costas con honorarios aunque el abogado no fuera preceptivo"
+    grupo: "Propiedad horizontal"
+    momento: ["vista_verbal"]
+    formula: "«Interesamos la condena en costas del demandado, incluidos los honorarios del abogado y los derechos del procurador de la comunidad aunque su intervención no fuera preceptiva, como dispone el artículo 21.5 LPH para la sentencia totalmente favorable.»"
+    pide: "Costas con inclusión de honorarios y derechos no preceptivos (21.5 LPH)."
+    aviso: "Solo si la sentencia es totalmente favorable a la comunidad. Es excepción a la regla general que excluye esos honorarios cuando la intervención no es preceptiva (32.5 LEC)."
+    bases:
+      - { norma: LPH, articulo: "21", apartado: "5" }
+      - { norma: LEC, articulo: "32", apartado: "5" }
+      - { norma: LEC, articulo: "394", apartado: "1" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  # ───────────────────────── CONSUMIDORES: CLÁUSULAS ABUSIVAS (TRLGDCU) ─────────────────────────
+  - situacion: "El tribunal plantea de oficio en el acto el posible carácter abusivo de una cláusula"
+    grupo: "Consumidores: cláusulas abusivas"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Con la venia: antes de que se resuelva sobre el carácter abusivo de la cláusula [ … ], interesamos que se conceda a las partes trámite de audiencia para alegar y, en su caso, probar sobre ello.»"
+    pide: "Audiencia de las partes antes de la declaración de nulidad (83 TRLGDCU)."
+    aviso: "El 83 TRLGDCU exige audiencia previa de las partes. Para el empresario es el momento de acreditar la negociación individual, cuya prueba le incumbe (82.2, párrafo 2.º), y las circunstancias de la celebración (82.3)."
+    bases:
+      - { norma: TRLGDCU, articulo: "83" }
+      - { norma: TRLGDCU, articulo: "82", apartado: "2" }
+      - { norma: TRLGDCU, articulo: "82", apartado: "3" }
+      - { norma: CE, articulo: "24", apartado: "1" }
+    no_consta_en_norma:
+      - "El deber del juez de examinar de oficio la abusividad en el proceso declarativo no está en la LEC, que solo lo regula en el monitorio y en la ejecución (815.3, 552.1 y 557.1.7.ª); procede de la jurisprudencia del TJUE sobre la Directiva 93/13, no verificada en esta pasada."
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Consumidor: invitar al tribunal a examinar de oficio una cláusula que no se alegó"
+    grupo: "Consumidores: cláusulas abusivas"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Con la venia: sin alterar nuestras pretensiones, ponemos de manifiesto que la cláusula [ … ] puede ser abusiva por [causa del 82.4 o de los artículos 85 a 90 TRLGDCU]. Interesamos que el tribunal la examine de oficio, con audiencia de las partes.»"
+    pide: "Control de oficio de la cláusula, con audiencia de las partes (83 TRLGDCU)."
+    aviso: "Plantearlo como invitación al control de oficio, no como alegación nueva: como alegación, chocaría con la preclusión (400 y 426 LEC)."
+    bases:
+      - { norma: TRLGDCU, articulo: "82", apartado: "1" }
+      - { norma: TRLGDCU, articulo: "82", apartado: "4" }
+      - { norma: TRLGDCU, articulo: "83" }
+    no_consta_en_norma:
+      - "Que una parte pueda suscitar en el acto el control de oficio de una cláusula no alegada no está regulado; descansa en la jurisprudencia del TJUE sobre el control de oficio, no verificada en esta pasada."
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Carga de la prueba de la negociación individual de una cláusula con un consumidor"
+    grupo: "Consumidores: cláusulas abusivas"
+    momento: ["audiencia_previa", "juicio", "vista_verbal"]
+    formula: "«Con la venia: la contraria afirma que la cláusula [ … ] se negoció individualmente. Como empresario, le corresponde probarlo, y no lo ha hecho. Interesamos que así se tenga en cuenta.»"
+    pide: "Aplicación de la regla de carga de la prueba del 82.2, párrafo 2.º, TRLGDCU."
+    aviso: "Que se negociara una parte de la cláusula, o una cláusula aislada, no excluye el control del resto del contrato (82.2, párrafo 1.º). En la audiencia previa sirve para fijar el hecho controvertido; en el juicio, para conclusiones."
+    bases:
+      - { norma: TRLGDCU, articulo: "82", apartado: "2" }
+      - { norma: TRLGDCU, articulo: "82", apartado: "1" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"
+
+  - situacion: "Vista de oposición a la ejecución por cláusula abusiva"
+    grupo: "Consumidores: cláusulas abusivas"
+    momento: ["vista_verbal"]
+    formula: "«Con la venia: sostenemos la oposición por el carácter abusivo de la cláusula [ … ], que fundamenta la ejecución [o determina la cantidad exigible]. Interesamos que se declare improcedente la ejecución o que se despache sin aplicarla.»"
+    pide: "Improcedencia de la ejecución o despacho sin la cláusula (561.2 LEC)."
+    aviso: "Firme el auto, el pronunciamiento sobre la abusividad tiene fuerza de cosa juzgada (561.2): agotar en esta vista toda la argumentación. En la ejecución hipotecaria la causa es la 695.1.4.ª y se ventila en la comparecencia del 695.2."
+    bases:
+      - { norma: LEC, articulo: "557", apartado: "1.7.ª" }
+      - { norma: LEC, articulo: "561", apartado: "2" }
+      - { norma: LEC, articulo: "695", apartado: "1.4.ª" }
+      - { norma: TRLGDCU, articulo: "83" }
+    estado: "vigente"
+    espejo: "legalize-es@aca28304d"
+    revisada_el: "2026-10-08"
+    revisor: "armero"

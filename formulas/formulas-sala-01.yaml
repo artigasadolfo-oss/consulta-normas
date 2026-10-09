@@ -1,5 +1,5 @@
 # Fórmulas de sala de «Consulta de normas» — tanda 01 (audiencia previa, juicio ordinario y vista del verbal)
-# Revisor: armero. Espejo: legalize-es@aca28304d. Todo precepto citado se ha leído en el espejo en esta pasada.
+# Revisor: armero. Espejo: legalize-es@aca28304d; la fórmula «Desahucio por falta de pago: el demandado alega causas distintas del pago o la enervación» está revisada contra legalize-es@597314599f (composición con el RDL 29/2026) y cita ya el LEC 22 como base, no solo en `vigilar`. Todo precepto citado se ha leído en el espejo en esta pasada.
 # Encargo: docs/consulta-armero-formulas-sala-08-10-2026.md. Notas: formulas-sala-01-notas.md.
 # Vigencia: contraste con la API de boe.es (scripts/contraste_boe.py --solo "LEC,LOPJ,CE,LO 1/2025", 08-10-2026). Distintos: LEC 22 y 685,
 # ninguno citado como base (el 22 solo en `vigilar`); ninguna versión futura. 120 fórmulas: 8 del cuadro de Adolfo + 112 nuevas.
@@ -1791,15 +1791,22 @@ formulas:
     momento: ["vista_verbal"]
     formula: "«Nos oponemos a que se discutan [obras, compensaciones, otras cuestiones]: en el desahucio por impago solo cabe alegar y probar el pago o la procedencia de la enervación. Interesamos que no se admitan esas alegaciones ni su prueba.»"
     pide: "Que se limite la vista a las causas tasadas."
-    aviso: "La sentencia de desahucio carece de cosa juzgada salvo en las cantidades acumuladas (447.2)."
+    aviso: "No sirve contra la alegación de vulnerabilidad económica: es una circunstancia de la enervación (444.1 y 22.6). Si se acredita, se comunica a la Administración, que tiene dos meses para ofrecer una alternativa habitacional o pagar; entretanto, el proceso y el lanzamiento quedan en suspenso (22.6, párrafos 2.º y 3.º). Cabe aunque el arrendatario ya hubiera enervado antes o hubiera requerimiento fehaciente (22.6, párrafos 6.º y 7.º). La sentencia de desahucio no produce cosa juzgada, salvo en lo que resuelva sobre las rentas acumuladas y frente al fiador o avalista (447.2)."
     bases:
       - { norma: LEC, articulo: "444", apartado: "1" }
+      - { norma: LEC, articulo: "22", apartado: "4" }
+      - { norma: LEC, articulo: "22", apartado: "6" }
+      - { norma: LEC, articulo: "22", apartado: "6, párrafos 6.º y 7.º" }
       - { norma: LEC, articulo: "447", apartado: "2" }
-    vigilar:
-      - { norma: LEC, articulo: "22" }
-    estado: "vigente"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    no_consta_en_norma:
+      - "Qué es la «vulnerabilidad económica en los términos legalmente previstos» del 22.6: la LEC no la define ni remite a una norma concreta."
+      - "Supuesto excluido del 22.6 (demandante que adquiere inmuebles o carteras de préstamos impagados a precio claramente inferior al de tasación): está en el art. 2.1 del RDL 29/2026, que la herramienta no incluye."
+      - "Suspensión de los desahucios de vulnerables sin alternativa hasta el 31-12-2030 (art. 2 del RDL 29/2026) y aplicación a las ejecuciones en curso sin lanzamiento practicado (disposición transitoria segunda): la herramienta no incluye el RDL."
+    # AVISO: el 22.6 LEC lo añade el RDL 29/2026 (vigor 08-10-2026), no convalidado a esta fecha (Diputación Permanente, art. 86.2 CE).
+    # Si se deroga, desaparece la enervación extraordinaria y decae el aviso sobre la vulnerabilidad; 444.1, 22.4 y 447.2 no dependen del RDL. Provisional por el 22.6.
+    estado: "provisional"
+    espejo: "legalize-es@597314599f"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - situacion: "Reposición contra la admisión o inadmisión de prueba en la vista"

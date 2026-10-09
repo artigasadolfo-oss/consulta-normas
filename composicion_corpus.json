@@ -1,0 +1,42 @@
+{
+ "creada": "2026-10-09T07:19:32",
+ "base": "aca28304d",
+ "origen": "a5e9eecce6",
+ "sustituciones": [
+  {
+   "norma": "LAU",
+   "boe": "BOE-A-1994-26003",
+   "alcance": "norma completa",
+   "antes": "c19f4916c4aa1bb2",
+   "despues": "5f248a33b7e82ca6",
+   "last_updated": "2026-10-07"
+  },
+  {
+   "norma": "LEC",
+   "boe": "BOE-A-2000-323",
+   "alcance": "art. 22",
+   "antes": "6a5f945fe215c0d1",
+   "despues": "5b5618cd780ec2d0"
+  },
+  {
+   "norma": "LEC",
+   "boe": "BOE-A-2000-323",
+   "alcance": "art. 685",
+   "antes": "757d51476e544e57",
+   "despues": "be4c95258d04bf08"
+  },
+  {
+   "norma": "LEC",
+   "boe": "BOE-A-2000-323",
+   "alcance": "last_updated",
+   "despues": "2026-10-07"
+  },
+  {
+   "norma": "CC",
+   "boe": "BOE-A-1889-4763",
+   "alcance": "art. 396",
+   "antes": "1fffea14b757fd4b",
+   "despues": "a735d9f9b72d330d"
+  }
+ ]
+}
