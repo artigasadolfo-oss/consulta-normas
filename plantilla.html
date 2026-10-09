@@ -153,6 +153,7 @@ mark{background:var(--ocre-100);color:inherit;border-radius:3px;padding:0 1px}
 .vacio .ej{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
 .ejb{border:1px solid var(--ink-200);background:#fff;border-radius:9px;padding:8px 12px;font-family:var(--mono);font-size:12.5px;color:var(--ink-700);cursor:pointer}
 .ejb:hover{background:var(--ink-50);border-color:var(--ink-300)}
+.ejb[aria-disabled=true]{color:var(--ink-500);cursor:not-allowed}
 .hint{margin-top:18px;font-size:12.5px;color:var(--ink-500);line-height:1.7}
 .hint kbd,.kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--ink-200);border-bottom-width:2px;border-radius:6px;padding:1px 6px;background:var(--ink-50);color:var(--ink-700)}
 /* LECTOR */
@@ -298,6 +299,7 @@ body.sin-chips .searchbar{margin-bottom:14px}
   </div>
  </main>
  <footer class="foot"><div class="lg"><div class="logo"></div><span>Artigas Abogados · Consulta de normas</span></div><span class="legal">Texto consolidado (espejo del BOE) sin valor oficial. Contrasta con boe.es antes de citar literalmente.</span></footer>
+<input type="file" id="fav-fichero" accept=".json,application/json" hidden tabindex="-1" aria-hidden="true">
 </div>
 <script id="datos" type="application/octet-stream">@@DATOS@@</script>
 <script>
@@ -593,12 +595,14 @@ function vistaInicio(){
   var ej=['282 LEC','18.3 PH','9 LAU','1902 CC','5 LO 1/2025','63-65 LEC','declinatoria de jurisdicción','desahucio por precario','requisito de procedibilidad'];
   var h='';
   if(ST.items.length)h+='<div class="lista-h">Recientes<small>1–9 abre el artículo</small></div>'+ST.items.map(recHtml).join('');
-  h+='<div class="vacio"><b>Escribe un artículo o un concepto.</b><br>Artículo: «282 LEC», «art. 18.3 de la LPH», «1902 cc», «63-65 lec», «da 1 lec».<br>Sin norma («21») te enseño ese artículo en todas.<br>Concepto: cualquier palabra o frase; te saco los artículos que la contienen.<div class="ej">'+ej.map(function(e){return '<button class="ejb" data-q="'+esc(e)+'">'+esc(e)+'</button>'}).join('')+'</div><div class="hint"><span class="kbd">/</span> volver al buscador · <span class="kbd">↑</span> <span class="kbd">↓</span> moverse por la lista · <span class="kbd">Enter</span> abrir · <span class="kbd">←</span> <span class="kbd">→</span> artículo anterior/siguiente · <span class="kbd">1</span>–<span class="kbd">9</span> abrir resultado (fuera del buscador) · <span class="kbd">F</span> fijar/quitar favorito · <span class="kbd">N</span> índice de normas · <span class="kbd">C</span> conceptos · <span class="kbd">S</span> fórmulas · <span class="kbd">M</span> menú</div></div>';
+  h+='<div class="vacio"><b>Escribe un artículo o un concepto.</b><br>Artículo: «282 LEC», «art. 18.3 de la LPH», «1902 cc», «63-65 lec», «da 1 lec».<br>Sin norma («21») te enseño ese artículo en todas.<br>Concepto: cualquier palabra o frase; te saco los artículos que la contienen.<div class="ej">'+ej.map(function(e){return '<button class="ejb" data-q="'+esc(e)+'">'+esc(e)+'</button>'}).join('')+'</div><div class="ej" id="fav-io"><button class="ejb" id="b-exp-fav" type="button">Exportar favoritos <span class="kbd">E</span></button><button class="ejb" id="b-imp-fav" type="button" aria-label="Importar favoritos desde un fichero .json (tecla I)" title="Añadir al final los favoritos de un fichero .json (I)">Importar favoritos <span class="kbd">I</span></button><button class="ejb" id="b-reset-fav" type="button">Restablecer favoritos</button></div><div id="fav-aviso" role="status" style="margin-top:8px;font-weight:600;color:var(--ink-800)"></div><div class="hint"><span class="kbd">/</span> volver al buscador · <span class="kbd">↑</span> <span class="kbd">↓</span> moverse por la lista · <span class="kbd">Enter</span> abrir · <span class="kbd">←</span> <span class="kbd">→</span> artículo anterior/siguiente · <span class="kbd">1</span>–<span class="kbd">9</span> abrir resultado (fuera del buscador) · <span class="kbd">F</span> fijar/quitar favorito · <span class="kbd">N</span> índice de normas · <span class="kbd">C</span> conceptos · <span class="kbd">S</span> fórmulas · <span class="kbd">M</span> menú · <span class="kbd">E</span> exportar favoritos · <span class="kbd">I</span> importar favoritos</div></div>';
   elLista.innerHTML=h;
   elLector.innerHTML='<div class="lect-in"><div class="a-eye">Consulta rápida</div><h2 class="a-h" style="font-size:20px">'+NORMAS.length+' normas en este dispositivo</h2><div class="a-meta">Funciona sin conexión. Texto consolidado del BOE según el espejo del despacho.</div><div class="a-body"><p>Todas, con su título completo y su número de artículos, están en el <a href="#n"><b>Índice de normas</b></a> (tecla <span class="kbd">N</span>). En el menú de la izquierda solo salen las normas y los artículos que fijas tú.</p></div></div>';
   var bx=document.createElement('p');bx.style.cssText='margin:14px 0 0;padding:0 28px;font-size:12px;color:var(--ink-500)';
-  bx.innerHTML='<b>Favoritos.</b> Fija una norma con la estrella del Índice de normas y un artículo con la estrella o la tecla F; salen en el menú, en el orden en que los fijas. Se guardan solo en este dispositivo. <button class="ejb" id="b-reset-fav" type="button">Restablecer favoritos</button>';
-  elLector.appendChild(bx);$('#b-reset-fav').onclick=restableceFav;
+  bx.innerHTML='<b>Favoritos.</b> Fija una norma con la estrella del Índice de normas y un artículo con la estrella o la tecla F; salen en el menú, en el orden en que los fijas. Se guardan solo en este dispositivo; para llevarlos a otro (o a LexArt) expórtalos a un fichero e impórtalos allí (botones a la izquierda, bajo los ejemplos).';
+  elLector.appendChild(bx);
+  $('#b-reset-fav').onclick=function(){var s=$('#fav-aviso');if(s)delete s.dataset.origen;restableceFav()};
+  $('#b-exp-fav').onclick=exportaFav;$('#b-imp-fav').onclick=pidoFicheroFav;actualizaExportFav();
   if(IDX){var vz=elLista.querySelector('.vacio');if(vz)vz.insertAdjacentHTML('beforeend','<p style="margin:14px 0 0"><a href="#i" style="font-weight:600">Abrir el índice de conceptos</a> <span style="color:var(--ink-500)">(orientativo; contenido del Armero)</span></p>')}
   document.body.classList.remove('ver-lector');
   marcaNav();
@@ -764,7 +768,7 @@ function pintaFav(){
       :'<div class="fvh">Ninguno. Abre un artículo y pulsa <span class="kbd">F</span>.</div>';
   }
   $('#nav-fav').innerHTML=h;
-  marcaNav();
+  marcaNav();actualizaExportFav();
 }
 function restableceFav(){
   if(!window.confirm('¿Quitar todas las normas y artículos fijados en favoritos de este dispositivo?'))return;
@@ -772,6 +776,84 @@ function restableceFav(){
   var b=document.getElementById('b-fav');if(b&&ST.mostrados)pintaBotonFav(b,ST.mostrados[0]);
   if(ST.mode==='normas')vistaNormas(NSEL);
 }
+/* ---------- exportar / importar favoritos: el fichero {n,k?,sig,id?} es el puente con LexArt (localStorage es por origen) ---------- */
+var FAV_MAX_BYTES=1048576,FAV_MAX_ELEM=500,FAV_VACIOS='No hay favoritos que exportar: fija alguno con la estrella o la tecla F.';
+function tieneNorma(n){return typeof n==='string'&&Object.prototype.hasOwnProperty.call(POR,n)}
+function idDeSigla(s){return typeof s==='string'?s.toLowerCase().replace(/\s+/g,'').replace(/\//g,'-'):null}
+/* Un elemento del fichero -> {n} | {n,k} de esta web, o null si no existe aquí. Si trae n, n manda; si trae k, k manda (sig/id son los de LexArt). */
+function favDeFichero(it){
+  if(!it||typeof it!=='object'||Array.isArray(it))return null;
+  var n=it.n!=null?it.n:idDeSigla(it.sig),k=it.k!=null?it.k:it.id;
+  if(!tieneNorma(n))return null;
+  if(k==null)return {n:n};
+  k=claveDeFichero(n,k);
+  return k==null?null:{n:n,k:k};
+}
+/* La clave tal cual; si no existe, la forma con que LexArt rotula las disposiciones ("DA 1" -> da1, "RD DA 1" -> rd-da1). Siempre se comprueba contra la norma. */
+function claveDeFichero(n,k){
+  if(typeof k!=='string')return null;
+  var m=POR[n].map,l=k.trim().toLowerCase(),t=l.replace(/^rd[\s-]+(?=d[atdf]\s*\d)/,'rd-').replace(/^(rd-)?(d[atdf])\s+(?=\d)/,'$1$2'),c=[k,l,t],i;
+  for(i=0;i<c.length;i++)if(m.has(c[i]))return c[i];
+  return null;
+}
+function avisaFav(t){
+  var s=document.getElementById('fav-aviso');
+  if(s){s.textContent=t;s.dataset.origen='accion'}else toast(t);
+}
+function actualizaExportFav(){
+  var b=document.getElementById('b-exp-fav'),s=document.getElementById('fav-aviso');if(!b)return;
+  var vacio=favLista().length===0;
+  b.setAttribute('aria-disabled',vacio?'true':'false');
+  b.title=vacio?FAV_VACIOS:'Descargar los favoritos en un fichero .json (E)';
+  b.setAttribute('aria-label',vacio?'Exportar favoritos (no disponible: no hay favoritos que exportar)':'Exportar favoritos (tecla E)');
+  if(s&&vacio&&s.dataset.origen!=='accion')s.textContent=FAV_VACIOS;
+  if(s&&!vacio&&s.dataset.origen!=='accion')s.textContent='';
+}
+function exportaFav(){
+  var l=favLista();
+  if(!l.length){avisaFav(FAV_VACIOS);return}
+  var items=l.map(function(f){var n=POR[f.n];return JSON.stringify(f.k==null?{n:f.n,sig:n.sigla}:{n:f.n,k:f.k,sig:n.sigla,id:f.k})});
+  var d=new Date(),p=function(x){return (x<10?'0':'')+x},
+      nombre='favoritos-normas-'+d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate())+'.json',
+      u=URL.createObjectURL(new Blob(['[\n'+items.join(',\n')+'\n]\n'],{type:'application/json'})),
+      a=document.createElement('a');
+  a.href=u;a.download=nombre;a.style.display='none';document.body.appendChild(a);a.click();a.remove();
+  setTimeout(function(){URL.revokeObjectURL(u)},4000);
+  avisaFav('Exportados '+l.length+' en '+nombre);
+}
+function importaFavTexto(txt){
+  var j;
+  try{j=JSON.parse(txt)}catch(e){avisaFav('No se ha importado nada: el fichero no es JSON válido.');return}
+  if(!Array.isArray(j)){avisaFav('No se ha importado nada: el fichero no es una lista de favoritos.');return}
+  if(j.length>FAV_MAX_ELEM){avisaFav('No se ha importado nada: el fichero tiene '+j.length+' elementos (máximo '+FAV_MAX_ELEM+').');return}
+  var cur=LS.get('normas.fav',[]);if(!Array.isArray(cur))cur=[];
+  var res=cur.slice(),nuevos=0,ya=0,ign=0;
+  j.forEach(function(it){
+    var f=favDeFichero(it);
+    if(!f){ign++;return}
+    if(res.some(function(x){return x&&iguales(x,f.n,f.k==null?null:f.k)})){ya++;return}
+    res.push(f);nuevos++;
+  });
+  if(nuevos){
+    LS.set('normas.fav',res);
+    var g=LS.get('normas.fav',[]);
+    if(!Array.isArray(g)||g.length!==res.length){avisaFav('No he podido guardar los favoritos en este dispositivo: no se ha importado nada.');return}
+  }
+  pintaFav();
+  var b=document.getElementById('b-fav');if(b&&ST.mostrados)pintaBotonFav(b,ST.mostrados[0]);
+  if(ST.mode==='normas')vistaNormas(NSEL);
+  avisaFav((nuevos?'Importados '+nuevos:'No se ha importado nada')+' · ya estaban '+ya+' · ignorados '+ign);
+}
+function importaFavFichero(file){
+  var bi=document.getElementById('b-imp-fav'),fin=function(){if(bi)bi.focus()};
+  if(!file){fin();return}
+  if(file.size>FAV_MAX_BYTES){avisaFav('No se ha importado nada: el fichero pesa más de 1 MB.');fin();return}
+  var r=new FileReader();
+  r.onload=function(){importaFavTexto(String(r.result));fin()};
+  r.onerror=function(){avisaFav('No se ha importado nada: no he podido leer el fichero.');fin()};
+  r.readAsText(file);
+}
+function pidoFicheroFav(){var i=document.getElementById('fav-fichero');if(i)i.click()}
 function pintaBotonFav(b,c){var on=esFav(c);b.classList.toggle('on',on);b.setAttribute('aria-pressed',on);b.title=(on?'Quitar de favoritos':'Fijar en favoritos')+' (F)'}
 function registra(c){
   var rec=LS.get('normas.rec',[]).filter(function(r){return !(r.n===c.n.id&&r.k===c.k)});
@@ -1186,7 +1268,7 @@ elLista.addEventListener('click',function(e){
     return;
   }
   var it=e.target.closest('.item');if(it){selecciona(+it.dataset.ix,{abrir:true});return}
-  var b=e.target.closest('.ejb');if(b){elQ.value=b.dataset.q;go('#q/'+encodeURIComponent(b.dataset.q));elQ.focus()}
+  var b=e.target.closest('.ejb[data-q]');if(b){elQ.value=b.dataset.q;go('#q/'+encodeURIComponent(b.dataset.q));elQ.focus()}
 });
 elChips.addEventListener('click',function(e){
   var b=e.target.closest('.chip');if(!b)return;
@@ -1229,6 +1311,7 @@ function focoMenu(){
   if(MOVIL())document.body.classList.add('navopen');
   var el=document.querySelector('#nav-fav .fchip,#nav-fav .fa')||$('#nav-buscar');el.focus();
 }
+$('#fav-fichero').addEventListener('change',function(e){var f=e.target.files&&e.target.files[0];e.target.value='';importaFavFichero(f)});
 $('#mnav').addEventListener('click',function(){document.body.classList.toggle('navopen')});
 $('#scrim').addEventListener('click',cierraNav);
 document.addEventListener('keydown',function(e){
@@ -1244,6 +1327,8 @@ document.addEventListener('keydown',function(e){
   if((k==='c'||k==='C')&&IDX){e.preventDefault();cierraNav();go('#i');return}
   if((k==='s'||k==='S')&&FX){e.preventDefault();cierraNav();go('#f');return}
   if(k==='m'||k==='M'){e.preventDefault();focoMenu();return}
+  if(k==='e'||k==='E'){e.preventDefault();exportaFav();return}
+  if(k==='i'||k==='I'){e.preventDefault();pidoFicheroFav();return}
   if(k==='Escape'){if(document.body.classList.contains('navopen')){cierraNav();return}if(document.body.classList.contains('ver-lector')){var b=document.getElementById('b-volver')||document.getElementById('b-volver-n')||document.getElementById('b-volver-i')||document.getElementById('b-volver-f');if(b)b.click()}else elQ.focus();return}
   if((ST.mode==='indice'||ST.mode==='formulas')&&(k==='j'||k==='k'||k==='ArrowDown'||k==='ArrowUp')&&(!t||t===document.body||t===elLista||(t.closest&&t.closest('#idx-voces,#fx-lista')))){e.preventDefault();muevenLista(ST.mode,k==='j'||k==='ArrowDown'?1:-1);return}
   if(ST.mode==='normas'&&(!t||t===document.body||t===elLista||(t.closest&&t.closest('#n-lista')))){
