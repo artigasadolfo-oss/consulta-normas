@@ -84,7 +84,12 @@ NORMAS = [
 ]
 
 HEAD = re.compile(r"^(#{1,6})\s+(.*\S)\s*$")
-ESTRUCT = re.compile(r"^(LIBRO|TÍTULO|TITULO|CAPÍTULO|CAPITULO|SECCIÓN|Sección|Subsección|SUBSECCIÓN)\b")
+ESTRUCT = re.compile(r"^(?:(?:LIBRO|TÍTULO|TITULO|CAPÍTULO|CAPITULO|SECCIÓN|SECCION|SUBSECCIÓN|Libro|Título|Titulo|Capítulo|Capitulo|Sección|Seccion|Subsección|Subseccion)\b|§)")   # 08-10-2026: también en minúscula («Capítulo I.» de la LECrim) y «§ 1.º Del saneamiento…» (CC, nivel 5): sin esto el rótulo quedaba pegado al texto del artículo vecino
+# Rótulos de estructura que solo existen en una norma concreta (opción estruct_extra de NORMAS; solo niveles 2 a 5, nunca los que citan otra ley entre « »)
+ESTRUCT_EXTRA = {
+    "cc": re.compile(r"^(?:Disposici[oó]n(?:es)?\s+(?:preliminar(?:es)?|general(?:es)?)\b|Del?\s)"),
+    "lecrim": re.compile(r"^(?:Del?\s|Utilizaci[oó]n\s)"),   # el nombre del Título cuando viene en una línea aparte («TÍTULO IV» + «De las personas a quienes…»)
+}
 PREAM = re.compile(r"^(PREÁMBULO|EXPOSICIÓN DE MOTIVOS)\b", re.I)
 SUF = (r"bis|ter|qu[aá]ter|quinquies|sexies|septies|octies|nonies|decies|undecies|"
        r"duodecies|terdecies|quaterdecies|quindecies|sexdecies")
@@ -290,7 +295,7 @@ def parse_norma(cfg, lineas):
                 abre(k, txt_plano.capitalize() if txt_plano.isupper() else txt_plano, "")
                 continue
             # --- estructura
-            if nivel <= 5 and ESTRUCT.match(txt_plano):
+            if nivel <= 5 and (ESTRUCT.match(txt_plano) or (nivel >= 2 and cfg["id"] in ESTRUCT_EXTRA and ESTRUCT_EXTRA[cfg["id"]].match(txt_plano))):
                 ruta[:] = [(n, t) for n, t in ruta if n < nivel]
                 ruta.append((nivel, txt_plano))
                 cierra()
