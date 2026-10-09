@@ -1,5 +1,5 @@
 # Índice de conceptos de «Consulta de normas» — tanda 2 (Requisitos previos y excepciones procesales)
-# Revisor: armero. Espejo: legalize-es@aca28304d. Todo precepto citado se ha leído en el espejo en esta pasada.
+# Revisor: armero. Espejo: legalize-es@aca28304d; «Prescripción (como excepción)» revisada de nuevo contra legalize-es@10ec58cc2a (09-10-2026). Todo precepto citado se ha leído en el espejo en esta pasada.
 # Vigencia: los 91 artículos distintos citados se han cotejado, artículo entero, con boe.es (scripts/contraste_boe.py,
 # ejecutado el 8-10-2026 a las 00:06): 91 idénticos al texto vigente y ninguno con reforma de vigencia futura. Por eso van «vigente».
 # Ninguna voz cita LEC 22 ni 685, LPH 10, CC 396 ni artículo alguno de la LAU (las normas con cambios pendientes o recientes).
@@ -164,23 +164,23 @@ voces:
     remisiones:
       - {norma: "CC", articulo: "1930", tipo: "regula", nota: "Párrafo 2.º: los derechos y acciones de cualquier clase se extinguen por prescripción."}
       - {norma: "CC", articulo: "1961", tipo: "regula", nota: "Prescriben por el mero lapso del tiempo legal."}
-      - {norma: "CC", articulo: "1964", apartado: "2", tipo: "regula", nota: "Acciones personales sin plazo especial: cinco años desde que puede exigirse el cumplimiento."}
+      - {norma: "CC", articulo: "1964", apartado: "2", tipo: "regula", nota: "Acciones personales sin plazo especial: cinco años desde que puede exigirse el cumplimiento; continuadas de hacer o no hacer, desde cada incumplimiento."}
       - {norma: "CC", articulo: "1966", tipo: "regula", nota: "Cinco años: alimentos, rentas de arrendamientos y pagos anuales o más breves."}
-      - {norma: "CC", articulo: "1967", tipo: "regula", nota: "Tres años: honorarios de abogados, peritos y profesionales; desde que cesan los servicios."}
-      - {norma: "CC", articulo: "1968", tipo: "regula", nota: "Un año: acción posesoria y responsabilidad extracontractual del 1902, desde que lo supo el agraviado."}
+      - {norma: "CC", articulo: "1967", tipo: "regula", nota: "Tres años: honorarios de abogados, notarios, peritos y demás oficios que enumera; desde que dejaron de prestarse los servicios."}
+      - {norma: "CC", articulo: "1968", tipo: "regula", nota: "Un año: recobrar o retener la posesión; responsabilidad del 1902 o por injuria o calumnia, desde que lo supo el agraviado."}
       - {norma: "CC", articulo: "1963", tipo: "regula", nota: "Acciones reales sobre inmuebles: treinta años."}
       - {norma: "CC", articulo: "1969", tipo: "regula", nota: "Regla general del día inicial: desde que la acción pudo ejercitarse."}
       - {norma: "CC", articulo: "1971", tipo: "regula", nota: "Obligaciones declaradas por sentencia: desde su firmeza."}
-      - {norma: "CC", articulo: "1973", tipo: "regula", nota: "Interrumpen: demanda, reclamación extrajudicial del acreedor y reconocimiento de la deuda."}
-      - {norma: "CC", articulo: "1974", tipo: "regula", nota: "Solidarias: la interrupción alcanza a todos; mancomunadas: solo al deudor reclamado."}
-      - {norma: "CC", articulo: "1975", tipo: "regula", nota: "Fiador: le afecta la reclamación judicial al deudor, no la extrajudicial ni el reconocimiento privado."}
+      - {norma: "CC", articulo: "1973", tipo: "regula", nota: "Interrumpen: ejercicio ante los tribunales, reclamación extrajudicial del acreedor y cualquier reconocimiento de la deuda por el deudor."}
+      - {norma: "CC", articulo: "1974", tipo: "regula", nota: "Solidarias y herederos del deudor: la interrupción alcanza a todos; mancomunadas: reclamar a uno solo su parte no interrumpe frente a los demás."}
+      - {norma: "CC", articulo: "1975", tipo: "regula", nota: "Fiador: le alcanza la interrupción por reclamación judicial al deudor principal, no la extrajudicial ni el reconocimiento privado del deudor."}
       - {norma: "CC", articulo: "1935", tipo: "regula", nota: "Renuncia de la prescripción ganada, también tácita."}
       - {norma: "CC", articulo: "1965", tipo: "regula", nota: "No prescriben la partición de herencia, la división de cosa común ni el deslinde."}
-      - {norma: "LO 1/2025", articulo: "7", apartado: "1", tipo: "regula", nota: "La solicitud de MASC interrumpe la prescripción; se reinicia si no hay reunión ni respuesta en 30 días."}
+      - {norma: "LO 1/2025", articulo: "7", apartado: "1", tipo: "regula", nota: "La solicitud de MASC interrumpe la prescripción desde el intento de comunicación; se reinicia sin primera reunión o sin respuesta escrita en 30 días naturales."}
       - {norma: "LOE", articulo: "18", tipo: "regula", nota: "Acciones de la LOE: dos años desde el daño; repetición, dos años desde la condena o el pago."}
       - {norma: "TRLGDCU", articulo: "124", tipo: "regula", nota: "Falta de conformidad: cinco años desde que se manifiesta."}
       - {norma: "TRLGDCU", articulo: "143", tipo: "regula", nota: "Productos defectuosos: tres años desde el perjuicio; repetición, un año desde el pago."}
-      - {norma: "CC", articulo: "1939", tipo: "conexa", nota: "Derecho transitorio; su nota remite a la DT 5.ª de la Ley 42/2015 para las relaciones ya existentes."}
+      - {norma: "CC", articulo: "1939", tipo: "conexa", nota: "Prescripción comenzada antes del Código: ley anterior, salvo que bajo el Código transcurra entero el plazo de este."}
       - {norma: "LEC", articulo: "557", apartado: "1.4.ª", tipo: "regula", nota: "Ejecución de títulos no judiciales: la prescripción es causa de oposición."}
       - {norma: "LEC", articulo: "405", apartado: "1", tipo: "conexa", nota: "Se alega en la contestación como excepción material."}
     no_consta_en_norma:
@@ -190,8 +190,8 @@ voces:
       - "Ley 42/2015, disposición transitoria 5.ª: plazo de las acciones personales nacidas antes de su entrada en vigor."
     afines: ["Caducidad de la acción (como excepción)", "Interrupción de la prescripción", "Requisito de procedibilidad (MASC)", "Cómputo civil de plazos", "Responsabilidad extracontractual"]
     estado: "vigente"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-07"
+    espejo: "legalize-es@10ec58cc2a"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "Reconvención"

@@ -1,6 +1,6 @@
 {
  "compilado": "2026-10-09",
- "corpus_commit": "597314599",
+ "corpus_commit": "10ec58cc2",
  "normas": [
   {
    "id": "lec",
@@ -240,10 +240,7 @@
   "version": "0.1-muestra",
   "voces": 311,
   "provisionales": 41,
-  "caducadas": [
-   "Prescripción (como excepción)",
-   "Interrupción de la prescripción"
-  ],
+  "caducadas": [],
   "cambios_norma": {
    "CC": {
     "articulos": [
@@ -251,7 +248,6 @@
      "da1",
      "da2",
      "da3",
-     "da4",
      "dt1",
      "dt10",
      "dt11",

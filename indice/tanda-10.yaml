@@ -1,5 +1,6 @@
 # Índice de conceptos de «Consulta de normas» — tanda 10 (tasación, herencia, vivienda familiar, obligaciones)
-# Revisor: armero. Espejo: legalize-es@aca28304d. Todo precepto citado se ha leído en el espejo en esta pasada.
+# Revisor: armero. Espejo: legalize-es@aca28304d, salvo «Interrupción de la prescripción» y «Uso de la vivienda familiar»,
+# revisadas el 09-10-2026 contra legalize-es@10ec58cc2a. Todo precepto citado se ha leído en el espejo en su pasada.
 # Vigencia: contraste con la API de boe.es (scripts/contraste_boe.py --solo "LEC,CC,LO 1/2025,TRLGDCU,LAU", 08-10-2026 08:03):
 # distintos LEC 22 y 685, CC 396 (errata del espejo) y 34 artículos de la LAU (no el 15). LOE (contraste aparte): ninguno.
 # Ninguno de los distintos está citado; ninguna versión futura. Ver tanda-10-notas.md.
@@ -310,9 +311,9 @@ voces:
       - {norma: "CC", articulo: "1974", apartado: "párrafo 2.º", tipo: "regula", nota: "Lo mismo frente a los herederos del deudor, en toda clase de obligaciones."}
       - {norma: "CC", articulo: "1974", apartado: "párrafo 3.º", tipo: "regula", nota: "Mancomunadas: reclamar a un deudor solo su parte no interrumpe frente a los demás."}
       - {norma: "CC", articulo: "1975", tipo: "regula", nota: "Al fiador le alcanza la reclamación judicial al deudor, no la extrajudicial ni el reconocimiento privado."}
-      - {norma: "LO 1/2025", articulo: "7", apartado: "1", tipo: "regula", nota: "La solicitud de MASC interrumpe desde el intento de comunicación; se reinicia sin reunión ni respuesta en 30 días."}
+      - {norma: "LO 1/2025", articulo: "7", apartado: "1", tipo: "regula", nota: "Solicitud de MASC: interrumpe desde el intento de comunicación hasta el acuerdo o el fin; se reinicia si en 30 días naturales falta reunión o respuesta escrita."}
       - {norma: "LO 1/2025", articulo: "7", apartado: "2", tipo: "regula", nota: "Con tercero neutral: mediación, art. 4 Ley 5/2012; conciliador, desde que la recibe; experto, desde su designación."}
-      - {norma: "LO 1/2025", articulo: "7", apartado: "3", tipo: "conexa", nota: "Sin acuerdo, la demanda debe presentarse en un año para tener por cumplido el requisito de procedibilidad."}
+      - {norma: "LO 1/2025", articulo: "7", apartado: "3", tipo: "conexa", nota: "Sin respuesta o sin acuerdo, la demanda debe presentarse en un año para tener por cumplido el requisito de procedibilidad."}
       - {norma: "CC", articulo: "1969", tipo: "conexa", nota: "El plazo corre desde que la acción pudo ejercitarse."}
       - {norma: "CC", articulo: "1970", tipo: "conexa", nota: "Obligaciones de capital con interés o renta: el plazo corre desde el último pago de la renta o del interés."}
       - {norma: "CC", articulo: "1945", tipo: "conexa", nota: "Usucapión: la interrumpe la citación judicial al poseedor, aun de juez incompetente."}
@@ -328,8 +329,8 @@ voces:
       - "Ley 15/2015, de jurisdicción voluntaria: efectos de la conciliación ante LAJ, notario o registrador (remisión del 7.2.d)."
     afines: ["Prescripción (como excepción)", "Caducidad de la acción (como excepción)", "Requisito de procedibilidad (MASC)", "Solidaridad y mancomunidad", "Cómputo civil de plazos", "Fianza"]
     estado: "vigente"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@10ec58cc2a"
+    revisada_el: "2026-10-09"
     revisor: "armero"
 
   - voz: "División judicial de la herencia"
@@ -394,8 +395,9 @@ voces:
     sinonimos: ["atribución del uso de la vivienda familiar", "domicilio conyugal", "vivienda conyugal", "ajuar familiar", "uso de la vivienda a los hijos menores", "cónyuge no titular", "interés más necesitado de protección", "limitación temporal del uso", "extinción del uso de la vivienda", "vivienda arrendada tras el divorcio", "custodia compartida y vivienda"]
     normas_base: ["CC", "LEC", "LAU"]
     remisiones:
-      - {norma: "CC", articulo: "96", apartado: "1", tipo: "regula", nota: "Sin acuerdo aprobado, el uso es de los hijos menores y del cónyuge con quien queden, hasta que todos sean mayores."}
+      - {norma: "CC", articulo: "96", apartado: "1", tipo: "regula", nota: "Sin acuerdo aprobado, uso de los hijos menores y del cónyuge con quien queden hasta la mayoría de todos; si un menor tiene discapacidad, el juez fija el plazo."}
       - {norma: "CC", articulo: "96", apartado: "1, párrafo 2.º", tipo: "regula", nota: "Hijos mayores con discapacidad que aconseje seguir en la vivienda: se equiparan a los menores; el juez fija el plazo."}
+      - {norma: "CC", articulo: "da4", apartado: "párrafo 1.º", tipo: "regula", nota: "La discapacidad del art. 96 es la definida en la Ley 41/2003 y, además, la dependencia de grado II o III de la Ley 39/2006."}
       - {norma: "CC", articulo: "96", apartado: "1, párrafo 3.º", tipo: "regula", nota: "Extinguido el uso, la vivienda de los hijos sin independencia económica se atiende como alimentos entre parientes."}
       - {norma: "CC", articulo: "96", apartado: "1, párrafo 4.º", tipo: "regula", nota: "Hijos repartidos entre ambos cónyuges: resuelve el juez lo procedente."}
       - {norma: "CC", articulo: "96", apartado: "2", tipo: "regula", nota: "Sin hijos: al no titular, por tiempo prudencial, si su interés es el más necesitado de protección."}
@@ -413,7 +415,7 @@ voces:
       - {norma: "LEC", articulo: "774", apartado: "4", tipo: "regula", nota: "Sin acuerdo aprobado, la sentencia fija las medidas definitivas sobre la vivienda familiar."}
       - {norma: "LEC", articulo: "774", apartado: "5", tipo: "conexa", nota: "Los recursos contra la sentencia no suspenden la eficacia de las medidas."}
       - {norma: "LEC", articulo: "775", apartado: "1", tipo: "regula", nota: "Modificación de medidas definitivas si han variado sustancialmente las circunstancias."}
-      - {norma: "LAU", articulo: "15", apartado: "1", tipo: "regula", nota: "Vivienda arrendada: el cónyuge no arrendatario sigue en ella si se le atribuye; con uso largo, pasa a ser el arrendatario."}
+      - {norma: "LAU", articulo: "15", apartado: "1", tipo: "regula", nota: "Vivienda arrendada: el cónyuge no arrendatario sigue si se le atribuye; si el uso es permanente o excede lo que resta del contrato, pasa a ser el titular."}
       - {norma: "LAU", articulo: "15", apartado: "2", tipo: "regula", nota: "Debe comunicarlo al arrendador en dos meses desde la notificación de la resolución, con copia."}
     no_consta_en_norma:
       - "Entrada de una nueva pareja en la vivienda: pierde su carácter familiar y cesa o se revisa el uso: jurisprudencial."
@@ -422,8 +424,9 @@ voces:
       - "Parejas de hecho: aplicación analógica del art. 96: jurisprudencial."
     fuera_de_la_herramienta:
       - "Ley valenciana 5/2011, de relaciones familiares: anulada por la STC 192/2016; en Benidorm rige el Código Civil."
+      - "Ley 41/2003, art. 2.2 (al que remite la da 4.ª CC): discapacidad psíquica igual o superior al 33 % o física o sensorial igual o superior al 65 %; se acredita por certificado o resolución judicial firme (2.3)."
     afines: ["Separación y divorcio contenciosos", "Divorcio de mutuo acuerdo y convenio regulador", "Medidas provisionales en familia", "Modificación de medidas definitivas", "Vivienda familiar: disposición por el cónyuge titular", "Separación o divorcio del arrendatario", "Desahucio por precario"]
     estado: "vigente"
-    espejo: "legalize-es@aca28304d"
-    revisada_el: "2026-10-08"
+    espejo: "legalize-es@10ec58cc2a"
+    revisada_el: "2026-10-09"
     revisor: "armero"
