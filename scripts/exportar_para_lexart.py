@@ -28,6 +28,11 @@ ESQUEMA (esquema = "consulta-normas/lexart-corpus@1"; si cambia algo incompatibl
       "sha256": "...",                  huella del fichero fuente del espejo
       "dir": "es" | "es-vc",            carpeta del espejo
       "fuente": "texto consolidado del BOE" | "DOGV, importado a mano",
+      "historial": OPCIONAL (solo en las normas elegidas con --historial; hoy LAU y LPH): {"hasta": "AAAA-MM-DD" (día de la exportación), "tramos": N, "sin_historial": [claves],
+                                              "fuente": …}. Cada bloque de esa norma lleva "historial": [{"desde": "AAAA-MM-DD", "hasta": "AAAA-MM-DD" | null (el vigente), "norma": "BOE-A-…" (la que
+                                              introdujo esa redacción), "titulo", "parrafos": [texto de esa redacción; AUSENTE en el tramo vigente, que es el texto del bloque], "incierta": true si la
+                                              versión del BOE no trae fecha de vigencia y se tomó la de publicación}]. Un artículo no existe antes de su primer "desde". NO resuelve el régimen
+                                              transitorio de cada reforma (decide el jurista). Aditivo: el esquema sigue siendo @1.
       "bloques[].posterior": OPCIONAL, solo en los artículos con una reforma ya publicada que aún no rige (el texto del bloque es la redacción VIGENTE hoy):
                                               {"fecha": "AAAA-MM-DD" (entrada en vigor), "origen": "v" (versión del BOE) | "n" (reconstruida de la nota «Téngase en cuenta…»),
                                                "parrafos": [texto limpio de la posterior], "cambios": [[[t, texto], …], …]  t: 0 igual, 1 nuevo, 2 suprimido de la vigente}.
@@ -66,6 +71,8 @@ from pathlib import Path
 AQUI = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(AQUI))
 import build  # noqa: E402
+import contraste_boe  # noqa: E402
+import historial_boe  # noqa: E402
 
 ESQUEMA = "consulta-normas/lexart-corpus@1"
 RE_DISP = re.compile(r"^d[adtf]")
@@ -135,6 +142,9 @@ def bloque(c):
     return out
 
 
+HISTORIAL_NORMAS = ["LAU", "LPH"]   # normas cuyo historial de redacciones se exporta (--historial para cambiarlas; «ninguna» lo desactiva)
+
+
 def exporta():
     alias_plantilla = alias_de_plantilla()
     normas, resumen = [], []
@@ -145,6 +155,20 @@ def exporta():
         raw, meta, chunks, avisos, n_cab, n_art, n_disp = build.analiza(cfg)
         futuras = build.aplica_futuras(cfg["sigla"], chunks)   # mismo texto por defecto que la web: la redacción VIGENTE hoy
         bloques = [bloque(c) for c in chunks]
+        hist_info = None
+        if cfg["sigla"] in HISTORIAL_NORMAS:   # redacciones sucesivas (historial_boe): «qué decía el artículo el día D»; sin red NO se exporta a medias
+            try:
+                hx = historial_boe.historial(contraste_boe.descarga(cfg["boe"], "texto"))
+            except Exception as e:
+                raise SystemExit(f"[{cfg['sigla']}] no he podido bajar el historial de boe.es ({type(e).__name__}: {str(e)[:100]}): no se exporta a medias")
+            sin = []
+            for b_ in bloques:
+                if b_["clave"] in hx:
+                    b_["historial"] = historial_boe.para_exportar(hx[b_["clave"]])
+                elif b_["tipo"] != "encabezado" and b_["tipo"] != "preambulo":
+                    sin.append(b_["clave"])
+            hist_info = dict(hasta=dt.date.today().isoformat(), tramos=sum(len(v) for v in hx.values()), sin_historial=sin,
+                             fuente="API de datos abiertos de boe.es (texto consolidado, versiones por artículo)")
         for b_ in bloques:   # reforma ya publicada que aún no rige: la posterior, opcional, para que LexArt pueda ofrecerla (la web ya lo hace)
             if b_["clave"] in futuras:
                 f_ = futuras[b_["clave"]]
@@ -164,7 +188,8 @@ def exporta():
             sha256=hashlib.sha256(raw).hexdigest(), dir=cfg.get("dir", "es"),
             fuente="DOGV, importado a mano" if cfg.get("dir") == "es-vc" else "texto consolidado del BOE",
             recuento=dict(articulos=n_art, disposiciones=n_disp, bloques=len(chunks)),
-            contraste=None if av_fecha is None else dict(fecha=av_fecha, avisos=av.get(cfg["sigla"], {})), bloques=bloques))
+            contraste=None if av_fecha is None else dict(fecha=av_fecha, avisos=av.get(cfg["sigla"], {})),
+            **({"historial": hist_info} if hist_info else {}), bloques=bloques))
         resumen.append((cfg["sigla"], n_art, n_disp, len(bloques)))
     return dict(esquema=ESQUEMA, compilado=dt.date.today().isoformat(), corpus_commit=build.git_head(), normas=normas), resumen
 
@@ -196,7 +221,9 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--sin-contraste", action="store_true", help="exporta sin consultar boe.es (no recomendado)")
     ap.add_argument("--salida", default=str(AQUI / "salida" / "lexart-corpus.json"))
+    ap.add_argument("--historial", default=",".join(HISTORIAL_NORMAS), help="siglas (separadas por comas) de las normas cuyo historial de redacciones se exporta; «ninguna» lo desactiva")
     a = ap.parse_args()
+    HISTORIAL_NORMAS[:] = [] if a.historial == "ninguna" else [s.strip() for s in a.historial.split(",") if s.strip()]
     SIN_CONTRASTE = a.sin_contraste
     datos, resumen = exporta()
     contrasta_con_manifiesto(datos)

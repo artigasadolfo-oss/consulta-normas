@@ -725,6 +725,11 @@ with sync_playwright() as p:
     print("\n".join("    | " + l for l in rr.stdout.strip().splitlines()[-4:]))
     check("reforma futura: vigente por defecto y posterior resaltada (suite propia) sin fallos", rr.returncode == 0, rr.stderr[-300:])
 
+    print("\n[historial de redacciones por artículo para LexArt (scripts/test_historial.py)]")
+    rh = subprocess.run([sys.executable, str(AQUI / "scripts" / "test_historial.py")], capture_output=True, text=True, env={**os.environ, "PYTHONPATH": ""})
+    print("\n".join("    | " + l for l in rh.stdout.strip().splitlines()[-3:]))
+    check("historial: tramos de vigencia, orden por publicación, vigencia vacía y reformas futuras (suite propia) sin fallos", rh.returncode == 0, rh.stderr[-300:])
+
     if CAPTURAS:
         pg.goto(URL + "#a/lec/282"); time.sleep(0.8); pg.screenshot(path=str(CAPT / "05-escritorio.png"))
     br.close()
