@@ -67,6 +67,12 @@ button{font-family:inherit}
 .idx-aviso small{display:block;margin-top:4px;opacity:.85}
 .boe-av{border:1px solid rgba(201,122,30,.35);background:var(--ocre-50);color:var(--ocre-700);border-radius:10px;padding:9px 13px;font-size:12.5px;line-height:1.45;margin:0 0 14px}
 .boe-av b{font-weight:600}
+.fut-bt{font-family:var(--geo);font-weight:600;font-size:11.5px;border:1px solid var(--ocre);background:#fff;color:var(--ocre-700);border-radius:8px;padding:4px 10px;margin:3px 0 0 8px;cursor:pointer}
+.fut-bt:hover{background:var(--ocre-100)}
+.fut-bt kbd{font:inherit;font-size:10.5px;border:1px solid rgba(201,122,30,.55);border-radius:4px;padding:0 4px;margin-left:6px}
+.fut-n{display:block;margin-top:5px;font-size:11.5px}
+ins.cam{text-decoration:underline;text-decoration-color:#2f8f5b;text-underline-offset:3px;background:rgba(47,143,91,.17);border-radius:3px;padding:0 1px}
+del.cam{background:rgba(190,60,60,.10);color:var(--ink-500);text-decoration:line-through;border-radius:3px;padding:0 1px}
 .fm-chips{display:flex;flex-wrap:wrap;gap:6px;padding:4px 12px 8px}
 .fm-chip.on{background:var(--ink-900);color:#fff;border-color:var(--ink-900)}
 .fm-tab{width:100%;border-collapse:collapse;font-size:.92em;line-height:1.45}
@@ -311,7 +317,7 @@ var esc=function(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').
 var norm=function(s){return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')};
 var flat=function(s){return ' '+norm(s).replace(/[^a-z0-9]+/g,' ').trim()+' '};
 var DATA=null,NORMAS=[],POR={},INDEXADO=false,IDX=null,FX=null,FM={m:'',q:''};
-var ST={mode:'home',items:[],sel:-1,q:'',filtro:null,stack:false,hl:null,ap:null,ver:false,todos:[],nid:null,parcial:false};
+var ST={mode:'home',items:[],sel:-1,q:'',filtro:null,stack:false,hl:null,ap:null,ver:false,red:{},todos:[],nid:null,parcial:false};
 var LS={get:function(k,d){try{var v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},set:function(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
 var MOVIL=function(){return window.matchMedia('(max-width:860px)').matches};
 var fdate=function(iso){if(!iso)return '';var p=iso.split('-');return p[2]+'-'+p[1]+'-'+p[0]};
@@ -660,14 +666,66 @@ function marcaFavActual(){
   for(var i=0;i<r.length;i++)r[i].classList.toggle('sel',!!cur&&r[i].dataset.n===cur.n.id&&r[i].dataset.k===cur.k);
 }
 /* lector */
+function hoyISO(){return window.__HOY||new Date().toLocaleDateString('sv-SE')}
+/* Reforma ya publicada que aún no rige (n.fu[clave], del build): por defecto se ve la redacción VIGENTE hoy; el aviso deja ver la POSTERIOR con lo que cambia
+   resaltado. La fecha la pone el dispositivo: el día que la reforma entra en vigor, la posterior pasa sola a ser la que se ve por defecto. */
+function fuDe(n,c){return (n.fu&&n.fu[c.k])||null}
+function vistaRed(n,c,hoy){
+  var f=fuDe(n,c);if(!f)return 'v';
+  var v=ST.red[n.id+'|'+c.k];if(v)return v;
+  return f.f<=(hoy||hoyISO())?'p':'v';
+}
+function renderCambios(f){
+  var h=[];
+  f.s.forEach(function(p){
+    var vivo=p.filter(function(x){return x[0]!==2}).map(function(x){return x[1]}).join(' '),m;
+    var ap=(vivo&&(m=/^(\d+)\.(?:\s|ª|º)/.exec(vivo)))?' class="ap" data-ap="'+m[1]+'"':'';
+    h.push('<p'+ap+'>'+p.map(function(x){var s=esc(x[1]);return x[0]===1?'<ins class="cam">'+s+'</ins>':(x[0]===2?'<del class="cam">'+s+'</del>':s)}).join(' ')+'</p>');
+  });
+  return h.join('');
+}
+function cuerpoArt(n,c,hoy){
+  var f=fuDe(n,c);if(!f||vistaRed(n,c,hoy)!=='p')return render(c);
+  hoy=hoy||hoyISO();
+  if(f.f>hoy)return renderCambios(f);
+  var pc=Object.create(c);pc.b=f.p.join('\n\n');return render(pc);
+}
+function cuadroRed(n,c,f,hoy){
+  var rige=f.f<=hoy,v=vistaRed(n,c,hoy),F=fdate(f.f);
+  var rec=f.o==='n'?'<span class="fut-n">Redacción reconstruida a partir de la nota «Téngase en cuenta…» del BOE: los apartados que cita sustituyen a los vigentes. Contrasta con boe.es antes de citarla.</span>':'';
+  var bt=function(dest,txt){return '<button type="button" class="fut-bt" data-red="'+dest+'">'+txt+'<kbd>R</kbd></button>'};
+  var t;
+  if(!rige&&v==='v')t='<b>Reforma ya publicada en el BOE: entra en vigor el '+F+'.</b> Estás viendo la redacción vigente hoy.'+bt('p','Ver la redacción posterior, con lo que cambia resaltado');
+  else if(!rige)t='<b>Redacción posterior: NO está vigente hasta el '+F+'.</b> Resaltado lo que cambia respecto a la vigente hoy: <ins class="cam">nuevo o cambiado</ins> <del class="cam">suprimido</del>.'+rec+bt('v','Volver a la redacción vigente');
+  else if(v==='p')t='<b>Reforma en vigor desde el '+F+'.</b> Estás viendo la redacción vigente.'+rec+bt('v','Ver la redacción anterior');
+  else t='<b>Redacción anterior a la reforma en vigor desde el '+F+'.</b> Ya no rige.'+bt('p','Ver la redacción vigente');
+  return '<div class="boe-av boe-red" data-red-v="'+v+'">'+t+'</div>';
+}
+function textoCopia(c){
+  var f=fuDe(c.n,c);if(!f)return plano(c);
+  var hoy=hoyISO(),F=fdate(f.f);
+  if(vistaRed(c.n,c,hoy)==='p')return (f.f>hoy?'[REDACCIÓN POSTERIOR: NO VIGENTE HASTA EL '+F+']\n':'')+f.p.join('\n');
+  return plano(c)+(f.f>hoy?'\n[Reforma ya publicada que entra en vigor el '+F+']':'');
+}
+function alternaRed(art,dest){
+  if(!art||!ST.mostrados)return;
+  var c=ST.mostrados[+art.getAttribute('data-ix')];if(!c||!fuDe(c.n,c))return;
+  var n=c.n,hoy=hoyISO(),z=art.querySelector('.a-zona');if(!z)return;
+  ST.red[n.id+'|'+c.k]=dest||(vistaRed(n,c,hoy)==='p'?'v':'p');
+  z.innerHTML=avisoBoe(n,c,hoy)+'<div class="a-body">'+cuerpoArt(n,c,hoy)+'</div>';
+  if(ST.hl)marca(z.querySelector('.a-body'),ST.hl);
+  var nb=z.querySelector('.fut-bt');if(nb){try{nb.focus({preventScroll:true})}catch(e){nb.focus()}}
+}
 function avisoBoe(n,c,hoy){
   /* Avisos del contraste con boe.es (los calcula el build). La fecha de HOY la pone el dispositivo: «entra en vigor» pasa solo a «en vigor desde». */
   var l=n.av&&n.av[c.k];if(!l)return '';
-  hoy=hoy||new Date().toLocaleDateString('sv-SE');
+  hoy=hoy||hoyISO();
   var h='';
   var difiere=l.some(function(a){return a[0]!=='f'});   /* si el texto TAMBIÉN difiere del consolidado, «hasta entonces rige el texto de esta pantalla» sería falso: la pantalla puede traer ya la redacción posterior (LPH 10, 10-10-2026) */
   l.forEach(function(a){
     if(a[0]==='f'){
+      var fu=fuDe(n,c);
+      if(fu&&fu.f===a[1]){h+=cuadroRed(n,c,fu,hoy);return}
       h+=a[1]>hoy
         ?(difiere
           ?'<div class="boe-av"><b>Reforma ya publicada en el BOE.</b> Entra en vigor el '+fdate(a[1])+'. Esta pantalla puede mostrar ya la redacción posterior a la reforma, no la que rige hoy; contrasta con boe.es.</div>'
@@ -682,14 +740,14 @@ function avisoBoe(n,c,hoy){
 function artHtml(c,ix){
   var n=c.n,der=/\(Derogad[oa]s?\)/i.test(c.t+' '+c.b.slice(0,160));
   var tit=c.k==='cab'?'Encabezado y notas previas':c.e;
-  return '<article id="art-'+ix+'" data-ix="'+ix+'"><div class="a-eye">'+esc(n.sigla)+(c.s?' <span>·</span> '+esc(c.s):'')+'</div><h2 class="a-h">'+esc(tit)+(c.t?'<small>'+esc(c.t)+'</small>':'')+'</h2><div class="a-meta"><span>'+esc(n.titulo)+'</span><span>Actualizada a '+fdate(n.act)+'</span>'+(der?'<span class="der">Derogado</span>':'')+(n.est&&n.est!=='in_force'?'<span class="der">Norma no vigente ('+esc(n.est)+')</span>':'')+(c.notas?'<span>'+c.notas+' nota'+(c.notas>1?'s':'')+' de reforma</span>':'')+'</div>'+avisoBoe(n,c)+'<div class="a-body">'+render(c)+'</div></article>';
+  return '<article id="art-'+ix+'" data-ix="'+ix+'"><div class="a-eye">'+esc(n.sigla)+(c.s?' <span>·</span> '+esc(c.s):'')+'</div><h2 class="a-h">'+esc(tit)+(c.t?'<small>'+esc(c.t)+'</small>':'')+'</h2><div class="a-meta"><span>'+esc(n.titulo)+'</span><span>Actualizada a '+fdate(n.act)+'</span>'+(der?'<span class="der">Derogado</span>':'')+(n.est&&n.est!=='in_force'?'<span class="der">Norma no vigente ('+esc(n.est)+')</span>':'')+(c.notas?'<span>'+c.notas+' nota'+(c.notas>1?'s':'')+' de reforma</span>':'')+'</div>'+'<div class="a-zona" aria-live="polite">'+avisoBoe(n,c)+'<div class="a-body">'+cuerpoArt(n,c)+'</div></div></article>';
 }
 function urlBoe(c){var n=c.n;return 'https://www.boe.es/buscar/act.php?id='+n.boe+(/^\d+$/.test(c.k)?'#a'+c.k:'')}
 function citaCorta(c){return (c.e.replace(/^Artículos?/,'Art.').replace(/^Disposición /,'Disp. ')+' '+c.n.sigla).replace('Artículo','Art.')}
 function mostrar(cs,opt){
   opt=opt||{};
   if(!cs.length)return;
-  ST.mostrados=cs;
+  ST.mostrados=cs;ST.red={};
   var primero=cs[0],ultimo=cs[cs.length-1],n=primero.n,iPrev=primero.i-1,iNext=ultimo.i+1;
   var prev=n.ch[iPrev],next=ultimo.n.ch[iNext];
   var barra='<div class="l-bar">'+
@@ -732,7 +790,7 @@ function ligaBarra(cs){
 }
 function fuente(d){var v=Math.max(13,Math.min(24,(LS.get('normas.fs',16))+d));LS.set('normas.fs',v);document.documentElement.style.setProperty('--fs',v+'px')}
 function copiar(cs,btn){
-  var txt=cs.map(function(c){return citaCorta(c)+(c.t?'. '+c.t:'')+'\n\n'+plano(c)}).join('\n\n———\n\n')+'\n\n(Texto consolidado BOE, '+cs[0].n.sigla+' actualizada a '+fdate(cs[0].n.act)+')';
+  var txt=cs.map(function(c){return citaCorta(c)+(c.t?'. '+c.t:'')+'\n\n'+textoCopia(c)}).join('\n\n———\n\n')+'\n\n(Texto consolidado BOE, '+cs[0].n.sigla+' actualizada a '+fdate(cs[0].n.act)+')';
   var ok=function(){var t=btn.innerHTML;btn.classList.add('ok');btn.textContent='Copiado';setTimeout(function(){btn.classList.remove('ok');btn.innerHTML=t},1600)};
   var fb=function(){var ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy');ok()}catch(e){toast('No he podido copiar')}ta.remove()};
   if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(txt).then(ok,fb);else fb();
@@ -1317,6 +1375,7 @@ function focoMenu(){
 $('#fav-fichero').addEventListener('change',function(e){var f=e.target.files&&e.target.files[0];e.target.value='';importaFavFichero(f)});
 $('#mnav').addEventListener('click',function(){document.body.classList.toggle('navopen')});
 $('#scrim').addEventListener('click',cierraNav);
+elLector.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('.fut-bt');if(b)alternaRed(b.closest('article'),b.getAttribute('data-red'))});
 document.addEventListener('keydown',function(e){
   var t=e.target,enCampo=t&&(t.tagName==='INPUT'||t.tagName==='TEXTAREA'||t.isContentEditable);
   if((e.key==='/'&&!enCampo)||((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k')){e.preventDefault();cierraNav();document.body.classList.remove('ver-lector');elQ.focus();elQ.select();return}
@@ -1326,6 +1385,7 @@ document.addEventListener('keydown',function(e){
     if(ST.mostrados&&ST.mostrados.length===1){var bf=document.getElementById('b-fav');if(bf){e.preventDefault();bf.click();return}}
     var nid=normaEnFoco();if(nid){e.preventDefault();toggleNorma(nid);return}
   }
+  if((k==='r'||k==='R')&&ST.mostrados&&ST.mostrados.length===1&&fuDe(ST.mostrados[0].n,ST.mostrados[0])){var ar=elLector.querySelector('article');if(ar){e.preventDefault();alternaRed(ar);return}}
   if(k==='n'||k==='N'){e.preventDefault();cierraNav();go('#n');var nq=$('#nq');if(nq&&!MOVIL())nq.focus();return}
   if((k==='c'||k==='C')&&IDX){e.preventDefault();cierraNav();go('#i');return}
   if((k==='s'||k==='S')&&FX){e.preventDefault();cierraNav();go('#f');return}
@@ -1365,7 +1425,7 @@ function arranque(){
   (window.requestIdleCallback||function(f){setTimeout(f,300)})(function(){indexa()});
 }
 /* gancho para las pruebas: devuelve el HTML con los enlaces que se crearían para un texto suelto */
-window.__NT={fx:function(){return FX},vistaFormulas:function(s){vistaFormulas(s)},poner:function(nid,av){POR[nid].av=av||undefined},avisoBoe:function(nid,k,hoy){return avisoBoe(POR[nid],{k:k},hoy)},probar:function(nid,k,txt){return enlaza(esc(txt),POR[nid].map.get(k))},idx:function(){return IDX},vistaIndice:function(s){vistaIndice(s)},vistaNormas:function(s){vistaNormas(s)}};
+window.__NT={fx:function(){return FX},vistaFormulas:function(s){vistaFormulas(s)},poner:function(nid,av){POR[nid].av=av||undefined},ponerFu:function(nid,fu){POR[nid].fu=fu||undefined},fuTodos:function(){var o={};NORMAS.forEach(function(n){if(n.fu)o[n.id]=n.fu});return o},cuerpo:function(nid,k,hoy){var c=POR[nid].map.get(k);return cuerpoArt(POR[nid],c,hoy)},avisoBoe:function(nid,k,hoy){return avisoBoe(POR[nid],{k:k},hoy)},probar:function(nid,k,txt){return enlaza(esc(txt),POR[nid].map.get(k))},idx:function(){return IDX},vistaIndice:function(s){vistaIndice(s)},vistaNormas:function(s){vistaNormas(s)}};
 if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol)){navigator.serviceWorker.register('sw.js').catch(function(){})}
 cargar().then(function(d){DATA=d;arranque()}).catch(function(err){document.getElementById('carga').innerHTML='No he podido abrir los datos.<br><br>'+esc(err.message||err)});
 })();

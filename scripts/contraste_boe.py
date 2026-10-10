@@ -215,6 +215,199 @@ def fecha_nota_futura(version):
     return None
 
 
+def _clave_bloque(b):
+    """Clave del artículo de un <bloque> de la API (misma regla que usa bloques_boe)."""
+    vs0 = b.findall("version")
+    k = None
+    if vs0:
+        primero = next((texto_p(p) for p in vs0[-1].findall("p")), "")
+        m = ROTULO_CLAVE.match(primero)
+        k = indice.clave_articulo(m.group(1).replace(".", "")) if m else None
+    return k or clave_de_titulo(b.get("titulo"))
+
+
+def _parrafos_version(v):
+    """(rótulo, [párrafos]) de una versión: texto plano, sin notas de reforma (<blockquote>, nota_pie). El rótulo es el primer
+    elemento («Artículo 10. Prórroga del contrato.»); no forma parte del cuerpo."""
+    ps = [" ".join(texto_p(h).split()) for h in v if h.tag != "blockquote" and not (h.get("class") or "").startswith("nota_pie")]
+    ps = [p for p in ps if p]
+    return (ps[0], ps[1:]) if ps else ("", [])
+
+
+def _apartados(paras):
+    """Agrupa párrafos por apartado numerado de primer nivel («1. …»); lo que va antes del primero cuelga de la clave None."""
+    bl = []
+    for p in paras:
+        m = re.match(r"^(\d+)\.\s", p)
+        if m:
+            bl.append([m.group(1), [p]])
+        elif bl:
+            bl[-1][1].append(p)
+        else:
+            bl.append([None, [p]])
+    return bl
+
+
+def _cita_de_la_nota(version, fecha_iso):
+    """Párrafos entrecomillados de la nota «Téngase en cuenta que, con efectos de <fecha>, se modifica por … con la siguiente redacción:»
+    de esa fecha, sin las comillas. Termina en el primer párrafo que cierra con «»» o antes de las notas al pie. [] si no la encuentra."""
+    for h in version:
+        if h.tag != "blockquote":
+            continue
+        ps = [(p.get("class") or "", " ".join(texto_p(p).split())) for p in h.findall("p")]
+        for i, (_, t) in enumerate(ps):
+            m = NOTA_FUTURA.search(t)
+            if not (m and m.group(2).lower() in MESES):
+                continue
+            if f"{m.group(3)}-{MESES[m.group(2).lower()]:02d}-{int(m.group(1)):02d}" != fecha_iso:
+                continue
+            cita = []
+            for cl, tx in ps[i + 1:]:
+                if cl.startswith("nota_pie") or NOTA_FUTURA.search(tx):
+                    break
+                cita.append(tx)
+                if re.search(r"»[\s.;,]*$", tx):
+                    break
+            if cita:
+                cita[0] = re.sub(r"^\s*«\s*", "", cita[0])
+                cita[-1] = re.sub(r"\s*»[\s.;,]*$", "", cita[-1])
+            return [c for c in cita if c]
+    return []
+
+
+def _fusiona_apartados(actual, cita):
+    """Redacción posterior reconstruida desde una nota del BOE: los apartados numerados de la cita sustituyen a los del mismo número y los
+    que no existían se añaden al final; el resto queda como está. Si la cita no empieza por un apartado numerado, es el artículo entero."""
+    nuevos = _apartados(cita)
+    if not nuevos or nuevos[0][0] is None:
+        return list(cita)
+    por_num = {n: ps for n, ps in nuevos}
+    usados, out = set(), []
+    for n, ps in _apartados(actual):
+        if n in por_num:
+            out += por_num[n]
+            usados.add(n)
+        else:
+            out += ps
+    for n, ps in nuevos:
+        if n not in usados:
+            out += ps
+    return out
+
+
+def futuras_detalle(xml_texto, hoy=None):
+    """Para cada artículo con una reforma YA PUBLICADA que aún no rige en `hoy`: la redacción vigente y la posterior, para que la web enseñe la
+    vigente por defecto y deje ver la posterior. -> {clave: {f: 'AAAA-MM-DD', o: 'v'|'n', ant: [párrafos], post: [párrafos], sk_post: esqueleto}}
+    o='v': el BOE trae una versión con fecha de vigencia futura (LPH 10, Ley 4/2026); o='n': solo la cita en una nota «Téngase en cuenta que, con
+    efectos de…» (LAU 10, RDL 28/2026) y la posterior se RECONSTRUYE fusionando los apartados citados (la web lo dice). Mismo criterio de
+    selección que bloques_boe."""
+    hoy_s = (hoy or dt.date.today()).strftime("%Y%m%d")
+    out, vistos = {}, set()
+    for b in ET.fromstring(xml_texto).iter("bloque"):
+        if b.get("tipo") != "precepto":
+            continue
+        k = _clave_bloque(b)
+        if not k or k in vistos:
+            continue
+        vistos.add(k)
+        vs = [(v.get("fecha_vigencia") or "00000000", i, v) for i, v in enumerate(b.findall("version"))]
+        pasadas = [x for x in vs if x[0] <= hoy_s]
+        if not pasadas:
+            continue
+        actual = max(pasadas, key=clave_orden)[2]
+        sk_ant = esqueleto(texto_version(actual, k))
+        rot, ant = _parrafos_version(actual)
+        for fv, _, v in sorted((x for x in vs if x[0] > hoy_s), key=lambda x: (x[0], x[1])):
+            if esqueleto(texto_version(v, k)) != sk_ant:
+                _, post = _parrafos_version(v)
+                out[k] = dict(f=f"{fv[:4]}-{fv[4:6]}-{fv[6:]}", o="v", ant=ant, post=post, sk_post=esqueleto(texto_version(v, k)))
+                break
+        else:
+            fn = fecha_nota_futura(actual)
+            if fn and fn.replace("-", "") > hoy_s:
+                cita = _cita_de_la_nota(actual, fn)
+                if cita:
+                    post = _fusiona_apartados(ant, cita)
+                    out[k] = dict(f=fn, o="n", ant=ant, post=post, sk_post=esqueleto(sin_rotulo(" ".join([rot] + post), k)))
+    return out
+
+
+def segmentos_cambios(ant, post):
+    """Diferencias entre dos redacciones (listas de párrafos) para resaltar en la POSTERIOR lo que cambia. Primero se alinean los PÁRRAFOS
+    (iguales, o parecidos: razón de palabras >= 0,55, en orden) y solo entre parecidos se compara palabra a palabra; alinear palabras sueltas
+    entre párrafos que no se parecen daba un resaltado ilegible (LAU 10). Un párrafo que no existía es todo nuevo; uno que desaparece sale entero
+    como suprimido. -> lista de párrafos; cada uno, lista de [t, texto] con t=0 igual, 1 nuevo/cambiado, 2 suprimido de la anterior."""
+    import difflib
+    def sm(a, b):
+        return difflib.SequenceMatcher(None, a, b, autojunk=False)
+    def une(segs):
+        out = []
+        for t, x in segs:
+            if not x:
+                continue
+            if out and out[-1][0] == t:
+                out[-1][1] += " " + x
+            else:
+                out.append([t, x])
+        return out
+    def palabra_a_palabra(a, b):
+        wa, wb, segs = a.split(), b.split(), []
+        for op, i1, i2, j1, j2 in sm(wa, wb).get_opcodes():
+            if op == "equal":
+                segs.append((0, " ".join(wb[j1:j2])))
+            else:
+                if op in ("delete", "replace"):
+                    segs.append((2, " ".join(wa[i1:i2])))
+                if op in ("insert", "replace"):
+                    segs.append((1, " ".join(wb[j1:j2])))
+        return une(segs)
+    def empareja(A, B):
+        res, ia = [], 0
+        for b in B:
+            mejor, mr = None, 0.55
+            for x in range(ia, len(A)):
+                r = sm(A[x].split(), b.split()).ratio()
+                if r > mr:
+                    mejor, mr = x, r
+            if mejor is None:
+                res.append([[1, b]])
+                continue
+            res += [[[2, A[x]]] for x in range(ia, mejor)]
+            res.append(palabra_a_palabra(A[mejor], b))
+            ia = mejor + 1
+        res += [[[2, A[x]]] for x in range(ia, len(A))]
+        return res
+    out = []
+    for op, i1, i2, j1, j2 in sm(ant, post).get_opcodes():
+        if op == "equal":
+            out += [[[0, p]] for p in post[j1:j2]]
+        elif op == "delete":
+            out += [[[2, p]] for p in ant[i1:i2]]
+        elif op == "insert":
+            out += [[[1, p]] for p in post[j1:j2]]
+        else:
+            out += empareja(ant[i1:i2], post[j1:j2])
+    return out
+
+
+def clasifica_futuras(det, fut, esp, vig, r):
+    """Marca en cada artículo con reforma anunciada QUÉ texto lleva la herramienta: 'ant' (la vigente), 'post' (la posterior: ya no cuenta como
+    diferencia, la web la sustituye por la vigente al compilar) u 'otro' (ninguna de las dos: error real, sigue en `distintos`). Quita de
+    r['distintos'] los 'post' y devuelve `det` sin el esqueleto interno."""
+    for k in list(det):
+        if k not in fut:
+            del det[k]
+            continue
+        sk_post = det[k].pop("sk_post")
+        if esp.get(k) == sk_post and esp.get(k) != vig.get(k):
+            det[k]["espejo"] = "post"
+            if k in r["distintos"]:
+                r["distintos"].remove(k)
+        else:
+            det[k]["espejo"] = "otro" if k in r["distintos"] else "ant"
+    return det
+
+
 def bloques_boe(xml_texto, hoy=None, rd_duplicados=False):
     """Texto de cada artículo/disposición según la API del BOE. Devuelve (vigente, futuras):
     vigente = {clave: esqueleto} de la versión más recientemente publicada entre las que YA están en vigor en `hoy`;
@@ -359,10 +552,17 @@ def contrasta(solo=None, cache=None, commit=None, hoy=None, normas=None):
         try:
             chunks, meta = chunks_de(cfg, commit)
             rd = bool(cfg.get("anexo"))
-            vig, fut = bloques_boe(descarga(cfg["boe"], "texto", cache), hoy, rd_duplicados=rd)
-            r = compara(vig, bloques_espejo(chunks, rd_a_llano=rd), carga_conocidas().get(cfg["sigla"]))
+            xml_boe = descarga(cfg["boe"], "texto", cache)
+            vig, fut = bloques_boe(xml_boe, hoy, rd_duplicados=rd)
+            esp = bloques_espejo(chunks, rd_a_llano=rd)
+            r = compara(vig, esp, carga_conocidas().get(cfg["sigla"]))
             r["conocidas_obsoletas"] = []
             r["futuras"] = dict(sorted(fut.items(), key=lambda kv: indice.orden_natural(kv[0])))
+            # Redacción vigente y posterior de cada artículo con reforma anunciada (la web enseña la vigente y deja ver la posterior). Si el texto
+            # de la herramienta ES la posterior, ya no es una «diferencia»: la web lo sustituye por la vigente del BOE al compilar (build.aplica_futuras).
+            det = clasifica_futuras(futuras_detalle(xml_boe, hoy), fut, esp, vig, r) if not rd else {}
+            if det:
+                r["futuras_det"] = det
             r["boe_actualizada"] = fecha_actualizacion(cfg["boe"], cache)
             r["espejo_actualizada"] = meta.get("last_updated")
         except Exception as e:  # nunca silencio: el vigía lo mostrará

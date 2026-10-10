@@ -28,6 +28,10 @@ ESQUEMA (esquema = "consulta-normas/lexart-corpus@1"; si cambia algo incompatibl
       "sha256": "...",                  huella del fichero fuente del espejo
       "dir": "es" | "es-vc",            carpeta del espejo
       "fuente": "texto consolidado del BOE" | "DOGV, importado a mano",
+      "bloques[].posterior": OPCIONAL, solo en los artículos con una reforma ya publicada que aún no rige (el texto del bloque es la redacción VIGENTE hoy):
+                                              {"fecha": "AAAA-MM-DD" (entrada en vigor), "origen": "v" (versión del BOE) | "n" (reconstruida de la nota «Téngase en cuenta…»),
+                                               "parrafos": [texto limpio de la posterior], "cambios": [[[t, texto], …], …]  t: 0 igual, 1 nuevo, 2 suprimido de la vigente}.
+                                              Aditivo: el esquema sigue siendo @1 y quien no lo lea no se entera.
       "contraste": {"fecha": "AAAA-MM-DD", "avisos": {"<clave>": [["d"], ["f", "AAAA-MM-DD"]]}},   contraste con la API de boe.es del día de la exportación:
                                               "d" = el texto del espejo difiere del consolidado vigente; "f" = reforma ya publicada que entra en vigor en esa fecha.
                                               Sin red la exportación FALLA (no se exporta sin avisos); --sin-contraste la fuerza y deja "contraste": null.
@@ -139,7 +143,12 @@ def exporta():
         raise SystemExit("no he podido contrastar con boe.es: no se exporta sin avisos de diferencia/reforma (usa --sin-contraste solo a sabiendas)")
     for cfg in build.NORMAS:
         raw, meta, chunks, avisos, n_cab, n_art, n_disp = build.analiza(cfg)
+        futuras = build.aplica_futuras(cfg["sigla"], chunks)   # mismo texto por defecto que la web: la redacción VIGENTE hoy
         bloques = [bloque(c) for c in chunks]
+        for b_ in bloques:   # reforma ya publicada que aún no rige: la posterior, opcional, para que LexArt pueda ofrecerla (la web ya lo hace)
+            if b_["clave"] in futuras:
+                f_ = futuras[b_["clave"]]
+                b_["posterior"] = dict(fecha=f_["f"], origen=f_["o"], parrafos=f_["p"], cambios=f_["s"])
         claves = [b["clave"] for b in bloques]
         if len(set(claves)) != len(claves):
             repetidas = [k for k, n in Counter(claves).items() if n > 1][:5]

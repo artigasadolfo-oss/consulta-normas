@@ -456,6 +456,7 @@ def avisos_boe(normas):
         print(f"AVISO: no he podido contrastar con boe.es ({type(e).__name__}); la web se compila SIN avisos de reforma/diferencia.")
         return {}, None
     out = {}
+    FUTURAS.clear()
     for sigla, r in res["normas"].items():
         if "error" in r:
             print(f"AVISO: contraste con boe.es de {sigla} no disponible: {r['error']}")
@@ -465,9 +466,40 @@ def avisos_boe(normas):
             d.setdefault(k, []).append(["d"])
         for k, fch in (r.get("futuras") or {}).items():
             d.setdefault(k, []).append(["f", fch])
+        if r.get("futuras_det"):
+            FUTURAS[sigla] = r["futuras_det"]
         if d:
             out[sigla] = d
     return out, dt.date.today().isoformat()
+
+
+FUTURAS = {}   # {sigla: {clave: {f, o, ant, post, espejo}}} del último avisos_boe(): redacción vigente y posterior de los artículos con reforma anunciada
+
+
+def aplica_futuras(sigla, chunks):
+    """Artículos con una reforma ya publicada que aún no rige (FUTURAS, de avisos_boe): la web enseña POR DEFECTO la redacción vigente hoy y deja
+    ver la posterior con lo que cambia resaltado. Modifica `chunks` (dicts con 'k' y 'b') en el sitio:
+      - espejo == vigente: el cuerpo no cambia;
+      - espejo == posterior (LPH 10, 10-10-2026: el espejo ya trae la Ley 4/2026): el cuerpo pasa a ser la vigente del BOE y se conservan sus notas «>»;
+      - espejo distinto de las dos (error real): no se toca ni se ofrece la posterior; sigue el aviso «difiere del consolidado».
+    -> {clave: {f: fecha, o: 'v'|'n', p: [párrafos de la posterior], s: [[[t, texto]...]...]}} (t: 0 igual, 1 nuevo, 2 suprimido). Vacío sin red."""
+    det = FUTURAS.get(sigla) or {}
+    if not det:
+        return {}
+    sys.path.insert(0, str(AQUI / "scripts"))
+    import contraste_boe
+    fu = {}
+    por_clave = {c["k"]: c for c in chunks}
+    for k, d in det.items():
+        c = por_clave.get(k)
+        if c is None or d.get("espejo") == "otro" or not d.get("post") or not d.get("ant"):
+            continue
+        if d["espejo"] == "post":
+            cuerpo = c["b"] if isinstance(c["b"], str) else "\n".join(c["b"])
+            notas = [ln for ln in cuerpo.split("\n") if ln.lstrip().startswith(">")]
+            c["b"] = "\n\n".join(d["ant"]) + ("\n\n" + "\n\n".join(notas) if notas else "")
+        fu[k] = dict(f=d["f"], o=d["o"], p=d["post"], s=contraste_boe.segmentos_cambios(d["ant"], d["post"]))
+    return fu
 
 
 def git_head():
@@ -594,6 +626,10 @@ def construye(solo_comprobar=False):
     for d in datos:
         if av.get(d["sigla"]):
             d["av"] = av[d["sigla"]]
+        fu = aplica_futuras(d["sigla"], d["ch"])
+        if fu:
+            d["fu"] = fu
+            print(f"Reformas ya publicadas aún no vigentes en {d['sigla']}: se enseña la redacción vigente y se ofrece la posterior ->", {k: v["f"] for k, v in fu.items()})
     if av:
         print("Avisos de contraste con boe.es en pantalla:", {s: len(v) for s, v in av.items()})
     idx, cambios = indice.compila(Path(os.environ.get("CONSULTA_NORMAS_INDICE", AQUI / "indice")), claves_norma, lambda s, c: base_en_commit(claves_norma, s, c))

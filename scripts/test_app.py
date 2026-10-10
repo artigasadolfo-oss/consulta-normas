@@ -720,6 +720,11 @@ with sync_playwright() as p:
     print("\n".join("    | " + l for l in rf.stdout.strip().splitlines()[-6:]))
     check("favoritos: exportar e importar (suite propia, incluidos los sabotajes) sin fallos", rf.returncode == 0, rf.stderr[-300:])
 
+    print("\n[reformas publicadas que aún no rigen: vigente por defecto, posterior resaltada (scripts/test_reforma_futura.py)]")
+    rr = subprocess.run([sys.executable, str(AQUI / "scripts" / "test_reforma_futura.py")], capture_output=True, text=True, env={**os.environ, "PYTHONPATH": ""})
+    print("\n".join("    | " + l for l in rr.stdout.strip().splitlines()[-4:]))
+    check("reforma futura: vigente por defecto y posterior resaltada (suite propia) sin fallos", rr.returncode == 0, rr.stderr[-300:])
+
     if CAPTURAS:
         pg.goto(URL + "#a/lec/282"); time.sleep(0.8); pg.screenshot(path=str(CAPT / "05-escritorio.png"))
     br.close()
