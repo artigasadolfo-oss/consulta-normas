@@ -665,10 +665,13 @@ function avisoBoe(n,c,hoy){
   var l=n.av&&n.av[c.k];if(!l)return '';
   hoy=hoy||new Date().toLocaleDateString('sv-SE');
   var h='';
+  var difiere=l.some(function(a){return a[0]!=='f'});   /* si el texto TAMBIÉN difiere del consolidado, «hasta entonces rige el texto de esta pantalla» sería falso: la pantalla puede traer ya la redacción posterior (LPH 10, 10-10-2026) */
   l.forEach(function(a){
     if(a[0]==='f'){
       h+=a[1]>hoy
-        ?'<div class="boe-av"><b>Reforma ya publicada en el BOE.</b> Entra en vigor el '+fdate(a[1])+'. Hasta entonces rige el texto de esta pantalla; contrasta con boe.es.</div>'
+        ?(difiere
+          ?'<div class="boe-av"><b>Reforma ya publicada en el BOE.</b> Entra en vigor el '+fdate(a[1])+'. Esta pantalla puede mostrar ya la redacción posterior a la reforma, no la que rige hoy; contrasta con boe.es.</div>'
+          :'<div class="boe-av"><b>Reforma ya publicada en el BOE.</b> Entra en vigor el '+fdate(a[1])+'. Hasta entonces rige el texto de esta pantalla; contrasta con boe.es.</div>')
         :'<div class="boe-av"><b>Reforma en vigor desde el '+fdate(a[1])+' que esta copia puede no recoger.</b> Contrasta con boe.es antes de citar este artículo.</div>';
     }else{
       h+='<div class="boe-av"><b>Este texto difiere del consolidado de boe.es.</b> Contrasta con boe.es antes de citar este artículo.</div>';

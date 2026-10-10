@@ -326,6 +326,13 @@ def parse_norma(cfg, lineas):
                 vistos.add(k)
                 abre(k, txt_plano.capitalize() if txt_plano.isupper() else txt_plano, "")
                 continue
+            # --- rótulo de estructura DENTRO de una disposición: es texto citado de la ley que la disposición modifica (LJV df1, df3, df11, df13:
+            #     «### CAPÍTULO I. Reglas generales» del Título VII que se introduce en la Ley del Notariado). La estructura propia de la norma
+            #     (LIBRO/TÍTULO/CAPÍTULO/SECCIÓN) nunca vuelve a abrirse después de una disposición; si se tomara por estructura, el texto citado
+            #     se pegaba a la disposición siguiente (la df12 mostraba el texto de la df11). 10-10-2026.
+            if (nivel <= 5 and actual is not None and not cfg.get("previo_rdl") and re.match(r"^d[atfd]", actual["k"]) and ESTRUCT.match(txt_plano)):
+                actual["b"].append(ln)
+                continue
             # --- estructura
             if nivel <= 5 and (ESTRUCT.match(txt_plano) or (nivel >= 2 and cfg["id"] in ESTRUCT_EXTRA and ESTRUCT_EXTRA[cfg["id"]].match(txt_plano))):
                 ruta[:] = [(n, t) for n, t in ruta if n < nivel]

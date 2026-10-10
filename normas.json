@@ -1,6 +1,6 @@
 {
- "compilado": "2026-10-09",
- "corpus_commit": "10ec58cc2",
+ "compilado": "2026-10-10",
+ "corpus_commit": "abb7b5373",
  "normas": [
   {
    "id": "lec",
@@ -118,8 +118,8 @@
    "boe": "BOE-A-2023-12203",
    "sigla": "Ley 12/2023",
    "dir": "es",
-   "actualizada": "2026-10-05",
-   "sha256": "29b622256ad6385811f27dcdbc947bedc11c821e0c8497116fc4b011d1d67ebe",
+   "actualizada": "2026-10-07",
+   "sha256": "c339fc65539713a2b1d0e564255dff7e890bc2d7e5d176be73b4fa9be3429b83",
    "bloques": 58,
    "articulos": 36,
    "disposiciones": 20
@@ -207,7 +207,7 @@
    "sigla": "LECrim",
    "dir": "es",
    "actualizada": "2026-04-09",
-   "sha256": "02969a4bcff2be31e0d117d02710230a2bfc311d56f08292abe68f48c5c1ba08",
+   "sha256": "9663e983aad5e88ecd73d7713d0b72d8934b75cad70f5d3b6af91ca7637cf540",
    "bloques": 1095,
    "articulos": 1131,
    "disposiciones": 15
@@ -235,7 +235,7 @@
    "disposiciones": 7
   }
  ],
- "boe_contrastado": "2026-10-09",
+ "boe_contrastado": "2026-10-10",
  "indice": {
   "version": "0.1-muestra",
   "voces": 311,

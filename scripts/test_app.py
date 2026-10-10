@@ -552,6 +552,8 @@ with sync_playwright() as p:
     check("aviso boe.es: el día de la entrada en vigor pasa solo a «en vigor desde» (la fecha la pone el dispositivo)", "en vigor desde el 08-10-2026" in vigor_ and "Entra en vigor" not in vigor_, vigor_)
     check("aviso boe.es: texto distinto del consolidado -> avisa de contrastar antes de citar", "difiere del consolidado de boe.es" in difiere_ and "antes de citar" in difiere_, difiere_)
     check("aviso boe.es: diferencia y reforma futura a la vez -> los dos avisos", ambos_.count("boe-av") == 2, ambos_)
+    check("aviso boe.es: si el texto difiere Y hay reforma futura, NO afirma que hasta entonces rija el texto de la pantalla (puede ser ya el posterior)",
+          "Hasta entonces rige" not in ambos_ and "redacción posterior" in ambos_ and "Hasta entonces rige" in futura_, ambos_)
     check("aviso boe.es: artículo sin aviso -> nada", pg.evaluate("()=>window.__NT.avisoBoe('lec','1','2026-10-07')") == "")
     pg.evaluate("()=>{window.__NT.poner('lec',{'2':[['d']]})}"); pg.evaluate("h=>{location.hash=h}", "#a/lec/2"); time.sleep(0.6)
     check("aviso boe.es: se ve en pantalla encima del texto del artículo", pg.locator("#lector article .boe-av").count() == 1 and "difiere" in pg.inner_text("#lector .boe-av"), pg.inner_text("#lector")[:120])

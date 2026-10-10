@@ -268,8 +268,20 @@ def bloques_espejo(chunks, rd_a_llano=False):
         if c["k"] in ("cab", "pre"):
             continue
         b = c["b"] if isinstance(c["b"], str) else "\n".join(c["b"])
-        # fuera: notas («>») y toda línea de encabezado («#…»): rótulos de la «Redacción anterior» y de capítulos/títulos que el espejo deja en el cuerpo
-        cuerpo = "\n".join(ln for ln in b.split("\n") if not ln.lstrip().startswith(">") and not re.match(r'^\s*#', ln))
+        # fuera: notas («>») y toda línea de encabezado («#…»): rótulos de la «Redacción anterior» y de capítulos/títulos que el espejo deja en el cuerpo.
+        # EXCEPCIÓN (10-10-2026): en las DISPOSICIONES los rótulos de estructura («### CAPÍTULO I. …», «## «TÍTULO VII. …») son texto citado de la ley
+        # que la disposición modifica y el BOE los trae como párrafos: se comparan (si no, df1, df3, df11, df13 de la LJV salían distintas por ellos).
+        en_disp = bool(re.match(r"^d[atfd]", c["k"]))
+        def rotulo_citado(ln):
+            m = build.HEAD.match(ln.strip())
+            return bool(en_disp and m and build.ESTRUCT.match(m.group(2).strip("*_ «\"“")))
+        def nota_al_pie_boe(ln):
+            """«> (*) La remisión … [Ref. BOE-…](url)»: nota al pie que el BOE escribe como párrafo del propio artículo (CP 78 bis, 517, 518; LECrim 784).
+            El espejo la pinta como cita; las demás notas («> <small>Se modifica por…») son reformas y no cuentan. 10-10-2026."""
+            return bool(not en_disp and re.match(r"^\s*>\s*\(\*\)", ln))   # solo en artículos: los «(*) Táchese lo que no proceda» de los anexos (TRLGDCU df4) no son del BOE
+        def quita_nota(ln):
+            return re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", re.sub(r"^\s*>\s*", "", ln)) if nota_al_pie_boe(ln) else ln
+        cuerpo = "\n".join(quita_nota(ln) for ln in b.split("\n") if (not ln.lstrip().startswith(">") or nota_al_pie_boe(ln)) and (not re.match(r'^\s*#', ln) or rotulo_citado(ln)))
         e = c.get("e") or ""
         clave = c["k"]
         if rd_a_llano and clave.startswith("rd-"):

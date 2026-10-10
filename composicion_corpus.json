@@ -1,5 +1,5 @@
 {
- "creada": "2026-10-09T07:19:32",
+ "creada": "2026-10-10T11:46:22",
  "base": "aca28304d",
  "origen": "a5e9eecce6",
  "sustituciones": [
@@ -37,6 +37,31 @@
    "alcance": "art. 396",
    "antes": "1fffea14b757fd4b",
    "despues": "a735d9f9b72d330d"
+  },
+  {
+   "norma": "Ley 12/2023",
+   "boe": "BOE-A-2023-12203",
+   "alcance": "norma completa",
+   "antes": "29b622256ad63858",
+   "despues": "c339fc65539713a2",
+   "last_updated": "2026-10-07"
+  },
+  {
+   "norma": "LECrim",
+   "boe": "BOE-A-1882-6036",
+   "alcance": "art. 999",
+   "antes": "5a1d28c76c01716d",
+   "despues": "46b35f2c4b58a61c"
+  }
+ ],
+ "origenes_adicionales": [
+  {
+   "origen": "4748a1d6b4",
+   "siglas": [
+    "Ley 12/2023",
+    "LECrim"
+   ],
+   "sobre": "10ec58cc2a"
   }
  ]
 }

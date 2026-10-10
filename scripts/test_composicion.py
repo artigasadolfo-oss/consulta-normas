@@ -91,6 +91,48 @@ with tempfile.TemporaryDirectory() as tmp:
     r2 = subprocess.run([sys.executable, SCRIPT, "--base", str(base), "--mirror", str(espejo), "--origen", sha, "--out", str(out)], capture_output=True, text=True)
     caso("no sobrescribe una composición existente", r2.returncode != 0 and "ya existe" in (r2.stdout + r2.stderr), r2.stdout + r2.stderr)
 
+print("[compone_corpus --solo: se apila sobre una composición anterior sin rehacer lo ya compuesto (Ley 12/2023 entera, LECrim 999)]")
+L12, LECR = "BOE-A-2023-12203", "BOE-A-1882-6036"
+with tempfile.TemporaryDirectory() as tmp:
+    t = Path(tmp)
+    base, espejo, out = t / "base", t / "espejo", t / "out"
+    (base / "es").mkdir(parents=True)
+    (base / ".commit").write_text("10ec58cc2a\n")
+    anterior_comp = {"creada": "x", "base": "aca28304d", "origen": "a5e9eecce6", "sustituciones": [dict(norma="LAU", boe=LAU, alcance="norma completa", antes="a", despues="b")]}
+    (base / "composicion.json").write_text(json.dumps(anterior_comp), encoding="utf-8")
+    viejo = {
+        LAU: CAB.format(b=LAU, extra='last_updated: "2026-10-07"\n') + "###### Artículo 1. LAU ya compuesta.\n\nTexto LAU compuesta.\n",
+        L12: CAB.format(b=L12, extra='last_updated: "2026-10-05"\n') + "###### Artículo 3. Defs.\n\nTexto 3 VIEJO.\n\n###### Disposición transitoria cuarta. Régimen.\n\ndt4 VIEJA.\n",
+        LECR: CAB.format(b=LECR, extra='last_updated: "2026-04-09"\n') + "###### Artículo 998. Antes.\n\nTexto 998.\n\n###### Artículo 999. Ejecución.\n\n1. Texto 999.\n\nDISPOSICIÓN ADICIONAL\n\nResto de la numeración antigua.\n\n###### Artículo 1000. Después.\n\nTexto 1000.\n",
+    }
+    for boe, txt in viejo.items():
+        (base / "es" / f"{boe}.md").write_text(txt, encoding="utf-8")
+    sh("git", "init", "-q", str(espejo))
+    nuevo = {
+        LAU: CAB.format(b=LAU, extra='source_updated_at: "2026-10-09T00:00:00Z"\n') + "###### Artículo 1. LAU del origen NUEVO.\n\nNO debe entrar: ya estaba compuesta.\n",
+        L12: CAB.format(b=L12, extra='source_updated_at: "2026-10-08T00:00:00Z"\n') + "###### Artículo 3. Defs.\n\nTexto 3 NUEVO\\.\n\n###### Disposición transitoria cuarta. Régimen.\n\ndt4 NUEVA.\n",
+        LECR: CAB.format(b=LECR, extra="") + "###### Artículo 998. Antes.\n\nTexto 998 CON ERRATA.\n\n###### Artículo 999. Ejecución.\n\n1\\. Texto 999.\n\n###### Artículo 1000. Después.\n\nTexto 1000 CON ERRATA.\n",
+    }
+    for boe, txt in nuevo.items():
+        pp = espejo / ruta_nueva(boe)
+        pp.parent.mkdir(parents=True, exist_ok=True)
+        pp.write_text(txt, encoding="utf-8")
+    sh("git", "-C", str(espejo), "add", ".")
+    sh("git", "-C", str(espejo), "-c", "user.email=t@l", "-c", "user.name=t", "commit", "-q", "-m", "[bootstrap] y")
+    sha2 = sh("git", "-C", str(espejo), "rev-parse", "--short", "HEAD")
+    r = subprocess.run([sys.executable, SCRIPT, "--base", str(base), "--mirror", str(espejo), "--origen", sha2, "--out", str(out), "--solo", "Ley 12/2023,LECrim"], capture_output=True, text=True)
+    caso("--solo: el script termina bien", r.returncode == 0, r.stdout[-300:] + r.stderr[-300:])
+    lau, l12, lecr = [(out / "es" / f"{b}.md").read_text(encoding="utf-8") for b in (LAU, L12, LECR)]
+    caso("--solo: la LAU ya compuesta NO se rehace con el origen nuevo", "Texto LAU compuesta." in lau and "NO debe entrar" not in lau, lau[-200:])
+    caso("--solo: Ley 12/2023 sustituida entera y sin barras de escape", "Texto 3 NUEVO." in l12 and "dt4 NUEVA." in l12 and "VIEJ" not in l12 and "\\" not in l12, l12[-200:])
+    caso("--solo: LECrim solo cambia el 999 (quita la DISPOSICIÓN ADICIONAL suelta); el 998 y el 1000 de la fuente con errata NO entran",
+         "DISPOSICIÓN ADICIONAL" not in lecr and "Resto de la numeración antigua" not in lecr and "Texto 998." in lecr and "Texto 1000." in lecr and "ERRATA" not in lecr, lecr)
+    comp = json.loads((out / "composicion.json").read_text(encoding="utf-8"))
+    alc = [(x["norma"], x["alcance"]) for x in comp["sustituciones"]]
+    caso("--solo: composicion.json conserva la procedencia anterior y añade la nueva",
+         comp["base"] == "aca28304d" and comp["origen"] == "a5e9eecce6" and ("LAU", "norma completa") in alc and ("Ley 12/2023", "norma completa") in alc and ("LECrim", "art. 999") in alc
+         and comp.get("origenes_adicionales") == [dict(origen=sha2, siglas=["Ley 12/2023", "LECrim"], sobre="10ec58cc2a")], str(comp)[:500])
+
 print("[base compuesta: las voces revisadas contra la composición no caducan por comparar con un commit que no existe]")
 bases = {"_composiciones": {"597314599f": {"normas": {"LEC": {"status": "in_force", "huellas": {"22": "h22", "685": "h685"}}}}}}
 b = indice.base_compuesta(bases, "597314599f", "LEC")
