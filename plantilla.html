@@ -71,6 +71,14 @@ button{font-family:inherit}
 .fut-bt:hover{background:var(--ocre-100)}
 .fut-bt kbd{font:inherit;font-size:10.5px;border:1px solid rgba(201,122,30,.55);border-radius:4px;padding:0 4px;margin-left:6px}
 .fut-n{display:block;margin-top:5px;font-size:11.5px}
+.fecha-fila{display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center;margin:0 0 14px;padding:8px 12px;border:1px solid var(--ink-200);border-radius:10px;background:var(--ink-50);font-size:12.5px;color:var(--ink-600)}
+.fecha-fila.on{border-color:rgba(201,122,30,.5);background:var(--ocre-50)}
+.fecha-fila label{font-family:var(--geo);font-weight:600;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-500)}
+.fecha-fila input[type=date]{font:inherit;border:1px solid var(--ink-300);border-radius:8px;padding:4px 8px;background:#fff;color:var(--ink-900)}
+.fecha-nota{flex-basis:100%;font-size:11.5px;color:var(--ink-500)}
+.fecha-fila.on .fecha-nota{color:var(--ocre-700)}
+.boe-fecha a{color:var(--ocre-700);text-decoration:underline dotted;text-underline-offset:3px}
+.sin-art{color:var(--ink-500);font-style:italic}
 ins.cam{text-decoration:underline;text-decoration-color:#2f8f5b;text-underline-offset:3px;background:rgba(47,143,91,.17);border-radius:3px;padding:0 1px}
 del.cam{background:rgba(190,60,60,.10);color:var(--ink-500);text-decoration:line-through;border-radius:3px;padding:0 1px}
 .fm-chips{display:flex;flex-wrap:wrap;gap:6px;padding:4px 12px 8px}
@@ -317,7 +325,7 @@ var esc=function(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').
 var norm=function(s){return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')};
 var flat=function(s){return ' '+norm(s).replace(/[^a-z0-9]+/g,' ').trim()+' '};
 var DATA=null,NORMAS=[],POR={},INDEXADO=false,IDX=null,FX=null,FM={m:'',q:''};
-var ST={mode:'home',items:[],sel:-1,q:'',filtro:null,stack:false,hl:null,ap:null,ver:false,red:{},todos:[],nid:null,parcial:false};
+var ST={mode:'home',items:[],sel:-1,q:'',filtro:null,stack:false,hl:null,ap:null,ver:false,red:{},fecha:(function(){try{var v=sessionStorage.getItem('normas.fecha');return /^\d{4}-\d{2}-\d{2}$/.test(v)?v:null}catch(e){return null}})(),todos:[],nid:null,parcial:false};
 var LS={get:function(k,d){try{var v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},set:function(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
 var MOVIL=function(){return window.matchMedia('(max-width:860px)').matches};
 var fdate=function(iso){if(!iso)return '';var p=iso.split('-');return p[2]+'-'+p[1]+'-'+p[0]};
@@ -673,7 +681,7 @@ function fuDe(n,c){return (n.fu&&n.fu[c.k])||null}
 function vistaRed(n,c,hoy){
   var f=fuDe(n,c);if(!f)return 'v';
   var v=ST.red[n.id+'|'+c.k];if(v)return v;
-  return f.f<=(hoy||hoyISO())?'p':'v';
+  return f.f<=(hoy||fechaEf())?'p':'v';
 }
 function renderCambios(f){
   var h=[];
@@ -684,9 +692,72 @@ function renderCambios(f){
   });
   return h.join('');
 }
+/* ---- Texto a fecha (historial de redacciones, n.hv[clave] = [[desde, hasta|'', norma BOE, título, texto|'' (el vigente va sin texto), incierta]...]) ----
+   Una fecha ANTERIOR a hoy enseña la redacción que regía ese día; hoy o una fecha futura sigue la lógica de las reformas ya publicadas. */
+function fechaEf(){return ST.fecha||hoyISO()}
+function tramoA(n,c,f){
+  var t=n.hv&&n.hv[c.k];if(!t)return undefined;            // undefined: sin historial de este artículo
+  for(var i=0;i<t.length;i++){var x=t[i];if(x[0]<=f&&(!x[1]||f<=x[1]))return x}
+  return null;                                              // null: el artículo no existía en esa fecha
+}
+function histA(n,c){
+  if(!ST.fecha||ST.fecha>=hoyISO())return null;
+  if(!n.hv||!n.hv[c.k])return {sin:true};
+  var x=tramoA(n,c,ST.fecha);
+  if(x===null)return {noexistia:true,primera:n.hv[c.k][0][0]};
+  return {x:x,vigente:!x[1]};
+}
+function avisoFecha(n,c,hh){
+  var F=fdate(ST.fecha),vol=' <button type="button" class="fut-bt" data-fecha-hoy="1">Volver a hoy</button>';
+  var caut=' Es el texto vigente en esa fecha: no resuelve el régimen transitorio de las reformas posteriores, que decide el jurista.';
+  if(hh.sin&&!n.hv)return '<div class="boe-av boe-fecha"><b>Esta norma no tiene historial de redacciones en esta herramienta.</b> Se muestra el texto de hoy, que puede no ser el que regía el '+F+'. Contrasta con boe.es.'+vol+'</div>';
+  if(hh.sin)return '<div class="boe-av boe-fecha"><b>Sin historial de este artículo.</b> No dispongo de redacciones anteriores de este artículo del BOE: se muestra el texto de hoy, que puede no ser el que regía el '+F+'. Contrasta con boe.es.'+vol+'</div>';
+  if(hh.noexistia)return '<div class="boe-av boe-fecha"><b>Este artículo no existía el '+F+'.</b> Su primera redacción rige desde el '+fdate(hh.primera)+'.'+vol+'</div>';
+  var x=hh.x,nota=x[5]?' La versión del BOE no indica la fecha de vigencia: se toma la de su publicación (puede haber un día de diferencia).':'';
+  var por=x[2]?' (<a href="https://www.boe.es/buscar/doc.php?id='+encodeURIComponent(x[2])+'" target="_blank" rel="noopener">'+esc(x[2])+'</a>)':'';
+  if(hh.vigente)return '<div class="boe-av boe-fecha"><b>Redacción vigente el '+F+'.</b> Es la misma que rige hoy (desde el '+fdate(x[0])+')'+por+'.'+nota+caut+vol+'</div>';
+  return '<div class="boe-av boe-fecha"><b>Redacción vigente el '+F+', no la de hoy.</b> Rigió del '+fdate(x[0])+' al '+fdate(x[1])+por+'.'+(x[3]&&x[3]!==c.t?' Título entonces: «'+esc(x[3])+'».':'')+nota+caut+vol+'</div>';
+}
+function zonaHtml(n,c,hoy){
+  var hh=histA(n,c);
+  return (hh?avisoFecha(n,c,hh):avisoBoe(n,c,hoy))+'<div class="a-body">'+cuerpoArt(n,c,hoy)+'</div>';
+}
+function filaFecha(n){
+  if(!n.hv&&!ST.fecha)return '';
+  var on=ST.fecha&&ST.fecha<hoyISO(),F=ST.fecha?fdate(ST.fecha):'';
+  var nota=!ST.fecha?'Elige una fecha para ver la redacción que estaba vigente entonces (por ejemplo, la de un contrato). Tecla D.'
+    :(!n.hv?'Esta norma no tiene historial de redacciones en esta herramienta: se muestra el texto de hoy.'
+    :(on?'Se muestra la redacción vigente el '+F+', no la de hoy, en todos los artículos que abras de las normas con historial.'
+    :(ST.fecha>hoyISO()?'Fecha futura: se aplican solo las reformas ya publicadas.':'Es hoy.')));
+  return '<div class="fecha-fila'+(on?' on':'')+'" id="fecha-fila"><label for="f-fecha">Texto a fecha</label><input type="date" id="f-fecha" value="'+(ST.fecha||'')+'" min="1800-01-01" max="2100-12-31" aria-describedby="f-nota"><button type="button" class="btn" id="f-hoy">Hoy</button><span class="fecha-nota" id="f-nota">'+nota+'</span></div>';
+}
+function fijaFecha(v){
+  v=(v||'').trim();
+  if(v&&!(/^\d{4}-\d{2}-\d{2}$/.test(v)&&v>='1800-01-01'&&v<='2100-12-31'))return;
+  ST.fecha=v||null;
+  try{if(v)sessionStorage.setItem('normas.fecha',v);else sessionStorage.removeItem('normas.fecha')}catch(e){}
+  var fila=document.getElementById('fecha-fila');
+  if(fila&&ST.mostrados){var h=document.createElement('div');h.innerHTML=filaFecha(ST.mostrados[0].n);if(h.firstChild){fila.className=h.firstChild.className;document.getElementById('f-nota').innerHTML=h.querySelector('.fecha-nota').innerHTML;var inp=document.getElementById('f-fecha');if(inp.value!==(ST.fecha||''))inp.value=ST.fecha||''}}
+  if(ST.mostrados)ST.mostrados.forEach(function(c,i){
+    var art=document.getElementById('art-'+i),z=art&&art.querySelector('.a-zona');if(!z)return;
+    z.innerHTML=zonaHtml(c.n,c);
+    if(ST.hl)marca(z.querySelector('.a-body'),ST.hl);
+  });
+}
+function ligaFecha(){
+  var inp=document.getElementById('f-fecha'),b=document.getElementById('f-hoy');
+  if(inp)inp.onchange=function(){fijaFecha(inp.value)};
+  if(b)b.onclick=function(){fijaFecha('')};
+}
 function cuerpoArt(n,c,hoy){
+  var hh=histA(n,c);
+  if(hh){
+    if(hh.noexistia)return '<p class="sin-art">El artículo no existía en esa fecha.</p>';
+    if(hh.x&&!hh.vigente){var ph=Object.create(c);ph.b=hh.x[4];return render(ph)}
+    return render(c);
+  }
   var f=fuDe(n,c);if(!f||vistaRed(n,c,hoy)!=='p')return render(c);
-  hoy=hoy||hoyISO();
+  hoy=hoy||fechaEf();
   if(f.f>hoy)return renderCambios(f);
   var pc=Object.create(c);pc.b=f.p.join('\n\n');return render(pc);
 }
@@ -702,24 +773,31 @@ function cuadroRed(n,c,f,hoy){
   return '<div class="boe-av boe-red" data-red-v="'+v+'">'+t+'</div>';
 }
 function textoCopia(c){
+  var hh=histA(c.n,c);
+  if(hh){
+    var FF=fdate(ST.fecha);
+    if(hh.noexistia)return '[El artículo no existía el '+FF+']';
+    if(hh.sin)return plano(c)+'\n[ATENCIÓN: sin historial de redacciones para el '+FF+': este es el texto de hoy]';
+    return '[Redacción vigente el '+FF+(hh.vigente?'': ', no la de hoy')+']\n'+(hh.vigente?plano(c):hh.x[4].replace(/\n\n/g,'\n'));
+  }
   var f=fuDe(c.n,c);if(!f)return plano(c);
-  var hoy=hoyISO(),F=fdate(f.f);
+  var hoy=fechaEf(),F=fdate(f.f);
   if(vistaRed(c.n,c,hoy)==='p')return (f.f>hoy?'[REDACCIÓN POSTERIOR: NO VIGENTE HASTA EL '+F+']\n':'')+f.p.join('\n');
   return plano(c)+(f.f>hoy?'\n[Reforma ya publicada que entra en vigor el '+F+']':'');
 }
 function alternaRed(art,dest){
   if(!art||!ST.mostrados)return;
   var c=ST.mostrados[+art.getAttribute('data-ix')];if(!c||!fuDe(c.n,c))return;
-  var n=c.n,hoy=hoyISO(),z=art.querySelector('.a-zona');if(!z)return;
+  var n=c.n,hoy=fechaEf(),z=art.querySelector('.a-zona');if(!z)return;
   ST.red[n.id+'|'+c.k]=dest||(vistaRed(n,c,hoy)==='p'?'v':'p');
-  z.innerHTML=avisoBoe(n,c,hoy)+'<div class="a-body">'+cuerpoArt(n,c,hoy)+'</div>';
+  z.innerHTML=zonaHtml(n,c,hoy);
   if(ST.hl)marca(z.querySelector('.a-body'),ST.hl);
   var nb=z.querySelector('.fut-bt');if(nb){try{nb.focus({preventScroll:true})}catch(e){nb.focus()}}
 }
 function avisoBoe(n,c,hoy){
   /* Avisos del contraste con boe.es (los calcula el build). La fecha de HOY la pone el dispositivo: «entra en vigor» pasa solo a «en vigor desde». */
   var l=n.av&&n.av[c.k];if(!l)return '';
-  hoy=hoy||hoyISO();
+  hoy=hoy||fechaEf();
   var h='';
   var difiere=l.some(function(a){return a[0]!=='f'});   /* si el texto TAMBIÉN difiere del consolidado, «hasta entonces rige el texto de esta pantalla» sería falso: la pantalla puede traer ya la redacción posterior (LPH 10, 10-10-2026) */
   l.forEach(function(a){
@@ -740,7 +818,7 @@ function avisoBoe(n,c,hoy){
 function artHtml(c,ix){
   var n=c.n,der=/\(Derogad[oa]s?\)/i.test(c.t+' '+c.b.slice(0,160));
   var tit=c.k==='cab'?'Encabezado y notas previas':c.e;
-  return '<article id="art-'+ix+'" data-ix="'+ix+'"><div class="a-eye">'+esc(n.sigla)+(c.s?' <span>·</span> '+esc(c.s):'')+'</div><h2 class="a-h">'+esc(tit)+(c.t?'<small>'+esc(c.t)+'</small>':'')+'</h2><div class="a-meta"><span>'+esc(n.titulo)+'</span><span>Actualizada a '+fdate(n.act)+'</span>'+(der?'<span class="der">Derogado</span>':'')+(n.est&&n.est!=='in_force'?'<span class="der">Norma no vigente ('+esc(n.est)+')</span>':'')+(c.notas?'<span>'+c.notas+' nota'+(c.notas>1?'s':'')+' de reforma</span>':'')+'</div>'+'<div class="a-zona" aria-live="polite">'+avisoBoe(n,c)+'<div class="a-body">'+cuerpoArt(n,c)+'</div></div></article>';
+  return '<article id="art-'+ix+'" data-ix="'+ix+'"><div class="a-eye">'+esc(n.sigla)+(c.s?' <span>·</span> '+esc(c.s):'')+'</div><h2 class="a-h">'+esc(tit)+(c.t?'<small>'+esc(c.t)+'</small>':'')+'</h2><div class="a-meta"><span>'+esc(n.titulo)+'</span><span>Actualizada a '+fdate(n.act)+'</span>'+(der?'<span class="der">Derogado</span>':'')+(n.est&&n.est!=='in_force'?'<span class="der">Norma no vigente ('+esc(n.est)+')</span>':'')+(c.notas?'<span>'+c.notas+' nota'+(c.notas>1?'s':'')+' de reforma</span>':'')+'</div>'+'<div class="a-zona" aria-live="polite">'+zonaHtml(n,c)+'</div></article>';
 }
 function urlBoe(c){var n=c.n;return 'https://www.boe.es/buscar/act.php?id='+n.boe+(/^\d+$/.test(c.k)?'#a'+c.k:'')}
 function citaCorta(c){return (c.e.replace(/^Artículos?/,'Art.').replace(/^Disposición /,'Disp. ')+' '+c.n.sigla).replace('Artículo','Art.')}
@@ -760,8 +838,7 @@ function mostrar(cs,opt){
    '<button class="btn" id="b-menos" aria-label="Letra más pequeña">A−</button><button class="btn" id="b-mas" aria-label="Letra más grande">A+</button>'+
    '<button class="btn" id="b-boe">BOE</button>'+
    '<button class="btn p" id="b-copiar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 012-2h9"/></svg>Copiar</button></div>';
-  var aviso='';
-  if(cs.length===1&&cs[0].k==='cab'){aviso=''}
+  var aviso=filaFecha(cs[0].n);
   elLector.innerHTML=barra+'<div class="lect-in">'+aviso+cs.map(function(c,i){return (i?'<hr class="sep-art">':'')+artHtml(c,i)}).join('')+'</div>';
   if(ST.hl)marca(elLector.querySelector('.lect-in'),ST.hl);
   ligaBarra(cs);
@@ -787,6 +864,7 @@ function ligaBarra(cs){
   q('b-menos').onclick=function(){fuente(-1)};q('b-mas').onclick=function(){fuente(1)};
   q('b-boe').onclick=function(){window.open(urlBoe(primero),'_blank','noopener')};
   q('b-copiar').onclick=function(){copiar(cs,q('b-copiar'))};
+  ligaFecha();
 }
 function fuente(d){var v=Math.max(13,Math.min(24,(LS.get('normas.fs',16))+d));LS.set('normas.fs',v);document.documentElement.style.setProperty('--fs',v+'px')}
 function copiar(cs,btn){
@@ -1375,7 +1453,7 @@ function focoMenu(){
 $('#fav-fichero').addEventListener('change',function(e){var f=e.target.files&&e.target.files[0];e.target.value='';importaFavFichero(f)});
 $('#mnav').addEventListener('click',function(){document.body.classList.toggle('navopen')});
 $('#scrim').addEventListener('click',cierraNav);
-elLector.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('.fut-bt');if(b)alternaRed(b.closest('article'),b.getAttribute('data-red'))});
+elLector.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('.fut-bt');if(!b)return;if(b.getAttribute('data-fecha-hoy')){fijaFecha('');return}alternaRed(b.closest('article'),b.getAttribute('data-red'))});
 document.addEventListener('keydown',function(e){
   var t=e.target,enCampo=t&&(t.tagName==='INPUT'||t.tagName==='TEXTAREA'||t.isContentEditable);
   if((e.key==='/'&&!enCampo)||((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k')){e.preventDefault();cierraNav();document.body.classList.remove('ver-lector');elQ.focus();elQ.select();return}
@@ -1386,6 +1464,7 @@ document.addEventListener('keydown',function(e){
     var nid=normaEnFoco();if(nid){e.preventDefault();toggleNorma(nid);return}
   }
   if((k==='r'||k==='R')&&ST.mostrados&&ST.mostrados.length===1&&fuDe(ST.mostrados[0].n,ST.mostrados[0])){var ar=elLector.querySelector('article');if(ar){e.preventDefault();alternaRed(ar);return}}
+  if((k==='d'||k==='D')&&ST.mostrados&&document.getElementById('f-fecha')){e.preventDefault();document.getElementById('f-fecha').focus();return}
   if(k==='n'||k==='N'){e.preventDefault();cierraNav();go('#n');var nq=$('#nq');if(nq&&!MOVIL())nq.focus();return}
   if((k==='c'||k==='C')&&IDX){e.preventDefault();cierraNav();go('#i');return}
   if((k==='s'||k==='S')&&FX){e.preventDefault();cierraNav();go('#f');return}
@@ -1425,7 +1504,7 @@ function arranque(){
   (window.requestIdleCallback||function(f){setTimeout(f,300)})(function(){indexa()});
 }
 /* gancho para las pruebas: devuelve el HTML con los enlaces que se crearían para un texto suelto */
-window.__NT={fx:function(){return FX},vistaFormulas:function(s){vistaFormulas(s)},poner:function(nid,av){POR[nid].av=av||undefined},ponerFu:function(nid,fu){POR[nid].fu=fu||undefined},fuTodos:function(){var o={};NORMAS.forEach(function(n){if(n.fu)o[n.id]=n.fu});return o},cuerpo:function(nid,k,hoy){var c=POR[nid].map.get(k);return cuerpoArt(POR[nid],c,hoy)},avisoBoe:function(nid,k,hoy){return avisoBoe(POR[nid],{k:k},hoy)},probar:function(nid,k,txt){return enlaza(esc(txt),POR[nid].map.get(k))},idx:function(){return IDX},vistaIndice:function(s){vistaIndice(s)},vistaNormas:function(s){vistaNormas(s)}};
+window.__NT={fx:function(){return FX},vistaFormulas:function(s){vistaFormulas(s)},poner:function(nid,av){POR[nid].av=av||undefined},ponerFu:function(nid,fu){POR[nid].fu=fu||undefined},ponerHv:function(nid,hv){POR[nid].hv=hv||undefined},fijaFecha:function(v){fijaFecha(v)},hvTodos:function(){var o={};NORMAS.forEach(function(n){if(n.hv)o[n.id]=n.hv});return o},fuTodos:function(){var o={};NORMAS.forEach(function(n){if(n.fu)o[n.id]=n.fu});return o},cuerpo:function(nid,k,hoy){var c=POR[nid].map.get(k);return cuerpoArt(POR[nid],c,hoy)},avisoBoe:function(nid,k,hoy){return avisoBoe(POR[nid],{k:k},hoy)},probar:function(nid,k,txt){return enlaza(esc(txt),POR[nid].map.get(k))},idx:function(){return IDX},vistaIndice:function(s){vistaIndice(s)},vistaNormas:function(s){vistaNormas(s)}};
 if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol)){navigator.serviceWorker.register('sw.js').catch(function(){})}
 cargar().then(function(d){DATA=d;arranque()}).catch(function(err){document.getElementById('carga').innerHTML='No he podido abrir los datos.<br><br>'+esc(err.message||err)});
 })();

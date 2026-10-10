@@ -74,16 +74,19 @@ def tramos_bloque(b, clave, hoy=None):
     return tr
 
 
-def historial(xml_texto, hoy=None):
-    """{clave: [tramos]} de todos los preceptos de la norma. Misma clave que usa el contraste (bloques_boe)."""
-    out, vistos = {}, set()
+def historial(xml_texto, hoy=None, rd_duplicados=False):
+    """{clave: [tramos]} de todos los preceptos de la norma. Misma clave que usa el contraste (bloques_boe), incluida la regla de las normas con
+    RD/Decreto de aprobación delante (opción `anexo` de build.py: LH, TRLC, LECrim, EGAE, Arancel): la primera aparición de una clave es la del RD,
+    que el espejo llama «rd-<clave>»; la segunda es la de la norma aprobada. Una clave solo se «ocupa» si el bloque tiene tramos (como en bloques_boe)."""
+    out = {}
     for b in cb.ET.fromstring(xml_texto).iter("bloque"):
         if b.get("tipo") != "precepto":
             continue
         k = cb._clave_bloque(b)
-        if not k or k in vistos:
+        if k and k in out and rd_duplicados and ("rd-" + k) not in out:
+            out["rd-" + k] = out.pop(k)
+        if not k or k in out:
             continue
-        vistos.add(k)
         t = tramos_bloque(b, k, hoy)
         if t:
             out[k] = t

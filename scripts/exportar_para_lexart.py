@@ -28,7 +28,7 @@ ESQUEMA (esquema = "consulta-normas/lexart-corpus@1"; si cambia algo incompatibl
       "sha256": "...",                  huella del fichero fuente del espejo
       "dir": "es" | "es-vc",            carpeta del espejo
       "fuente": "texto consolidado del BOE" | "DOGV, importado a mano",
-      "historial": OPCIONAL (solo en las normas elegidas con --historial; hoy LAU y LPH): {"hasta": "AAAA-MM-DD" (día de la exportación), "tramos": N, "sin_historial": [claves],
+      "historial": OPCIONAL (solo en las normas elegidas con --historial; hoy LAU, LPH, CC, LEC, TRLGDCU, LOE, LH, CP, CE, Ley 12/2023, TRLC, LJV y Ley 5/2012): {"hasta": "AAAA-MM-DD" (día de la exportación), "tramos": N, "sin_historial": [claves],
                                               "fuente": …}. Cada bloque de esa norma lleva "historial": [{"desde": "AAAA-MM-DD", "hasta": "AAAA-MM-DD" | null (el vigente), "norma": "BOE-A-…" (la que
                                               introdujo esa redacción), "titulo", "parrafos": [texto de esa redacción; AUSENTE en el tramo vigente, que es el texto del bloque], "incierta": true si la
                                               versión del BOE no trae fecha de vigencia y se tomó la de publicación}]. Un artículo no existe antes de su primer "desde". NO resuelve el régimen
@@ -142,7 +142,7 @@ def bloque(c):
     return out
 
 
-HISTORIAL_NORMAS = ["LAU", "LPH"]   # normas cuyo historial de redacciones se exporta (--historial para cambiarlas; «ninguna» lo desactiva)
+HISTORIAL_NORMAS = build.HISTORIAL_NORMAS   # una sola lista, la de build.py (--historial para cambiarla; «ninguna» lo desactiva)
 
 
 def exporta():
@@ -158,7 +158,7 @@ def exporta():
         hist_info = None
         if cfg["sigla"] in HISTORIAL_NORMAS:   # redacciones sucesivas (historial_boe): «qué decía el artículo el día D»; sin red NO se exporta a medias
             try:
-                hx = historial_boe.historial(contraste_boe.descarga(cfg["boe"], "texto"))
+                hx = historial_boe.historial(contraste_boe.descarga(cfg["boe"], "texto", build.CACHE_BOE), rd_duplicados=bool(cfg.get("anexo")))
             except Exception as e:
                 raise SystemExit(f"[{cfg['sigla']}] no he podido bajar el historial de boe.es ({type(e).__name__}: {str(e)[:100]}): no se exporta a medias")
             sin = []

@@ -68,6 +68,16 @@ caso("la reforma futura NO es historia (la cubre contraste_boe.futuras_detalle)"
 caso("un artículo nuevo no existe antes de su fecha", h.a_fecha(hh["6"], "2017-12-31") is None and h.a_fecha(hh["6"], "2018-01-01")["parrafos"] == ["Apareció en 2018."])
 caso("el día que entra en vigor la futura pasa a ser el último tramo", h.a_fecha(h.historial(xml, dt.date(2027, 1, 1))["5"], "2027-01-01")["parrafos"] == ["Futuro."])
 
+print("[norma con RD de aprobación delante (LH, TRLC): la clave repetida es del RD la primera vez y de la norma la segunda]")
+xml_rd = doc(bloque("rd1", "Artículo 1", ver("19460101", "19460101", ["Artículo 1.", "Del RD: aprueba el texto."])),
+          bloque("l1", "Artículo 1", ver("19460101", "19460101", ["Artículo 1.", "De la Ley: texto propio."]), ver("20000101", "19991231", ["Artículo 1.", "De la Ley: reformado."])),
+          bloque("l2", "Artículo 2", ver("19460101", "19460101", ["Artículo 2.", "Solo de la Ley."])))
+hr = h.historial(xml_rd, HOY, rd_duplicados=True)
+caso("la primera aparición pasa a «rd-1» y la segunda queda como «1»", sorted(hr) == ["1", "2", "rd-1"] and hr["rd-1"][0]["parrafos"] == ["Del RD: aprueba el texto."] and hr["1"][-1]["hasta"] is None, sorted(hr))
+caso("el historial de «1» es el de la norma (2 tramos), no el del RD", len(hr["1"]) == 2 and hr["1"][0]["parrafos"] == ["De la Ley: texto propio."], hr["1"])
+caso("coincide con las claves y el vigente de bloques_boe con la misma opción", {k: v[-1]["sk"] for k, v in hr.items()} == c.bloques_boe(xml_rd, HOY, rd_duplicados=True)[0])
+caso("sin la opción la segunda aparición no pisa a la primera (como en el contraste)", sorted(h.historial(xml_rd, HOY)) == ["1", "2"] and h.historial(xml_rd, HOY)["1"][0]["parrafos"] == ["Del RD: aprueba el texto."])
+
 print("[exportación compacta]")
 ex = h.para_exportar(h.historial(xml, HOY)["5"])
 caso("los tramos cerrados llevan el texto y el vigente NO (ya va en el bloque)", "parrafos" in ex[0] and "parrafos" not in ex[-1] and ex[-1]["hasta"] is None, ex)

@@ -26,6 +26,7 @@ import os
 import re
 import subprocess
 import sys
+import tempfile
 from pathlib import Path
 
 AQUI = Path(__file__).resolve().parent
@@ -446,12 +447,15 @@ def avisos_boe(normas):
     """Contraste con la API de boe.es (scripts/contraste_boe.py): -> ({sigla: {clave: [['d'] | ['f', 'AAAA-MM-DD'], ...]}}, fecha o None).
     'd' = el texto de la herramienta difiere del consolidado vigente; 'f' = reforma ya publicada que entra en vigor en esa fecha.
     Sin red (o con CONSULTA_NORMAS_SIN_BOE=1) no falla: devuelve ({}, None) y lo dice; la web entonces no muestra avisos."""
+    global CACHE_BOE
+    CACHE_BOE = None
     if os.environ.get("CONSULTA_NORMAS_SIN_BOE"):
         return {}, None
     try:
         sys.path.insert(0, str(AQUI / "scripts"))
         import contraste_boe
-        res = contraste_boe.contrasta(normas=normas)
+        CACHE_BOE = tempfile.mkdtemp(prefix="boe-")   # el XML de cada norma se baja UNA vez: lo reutilizan el contraste, la redacción posterior y el historial
+        res = contraste_boe.contrasta(normas=normas, cache=CACHE_BOE)
     except Exception as e:
         print(f"AVISO: no he podido contrastar con boe.es ({type(e).__name__}); la web se compila SIN avisos de reforma/diferencia.")
         return {}, None
@@ -473,6 +477,10 @@ def avisos_boe(normas):
     return out, dt.date.today().isoformat()
 
 
+CACHE_BOE = None   # carpeta temporal con el XML del BOE de este build (None: sin red o sin avisos)
+# Normas cuyo historial de redacciones por artículo (tramos de vigencia, scripts/historial_boe.py) viaja en la web y en la exportación a LexArt.
+# Orden de Adolfo, 10-10-2026: LAU, LPH, CC, LEC, TRLGDCU, LOE, LH, CP, CE + Ley 12/2023, TRLC, LJV y Ley 5/2012 (las demás casi no cambian o no son de su terreno).
+HISTORIAL_NORMAS = ["LAU", "LPH", "CC", "LEC", "TRLGDCU", "LOE", "LH", "CP", "CE", "Ley 12/2023", "TRLC", "LJV", "Ley 5/2012"]
 FUTURAS = {}   # {sigla: {clave: {f, o, ant, post, espejo}}} del último avisos_boe(): redacción vigente y posterior de los artículos con reforma anunciada
 
 
@@ -500,6 +508,18 @@ def aplica_futuras(sigla, chunks):
             c["b"] = "\n\n".join(d["ant"]) + ("\n\n" + "\n\n".join(notas) if notas else "")
         fu[k] = dict(f=d["f"], o=d["o"], p=d["post"], s=contraste_boe.segmentos_cambios(d["ant"], d["post"]))
     return fu
+
+
+def historial_norma(cfg):
+    """Historial de redacciones de una norma de HISTORIAL_NORMAS -> {clave: [[desde, hasta|'', norma, titulo, texto|'', incierta]...]} (el tramo vigente va sin texto:
+    es el cuerpo del artículo) o None si no toca o no hay red. Texto = párrafos unidos por línea en blanco (lo pinta el mismo render que el resto)."""
+    if cfg["sigla"] not in HISTORIAL_NORMAS or CACHE_BOE is None:
+        return None
+    sys.path.insert(0, str(AQUI / "scripts"))
+    import contraste_boe, historial_boe
+    hx = historial_boe.historial(contraste_boe.descarga(cfg["boe"], "texto", CACHE_BOE), rd_duplicados=bool(cfg.get("anexo")))
+    return {k: [[t["desde"], t["hasta"] or "", t["norma"], t["titulo"], "\n\n".join(t["parrafos"]) if t["hasta"] else "", 1 if t["incierta"] else 0] for t in tr]
+            for k, tr in hx.items()}
 
 
 def git_head():
@@ -626,12 +646,16 @@ def construye(solo_comprobar=False):
     for d in datos:
         if av.get(d["sigla"]):
             d["av"] = av[d["sigla"]]
+        hv = historial_norma(next(c for c in NORMAS if c["sigla"] == d["sigla"]))
+        if hv:
+            d["hv"] = hv
         fu = aplica_futuras(d["sigla"], d["ch"])
         if fu:
             d["fu"] = fu
             print(f"Reformas ya publicadas aún no vigentes en {d['sigla']}: se enseña la redacción vigente y se ofrece la posterior ->", {k: v["f"] for k, v in fu.items()})
     if av:
         print("Avisos de contraste con boe.es en pantalla:", {s: len(v) for s, v in av.items()})
+    print("Historial de redacciones (selector de fecha):", {d["sigla"]: sum(len(t) for t in d["hv"].values()) for d in datos if d.get("hv")} or "NINGUNO (sin red al compilar)")
     idx, cambios = indice.compila(Path(os.environ.get("CONSULTA_NORMAS_INDICE", AQUI / "indice")), claves_norma, lambda s, c: base_en_commit(claves_norma, s, c))
     resumen_idx = None
     if idx:

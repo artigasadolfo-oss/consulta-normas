@@ -730,6 +730,11 @@ with sync_playwright() as p:
     print("\n".join("    | " + l for l in rh.stdout.strip().splitlines()[-3:]))
     check("historial: tramos de vigencia, orden por publicación, vigencia vacía y reformas futuras (suite propia) sin fallos", rh.returncode == 0, rh.stderr[-300:])
 
+    print("\n[texto a fecha en pantalla (scripts/test_fecha_pantalla.py)]")
+    rf = subprocess.run([sys.executable, str(AQUI / "scripts" / "test_fecha_pantalla.py")], capture_output=True, text=True, env={**os.environ, "PYTHONPATH": ""})
+    print("\n".join("    | " + l for l in rf.stdout.strip().splitlines()[-3:]))
+    check("texto a fecha: redacción vigente en la fecha elegida, avisos, Copiar, fecha futura y datos reales (suite propia) sin fallos", rf.returncode == 0, rf.stderr[-300:] + rf.stdout[-300:])
+
     if CAPTURAS:
         pg.goto(URL + "#a/lec/282"); time.sleep(0.8); pg.screenshot(path=str(CAPT / "05-escritorio.png"))
     br.close()
