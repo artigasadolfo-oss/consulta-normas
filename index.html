@@ -133,6 +133,31 @@ del.cam{background:rgba(190,60,60,.10);color:var(--ink-500);text-decoration:line
 .mnav{display:none}
 .mscrim{display:none}
 .searchbar{position:relative;display:flex;gap:10px;align-items:center}
+.searchbar .sb-in{position:relative;flex:1;min-width:0;display:flex}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.fecha-chip{flex:none;display:flex;align-items:center;gap:8px;height:50px;padding:0 8px 0 12px;border:1px solid var(--ink-300);border-radius:10px;background:#fff;box-shadow:var(--sombra);color:var(--ink-500)}
+.fecha-chip.on{border-color:rgba(201,122,30,.55);background:var(--ocre-50);color:var(--ocre-700)}
+.fecha-chip .f-ico{width:18px;height:18px;flex:none}
+.fecha-chip label{font-family:var(--geo);font-weight:600;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+.searchbar .fecha-chip input{flex:none;width:auto;min-width:0;height:34px;padding:0 6px;border:0;border-radius:6px;background:transparent;box-shadow:none;font-size:14.5px;color:var(--ink-900)}
+.searchbar .fecha-chip input:focus{box-shadow:0 0 0 2px var(--ink-200);border-color:transparent}
+.f-x{width:30px;height:30px;border:0;border-radius:8px;background:none;color:inherit;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.f-x[hidden]{display:none}
+.f-x:hover{background:rgba(0,0,0,.06)}
+.f-x svg{width:15px;height:15px}
+.a-meta{position:relative}
+.rd-bt{font:inherit;font-size:11.5px;border:1px solid var(--ink-300);border-radius:999px;padding:1px 10px;background:#fff;color:var(--ink-600);cursor:pointer}
+.rd-bt:hover,.rd-bt[aria-expanded=true]{border-color:var(--ocre);color:var(--ocre-700)}
+.lect-in.con-rd{padding-bottom:520px}
+.rd-pop{position:absolute;left:0;top:calc(100% + 6px);z-index:40;width:min(460px,calc(100vw - 48px));max-height:min(62vh,440px);overflow:auto;background:#fff;border:1px solid var(--ink-300);border-radius:12px;box-shadow:0 12px 32px rgba(21,25,40,.18);padding:6px;color:var(--ink-800)}
+.rd-h{font-family:var(--geo);font-weight:600;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-500);padding:6px 10px 4px}
+.rd-it{display:flex;flex-direction:column;gap:1px;width:100%;text-align:left;font:inherit;font-size:13.5px;border:0;border-radius:8px;background:none;padding:7px 28px 7px 10px;color:var(--ink-900);cursor:pointer;position:relative}
+.rd-it:hover,.rd-it:focus-visible{background:var(--ink-100)}
+.rd-it[aria-checked=true]{background:var(--ocre-50);box-shadow:inset 3px 0 0 var(--ocre)}
+.rd-it[aria-checked=true]::after{content:'\2713';position:absolute;right:10px;top:50%;transform:translateY(-50%);color:var(--ocre-700);font-weight:700}
+.rd-sub{font-size:11.5px;color:var(--ink-500)}
+.rd-n{font-size:11.5px;color:var(--ink-500);padding:6px 10px 4px;border-top:1px solid var(--ink-200);margin-top:4px}
+@media (max-width:760px){.searchbar{flex-wrap:wrap}.searchbar .sb-in{flex:1 1 100%}.fecha-chip{flex:1 1 100%;height:44px}.fecha-chip label{display:inline}}
 .searchbar svg.lupa{position:absolute;left:15px;top:50%;transform:translateY(-50%);width:18px;height:18px;color:var(--ink-400);pointer-events:none}
 .searchbar input{flex:1;min-width:0;height:50px;padding:0 44px 0 44px;border:1px solid var(--ink-300);border-radius:10px;background:#fff;font-size:17px;color:var(--ink-900);outline:none;box-shadow:var(--sombra);font-family:var(--sans)}
 .searchbar input::-webkit-search-cancel-button,.searchbar input::-webkit-search-decoration{-webkit-appearance:none;appearance:none;display:none}
@@ -304,9 +329,12 @@ body.sin-chips .searchbar{margin-bottom:14px}
  <main class="main">
   <div class="phead"><div><div class="eyebrow">Herramientas internas</div><h1 class="ptitle">Consulta de normas</h1><div class="ul"></div></div></div>
   <div class="searchbar">
+   <div class="sb-in">
    <svg class="lupa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
    <input id="q" type="search" inputmode="search" enterkeyhint="search" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="Buscar un artículo o un concepto" placeholder="282 LEC · 18.3 PH · 5 LO 1/2025 · declinatoria de jurisdicción">
    <button class="limpia" id="limpia" aria-label="Borrar búsqueda" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+   </div>
+   <div class="fecha-chip" id="fecha-chip"><svg class="f-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg><label for="f-fecha">Texto a fecha</label><input type="date" id="f-fecha" min="1800-01-01" max="2100-12-31" aria-describedby="f-estado"><button type="button" class="f-x" id="f-hoy" hidden aria-label="Volver a hoy" title="Volver a hoy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button><span class="sr" id="f-estado" aria-live="polite"></span></div>
   </div>
   <div class="chips" id="chips" role="group" aria-label="Filtrar por norma"></div>
   <div class="split">
@@ -729,38 +757,90 @@ function avisoFecha(n,c,hh){
   var x=hh.x,nota=x[5]?' La versión del BOE no indica la fecha de vigencia: se toma la de su publicación (puede haber un día de diferencia).':'';
   var por=x[2]?' (<a href="https://www.boe.es/buscar/doc.php?id='+encodeURIComponent(x[2])+'" target="_blank" rel="noopener">'+esc(x[2])+'</a>)':'';
   if(hh.vigente)return '<div class="boe-av boe-fecha"><b>Redacción vigente el '+F+'.</b> Es la misma que rige hoy (desde el '+fdate(x[0])+')'+por+'.'+nota+caut+vol+'</div>';
-  return '<div class="boe-av boe-fecha"><b>Redacción vigente el '+F+', no la de hoy.</b> Rigió del '+fdate(x[0])+' al '+fdate(x[1])+por+'.'+(x[3]&&x[3]!==c.t?' Título entonces: «'+esc(x[3])+'».':'')+nota+caut+vol+'</div>';
+  return '<div class="boe-av boe-fecha"><b>Redacción vigente el '+F+', no la de hoy.</b> Rigió del '+fdate(x[0])+' al '+fdate(x[1])+por+'.'+(x[3]&&x[3]!==c.t?' Título entonces: «'+esc(x[3].replace(/\.$/,''))+'».':'')+nota+caut+vol+'</div>';
 }
 function zonaHtml(n,c,hoy){
   var hh=histA(n,c);
   return (hh?avisoFecha(n,c,hh):avisoBoe(n,c,hoy))+'<div class="a-body">'+cuerpoArt(n,c,hoy)+'</div>';
 }
-function filaFecha(n){
-  if(!n.hv&&!ST.fecha)return '';
-  var on=ST.fecha&&ST.fecha<hoyISO(),F=ST.fecha?fdate(ST.fecha):'';
-  var nota=!ST.fecha?'Elige una fecha para ver la redacción que estaba vigente entonces (por ejemplo, la de un contrato). Tecla D.'
-    :(!n.hv?'Esta norma no tiene historial de redacciones en esta herramienta: se muestra el texto de hoy.'
-    :(on?'Se muestra la redacción vigente el '+F+', no la de hoy, en todos los artículos que abras de las normas con historial.'
-    :(ST.fecha>hoyISO()?'Fecha futura: se aplican solo las reformas ya publicadas.':'Es hoy.')));
-  return '<div class="fecha-fila'+(on?' on':'')+'" id="fecha-fila"><label for="f-fecha">Texto a fecha</label><input type="date" id="f-fecha" value="'+(ST.fecha||'')+'" min="1800-01-01" max="2100-12-31" aria-describedby="f-nota"><button type="button" class="btn" id="f-hoy">Hoy</button><span class="fecha-nota" id="f-nota">'+nota+'</span></div>';
+function pintaChip(){
+  var ch=document.getElementById('fecha-chip');if(!ch)return;
+  var on=!!(ST.fecha&&ST.fecha<hoyISO()),inp=document.getElementById('f-fecha'),F=ST.fecha?fdate(ST.fecha):'';
+  ch.className='fecha-chip'+(on?' on':'');
+  if(inp&&inp.value!==(ST.fecha||''))inp.value=ST.fecha||'';
+  var x=document.getElementById('f-hoy');if(x)x.hidden=!ST.fecha;
+  var txt=!ST.fecha?'Texto a fecha: elige una fecha para ver la redacción que estaba vigente entonces (por ejemplo, la de un contrato). Tecla D.'
+    :(on?'Se muestra la redacción vigente el '+F+' en las normas con historial.'
+    :(ST.fecha>hoyISO()?'Fecha futura: se aplican solo las reformas ya publicadas.':'Es hoy.'));
+  ch.title=txt;var e=document.getElementById('f-estado');if(e)e.textContent=txt;
+}
+function iniciaChip(){
+  var inp=document.getElementById('f-fecha'),x=document.getElementById('f-hoy');if(!inp)return;
+  inp.onchange=function(){fijaFecha(inp.value)};
+  inp.addEventListener('keydown',function(e){if(e.key==='Escape'){e.preventDefault();e.stopPropagation();elQ.focus()}});
+  x.onclick=function(){fijaFecha('');inp.focus()};
+  pintaChip();
 }
 function fijaFecha(v){
   v=(v||'').trim();
   if(v&&!(/^\d{4}-\d{2}-\d{2}$/.test(v)&&v>='1800-01-01'&&v<='2100-12-31'))return;
   ST.fecha=v||null;
   try{if(v)sessionStorage.setItem('normas.fecha',v);else sessionStorage.removeItem('normas.fecha')}catch(e){}
-  var fila=document.getElementById('fecha-fila');
-  if(fila&&ST.mostrados){var h=document.createElement('div');h.innerHTML=filaFecha(ST.mostrados[0].n);if(h.firstChild){fila.className=h.firstChild.className;document.getElementById('f-nota').innerHTML=h.querySelector('.fecha-nota').innerHTML;var inp=document.getElementById('f-fecha');if(inp.value!==(ST.fecha||''))inp.value=ST.fecha||''}}
+  cierraRd();pintaChip();
   if(ST.mostrados)ST.mostrados.forEach(function(c,i){
     var art=document.getElementById('art-'+i),z=art&&art.querySelector('.a-zona');if(!z)return;
     z.innerHTML=zonaHtml(c.n,c);
     if(ST.hl)marca(z.querySelector('.a-body'),ST.hl);
   });
 }
-function ligaFecha(){
-  var inp=document.getElementById('f-fecha'),b=document.getElementById('f-hoy');
-  if(inp)inp.onchange=function(){fijaFecha(inp.value)};
-  if(b)b.onclick=function(){fijaFecha('')};
+/* ---- «Redacciones: N»: periodos de vigencia de ESTE artículo (como las versiones del BOE). Elegir uno fija la fecha global en su inicio. ---- */
+function rdBoton(n,c){
+  var t=n.hv&&n.hv[c.k];
+  return t&&t.length>1?'<button type="button" class="rd-bt" aria-haspopup="menu" aria-expanded="false" title="Redacciones sucesivas de este artículo (tecla V)">Redacciones: '+t.length+' ▾</button>':'';
+}
+function cierraRd(volver){
+  var p=elLector&&elLector.querySelector('.rd-pop');if(!p)return;
+  var ar=p.closest('article'),b=ar&&ar.querySelector('.rd-bt');p.remove();
+  var li=elLector.querySelector('.lect-in');if(li)li.classList.remove('con-rd');
+  if(b){b.setAttribute('aria-expanded','false');if(volver)b.focus()}
+}
+function abreRd(art){
+  var ix=+art.getAttribute('data-ix'),c=ST.mostrados&&ST.mostrados[ix];if(!c)return;
+  var t=c.n.hv&&c.n.hv[c.k];if(!t||t.length<2)return;
+  var b=art.querySelector('.rd-bt');
+  if(art.querySelector('.rd-pop')){cierraRd(true);return}
+  cierraRd();
+  var f=(ST.fecha&&ST.fecha<hoyISO())?ST.fecha:hoyISO(),act=tramoA(c.n,c,f);
+  var h='<div class="rd-pop" role="menu" aria-label="Redacciones de este artículo"><div class="rd-h">Redacciones de este artículo</div>';
+  for(var i=t.length-1;i>=0;i--){
+    var x=t[i],dias=x[1]?Math.round((Date.parse(x[1])-Date.parse(x[0]))/86400000)+1:0,sub=[];
+    if(x[2])sub.push(esc(x[2]));
+    if(!x[1])sub.push('vigente hoy');
+    if(x[1]&&dias<=7)sub.push('tramo breve ('+dias+(dias>1?' días':' día')+')');
+    if(x[5])sub.push('vigencia incierta: se toma la fecha de publicación');
+    h+='<button type="button" class="rd-it" role="menuitemradio" aria-checked="'+(act===x?'true':'false')+'" data-i="'+i+'"><span class="rd-per">'+fdate(x[0])+' → '+(x[1]?fdate(x[1]):'hoy')+'</span><span class="rd-sub">'+sub.join(' · ')+'</span></button>';
+  }
+  h+='<div class="rd-n">Al elegir un periodo, el buscador pasa a la fecha de su inicio y se aplica a todas las normas con historial. Es el texto vigente en esa fecha: no resuelve el régimen transitorio.</div></div>';
+  var meta=art.querySelector('.a-meta');
+  meta.insertAdjacentHTML('beforeend',h);
+  b.setAttribute('aria-expanded','true');
+  /* hacer sitio: la línea de meta se sube bajo la barra fija del lector y el desplegable se limita al espacio libre de debajo */
+  var li=elLector.querySelector('.lect-in');if(li)li.classList.add('con-rd');
+  var pop=meta.querySelector('.rd-pop'),bar=elLector.querySelector('.l-bar'),lr=elLector.getBoundingClientRect(),mr=meta.getBoundingClientRect();
+  elLector.scrollTop+=mr.top-lr.top-((bar?bar.offsetHeight:0)+14);
+  mr=meta.getBoundingClientRect();
+  pop.style.maxHeight=Math.max(180,Math.min(440,lr.bottom-mr.bottom-20))+'px';
+  var pr=pop.getBoundingClientRect(),dx=0;if(pr.right>lr.right-6)dx=lr.right-6-pr.right;pop.style.left=dx+'px';
+  pr=pop.getBoundingClientRect();if(pr.left<lr.left+6)pop.style.left=(dx+lr.left+6-pr.left)+'px';
+  var sel=art.querySelector('.rd-it[aria-checked="true"]')||art.querySelector('.rd-it');
+  if(sel){sel.focus({preventScroll:true});pop.scrollTop=Math.max(0,sel.offsetTop-pop.clientHeight/2+sel.offsetHeight/2)}
+}
+function visRd(p,el){if(!el)return;if(el.offsetTop<p.scrollTop+30)p.scrollTop=Math.max(0,el.offsetTop-34);else if(el.offsetTop+el.offsetHeight>p.scrollTop+p.clientHeight-8)p.scrollTop=el.offsetTop+el.offsetHeight-p.clientHeight+8}
+function eligeRd(art,i){
+  var ix=+art.getAttribute('data-ix'),c=ST.mostrados&&ST.mostrados[ix],x=c&&c.n.hv&&c.n.hv[c.k]&&c.n.hv[c.k][i];if(!x)return;
+  var b=art.querySelector('.rd-bt');
+  fijaFecha(x[1]?x[0]:'');
+  if(b)b.focus();
 }
 function cuerpoArt(n,c,hoy){
   var hh=histA(n,c);
@@ -831,7 +911,7 @@ function avisoBoe(n,c,hoy){
 function artHtml(c,ix){
   var n=c.n,der=/\(Derogad[oa]s?\)/i.test(c.t+' '+c.b.slice(0,160));
   var tit=c.k==='cab'?'Encabezado y notas previas':c.e;
-  return '<article id="art-'+ix+'" data-ix="'+ix+'"><div class="a-eye">'+esc(n.sigla)+(c.s?' <span>·</span> '+esc(c.s):'')+'</div><h2 class="a-h">'+esc(tit)+(c.t?'<small>'+esc(c.t)+'</small>':'')+'</h2><div class="a-meta"><span>'+esc(n.titulo)+'</span><span>Actualizada a '+fdate(n.act)+'</span>'+(der?'<span class="der">Derogado</span>':'')+(n.est&&n.est!=='in_force'?'<span class="der">Norma no vigente ('+esc(n.est)+')</span>':'')+(c.notas?'<span>'+c.notas+' nota'+(c.notas>1?'s':'')+' de reforma</span>':'')+'</div>'+'<div class="a-zona" aria-live="polite">'+zonaHtml(n,c)+'</div></article>';
+  return '<article id="art-'+ix+'" data-ix="'+ix+'"><div class="a-eye">'+esc(n.sigla)+(c.s?' <span>·</span> '+esc(c.s):'')+'</div><h2 class="a-h">'+esc(tit)+(c.t?'<small>'+esc(c.t)+'</small>':'')+'</h2><div class="a-meta"><span>'+esc(n.titulo)+'</span><span>Actualizada a '+fdate(n.act)+'</span>'+(der?'<span class="der">Derogado</span>':'')+(n.est&&n.est!=='in_force'?'<span class="der">Norma no vigente ('+esc(n.est)+')</span>':'')+(c.notas?'<span>'+c.notas+' nota'+(c.notas>1?'s':'')+' de reforma</span>':'')+rdBoton(n,c)+'</div>'+'<div class="a-zona" aria-live="polite">'+zonaHtml(n,c)+'</div></article>';
 }
 function urlBoe(c){var n=c.n;return 'https://www.boe.es/buscar/act.php?id='+n.boe+(/^\d+$/.test(c.k)?'#a'+c.k:'')}
 function citaCorta(c){return (c.e.replace(/^Artículos?/,'Art.').replace(/^Disposición /,'Disp. ')+' '+c.n.sigla).replace('Artículo','Art.')}
@@ -851,7 +931,7 @@ function mostrar(cs,opt){
    '<button class="btn" id="b-menos" aria-label="Letra más pequeña">A−</button><button class="btn" id="b-mas" aria-label="Letra más grande">A+</button>'+
    '<button class="btn" id="b-boe">BOE</button>'+
    '<button class="btn p" id="b-copiar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 012-2h9"/></svg>Copiar</button></div>';
-  var aviso=filaFecha(cs[0].n);
+  var aviso='';
   elLector.innerHTML=barra+'<div class="lect-in">'+aviso+cs.map(function(c,i){return (i?'<hr class="sep-art">':'')+artHtml(c,i)}).join('')+'</div>';
   if(ST.hl)marca(elLector.querySelector('.lect-in'),ST.hl);
   ligaBarra(cs);
@@ -877,7 +957,6 @@ function ligaBarra(cs){
   q('b-menos').onclick=function(){fuente(-1)};q('b-mas').onclick=function(){fuente(1)};
   q('b-boe').onclick=function(){window.open(urlBoe(primero),'_blank','noopener')};
   q('b-copiar').onclick=function(){copiar(cs,q('b-copiar'))};
-  ligaFecha();
 }
 function fuente(d){var v=Math.max(13,Math.min(24,(LS.get('normas.fs',16))+d));LS.set('normas.fs',v);document.documentElement.style.setProperty('--fs',v+'px')}
 function copiar(cs,btn){
@@ -1466,6 +1545,22 @@ function focoMenu(){
 $('#fav-fichero').addEventListener('change',function(e){var f=e.target.files&&e.target.files[0];e.target.value='';importaFavFichero(f)});
 $('#mnav').addEventListener('click',function(){document.body.classList.toggle('navopen')});
 $('#scrim').addEventListener('click',cierraNav);
+iniciaChip();
+elLector.addEventListener('click',function(e){
+  var rb=e.target.closest&&e.target.closest('.rd-bt');if(rb){abreRd(rb.closest('article'));return}
+  var ri=e.target.closest&&e.target.closest('.rd-it');if(ri){eligeRd(ri.closest('article'),+ri.getAttribute('data-i'));return}
+});
+elLector.addEventListener('keydown',function(e){
+  var p=e.target.closest&&e.target.closest('.rd-pop');if(!p)return;
+  var its=[].slice.call(p.querySelectorAll('.rd-it')),ix=its.indexOf(document.activeElement),k=e.key;
+  if(k==='ArrowDown'||k==='j'){e.preventDefault();e.stopPropagation();its[Math.min(its.length-1,ix+1)].focus({preventScroll:true});visRd(p,document.activeElement)}
+  else if(k==='ArrowUp'||k==='k'){e.preventDefault();e.stopPropagation();its[Math.max(0,ix-1)].focus({preventScroll:true});visRd(p,document.activeElement)}
+  else if(k==='Home'){e.preventDefault();e.stopPropagation();its[0].focus({preventScroll:true});visRd(p,its[0])}
+  else if(k==='End'){e.preventDefault();e.stopPropagation();its[its.length-1].focus({preventScroll:true});visRd(p,its[its.length-1])}
+  else if(k==='Escape'){e.preventDefault();e.stopPropagation();cierraRd(true)}
+  else if(k==='Tab'){cierraRd()}
+});
+document.addEventListener('click',function(e){if(!e.target.closest||(!e.target.closest('.rd-pop')&&!e.target.closest('.rd-bt')))cierraRd()});
 elLector.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('.fut-bt');if(!b)return;if(b.getAttribute('data-fecha-hoy')){fijaFecha('');return}alternaRed(b.closest('article'),b.getAttribute('data-red'))});
 document.addEventListener('keydown',function(e){
   var t=e.target,enCampo=t&&(t.tagName==='INPUT'||t.tagName==='TEXTAREA'||t.isContentEditable);
@@ -1477,7 +1572,8 @@ document.addEventListener('keydown',function(e){
     var nid=normaEnFoco();if(nid){e.preventDefault();toggleNorma(nid);return}
   }
   if((k==='r'||k==='R')&&ST.mostrados&&ST.mostrados.length===1&&fuDe(ST.mostrados[0].n,ST.mostrados[0])){var ar=elLector.querySelector('article');if(ar){e.preventDefault();alternaRed(ar);return}}
-  if((k==='d'||k==='D')&&ST.mostrados&&document.getElementById('f-fecha')){e.preventDefault();document.getElementById('f-fecha').focus();return}
+  if((k==='d'||k==='D')&&document.getElementById('f-fecha')&&document.getElementById('f-fecha').offsetParent){e.preventDefault();document.getElementById('f-fecha').focus();return}
+  if((k==='v'||k==='V')&&ST.mostrados&&ST.mostrados.length===1){var ar2=elLector.querySelector('article'),bv=ar2&&ar2.querySelector('.rd-bt');if(bv){e.preventDefault();abreRd(ar2);return}}
   if(k==='n'||k==='N'){e.preventDefault();cierraNav();go('#n');var nq=$('#nq');if(nq&&!MOVIL())nq.focus();return}
   if((k==='c'||k==='C')&&IDX){e.preventDefault();cierraNav();go('#i');return}
   if((k==='s'||k==='S')&&FX){e.preventDefault();cierraNav();go('#f');return}
